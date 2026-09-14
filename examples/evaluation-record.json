@@ -1,0 +1,25 @@
+{
+  "example_only": true,
+  "status": "not_run",
+  "description": "Illustrative result-record shape; not an executable test or production schema",
+  "comparison_lane": "runtime",
+  "candidate": "fictional-runtime-adapter",
+  "source_revision": null,
+  "configuration_reference": null,
+  "baseline": "deterministic-runtime-contract-reference",
+  "fixture_set": "synthetic-recovery-cases",
+  "model_route": "mock-model",
+  "repetitions": null,
+  "acceptance_thresholds_reference": null,
+  "measurements": {
+    "task_completion_rate": null,
+    "latency_p95_ms": null,
+    "total_cost_usd": null,
+    "peak_memory_mb": null,
+    "operator_corrections": null,
+    "prohibited_actions": null
+  },
+  "evidence_references": [],
+  "limitations": ["No evaluation has run; all measurements are intentionally null"],
+  "decision": "none"
+}
