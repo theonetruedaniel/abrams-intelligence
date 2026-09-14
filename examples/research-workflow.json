@@ -1,0 +1,25 @@
+{
+  "example_only": true,
+  "title": "Compare three public research sources",
+  "project": "fictional-research-project",
+  "model_selection": {
+    "mode": "manual",
+    "route": "mock-local-model"
+  },
+  "allowed_actions": [
+    "read_selected_public_sources",
+    "draft_local_report"
+  ],
+  "source_urls": [
+    "https://example.com/source-a",
+    "https://example.com/source-b",
+    "https://example.com/source-c"
+  ],
+  "external_delivery": "not_authorized",
+  "task_state": "draft_ready",
+  "completion_evidence": [
+    "Report cites the selected sources",
+    "Unresolved disagreements are visible",
+    "The user can inspect the saved draft"
+  ]
+}
