@@ -1,0 +1,27 @@
+{
+  "kind": "illustrative_acceptance_case",
+  "status": "not_run",
+  "synthetic": true,
+  "production_contract": false,
+  "case_id": "PUB-06",
+  "title": "Reconcile a timeout after an accepted mock effect",
+  "fixture": {
+    "endpoint": "in_memory_mock",
+    "real_recipient": null,
+    "behavior": "Accept one effect and withhold its response"
+  },
+  "expected": {
+    "initial_state": "unresolved",
+    "reconcile_before_retry": true,
+    "accepted_effect_count": 1
+  },
+  "observed": null,
+  "measurements": null,
+  "evidence": [],
+  "decision": null,
+  "limitations": [
+    "No actual execution",
+    "No real service or provider",
+    "Does not qualify any production integration"
+  ]
+}
