@@ -19,6 +19,8 @@ AI tools change quickly. A useful personal platform should make it possible to t
 ## Start here
 
 - **Two-minute overview:** read the diagram below and [three design tradeoffs](docs/reviewer-guide.md).
+- **Follow one task:** read the [worked research walkthrough](docs/research-workflow-walkthrough.md), including failure and recovery paths.
+- **Inspect the engineering:** explore the [architecture deep dive](docs/architecture-deep-dive.md), [desktop-shell decision study](docs/desktop-shell-decision.md) and [acceptance evidence map](docs/acceptance-evidence-map.md).
 - **Technical research:** explore [candidate assessments](docs/candidate-research.md) and the [planned bake-off](docs/evaluation-method.md).
 - **Try the concept:** open the architecture explorer above, switch a mock model route, and inspect the simulated task controls. No installation or API key is needed to read this repository.
 
@@ -48,6 +50,10 @@ flowchart TB
 
 | Document | What it explains |
 |---|---|
+| [Worked research task](docs/research-workflow-walkthrough.md) | Scope, sources, routing, saving and failure handling in one fictional scenario |
+| [Architecture deep dive](docs/architecture-deep-dive.md) | Component ownership, data lifecycle, action boundaries and adapter tradeoffs |
+| [Desktop-shell decision study](docs/desktop-shell-decision.md) | Tauri versus local web/PWA, planned thresholds and decision criteria |
+| [Acceptance evidence map](docs/acceptance-evidence-map.md) | Ten representative requirements mapped to tests and evidence |
 | [Architecture](docs/architecture.md) | Core ownership, adapters and the lifecycle of a task |
 | [Design decisions](docs/design-decisions.md) | Tradeoffs behind local data, model selection and execution controls |
 | [Reviewer guide](docs/reviewer-guide.md) | Concrete examples of requirements, tradeoffs and evidence |
