@@ -29,3 +29,12 @@ That sequence, from requirement to source review to acceptance case, is the main
 | Core implementation | [Roadmap](roadmap.md) | Not started |
 
 The working project contains a 19-document baseline, traceability and foundation tooling. Those private artifacts are summarized rather than reproduced here. See [source notes](source-notes.md) for the limits of the public evidence.
+
+## A deeper review path
+
+1. Read the [worked research task](research-workflow-walkthrough.md) to see how a request becomes scope, source records, actions and an artifact.
+2. Inspect the [ownership boundaries](architecture-deep-dive.md): which responsibilities remain with Abrams when a model or runtime changes?
+3. Read the [desktop-shell decision study](desktop-shell-decision.md) for a concrete unresolved choice with preregistered measurement criteria.
+4. Follow the [acceptance evidence map](acceptance-evidence-map.md) from a requirement to a failure fixture and the evidence needed to pass.
+
+The new examples expose the reasoning in more detail while keeping planned behavior separate from measured results. No candidate winner or production implementation is implied.
