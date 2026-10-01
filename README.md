@@ -4,7 +4,7 @@
 
 Abrams Intelligence is a personal project by **Daniel Abrams** exploring a local-first platform for research, coding, planning and document workflows. The central idea is simple: models and tools should be interchangeable while a person's projects, data and settings remain their own.
 
-[Interactive architecture explorer](https://daniel-abrams-portfolio-lab--danielmabrams.replit.app/architecture) · [Gamma presentation](https://gamma.app/docs/for2zexybupmugn) · [Portfolio](https://theonetruedaniel.github.io/)
+[Interactive architecture explorer](https://theonetruedaniel.github.io/architecture/) · [Gamma presentation](https://gamma.app/docs/for2zexybupmugn) · [Portfolio](https://theonetruedaniel.github.io/)
 
 ## Project status
 
