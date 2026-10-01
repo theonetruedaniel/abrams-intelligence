@@ -2,6 +2,8 @@
 
 ## 2026-10-01
 
+- Corrected Laya timing provenance: later qualification-CLI warm p95 0.546621837 seconds (~0.547), maximum 0.637726800 and cold startup 10.7412; retained the earlier 0.4513-second corpus result as historical and clarified that memory was measured separately, not remeasured by the corrected CLI run.
+
 - Expanded the README with current preparation status, engineering decisions and a short evidence-oriented reading path.
 - Reconciled the full 150-record discovery catalog and 33 later proposed entries, with upstream credits, dates, roles and separate historical alternatives.
 - Added scoped October 1 offline dispatcher evidence and the exact September 29 Laya default-adoption rejection; retained unrun checks and unproven savings.

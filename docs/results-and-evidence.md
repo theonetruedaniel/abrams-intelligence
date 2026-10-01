@@ -29,14 +29,18 @@ Exact evaluated code: [Laya 0.3.20](https://github.com/NandhaKishorM/laya/tree/4
 | At least 60 frozen cases, including 15 consequential | 60 cases; 15 consequential, 5 exceptional | Corpus requirement met |
 | No consequential-floor violations after deterministic policy | 0/20 protected policy violations; nine raw protected under-routes | Offline policy composition passed; no live routing proof |
 | Raw under-routing comparison | 13 raw under-routes against trusted corpus expectations | Failed; not a separately measured natural-language rules classifier |
-| Warm p95 at most 5 seconds | 0.4513 seconds; maximum 0.5016 seconds | Passed on this corpus |
-| Cold ready-frame latency | 10.033 seconds, excluding inventory | Observation, not full end-to-end startup |
-| Classifier memory at most 2 GiB | 2,548,977,664 bytes, approximately 2.37 GiB | Failed; classifier process only, not a process-tree upper bound |
+| Warm p95 at most 5 seconds | Corrected CLI run: 0.546621837 seconds (~0.5466); maximum 0.637726800 seconds (~0.6377) | Passed on this run |
+| Cold ready-frame latency | Corrected CLI run: 10.7412 seconds, excluding inventory and sandbox argument construction | Observation, not full end-to-end startup |
+| Classifier memory at most 2 GiB | Separate earlier measurement: 2,548,977,664 bytes, approximately 2.37 GiB | Failed then; not remeasured by corrected CLI run; classifier process only, not a process-tree upper bound |
 | At least 12 paired development tasks | Not performed because editing admission was unresolved | No success-rate, task-latency or savings claim |
 
 **Decision: default adoption rejected for this exact evaluated candidate.** No production selector pin is installed; deterministic rules remain the fallback. A fast classification did not offset failed quality/memory criteria. The now-observed corpus cannot be reused for tuning and then presented as independent validation. Any future artifact/backend needs a separately justified evaluation.
 
-The timing comes directly from the corpus summary (`warm_p95_seconds = 0.4513049459999934`). A proposed 0.547-second value could not be supported by the inspected primary receipts and is not reported. The overall 27/60 acceptable count must not replace the preregistered ordinary-case denominator of 40.
+Two September 29 timing runs must remain distinct. The earlier `2026-09-29-laya-corpus-results.json` records warm p95 0.451304946 seconds, maximum 0.501580487 seconds and cold ready-frame time 10.0326 seconds. Its nearest-rank p95 is sorted observation 57/60 (`complex-07`). These are historical observations, not the later corrected CLI result.
+
+The later `2026-09-29-selector-cli-results.json` records warm p95 0.546621837 seconds (rounded to ~0.547), maximum 0.637726800 seconds and cold startup 10.7412 seconds. Its nearest-rank p95 is observation 57/60 (`screening-03`); all 60 supervisor warm durations match the evaluation rows. The receipt identifies its timing source as Linux-supervisor monotonic cold-start and warm-request durations. The transport measures lazy launch through the ready frame and subtracts startup from the first request; inventory and sandbox argument construction are excluded. An initial CLI receipt with incorrect constructor-based attribution was retained as invalid timing evidence; it should not be conflated with the earlier corpus run.
+
+Artifact SHA-256 identities: earlier corpus `8ac5e9c50bb45e56669631afac2492100df4d11888b0dfb75d2acd86b54b573d`; corrected CLI `38478329660e7dd23a48b56604baf8bc5b95e36c037d85a6a1d695f427818aa4`. Timing-code changes produced a new evaluation-only runtime digest. The corrected run did not remeasure memory or perform paired development tasks, and did not create a production admission pin. Quality remained 18/40 (45%) and adoption remained false. The overall 27/60 acceptable count must not replace the preregistered ordinary-case denominator of 40.
 
 ## Product acceptance remains planned
 

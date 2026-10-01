@@ -408,7 +408,7 @@ Large local model records are hardware/task-specific: Qwen 4B is the initial con
 
 ## Actually evaluated: Laya development selector
 
-The separate development experiment used [Laya](https://github.com/NandhaKishorM/laya/tree/4066d5d5fbf08b66c6757ddeedbd797bd7655bc0) 0.3.20 and [laya-multilingual](https://huggingface.co/convaiinnovations/laya-multilingual/tree/e4e9ddf21a7b1903b7acffd8814ad4307bf63a67), CPU/isolated Linux runtime. September 29 corpus and resource receipts rejected default adoption for this exact candidate: ordinary acceptable proposals were 18/40 (45%) against at least 90%, and classifier memory exceeded 2 GiB. Rules remain the fallback; no production selector pin is installed. See [measured results and exclusions](results-and-evidence.md). This does not report product-route adoption or reject every Laya artifact/backend.
+The separate development experiment used [Laya](https://github.com/NandhaKishorM/laya/tree/4066d5d5fbf08b66c6757ddeedbd797bd7655bc0) 0.3.20 and [laya-multilingual](https://huggingface.co/convaiinnovations/laya-multilingual/tree/e4e9ddf21a7b1903b7acffd8814ad4307bf63a67), CPU/isolated Linux runtime. September 29 corpus and resource receipts rejected default adoption for this exact candidate: ordinary acceptable proposals were 18/40 (45%) against at least 90%, and classifier memory exceeded 2 GiB. The later corrected qualification CLI repeated the 45% ordinary result and reported ~0.547-second warm p95; memory was measured separately and not remeasured in that run. Rules remain the fallback; no production selector pin is installed. See [measured results and exclusions](results-and-evidence.md). This does not report product-route adoption or reject every Laya artifact/backend.
 
 ## Preserved September 9 assessment
 
