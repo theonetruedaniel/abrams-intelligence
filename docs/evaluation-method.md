@@ -1,6 +1,23 @@
 # Planned bake-off method
 
-A bake-off compares candidates on the same task and records enough evidence to explain the choice. This page summarizes planned evaluations from the working project. Execution has not started. There are no measured scores, winners or validated integrations in this showcase.
+A bake-off compares candidates on the same task and records enough evidence to explain the choice. This page summarizes planned evaluations from the working project. Most product comparisons remain unexecuted. A separate development-selector experiment and selected offline dispatcher tests have existing results, summarized in [results and evidence limits](results-and-evidence.md); they do not establish product adoption.
+
+## Comparison index and qualification lanes
+
+The canonical index distinguishes 15 scheduled bake-offs, ten trigger-only comparisons and two single-candidate qualification lanes. The [full candidate inventory](candidate-research.md) includes later Q-03 through Q-26 intake studies without making unrelated candidates prerequisites for the Core.
+
+| IDs | Comparison |
+| --- | --- |
+| BO-01 / BO-02 | Tauri versus local web/PWA; actual Core placement |
+| BO-03 | Every eligible initial runtime against the same deterministic oracle and at least 20 frozen mock tasks |
+| BO-04 / BO-05 | Local inference runtime/backend, then exact model/task/hardware tier |
+| BO-06 / BO-07 | Full relational/FTS retrieval versus vector/hybrid; graph projection only after passing controls |
+| BO-08 | Managed Playwright control; restricted CDP only for a named gap |
+| BO-09 / BO-14 / BO-15 | Specialist/reviewer, reusable skill and compiled-playbook value |
+| BO-10 | Three interactive desktop concepts; static screenshots cannot decide |
+| BO-11 / BO-12 / BO-13 | Evaluation harness; isolated security-engine value; encrypted backup adapter |
+| BO-T01–BO-T10 | Trigger-only database, workflow, research/lifecycle, document/mobile, vector, remote-route, device-controller and catalog-classifier alternatives |
+| Q-01 / Q-02 | Native-device adapter and Agency catalog qualification; not automatic comparative winners |
 
 ## Separate comparison lanes
 
@@ -37,6 +54,12 @@ These cases summarize the intended checks; they are not an executable suite.
 Measure task completion against expected results, supported-answer quality where relevant, latency, total model/tool cost, memory use and operator corrections. Retrieval studies also need retrieval quality and rebuild/deletion checks. Development studies need valid findings, false positives and review effort. Build-versus-adapt studies need setup time, patch burden and removal/export effort.
 
 Treat prohibited actions and scope violations as disqualifying gates. Speed or answer quality cannot average away an authorization failure. Publish repetitions and uncertainty alongside aggregate results; explain missing measurements.
+
+## Keep research, testing and adoption separate
+
+Store source review, immutable identity/eligibility, execution approval, benchmark outcomes and adoption as different facts. Retain failures and unsupported combinations. Compare requested routes with server acceptance separately from unobserved backend execution. A test double is an oracle, not a production winner. After mock runtime conformance, real-route quality and every proposed production pairing still need relevant evidence and user adoption authority.
+
+The September 4 amendment calls for separate independent implementation and security reviews in fresh contexts, with the same frozen inputs and disclosed limitations. Reviews supply evidence; they cannot grant adoption or publication automatically. No speed, cost or quality score overrides an authority or data-loss failure. [Laya's recorded rejection](results-and-evidence.md) is an example of that separation.
 
 ## Record a decision
 

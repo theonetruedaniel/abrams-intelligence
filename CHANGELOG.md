@@ -1,5 +1,14 @@
 # Documentation changelog
 
+## 2026-10-01
+
+- Expanded the README with current preparation status, engineering decisions and a short evidence-oriented reading path.
+- Reconciled the full 150-record discovery catalog and 33 later proposed entries, with upstream credits, dates, roles and separate historical alternatives.
+- Added scoped October 1 offline dispatcher evidence and the exact September 29 Laya default-adoption rejection; retained unrun checks and unproven savings.
+- Updated evaluation lanes, capability roadmap and source-date precedence without promoting product gates.
+- Corrected the old Replit architecture link to durable GitHub Pages hosting.
+- Published documentation only; no pending source candidate, new license, private working-plan mirror or product release is included.
+
 ## 2026-09-15
 
 - Added a worked research task with a sequence diagram, scope and failure paths.

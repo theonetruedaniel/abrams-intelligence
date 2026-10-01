@@ -1,74 +1,80 @@
 # Abrams Intelligence
 
-### A modular AI platform designed around lasting user control
+A local-first personal AI platform in development, designed so models and tools can change while projects, source records and user controls remain stable.
 
-Abrams Intelligence is a personal project by **Daniel Abrams** exploring a local-first platform for research, coding, planning and document workflows. The central idea is simple: models and tools should be interchangeable while a person's projects, data and settings remain their own.
+I am building Abrams Intelligence for research and learning, coding and creative projects, document work and everyday coordination. Employment preparation is one optional workflow, not the whole product. The engineering question is how to make useful AI components replaceable without giving them ownership of credentials, permissions, budgets or durable task state.
 
-[Interactive architecture explorer](https://theonetruedaniel.github.io/architecture/) · [Gamma presentation](https://gamma.app/docs/for2zexybupmugn) · [Portfolio](https://theonetruedaniel.github.io/)
+[Architecture explorer](https://theonetruedaniel.github.io/architecture/) · [Presentation](https://gamma.app/docs/for2zexybupmugn) · [Portfolio](https://theonetruedaniel.github.io/)
 
-## Project status
+## Current progress — October 1, 2026
 
-**Architecture and foundations — September 2026.** The working project has a 19-document architecture baseline, requirements traceability, decision records, integration evaluation criteria, a phased roadmap, and tooling for inventory and artifact/readiness checks. The core application implementation has not started.
+| Area | What exists | Limit |
+| --- | --- | --- |
+| Architecture | Preserved 19-document baseline, requirements, decision records and comparison criteria | Design does not establish implemented behavior |
+| Host/build preparation | Scoped attended synthetic readiness; native-tool and locked-source intake evidence | Broader workloads and current build admission remain gated |
+| Product Core and desktop | Draft protocol/oracle specifications and Tauri/PWA comparison plan | No running Core, desktop candidate or BO-01/BO-02 result |
+| Developer dispatcher | Existing offline routing/lifecycle tooling; October 1 isolated selected suite passed 88 tests and four preview checks | Source remains outside this showcase; synthetic checks do not admit live editing |
+| Laya development selector | September 29 frozen-corpus/resource experiment | Exact evaluated default rejected: 45% ordinary acceptable proposals versus 90% required, plus memory failure |
+| Public demonstrations | Working architecture explorer and synthetic walkthroughs | Simulated behavior; no live integration or executed product recovery proof |
 
-This repository presents a public overview of that design. The interactive explorer is a simulation using mock components and fictional data. It demonstrates intended behavior rather than live provider integrations.
+The product is in **Phase 2 preparation**, not a released personal assistant. The scoped Phase 1 disposition does not imply unrestricted host readiness. Contract freeze, executable/native review, containment and comparison evidence remain necessary before product candidate execution. [Roadmap and gates](docs/roadmap.md) · [Results, measurements and exclusions](docs/results-and-evidence.md).
 
-## The problem
+## A quick reading path
 
-AI tools change quickly. A useful personal platform should make it possible to try a different model, runtime or memory index without rebuilding projects or surrendering control of their data. It should also make consequential actions, usage limits and the state of long-running tasks understandable.
+1. Open the [architecture explorer](https://theonetruedaniel.github.io/architecture/) to inspect the intended control flow. It uses mock components and fictional data.
+2. Follow the [research task walkthrough](docs/research-workflow-walkthrough.md) to see scope, sources, Stop and ambiguous-outcome handling as a design scenario.
+3. Read the [candidate register](docs/candidate-research.md) for every catalog/intake entry, upstream links and researched/planned/tested/rejected/selected distinctions.
+4. Inspect the [evaluation method](docs/evaluation-method.md) and [results](docs/results-and-evidence.md) to separate measured evidence from acceptance plans.
 
-## Start here
+There is no product install command in this public repository. It contains documentation and illustrative JSON; the developer-tool code candidate has a separate scope/ownership/license review. The linked demos are hosted separately.
 
-- **Two-minute overview:** read the diagram below and [three design tradeoffs](docs/reviewer-guide.md).
-- **Follow one task:** read the [worked research walkthrough](docs/research-workflow-walkthrough.md), including failure and recovery paths.
-- **Inspect the engineering:** explore the [architecture deep dive](docs/architecture-deep-dive.md), [desktop-shell decision study](docs/desktop-shell-decision.md) and [acceptance evidence map](docs/acceptance-evidence-map.md).
-- **Technical research:** explore [candidate assessments](docs/candidate-research.md) and the [planned bake-off](docs/evaluation-method.md).
-- **Try the concept:** open the architecture explorer above, switch a mock model route, and inspect the simulated task controls. No installation or API key is needed to read this repository.
-
-The public artifacts are Markdown documents and synthetic JSON examples. There is no runnable Abrams application or product test suite in this showcase. The linked demo is hosted separately; the documents remain useful if that host is unavailable.
-
-## Design at a glance
+## Design decisions
 
 ```mermaid
 flowchart TB
-    UI[Desktop and future companion interfaces] --> CORE[Abrams core]
-    CORE --> DATA[Projects, source records and artifacts]
-    CORE --> CONTROL[Permissions, budgets, workflow state and recovery]
+    UI[Desktop and future companion interfaces] --> CORE[Abrams-owned Core]
+    CORE --> DATA[Canonical projects, source records and artifacts]
+    CORE --> CONTROL[Permissions, budgets, effects, Stop and durable state]
     CORE --> ADAPTERS[Replaceable adapters]
-    ADAPTERS --> MODELS[Local and hosted models]
+    ADAPTERS --> MODELS[Local and hosted model routes]
     ADAPTERS --> RUNTIME[Agent runtimes]
     ADAPTERS --> TOOLS[Tools and services]
-    ADAPTERS --> INDEX[Rebuildable search and memory indexes]
+    ADAPTERS --> INDEX[Rebuildable retrieval and graph projections]
 ```
 
-- **Selectable models:** explicit local or hosted routes, with visible cost and privacy boundaries.
-- **Durable source data:** original records remain separate from summaries, embeddings and caches.
-- **Scoped actions:** tools operate within defined permissions; models cannot grant themselves authority.
-- **Clear controls:** pause, stop, inspect and resume are designed into the workflow.
-- **Replaceable integrations:** external components connect through narrow adapters.
+**Keep authority in one place.** A runtime can propose work; Core must own grants, exact routes, credentials, effect receipts and recovery. This adds adapter work, but makes a runtime replacement less likely to change what a task is allowed to do.
 
-## Explore the design
+**Start with the simpler memory control.** Canonical SQLite records and relational/full-text retrieval come before optional vector or graph projections. Richer retrieval must show a measurable benefit and preserve source revisions, deletion and rebuild behavior.
 
-| Document | What it explains |
-|---|---|
-| [Worked research task](docs/research-workflow-walkthrough.md) | Scope, sources, routing, saving and failure handling in one fictional scenario |
-| [Architecture deep dive](docs/architecture-deep-dive.md) | Component ownership, data lifecycle, action boundaries and adapter tradeoffs |
-| [Desktop-shell decision study](docs/desktop-shell-decision.md) | Tauri versus local web/PWA, planned thresholds and decision criteria |
-| [Acceptance evidence map](docs/acceptance-evidence-map.md) | Ten representative requirements mapped to tests and evidence |
-| [Architecture](docs/architecture.md) | Core ownership, adapters and the lifecycle of a task |
-| [Design decisions](docs/design-decisions.md) | Tradeoffs behind local data, model selection and execution controls |
-| [Reviewer guide](docs/reviewer-guide.md) | Concrete examples of requirements, tradeoffs and evidence |
-| [Candidate research](docs/candidate-research.md) | What LangChain, LangGraph, Mem0, AutoGPT, OpenClaw and Open-SPDD could contribute |
-| [Evaluation method](docs/evaluation-method.md) | Baselines, failure cases and evidence needed before selecting a component |
-| [Roadmap](docs/roadmap.md) | What exists, what is being validated and what comes later |
-| [Illustrative workflow](examples/research-workflow.json) | A synthetic example of explicit scope and task state |
-| [Source and status notes](docs/source-notes.md) | How this public overview relates to the working project |
+**Compare by role.** Tauri versus local web/PWA tests the shell. Runtime conformance is separate from model quality. Workflow ideas, reusable components and whole-product adaptation are separate studies. A popular upstream repository is not automatically an approved dependency.
 
-## My contribution
+**Treat uncertainty as a state.** Requesting cancellation is different from confirming it. A timeout after an external effect needs reconciliation before another attempt. The public walkthrough explains this rule; it does not claim a product recovery test has run.
 
-I define the requirements, prioritize capabilities, evaluate integration choices and review the design against practical workflows. I use AI assistance for research, documentation, prototyping and code development. This project reflects my interest in connecting useful interfaces with clear operational rules and maintainable systems.
+## What the research currently says
 
-## Feedback and reuse
+The register accounts for 150 original discovery entries and 33 later proposed entries, including internal controls and prerequisites. Most external candidates have source research or plans, not benchmark results. No production runtime/model pairing has been adopted.
 
-Research corrections and architecture feedback are welcome through [issues](https://github.com/theonetruedaniel/abrams-intelligence/issues). See [contribution guidance](CONTRIBUTING.md) and the [documentation changelog](CHANGELOG.md). This public showcase currently has no open-source license. Upstream projects retain their own licenses; referencing a candidate does not imply affiliation or integration.
+One measured trade-off is the Laya development selector: its speed did not compensate for failed quality and memory thresholds. The existing deterministic rules remain the fallback. October 1 dispatcher tests demonstrate selected offline routing and lifecycle invariants with fake transports, not model quality, live editing or monetary savings.
 
-**Daniel Abrams** · Atlanta, Georgia · [LinkedIn](https://www.linkedin.com/in/danielmabrams/) · [GitHub](https://github.com/theonetruedaniel)
+## Engineering documents
+
+| Document | What to look for |
+| --- | --- |
+| [Architecture](docs/architecture.md) and [deep dive](docs/architecture-deep-dive.md) | Ownership boundaries and source-data lifecycle |
+| [Design decisions](docs/design-decisions.md) | Local data, selection and execution trade-offs |
+| [Desktop-shell study](docs/desktop-shell-decision.md) | Preregistered Tauri/PWA comparison; no winner yet |
+| [Candidate research](docs/candidate-research.md) | Full inventory, source credits, intended roles and exclusions |
+| [Evaluation method](docs/evaluation-method.md) | Controls, frozen tasks, metrics and decision rules |
+| [Results and evidence](docs/results-and-evidence.md) | Actual selected tests, Laya results and unrun checks |
+| [Acceptance map](docs/acceptance-evidence-map.md) | Illustrative requirements and future proof obligations |
+| [Roadmap](docs/roadmap.md) | Current phase and capability-specific gates |
+| [Source notes](docs/source-notes.md) | Dates, provenance and public/private evidence boundary |
+| [Reviewer guide](docs/reviewer-guide.md) | Questions to use when inspecting the design |
+
+## My contribution and feedback
+
+I define the requirements, prioritize capabilities, evaluate integration choices and review the design against practical workflows. I use AI assistance for research, documentation, prototyping and code development. Upstream authors retain credit for their projects; this showcase does not imply affiliation or an installed integration.
+
+Source-backed corrections and architecture questions are welcome through [issues](https://github.com/theonetruedaniel/abrams-intelligence/issues). See [contribution guidance](CONTRIBUTING.md) and [changelog](CHANGELOG.md). This showcase has no open-source license; publication of these documentation updates does not select a license for the separate code candidate.
+
+**Daniel Abrams** · [LinkedIn](https://www.linkedin.com/in/danielmabrams/) · [GitHub](https://github.com/theonetruedaniel)
