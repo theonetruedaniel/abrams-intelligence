@@ -38,4 +38,4 @@ Compare paired tasks before attributing a benefit to the selector.
 
 Offline unit tests verify controller behavior. They cannot prove model quality,
 host containment, production reliability or business ROI. No bake-off outcome
-is manufactured by this demo, and the interview deadline changes no phase gate.
+is manufactured by this demo, and delivery deadlines change no phase gate.

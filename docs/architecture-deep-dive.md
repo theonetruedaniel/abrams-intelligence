@@ -56,7 +56,7 @@ Runtime conformance and model quality therefore have separate evaluations. The i
 
 The amended roadmap moves through host readiness, controlled shell/runtime experiments, core controls and storage, then useful chat/projects/files and admitted routes. Mission packages and additional interfaces build on the capabilities they actually require.
 
-Employment preparation is the first major mission package. Research, coding, planning and documents remain broader product goals. Optional graph, voice or companion work should not hold up an otherwise qualified smaller capability.
+Mission packages support research, coding, planning and document workflows. Optional graph, voice or companion work should not hold up an otherwise qualified smaller capability.
 
 **Source basis:** August 31 master architecture and subsystem specifications, plus the September 4 delivery amendment. This is a public explanation of design intent, not an implementation diagram or deployment inventory.
 

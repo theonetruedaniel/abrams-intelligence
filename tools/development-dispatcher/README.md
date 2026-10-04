@@ -7,7 +7,7 @@ cancellation and auditable recovery.
 Abrams Intelligence is a general-purpose, local-first personal intelligence
 project. This repository presents one implemented development-tooling slice:
 making task routing explicit and checking its behavior before live use. The
-broader platform and its employment mission remain separately gated work.
+broader platform and its individual workflows remain separately gated work.
 
 The operational question is simple: which work can use a routine route, which
 needs a stronger review, and when should automation stop? This controller makes

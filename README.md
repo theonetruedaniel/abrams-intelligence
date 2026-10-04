@@ -2,7 +2,7 @@
 
 A local-first personal AI platform in development, designed so models and tools can change while projects, source records and user controls remain stable.
 
-I am building Abrams Intelligence for research and learning, coding and creative projects, document work and everyday coordination. Employment preparation is one optional workflow, not the whole product. The engineering question is how to make useful AI components replaceable without giving them ownership of credentials, permissions, budgets or durable task state.
+I am building Abrams Intelligence for research and learning, coding and creative projects, document work and everyday coordination. The engineering question is how to make useful AI components replaceable without giving them ownership of credentials, permissions, budgets or durable task state.
 
 [Run the offline dispatcher](tools/development-dispatcher/README.md) · [Architecture explorer](https://theonetruedaniel.github.io/architecture/) · [Presentation](https://gamma.app/docs/for2zexybupmugn) · [Portfolio](https://theonetruedaniel.github.io/)
 

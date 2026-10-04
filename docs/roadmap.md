@@ -19,9 +19,9 @@ Current candidate execution still requires fresh host/resource/runtime admission
 | C — Architecture experiments | Equivalent Tauri/PWA, runtime mock conformance and Core placement | Frozen contracts, exact dependencies, containment; all eligible initial runtimes accounted for before provisional selection |
 | D — Authority foundations | Canonical records, identities, grants, budgets, effects, Stop and audit | Denied-action/crash/ambiguous-effect checks and minimal synthetic restore |
 | E — Useful personal workspace | Chat, projects/files, simple memory/search, selectable routes and activity | Exact-route quality, production pairing, restart/context and data gates; off-device restore before personal utility |
-| F — Optional employment preparation | Research, faithful documents and tracking | Admitted research/document routes and truthful source-supported results; no submission authority |
+| F — Optional research and document workflows | Research, faithful documents and tracking | Admitted research/document routes and truthful source-supported results; no submission authority |
 | G — Browser workflows | Dedicated-profile observation, fill and separately authorized submission | Synthetic site/account tests, takeover, receipts and no blind ambiguous retry; bounded preparation soak before expansion |
-| H — Broader capabilities | Archive import, coding, skills/plugins, image jobs and interactive UX choice | Each capability's data/route/intake/recovery evidence; independent of employment submission |
+| H — Broader capabilities | Archive import, coding, skills/plugins, image jobs and interactive UX choice | Each capability's data/route/intake/recovery evidence; independent of external submission |
 | I — Optional expansion | 100K retrieval/graph, remaining specialists, voice, companion/device capabilities | Measured value/resources and separate platform/enrollment/revocation scopes |
 | J — Release and evolution | Signed lifecycle, clean-host recovery, incident handling and controlled updates | Included scope individually admitted, applicable security/recovery/soak evidence and explicit release decision |
 
