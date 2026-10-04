@@ -4,20 +4,38 @@ A local-first personal AI platform in development, designed so models and tools 
 
 I am building Abrams Intelligence for research and learning, coding and creative projects, document work and everyday coordination. Employment preparation is one optional workflow, not the whole product. The engineering question is how to make useful AI components replaceable without giving them ownership of credentials, permissions, budgets or durable task state.
 
-[Architecture explorer](https://theonetruedaniel.github.io/architecture/) · [Presentation](https://gamma.app/docs/for2zexybupmugn) · [Portfolio](https://theonetruedaniel.github.io/)
+[Run the offline dispatcher](tools/development-dispatcher/README.md) · [Architecture explorer](https://theonetruedaniel.github.io/architecture/) · [Presentation](https://gamma.app/docs/for2zexybupmugn) · [Portfolio](https://theonetruedaniel.github.io/)
 
-## Current progress — October 1, 2026
+## Current progress — October 4, 2026 (UTC)
+
+The offline developer dispatcher is now published in this repository. [PR #1](https://github.com/theonetruedaniel/abrams-intelligence/pull/1) merged on October 3, 2026 EDT (October 4 UTC). The product Core and desktop remain in preparation.
 
 | Area | What exists | Limit |
 | --- | --- | --- |
 | Architecture | Preserved 19-document baseline, requirements, decision records and comparison criteria | Design does not establish implemented behavior |
 | Host/build preparation | Scoped attended synthetic readiness; native-tool and locked-source intake evidence | Broader workloads and current build admission remain gated |
 | Product Core and desktop | Draft protocol/oracle specifications and Tauri/PWA comparison plan | No running Core, desktop candidate or BO-01/BO-02 result |
-| Developer dispatcher | Existing offline routing/lifecycle tooling; October 1 isolated selected suite passed 88 tests and four preview checks | Source remains outside this showcase; synthetic checks do not admit live editing |
+| Developer dispatcher | Published source, tests and a five-scenario offline demo; 250 default tests discovered, 227 passed and 23 skipped | Synthetic checks do not admit live editing or establish model quality |
 | Laya development selector | September 29 frozen-corpus/resource experiment | Exact evaluated default rejected: 45% ordinary acceptable proposals versus 90% required, plus memory failure |
 | Public demonstrations | Working architecture explorer and synthetic walkthroughs | Simulated behavior; no live integration or executed product recovery proof |
 
 The product is in **Phase 2 preparation**, not a released personal assistant. The scoped Phase 1 disposition does not imply unrestricted host readiness. Contract freeze, executable/native review, containment and comparison evidence remain necessary before product candidate execution. [Roadmap and gates](docs/roadmap.md) · [Results, measurements and exclusions](docs/results-and-evidence.md).
+
+## Run the published component
+
+With Python 3.13 or later, from the repository root:
+
+```powershell
+cd tools/development-dispatcher
+python -m scripts.dispatch.demo
+python -m unittest discover -s tests/dispatch -p test_demo.py -v
+```
+
+The five-scenario demo checks routine routing, consequential review, return to a routine route, an explicit Manual choice and a blocked unavailable Manual route. Expected output is `5/5 checks passed`. These are offline previews using synthetic tasks and a synthetic catalog: every preview reports `dispatched: false`, no model executes a task, and real account usage remains unknown. No package installation, account, API key, model download or WSL session is needed for these two commands. These Codex development presets do not restrict the provider-neutral product design.
+
+October 4 verification for this published source package: **227 tests passed, 23 skipped, zero failures/errors** in the full default dispatcher suite, with the five demo scenarios and three focused demo tests also passing. The 23 skips cover nine Linux-only transport tests, twelve opt-in containment tests and two unavailable symlink-privilege cases. This is dispatcher coverage, not full-platform acceptance or current-build live containment evidence. The October 1 result of 88 selected tests and four preview checks remains separate historical evidence.
+
+[Component walkthrough](docs/development-dispatcher.md) · [Recorded output](tools/development-dispatcher/demo-transcript.txt) · [Verification scope](tools/development-dispatcher/VERIFICATION.md) · [Evaluation matrix](tools/development-dispatcher/EVALUATION.md)
 
 ## A quick reading path
 
@@ -26,7 +44,7 @@ The product is in **Phase 2 preparation**, not a released personal assistant. Th
 3. Read the [candidate register](docs/candidate-research.md) for every catalog/intake entry, upstream links and researched/planned/tested/rejected/selected distinctions.
 4. Inspect the [evaluation method](docs/evaluation-method.md) and [results](docs/results-and-evidence.md) to separate measured evidence from acceptance plans.
 
-There is no product install command in this public repository. It contains documentation and illustrative JSON; the developer-tool code candidate has a separate scope/ownership/license review. The linked demos are hosted separately.
+The repository now contains runnable development tooling alongside architecture documents and illustrative JSON. It does not yet contain an installable personal-assistant product. The architecture explorer remains a separately hosted simulation.
 
 ## Design decisions
 
@@ -54,7 +72,11 @@ flowchart TB
 
 The register accounts for 150 original discovery entries and 33 later proposed entries, including internal controls and prerequisites. Most external candidates have source research or plans, not benchmark results. No production runtime/model pairing has been adopted.
 
-One measured trade-off is the Laya development selector: its speed did not compensate for failed quality and memory thresholds. The existing deterministic rules remain the fallback. October 1 dispatcher tests demonstrate selected offline routing and lifecycle invariants with fake transports, not model quality, live editing or monetary savings.
+One measured trade-off is the Laya development selector: its speed did not compensate for failed quality and memory thresholds. The existing deterministic rules remain the fallback. The published dispatcher tests demonstrate offline routing and lifecycle invariants with synthetic transports. They do not establish model quality, live editing or monetary savings.
+
+## Next work and gates
+
+Current-build direct-tool mediation and exact live qualification remain unresolved for the developer dispatcher. Further local checks must preserve that boundary; passing synthetic tests cannot enable live editing. The product plan still requires protocol/oracle review and contract freeze, executable/native review, current resource admission and containment evidence before the planned shell comparisons. No Tauri/PWA winner or production runtime/model pairing has been selected. [Roadmap and gates](docs/roadmap.md) · [Desktop-shell comparison](docs/desktop-shell-decision.md)
 
 ## Engineering documents
 
@@ -73,8 +95,8 @@ One measured trade-off is the Laya development selector: its speed did not compe
 
 ## My contribution and feedback
 
-I define the requirements, prioritize capabilities, evaluate integration choices and review the design against practical workflows. I use AI assistance for research, documentation, prototyping and code development. Upstream authors retain credit for their projects; this showcase does not imply affiliation or an installed integration.
+I define the requirements, prioritize capabilities, evaluate integration choices and review the design against practical workflows. I use AI assistance for research, documentation, prototyping and code development. Upstream authors retain credit for their projects; this repository does not imply affiliation or an installed integration.
 
-Source-backed corrections and architecture questions are welcome through [issues](https://github.com/theonetruedaniel/abrams-intelligence/issues). See [contribution guidance](CONTRIBUTING.md) and [changelog](CHANGELOG.md). This showcase has no open-source license; publication of these documentation updates does not select a license for the separate code candidate.
+Source-backed corrections and architecture questions are welcome through [issues](https://github.com/theonetruedaniel/abrams-intelligence/issues). See [contribution guidance](CONTRIBUTING.md) and [changelog](CHANGELOG.md). No open-source license has been selected for this repository. Publication of development-tool source does not change upstream licenses or admit live execution.
 
 **Daniel Abrams** · [LinkedIn](https://www.linkedin.com/in/danielmabrams/) · [GitHub](https://github.com/theonetruedaniel)
