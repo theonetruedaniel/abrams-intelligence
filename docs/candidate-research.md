@@ -1,6 +1,8 @@
 # Candidate register and research
 
-Updated October 1, 2026. This is the full discovery/intake inventory behind the public overview, not a list of installed dependencies or completed benchmarks. It accounts for **150 September 4 catalog records plus 33 subsequent proposed records: 183 registered entries**. Entries include individual model/API routes, platform prerequisites, local controls and proposed roles; this is not 183 different upstream repositories. The separate Laya development experiment and Jev reference projects are identified below without inflating that count.
+Updated October 7, 2026. This is the full discovery/intake inventory behind the public overview, not a list of installed dependencies or completed benchmarks. It accounts for **150 September 4 catalog records plus 35 subsequent proposed records: 185 registered entries**. Entries include individual model/API routes, platform prerequisites, local controls and proposed roles; this is not 183 different upstream repositories. The separate Laya development experiment and Jev reference projects are identified below without inflating that count.
+
+Browse the [deduplicated 83-repository catalog](repository-catalog.md) for purposes, architecture fit, verified current links and exact status distinctions. The [progress ledger](progress.md) follows the existing plan order. Seven additional Jev research references are recorded there without increasing the registered-entry count.
 
 ## How to read status
 
@@ -14,10 +16,12 @@ No production runtime/model pairing is adopted by this register. [Results and li
 
 ## Later research and proposed comparisons
 
-These 33 records come from dated intake overlays through October 1. Each still has no benchmark run ID or adoption record and no execution authority. The table links reviewed source snapshots where the intake supplies one. Source screening is separate from planned testing.
+These 35 records come from dated intake overlays through October 5. Each still has no benchmark run ID or adoption record and no execution authority. The table links reviewed source snapshots where the intake supplies one. Source screening is separate from planned testing.
 
 | Record / upstream | Intended contribution and comparison | Evidence date / disposition |
 | --- | --- | --- |
+| `app.open-dot` [source](https://github.com/composio-community/open-dot) | Assistant components and product adaptation; Q-27; E-I by capability. Licensing, Windows and service eligibility remain unresolved. | 2026-10-03; Researched; planned, untested |
+| `agent.prime-agent` [source](https://github.com/PrimeIntellect-ai/prime-agent) | Persistent harness, lifecycle and reviewed learning; Q-28; E/H/J. External containment and Windows lifecycle remain unqualified. | 2026-10-05; Documentation researched; planned, untested |
 | `agent.autogpt-classic` [source](https://github.com/Significant-Gravitas/AutoGPT/tree/98381ab27f733468bfe1f9c4f4942b4b416d9a8b) | classic agent / Forge; exact configuration unresolved; BO-03 | 2026-09-09; Researched; planned, untested |
 | `agent.langchain` [source](https://github.com/langchain-ai/langchain/tree/1611938f49dda48aa069d1fdce429430257488b7) | Python langchain package under libs/langchain_v1; minimal create_agent configuration; BO-03 | 2026-09-09; Researched; planned, untested |
 | `agent.openclaw` [source](https://github.com/openclaw/openclaw) | Explicit isolated runtime/harness configuration. No inherited personal state, credentials, channels, plugins or services. Verify scope, exact model/account/auth route, budget reservation, effects, Stop, canonical data and removal. Whole-product reuse requires an architecture decision defining one authority owner.; BO-03, build-versus-adapt architecture study proposed | 2026-09-09; Researched; planned, untested |

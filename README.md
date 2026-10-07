@@ -8,18 +8,19 @@ I am building Abrams Intelligence for research and learning, coding and creative
 
 ## Current progress — October 4, 2026 (UTC)
 
-The offline developer dispatcher is now published in this repository. [PR #1](https://github.com/theonetruedaniel/abrams-intelligence/pull/1) merged on October 3, 2026 EDT (October 4 UTC). The product Core and desktop remain in preparation.
+The offline developer dispatcher is now published in this repository. [PR #1](https://github.com/theonetruedaniel/abrams-intelligence/pull/1) merged on October 3, 2026 EDT (October 4 UTC). The product Core and desktop remain in preparation. The [progress ledger](docs/progress.md) separates published tooling, the unpublished write-runner candidate and the next unfinished step in the existing plan.
 
 | Area | What exists | Limit |
 | --- | --- | --- |
 | Architecture | Preserved 19-document baseline, requirements, decision records and comparison criteria | Design does not establish implemented behavior |
 | Host/build preparation | Scoped attended synthetic readiness; native-tool and locked-source intake evidence | Broader workloads and current build admission remain gated |
-| Product Core and desktop | Draft protocol/oracle specifications and Tauri/PWA comparison plan | No running Core, desktop candidate or BO-01/BO-02 result |
+| Product Core and desktop | October 1 R3 reviewed specification-input freeze and Tauri/PWA comparison plan | Shared reference implementation and candidate acceptance remain unrun; no production Core selected |
 | Developer dispatcher | Published source, tests and a five-scenario offline demo; 250 default tests discovered, 227 passed and 23 skipped | Synthetic checks do not admit live editing or establish model quality |
+| Synthetic write-runner update | Local reviewed candidate: 238 passed, 23 skipped; nine controller probes and 11 focused tests passed | Separate unpublished update; synthetic receipts do not establish live containment |
 | Laya development selector | September 29 frozen-corpus/resource experiment | Exact evaluated default rejected: 45% ordinary acceptable proposals versus 90% required, plus memory failure |
 | Public demonstrations | Working architecture explorer and synthetic walkthroughs | Simulated behavior; no live integration or executed product recovery proof |
 
-The product is in **Phase 2 preparation**, not a released personal assistant. The scoped Phase 1 disposition does not imply unrestricted host readiness. Contract freeze, executable/native review, containment and comparison evidence remain necessary before product candidate execution. [Roadmap and gates](docs/roadmap.md) · [Results, measurements and exclusions](docs/results-and-evidence.md).
+The product is in **Phase 2 preparation**, not a released personal assistant. The scoped Phase 1 disposition does not imply unrestricted host readiness. The R3 specification-input freeze is recorded. Current resource admission, outstanding executable/native review, containment and the shared reference implementation precede product candidate comparison. [Roadmap and gates](docs/roadmap.md) · [Results, measurements and exclusions](docs/results-and-evidence.md).
 
 ## Run the published component
 
@@ -41,7 +42,7 @@ October 4 verification for this published source package: **227 tests passed, 23
 
 1. Open the [architecture explorer](https://theonetruedaniel.github.io/architecture/) to inspect the intended control flow. It uses mock components and fictional data.
 2. Follow the [research task walkthrough](docs/research-workflow-walkthrough.md) to see scope, sources, Stop and ambiguous-outcome handling as a design scenario.
-3. Read the [candidate register](docs/candidate-research.md) for every catalog/intake entry, upstream links and researched/planned/tested/rejected/selected distinctions.
+3. Browse the [83-repository catalog](docs/repository-catalog.md) for verified links, purposes, architecture fit and current evaluation states. The [full register](docs/candidate-research.md) accounts for 185 entries, including routes, controls and prerequisites.
 4. Inspect the [evaluation method](docs/evaluation-method.md) and [results](docs/results-and-evidence.md) to separate measured evidence from acceptance plans.
 
 The repository now contains runnable development tooling alongside architecture documents and illustrative JSON. It does not yet contain an installable personal-assistant product. The architecture explorer remains a separately hosted simulation.

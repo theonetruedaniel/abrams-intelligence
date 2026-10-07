@@ -1,6 +1,16 @@
 # Results and evidence limits
 
-Updated October 1, 2026. This page reports existing observations; no new candidate experiments were run for this documentation update. Working-project receipts were inspected and summarized without publishing private operational records or the pending source candidate.
+Updated October 7, 2026. This page reports existing observations; no new candidate experiments were run for this documentation update. Private operational records remain unpublished. The developer dispatcher is published; its synthetic write-runner update remains a separate local candidate.
+
+## October 4: published tooling and separate local update
+
+The published dispatcher snapshot recorded **227 passed and 23 skipped** in its full 250-test default suite, plus five passing demo scenarios. See the [published verification](../tools/development-dispatcher/VERIFICATION.md).
+
+A later **unpublished nine-file write-runner candidate** recorded **238 passed and 23 skipped** in its 261-test default suite, all 11 focused tests, nine synthetic controller probes and the same five demo scenarios. These counts refer to different exact snapshots. The candidate preserves completed per-probe receipts before aggregate rewrites; interrupted or malformed reports are incomplete, never passing. Constructed records and verifier receipts do not establish live containment. The skips are nine Linux transport cases, twelve opt-in containment cases and two unavailable symlink-privilege cases.
+
+One October 4 Laya retry stopped at the host-memory guard with termination observed. It produced **no new quality score or memory qualification**. The corrected September 29 result below remains the last completed quality measurement.
+
+The [progress ledger](progress.md) maps these observations to the canonical sequence. The October 1 R3 specification-input freeze is completed review evidence; shared reference implementation, product Core and shell acceptance remain unrun.
 
 ## October 1: offline developer dispatcher
 
