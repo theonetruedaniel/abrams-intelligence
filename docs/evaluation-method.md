@@ -19,6 +19,22 @@ The canonical index distinguishes 15 scheduled bake-offs, ten trigger-only compa
 | BO-T01–BO-T10 | Trigger-only database, workflow, research/lifecycle, document/mobile, vector, remote-route, device-controller and catalog-classifier alternatives |
 | Q-01 / Q-02 | Native-device adapter and Agency catalog qualification; not automatic comparative winners |
 
+## Q-29: Skill optimization with SkillOpt
+
+Added October 7, 2026. **Planned / source researched; no benchmark run or adoption.**
+
+[Microsoft SkillOpt](https://github.com/microsoft/SkillOpt) proposes and evaluates edits to reusable natural-language skills while keeping target model weights fixed. This H/J study complements Q-20 controlled experiments and Q-28 Prime Agent refinement.
+
+| Compare | Evaluate | Decision rule |
+| --- | --- | --- |
+| Unchanged skills, manual revisions and bounded search versus SkillOpt | Correctness on unseen tasks, individual task regressions, user correction effort, skill length, latency and total optimization plus deployment cost | Promote only a reviewed, versioned skill that improves independently checked outcomes and passes critical-case regression checks; retain rollback |
+
+Use synthetic research briefs, personal-knowledge tasks, document creation and household planning. Keep the target model, tools and total budget matched. Reserve an untouched final test set separate from the selection cases repeatedly consulted during optimization.
+
+SkillOpt's gates are configurable; an aggregate improvement can hide regressions. Its optional Sleep workflow is a separate scope: real backends can send session-derived content to providers, and redaction is not guaranteed. Start with synthetic tasks. No transcript harvesting, nightly automation, installation or provider calls are authorized by this plan.
+
+[Reviewed source revision](https://github.com/microsoft/SkillOpt/tree/343db229dbd5ddaf9df6b1d5540d8bcdb2604d5c). Upstream benchmark claims have not been independently reproduced for Abrams.
+
 ## Separate comparison lanes
 
 | Lane | Baseline | Question |
