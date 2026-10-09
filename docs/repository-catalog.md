@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated October 9, 2026. This is a deduplicated map of **85 GitHub repositories** actually recorded in Abrams discovery and research, plus four related model repositories. The underlying register contains **186 entries** (150 frozen catalog records plus 36 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated October 9, 2026. This is a deduplicated map of **86 GitHub repositories** actually recorded in Abrams discovery and research, plus four related model repositories. The underlying register contains **187 entries** (150 frozen catalog records plus 37 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -12,11 +12,11 @@ Updated October 9, 2026. This is a deduplicated map of **85 GitHub repositories*
 - **Selected advisory content:** one pinned design skill is selected; its repository is not adopted as a runtime.
 - **Adopted integration:** an exact accepted product integration. None is claimed in this catalog.
 
-Counts: 65 shortlisted/planned, 18 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
+Counts: 66 shortlisted/planned, 18 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
 
 Coverage is the union of GitHub identities explicitly linked in the September 4 frozen catalog, dated intake overlays through October 9, and the collected research references. Seven September 22 Jev references remain research-only and do not add registration records. Documentation-only technologies, model/API routes and local controls remain in the full register. Transitive dependency trees and every project in an upstream directory are not asserted to be evaluated candidates.
 
-SkillOpt and System Prompts Leaks links were checked on October 9. Existing repository links were checked on October 7 against public GitHub metadata; five redirects were resolved and historical names retained. Link checks establish availability and identity, not an audit of today's code. Historical intake revisions do not become current-build admission pins.
+AI Employees, SkillOpt and System Prompts Leaks links were checked on October 9. Existing repository links were checked on October 7 against public GitHub metadata; five redirects were resolved and historical names retained. Link checks establish availability and identity, not an audit of today's code. Historical intake revisions do not become current-build admission pins.
 
 ## Architecture map
 
@@ -858,6 +858,19 @@ SkillOpt and System Prompts Leaks links were checked on October 9. Existing repo
 
 
 ## Skills and development
+
+<a id="markfulton-ai-employees"></a>
+### AI Employees
+
+[markfulton/ai-employees](https://github.com/markfulton/ai-employees) · **Shortlisted / planned**
+
+- **Purpose:** Reusable role routines, morning briefs, blocker tracking and task handoffs.
+- **Architecture fit:** E/H / Q-30: selected components versus checklist and single-worker controls.
+- **Current status:** Source researched; planned and untested. Business roles are optional adaptations.
+- **Next gate:** Inspect helpers and harness permissions; test schedule recovery, verified outputs and reviewed self-edits.
+- **Evidence:** README and selected documentation screened; no installation, model calls or full audit. Dates: 2026-10-09.
+- **Record IDs:** `workflow.ai-employees`.
+- **Historical intake revision:** `37bfe17d9e0d06e0105eecabfac8335b1bbe07ac`.
 
 <a id="msitarzewski-agency-agents"></a>
 ### Agency Agents

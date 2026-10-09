@@ -42,7 +42,7 @@ October 4 verification for this published source package: **227 tests passed, 23
 
 1. Open the [architecture explorer](https://theonetruedaniel.github.io/architecture/) to inspect the intended control flow. It uses mock components and fictional data.
 2. Follow the [research task walkthrough](docs/research-workflow-walkthrough.md) to see scope, sources, Stop and ambiguous-outcome handling as a design scenario.
-3. Browse the [85-repository catalog](docs/repository-catalog.md) for verified links, purposes, architecture fit and current evaluation states. The [full register](docs/candidate-research.md) accounts for 186 entries, including routes, controls and prerequisites.
+3. Browse the [86-repository catalog](docs/repository-catalog.md) for verified links, purposes, architecture fit and current evaluation states. The [full register](docs/candidate-research.md) accounts for 187 entries, including routes, controls and prerequisites.
 4. Inspect the [evaluation method](docs/evaluation-method.md) and [results](docs/results-and-evidence.md) to separate measured evidence from acceptance plans.
 
 The repository now contains runnable development tooling alongside architecture documents and illustrative JSON. It does not yet contain an installable personal-assistant product. The architecture explorer remains a separately hosted simulation.
@@ -71,7 +71,7 @@ flowchart TB
 
 ## What the research currently says
 
-The register accounts for 150 original discovery entries and 36 later proposed entries, including internal controls and prerequisites. Most external candidates have source research or plans, not benchmark results. No production runtime/model pairing has been adopted.
+The register accounts for 150 original discovery entries and 37 later proposed entries, including internal controls and prerequisites. Most external candidates have source research or plans, not benchmark results. No production runtime/model pairing has been adopted.
 
 One measured trade-off is the Laya development selector: its speed did not compensate for failed quality and memory thresholds. The existing deterministic rules remain the fallback. The published dispatcher tests demonstrate offline routing and lifecycle invariants with synthetic transports. They do not establish model quality, live editing or monetary savings.
 

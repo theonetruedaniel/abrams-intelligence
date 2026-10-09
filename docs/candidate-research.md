@@ -1,8 +1,8 @@
 # Candidate register and research
 
-Updated October 9, 2026. This is the full discovery/intake inventory behind the public overview, not a list of installed dependencies or completed benchmarks. It accounts for **150 September 4 catalog records plus 36 subsequent proposed records: 186 registered entries**. Entries include individual model/API routes, platform prerequisites, local controls and proposed roles; this is not a count of distinct upstream repositories. The separate Laya development experiment and Jev reference projects are identified below without inflating that count.
+Updated October 9, 2026. This is the full discovery/intake inventory behind the public overview, not a list of installed dependencies or completed benchmarks. It accounts for **150 September 4 catalog records plus 37 subsequent proposed records: 187 registered entries**. Entries include individual model/API routes, platform prerequisites, local controls and proposed roles; this is not a count of distinct upstream repositories. The separate Laya development experiment and Jev reference projects are identified below without inflating that count.
 
-Browse the [deduplicated 85-repository catalog](repository-catalog.md) for purposes, architecture fit, verified current links and exact status distinctions. The [progress ledger](progress.md) follows the existing plan order. Seven additional Jev research references are recorded there without increasing the registered-entry count.
+Browse the [deduplicated 86-repository catalog](repository-catalog.md) for purposes, architecture fit, verified current links and exact status distinctions. The [progress ledger](progress.md) follows the existing plan order. Seven additional Jev research references are recorded there without increasing the registered-entry count.
 
 ## How to read status
 
@@ -16,10 +16,11 @@ No production runtime/model pairing is adopted by this register. [Results and li
 
 ## Later research and proposed comparisons
 
-The table includes 36 registered records and one explicitly labeled unregistered prompt reference. The 36 records come from dated intake overlays through October 7. Each still has no benchmark run ID or adoption record and no execution authority. The table links reviewed source snapshots where the intake supplies one. Source screening is separate from planned testing.
+The table includes 37 registered records and one explicitly labeled unregistered prompt reference. The 37 records come from dated intake overlays through October 9. Each still has no benchmark run ID or adoption record and no execution authority. The table links reviewed source snapshots where the intake supplies one. Source screening is separate from planned testing.
 
 | Record / upstream | Intended contribution and comparison | Evidence date / disposition |
 | --- | --- | --- |
+| `workflow.ai-employees` [source](https://github.com/markfulton/ai-employees) | Selected routines, morning briefs and handoffs versus checklist/single-worker controls; Q-30; E/H. Core retains permission enforcement. | 2026-10-09; Source researched; planned, untested |
 | `tool.skillopt` [source](https://github.com/microsoft/SkillOpt) | Skill optimization versus unchanged skills, manual revisions and bounded search; Q-29; H/J. Independent holdouts, regressions and total cost determine value. | 2026-10-07; Source researched; planned, untested |
 | Reference: [System Prompts Leaks](https://github.com/asgeirtj/system_prompts_leaks) | Prompt-design discovery for Q-29/Q-28; authenticity and per-item provenance unverified. Not an additional registered candidate. | 2026-10-09; Collected reference only |
 | `app.open-dot` [source](https://github.com/composio-community/open-dot) | Assistant components and product adaptation; Q-27; E-I by capability. Licensing, Windows and service eligibility remain unresolved. | 2026-10-03; Researched; planned, untested |
