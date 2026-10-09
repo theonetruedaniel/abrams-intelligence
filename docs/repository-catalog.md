@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated October 7, 2026. This is a deduplicated map of **83 GitHub repositories** actually recorded in Abrams discovery and research, plus four related model repositories. The underlying register contains **185 entries** (150 frozen catalog records plus 35 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated October 9, 2026. This is a deduplicated map of **85 GitHub repositories** actually recorded in Abrams discovery and research, plus four related model repositories. The underlying register contains **186 entries** (150 frozen catalog records plus 36 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -12,11 +12,11 @@ Updated October 7, 2026. This is a deduplicated map of **83 GitHub repositories*
 - **Selected advisory content:** one pinned design skill is selected; its repository is not adopted as a runtime.
 - **Adopted integration:** an exact accepted product integration. None is claimed in this catalog.
 
-Counts: 64 shortlisted/planned, 17 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
+Counts: 65 shortlisted/planned, 18 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
 
-Coverage is the union of GitHub identities explicitly linked in the September 4 frozen catalog, dated intake overlays through October 5, and the collected research references. Seven September 22 Jev references remain research-only and do not add registration records. Documentation-only technologies, model/API routes and local controls remain in the full register. Transitive dependency trees and every project in an upstream directory are not asserted to be evaluated candidates.
+Coverage is the union of GitHub identities explicitly linked in the September 4 frozen catalog, dated intake overlays through October 9, and the collected research references. Seven September 22 Jev references remain research-only and do not add registration records. Documentation-only technologies, model/API routes and local controls remain in the full register. Transitive dependency trees and every project in an upstream directory are not asserted to be evaluated candidates.
 
-Repository links were checked on October 7 against public GitHub metadata; five redirects were resolved and historical names retained. Link checks establish availability and identity, not an audit of today's code. Historical intake revisions do not become current-build admission pins.
+SkillOpt and System Prompts Leaks links were checked on October 9. Existing repository links were checked on October 7 against public GitHub metadata; five redirects were resolved and historical names retained. Link checks establish availability and identity, not an audit of today's code. Historical intake revisions do not become current-build admission pins.
 
 ## Architecture map
 
@@ -981,6 +981,31 @@ Repository links were checked on October 7 against public GitHub metadata; five 
 - **Record IDs:** `infra.agent-substrate`.
 - **Historical intake revision:** `74bbfc529ca9b5554d20117c2c78a3aea48b5d55`.
 
+
+<a id="microsoft-skillopt"></a>
+### SkillOpt
+
+[microsoft/SkillOpt](https://github.com/microsoft/SkillOpt) · **Shortlisted / planned**
+
+- **Purpose:** Optimize reusable natural-language skills without changing model weights.
+- **Architecture fit:** H/J / Q-29: compare unchanged skills, manual revisions and bounded search.
+- **Current status:** Source researched; planned and untested. No skill adoption.
+- **Next gate:** Exact backend, independent holdouts, critical regressions, total cost and reviewed promotion.
+- **Evidence:** Documentation screening; no independent benchmark replication or execution. Dates: 2026-10-07.
+- **Record IDs:** `tool.skillopt`.
+- **Historical intake revision:** `343db229dbd5ddaf9df6b1d5540d8bcdb2604d5c`.
+
+<a id="asgeirtj-system-prompts-leaks"></a>
+### System Prompts Leaks
+
+[asgeirtj/system_prompts_leaks](https://github.com/asgeirtj/system_prompts_leaks) · **Collected reference**
+
+- **Purpose:** Prompt-design discovery reference for original, testable instruction variants.
+- **Architecture fit:** Q-29 / Q-28 research support; no separate runtime or evaluation lane.
+- **Current status:** Collected reference; prompt authenticity, completeness and per-item provenance unverified.
+- **Next gate:** Verify relevant sources and compare original Abrams instructions on independent tasks.
+- **Evidence:** README, repository listing and license-header screening; individual prompt bodies not evaluated. Dates: 2026-10-09.
+- **Historical intake revision:** `2d9b8f26c8b711481c19b63f1f62779432ef3768`.
 
 ## Tools and browsing
 

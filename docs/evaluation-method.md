@@ -4,7 +4,7 @@ A bake-off compares candidates on the same task and records enough evidence to e
 
 ## Comparison index and qualification lanes
 
-The canonical index distinguishes 15 scheduled bake-offs, ten trigger-only comparisons and two single-candidate qualification lanes. The [full candidate inventory](candidate-research.md) includes later Q-03 through Q-26 intake studies without making unrelated candidates prerequisites for the Core.
+The canonical index distinguishes 15 scheduled bake-offs, ten trigger-only comparisons and two single-candidate qualification lanes. The [full candidate inventory](candidate-research.md) includes later Q-03 through Q-29 intake studies without making unrelated candidates prerequisites for the Core.
 
 | IDs | Comparison |
 | --- | --- |
@@ -18,22 +18,6 @@ The canonical index distinguishes 15 scheduled bake-offs, ten trigger-only compa
 | BO-11 / BO-12 / BO-13 | Evaluation harness; isolated security-engine value; encrypted backup adapter |
 | BO-T01–BO-T10 | Trigger-only database, workflow, research/lifecycle, document/mobile, vector, remote-route, device-controller and catalog-classifier alternatives |
 | Q-01 / Q-02 | Native-device adapter and Agency catalog qualification; not automatic comparative winners |
-
-## Q-29: Skill optimization with SkillOpt
-
-Added October 7, 2026. **Planned / source researched; no benchmark run or adoption.**
-
-[Microsoft SkillOpt](https://github.com/microsoft/SkillOpt) proposes and evaluates edits to reusable natural-language skills while keeping target model weights fixed. This H/J study complements Q-20 controlled experiments and Q-28 Prime Agent refinement.
-
-| Compare | Evaluate | Decision rule |
-| --- | --- | --- |
-| Unchanged skills, manual revisions and bounded search versus SkillOpt | Correctness on unseen tasks, individual task regressions, user correction effort, skill length, latency and total optimization plus deployment cost | Promote only a reviewed, versioned skill that improves independently checked outcomes and passes critical-case regression checks; retain rollback |
-
-Use synthetic research briefs, personal-knowledge tasks, document creation and household planning. Keep the target model, tools and total budget matched. Reserve an untouched final test set separate from the selection cases repeatedly consulted during optimization.
-
-SkillOpt's gates are configurable; an aggregate improvement can hide regressions. Its optional Sleep workflow is a separate scope: real backends can send session-derived content to providers, and redaction is not guaranteed. Start with synthetic tasks. No transcript harvesting, nightly automation, installation or provider calls are authorized by this plan.
-
-[Reviewed source revision](https://github.com/microsoft/SkillOpt/tree/343db229dbd5ddaf9df6b1d5540d8bcdb2604d5c). Upstream benchmark claims have not been independently reproduced for Abrams.
 
 ## Separate comparison lanes
 
