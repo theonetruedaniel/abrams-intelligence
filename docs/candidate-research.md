@@ -1,8 +1,8 @@
 # Candidate register and research
 
-Updated October 9, 2026. This is the full discovery/intake inventory behind the public overview, not a list of installed dependencies or completed benchmarks. It accounts for **150 September 4 catalog records plus 38 subsequent proposed records: 188 registered entries**. Entries include individual model/API routes, platform prerequisites, local controls and proposed roles; this is not a count of distinct upstream repositories. The separate Laya development experiment and Jev reference projects are identified below without inflating that count.
+Updated October 9, 2026. This is the full discovery/intake inventory behind the public overview, not a list of installed dependencies or completed benchmarks. It accounts for **150 September 4 catalog records plus 43 subsequent proposed records: 193 registered entries**. Entries include individual model/API routes, platform prerequisites, local controls and proposed roles; this is not a count of distinct upstream repositories. The separate Laya development experiment and Jev reference projects are identified below without inflating that count.
 
-Browse the [deduplicated 87-repository catalog](repository-catalog.md) for purposes, architecture fit, verified current links and exact status distinctions. The [progress ledger](progress.md) follows the existing plan order. Seven additional Jev research references are recorded there without increasing the registered-entry count.
+Browse the [deduplicated 92-repository catalog](repository-catalog.md) for purposes, architecture fit, verified current links and exact status distinctions. The [progress ledger](progress.md) follows the existing plan order. Seven additional Jev research references are recorded there without increasing the registered-entry count.
 
 ## How to read status
 
@@ -16,10 +16,15 @@ No production runtime/model pairing is adopted by this register. [Results and li
 
 ## Later research and proposed comparisons
 
-The table includes 38 registered records and one explicitly labeled unregistered prompt reference. The 38 records come from dated intake overlays through October 9. Each still has no benchmark run ID or adoption record and no execution authority. The table links reviewed source snapshots where the intake supplies one. Source screening is separate from planned testing.
+The table includes 43 registered records and one explicitly labeled unregistered prompt reference. The 43 records come from dated intake overlays through October 9. Each still has no benchmark run ID or adoption record and no execution authority. The table links reviewed source snapshots where the intake supplies one. Source screening is separate from planned testing.
 
 | Record / upstream | Intended contribution and comparison | Evidence date / disposition |
 | --- | --- | --- |
+| `proxy.magpie` [source](https://github.com/yetone/magpie) | Local model/provider configuration manager and protocol gateway. Q-32; E/H. Review configuration writes, account terms, secret storage, protocol fidelity, updater provenance and explicit fallback policy. | 2026-10-09; Source researched; planned, untested |
+| `evaluation.ifixai` [source](https://github.com/ifixai-ai/iFixAi) | Adversarial agent auditing with configurable model judges and scorecards. Q-33; H/J. Review fixtures, judge independence, false alarms/missed defects, plugin provisioning, data egress and complete evaluation cost. | 2026-10-09; Source researched; planned, untested |
+| `workflow.orca` [source](https://github.com/stablyai/orca) | Desktop coding-agent supervision with terminals, Git worktrees and a mobile companion. Q-34; H; separate I companion scope. Review native/terminal permissions, worktree recovery, Windows resources and separately scoped mobile/SSH authorization. | 2026-10-09; Source researched; planned, untested |
+| `media.fframes` [source](https://github.com/dmtrKovalenko/fframes) | Rust/SVG motion-video authoring with GPU rendering and frame/audio inspection. Q-35; H. Review Windows FFmpeg/LLVM/Vulkan dependencies, codec licenses, build provenance, render quality and resource limits. | 2026-10-09; Source researched; planned, untested |
+| `retrieval.pageindex` [source](https://github.com/VectifyAI/PageIndex) | Hierarchical document indexing and model-guided retrieval for long documents. Q-36; E/I; BO-06 comparison. Review local/cloud data flows, page citations, OCR/table limits, corpus authorization, indexing/query costs and host resources. | 2026-10-09; Source researched; planned, untested |
 | `memory.hindsight` [source](https://github.com/vectorize-io/hindsight) | Memory extraction, temporal/hybrid recall and derived summaries versus relational/FTS controls; Q-31; E/I. Provenance, corrections/deletion and cost remain to be tested. | 2026-10-09; Source researched; planned, untested |
 | `workflow.ai-employees` [source](https://github.com/markfulton/ai-employees) | Selected routines, morning briefs and handoffs versus checklist/single-worker controls; Q-30; E/H. Core retains permission enforcement. | 2026-10-09; Source researched; planned, untested |
 | `tool.skillopt` [source](https://github.com/microsoft/SkillOpt) | Skill optimization versus unchanged skills, manual revisions and bounded search; Q-29; H/J. Independent holdouts, regressions and total cost determine value. | 2026-10-07; Source researched; planned, untested |

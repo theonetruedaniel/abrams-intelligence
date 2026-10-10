@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated October 9, 2026. This is a deduplicated map of **87 GitHub repositories** actually recorded in Abrams discovery and research, plus four related model repositories. The underlying register contains **188 entries** (150 frozen catalog records plus 38 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated October 9, 2026. This is a deduplicated map of **92 GitHub repositories** actually recorded in Abrams discovery and research, plus four related model repositories. The underlying register contains **193 entries** (150 frozen catalog records plus 43 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -12,11 +12,11 @@ Updated October 9, 2026. This is a deduplicated map of **87 GitHub repositories*
 - **Selected advisory content:** one pinned design skill is selected; its repository is not adopted as a runtime.
 - **Adopted integration:** an exact accepted product integration. None is claimed in this catalog.
 
-Counts: 67 shortlisted/planned, 18 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
+Counts: 72 shortlisted/planned, 18 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
 
 Coverage is the union of GitHub identities explicitly linked in the September 4 frozen catalog, dated intake overlays through October 9, and the collected research references. Seven September 22 Jev references remain research-only and do not add registration records. Documentation-only technologies, model/API routes and local controls remain in the full register. Transitive dependency trees and every project in an upstream directory are not asserted to be evaluated candidates.
 
-Hindsight, AI Employees, SkillOpt and System Prompts Leaks links were checked on October 9. Existing repository links were checked on October 7 against public GitHub metadata; five redirects were resolved and historical names retained. Link checks establish availability and identity, not an audit of today's code. Historical intake revisions do not become current-build admission pins.
+Magpie, iFixAi, Orca, fframes, PageIndex, Hindsight, AI Employees, SkillOpt and System Prompts Leaks links were checked on October 9. Existing repository links were checked on October 7 against public GitHub metadata; five redirects were resolved and historical names retained. Link checks establish availability and identity, not an audit of today's code. Historical intake revisions do not become current-build admission pins.
 
 ## Architecture map
 
@@ -488,6 +488,19 @@ Hindsight, AI Employees, SkillOpt and System Prompts Leaks links were checked on
 
 ## Interface and media
 
+<a id="dmtrkovalenko-fframes"></a>
+### fframes
+
+[dmtrKovalenko/fframes](https://github.com/dmtrKovalenko/fframes) · **Shortlisted / planned**
+
+- **Purpose:** Rust/SVG motion-video authoring with GPU rendering and frame/audio inspection.
+- **Architecture fit:** H / Q-35: optional media artifact pipeline versus ordinary FFmpeg/template workflows.
+- **Current status:** README and repository metadata researched; planned and untested. Admit each render as a bounded artifact job; preserve asset provenance, output review, budgets and Stop.
+- **Next gate:** Review Windows FFmpeg/LLVM/Vulkan dependencies, codec licenses, build provenance, render quality and resource limits.
+- **Evidence:** Pinned README and public repository metadata screened; no execution, benchmark replication or full audit. Dates: 2026-10-09.
+- **Record IDs:** `media.fframes`.
+- **Historical intake revision:** `e2b552892c0373a5c8dc79de9280a3289670f27b`.
+
 <a id="agentsystemlabs-agent-office"></a>
 ### Agent Office
 
@@ -580,6 +593,19 @@ Hindsight, AI Employees, SkillOpt and System Prompts Leaks links were checked on
 
 ## Memory and research
 
+<a id="vectifyai-pageindex"></a>
+### PageIndex
+
+[VectifyAI/PageIndex](https://github.com/VectifyAI/PageIndex) · **Shortlisted / planned**
+
+- **Purpose:** Hierarchical document indexing and model-guided retrieval for long documents.
+- **Architecture fit:** E/I / Q-36 alongside BO-06: compare with FTS, hybrid retrieval and direct-document controls using matched answer models.
+- **Current status:** README and repository metadata researched; planned and untested. Document trees and summaries are derived; Core owns canonical files, document grants, corrections, deletion, credentials and budgets.
+- **Next gate:** Review local/cloud data flows, page citations, OCR/table limits, corpus authorization, indexing/query costs and host resources.
+- **Evidence:** Pinned README and public repository metadata screened; no execution, benchmark replication or full audit. Dates: 2026-10-09.
+- **Record IDs:** `retrieval.pageindex`.
+- **Historical intake revision:** `1a060dfc5c512ece03aeaa9cb80d76dbb5358bdf`.
+
 <a id="vectorize-io-hindsight"></a>
 ### Hindsight
 
@@ -644,6 +670,19 @@ Hindsight, AI Employees, SkillOpt and System Prompts Leaks links were checked on
 
 
 ## Models and inference
+
+<a id="yetone-magpie"></a>
+### Magpie
+
+[yetone/magpie](https://github.com/yetone/magpie) · **Shortlisted / planned**
+
+- **Purpose:** Local model/provider configuration manager and protocol gateway.
+- **Architecture fit:** E/H / Q-32: compare with direct provider adapters and eligible Q-05 9Router controls.
+- **Current status:** README and repository metadata researched; planned and untested. Core owns exact routes, manual pins, credentials, budgets and egress; automatic account/model fallback requires explicit admission.
+- **Next gate:** Review configuration writes, account terms, secret storage, protocol fidelity, updater provenance and explicit fallback policy.
+- **Evidence:** Pinned README and public repository metadata screened; no execution, benchmark replication or full audit. Dates: 2026-10-09.
+- **Record IDs:** `proxy.magpie`.
+- **Historical intake revision:** `62d7cd7be305c6e0cc58ba8ad2604f2bb555d749`.
 
 <a id="decolua-9router"></a>
 ### 9Router
@@ -831,6 +870,19 @@ Hindsight, AI Employees, SkillOpt and System Prompts Leaks links were checked on
 
 ## Safety and recovery
 
+<a id="ifixai-ai-ifixai"></a>
+### iFixAi
+
+[ifixai-ai/iFixAi](https://github.com/ifixai-ai/iFixAi) · **Shortlisted / planned**
+
+- **Purpose:** Adversarial agent auditing with configurable model judges and scorecards.
+- **Architecture fit:** H/J / Q-33: supplementary audit evidence beside deterministic checks and independent human labels.
+- **Current status:** README and repository metadata researched; planned and untested. Model judges remain advisory; audit scores cannot authorize effects, certify containment or replace required acceptance evidence.
+- **Next gate:** Review fixtures, judge independence, false alarms/missed defects, plugin provisioning, data egress and complete evaluation cost.
+- **Evidence:** Pinned README and public repository metadata screened; no execution, benchmark replication or full audit. Dates: 2026-10-09.
+- **Record IDs:** `evaluation.ifixai`.
+- **Historical intake revision:** `bef9c5eeb96fd255d83ee00a2930c4d19a329f6c`.
+
 <a id="purpleailab-decepticon"></a>
 ### Decepticon
 
@@ -871,6 +923,19 @@ Hindsight, AI Employees, SkillOpt and System Prompts Leaks links were checked on
 
 
 ## Skills and development
+
+<a id="stablyai-orca"></a>
+### Orca
+
+[stablyai/orca](https://github.com/stablyai/orca) · **Shortlisted / planned**
+
+- **Purpose:** Desktop coding-agent supervision with terminals, Git worktrees and a mobile companion.
+- **Architecture fit:** H / Q-34: compare development supervision with a plain dashboard, terminals and Q-23 Agent Office.
+- **Current status:** README and repository metadata researched; planned and untested. Worktrees separate files but do not enforce security isolation; Core retains execution grants, Stop and aggregate budgets.
+- **Next gate:** Review native/terminal permissions, worktree recovery, Windows resources and separately scoped mobile/SSH authorization.
+- **Evidence:** Pinned README and public repository metadata screened; no execution, benchmark replication or full audit. Dates: 2026-10-09.
+- **Record IDs:** `workflow.orca`.
+- **Historical intake revision:** `280ef3c6f3e100c3d54503832342c4d51fe84385`.
 
 <a id="markfulton-ai-employees"></a>
 ### AI Employees
