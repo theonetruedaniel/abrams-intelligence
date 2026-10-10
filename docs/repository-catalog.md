@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated October 9, 2026. This is a deduplicated map of **86 GitHub repositories** actually recorded in Abrams discovery and research, plus four related model repositories. The underlying register contains **187 entries** (150 frozen catalog records plus 37 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated October 9, 2026. This is a deduplicated map of **87 GitHub repositories** actually recorded in Abrams discovery and research, plus four related model repositories. The underlying register contains **188 entries** (150 frozen catalog records plus 38 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -12,11 +12,11 @@ Updated October 9, 2026. This is a deduplicated map of **86 GitHub repositories*
 - **Selected advisory content:** one pinned design skill is selected; its repository is not adopted as a runtime.
 - **Adopted integration:** an exact accepted product integration. None is claimed in this catalog.
 
-Counts: 66 shortlisted/planned, 18 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
+Counts: 67 shortlisted/planned, 18 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
 
 Coverage is the union of GitHub identities explicitly linked in the September 4 frozen catalog, dated intake overlays through October 9, and the collected research references. Seven September 22 Jev references remain research-only and do not add registration records. Documentation-only technologies, model/API routes and local controls remain in the full register. Transitive dependency trees and every project in an upstream directory are not asserted to be evaluated candidates.
 
-AI Employees, SkillOpt and System Prompts Leaks links were checked on October 9. Existing repository links were checked on October 7 against public GitHub metadata; five redirects were resolved and historical names retained. Link checks establish availability and identity, not an audit of today's code. Historical intake revisions do not become current-build admission pins.
+Hindsight, AI Employees, SkillOpt and System Prompts Leaks links were checked on October 9. Existing repository links were checked on October 7 against public GitHub metadata; five redirects were resolved and historical names retained. Link checks establish availability and identity, not an audit of today's code. Historical intake revisions do not become current-build admission pins.
 
 ## Architecture map
 
@@ -579,6 +579,19 @@ AI Employees, SkillOpt and System Prompts Leaks links were checked on October 9.
 
 
 ## Memory and research
+
+<a id="vectorize-io-hindsight"></a>
+### Hindsight
+
+[vectorize-io/hindsight](https://github.com/vectorize-io/hindsight) · **Shortlisted / planned**
+
+- **Purpose:** Memory extraction, temporal/hybrid recall and evidence-linked observations and knowledge pages.
+- **Architecture fit:** E/I / Q-31 alongside BO-06/BO-07: compare with relational/FTS and eligible hybrid controls.
+- **Current status:** Source researched; planned and untested. Canonical sources remain under Abrams Core.
+- **Next gate:** Review provenance, correction/deletion, bank authorization, exact backends, total cost and resources.
+- **Evidence:** README, license header and repository tree screened; no independent replication or execution. Dates: 2026-10-09.
+- **Record IDs:** `memory.hindsight`.
+- **Historical intake revision:** `44d5340148fd47efb34e184d61f87ab5e2d8d1e2`.
 
 <a id="jordan-gibbs-hyperresearch"></a>
 ### HyperResearch
