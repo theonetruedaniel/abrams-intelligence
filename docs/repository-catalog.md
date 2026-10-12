@@ -929,10 +929,10 @@ REA was checked on October 12. Invisible Playwright was checked on October 10. M
 
 [morluto/rea](https://github.com/morluto/rea) · **Shortlisted / planned**
 
-- **Purpose:** CLI/MCP analysis of application artifacts, binaries and observed runtime behavior.
-- **Architecture fit:** H/J / Q-38: optional development and interoperability investigation versus direct static-analysis tools and source-first inspection.
-- **Current status:** Source researched; optional/conditional investigation, planned and untested. Static parsing, provider launches and runtime/device capture require distinct scopes.
-- **Next gate:** Review exact npm/main/provider versions, dependencies and licenses, Windows scope, parser isolation, evidence fidelity, data egress and cleanup.
+- **Purpose:** CLI/MCP artifact analysis and investigation of integration points for app-repository candidates.
+- **Architecture fit:** H/J / Q-38: optional artifact/interoperability study and bake-off integration aid; compare source-first/direct-tool controls and independently verified adapter outcomes.
+- **Current status:** Source researched; planned and untested. Scope includes integration maps, behavior gaps and adaptation effort; benchmark acceptance remains with the harness.
+- **Next gate:** Review exact tool/provider/host scopes, licenses, isolation and egress; verify integration maps, effort estimates and resulting adapters with independent tests.
 - **Evidence:** Pinned README, package metadata, security policy and Windows Ghidra P0 documentation screened; no execution or full audit. Dates: 2026-10-12.
 - **Record IDs:** `tool.rea`.
 - **Historical intake revision:** `0043d9b134c0a353e8bf85c0bde4492275f1f720`.
