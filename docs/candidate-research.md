@@ -1,8 +1,8 @@
 # Candidate register and research
 
-Updated October 10, 2026. This is the full discovery/intake inventory behind the public overview, not a list of installed dependencies or completed benchmarks. It accounts for **150 September 4 catalog records plus 44 subsequent proposed records: 194 registered entries**. Entries include individual model/API routes, platform prerequisites, local controls and proposed roles; this is not a count of distinct upstream repositories. The separate Laya development experiment and Jev reference projects are identified below without inflating that count.
+Updated October 12, 2026. This is the full discovery/intake inventory behind the public overview, not a list of installed dependencies or completed benchmarks. It accounts for **150 September 4 catalog records plus 45 subsequent proposed records: 195 registered entries**. Entries include individual model/API routes, platform prerequisites, local controls and proposed roles; this is not a count of distinct upstream repositories. The separate Laya development experiment and Jev reference projects are identified below without inflating that count.
 
-Browse the [deduplicated 93-repository catalog](repository-catalog.md) for purposes, architecture fit, verified current links and exact status distinctions. The [progress ledger](progress.md) follows the existing plan order. Seven additional Jev research references are recorded there without increasing the registered-entry count.
+Browse the [deduplicated 94-repository catalog](repository-catalog.md) for purposes, architecture fit, verified current links and exact status distinctions. The [progress ledger](progress.md) follows the existing plan order. Seven additional Jev research references are recorded there without increasing the registered-entry count.
 
 ## How to read status
 
@@ -16,10 +16,11 @@ No production runtime/model pairing is adopted by this register. [Results and li
 
 ## Later research and proposed comparisons
 
-The table includes 44 registered records and one explicitly labeled unregistered prompt reference. The 44 records come from dated intake overlays through October 10. Each still has no benchmark run ID or adoption record and no execution authority. The table links reviewed source snapshots where the intake supplies one. Source screening is separate from planned testing.
+The table includes 45 registered records and one explicitly labeled unregistered prompt reference. The 45 records come from dated intake overlays through October 12. Each still has no benchmark run ID or adoption record and no execution authority. The table links reviewed source snapshots where the intake supplies one. Source screening is separate from planned testing.
 
 | Record / upstream | Intended contribution and comparison | Evidence date / disposition |
 | --- | --- | --- |
+| `tool.rea` [source](https://github.com/morluto/rea) | Optional supplied-artifact/interoperability investigation versus direct tools and source-first inspection; Q-38; H/J. Exact provider/host scope, evidence, parsing isolation and model egress require qualification. | 2026-10-12; Source researched; planned, untested |
 | `browser.invisible-playwright` [source](https://github.com/feder-cr/invisible_playwright) | Optional Playwright-style Firefox engine versus stock browser controls; Q-37; H. API/evidence exclusions, browser provenance, Windows resources and session isolation require qualification. | 2026-10-10; Source researched; planned, untested |
 | `proxy.magpie` [source](https://github.com/yetone/magpie) | Local model/provider configuration manager and protocol gateway. Q-32; E/H. Review configuration writes, account terms, secret storage, protocol fidelity, updater provenance and explicit fallback policy. | 2026-10-09; Source researched; planned, untested |
 | `evaluation.ifixai` [source](https://github.com/ifixai-ai/iFixAi) | Adversarial agent auditing with configurable model judges and scorecards. Q-33; H/J. Review fixtures, judge independence, false alarms/missed defects, plugin provisioning, data egress and complete evaluation cost. | 2026-10-09; Source researched; planned, untested |

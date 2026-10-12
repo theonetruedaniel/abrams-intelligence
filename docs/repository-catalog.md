@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated October 10, 2026. This is a deduplicated map of **93 GitHub repositories** actually recorded in Abrams discovery and research, plus four related model repositories. The underlying register contains **194 entries** (150 frozen catalog records plus 44 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated October 12, 2026. This is a deduplicated map of **94 GitHub repositories** actually recorded in Abrams discovery and research, plus four related model repositories. The underlying register contains **195 entries** (150 frozen catalog records plus 45 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -12,11 +12,11 @@ Updated October 10, 2026. This is a deduplicated map of **93 GitHub repositories
 - **Selected advisory content:** one pinned design skill is selected; its repository is not adopted as a runtime.
 - **Adopted integration:** an exact accepted product integration. None is claimed in this catalog.
 
-Counts: 73 shortlisted/planned, 18 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
+Counts: 74 shortlisted/planned, 18 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
 
-Coverage is the union of GitHub identities explicitly linked in the September 4 frozen catalog, dated intake overlays through October 10, and the collected research references. Seven September 22 Jev references remain research-only and do not add registration records. Documentation-only technologies, model/API routes and local controls remain in the full register. Transitive dependency trees and every project in an upstream directory are not asserted to be evaluated candidates.
+Coverage is the union of GitHub identities explicitly linked in the September 4 frozen catalog, dated intake overlays through October 12, and the collected research references. Seven September 22 Jev references remain research-only and do not add registration records. Documentation-only technologies, model/API routes and local controls remain in the full register. Transitive dependency trees and every project in an upstream directory are not asserted to be evaluated candidates.
 
-Invisible Playwright was checked on October 10. Magpie, iFixAi, Orca, fframes, PageIndex, Hindsight, AI Employees, SkillOpt and System Prompts Leaks links were checked on October 9. Existing repository links were checked on October 7 against public GitHub metadata; five redirects were resolved and historical names retained. Link checks establish availability and identity, not an audit of today's code. Historical intake revisions do not become current-build admission pins.
+REA was checked on October 12. Invisible Playwright was checked on October 10. Magpie, iFixAi, Orca, fframes, PageIndex, Hindsight, AI Employees, SkillOpt and System Prompts Leaks links were checked on October 9. Existing repository links were checked on October 7 against public GitHub metadata; five redirects were resolved and historical names retained. Link checks establish availability and identity, not an audit of today's code. Historical intake revisions do not become current-build admission pins.
 
 ## Architecture map
 
@@ -923,6 +923,19 @@ Invisible Playwright was checked on October 10. Magpie, iFixAi, Orca, fframes, P
 
 
 ## Skills and development
+
+<a id="morluto-rea"></a>
+### REA
+
+[morluto/rea](https://github.com/morluto/rea) · **Shortlisted / planned**
+
+- **Purpose:** CLI/MCP analysis of application artifacts, binaries and observed runtime behavior.
+- **Architecture fit:** H/J / Q-38: optional development and interoperability investigation versus direct static-analysis tools and source-first inspection.
+- **Current status:** Source researched; optional/conditional investigation, planned and untested. Static parsing, provider launches and runtime/device capture require distinct scopes.
+- **Next gate:** Review exact npm/main/provider versions, dependencies and licenses, Windows scope, parser isolation, evidence fidelity, data egress and cleanup.
+- **Evidence:** Pinned README, package metadata, security policy and Windows Ghidra P0 documentation screened; no execution or full audit. Dates: 2026-10-12.
+- **Record IDs:** `tool.rea`.
+- **Historical intake revision:** `0043d9b134c0a353e8bf85c0bde4492275f1f720`.
 
 <a id="stablyai-orca"></a>
 ### Orca
