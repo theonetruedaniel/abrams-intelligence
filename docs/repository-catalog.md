@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated October 12, 2026. This is a deduplicated map of **94 GitHub repositories** actually recorded in Abrams discovery and research, plus four related model repositories. The underlying register contains **195 entries** (150 frozen catalog records plus 45 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated October 13, 2026. This is a deduplicated map of **95 GitHub repositories** actually recorded in Abrams discovery and research, plus four related model repositories. The underlying register contains **196 entries** (150 frozen catalog records plus 46 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -12,11 +12,11 @@ Updated October 12, 2026. This is a deduplicated map of **94 GitHub repositories
 - **Selected advisory content:** one pinned design skill is selected; its repository is not adopted as a runtime.
 - **Adopted integration:** an exact accepted product integration. None is claimed in this catalog.
 
-Counts: 74 shortlisted/planned, 18 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
+Counts: 75 shortlisted/planned, 18 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
 
-Coverage is the union of GitHub identities explicitly linked in the September 4 frozen catalog, dated intake overlays through October 12, and the collected research references. Seven September 22 Jev references remain research-only and do not add registration records. Documentation-only technologies, model/API routes and local controls remain in the full register. Transitive dependency trees and every project in an upstream directory are not asserted to be evaluated candidates.
+Coverage is the union of GitHub identities explicitly linked in the September 4 frozen catalog, dated intake overlays through October 13, and the collected research references. Seven September 22 Jev references remain research-only and do not add registration records. Documentation-only technologies, model/API routes and local controls remain in the full register. Transitive dependency trees and every project in an upstream directory are not asserted to be evaluated candidates.
 
-REA was checked on October 12. Invisible Playwright was checked on October 10. Magpie, iFixAi, Orca, fframes, PageIndex, Hindsight, AI Employees, SkillOpt and System Prompts Leaks links were checked on October 9. Existing repository links were checked on October 7 against public GitHub metadata; five redirects were resolved and historical names retained. Link checks establish availability and identity, not an audit of today's code. Historical intake revisions do not become current-build admission pins.
+LibreChat was checked on October 13. REA was checked on October 12. Invisible Playwright was checked on October 10. Magpie, iFixAi, Orca, fframes, PageIndex, Hindsight, AI Employees, SkillOpt and System Prompts Leaks links were checked on October 9. Existing repository links were checked on October 7 against public GitHub metadata; five redirects were resolved and historical names retained. Link checks establish availability and identity, not an audit of today's code. Historical intake revisions do not become current-build admission pins.
 
 ## Architecture map
 
@@ -487,6 +487,19 @@ REA was checked on October 12. Invisible Playwright was checked on October 10. M
 
 
 ## Interface and media
+
+<a id="librechat-ai-librechat"></a>
+### LibreChat
+
+[LibreChat-AI/LibreChat](https://github.com/LibreChat-AI/LibreChat) · **Shortlisted / planned**
+
+- **Purpose:** Self-hosted multi-provider chat and agent interface with files, tools and artifacts.
+- **Architecture fit:** H / Q-39: compare selected interface/components; separate E-I build-versus-adapt study with Abrams and eligible assistant candidates.
+- **Current status:** Source researched; interface/component, app-adaptation and evaluation-interface studies planned and untested. Core authority and independent harness evidence remain required.
+- **Next gate:** Review exact app/service/image identities, Windows resources, grants, data/credential flows, all-child cancellation, export/recovery and adaptation effort.
+- **Evidence:** Pinned README, package metadata, Compose definition and security policy screened; no execution or full audit. Dates: 2026-10-13.
+- **Record IDs:** `interface.librechat`.
+- **Historical intake revision:** `e1dfc10449ff713faffacd60273fddcfe2c0a698`.
 
 <a id="dmtrkovalenko-fframes"></a>
 ### fframes
