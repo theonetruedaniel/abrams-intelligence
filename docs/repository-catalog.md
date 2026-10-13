@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated October 13, 2026. This is a deduplicated map of **95 GitHub repositories** actually recorded in Abrams discovery and research, plus four related model repositories. The underlying register contains **196 entries** (150 frozen catalog records plus 46 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated October 13, 2026. This is a deduplicated map of **96 GitHub repositories** actually recorded in Abrams discovery and research, plus four related model repositories. The underlying register contains **197 entries** (150 frozen catalog records plus 47 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -12,11 +12,11 @@ Updated October 13, 2026. This is a deduplicated map of **95 GitHub repositories
 - **Selected advisory content:** one pinned design skill is selected; its repository is not adopted as a runtime.
 - **Adopted integration:** an exact accepted product integration. None is claimed in this catalog.
 
-Counts: 75 shortlisted/planned, 18 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
+Counts: 76 shortlisted/planned, 18 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
 
 Coverage is the union of GitHub identities explicitly linked in the September 4 frozen catalog, dated intake overlays through October 13, and the collected research references. Seven September 22 Jev references remain research-only and do not add registration records. Documentation-only technologies, model/API routes and local controls remain in the full register. Transitive dependency trees and every project in an upstream directory are not asserted to be evaluated candidates.
 
-LibreChat was checked on October 13. REA was checked on October 12. Invisible Playwright was checked on October 10. Magpie, iFixAi, Orca, fframes, PageIndex, Hindsight, AI Employees, SkillOpt and System Prompts Leaks links were checked on October 9. Existing repository links were checked on October 7 against public GitHub metadata; five redirects were resolved and historical names retained. Link checks establish availability and identity, not an audit of today's code. Historical intake revisions do not become current-build admission pins.
+Camofox Browser and LibreChat were checked on October 13. REA was checked on October 12. Invisible Playwright was checked on October 10. Magpie, iFixAi, Orca, fframes, PageIndex, Hindsight, AI Employees, SkillOpt and System Prompts Leaks links were checked on October 9. Existing repository links were checked on October 7 against public GitHub metadata; five redirects were resolved and historical names retained. Link checks establish availability and identity, not an audit of today's code. Historical intake revisions do not become current-build admission pins.
 
 ## Architecture map
 
@@ -1125,6 +1125,19 @@ LibreChat was checked on October 13. REA was checked on October 12. Invisible Pl
 - **Historical intake revision:** `2d9b8f26c8b711481c19b63f1f62779432ef3768`.
 
 ## Tools and browsing
+
+<a id="jo-inc-camofox-browser"></a>
+### Camofox Browser
+
+[jo-inc/camofox-browser](https://github.com/jo-inc/camofox-browser) · **Shortlisted / planned**
+
+- **Purpose:** Agent-facing REST/MCP browser server over Camoufox with snapshots, element references and session tools.
+- **Architecture fit:** H / Q-40: browser-adapter comparison with stock Playwright, Q-37 Invisible Playwright and eligible existing browser tools.
+- **Current status:** Source researched; browser-server/adapter comparison planned and untested. API grants, persistence, telemetry and engine qualification remain open.
+- **Next gate:** Review exact server/engine/add-on identities, API authorization, session/trace retention, telemetry/egress, upload/download bounds and Windows resources.
+- **Evidence:** Pinned README, package/plugin metadata and selected postinstall/config source screened; no execution or full audit. Dates: 2026-10-13.
+- **Record IDs:** `browser.camofox`.
+- **Historical intake revision:** `39c82094013480b373df6600d44c7f036f58356e`.
 
 <a id="feder-cr-invisible-playwright"></a>
 ### Invisible Playwright

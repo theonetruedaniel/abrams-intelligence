@@ -1,8 +1,8 @@
 # Candidate register and research
 
-Updated October 13, 2026. This is the full discovery/intake inventory behind the public overview, not a list of installed dependencies or completed benchmarks. It accounts for **150 September 4 catalog records plus 46 subsequent proposed records: 196 registered entries**. Entries include individual model/API routes, platform prerequisites, local controls and proposed roles; this is not a count of distinct upstream repositories. The separate Laya development experiment and Jev reference projects are identified below without inflating that count.
+Updated October 13, 2026. This is the full discovery/intake inventory behind the public overview, not a list of installed dependencies or completed benchmarks. It accounts for **150 September 4 catalog records plus 47 subsequent proposed records: 197 registered entries**. Entries include individual model/API routes, platform prerequisites, local controls and proposed roles; this is not a count of distinct upstream repositories. The separate Laya development experiment and Jev reference projects are identified below without inflating that count.
 
-Browse the [deduplicated 95-repository catalog](repository-catalog.md) for purposes, architecture fit, verified current links and exact status distinctions. The [progress ledger](progress.md) follows the existing plan order. Seven additional Jev research references are recorded there without increasing the registered-entry count.
+Browse the [deduplicated 96-repository catalog](repository-catalog.md) for purposes, architecture fit, verified current links and exact status distinctions. The [progress ledger](progress.md) follows the existing plan order. Seven additional Jev research references are recorded there without increasing the registered-entry count.
 
 ## How to read status
 
@@ -16,10 +16,11 @@ No production runtime/model pairing is adopted by this register. [Results and li
 
 ## Later research and proposed comparisons
 
-The table includes 46 registered records and one explicitly labeled unregistered prompt reference. The 46 records come from dated intake overlays through October 13. Each still has no benchmark run ID or adoption record and no execution authority. The table links reviewed source snapshots where the intake supplies one. Source screening is separate from planned testing.
+The table includes 47 registered records and one explicitly labeled unregistered prompt reference. The 47 records come from dated intake overlays through October 13. Each still has no benchmark run ID or adoption record and no execution authority. The table links reviewed source snapshots where the intake supplies one. Source screening is separate from planned testing.
 
 | Record / upstream | Intended contribution and comparison | Evidence date / disposition |
 | --- | --- | --- |
+| `browser.camofox` [source](https://github.com/jo-inc/camofox-browser) | REST/MCP browser-server comparison with stock Playwright, Q-37 and eligible adapters; Q-40; H. API authorization, persistent state, traces, telemetry/egress and exact engine resources require qualification. | 2026-10-13; Source researched; planned, untested |
 | `interface.librechat` [source](https://github.com/LibreChat-AI/LibreChat) | Interface/component comparison, separate whole-app build-versus-adapt study and scoped bake-off interface; Q-39; H/E-I. Exact service resources, canonical records, grants, all-child Stop and independent outcomes require qualification. | 2026-10-13; Source researched; planned, untested |
 | `tool.rea` [source](https://github.com/morluto/rea) | Artifact/interoperability study and bake-off integration aid: map integration points, investigate behavior gaps and estimate adaptation effort versus source-first/direct-tool controls; Q-38; H/J. Independent adapter tests and benchmark outcomes remain required. | 2026-10-12; Source researched; scope clarified; planned, untested |
 | `browser.invisible-playwright` [source](https://github.com/feder-cr/invisible_playwright) | Optional Playwright-style Firefox engine versus stock browser controls; Q-37; H. API/evidence exclusions, browser provenance, Windows resources and session isolation require qualification. | 2026-10-10; Source researched; planned, untested |
