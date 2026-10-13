@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated October 13, 2026. This is a deduplicated map of **96 GitHub repositories** actually recorded in Abrams discovery and research, plus four related model repositories. The underlying register contains **197 entries** (150 frozen catalog records plus 47 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated October 13, 2026. This is a deduplicated map of **97 GitHub repositories** actually recorded in Abrams discovery and research, plus four related model repositories. The underlying register contains **198 entries** (150 frozen catalog records plus 48 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -12,11 +12,11 @@ Updated October 13, 2026. This is a deduplicated map of **96 GitHub repositories
 - **Selected advisory content:** one pinned design skill is selected; its repository is not adopted as a runtime.
 - **Adopted integration:** an exact accepted product integration. None is claimed in this catalog.
 
-Counts: 76 shortlisted/planned, 18 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
+Counts: 77 shortlisted/planned, 18 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
 
 Coverage is the union of GitHub identities explicitly linked in the September 4 frozen catalog, dated intake overlays through October 13, and the collected research references. Seven September 22 Jev references remain research-only and do not add registration records. Documentation-only technologies, model/API routes and local controls remain in the full register. Transitive dependency trees and every project in an upstream directory are not asserted to be evaluated candidates.
 
-Camofox Browser and LibreChat were checked on October 13. REA was checked on October 12. Invisible Playwright was checked on October 10. Magpie, iFixAi, Orca, fframes, PageIndex, Hindsight, AI Employees, SkillOpt and System Prompts Leaks links were checked on October 9. Existing repository links were checked on October 7 against public GitHub metadata; five redirects were resolved and historical names retained. Link checks establish availability and identity, not an audit of today's code. Historical intake revisions do not become current-build admission pins.
+OpenGrok, Camofox Browser and LibreChat were checked on October 13. REA was checked on October 12. Invisible Playwright was checked on October 10. Magpie, iFixAi, Orca, fframes, PageIndex, Hindsight, AI Employees, SkillOpt and System Prompts Leaks links were checked on October 9. Existing repository links were checked on October 7 against public GitHub metadata; five redirects were resolved and historical names retained. Link checks establish availability and identity, not an audit of today's code. Historical intake revisions do not become current-build admission pins.
 
 ## Architecture map
 
@@ -936,6 +936,19 @@ Camofox Browser and LibreChat were checked on October 13. REA was checked on Oct
 
 
 ## Skills and development
+
+<a id="oracle-opengrok"></a>
+### OpenGrok
+
+[oracle/opengrok](https://github.com/oracle/opengrok) · **Shortlisted / planned**
+
+- **Purpose:** Source-code search, cross-reference navigation and version-history browsing.
+- **Architecture fit:** H/J / Q-41: optional source-investigation aid for bake-off integration maps versus ripgrep, Git and editor navigation; complements Q-38 REA.
+- **Current status:** Source researched; optional source-navigation and integration-map study planned and untested. Setup/resources, access and license review remain open.
+- **Next gate:** Review exact Java/ctags/server artifacts and licenses, pinned-source freshness, authorization, index leakage/deletion, Windows resources and measured investigation value.
+- **Evidence:** Pinned README, license/notice header and Docker guide plus dated setup wiki screened; no execution or full audit. Dates: 2026-10-13.
+- **Record IDs:** `search.opengrok`.
+- **Historical intake revision:** `3ca9d73ebb0ddb5560fbc7631322d29d9fdc2ec3`.
 
 <a id="morluto-rea"></a>
 ### REA
