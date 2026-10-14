@@ -98,6 +98,10 @@ Current-build direct-tool mediation and exact live qualification remain unresolv
 
 I define the requirements, prioritize capabilities, evaluate integration choices and review the design against practical workflows. I use AI assistance for research, documentation, prototyping and code development. Upstream authors retain credit for their projects; this repository does not imply affiliation or an installed integration.
 
-Source-backed corrections and architecture questions are welcome through [issues](https://github.com/theonetruedaniel/abrams-intelligence/issues). See [contribution guidance](CONTRIBUTING.md) and [changelog](CHANGELOG.md). No open-source license has been selected for this repository. Publication of development-tool source does not change upstream licenses or admit live execution.
+Source-backed corrections, reproducible offline-tooling bugs and architecture questions are welcome through [issues](https://github.com/theonetruedaniel/abrams-intelligence/issues). See [contribution guidance](CONTRIBUTING.md) and [changelog](CHANGELOG.md). Publication of development-tool source does not admit live execution.
+
+## License
+
+Abrams-authored source and documentation are available under the [MIT License](LICENSE). Upstream projects, dependencies, model weights and hosted services retain their own licenses and terms; see the [third-party scope note](THIRD_PARTY.md). Catalog references are not adoption or license-clearance decisions.
 
 **Daniel Abrams** · [LinkedIn](https://www.linkedin.com/in/danielmabrams/) · [GitHub](https://github.com/theonetruedaniel)
