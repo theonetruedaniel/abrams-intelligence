@@ -21,9 +21,10 @@ Codex or ChatGPT chats or change their model picker.
 
 ## Run the two-minute demo
 
-Use Python 3.13 or later and run from the repository root:
+Use Python 3.13 or later. From the repository root, enter the component directory:
 
 ```powershell
+cd tools/development-dispatcher
 python -m scripts.dispatch.demo
 python -m unittest discover -s tests/dispatch -p test_demo.py -v
 ```
@@ -36,7 +37,7 @@ for this demo. See [the walkthrough](DEMO.md) and [evaluation matrix](EVALUATION
 The [verification record](VERIFICATION.md) states the tested scope; a
 [recorded transcript](demo-transcript.txt) is available for offline review.
 
-For an individual raw JSON preview and the broader dispatcher suite:
+From that same component directory, run an individual raw JSON preview or the broader dispatcher suite:
 
 ```powershell
 python -m scripts.dispatch preview --manifest tests/dispatch/fixtures/routine.json --catalog tests/dispatch/fixtures/catalog.json
@@ -126,8 +127,13 @@ global configuration editing, or capacity purchase is implemented.
 
 ## Publication status
 
-This is a locally prepared publication candidate. It is not a completed or
-activated release. The verifier and Stop fixes passed independent review, and
-the implementation is integrated into its parent project locally. Complete
-release qualification and GitHub publication remain pending. The export manifest records exact source-file hashes so the
-publication candidate can be compared with the reviewed implementation.
+The experimental offline component was published through
+[PR #1](https://github.com/theonetruedaniel/abrams-intelligence/pull/1), merged
+October 3, 2026 EDT / October 4 UTC. Publication does not make this a completed
+product release or admit live dispatch.
+
+The export manifest is preserved as the historical reviewed export snapshot.
+Its `unpublished_candidate` status describes that snapshot's preparation state,
+not the current GitHub publication state. Later documentation corrections may
+differ from its recorded hashes; do not regenerate the manifest to erase its
+provenance. Live admission and release qualification remain separate.

@@ -1,4 +1,16 @@
-# Documentation changelog
+# Project changelog
+
+## 2026-10-14
+
+- Added the MIT License for Abrams-authored source and documentation, attributed to Daniel Abrams, with a separate note preserving third-party licenses and terms.
+- Updated contribution guidance for the published experimental offline tooling and corrected the component demo's working directory.
+- Corrected the component's stale publication paragraph while preserving its historical export manifest and live-admission limits.
+- Added concise tooling bug-report and pull-request templates. No product release, candidate adoption or CI pass is claimed.
+
+## 2026-10-04 (UTC)
+
+- Published the offline developer dispatcher source, tests and synthetic demo through [PR #1](https://github.com/theonetruedaniel/abrams-intelligence/pull/1), merged October 3 EDT / October 4 UTC.
+- Updated the root README's published-component commands and evidence scope. This was tooling publication, not a personal-assistant release or live-dispatch admission.
 
 ## 2026-10-01
 
@@ -28,4 +40,4 @@
 - Documented the planned comparison method and an unmeasured result-record example.
 - Added contribution guidance and clearer project-status and reuse notes.
 
-These are public documentation changes. They do not mark an application release or completion of candidate testing.
+These entries cover public documentation and experimental tooling. They do not mark an application release or completion of candidate testing.
