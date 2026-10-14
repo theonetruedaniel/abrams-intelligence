@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated October 13, 2026. This is a deduplicated map of **97 GitHub repositories** actually recorded in Abrams discovery and research, plus four related model repositories. The underlying register contains **198 entries** (150 frozen catalog records plus 48 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated October 13, 2026. This is a deduplicated map of **98 GitHub repositories** actually recorded in Abrams discovery and research, plus four related model repositories. The underlying register contains **199 entries** (150 frozen catalog records plus 49 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -12,11 +12,11 @@ Updated October 13, 2026. This is a deduplicated map of **97 GitHub repositories
 - **Selected advisory content:** one pinned design skill is selected; its repository is not adopted as a runtime.
 - **Adopted integration:** an exact accepted product integration. None is claimed in this catalog.
 
-Counts: 77 shortlisted/planned, 18 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
+Counts: 78 shortlisted/planned, 18 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
 
 Coverage is the union of GitHub identities explicitly linked in the September 4 frozen catalog, dated intake overlays through October 13, and the collected research references. Seven September 22 Jev references remain research-only and do not add registration records. Documentation-only technologies, model/API routes and local controls remain in the full register. Transitive dependency trees and every project in an upstream directory are not asserted to be evaluated candidates.
 
-OpenGrok, Camofox Browser and LibreChat were checked on October 13. REA was checked on October 12. Invisible Playwright was checked on October 10. Magpie, iFixAi, Orca, fframes, PageIndex, Hindsight, AI Employees, SkillOpt and System Prompts Leaks links were checked on October 9. Existing repository links were checked on October 7 against public GitHub metadata; five redirects were resolved and historical names retained. Link checks establish availability and identity, not an audit of today's code. Historical intake revisions do not become current-build admission pins.
+PentAGI, OpenGrok, Camofox Browser and LibreChat were checked on October 13. REA was checked on October 12. Invisible Playwright was checked on October 10. Magpie, iFixAi, Orca, fframes, PageIndex, Hindsight, AI Employees, SkillOpt and System Prompts Leaks links were checked on October 9. Existing repository links were checked on October 7 against public GitHub metadata; five redirects were resolved and historical names retained. Link checks establish availability and identity, not an audit of today's code. Historical intake revisions do not become current-build admission pins.
 
 ## Architecture map
 
@@ -882,6 +882,19 @@ OpenGrok, Camofox Browser and LibreChat were checked on October 13. REA was chec
 
 
 ## Safety and recovery
+
+<a id="vxcontrol-pentagi"></a>
+### PentAGI
+
+[vxcontrol/pentagi](https://github.com/vxcontrol/pentagi) · **Shortlisted / planned**
+
+- **Purpose:** Autonomous/assistant-guided penetration-testing orchestration and evidence reporting.
+- **Architecture fit:** J / Q-42: optional security-evaluation aid for isolated app fixtures versus direct scanners, static review and independent manual verification.
+- **Current status:** Source researched; optional isolated-lab security study planned and untested. External containment and independent finding verification remain prerequisites.
+- **Next gate:** Review source/image/tool identities and terms, Docker control privileges, external containment, target/egress limits, all-child Stop, evidence and full resources/cost.
+- **Evidence:** Pinned README, license, EULA introduction and selected Compose fields screened; no execution or full audit. Dates: 2026-10-13.
+- **Record IDs:** `security.pentagi`.
+- **Historical intake revision:** `843dfeb4bfc809c09d1bc5022e567c602d8fc9dd`.
 
 <a id="ifixai-ai-ifixai"></a>
 ### iFixAi
