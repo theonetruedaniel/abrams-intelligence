@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated October 13, 2026. This is a deduplicated map of **98 GitHub repositories** actually recorded in Abrams discovery and research, plus four related model repositories. The underlying register contains **199 entries** (150 frozen catalog records plus 49 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated October 13, 2026. This is a deduplicated map of **99 GitHub repositories** actually recorded in Abrams discovery and research, plus four related model repositories. The underlying register contains **200 entries** (150 frozen catalog records plus 50 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -12,11 +12,11 @@ Updated October 13, 2026. This is a deduplicated map of **98 GitHub repositories
 - **Selected advisory content:** one pinned design skill is selected; its repository is not adopted as a runtime.
 - **Adopted integration:** an exact accepted product integration. None is claimed in this catalog.
 
-Counts: 78 shortlisted/planned, 18 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
+Counts: 79 shortlisted/planned, 18 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
 
 Coverage is the union of GitHub identities explicitly linked in the September 4 frozen catalog, dated intake overlays through October 13, and the collected research references. Seven September 22 Jev references remain research-only and do not add registration records. Documentation-only technologies, model/API routes and local controls remain in the full register. Transitive dependency trees and every project in an upstream directory are not asserted to be evaluated candidates.
 
-PentAGI, OpenGrok, Camofox Browser and LibreChat were checked on October 13. REA was checked on October 12. Invisible Playwright was checked on October 10. Magpie, iFixAi, Orca, fframes, PageIndex, Hindsight, AI Employees, SkillOpt and System Prompts Leaks links were checked on October 9. Existing repository links were checked on October 7 against public GitHub metadata; five redirects were resolved and historical names retained. Link checks establish availability and identity, not an audit of today's code. Historical intake revisions do not become current-build admission pins.
+AirLLM, PentAGI, OpenGrok, Camofox Browser and LibreChat were checked on October 13. REA was checked on October 12. Invisible Playwright was checked on October 10. Magpie, iFixAi, Orca, fframes, PageIndex, Hindsight, AI Employees, SkillOpt and System Prompts Leaks links were checked on October 9. Existing repository links were checked on October 7 against public GitHub metadata; five redirects were resolved and historical names retained. Link checks establish availability and identity, not an audit of today's code. Historical intake revisions do not become current-build admission pins.
 
 ## Architecture map
 
@@ -683,6 +683,19 @@ PentAGI, OpenGrok, Camofox Browser and LibreChat were checked on October 13. REA
 
 
 ## Models and inference
+
+<a id="lyogavin-airllm"></a>
+### AirLLM
+
+[lyogavin/airllm](https://github.com/lyogavin/airllm) · **Shortlisted / planned**
+
+- **Purpose:** Layer-streamed local model execution to reduce resident GPU weight memory.
+- **Architecture fit:** E/G / Q-43 alongside BO-04/BO-05: engine feasibility versus eligible resident/quantized/offload backends; quality and runtime/model pairing stay separate.
+- **Current status:** Source researched; conditional engine-feasibility comparison planned and untested. Low VRAM claims do not establish full resources, latency or pairing admission.
+- **Next gate:** Review engine/model/dependency pins, remote-code trust, Windows/backend compatibility, RAM/VRAM/disk/I/O, latency, correctness, cancellation and cache removal.
+- **Evidence:** Pinned README, package metadata and selected AutoModel/base source excerpts screened; no execution or full audit. Dates: 2026-10-13.
+- **Record IDs:** `inference.airllm`.
+- **Historical intake revision:** `cb807515f640f9489f267adc0c66afb249e90a17`.
 
 <a id="yetone-magpie"></a>
 ### Magpie

@@ -1,8 +1,8 @@
 # Candidate register and research
 
-Updated October 13, 2026. This is the full discovery/intake inventory behind the public overview, not a list of installed dependencies or completed benchmarks. It accounts for **150 September 4 catalog records plus 49 subsequent proposed records: 199 registered entries**. Entries include individual model/API routes, platform prerequisites, local controls and proposed roles; this is not a count of distinct upstream repositories. The separate Laya development experiment and Jev reference projects are identified below without inflating that count.
+Updated October 13, 2026. This is the full discovery/intake inventory behind the public overview, not a list of installed dependencies or completed benchmarks. It accounts for **150 September 4 catalog records plus 50 subsequent proposed records: 200 registered entries**. Entries include individual model/API routes, platform prerequisites, local controls and proposed roles; this is not a count of distinct upstream repositories. The separate Laya development experiment and Jev reference projects are identified below without inflating that count.
 
-Browse the [deduplicated 98-repository catalog](repository-catalog.md) for purposes, architecture fit, verified current links and exact status distinctions. The [progress ledger](progress.md) follows the existing plan order. Seven additional Jev research references are recorded there without increasing the registered-entry count.
+Browse the [deduplicated 99-repository catalog](repository-catalog.md) for purposes, architecture fit, verified current links and exact status distinctions. The [progress ledger](progress.md) follows the existing plan order. Seven additional Jev research references are recorded there without increasing the registered-entry count.
 
 ## How to read status
 
@@ -16,10 +16,11 @@ No production runtime/model pairing is adopted by this register. [Results and li
 
 ## Later research and proposed comparisons
 
-The table includes 49 registered records and one explicitly labeled unregistered prompt reference. The 49 records come from dated intake overlays through October 13. Each still has no benchmark run ID or adoption record and no execution authority. The table links reviewed source snapshots where the intake supplies one. Source screening is separate from planned testing.
+The table includes 50 registered records and one explicitly labeled unregistered prompt reference. The 50 records come from dated intake overlays through October 13. Each still has no benchmark run ID or adoption record and no execution authority. The table links reviewed source snapshots where the intake supplies one. Source screening is separate from planned testing.
 
 | Record / upstream | Intended contribution and comparison | Evidence date / disposition |
 | --- | --- | --- |
+| `inference.airllm` [source](https://github.com/lyogavin/airllm) | Layer-streaming engine feasibility versus matched eligible backends and distinct quantized/smaller-model controls; Q-43; E/G; BO-04/BO-05. Exact code/host/model, full resources, useful latency, correctness and Stop require qualification. | 2026-10-13; Source researched; planned, untested |
 | `security.pentagi` [source](https://github.com/vxcontrol/pentagi) | Optional isolated-lab security evaluation of app fixtures versus direct tools/static review/manual verification; Q-42; J. External containment, exact target/action grants, independent findings, Stop and full costs are prerequisites. | 2026-10-13; Source researched; planned, untested |
 | `search.opengrok` [source](https://github.com/oracle/opengrok) | Source search/navigation and bake-off integration maps versus ripgrep/Git/editor controls; Q-41; H/J. Pinned-source freshness, evidence, licenses, access and full indexing/service resources require qualification. | 2026-10-13; Source researched; planned, untested |
 | `browser.camofox` [source](https://github.com/jo-inc/camofox-browser) | REST/MCP browser-server comparison with stock Playwright, Q-37 and eligible adapters; Q-40; H. API authorization, persistent state, traces, telemetry/egress and exact engine resources require qualification. | 2026-10-13; Source researched; planned, untested |
