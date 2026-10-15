@@ -1,8 +1,14 @@
 # Progress and next steps
 
-Updated October 7, 2026. This page distinguishes published code, locally verified
+Updated October 15, 2026. This page distinguishes published code, locally verified
 work, reviewed specifications and unrun product acceptance. It is an evidence
 snapshot, not a live operational status feed.
+
+## Current local implementation
+
+Abrams Intelligence is a general-purpose, local-first personal intelligence platform in active, AI-assisted development. Local development includes partial shared in-process Core, client and SQLite-backed storage implementation with scoped tests. This work is not yet published as a complete product in this repository. Full integration, product acceptance and Phase 2 completion remain unfinished.
+
+Isolated browser/transport checks provide synthetic component evidence. They do not establish a passing end-to-end real-browser integration. The public dispatcher test snapshots below remain separate historical evidence, not totals for this newer local work.
 
 ## Progress in plan order
 
@@ -10,14 +16,14 @@ snapshot, not a live operational status feed.
 | --- | --- | --- |
 | A: architecture and evaluation foundation | Preserved 19-document baseline; approved amendment; requirement and capability maps; 150-record frozen discovery catalog and source-coverage obligations. Later intake adds 35 proposed records. | New research does not qualify or adopt a candidate. |
 | B: scoped host readiness | Later readiness evidence admits attended, signed-in, AC-powered synthetic development within its fixed resource boundary. Native C/Rust smoke and locked source acquisition are recorded. | Historical readiness is not current headroom or unrestricted workload admission. |
-| C: contracts, shared reference and comparisons | October 1 R3 specification inputs have a recorded freeze after two scoped independent reviews. Historical fixture expectations and corrections are retained. | Shared reference implementation and runtime tests remain unrun. Native/build/containment prerequisites still apply before equivalent Tauri/PWA and runtime comparisons. |
-| D: authority and durable data foundation | Architecture and acceptance criteria are specified. | Product store, grants, broker, budgets, effects, Stop and synthetic restore acceptance remain future work after C. |
+| C: contracts, shared reference and comparisons | October 1 R3 specification inputs have a recorded freeze after two scoped independent reviews. Historical fixture expectations and corrections are retained. | Partial local shared-reference/Core/client implementation and scoped tests exist; full integration and runtime/product acceptance remain incomplete. Native/build/containment prerequisites still apply before equivalent Tauri/PWA and runtime comparisons. |
+| D: authority and durable data foundation | Architecture and acceptance criteria are specified; partial local SQLite-backed storage is implemented. | Complete authority/data integration and acceptance remain unfinished; storage implementation alone does not close D. |
 | E onward: useful capabilities and release | Capability prerequisites and comparison questions are registered. | Exact model routes, real runtime/model pairings, optional integrations and release/recovery evidence remain separately gated. |
 
 The older baseline ledger and later readiness worktree describe different dated
 checkpoints. The later scoped host disposition and R3 freeze supplement that
-history; neither implies that a product Core has run or a production placement
-has been selected.
+history; neither alone establishes product acceptance or a production placement.
+The newer partial local implementation is described above.
 
 ## Developer tooling
 
@@ -67,32 +73,8 @@ work from source screening, planned comparisons and collected references.
 
 ## Next unfinished step
 
-Continue C in the existing order. Do not select a convenient demo or a subset of
-runtimes as a substitute for the plan.
+Continue the existing plan from the partial local implementation. Complete and verify the remaining Core/client/storage integration, then establish the applicable product acceptance evidence. Scoped component tests do not close the full product gates.
 
-1. **Complete shared-reference implementation preflight.** Verify the R3 frozen
-   inputs and existing acquisition receipts, then check current AC/host headroom.
-   Complete the required exact native source/ABI/build-permission review,
-   runtime provenance, capture-lifetime and containment qualification, and the
-   scoped implementation/test plan. Do not repeat source acquisition merely to
-   restart work.
-2. **Implement the shared deterministic reference and runner** against those
-   reviewed protocol/oracle inputs. Exercise actual persistence, stale replies,
-   cancellation, rollback and recovery cases. Fixture shape checks alone do not
-   satisfy these behavior requirements.
-3. **Run the equivalent Tauri/PWA comparison** only when its executable intake,
-   resource and execution requirements pass.
-4. **Qualify every eligible initial runtime against the same oracle**, then use
-   actual runtime/IPC/recovery/packaging observations for the BO-02 production
-   Core decision. Keep blocked candidates visible with reasons.
-5. Build D controls before E model-route and production-pairing admission. Later
-   optional studies retain their capability-specific gates.
+Equivalent Tauri/PWA comparisons, runtime qualification and the production Core decision remain separate unfinished work. Preserve the existing review, resource and execution prerequisites for each comparison. No shell winner or production runtime/model pairing is claimed.
 
-R3 input aggregate SHA-256:
-`07070bc5d03892ae6a6741cf292e56ce34913774369901b3b4a05c8983391745`.
-This is a reviewed specification identity, not executed acceptance evidence.
-
-The immediately useful next work is that bounded preflight and outstanding
-source/contract review. A successful build or bake-off today cannot be promised
-before its resource and executable-review prerequisites pass. This public
-summary exposes no private host inventory, credentials or operating records.
+This page summarizes local development status without publishing private operational records or the unpublished product implementation.

@@ -1,6 +1,12 @@
 # Results and evidence limits
 
-Updated October 7, 2026. This page reports existing observations; no new candidate experiments were run for this documentation update. Private operational records remain unpublished. The developer dispatcher is published; its synthetic write-runner update remains a separate local candidate.
+Updated October 15, 2026. This page reports existing observations; no new candidate experiments were run for this documentation update. Private operational records remain unpublished. The developer dispatcher is published; its synthetic write-runner update remains a separate local candidate.
+
+## Current local product work
+
+Abrams Intelligence is a general-purpose, local-first personal intelligence platform in active, AI-assisted development. Local development includes partial shared in-process Core, client and SQLite-backed storage implementation with scoped tests. This work is not yet published as a complete product in this repository. Full integration, product acceptance and Phase 2 completion remain unfinished.
+
+Recent isolated browser/transport testing establishes scoped synthetic behavior only. A real-browser smoke attempt did not establish a passing end-to-end result. These observations do not change the historical dispatcher counts below, establish production adoption or complete Phase 2. See the [progress ledger](progress.md).
 
 ## October 4: published tooling and separate local update
 
@@ -10,7 +16,7 @@ A later **unpublished nine-file write-runner candidate** recorded **238 passed a
 
 One October 4 Laya retry stopped at the host-memory guard with termination observed. It produced **no new quality score or memory qualification**. The corrected September 29 result below remains the last completed quality measurement.
 
-The [progress ledger](progress.md) maps these observations to the canonical sequence. The October 1 R3 specification-input freeze is completed review evidence; shared reference implementation, product Core and shell acceptance remain unrun.
+The [progress ledger](progress.md) maps these observations to the canonical sequence. The October 1 R3 specification-input freeze is completed review evidence; partial local shared-reference/Core/client implementation now exists, while full product and shell acceptance remain incomplete.
 
 ## October 1: offline developer dispatcher
 
@@ -54,6 +60,6 @@ Artifact SHA-256 identities: earlier corpus `8ac5e9c50bb45e56669631afac2492100df
 
 ## Product acceptance remains planned
 
-No Tauri/PWA candidate comparison, product Core/oracle execution, production runtime/model pairing qualification, graph-memory bake-off, browser submission, clean-host product recovery or product soak is established here. The public walkthroughs, acceptance map and JSON examples remain synthetic design artifacts with unmeasured/null results. Installed compiler smoke and source acquisition are preparation evidence, not application acceptance.
+No completed Tauri/PWA candidate comparison, full product Core/oracle acceptance, production runtime/model pairing qualification, graph-memory bake-off, browser submission, clean-host product recovery or product soak is established here. The public walkthroughs, acceptance map and JSON examples remain synthetic design artifacts with unmeasured/null results. Installed compiler smoke and source acquisition are preparation evidence, not application acceptance.
 
 The candidate register's other dated intake proposals have no benchmark/adoption records. Design-selected SQLite/FTS5 or a narrowly approved advisory skill should not be described as deployed integrations. See the [evaluation method](evaluation-method.md), [candidate register](candidate-research.md) and [source notes](source-notes.md).

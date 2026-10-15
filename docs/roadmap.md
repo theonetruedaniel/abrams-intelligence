@@ -1,10 +1,10 @@
 # Roadmap and current gates
 
-Updated October 1, 2026 from dated working-project dispositions. This is a capability sequence, not a promised release schedule. The old September 14/15 pending-readiness summaries are historical checkpoints.
+Updated October 15, 2026 from dated working-project dispositions. This is a capability sequence, not a promised release schedule. The old September 14/15 pending-readiness summaries are historical checkpoints.
 
 ## Current position
 
-Phase 0 architecture/discovery foundations are complete. Phase 1 is complete only for its September 20/21 **attended, synthetic-only, retained-16-GB scope**; the original heavy workload remains unsupported. Phase 2 preparation is in progress: native-tool smoke, locked dependency-source acquisition and draft protocol/oracle work exist. **No product Core, Tauri/PWA candidate or Phase 2 comparison has executed.**
+Phase 0 architecture/discovery foundations are complete. Phase 1 is complete only for its September 20/21 **attended, synthetic-only, retained-16-GB scope**; the original heavy workload remains unsupported. Phase 2 implementation and verification are in progress. Partial local Core/client/SQLite implementation has scoped tests; full integration and product acceptance are incomplete. **No completed Tauri/PWA comparison or Phase 2 completion is claimed.** See the [current progress ledger](progress.md).
 
 The September 21 source checkpoint covered 258 Cargo archives and 10,375 extracted regular files with no identity mismatches. Those integrity checks do not establish executable safety. Draft oracle trace coverage is specification progress, not passed behavior. Later retry clarification remains draft and does not freeze the contract.
 
@@ -27,6 +27,6 @@ Current candidate execution still requires fresh host/resource/runtime admission
 
 ## Immediate useful evidence
 
-The existing offline development dispatcher has scoped October 1 synthetic test results; the Laya default-selector experiment has an explicit rejection with quality/memory reasons. [Read the results](results-and-evidence.md). The public explorer remains a simulation. Neither developer-tool evidence nor a richer README means the personal AI application is implemented.
+The existing offline development dispatcher has scoped October 1 synthetic test results; the Laya default-selector experiment has an explicit rejection with quality/memory reasons. [Read the results](results-and-evidence.md). The public explorer remains a simulation. Developer-tool evidence remains separate from the newer partial local product implementation and does not establish a complete personal AI application.
 
 A narrowed release may omit optional capabilities, but it must satisfy the gates for everything it includes. Extra upstream candidates do not become an unlimited queue blocking unrelated milestones.

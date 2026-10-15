@@ -44,3 +44,7 @@ The register accounts for 150 frozen discovery records plus 33 later proposed re
 The [roadmap](roadmap.md) describes scoped Phase 1 completion and Phase 2 preparation, without claiming product execution. Walkthroughs, acceptance examples and recovery scenarios retain their illustrative/unexecuted status. Source acquisition, compiler smoke, developer-tool tests, model quality and product adoption are distinct evidence classes.
 
 No credentials, private local paths, host identifiers, user datasets or employer material are published by this refresh. The working master plan and private approval records are not mirrored here. Referencing or summarizing an upstream project preserves its authorship and does not grant a reuse license; exact component terms still need review. The pending developer-tool source license/ownership decision is separate from authorization to update these public documents.
+
+## October 15 status reconciliation
+
+The current summary distinguishes partial local AI-assisted Core/client/SQLite implementation and scoped tests from the published dispatcher source. Local browser/transport observations do not establish a passing end-to-end real-browser result. Full integration and product acceptance remain incomplete. Older dated checkpoints below are historical; see [current progress](progress.md). This documentation update does not publish the local product implementation or private operational records.

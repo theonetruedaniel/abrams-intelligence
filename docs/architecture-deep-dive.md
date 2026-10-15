@@ -1,6 +1,6 @@
 # Architecture deep dive: ownership and boundaries
 
-**Status: intended architecture. Core application implementation has not started.**
+**Status: intended architecture with partial local Core/client/SQLite implementation. Full integration and product acceptance remain incomplete.** See the [current progress ledger](progress.md); this document is not an assertion that every described behavior is implemented.
 
 The central design choice is to keep durable project state and action authority in Abrams while allowing models, runtimes and retrieval tools to change.
 

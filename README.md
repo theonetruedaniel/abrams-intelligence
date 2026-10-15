@@ -6,21 +6,27 @@ I am building Abrams Intelligence for research and learning, coding and creative
 
 [Run the offline dispatcher](tools/development-dispatcher/README.md) · [Architecture explorer](https://theonetruedaniel.github.io/architecture/) · [Presentation](https://gamma.app/docs/for2zexybupmugn) · [Portfolio](https://theonetruedaniel.github.io/)
 
-## Current progress — October 4, 2026 (UTC)
+## Current progress — October 15, 2026 (UTC)
 
-The offline developer dispatcher is now published in this repository. [PR #1](https://github.com/theonetruedaniel/abrams-intelligence/pull/1) merged on October 3, 2026 EDT (October 4 UTC). The product Core and desktop remain in preparation. The [progress ledger](docs/progress.md) separates published tooling, the unpublished write-runner candidate and the next unfinished step in the existing plan.
+Abrams Intelligence is a general-purpose, local-first personal intelligence platform in active, AI-assisted development. Local development includes partial shared in-process Core, client and SQLite-backed storage implementation with scoped tests. This work is not yet published as a complete product in this repository. Full integration, product acceptance and Phase 2 completion remain unfinished.
+
+Recent isolated browser/transport checks cover synthetic component behavior. A real-browser smoke attempt has not established a passing end-to-end integration. See the [progress ledger](docs/progress.md) for the current scope and remaining work.
+
+### Published tooling and historical evidence
+
+The offline developer dispatcher is now published in this repository. [PR #1](https://github.com/theonetruedaniel/abrams-intelligence/pull/1) merged on October 3, 2026 EDT (October 4 UTC). The public component release is separate from the newer local product implementation. The [progress ledger](docs/progress.md) separates published tooling, the unpublished write-runner candidate and the next unfinished step in the existing plan.
 
 | Area | What exists | Limit |
 | --- | --- | --- |
 | Architecture | Preserved 19-document baseline, requirements, decision records and comparison criteria | Design does not establish implemented behavior |
 | Host/build preparation | Scoped attended synthetic readiness; native-tool and locked-source intake evidence | Broader workloads and current build admission remain gated |
-| Product Core and desktop | October 1 R3 reviewed specification-input freeze and Tauri/PWA comparison plan | Shared reference implementation and candidate acceptance remain unrun; no production Core selected |
+| Product Core and client | Partial local shared in-process implementation and SQLite-backed storage with scoped tests | Local unpublished work; full integration and product acceptance incomplete; no production Core selected |
 | Developer dispatcher | Published source, tests and a five-scenario offline demo; 250 default tests discovered, 227 passed and 23 skipped | Synthetic checks do not admit live editing or establish model quality |
 | Synthetic write-runner update | Local reviewed candidate: 238 passed, 23 skipped; nine controller probes and 11 focused tests passed | Separate unpublished update; synthetic receipts do not establish live containment |
 | Laya development selector | September 29 frozen-corpus/resource experiment | Exact evaluated default rejected: 45% ordinary acceptable proposals versus 90% required, plus memory failure |
 | Public demonstrations | Working architecture explorer and synthetic walkthroughs | Simulated behavior; no live integration or executed product recovery proof |
 
-The product is in **Phase 2 preparation**, not a released personal assistant. The scoped Phase 1 disposition does not imply unrestricted host readiness. The R3 specification-input freeze is recorded. Current resource admission, outstanding executable/native review, containment and the shared reference implementation precede product candidate comparison. [Roadmap and gates](docs/roadmap.md) · [Results, measurements and exclusions](docs/results-and-evidence.md).
+**Phase 2 implementation and verification are in progress**; the product is not released. The scoped Phase 1 disposition does not imply unrestricted host readiness. The R3 specification-input freeze is recorded. Outstanding integration, review and acceptance requirements still precede product candidate comparison. [Roadmap and gates](docs/roadmap.md) · [Results, measurements and exclusions](docs/results-and-evidence.md).
 
 ## Run the published component
 

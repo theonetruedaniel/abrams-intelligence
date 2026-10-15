@@ -1,5 +1,11 @@
 # Project changelog
 
+## 2026-10-15
+
+- Reconciled current status with partial local AI-assisted Core/client/SQLite implementation and scoped tests.
+- Distinguished unpublished local work from published dispatcher snapshots and retained incomplete integration/acceptance boundaries.
+- Corrected stale no-implementation wording. This is a documentation update, not source publication, a product release or Phase 2 completion.
+
 ## 2026-10-14
 
 - Added the MIT License for Abrams-authored source and documentation, attributed to Daniel Abrams, with a separate note preserving third-party licenses and terms.
