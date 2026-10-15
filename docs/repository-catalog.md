@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated October 13, 2026. This is a deduplicated map of **99 GitHub repositories** actually recorded in Abrams discovery and research, plus four related model repositories. The underlying register contains **200 entries** (150 frozen catalog records plus 50 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated October 15, 2026. This is a deduplicated map of **100 GitHub repositories** actually recorded in Abrams discovery and research, plus four related model repositories. The underlying register contains **201 entries** (150 frozen catalog records plus 51 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -12,11 +12,11 @@ Updated October 13, 2026. This is a deduplicated map of **99 GitHub repositories
 - **Selected advisory content:** one pinned design skill is selected; its repository is not adopted as a runtime.
 - **Adopted integration:** an exact accepted product integration. None is claimed in this catalog.
 
-Counts: 79 shortlisted/planned, 18 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
+Counts: 80 shortlisted/planned, 18 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
 
-Coverage is the union of GitHub identities explicitly linked in the September 4 frozen catalog, dated intake overlays through October 13, and the collected research references. Seven September 22 Jev references remain research-only and do not add registration records. Documentation-only technologies, model/API routes and local controls remain in the full register. Transitive dependency trees and every project in an upstream directory are not asserted to be evaluated candidates.
+Coverage is the union of GitHub identities explicitly linked in the September 4 frozen catalog, dated intake overlays through October 15, and the collected research references. Seven September 22 Jev references remain research-only and do not add registration records. Documentation-only technologies, model/API routes and local controls remain in the full register. Transitive dependency trees and every project in an upstream directory are not asserted to be evaluated candidates.
 
-AirLLM, PentAGI, OpenGrok, Camofox Browser and LibreChat were checked on October 13. REA was checked on October 12. Invisible Playwright was checked on October 10. Magpie, iFixAi, Orca, fframes, PageIndex, Hindsight, AI Employees, SkillOpt and System Prompts Leaks links were checked on October 9. Existing repository links were checked on October 7 against public GitHub metadata; five redirects were resolved and historical names retained. Link checks establish availability and identity, not an audit of today's code. Historical intake revisions do not become current-build admission pins.
+SkillSpector was checked on October 15. AirLLM, PentAGI, OpenGrok, Camofox Browser and LibreChat were checked on October 13. REA was checked on October 12. Invisible Playwright was checked on October 10. Magpie, iFixAi, Orca, fframes, PageIndex, Hindsight, AI Employees, SkillOpt and System Prompts Leaks links were checked on October 9. Existing repository links were checked on October 7 against public GitHub metadata; five redirects were resolved and historical names retained. Link checks establish availability and identity, not an audit of today's code. Historical intake revisions do not become current-build admission pins.
 
 ## Architecture map
 
@@ -895,6 +895,19 @@ AirLLM, PentAGI, OpenGrok, Camofox Browser and LibreChat were checked on October
 
 
 ## Safety and recovery
+
+<a id="nvidia-skillspector"></a>
+### SkillSpector
+
+[NVIDIA/SkillSpector](https://github.com/NVIDIA/SkillSpector) · **Shortlisted / planned**
+
+- **Purpose:** Static and optional model-assisted security screening of agent skill bundles before installation.
+- **Architecture fit:** H/J / Q-44: bake-off skill-intake evidence versus independent manual/static checks; complements Q-29 SkillOpt and Q-33 audits.
+- **Current status:** Source researched; skill-intake/regression comparison planned and untested. Scores and catalog signatures do not establish installation safety or adoption.
+- **Next gate:** Review exact scanner/rules/dependencies, hostile-input bounds, partial/suppressed results, OSV/model egress, false negatives/positives and Windows resources.
+- **Evidence:** Pinned README, package metadata, resource-bounds and suppression documentation screened; no execution or full audit. Dates: 2026-10-15.
+- **Record IDs:** `security.skillspector`.
+- **Historical intake revision:** `4c52fbb83bbca0dd13f2685453c9b661d8c95bf8`.
 
 <a id="vxcontrol-pentagi"></a>
 ### PentAGI
