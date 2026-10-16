@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated October 16, 2026. This is a deduplicated map of **114 GitHub repositories** actually recorded in Abrams discovery and research, plus four related model repositories. The underlying register contains **215 entries** (150 frozen catalog records plus 65 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated October 16, 2026. This is a deduplicated map of **115 GitHub repositories** actually recorded in Abrams discovery and research, plus four related model repositories. The underlying register contains **216 entries** (150 frozen catalog records plus 66 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -12,11 +12,11 @@ Updated October 16, 2026. This is a deduplicated map of **114 GitHub repositorie
 - **Selected advisory content:** one pinned design skill is selected; its repository is not adopted as a runtime.
 - **Adopted integration:** an exact accepted product integration. None is claimed in this catalog.
 
-Counts: 94 shortlisted/planned, 18 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
+Counts: 95 shortlisted/planned, 18 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
 
 Coverage is the union of GitHub identities explicitly linked in the September 4 frozen catalog, dated intake overlays through October 16, and the collected research references. Six September 22 Jev references remain research-only without registration records; Foreman is now registered under Q-56. Documentation-only technologies, model/API routes and local controls remain in the full register. Transitive dependency trees and every project in an upstream directory are not asserted to be evaluated candidates.
 
-MinerU, OpenRig, Foreman, AX, the ten post projects and Letta's current-source pointer were checked on October 16; LangGraph was already present. OpenMausBot and SkillSpector were checked on October 15. AirLLM, PentAGI, OpenGrok, Camofox Browser and LibreChat were checked on October 13. REA was checked on October 12. Invisible Playwright was checked on October 10. Magpie, iFixAi, Orca, fframes, PageIndex, Hindsight, AI Employees, SkillOpt and System Prompts Leaks links were checked on October 9. Existing repository links were checked on October 7 against public GitHub metadata; five redirects were resolved and historical names retained. Link checks establish availability and identity, not an audit of today's code. Historical intake revisions do not become current-build admission pins.
+AgentBridge, MinerU, OpenRig, Foreman, AX, the ten post projects and Letta's current-source pointer were checked on October 16; LangGraph was already present. OpenMausBot and SkillSpector were checked on October 15. AirLLM, PentAGI, OpenGrok, Camofox Browser and LibreChat were checked on October 13. REA was checked on October 12. Invisible Playwright was checked on October 10. Magpie, iFixAi, Orca, fframes, PageIndex, Hindsight, AI Employees, SkillOpt and System Prompts Leaks links were checked on October 9. Existing repository links were checked on October 7 against public GitHub metadata; five redirects were resolved and historical names retained. Link checks establish availability and identity, not an audit of today's code. Historical intake revisions do not become current-build admission pins.
 
 ## Architecture map
 
@@ -1133,6 +1133,19 @@ MinerU, OpenRig, Foreman, AX, the ten post projects and Letta's current-source p
 
 
 ## Skills and development
+
+<a id="raysonmeng-agent-bridge"></a>
+### AgentBridge
+
+[raysonmeng/agent-bridge](https://github.com/raysonmeng/agent-bridge) · **Shortlisted / planned**
+
+- **Purpose:** Bidirectional Claude Code–Codex message relay for coding handoffs and cross-review.
+- **Architecture fit:** H/J / Q-59 alongside Q-57 OpenRig: narrow developer/bake-off collaboration study versus manual handoffs and a simple review queue.
+- **Current status:** Source researched; planned and untested. Permission-bypassing launch defaults, experimental channels and unsupported Windows remain admission gates.
+- **Next gate:** Review safe-launch enforcement, install/plugin mutations, exact protocol/host pins, peer-message authority, queue loss/replay, all-child Stop, privacy and aggregate cost; remote rooms and quota auto-resume require separate admission.
+- **Evidence:** Pinned README, package/security metadata, room documentation and selected launcher/postinstall source reviewed; no installation, sessions, messaging or full audit. Dates: 2026-10-16.
+- **Registered records:** development.agent-bridge
+- **Recorded intake revision:** 0244dfa2d6dfd36a67531426b01714eda1b215eb
 
 <a id="oracle-opengrok"></a>
 ### OpenGrok
