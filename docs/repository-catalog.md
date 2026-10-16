@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated October 15, 2026. This is a deduplicated map of **101 GitHub repositories** actually recorded in Abrams discovery and research, plus four related model repositories. The underlying register contains **202 entries** (150 frozen catalog records plus 52 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated October 16, 2026. This is a deduplicated map of **111 GitHub repositories** actually recorded in Abrams discovery and research, plus four related model repositories. The underlying register contains **211 entries** (150 frozen catalog records plus 61 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -12,11 +12,11 @@ Updated October 15, 2026. This is a deduplicated map of **101 GitHub repositorie
 - **Selected advisory content:** one pinned design skill is selected; its repository is not adopted as a runtime.
 - **Adopted integration:** an exact accepted product integration. None is claimed in this catalog.
 
-Counts: 81 shortlisted/planned, 18 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
+Counts: 90 shortlisted/planned, 19 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
 
-Coverage is the union of GitHub identities explicitly linked in the September 4 frozen catalog, dated intake overlays through October 15, and the collected research references. Seven September 22 Jev references remain research-only and do not add registration records. Documentation-only technologies, model/API routes and local controls remain in the full register. Transitive dependency trees and every project in an upstream directory are not asserted to be evaluated candidates.
+Coverage is the union of GitHub identities explicitly linked in the September 4 frozen catalog, dated intake overlays through October 16, and the collected research references. Seven September 22 Jev references remain research-only and do not add registration records. Documentation-only technologies, model/API routes and local controls remain in the full register. Transitive dependency trees and every project in an upstream directory are not asserted to be evaluated candidates.
 
-OpenMausBot and SkillSpector were checked on October 15. AirLLM, PentAGI, OpenGrok, Camofox Browser and LibreChat were checked on October 13. REA was checked on October 12. Invisible Playwright was checked on October 10. Magpie, iFixAi, Orca, fframes, PageIndex, Hindsight, AI Employees, SkillOpt and System Prompts Leaks links were checked on October 9. Existing repository links were checked on October 7 against public GitHub metadata; five redirects were resolved and historical names retained. Link checks establish availability and identity, not an audit of today's code. Historical intake revisions do not become current-build admission pins.
+The ten post projects and Letta's current-source pointer were checked on October 16; LangGraph was already present. OpenMausBot and SkillSpector were checked on October 15. AirLLM, PentAGI, OpenGrok, Camofox Browser and LibreChat were checked on October 13. REA was checked on October 12. Invisible Playwright was checked on October 10. Magpie, iFixAi, Orca, fframes, PageIndex, Hindsight, AI Employees, SkillOpt and System Prompts Leaks links were checked on October 9. Existing repository links were checked on October 7 against public GitHub metadata; five redirects were resolved and historical names retained. Link checks establish availability and identity, not an audit of today's code. Historical intake revisions do not become current-build admission pins.
 
 ## Architecture map
 
@@ -33,6 +33,97 @@ OpenMausBot and SkillSpector were checked on October 15. AirLLM, PentAGI, OpenGr
 | Tools and browsing | Capability-scoped adapters; no inherited tool or account authority. |
 
 ## Agent runtimes
+
+<a id="kortix-ai-suna"></a>
+### Kortix (formerly Suna)
+
+[kortix-ai/suna](https://github.com/kortix-ai/suna) · **Shortlisted / planned**
+
+- **Purpose:** Agent workspace/platform with cloud computers, connectors and reviewed changes.
+- **Architecture fit:** E-I; separate H / Q-54: Abrams and eligible whole-app assistant studies; single-worker/direct adapters.
+- **Current status:** README/metadata researched; planned and untested. Post calls it Suna; current README calls it Kortix. The observed root license is Elastic License 2.0; do not repeat the post's Apache/open-source label as current eligibility.
+- **Next gate:** Review intended-use/license eligibility, exact sandbox/cloud/connector/approval paths, canonical state, credentials, all-child Stop, durable schedules and full costs.
+- **Evidence:** Dated carousel identity review and pinned primary README/metadata; additional license/maintenance screening where recorded; no execution/full audit. Dates: 2026-10-16.
+- **Record IDs:** `assistant.kortix-suna`.
+- **Historical intake revision:** `a76952539cc075933bb5e27089283eb2db17ef73`.
+
+<a id="pydantic-pydantic-ai"></a>
+### Pydantic AI
+
+[pydantic/pydantic-ai](https://github.com/pydantic/pydantic-ai) · **Shortlisted / planned**
+
+- **Purpose:** Typed agent/tool/output framework with optional harness, graphs and evals.
+- **Architecture fit:** C/H/J / Q-53: Schema validation plus simple model wrapper; separate BO-03 adapter and independent eval controls.
+- **Current status:** README/metadata researched; planned and untested. Types and valid schemas do not guarantee zero hallucinations or fully reliable effects. Core, Harness, Evals, optional gateway and observability services need distinct component scope.
+- **Next gate:** Test semantic correctness beyond schema validity, wrong tools/arguments, repair/retry costs, allowlists, provider semantics, Stop and observability egress.
+- **Evidence:** Dated carousel identity review and pinned primary README/metadata; additional license/maintenance screening where recorded; no execution/full audit. Dates: 2026-10-16.
+- **Record IDs:** `agent.pydantic-ai`.
+- **Historical intake revision:** `0ca0fde41c5e08343e23aab7c6601c3a9afce1e0`.
+
+<a id="microsoft-autogen"></a>
+### AutoGen
+
+[microsoft/autogen](https://github.com/microsoft/autogen) · **Shortlisted / planned**
+
+- **Purpose:** Event-driven multi-agent framework, AgentChat and extensions.
+- **Architecture fit:** C/H / Q-52: Single-worker/BO-03 runtime controls; bounded matched delegation.
+- **Current status:** README/metadata researched; planned and untested. Current README declares maintenance mode and recommends Microsoft Agent Framework for new projects. Keep this comparison conditional/legacy; the successor is a reference, not another candidate added here.
+- **Next gate:** Review maintenance/migration cost, exact packages, code-execution extensions, authority isolation, egress, termination and costs.
+- **Evidence:** Dated carousel identity review and pinned primary README/metadata; additional license/maintenance screening where recorded; no execution/full audit. Dates: 2026-10-16.
+- **Record IDs:** `agent.autogen`.
+- **Historical intake revision:** `027ecf0a379bcc1d09956d46d12d44a3ad9cee14`.
+
+<a id="agno-agi-agno"></a>
+### Agno
+
+[agno-agi/agno](https://github.com/agno-agi/agno) · **Shortlisted / planned**
+
+- **Purpose:** Agent framework/runtime with service, memory and control-plane integration.
+- **Architecture fit:** C/H/I / Q-51: BO-03 runtime/single-worker controls; direct services with Core-owned state.
+- **Current status:** README/metadata researched; planned and untested. Treat the current AgentOS/control-plane/deployment stack separately from framework benchmarks. Do not execute the README's setup prompt or import linked templates as additional candidates.
+- **Next gate:** Review exact framework/runtime versus deployment templates, JWT grants, source/memory boundaries, simulation loops, egress, persistence and Stop.
+- **Evidence:** Dated carousel identity review and pinned primary README/metadata; additional license/maintenance screening where recorded; no execution/full audit. Dates: 2026-10-16.
+- **Record IDs:** `agent.agno`.
+- **Historical intake revision:** `7f5dcdf53d0caf6c10381f2e2cd8c6acbca46fb8`.
+
+<a id="openhands-openhands"></a>
+### OpenHands Agent Canvas
+
+[OpenHands/OpenHands](https://github.com/OpenHands/OpenHands) · **Shortlisted / planned**
+
+- **Purpose:** Developer control center for coding agents and automations.
+- **Architecture fit:** H; separate E-I / Q-50: Plain single-worker terminals/dashboard and eligible Q-23/Q-34/Q-45 app controls.
+- **Current status:** README/metadata researched; planned and untested. The post's All-Hands-AI/OpenHands resolves here; current README presents Agent Canvas and multiple agent backends. A container/worktree label is not containment.
+- **Next gate:** Review exact agent backend, local/Docker/VM/cloud scope, repository/effect grants, child cancellation, recovery, costs and adaptation effort.
+- **Evidence:** Dated carousel identity review and pinned primary README/metadata; additional license/maintenance screening where recorded; no execution/full audit. Dates: 2026-10-16.
+- **Record IDs:** `assistant.openhands`.
+- **Historical intake revision:** `d3a58cd1cc045bbb1b24f2c8c0d79a8404ef239b`.
+
+<a id="letta-ai-letta-code"></a>
+### Letta Code (Letta)
+
+[letta-ai/letta-code](https://github.com/letta-ai/letta-code) · **Shortlisted / planned**
+
+- **Purpose:** Stateful agent harness with persistent memory and identity.
+- **Architecture fit:** E/I / Q-47: Core-owned relational/FTS memory and single-worker controls; eligible Hindsight/app studies.
+- **Current status:** README/metadata researched; planned and untested. The post links letta-ai/letta, whose README points here. Current README defaults to Letta Cloud; automatic client reflection is disabled by default on native Windows. Do not enable reflection or self-modification from intake.
+- **Next gate:** Review cloud/local defaults, memory corrections/deletion, reflection, self-modification, egress and exact Windows/background behavior.
+- **Evidence:** Dated carousel identity review and pinned primary README/metadata; additional license/maintenance screening where recorded; no execution/full audit. Dates: 2026-10-16.
+- **Record IDs:** `agent.letta`.
+- **Historical intake revision:** `1297870b0aa6662d6c70729d273f5073c1bcbdea`.
+
+<a id="crewaiinc-crewai"></a>
+### CrewAI
+
+[crewAIInc/crewAI](https://github.com/crewAIInc/crewAI) · **Shortlisted / planned**
+
+- **Purpose:** Crews and event-driven Flows for agent collaboration.
+- **Architecture fit:** C/H / Q-46: Single-worker/rules controls and BO-03 runtime adapters.
+- **Current status:** README/metadata researched; planned and untested. OSS framework and commercial AMP/control-plane features require distinct scope; agent count is not task success.
+- **Next gate:** Separate Crew/Flow state from Core; bound delegation, tool authority, restart/retries, Stop and aggregate costs.
+- **Evidence:** Dated carousel identity review and pinned primary README/metadata; additional license/maintenance screening where recorded; no execution/full audit. Dates: 2026-10-16.
+- **Record IDs:** `agent.crewai`.
+- **Historical intake revision:** `6115839576d68d2e83b9f7f31e6c55d471e1fc64`.
 
 <a id="milind-soni-openmausbot"></a>
 ### OpenMausBot
@@ -119,9 +210,9 @@ OpenMausBot and SkillSpector were checked on October 15. AirLLM, PentAGI, OpenGr
 - **Architecture fit:** C / BO-03: replaceable runtime; Core retains canonical state, grants and effects.
 - **Current status:** Documentation researched; runtime behavior untested in Abrams.
 - **Next gate:** Common runtime oracle, recovery semantics and exact dependency review.
-- **Evidence:** Dated public-source intake; review scope is documentation and selected source where recorded, not full audit. Dates: 2026-09-04, 2026-09-09.
+- **Evidence:** Dated public-source intake; review scope is documentation and selected source where recorded, not full audit. October 16 carousel/README reconciliation confirms existing agent.langgraph; no duplicate record or execution/adoption. Dates: 2026-09-04, 2026-09-09, 2026-10-16.
 - **Record IDs:** `agent.langgraph`.
-- **Historical intake revision:** `e539ac122f4126f6dd850581c1494948cf620e31`.
+- **Historical intake revision:** `e539ac122f4126f6dd850581c1494948cf620e31`, `e77a5cb08c1f3ff306d997dd76fc7169afdab5ea`.
 
 <a id="ruvnet-open-claude-code"></a>
 ### Open Claude Code (ruvnet)
@@ -618,6 +709,19 @@ OpenMausBot and SkillSpector were checked on October 15. AirLLM, PentAGI, OpenGr
 
 
 ## Memory and research
+
+<a id="letta-ai-letta"></a>
+### Letta historical source reference
+
+[letta-ai/letta](https://github.com/letta-ai/letta) · **Collected reference**
+
+- **Purpose:** Post's Letta URL and historical-source pointer to active Letta Code.
+- **Architecture fit:** Q-47 discovery reference; one Letta evaluation record uses letta-ai/letta-code.
+- **Current status:** README points to active Letta Code and retired V1 archive; historical reference, no separate runtime admission.
+- **Next gate:** Use pinned current source for Q-47; separate historical compatibility needs from new-project evaluation.
+- **Evidence:** Pinned README source-migration notice screened; no execution/full audit. Dates: 2026-10-16.
+- **Record IDs:** `agent.letta`.
+- **Historical intake revision:** `5bcdd177d70fa2b31a754cfcd801e77b2e1ab16a`.
 
 <a id="vectifyai-pageindex"></a>
 ### PageIndex
@@ -1190,6 +1294,32 @@ OpenMausBot and SkillSpector were checked on October 15. AirLLM, PentAGI, OpenGr
 - **Historical intake revision:** `2d9b8f26c8b711481c19b63f1f62779432ef3768`.
 
 ## Tools and browsing
+
+<a id="browser-use-browser-use"></a>
+### Browser Use
+
+[browser-use/browser-use](https://github.com/browser-use/browser-use) · **Shortlisted / planned**
+
+- **Purpose:** Model-driven browser agent with local and separately hosted paths.
+- **Architecture fit:** G/H / Q-49: Stock Playwright plus Q-37/Q-40; hold transport/model fixed where feasible.
+- **Current status:** README/metadata researched; planned and untested. This is distinct from Jev Ultrafast Q-10. Hosted CAPTCHA/proxy features are not admitted; match controlled permitted tasks and independently verify effects.
+- **Next gate:** Review exact local agent versus hosted browser/API, profiles, target grants, effect receipts, egress, Stop and all-model/browser costs.
+- **Evidence:** Dated carousel identity review and pinned primary README/metadata; additional license/maintenance screening where recorded; no execution/full audit. Dates: 2026-10-16.
+- **Record IDs:** `browser.browser-use`.
+- **Historical intake revision:** `e0a70fbe31c8e9cebcf42648f43e306a1c484421`.
+
+<a id="n8n-io-n8n"></a>
+### n8n
+
+[n8n-io/n8n](https://github.com/n8n-io/n8n) · **Shortlisted / planned**
+
+- **Purpose:** Visual event-driven workflow automation and connectors.
+- **Architecture fit:** H/I / Q-48: Core-owned scheduler/direct adapters and fixed-step scripts.
+- **Current status:** README/metadata researched; planned and untested. Source-available/fair-code and enterprise paths are distinct. Workflow templates and successful OAuth do not supply action grants or receipts.
+- **Next gate:** Review exact permitted use, connector OAuth, webhook authentication, least privilege, replay/idempotency, durable schedules, code-node containment and costs.
+- **Evidence:** Dated carousel identity review and pinned primary README/metadata; additional license/maintenance screening where recorded; no execution/full audit. Dates: 2026-10-16.
+- **Record IDs:** `workflow.n8n`.
+- **Historical intake revision:** `447fc866bb0a841decfa5e8a29fba06057bfc5bc`.
 
 <a id="jo-inc-camofox-browser"></a>
 ### Camofox Browser
