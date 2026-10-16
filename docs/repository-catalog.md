@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated October 16, 2026. This is a deduplicated map of **113 GitHub repositories** actually recorded in Abrams discovery and research, plus four related model repositories. The underlying register contains **214 entries** (150 frozen catalog records plus 64 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated October 16, 2026. This is a deduplicated map of **114 GitHub repositories** actually recorded in Abrams discovery and research, plus four related model repositories. The underlying register contains **215 entries** (150 frozen catalog records plus 65 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -12,11 +12,11 @@ Updated October 16, 2026. This is a deduplicated map of **113 GitHub repositorie
 - **Selected advisory content:** one pinned design skill is selected; its repository is not adopted as a runtime.
 - **Adopted integration:** an exact accepted product integration. None is claimed in this catalog.
 
-Counts: 93 shortlisted/planned, 18 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
+Counts: 94 shortlisted/planned, 18 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
 
 Coverage is the union of GitHub identities explicitly linked in the September 4 frozen catalog, dated intake overlays through October 16, and the collected research references. Six September 22 Jev references remain research-only without registration records; Foreman is now registered under Q-56. Documentation-only technologies, model/API routes and local controls remain in the full register. Transitive dependency trees and every project in an upstream directory are not asserted to be evaluated candidates.
 
-OpenRig, Foreman, AX, the ten post projects and Letta's current-source pointer were checked on October 16; LangGraph was already present. OpenMausBot and SkillSpector were checked on October 15. AirLLM, PentAGI, OpenGrok, Camofox Browser and LibreChat were checked on October 13. REA was checked on October 12. Invisible Playwright was checked on October 10. Magpie, iFixAi, Orca, fframes, PageIndex, Hindsight, AI Employees, SkillOpt and System Prompts Leaks links were checked on October 9. Existing repository links were checked on October 7 against public GitHub metadata; five redirects were resolved and historical names retained. Link checks establish availability and identity, not an audit of today's code. Historical intake revisions do not become current-build admission pins.
+MinerU, OpenRig, Foreman, AX, the ten post projects and Letta's current-source pointer were checked on October 16; LangGraph was already present. OpenMausBot and SkillSpector were checked on October 15. AirLLM, PentAGI, OpenGrok, Camofox Browser and LibreChat were checked on October 13. REA was checked on October 12. Invisible Playwright was checked on October 10. Magpie, iFixAi, Orca, fframes, PageIndex, Hindsight, AI Employees, SkillOpt and System Prompts Leaks links were checked on October 9. Existing repository links were checked on October 7 against public GitHub metadata; five redirects were resolved and historical names retained. Link checks establish availability and identity, not an audit of today's code. Historical intake revisions do not become current-build admission pins.
 
 ## Architecture map
 
@@ -737,6 +737,19 @@ OpenRig, Foreman, AX, the ten post projects and Letta's current-source pointer w
 
 
 ## Memory and research
+
+<a id="opendatalab-mineru"></a>
+### MinerU
+
+[opendatalab/MinerU](https://github.com/opendatalab/MinerU) · **Shortlisted / planned**
+
+- **Purpose:** Document parsing and OCR into structured text, tables, formulas and page/block references.
+- **Architecture fit:** E/I / Q-58 alongside Q-36 PageIndex and BO-06: compare ingestion quality independently of retrieval and answer models.
+- **Current status:** Source researched; planned and untested. Custom license terms, model assets and exact engine/host qualification remain open.
+- **Next gate:** Compare native text extraction, OCR and MinerU tiers on labeled documents; verify table/formula fidelity, page coverage, citations, deletion, telemetry/egress, model licenses and peak resources.
+- **Evidence:** Pinned README, custom license, package/security metadata, quick-start and model-asset docs reviewed; no install, model download, execution or full audit. Dates: 2026-10-16.
+- **Registered records:** documents.mineru
+- **Recorded intake revision:** b7f3dd0c5f6e6d66a298239ffd02b328b873918e
 
 <a id="letta-ai-letta"></a>
 ### Letta historical source reference
