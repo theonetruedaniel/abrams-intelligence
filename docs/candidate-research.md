@@ -1,8 +1,8 @@
 # Candidate register and research
 
-Updated October 16, 2026. This is the full discovery/intake inventory behind the public overview, not a list of installed dependencies or completed benchmarks. It accounts for **150 September 4 catalog records plus 61 subsequent proposed records: 211 registered entries**. Entries include individual model/API routes, platform prerequisites, local controls and proposed roles; this is not a count of distinct upstream repositories. The separate Laya development experiment and Jev reference projects are identified below without inflating that count.
+Updated October 16, 2026. This is the full discovery/intake inventory behind the public overview, not a list of installed dependencies or completed benchmarks. It accounts for **150 September 4 catalog records plus 62 subsequent proposed records: 212 registered entries**. Entries include individual model/API routes, platform prerequisites, local controls and proposed roles; this is not a count of distinct upstream repositories. The separate Laya development experiment and Jev reference projects are identified below without inflating that count.
 
-Browse the [deduplicated 111-repository catalog](repository-catalog.md) for purposes, architecture fit, verified current links and exact status distinctions. The [progress ledger](progress.md) follows the existing plan order. Seven additional Jev research references are recorded there without increasing the registered-entry count.
+Browse the [deduplicated 112-repository catalog](repository-catalog.md) for purposes, architecture fit, verified current links and exact status distinctions. The [progress ledger](progress.md) follows the existing plan order. Seven additional Jev research references are recorded there without increasing the registered-entry count.
 
 The October 16 ten-repository carousel adds nine comparisons (Q-46–Q-54); LangGraph was already registered. Letta's post URL is retained as a collected reference to active letta-ai/letta-code under one record. OpenHands' redirect, AutoGen maintenance status and Kortix/Suna's current license are recorded without treating the post's claims as benchmark results.
 
@@ -18,10 +18,11 @@ No production runtime/model pairing is adopted by this register. [Results and li
 
 ## Later research and proposed comparisons
 
-The table includes 61 registered records and one explicitly labeled unregistered prompt reference. The 61 records come from dated intake overlays through October 16. Each still has no benchmark run ID or adoption record and no execution authority. The table links reviewed source snapshots where the intake supplies one. Source screening is separate from planned testing.
+The table includes 62 registered records and one explicitly labeled unregistered prompt reference. The 62 records come from dated intake overlays through October 16. Each still has no benchmark run ID or adoption record and no execution authority. The table links reviewed source snapshots where the intake supplies one. Source screening is separate from planned testing.
 
 | Record / upstream | Intended contribution and comparison | Evidence date / disposition |
 | --- | --- | --- |
+| `orchestration.google-ax` [source](https://github.com/google/ax) | Optional cluster-task/workspace/model orchestration versus simple workers and Q-16 Substrate; Q-55; H/I/J. Exact cluster/runner, bootstrap costs/egress, grants, current controls, Stop and recovery need qualification. | 2026-10-16; Source researched; planned, untested; cluster prerequisite |
 | `agent.crewai` [source](https://github.com/crewAIInc/crewAI) | Crews and event-driven Flows for agent collaboration. Q-46; C/H. Separate Crew/Flow state from Core; bound delegation, tool authority, restart/retries, Stop and aggregate costs. | 2026-10-16; Source researched; planned, untested |
 | `agent.letta` [source](https://github.com/letta-ai/letta-code) | Stateful agent harness with persistent memory and identity. Q-47; E/I. Review cloud/local defaults, memory corrections/deletion, reflection, self-modification, egress and exact Windows/background behavior. | 2026-10-16; Source researched; planned, untested |
 | `workflow.n8n` [source](https://github.com/n8n-io/n8n) | Visual event-driven workflow automation and connectors. Q-48; H/I. Review exact permitted use, connector OAuth, webhook authentication, least privilege, replay/idempotency, durable schedules, code-node containment and costs. | 2026-10-16; Source researched; planned, untested |

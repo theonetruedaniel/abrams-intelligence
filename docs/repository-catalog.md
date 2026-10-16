@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated October 16, 2026. This is a deduplicated map of **111 GitHub repositories** actually recorded in Abrams discovery and research, plus four related model repositories. The underlying register contains **211 entries** (150 frozen catalog records plus 61 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated October 16, 2026. This is a deduplicated map of **112 GitHub repositories** actually recorded in Abrams discovery and research, plus four related model repositories. The underlying register contains **212 entries** (150 frozen catalog records plus 62 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -12,11 +12,11 @@ Updated October 16, 2026. This is a deduplicated map of **111 GitHub repositorie
 - **Selected advisory content:** one pinned design skill is selected; its repository is not adopted as a runtime.
 - **Adopted integration:** an exact accepted product integration. None is claimed in this catalog.
 
-Counts: 90 shortlisted/planned, 19 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
+Counts: 91 shortlisted/planned, 19 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
 
 Coverage is the union of GitHub identities explicitly linked in the September 4 frozen catalog, dated intake overlays through October 16, and the collected research references. Seven September 22 Jev references remain research-only and do not add registration records. Documentation-only technologies, model/API routes and local controls remain in the full register. Transitive dependency trees and every project in an upstream directory are not asserted to be evaluated candidates.
 
-The ten post projects and Letta's current-source pointer were checked on October 16; LangGraph was already present. OpenMausBot and SkillSpector were checked on October 15. AirLLM, PentAGI, OpenGrok, Camofox Browser and LibreChat were checked on October 13. REA was checked on October 12. Invisible Playwright was checked on October 10. Magpie, iFixAi, Orca, fframes, PageIndex, Hindsight, AI Employees, SkillOpt and System Prompts Leaks links were checked on October 9. Existing repository links were checked on October 7 against public GitHub metadata; five redirects were resolved and historical names retained. Link checks establish availability and identity, not an audit of today's code. Historical intake revisions do not become current-build admission pins.
+AX, the ten post projects and Letta's current-source pointer were checked on October 16; LangGraph was already present. OpenMausBot and SkillSpector were checked on October 15. AirLLM, PentAGI, OpenGrok, Camofox Browser and LibreChat were checked on October 13. REA was checked on October 12. Invisible Playwright was checked on October 10. Magpie, iFixAi, Orca, fframes, PageIndex, Hindsight, AI Employees, SkillOpt and System Prompts Leaks links were checked on October 9. Existing repository links were checked on October 7 against public GitHub metadata; five redirects were resolved and historical names retained. Link checks establish availability and identity, not an audit of today's code. Historical intake revisions do not become current-build admission pins.
 
 ## Architecture map
 
@@ -33,6 +33,19 @@ The ten post projects and Letta's current-source pointer were checked on October
 | Tools and browsing | Capability-scoped adapters; no inherited tool or account authority. |
 
 ## Agent runtimes
+
+<a id="google-ax"></a>
+### AX
+
+[google/ax](https://github.com/google/ax) · **Shortlisted / planned**
+
+- **Purpose:** Declarative cluster orchestration of agent tasks, workspaces and model bindings on Agent Substrate.
+- **Architecture fit:** H/I/J / Q-55: optional cluster-worker lifecycle study alongside Q-16 Substrate versus a simpler isolated-worker controller.
+- **Current status:** Source researched; optional/deferred cluster-worker study planned and untested. Cluster/Substrate/runner admission and current-versus-roadmap enforcement remain open.
+- **Next gate:** Review exact AX/Substrate/runner/cluster identities, current versus roadmap controls, bootstrap model/skill/MCP egress, resource/cost limits, tenant isolation and all-child recovery.
+- **Evidence:** Pinned README, sandbox/roadmap documentation and go.mod screened; no execution or full audit. Dates: 2026-10-16.
+- **Record IDs:** `orchestration.google-ax`.
+- **Historical intake revision:** `92d297e97c43ff381f82d83315736c270ea1bc69`.
 
 <a id="kortix-ai-suna"></a>
 ### Kortix (formerly Suna)
