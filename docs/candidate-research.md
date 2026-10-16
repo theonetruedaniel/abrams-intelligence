@@ -1,8 +1,8 @@
 # Candidate register and research
 
-Updated October 15, 2026. This is the full discovery/intake inventory behind the public overview, not a list of installed dependencies or completed benchmarks. It accounts for **150 September 4 catalog records plus 51 subsequent proposed records: 201 registered entries**. Entries include individual model/API routes, platform prerequisites, local controls and proposed roles; this is not a count of distinct upstream repositories. The separate Laya development experiment and Jev reference projects are identified below without inflating that count.
+Updated October 15, 2026. This is the full discovery/intake inventory behind the public overview, not a list of installed dependencies or completed benchmarks. It accounts for **150 September 4 catalog records plus 52 subsequent proposed records: 202 registered entries**. Entries include individual model/API routes, platform prerequisites, local controls and proposed roles; this is not a count of distinct upstream repositories. The separate Laya development experiment and Jev reference projects are identified below without inflating that count.
 
-Browse the [deduplicated 100-repository catalog](repository-catalog.md) for purposes, architecture fit, verified current links and exact status distinctions. The [progress ledger](progress.md) follows the existing plan order. Seven additional Jev research references are recorded there without increasing the registered-entry count.
+Browse the [deduplicated 101-repository catalog](repository-catalog.md) for purposes, architecture fit, verified current links and exact status distinctions. The [progress ledger](progress.md) follows the existing plan order. Seven additional Jev research references are recorded there without increasing the registered-entry count.
 
 ## How to read status
 
@@ -16,10 +16,11 @@ No production runtime/model pairing is adopted by this register. [Results and li
 
 ## Later research and proposed comparisons
 
-The table includes 51 registered records and one explicitly labeled unregistered prompt reference. The 51 records come from dated intake overlays through October 15. Each still has no benchmark run ID or adoption record and no execution authority. The table links reviewed source snapshots where the intake supplies one. Source screening is separate from planned testing.
+The table includes 52 registered records and one explicitly labeled unregistered prompt reference. The 52 records come from dated intake overlays through October 15. Each still has no benchmark run ID or adoption record and no execution authority. The table links reviewed source snapshots where the intake supplies one. Source screening is separate from planned testing.
 
 | Record / upstream | Intended contribution and comparison | Evidence date / disposition |
 | --- | --- | --- |
+| `assistant.openmausbot` [source](https://github.com/milind-soni/OpenMausBot) | Whole-app build-versus-adapt and separate UI/harness component study against Abrams/eligible assistants; Q-45; E-I/H. OSS/enterprise, CLIs, pairing, connector grants, platform computer scope, Stop and recovery require qualification. | 2026-10-15; Source researched; planned, untested |
 | `security.skillspector` [source](https://github.com/NVIDIA/SkillSpector) | Skill-intake security and Q-29 regression evidence versus independent manual/static controls; Q-44; H/J. Critical misses, false alarms, partial/suppressed scans, analyzer egress and exact rules require qualification. | 2026-10-15; Source researched; planned, untested |
 | `inference.airllm` [source](https://github.com/lyogavin/airllm) | Layer-streaming engine feasibility versus matched eligible backends and distinct quantized/smaller-model controls; Q-43; E/G; BO-04/BO-05. Exact code/host/model, full resources, useful latency, correctness and Stop require qualification. | 2026-10-13; Source researched; planned, untested |
 | `security.pentagi` [source](https://github.com/vxcontrol/pentagi) | Optional isolated-lab security evaluation of app fixtures versus direct tools/static review/manual verification; Q-42; J. External containment, exact target/action grants, independent findings, Stop and full costs are prerequisites. | 2026-10-13; Source researched; planned, untested |
