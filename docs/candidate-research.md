@@ -1,8 +1,8 @@
 # Candidate register and research
 
-Updated October 16, 2026. This is the full discovery/intake inventory behind the public overview, not a list of installed dependencies or completed benchmarks. It accounts for **150 September 4 catalog records plus 63 subsequent proposed records: 213 registered entries**. Entries include individual model/API routes, platform prerequisites, local controls and proposed roles; this is not a count of distinct upstream repositories. The separate Laya development experiment and Jev reference projects are identified below without inflating that count.
+Updated October 16, 2026. This is the full discovery/intake inventory behind the public overview, not a list of installed dependencies or completed benchmarks. It accounts for **150 September 4 catalog records plus 64 subsequent proposed records: 214 registered entries**. Entries include individual model/API routes, platform prerequisites, local controls and proposed roles; this is not a count of distinct upstream repositories. The separate Laya development experiment and Jev reference projects are identified below without inflating that count.
 
-Browse the [deduplicated 112-repository catalog](repository-catalog.md) for purposes, architecture fit, verified current links and exact status distinctions. The [progress ledger](progress.md) follows the existing plan order. Six additional Jev research references remain unregistered; the existing Foreman reference is now a named Q-56 evaluation.
+Browse the [deduplicated 113-repository catalog](repository-catalog.md) for purposes, architecture fit, verified current links and exact status distinctions. The [progress ledger](progress.md) follows the existing plan order. Six additional Jev research references remain unregistered; the existing Foreman reference is now a named Q-56 evaluation.
 
 The October 16 ten-repository carousel adds nine comparisons (Q-46–Q-54); LangGraph was already registered. Letta's post URL is retained as a collected reference to active letta-ai/letta-code under one record. OpenHands' redirect, AutoGen maintenance status and Kortix/Suna's current license are recorded without treating the post's claims as benchmark results.
 
@@ -18,10 +18,11 @@ No production runtime/model pairing is adopted by this register. [Results and li
 
 ## Later research and proposed comparisons
 
-The table includes 63 registered records and one explicitly labeled unregistered prompt reference. The 63 records come from dated intake overlays through October 16. Each still has no benchmark run ID or adoption record and no execution authority. The table links reviewed source snapshots where the intake supplies one. Source screening is separate from planned testing.
+The table includes 64 registered records and one explicitly labeled unregistered prompt reference. The 64 records come from dated intake overlays through October 16. Each still has no benchmark run ID or adoption record and no execution authority. The table links reviewed source snapshots where the intake supplies one. Source screening is separate from planned testing.
 
 | Record / upstream | Intended contribution and comparison | Evidence date / disposition |
 | --- | --- | --- |
+| `orchestration.openrig` [source](https://github.com/mvschwarz/openrig) | Persistent coding-agent teams, queues, shared context and recovery versus a simple bounded worker queue; Q-57; H/I/J. Exact WSL2/provider qualification, startup hook/trust/permission mutations, independent outcomes, aggregate costs, Stop and effect-safe recovery required. | 2026-10-16; Source researched; planned, untested; WSL2 prerequisite |
 | `supervision.foreman` [source](https://github.com/thruwire/foreman) | Decision-model coding-worker supervision alongside Q-11C; Q-56; H/J. Replay frozen traces against simple heuristics; measure false completion, harmful interventions, calibration, verified outcomes, aggregate cost and containment. Existing reference promoted without adding a repository. | 2026-10-16; Source researched; planned, untested |
 | `orchestration.google-ax` [source](https://github.com/google/ax) | Optional cluster-task/workspace/model orchestration versus simple workers and Q-16 Substrate; Q-55; H/I/J. Exact cluster/runner, bootstrap costs/egress, grants, current controls, Stop and recovery need qualification. | 2026-10-16; Source researched; planned, untested; cluster prerequisite |
 | `agent.crewai` [source](https://github.com/crewAIInc/crewAI) | Crews and event-driven Flows for agent collaboration. Q-46; C/H. Separate Crew/Flow state from Core; bound delegation, tool authority, restart/retries, Stop and aggregate costs. | 2026-10-16; Source researched; planned, untested |

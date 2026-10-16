@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated October 16, 2026. This is a deduplicated map of **112 GitHub repositories** actually recorded in Abrams discovery and research, plus four related model repositories. The underlying register contains **213 entries** (150 frozen catalog records plus 63 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated October 16, 2026. This is a deduplicated map of **113 GitHub repositories** actually recorded in Abrams discovery and research, plus four related model repositories. The underlying register contains **214 entries** (150 frozen catalog records plus 64 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -12,11 +12,11 @@ Updated October 16, 2026. This is a deduplicated map of **112 GitHub repositorie
 - **Selected advisory content:** one pinned design skill is selected; its repository is not adopted as a runtime.
 - **Adopted integration:** an exact accepted product integration. None is claimed in this catalog.
 
-Counts: 92 shortlisted/planned, 18 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
+Counts: 93 shortlisted/planned, 18 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
 
 Coverage is the union of GitHub identities explicitly linked in the September 4 frozen catalog, dated intake overlays through October 16, and the collected research references. Six September 22 Jev references remain research-only without registration records; Foreman is now registered under Q-56. Documentation-only technologies, model/API routes and local controls remain in the full register. Transitive dependency trees and every project in an upstream directory are not asserted to be evaluated candidates.
 
-Foreman, AX, the ten post projects and Letta's current-source pointer were checked on October 16; LangGraph was already present. OpenMausBot and SkillSpector were checked on October 15. AirLLM, PentAGI, OpenGrok, Camofox Browser and LibreChat were checked on October 13. REA was checked on October 12. Invisible Playwright was checked on October 10. Magpie, iFixAi, Orca, fframes, PageIndex, Hindsight, AI Employees, SkillOpt and System Prompts Leaks links were checked on October 9. Existing repository links were checked on October 7 against public GitHub metadata; five redirects were resolved and historical names retained. Link checks establish availability and identity, not an audit of today's code. Historical intake revisions do not become current-build admission pins.
+OpenRig, Foreman, AX, the ten post projects and Letta's current-source pointer were checked on October 16; LangGraph was already present. OpenMausBot and SkillSpector were checked on October 15. AirLLM, PentAGI, OpenGrok, Camofox Browser and LibreChat were checked on October 13. REA was checked on October 12. Invisible Playwright was checked on October 10. Magpie, iFixAi, Orca, fframes, PageIndex, Hindsight, AI Employees, SkillOpt and System Prompts Leaks links were checked on October 9. Existing repository links were checked on October 7 against public GitHub metadata; five redirects were resolved and historical names retained. Link checks establish availability and identity, not an audit of today's code. Historical intake revisions do not become current-build admission pins.
 
 ## Architecture map
 
@@ -33,6 +33,19 @@ Foreman, AX, the ten post projects and Letta's current-source pointer were check
 | Tools and browsing | Capability-scoped adapters; no inherited tool or account authority. |
 
 ## Agent runtimes
+
+<a id="mvschwarz-openrig"></a>
+### OpenRig
+
+[mvschwarz/openrig](https://github.com/mvschwarz/openrig) · **Shortlisted / planned**
+
+- **Purpose:** Persistent coding-agent teams with topology, queues, shared context and session recovery.
+- **Architecture fit:** H/I/J / Q-57: development and bake-off coordination versus a simple bounded worker queue; compare Q-55 lifecycle and Q-56 supervision separately.
+- **Current status:** Source researched; planned and untested. WSL2 prerequisite on Windows; native Windows unsupported. No runtime admission.
+- **Next gate:** Review startup hook/trust/permission mutations and exact WSL2/provider pins; test isolated matched teams, queue/effect recovery, all-child Stop, total cost and context leakage before live use.
+- **Evidence:** Pinned README, security policy, package metadata and as-built daemon/lifecycle docs reviewed; no execution or full audit. Dates: 2026-10-16.
+- **Registered records:** orchestration.openrig
+- **Recorded intake revision:** e0c65c41e429678272522eb5f9875583a69b48a5
 
 <a id="google-ax"></a>
 ### AX
