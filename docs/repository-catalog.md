@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated October 16, 2026. This is a deduplicated map of **112 GitHub repositories** actually recorded in Abrams discovery and research, plus four related model repositories. The underlying register contains **212 entries** (150 frozen catalog records plus 62 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated October 16, 2026. This is a deduplicated map of **112 GitHub repositories** actually recorded in Abrams discovery and research, plus four related model repositories. The underlying register contains **213 entries** (150 frozen catalog records plus 63 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -12,11 +12,11 @@ Updated October 16, 2026. This is a deduplicated map of **112 GitHub repositorie
 - **Selected advisory content:** one pinned design skill is selected; its repository is not adopted as a runtime.
 - **Adopted integration:** an exact accepted product integration. None is claimed in this catalog.
 
-Counts: 91 shortlisted/planned, 19 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
+Counts: 92 shortlisted/planned, 18 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
 
-Coverage is the union of GitHub identities explicitly linked in the September 4 frozen catalog, dated intake overlays through October 16, and the collected research references. Seven September 22 Jev references remain research-only and do not add registration records. Documentation-only technologies, model/API routes and local controls remain in the full register. Transitive dependency trees and every project in an upstream directory are not asserted to be evaluated candidates.
+Coverage is the union of GitHub identities explicitly linked in the September 4 frozen catalog, dated intake overlays through October 16, and the collected research references. Six September 22 Jev references remain research-only without registration records; Foreman is now registered under Q-56. Documentation-only technologies, model/API routes and local controls remain in the full register. Transitive dependency trees and every project in an upstream directory are not asserted to be evaluated candidates.
 
-AX, the ten post projects and Letta's current-source pointer were checked on October 16; LangGraph was already present. OpenMausBot and SkillSpector were checked on October 15. AirLLM, PentAGI, OpenGrok, Camofox Browser and LibreChat were checked on October 13. REA was checked on October 12. Invisible Playwright was checked on October 10. Magpie, iFixAi, Orca, fframes, PageIndex, Hindsight, AI Employees, SkillOpt and System Prompts Leaks links were checked on October 9. Existing repository links were checked on October 7 against public GitHub metadata; five redirects were resolved and historical names retained. Link checks establish availability and identity, not an audit of today's code. Historical intake revisions do not become current-build admission pins.
+Foreman, AX, the ten post projects and Letta's current-source pointer were checked on October 16; LangGraph was already present. OpenMausBot and SkillSpector were checked on October 15. AirLLM, PentAGI, OpenGrok, Camofox Browser and LibreChat were checked on October 13. REA was checked on October 12. Invisible Playwright was checked on October 10. Magpie, iFixAi, Orca, fframes, PageIndex, Hindsight, AI Employees, SkillOpt and System Prompts Leaks links were checked on October 9. Existing repository links were checked on October 7 against public GitHub metadata; five redirects were resolved and historical names retained. Link checks establish availability and identity, not an audit of today's code. Historical intake revisions do not become current-build admission pins.
 
 ## Architecture map
 
@@ -380,13 +380,15 @@ AX, the ten post projects and Letta's current-source pointer were checked on Oct
 <a id="thruwire-foreman"></a>
 ### Foreman
 
-[thruwire/foreman](https://github.com/thruwire/foreman) · **Collected reference**
+[thruwire/foreman](https://github.com/thruwire/foreman) · **Shortlisted / planned**
 
-- **Purpose:** Small supervisory decisions about worker progress, drift and stalls.
-- **Architecture fit:** H / Q-11C-related reference; Core still owns Stop and retries.
-- **Current status:** Source-backed research only; no proved supervisory advantage.
-- **Next gate:** Replay stalled and legitimately slow runs against simple heuristics.
-- **Evidence:** Dated research reference; no new registered evaluation or execution authority. Dates: 2026-09-22.
+- **Purpose:** Decision-model supervision of coding-worker progress, drift, stalls and completion.
+- **Architecture fit:** H/J / Q-56 alongside Q-11C: advisory supervision; Core owns Stop, retries and grants.
+- **Current status:** Source researched; planned and untested. No demonstrated supervisory advantage or runtime admission.
+- **Next gate:** Replay frozen stalled, legitimately slow and false-completion traces against deterministic heuristics; assess calibration, harmful interventions, independent outputs, cost, egress and exact worker/host containment.
+- **Evidence:** Pinned README, evidence/routing/feasibility docs, package and security metadata reviewed; no execution or full audit. Dates: 2026-09-22, 2026-10-16.
+- **Registered records:** supervision.foreman
+- **Recorded intake revision:** c3142ef636617f32f772140125aa310d81ceece9
 
 <a id="sutro-sh-jev-align"></a>
 ### Jev Align
