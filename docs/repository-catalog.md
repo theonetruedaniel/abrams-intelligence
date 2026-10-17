@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated October 17, 2026. This is a deduplicated map of **117 GitHub repositories** actually recorded in Abrams discovery and research, plus four related model repositories. The underlying register contains **218 entries** (150 frozen catalog records plus 68 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated October 17, 2026. This is a deduplicated map of **118 GitHub repositories** actually recorded in Abrams discovery and research, plus four related model repositories. The underlying register contains **219 entries** (150 frozen catalog records plus 69 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -12,11 +12,11 @@ Updated October 17, 2026. This is a deduplicated map of **117 GitHub repositorie
 - **Selected advisory content:** one pinned design skill is selected; its repository is not adopted as a runtime.
 - **Adopted integration:** an exact accepted product integration. None is claimed in this catalog.
 
-Counts: 97 shortlisted/planned, 18 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
+Counts: 98 shortlisted/planned, 18 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
 
 Coverage is the union of GitHub identities explicitly linked in the September 4 frozen catalog, dated intake overlays through October 17, and the collected research references. Six September 22 Jev references remain research-only without registration records; Foreman is now registered under Q-56. Documentation-only technologies, model/API routes and local controls remain in the full register. Transitive dependency trees and every project in an upstream directory are not asserted to be evaluated candidates.
 
-Trail-Code and OpenWorker were checked on October 17. AgentBridge, MinerU, OpenRig, Foreman, AX, the ten post projects and Letta's current-source pointer were checked on October 16; LangGraph was already present. OpenMausBot and SkillSpector were checked on October 15. AirLLM, PentAGI, OpenGrok, Camofox Browser and LibreChat were checked on October 13. REA was checked on October 12. Invisible Playwright was checked on October 10. Magpie, iFixAi, Orca, fframes, PageIndex, Hindsight, AI Employees, SkillOpt and System Prompts Leaks links were checked on October 9. Existing repository links were checked on October 7 against public GitHub metadata; five redirects were resolved and historical names retained. Link checks establish availability and identity, not an audit of today's code. Historical intake revisions do not become current-build admission pins.
+PocketBase, Trail-Code and OpenWorker were checked on October 17. AgentBridge, MinerU, OpenRig, Foreman, AX, the ten post projects and Letta's current-source pointer were checked on October 16; LangGraph was already present. OpenMausBot and SkillSpector were checked on October 15. AirLLM, PentAGI, OpenGrok, Camofox Browser and LibreChat were checked on October 13. REA was checked on October 12. Invisible Playwright was checked on October 10. Magpie, iFixAi, Orca, fframes, PageIndex, Hindsight, AI Employees, SkillOpt and System Prompts Leaks links were checked on October 9. Existing repository links were checked on October 7 against public GitHub metadata; five redirects were resolved and historical names retained. Link checks establish availability and identity, not an audit of today's code. Historical intake revisions do not become current-build admission pins.
 
 ## Architecture map
 
@@ -750,6 +750,19 @@ Trail-Code and OpenWorker were checked on October 17. AgentBridge, MinerU, OpenR
 
 
 ## Memory and research
+
+<a id="pocketbase-pocketbase"></a>
+### PocketBase
+
+[pocketbase/pocketbase](https://github.com/pocketbase/pocketbase) · **Shortlisted / planned**
+
+- **Purpose:** Embedded SQLite backend with authentication, files, realtime updates and an admin interface.
+- **Architecture fit:** D/I / Q-62: optional storage/API and prototype-backend study versus current SQLite/API controls; no canonical-store replacement implied.
+- **Current status:** Source researched; planned and untested. Pre-1.0 compatibility, access/file rules, migrations, restore and exact Windows/build qualification remain gates.
+- **Next gate:** Verify Core-bound adapter contracts, per-record/file/realtime authorization, no worker superuser access, concurrent writes, crash/migration/restore fidelity, deletion/export, resource limits and removal.
+- **Evidence:** Pinned README, go.mod, release targets and security policy plus dated official access/file/production/FAQ docs reviewed; no install, server, migration or full audit. Dates: 2026-10-17.
+- **Registered records:** storage.pocketbase
+- **Recorded intake revision:** 6f370ea741f33adf889eef02e3c1b884a47aa522
 
 <a id="opendatalab-mineru"></a>
 ### MinerU
