@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated October 17, 2026. This is a deduplicated map of **120 GitHub repositories** actually recorded in Abrams discovery and research, plus four related model repositories. The underlying register contains **221 entries** (150 frozen catalog records plus 71 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated October 17, 2026. This is a deduplicated map of **121 GitHub repositories** actually recorded in Abrams discovery and research, plus four related model repositories. The underlying register contains **222 entries** (150 frozen catalog records plus 72 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -12,11 +12,11 @@ Updated October 17, 2026. This is a deduplicated map of **120 GitHub repositorie
 - **Selected advisory content:** one pinned design skill is selected; its repository is not adopted as a runtime.
 - **Adopted integration:** an exact accepted product integration. None is claimed in this catalog.
 
-Counts: 100 shortlisted/planned, 18 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
+Counts: 101 shortlisted/planned, 18 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
 
 Coverage is the union of GitHub identities explicitly linked in the September 4 frozen catalog, dated intake overlays through October 17, and the collected research references. Six September 22 Jev references remain research-only without registration records; Foreman is now registered under Q-56. Documentation-only technologies, model/API routes and local controls remain in the full register. Transitive dependency trees and every project in an upstream directory are not asserted to be evaluated candidates.
 
-Hono, OpenWhispr, PocketBase, Trail-Code and OpenWorker were checked on October 17. AgentBridge, MinerU, OpenRig, Foreman, AX, the ten post projects and Letta's current-source pointer were checked on October 16; LangGraph was already present. OpenMausBot and SkillSpector were checked on October 15. AirLLM, PentAGI, OpenGrok, Camofox Browser and LibreChat were checked on October 13. REA was checked on October 12. Invisible Playwright was checked on October 10. Magpie, iFixAi, Orca, fframes, PageIndex, Hindsight, AI Employees, SkillOpt and System Prompts Leaks links were checked on October 9. Existing repository links were checked on October 7 against public GitHub metadata; five redirects were resolved and historical names retained. Link checks establish availability and identity, not an audit of today's code. Historical intake revisions do not become current-build admission pins.
+MCPToon, Hono, OpenWhispr, PocketBase, Trail-Code and OpenWorker were checked on October 17. AgentBridge, MinerU, OpenRig, Foreman, AX, the ten post projects and Letta's current-source pointer were checked on October 16; LangGraph was already present. OpenMausBot and SkillSpector were checked on October 15. AirLLM, PentAGI, OpenGrok, Camofox Browser and LibreChat were checked on October 13. REA was checked on October 12. Invisible Playwright was checked on October 10. Magpie, iFixAi, Orca, fframes, PageIndex, Hindsight, AI Employees, SkillOpt and System Prompts Leaks links were checked on October 9. Existing repository links were checked on October 7 against public GitHub metadata; five redirects were resolved and historical names retained. Link checks establish availability and identity, not an audit of today's code. Historical intake revisions do not become current-build admission pins.
 
 ## Architecture map
 
@@ -1413,6 +1413,19 @@ Hono, OpenWhispr, PocketBase, Trail-Code and OpenWorker were checked on October 
 - **Historical intake revision:** `2d9b8f26c8b711481c19b63f1f62779432ef3768`.
 
 ## Tools and browsing
+
+<a id="activeing123-mcptoon"></a>
+### MCPToon
+
+[activeing123/mcptoon](https://github.com/activeing123/mcptoon) · **Shortlisted / planned**
+
+- **Purpose:** MCP tool discovery, on-demand schemas, compact result delivery and scoped skill/config management.
+- **Architecture fit:** E/H / Q-65 alongside Q-11A: compare native lazy discovery and context controls; Core retains exact tool grants and original evidence.
+- **Current status:** Source researched; planned and untested. Discovery savings, omitted evidence, retrieval/cache isolation, config mutations and exact transport/host behavior remain gates.
+- **Next gate:** Compare native versus indexed discovery, re-encoding and compression separately; verify task quality, full-result retrieval, schema freshness, credential/server scope, no authority bypass, Stop and total token/latency cost.
+- **Evidence:** Pinned README, package/security/NOTICE and selected compressor/client source reviewed; no install, agent config/skill sync, servers, tool calls or full audit. Dates: 2026-10-17.
+- **Registered records:** tools.mcptoon
+- **Recorded intake revision:** 14aa8bf274581cd4e35ed10afc352534719f5c26
 
 <a id="browser-use-browser-use"></a>
 ### Browser Use
