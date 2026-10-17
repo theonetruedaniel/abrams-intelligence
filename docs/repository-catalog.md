@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated October 17, 2026. This is a deduplicated map of **118 GitHub repositories** actually recorded in Abrams discovery and research, plus four related model repositories. The underlying register contains **219 entries** (150 frozen catalog records plus 69 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated October 17, 2026. This is a deduplicated map of **119 GitHub repositories** actually recorded in Abrams discovery and research, plus four related model repositories. The underlying register contains **220 entries** (150 frozen catalog records plus 70 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -12,11 +12,11 @@ Updated October 17, 2026. This is a deduplicated map of **118 GitHub repositorie
 - **Selected advisory content:** one pinned design skill is selected; its repository is not adopted as a runtime.
 - **Adopted integration:** an exact accepted product integration. None is claimed in this catalog.
 
-Counts: 98 shortlisted/planned, 18 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
+Counts: 99 shortlisted/planned, 18 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
 
 Coverage is the union of GitHub identities explicitly linked in the September 4 frozen catalog, dated intake overlays through October 17, and the collected research references. Six September 22 Jev references remain research-only without registration records; Foreman is now registered under Q-56. Documentation-only technologies, model/API routes and local controls remain in the full register. Transitive dependency trees and every project in an upstream directory are not asserted to be evaluated candidates.
 
-PocketBase, Trail-Code and OpenWorker were checked on October 17. AgentBridge, MinerU, OpenRig, Foreman, AX, the ten post projects and Letta's current-source pointer were checked on October 16; LangGraph was already present. OpenMausBot and SkillSpector were checked on October 15. AirLLM, PentAGI, OpenGrok, Camofox Browser and LibreChat were checked on October 13. REA was checked on October 12. Invisible Playwright was checked on October 10. Magpie, iFixAi, Orca, fframes, PageIndex, Hindsight, AI Employees, SkillOpt and System Prompts Leaks links were checked on October 9. Existing repository links were checked on October 7 against public GitHub metadata; five redirects were resolved and historical names retained. Link checks establish availability and identity, not an audit of today's code. Historical intake revisions do not become current-build admission pins.
+OpenWhispr, PocketBase, Trail-Code and OpenWorker were checked on October 17. AgentBridge, MinerU, OpenRig, Foreman, AX, the ten post projects and Letta's current-source pointer were checked on October 16; LangGraph was already present. OpenMausBot and SkillSpector were checked on October 15. AirLLM, PentAGI, OpenGrok, Camofox Browser and LibreChat were checked on October 13. REA was checked on October 12. Invisible Playwright was checked on October 10. Magpie, iFixAi, Orca, fframes, PageIndex, Hindsight, AI Employees, SkillOpt and System Prompts Leaks links were checked on October 9. Existing repository links were checked on October 7 against public GitHub metadata; five redirects were resolved and historical names retained. Link checks establish availability and identity, not an audit of today's code. Historical intake revisions do not become current-build admission pins.
 
 ## Architecture map
 
@@ -632,6 +632,19 @@ PocketBase, Trail-Code and OpenWorker were checked on October 17. AgentBridge, M
 
 
 ## Interface and media
+
+<a id="openwhispr-openwhispr"></a>
+### OpenWhispr
+
+[OpenWhispr/openwhispr](https://github.com/OpenWhispr/openwhispr) · **Shortlisted / planned**
+
+- **Purpose:** Desktop voice dictation, meeting transcription and notes with local or cloud speech models.
+- **Architecture fit:** H/I / Q-63: voice-input/component comparison; separate ASR quality, Windows audio capture, text insertion and optional assistant actions.
+- **Current status:** Source researched; planned and untested. Exact model/engine/build, focused-target behavior, system-audio scope and privacy remain gates.
+- **Next gate:** Compare matched speech fixtures and end-to-end correction effort; verify headphones/loopback, no unintended paste/send, cancel/mute, transcript deletion, local-versus-cloud egress, model licenses and resources.
+- **Evidence:** Pinned README, package/license/security metadata and selected Windows loopback-manager source reviewed; no install, models, recording, accounts or full audit. Dates: 2026-10-17.
+- **Registered records:** voice.openwhispr
+- **Recorded intake revision:** 3577e5c9b2b06f7667a4b9d489935addba488341
 
 <a id="librechat-ai-librechat"></a>
 ### LibreChat
