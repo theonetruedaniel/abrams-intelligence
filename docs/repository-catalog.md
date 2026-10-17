@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated October 17, 2026. This is a deduplicated map of **133 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories. The underlying register contains **235 entries** (150 frozen catalog records plus 85 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated October 17, 2026. This is a deduplicated map of **134 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories. The underlying register contains **236 entries** (150 frozen catalog records plus 86 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -12,7 +12,7 @@ Updated October 17, 2026. This is a deduplicated map of **133 GitHub repositorie
 - **Selected advisory content:** one pinned design skill is selected; its repository is not adopted as a runtime.
 - **Adopted integration:** an exact accepted product integration. None is claimed in this catalog.
 
-Counts: 113 shortlisted/planned, 18 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
+Counts: 114 shortlisted/planned, 18 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
 
 Coverage is the union of GitHub identities explicitly linked in the September 4 frozen catalog, dated intake overlays through October 17, and the collected research references. Six September 22 Jev references remain research-only without registration records; Foreman is now registered under Q-56. Documentation-only technologies, model/API routes and local controls remain in the full register. Transitive dependency trees and every project in an upstream directory are not asserted to be evaluated candidates.
 
@@ -33,6 +33,19 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 | Tools and browsing | Capability-scoped adapters; no inherited tool or account authority. |
 
 ## Agent runtimes
+
+<a id="aaif-goose-goose"></a>
+### Goose
+
+[aaif-goose/goose](https://github.com/aaif-goose/goose) · **Shortlisted / planned**
+
+- **Purpose:** General-purpose local agent with desktop, CLI/API, MCP extensions and reusable recipes.
+- **Architecture fit:** C/H/I / Q-79 alongside BO-03, Hermes, OpenHands and OpenCode: runtime admission, development-control and product/interface scopes separate.
+- **Current status:** Source researched; planned and untested. Apache-2.0 root signal; documented default Autonomous mode, ACP tool forwarding, session/privacy and exact host/provider admission remain gates.
+- **Next gate:** Test externally enforced grants across native/MCP/ACP tools, mode/session persistence, recipe trust, effect receipts/retries, Stop, session export/delete, provider identity/eligibility, full cost and Windows/build resources.
+- **Evidence:** Pinned README, license/build metadata and permission, ACP, recipe, session/security docs reviewed; no install, credentials/accounts, agent/tool/provider calls or full audit. Dates: 2026-10-17.
+- **Registered records:** agent.goose
+- **Recorded intake revision:** bfcc6ee6f1ee18d0c4c852a65c49b25f87ee40dc
 
 <a id="anthropics-claude-code"></a>
 ### Claude Code
