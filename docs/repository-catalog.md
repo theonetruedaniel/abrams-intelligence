@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated October 17, 2026. This is a deduplicated map of **126 GitHub repositories** actually recorded in Abrams discovery and research, plus four related model repositories. The underlying register contains **227 entries** (150 frozen catalog records plus 77 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated October 17, 2026. This is a deduplicated map of **133 GitHub repositories** actually recorded in Abrams discovery and research, plus four related model repositories. The underlying register contains **234 entries** (150 frozen catalog records plus 84 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -12,7 +12,7 @@ Updated October 17, 2026. This is a deduplicated map of **126 GitHub repositorie
 - **Selected advisory content:** one pinned design skill is selected; its repository is not adopted as a runtime.
 - **Adopted integration:** an exact accepted product integration. None is claimed in this catalog.
 
-Counts: 106 shortlisted/planned, 18 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
+Counts: 113 shortlisted/planned, 18 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
 
 Coverage is the union of GitHub identities explicitly linked in the September 4 frozen catalog, dated intake overlays through October 17, and the collected research references. Six September 22 Jev references remain research-only without registration records; Foreman is now registered under Q-56. Documentation-only technologies, model/API routes and local controls remain in the full register. Transitive dependency trees and every project in an upstream directory are not asserted to be evaluated candidates.
 
@@ -33,6 +33,45 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 | Tools and browsing | Capability-scoped adapters; no inherited tool or account authority. |
 
 ## Agent runtimes
+
+<a id="anthropics-claude-code"></a>
+### Claude Code
+
+[anthropics/claude-code](https://github.com/anthropics/claude-code) · **Shortlisted / planned**
+
+- **Purpose:** Vendor coding-agent development control and separately scoped worker comparison.
+- **Architecture fit:** C/H / Q-77: Existing Codex development tooling, OpenCode and eligible BO-03 adapters; distinct from Free Claude Code proxy.
+- **Current status:** Source researched; planned and untested. All rights reserved; Anthropic Commercial Terms of Service. Public repository does not establish an open-source client implementation; Windows installation documented; no account/executable admission.
+- **Next gate:** Review exact executable/service/account eligibility, filesystem/shell/network grants, hooks/MCP, feedback/retention, real model and billing, retries/effect receipts, Stop and removal.
+- **Evidence:** Pinned README and LICENSE.md reviewed; no installation, accounts/credentials, runtime/provider calls or full audit. Dates: 2026-10-17.
+- **Registered records:** agent.claude-code
+- **Recorded intake revision:** c017428c8c27e604840435048d5bce6a9a22c040
+
+<a id="langgenius-dify"></a>
+### Dify
+
+[langgenius/dify](https://github.com/langgenius/dify) · **Shortlisted / planned**
+
+- **Purpose:** Visual AI app/workflow platform, RAG and agent product comparison.
+- **Architecture fit:** C/H/I / Q-74: Core-owned orchestration/direct adapters, n8n and separately scoped Langflow; component study distinct from platform replacement.
+- **Current status:** Source researched; planned and untested. Modified Apache-2.0 with workspace/multi-tenant and branding conditions. Compose includes 1.17.1 app images, database/cache and sandbox components; server/host not qualified.
+- **Next gate:** Review exact reuse/license scope, plugin/sandbox execution, provider credentials/egress, state ownership, workflow export, retries/idempotency, resources/cost, cancellation and removal.
+- **Evidence:** Pinned README, LICENSE and Compose manifest reviewed; no installation, accounts/credentials, runtime/provider calls or full audit. Dates: 2026-10-17.
+- **Registered records:** platform.dify
+- **Recorded intake revision:** 7c7f93bd530cc0a9fb7465ef59c28803edd1e286
+
+<a id="anomalyco-opencode"></a>
+### OpenCode
+
+[anomalyco/opencode](https://github.com/anomalyco/opencode) · **Shortlisted / planned**
+
+- **Purpose:** Terminal/desktop coding-agent worker and integration-bake-off development control.
+- **Architecture fit:** C/H / Q-71: BO-03 runtime controls, OpenHands and existing coding adapters; product worker and development tool scopes separate.
+- **Current status:** Source researched; planned and untested. MIT. 2.0.32 root metadata; Bun 1.4.2; Windows install/desktop documented, not qualified.
+- **Next gate:** Qualify exact client/provider pairing, filesystem/shell/tool grants, session storage, config/plugins, model identity, retry/effect handling, cost and Stop.
+- **Evidence:** Pinned README and root package metadata reviewed; no installation, accounts/credentials, runtime/provider calls or full audit. Dates: 2026-10-17.
+- **Registered records:** agent.opencode
+- **Recorded intake revision:** 86c7f7c84048d776ba94b94bfab782b2b0a6d776
 
 <a id="deepseek-ai-deepseek-harness"></a>
 ### DeepSeek Harness
@@ -646,6 +685,19 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 
 ## Interface and media
 
+<a id="open-webui-open-webui"></a>
+### Open WebUI
+
+[open-webui/open-webui](https://github.com/open-webui/open-webui) · **Shortlisted / planned**
+
+- **Purpose:** Self-hosted chat/research interface with local and cloud model adapters.
+- **Architecture fit:** H/I / Q-75: LibreChat, CopilotKit and current interface concepts; UI/component evaluation separate from backend adoption.
+- **Current status:** Source researched; planned and untested. Custom Open WebUI License with branding conditions and stated exceptions. Pinned Python >=3.11,<3.13.0a1 excludes the available planning Python 3.13; offline claims require network verification.
+- **Next gate:** Review branding/reuse and exact Python/build; test auth/user isolation, uploads/RAG citations, executable plugins/tools, routes/egress, accessibility, export/delete, resources and Stop.
+- **Evidence:** Pinned README, LICENSE and pyproject reviewed; no installation, accounts/credentials, runtime/provider calls or full audit. Dates: 2026-10-17.
+- **Registered records:** surface.open-webui
+- **Recorded intake revision:** 91ea4e3421d1d8069f13d4a463fcb5986d94ea60
+
 <a id="anil-matcha-open-generative-ai"></a>
 ### Open Generative AI
 
@@ -1225,6 +1277,19 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 
 ## Skills and development
 
+<a id="anthropics-skills"></a>
+### Anthropic Agent Skills
+
+[anthropics/skills](https://github.com/anthropics/skills) · **Shortlisted / planned**
+
+- **Purpose:** Selected instructions/scripts/resources for repeatable assistant tasks and development.
+- **Architecture fit:** H/J / Q-73: Existing native skills, Impeccable and task-specific controls; evaluate selected skills independently, not the whole collection.
+- **Current status:** Source researched; planned and untested. Per-folder: many Apache-2.0; document skills source-available under service terms. User confirmed screenshot identity; no skill instructions executed, imported or installed.
+- **Next gate:** Pin each selected skill/scripts/license; inspect executable/network/file effects, injection and dependencies; compare held-out task quality/review effort, portability and removal before explicit promotion.
+- **Evidence:** Pinned README and selected skill-creator/docx license files reviewed; no installation, accounts/credentials, runtime/provider calls or full audit. Dates: 2026-10-17.
+- **Registered records:** skills.anthropic
+- **Recorded intake revision:** dbd4588f9e1033efb41dad4bef2f7947c8993d44
+
 <a id="comet-ml-opik"></a>
 ### Opik
 
@@ -1478,6 +1543,32 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Historical intake revision:** `2d9b8f26c8b711481c19b63f1f62779432ef3768`.
 
 ## Tools and browsing
+
+<a id="langflow-ai-langflow"></a>
+### Langflow
+
+[langflow-ai/langflow](https://github.com/langflow-ai/langflow) · **Shortlisted / planned**
+
+- **Purpose:** Visual Python component/agent workflow builder with API and JSON export.
+- **Architecture fit:** H/I / Q-76: Core-owned fixed-step scripts, n8n and Dify on matched workflows; canvas convenience separate from execution authority.
+- **Current status:** Source researched; planned and untested. MIT; components/dependencies/services separate. Root version 1.13.0; Python >=3.10,<3.15; Windows desktop documented, dependencies/backends still need exact qualification.
+- **Next gate:** Inspect custom Python/components, secrets/auth/egress, workflow export reproducibility, state ownership, retries/idempotency, resources/cost, cancellation and Windows/build support.
+- **Evidence:** Pinned README and pyproject reviewed; no installation, accounts/credentials, runtime/provider calls or full audit. Dates: 2026-10-17.
+- **Registered records:** workflow.langflow
+- **Recorded intake revision:** 972d56c47d3830d17060ee85cfaad152df823041
+
+<a id="firecrawl-firecrawl"></a>
+### Firecrawl
+
+[firecrawl/firecrawl](https://github.com/firecrawl/firecrawl) · **Shortlisted / planned**
+
+- **Purpose:** Website scraping/crawling into text and structured research inputs.
+- **Architecture fit:** E/I / Q-72: Direct fetch, eligible browser/read adapters and source-preserving research controls; cloud and self-host feature sets separate.
+- **Current status:** Source researched; planned and untested. Primarily AGPL-3.0; SDKs/some UI MIT; cloud scope separate. Self-host services include browser worker, Redis, RabbitMQ, PostgreSQL/queue and FoundationDB paths; exact selected topology required.
+- **Next gate:** Verify permitted sources, egress/SSRF/redirect limits, robots/site terms, dynamic-page fidelity, provenance, crawl budgets, retries, secrets and Stop; review service resources/licenses.
+- **Evidence:** Pinned README and Compose manifest reviewed; no installation, accounts/credentials, runtime/provider calls or full audit. Dates: 2026-10-17.
+- **Registered records:** research.firecrawl
+- **Recorded intake revision:** acd9d4155c213e1239e3cc1d65aefd2286a55fda
 
 <a id="activeing123-mcptoon"></a>
 ### MCPToon
