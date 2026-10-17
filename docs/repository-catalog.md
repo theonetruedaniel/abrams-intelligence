@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated October 17, 2026. This is a deduplicated map of **133 GitHub repositories** actually recorded in Abrams discovery and research, plus four related model repositories. The underlying register contains **234 entries** (150 frozen catalog records plus 84 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated October 17, 2026. This is a deduplicated map of **133 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories. The underlying register contains **235 entries** (150 frozen catalog records plus 85 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -1724,12 +1724,14 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 
 ## Related model repositories
 
-These are artifact identities, not extra GitHub projects or additional successful experiments. Their public links were checked October 7.
+These are artifact identities, not extra GitHub projects or additional successful experiments. Each entry retains its own public-link verification date; the DeepSeek entry was checked October 17.
 
 - [Qwen3 4B GGUF](https://huggingface.co/Qwen/Qwen3-4B-GGUF): Planned local BO-05 control; exact quantization and backend qualification required.
 - [Qwen3 8B](https://huggingface.co/Qwen/Qwen3-8B): Planned local BO-05 control; resource eligibility and route evaluation remain separate.
 - [Qwen3.8 27B](https://huggingface.co/Qwen/Qwen3.8-27B): Q-25 model-card/configuration intake only; full-precision local execution hardware-deferred.
 - [Laya multilingual](https://huggingface.co/convaiinnovations/laya-multilingual): Checkpoint e4e9ddf21a7b1903b7acffd8814ad4307bf63a67 used in the separate Laya development experiment; not a second successful evaluation.
+
+- [DeepSeek V4.1 Flash 1017](https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017): Q-78 / BO-05: pinned model/encoding intake; text/vision and tool-use quality, engine and pairing separate. MIT signal; about 510 GB checkpoint. Local execution hardware-deferred; hosted identity, terms, privacy, cost and support unqualified. Planned and untested. Revision `1bae0e1088993b9b82de08f59de5be5a34e42170`; link checked October 17.
 
 ## Evidence limits
 
