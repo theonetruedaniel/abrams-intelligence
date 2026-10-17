@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated October 17, 2026. This is a deduplicated map of **121 GitHub repositories** actually recorded in Abrams discovery and research, plus four related model repositories. The underlying register contains **222 entries** (150 frozen catalog records plus 72 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated October 17, 2026. This is a deduplicated map of **122 GitHub repositories** actually recorded in Abrams discovery and research, plus four related model repositories. The underlying register contains **223 entries** (150 frozen catalog records plus 73 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -12,11 +12,11 @@ Updated October 17, 2026. This is a deduplicated map of **121 GitHub repositorie
 - **Selected advisory content:** one pinned design skill is selected; its repository is not adopted as a runtime.
 - **Adopted integration:** an exact accepted product integration. None is claimed in this catalog.
 
-Counts: 101 shortlisted/planned, 18 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
+Counts: 102 shortlisted/planned, 18 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
 
 Coverage is the union of GitHub identities explicitly linked in the September 4 frozen catalog, dated intake overlays through October 17, and the collected research references. Six September 22 Jev references remain research-only without registration records; Foreman is now registered under Q-56. Documentation-only technologies, model/API routes and local controls remain in the full register. Transitive dependency trees and every project in an upstream directory are not asserted to be evaluated candidates.
 
-MCPToon, Hono, OpenWhispr, PocketBase, Trail-Code and OpenWorker were checked on October 17. AgentBridge, MinerU, OpenRig, Foreman, AX, the ten post projects and Letta's current-source pointer were checked on October 16; LangGraph was already present. OpenMausBot and SkillSpector were checked on October 15. AirLLM, PentAGI, OpenGrok, Camofox Browser and LibreChat were checked on October 13. REA was checked on October 12. Invisible Playwright was checked on October 10. Magpie, iFixAi, Orca, fframes, PageIndex, Hindsight, AI Employees, SkillOpt and System Prompts Leaks links were checked on October 9. Existing repository links were checked on October 7 against public GitHub metadata; five redirects were resolved and historical names retained. Link checks establish availability and identity, not an audit of today's code. Historical intake revisions do not become current-build admission pins.
+DeepSeek Harness, MCPToon, Hono, OpenWhispr, PocketBase, Trail-Code and OpenWorker were checked on October 17. AgentBridge, MinerU, OpenRig, Foreman, AX, the ten post projects and Letta's current-source pointer were checked on October 16; LangGraph was already present. OpenMausBot and SkillSpector were checked on October 15. AirLLM, PentAGI, OpenGrok, Camofox Browser and LibreChat were checked on October 13. REA was checked on October 12. Invisible Playwright was checked on October 10. Magpie, iFixAi, Orca, fframes, PageIndex, Hindsight, AI Employees, SkillOpt and System Prompts Leaks links were checked on October 9. Existing repository links were checked on October 7 against public GitHub metadata; five redirects were resolved and historical names retained. Link checks establish availability and identity, not an audit of today's code. Historical intake revisions do not become current-build admission pins.
 
 ## Architecture map
 
@@ -33,6 +33,19 @@ MCPToon, Hono, OpenWhispr, PocketBase, Trail-Code and OpenWorker were checked on
 | Tools and browsing | Capability-scoped adapters; no inherited tool or account authority. |
 
 ## Agent runtimes
+
+<a id="deepseek-ai-deepseek-harness"></a>
+### DeepSeek Harness
+
+[deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness) · **Shortlisted / planned**
+
+- **Purpose:** Plugin-composed agent harness with replaceable model, tool, session and interaction components.
+- **Architecture fit:** C/H/I / Q-66 alongside BO-03: runtime/component and bake-off-worker study; exact composed profile and external Core controls required.
+- **Current status:** Source researched; planned and untested. Developer preview; profile-dependent permissions, plugin lifecycle, persistence and host isolation remain unqualified.
+- **Next gate:** Pin complete plugin tree/runtime/model route; compare mock conformance and matched tasks, verify safe profiles versus full-access minimal defaults, grant/reload/restart behavior, Stop, raw evidence, privacy and total cost.
+- **Evidence:** Pinned README, package/safety, architecture/config-catalog and base/sdk-minimal bundle docs reviewed; no install, plugins, sessions, calls or full audit. Dates: 2026-10-17.
+- **Registered records:** agent.deepseek-harness
+- **Recorded intake revision:** 687f282e8625c6b8d11ff58211a90524be2e4317
 
 <a id="andrewyng-openworker"></a>
 ### OpenWorker
