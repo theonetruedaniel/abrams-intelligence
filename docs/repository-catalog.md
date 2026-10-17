@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated October 17, 2026. This is a deduplicated map of **116 GitHub repositories** actually recorded in Abrams discovery and research, plus four related model repositories. The underlying register contains **217 entries** (150 frozen catalog records plus 67 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated October 17, 2026. This is a deduplicated map of **117 GitHub repositories** actually recorded in Abrams discovery and research, plus four related model repositories. The underlying register contains **218 entries** (150 frozen catalog records plus 68 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -12,11 +12,11 @@ Updated October 17, 2026. This is a deduplicated map of **116 GitHub repositorie
 - **Selected advisory content:** one pinned design skill is selected; its repository is not adopted as a runtime.
 - **Adopted integration:** an exact accepted product integration. None is claimed in this catalog.
 
-Counts: 96 shortlisted/planned, 18 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
+Counts: 97 shortlisted/planned, 18 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
 
 Coverage is the union of GitHub identities explicitly linked in the September 4 frozen catalog, dated intake overlays through October 17, and the collected research references. Six September 22 Jev references remain research-only without registration records; Foreman is now registered under Q-56. Documentation-only technologies, model/API routes and local controls remain in the full register. Transitive dependency trees and every project in an upstream directory are not asserted to be evaluated candidates.
 
-OpenWorker was checked on October 17. AgentBridge, MinerU, OpenRig, Foreman, AX, the ten post projects and Letta's current-source pointer were checked on October 16; LangGraph was already present. OpenMausBot and SkillSpector were checked on October 15. AirLLM, PentAGI, OpenGrok, Camofox Browser and LibreChat were checked on October 13. REA was checked on October 12. Invisible Playwright was checked on October 10. Magpie, iFixAi, Orca, fframes, PageIndex, Hindsight, AI Employees, SkillOpt and System Prompts Leaks links were checked on October 9. Existing repository links were checked on October 7 against public GitHub metadata; five redirects were resolved and historical names retained. Link checks establish availability and identity, not an audit of today's code. Historical intake revisions do not become current-build admission pins.
+Trail-Code and OpenWorker were checked on October 17. AgentBridge, MinerU, OpenRig, Foreman, AX, the ten post projects and Letta's current-source pointer were checked on October 16; LangGraph was already present. OpenMausBot and SkillSpector were checked on October 15. AirLLM, PentAGI, OpenGrok, Camofox Browser and LibreChat were checked on October 13. REA was checked on October 12. Invisible Playwright was checked on October 10. Magpie, iFixAi, Orca, fframes, PageIndex, Hindsight, AI Employees, SkillOpt and System Prompts Leaks links were checked on October 9. Existing repository links were checked on October 7 against public GitHub metadata; five redirects were resolved and historical names retained. Link checks establish availability and identity, not an audit of today's code. Historical intake revisions do not become current-build admission pins.
 
 ## Architecture map
 
@@ -1146,6 +1146,19 @@ OpenWorker was checked on October 17. AgentBridge, MinerU, OpenRig, Foreman, AX,
 
 
 ## Skills and development
+
+<a id="trailhq-trail-code"></a>
+### Trail-Code
+
+[trailhq/Trail-Code](https://github.com/trailhq/Trail-Code) · **Shortlisted / planned**
+
+- **Purpose:** Local code graph and reviewed development learnings for code navigation, impact analysis and integration research.
+- **Architecture fit:** H/J / Q-61 alongside Q-41 OpenGrok and Q-38 REA: compare source navigation and context reuse against ripgrep/Git/editor controls.
+- **Current status:** Source researched; planned and untested. Graph completeness, learning provenance, package identity, setup mutations and telemetry/model egress remain gates.
+- **Next gate:** Pin exact Trail/graft artifacts; test navigation/impact correctness, edit freshness, stale or poisoned learnings, independent task quality, total cost, native/WASM host behavior, privacy and removal.
+- **Evidence:** Pinned README, package/security/telemetry metadata and selected postinstall source reviewed; no install, hooks, transcript imports, model calls or full audit. Dates: 2026-10-17.
+- **Registered records:** development.trail-code
+- **Recorded intake revision:** ead585b2707055f47f1e97d9b0d4209af5285805
 
 <a id="raysonmeng-agent-bridge"></a>
 ### AgentBridge
