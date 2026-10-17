@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated October 17, 2026. This is a deduplicated map of **122 GitHub repositories** actually recorded in Abrams discovery and research, plus four related model repositories. The underlying register contains **223 entries** (150 frozen catalog records plus 73 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated October 17, 2026. This is a deduplicated map of **123 GitHub repositories** actually recorded in Abrams discovery and research, plus four related model repositories. The underlying register contains **224 entries** (150 frozen catalog records plus 74 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -12,11 +12,11 @@ Updated October 17, 2026. This is a deduplicated map of **122 GitHub repositorie
 - **Selected advisory content:** one pinned design skill is selected; its repository is not adopted as a runtime.
 - **Adopted integration:** an exact accepted product integration. None is claimed in this catalog.
 
-Counts: 102 shortlisted/planned, 18 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
+Counts: 103 shortlisted/planned, 18 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
 
 Coverage is the union of GitHub identities explicitly linked in the September 4 frozen catalog, dated intake overlays through October 17, and the collected research references. Six September 22 Jev references remain research-only without registration records; Foreman is now registered under Q-56. Documentation-only technologies, model/API routes and local controls remain in the full register. Transitive dependency trees and every project in an upstream directory are not asserted to be evaluated candidates.
 
-DeepSeek Harness, MCPToon, Hono, OpenWhispr, PocketBase, Trail-Code and OpenWorker were checked on October 17. AgentBridge, MinerU, OpenRig, Foreman, AX, the ten post projects and Letta's current-source pointer were checked on October 16; LangGraph was already present. OpenMausBot and SkillSpector were checked on October 15. AirLLM, PentAGI, OpenGrok, Camofox Browser and LibreChat were checked on October 13. REA was checked on October 12. Invisible Playwright was checked on October 10. Magpie, iFixAi, Orca, fframes, PageIndex, Hindsight, AI Employees, SkillOpt and System Prompts Leaks links were checked on October 9. Existing repository links were checked on October 7 against public GitHub metadata; five redirects were resolved and historical names retained. Link checks establish availability and identity, not an audit of today's code. Historical intake revisions do not become current-build admission pins.
+Open Generative AI, DeepSeek Harness, MCPToon, Hono, OpenWhispr, PocketBase, Trail-Code and OpenWorker were checked on October 17. AgentBridge, MinerU, OpenRig, Foreman, AX, the ten post projects and Letta's current-source pointer were checked on October 16; LangGraph was already present. OpenMausBot and SkillSpector were checked on October 15. AirLLM, PentAGI, OpenGrok, Camofox Browser and LibreChat were checked on October 13. REA was checked on October 12. Invisible Playwright was checked on October 10. Magpie, iFixAi, Orca, fframes, PageIndex, Hindsight, AI Employees, SkillOpt and System Prompts Leaks links were checked on October 9. Existing repository links were checked on October 7 against public GitHub metadata; five redirects were resolved and historical names retained. Link checks establish availability and identity, not an audit of today's code. Historical intake revisions do not become current-build admission pins.
 
 ## Architecture map
 
@@ -645,6 +645,19 @@ DeepSeek Harness, MCPToon, Hono, OpenWhispr, PocketBase, Trail-Code and OpenWork
 
 
 ## Interface and media
+
+<a id="anil-matcha-open-generative-ai"></a>
+### Open Generative AI
+
+[Anil-matcha/Open-Generative-AI](https://github.com/Anil-matcha/Open-Generative-AI) · **Shortlisted / planned**
+
+- **Purpose:** Creative-media studio with cloud-backed image/video/audio workflows and separate local inference paths.
+- **Architecture fit:** H/I / Q-67 alongside Q-06 Open Higgsfield, Q-22 OpenMuse and Q-35 rendering: scoped media UI/job-adapter comparison.
+- **Current status:** Source researched; planned and untested. Self-hosted UI is not local/free model access; exact provider, model, submodule and native-engine admission pending.
+- **Next gate:** Compare matched media jobs and independent artifacts; verify MuAPI/local route identities, upload/key privacy, full costs, cancellation/retry receipts, exact submodules/builds, Windows resources and removal.
+- **Evidence:** Pinned README/package, submodule/deployment metadata and selected proxy/Electron/local-provider source reviewed; no install, accounts, models, uploads or execution audit. Dates: 2026-10-17.
+- **Registered records:** media.open-generative-ai
+- **Recorded intake revision:** 0668c210ebfe893f16c5149405a08d00b9ae90df
 
 <a id="openwhispr-openwhispr"></a>
 ### OpenWhispr
