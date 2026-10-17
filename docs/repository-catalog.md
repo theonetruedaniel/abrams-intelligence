@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated October 16, 2026. This is a deduplicated map of **115 GitHub repositories** actually recorded in Abrams discovery and research, plus four related model repositories. The underlying register contains **216 entries** (150 frozen catalog records plus 66 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated October 17, 2026. This is a deduplicated map of **116 GitHub repositories** actually recorded in Abrams discovery and research, plus four related model repositories. The underlying register contains **217 entries** (150 frozen catalog records plus 67 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -12,11 +12,11 @@ Updated October 16, 2026. This is a deduplicated map of **115 GitHub repositorie
 - **Selected advisory content:** one pinned design skill is selected; its repository is not adopted as a runtime.
 - **Adopted integration:** an exact accepted product integration. None is claimed in this catalog.
 
-Counts: 95 shortlisted/planned, 18 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
+Counts: 96 shortlisted/planned, 18 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
 
-Coverage is the union of GitHub identities explicitly linked in the September 4 frozen catalog, dated intake overlays through October 16, and the collected research references. Six September 22 Jev references remain research-only without registration records; Foreman is now registered under Q-56. Documentation-only technologies, model/API routes and local controls remain in the full register. Transitive dependency trees and every project in an upstream directory are not asserted to be evaluated candidates.
+Coverage is the union of GitHub identities explicitly linked in the September 4 frozen catalog, dated intake overlays through October 17, and the collected research references. Six September 22 Jev references remain research-only without registration records; Foreman is now registered under Q-56. Documentation-only technologies, model/API routes and local controls remain in the full register. Transitive dependency trees and every project in an upstream directory are not asserted to be evaluated candidates.
 
-AgentBridge, MinerU, OpenRig, Foreman, AX, the ten post projects and Letta's current-source pointer were checked on October 16; LangGraph was already present. OpenMausBot and SkillSpector were checked on October 15. AirLLM, PentAGI, OpenGrok, Camofox Browser and LibreChat were checked on October 13. REA was checked on October 12. Invisible Playwright was checked on October 10. Magpie, iFixAi, Orca, fframes, PageIndex, Hindsight, AI Employees, SkillOpt and System Prompts Leaks links were checked on October 9. Existing repository links were checked on October 7 against public GitHub metadata; five redirects were resolved and historical names retained. Link checks establish availability and identity, not an audit of today's code. Historical intake revisions do not become current-build admission pins.
+OpenWorker was checked on October 17. AgentBridge, MinerU, OpenRig, Foreman, AX, the ten post projects and Letta's current-source pointer were checked on October 16; LangGraph was already present. OpenMausBot and SkillSpector were checked on October 15. AirLLM, PentAGI, OpenGrok, Camofox Browser and LibreChat were checked on October 13. REA was checked on October 12. Invisible Playwright was checked on October 10. Magpie, iFixAi, Orca, fframes, PageIndex, Hindsight, AI Employees, SkillOpt and System Prompts Leaks links were checked on October 9. Existing repository links were checked on October 7 against public GitHub metadata; five redirects were resolved and historical names retained. Link checks establish availability and identity, not an audit of today's code. Historical intake revisions do not become current-build admission pins.
 
 ## Architecture map
 
@@ -33,6 +33,19 @@ AgentBridge, MinerU, OpenRig, Foreman, AX, the ten post projects and Letta's cur
 | Tools and browsing | Capability-scoped adapters; no inherited tool or account authority. |
 
 ## Agent runtimes
+
+<a id="andrewyng-openworker"></a>
+### OpenWorker
+
+[andrewyng/openworker](https://github.com/andrewyng/openworker) · **Shortlisted / planned**
+
+- **Purpose:** Desktop personal-assistant runtime with documents, connectors, scheduled work and approval/audit controls.
+- **Architecture fit:** C/E-I / Q-60: general-assistant and component comparison alongside BO-03; Core retains grants, sources, effects and Stop.
+- **Current status:** Source researched; planned and untested. Beta, optional sandbox/connector boundaries and exact Windows/build qualification remain open.
+- **Next gate:** Compare matched assistant tasks and independent outputs; verify human-only floors, revocation, connector authority, optional sandbox modes, scheduled-run approvals, privacy, updates, aggregate cost and all-child Stop.
+- **Evidence:** Pinned README, security/package metadata and Windows/OpenShell sandbox docs reviewed; no installation, accounts, connectors, model calls or full audit. Dates: 2026-10-17.
+- **Registered records:** agent.openworker
+- **Recorded intake revision:** 7e20213dc88faaaaccace59461876c76e76b134a
 
 <a id="mvschwarz-openrig"></a>
 ### OpenRig
