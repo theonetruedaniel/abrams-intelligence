@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated October 17, 2026. This is a deduplicated map of **125 GitHub repositories** actually recorded in Abrams discovery and research, plus four related model repositories. The underlying register contains **226 entries** (150 frozen catalog records plus 76 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated October 17, 2026. This is a deduplicated map of **126 GitHub repositories** actually recorded in Abrams discovery and research, plus four related model repositories. The underlying register contains **227 entries** (150 frozen catalog records plus 77 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -12,7 +12,7 @@ Updated October 17, 2026. This is a deduplicated map of **125 GitHub repositorie
 - **Selected advisory content:** one pinned design skill is selected; its repository is not adopted as a runtime.
 - **Adopted integration:** an exact accepted product integration. None is claimed in this catalog.
 
-Counts: 105 shortlisted/planned, 18 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
+Counts: 106 shortlisted/planned, 18 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
 
 Coverage is the union of GitHub identities explicitly linked in the September 4 frozen catalog, dated intake overlays through October 17, and the collected research references. Six September 22 Jev references remain research-only without registration records; Foreman is now registered under Q-56. Documentation-only technologies, model/API routes and local controls remain in the full register. Transitive dependency trees and every project in an upstream directory are not asserted to be evaluated candidates.
 
@@ -1224,6 +1224,19 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 
 
 ## Skills and development
+
+<a id="comet-ml-opik"></a>
+### Opik
+
+[comet-ml/opik](https://github.com/comet-ml/opik) · **Shortlisted / planned**
+
+- **Purpose:** Tracing, evaluation datasets/experiments and prompt/agent optimization for the assistant bake-off.
+- **Architecture fit:** H/J / Q-70 alongside BO-11 Promptfoo, the Abrams evaluation control and the Braintrust comparison; benchmark infrastructure separate from candidates under test.
+- **Current status:** Source researched; planned and untested. Apache-2.0 root signal; cloud defaults, enabled SDK analytics, self-host infrastructure, judge bias/cost and export integrity remain gates.
+- **Next gate:** Compare fixed fixtures and immutable exports; verify trace completeness/redaction, explicit local endpoints and analytics settings, judge calibration/holdouts, overhead, retention/deletion, auth, Stop and total hosting/judge cost.
+- **Evidence:** Pinned README, LICENSE, version, Compose docs/manifest and Python setup/config reviewed; no install, containers, accounts, telemetry, evaluation/provider calls or full audit. Dates: 2026-10-17.
+- **Registered records:** eval.opik
+- **Recorded intake revision:** 535e6110129e81552677c41e93859e4d8a677e72
 
 <a id="honojs-hono"></a>
 ### Hono
