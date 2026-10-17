@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated October 17, 2026. This is a deduplicated map of **134 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories. The underlying register contains **236 entries** (150 frozen catalog records plus 86 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated October 17, 2026. This is a deduplicated map of **135 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories. The underlying register contains **237 entries** (150 frozen catalog records plus 87 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -12,7 +12,7 @@ Updated October 17, 2026. This is a deduplicated map of **134 GitHub repositorie
 - **Selected advisory content:** one pinned design skill is selected; its repository is not adopted as a runtime.
 - **Adopted integration:** an exact accepted product integration. None is claimed in this catalog.
 
-Counts: 114 shortlisted/planned, 18 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
+Counts: 115 shortlisted/planned, 18 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
 
 Coverage is the union of GitHub identities explicitly linked in the September 4 frozen catalog, dated intake overlays through October 17, and the collected research references. Six September 22 Jev references remain research-only without registration records; Foreman is now registered under Q-56. Documentation-only technologies, model/API routes and local controls remain in the full register. Transitive dependency trees and every project in an upstream directory are not asserted to be evaluated candidates.
 
@@ -854,6 +854,19 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 
 
 ## Memory and research
+
+<a id="assafelovic-gpt-researcher"></a>
+### GPT Researcher
+
+[assafelovic/gpt-researcher](https://github.com/assafelovic/gpt-researcher) · **Shortlisted / planned**
+
+- **Purpose:** Web/local-document research worker with cited reports, recursive exploration and selectable passage filters.
+- **Architecture fit:** F/I / Q-80 alongside Q-07 HyperResearch, Abrams-controlled research and Q-11 Jev evidence support; frozen-page filter ablations separate from end-to-end research.
+- **Current status:** Source researched; planned and untested. Root Apache-2.0 conflicts with MIT package metadata; Jev/key-dependent filtering, keyword fallbacks, source fidelity, recursive costs and host/privacy remain gates.
+- **Next gate:** Compare fixed-source Jev/keyword/embeddings/no-filter controls and matched end-to-end tasks; verify claim-level citation support, lost counterevidence, actual filter/fallback, search/model cost, egress, local-file boundaries, cancellation and evidence export.
+- **Evidence:** Pinned README, LICENSE/package/Compose/default config, context/deep-research/eval docs and selected context-selection source reviewed; no install, credentials/accounts, research/model/search/Jev calls or full audit. Dates: 2026-10-17.
+- **Registered records:** research.gpt-researcher
+- **Recorded intake revision:** 3582a6841fe7dc801e2a34e34ee408641aea9bce
 
 <a id="pocketbase-pocketbase"></a>
 ### PocketBase
