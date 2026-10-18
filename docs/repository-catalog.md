@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated October 18, 2026. This is a deduplicated map of **136 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories. The underlying register contains **238 entries** (150 frozen catalog records plus 88 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated October 18, 2026. This is a deduplicated map of **137 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories. The underlying register contains **239 entries** (150 frozen catalog records plus 89 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -12,7 +12,7 @@ Updated October 18, 2026. This is a deduplicated map of **136 GitHub repositorie
 - **Selected advisory content:** one pinned design skill is selected; its repository is not adopted as a runtime.
 - **Adopted integration:** an exact accepted product integration. None is claimed in this catalog.
 
-Counts: 116 shortlisted/planned, 18 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
+Counts: 117 shortlisted/planned, 18 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
 
 Coverage is the union of GitHub identities explicitly linked in the September 4 frozen catalog, dated intake overlays through October 18, and the collected research references. Six September 22 Jev references remain research-only without registration records; Foreman is now registered under Q-56. Documentation-only technologies, model/API routes and local controls remain in the full register. Transitive dependency trees and every project in an upstream directory are not asserted to be evaluated candidates.
 
@@ -1302,6 +1302,19 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 
 
 ## Skills and development
+
+<a id="google-research-harness2"></a>
+### Harness2
+
+[google-research/harness2](https://github.com/google-research/harness2) · **Shortlisted / planned**
+
+- **Purpose:** Recursive propose/probe/compose framework for improving agent prompts, memory, skills, scripts and tool guidance with fixed model weights.
+- **Architecture fit:** H/J / Q-82 alongside Q-20 autoresearch, Q-29 SkillOpt and unchanged/manual harness controls; product-side improvement and bake-off method separate from model quality/pairing.
+- **Current status:** Source researched; planned and untested. Apache-2.0 root signal; Linux benchmark setup, unrestricted executor network and Codex sandbox/hook-trust bypass are execution-admission blockers.
+- **Next gate:** Compare upstream, licensed components, a bounded independent loop and deferral; enforce immutable Core grants/guardrails, isolated probes, equal total budgets, hidden holdouts, provenance, promotion/rollback and Stop; qualify exact cloud/local adapters and costs.
+- **Evidence:** Pinned README, pyproject, setup/experiment/third-party docs and selected Codex/OpenCode substrate source reviewed; no installation, demo, benchmark, credentials or model/tool/cloud execution/full audit. Dates: 2026-10-18.
+- **Registered records:** optimization.harness2
+- **Recorded intake revision:** 1cfe254e8d25b15f37048c3730134686abe60335
 
 <a id="reason-machines-reason-network"></a>
 ### Reason Network
