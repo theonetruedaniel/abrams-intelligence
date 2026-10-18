@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated October 18, 2026. This is a deduplicated map of **154 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories. The underlying register contains **256 entries** (150 frozen catalog records plus 106 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated October 18, 2026. This is a deduplicated map of **155 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories. The underlying register contains **257 entries** (150 frozen catalog records plus 107 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -12,7 +12,7 @@ Updated October 18, 2026. This is a deduplicated map of **154 GitHub repositorie
 - **Selected advisory content:** one pinned design skill is selected; its repository is not adopted as a runtime.
 - **Adopted integration:** an exact accepted product integration. None is claimed in this catalog.
 
-Counts: 134 shortlisted/planned, 18 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
+Counts: 135 shortlisted/planned, 18 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
 
 Coverage is the union of GitHub identities explicitly linked in the September 4 frozen catalog, dated intake overlays through October 18, and the collected research references. Six September 22 Jev references remain research-only without registration records; Foreman is now registered under Q-56. Documentation-only technologies, model/API routes and local controls remain in the full register. Transitive dependency trees and every project in an upstream directory are not asserted to be evaluated candidates.
 
@@ -1300,6 +1300,19 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 
 
 ## Safety and recovery
+
+<a id="perplexityai-space"></a>
+### SPACE
+
+[perplexityai/SPACE](https://github.com/perplexityai/SPACE) · **Shortlisted / planned**
+
+- **Purpose:** API-managed isolated code-execution environments using Firecracker microVMs, command streams and sandbox lifecycle controls.
+- **Architecture fit:** C/I/J / Q-100: product-side execution backend and isolated bake-off workers versus existing AppContainer/Hyper-V/container controls; Core execution adapter and model/provider routing separate.
+- **Current status:** Source researched; planned and untested. Apache-2.0 root signal; Linux/KVM/privileged local setup, host-side services, auth/egress, snapshot compatibility and exact Windows client/host feasibility remain gates.
+- **Next gate:** Compare upstream/eligible components/thin Core adapter to qualified isolation/deferral; verify host and guest bounds, management versus attach tokens, network/secret policy, resource quotas, replay-safe lifecycle, kill/delete/Stop, snapshots, full cost and rollback.
+- **Evidence:** Pinned README, Cargo/toolchain/Python metadata, SECURITY/dependency and architecture/install/egress/versioning docs reviewed; no installation, VM/container/cluster, credentials, code/model/API execution or full audit. Dates: 2026-10-18.
+- **Registered records:** isolation.space
+- **Recorded intake revision:** 57c7c0c47a73373a974c5b542d180599795465da
 
 <a id="resemble-ai-detect-skill"></a>
 ### Resemble Detect Skill
