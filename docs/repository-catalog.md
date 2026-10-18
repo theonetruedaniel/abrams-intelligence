@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated October 18, 2026. This is a deduplicated map of **137 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories. The underlying register contains **239 entries** (150 frozen catalog records plus 89 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated October 18, 2026. This is a deduplicated map of **138 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories. The underlying register contains **240 entries** (150 frozen catalog records plus 90 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -12,7 +12,7 @@ Updated October 18, 2026. This is a deduplicated map of **137 GitHub repositorie
 - **Selected advisory content:** one pinned design skill is selected; its repository is not adopted as a runtime.
 - **Adopted integration:** an exact accepted product integration. None is claimed in this catalog.
 
-Counts: 117 shortlisted/planned, 18 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
+Counts: 118 shortlisted/planned, 18 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
 
 Coverage is the union of GitHub identities explicitly linked in the September 4 frozen catalog, dated intake overlays through October 18, and the collected research references. Six September 22 Jev references remain research-only without registration records; Foreman is now registered under Q-56. Documentation-only technologies, model/API routes and local controls remain in the full register. Transitive dependency trees and every project in an upstream directory are not asserted to be evaluated candidates.
 
@@ -33,6 +33,19 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 | Tools and browsing | Capability-scoped adapters; no inherited tool or account authority. |
 
 ## Agent runtimes
+
+<a id="paperclipai-paperclip"></a>
+### Paperclip
+
+[paperclipai/paperclip](https://github.com/paperclipai/paperclip) · **Shortlisted / planned**
+
+- **Purpose:** Task/goal and agent orchestration dashboard with adapters, heartbeats, approvals and reported-spend budgets.
+- **Architecture fit:** H/I/J / Q-83: product-side multi-provider worker coordination and bake-off management versus Core queue/direct adapters, Q-81 Reason Network, Q-59 AgentBridge and n8n; not a base model.
+- **Current status:** Source researched; planned and untested. MIT root signal; default no-login loopback mode, agent secret handoff, adapter containment, budget overshoot and dual-state authority remain gates.
+- **Next gate:** Compare upstream/component reuse/independent minimal queue/deferral; verify exact cloud/local model adapters, Core state/grants, auth/secrets, heartbeat claims/retries, concurrency/cost reservations, cancellation/recovery, export and host resources.
+- **Evidence:** Pinned README, package/license identity, deployment/budget/secret/adapter docs and selected Codex adapter source reviewed; no installation, onboarding, agents, credentials/accounts, heartbeat/provider calls or full audit. Dates: 2026-10-18.
+- **Registered records:** orchestration.paperclip
+- **Recorded intake revision:** c9669a6c2237626ab0b0b2059d34c3965a86f02f
 
 <a id="aaif-goose-goose"></a>
 ### Goose
