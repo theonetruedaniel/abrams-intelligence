@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated October 18, 2026. This is a deduplicated map of **155 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories. The underlying register contains **257 entries** (150 frozen catalog records plus 107 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated October 18, 2026. This is a deduplicated map of **156 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories. The underlying register contains **258 entries** (150 frozen catalog records plus 108 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -12,7 +12,7 @@ Updated October 18, 2026. This is a deduplicated map of **155 GitHub repositorie
 - **Selected advisory content:** one pinned design skill is selected; its repository is not adopted as a runtime.
 - **Adopted integration:** an exact accepted product integration. None is claimed in this catalog.
 
-Counts: 135 shortlisted/planned, 18 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
+Counts: 136 shortlisted/planned, 18 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
 
 Coverage is the union of GitHub identities explicitly linked in the September 4 frozen catalog, dated intake overlays through October 18, and the collected research references. Six September 22 Jev references remain research-only without registration records; Foreman is now registered under Q-56. Documentation-only technologies, model/API routes and local controls remain in the full register. Transitive dependency trees and every project in an upstream directory are not asserted to be evaluated candidates.
 
@@ -1419,6 +1419,19 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 
 
 ## Skills and development
+
+<a id="alvinunreal-lazyskills"></a>
+### LazySkills
+
+[alvinunreal/lazyskills](https://github.com/alvinunreal/lazyskills) · **Shortlisted / planned**
+
+- **Purpose:** Terminal inventory, visibility checks and lock-based health/restore management for agent skills.
+- **Architecture fit:** H/J / Q-101: Skill-management tooling for bake-off reproducibility and optional Core-controlled product inventory views.
+- **Current status:** Source researched; planned and untested. MIT root signal. Inventory/doctor is distinct from mutating restore/update/remove and from skill security or admission.
+- **Next gate:** Compare upstream, eligible inventory components, minimal original read-only inventory and deferral; qualify Windows paths/symlinks, scope isolation, command provenance, races/partial recovery, egress, Stop, costs and removal.
+- **Evidence:** Pinned README, Go metadata and selected doctor/restore source reviewed; no install, activation, skill execution or full audit. Dates: 2026-10-18.
+- **Registered records:** `skills.lazyskills`
+- **Recorded intake revision:** `4ce98ca91650d3a0154cd93bbed50fd65771f7b4`
 
 <a id="composio-community-skills"></a>
 ### Composio Community Skills
