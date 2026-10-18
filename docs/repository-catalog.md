@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated October 18, 2026. This is a deduplicated map of **139 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories. The underlying register contains **241 entries** (150 frozen catalog records plus 91 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated October 18, 2026. This is a deduplicated map of **154 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories. The underlying register contains **256 entries** (150 frozen catalog records plus 106 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -12,7 +12,7 @@ Updated October 18, 2026. This is a deduplicated map of **139 GitHub repositorie
 - **Selected advisory content:** one pinned design skill is selected; its repository is not adopted as a runtime.
 - **Adopted integration:** an exact accepted product integration. None is claimed in this catalog.
 
-Counts: 119 shortlisted/planned, 18 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
+Counts: 134 shortlisted/planned, 18 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
 
 Coverage is the union of GitHub identities explicitly linked in the September 4 frozen catalog, dated intake overlays through October 18, and the collected research references. Six September 22 Jev references remain research-only without registration records; Foreman is now registered under Q-56. Documentation-only technologies, model/API routes and local controls remain in the full register. Transitive dependency trees and every project in an upstream directory are not asserted to be evaluated candidates.
 
@@ -711,6 +711,32 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 
 ## Interface and media
 
+<a id="calesthio-openmontage"></a>
+### OpenMontage
+
+[calesthio/OpenMontage](https://github.com/calesthio/OpenMontage) · **Shortlisted / planned**
+
+- **Purpose:** Agentic video planning, asset assembly, editing and render workflows.
+- **Architecture fit:** H/I / Q-91: fframes, Q-67 media study and simple licensed-asset FFmpeg workflows.
+- **Current status:** Source researched; planned and untested. AGPL-3.0 root signal. Python3.10+, Node18+, FFmpeg; a stock-footage/local path differs from a paid generative path. No publish/upload rights implied.
+- **Next gate:** Review AGPL/assets/music/footage rights, provider schemas/eligibility, exact model/host, full render/storage cost, preview/quality, no silent paid fallback, Stop and removal.
+- **Evidence:** Pinned README and provider guide reviewed as source material; no installation, activation, credentials/accounts, target/media/agent/model/service execution or full audit. Dates: 2026-10-18.
+- **Registered records:** media.openmontage
+- **Recorded intake revision:** c8066452325cb57c8fc1ba8c2a71b6e8842e6b65
+
+<a id="agent37-platform-minions"></a>
+### Minions
+
+[agent37-platform/minions](https://github.com/agent37-platform/minions) · **Shortlisted / planned**
+
+- **Purpose:** Hermes task/session supervision board with local task metadata.
+- **Architecture fit:** H/I / Q-89: Core queue/UI and Q-83 Paperclip plus manual supervision.
+- **Current status:** Source researched; planned and untested. MIT root signal. README Node 18+ differs from package engines >=20; 0.1.27 shell/rsync build paths need Windows qualification.
+- **Next gate:** Verify Hermes version/schema, dual SQLite ownership, auth/bind, heartbeat/cron/child sessions, grants, claims/effect retries, model routes, Stop and export.
+- **Evidence:** Pinned README and package.json reviewed as source material; no installation, activation, credentials/accounts, target/media/agent/model/service execution or full audit. Dates: 2026-10-18.
+- **Registered records:** surface.minions
+- **Recorded intake revision:** a0787971cb207fd80f7e54991a52665874fe914a
+
 <a id="open-webui-open-webui"></a>
 ### Open WebUI
 
@@ -867,6 +893,45 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 
 
 ## Memory and research
+
+<a id="kepano-defuddle"></a>
+### Defuddle
+
+[kepano/defuddle](https://github.com/kepano/defuddle) · **Shortlisted / planned**
+
+- **Purpose:** HTML main-content extraction and Markdown normalization for research input.
+- **Architecture fit:** F/I / Q-94: Raw source/DOM plus current extraction, Q-72 Firecrawl and Readability-style controls.
+- **Current status:** Source researched; planned and untested. MIT root signal. 0.19.5; browser/Node DOM/CLI paths differ, Node import requires ESM per docs. Parsing Markdown is not factual verification.
+- **Next gate:** Verify tables/code/math/footnotes/citations and deleted context, URL/file/DOM safety, fetch versus parse egress, size limits, dependencies and exact Windows build.
+- **Evidence:** Pinned README and package.json reviewed as source material; no installation, activation, credentials/accounts, target/media/agent/model/service execution or full audit. Dates: 2026-10-18.
+- **Registered records:** research.defuddle
+- **Recorded intake revision:** 556d74e8c8fd68c49912d4b11a4ae9ec04d7b2b5
+
+<a id="deusdata-codebase-memory-mcp"></a>
+### Codebase Memory MCP
+
+[DeusData/codebase-memory-mcp](https://github.com/DeusData/codebase-memory-mcp) · **Shortlisted / planned**
+
+- **Purpose:** Local code indexing and graph queries through MCP with optional visualization/chat.
+- **Architecture fit:** F/H / Q-88: rg/LSP and Q-41 OpenGrok plus source-preserving Core projections.
+- **Current status:** Source researched; planned and untested. MIT root signal. Native C/SQLite/tree-sitter artifacts; main's Lens Beta differs from documented v0.11.0 release. Speed/token claims unverified.
+- **Next gate:** Measure parser/graph correctness, stale/deleted/ignored files, generated code, file/privacy scope, resources, API/UI auth, read/write tools and exact local-model pairing.
+- **Evidence:** Pinned README reviewed as source material; no installation, activation, credentials/accounts, target/media/agent/model/service execution or full audit. Dates: 2026-10-18.
+- **Registered records:** memory.codebase-memory-mcp
+- **Recorded intake revision:** 1346ac4ea2835c15b1aa257e970abbd520e92c74
+
+<a id="zeropointrepo-youtube-skills"></a>
+### YouTube Skills
+
+[ZeroPointRepo/youtube-skills](https://github.com/ZeroPointRepo/youtube-skills) · **Shortlisted / planned**
+
+- **Purpose:** YouTube transcript, video/channel/playlist search via TranscriptAPI-backed skills.
+- **Architecture fit:** F/I / Q-86: Native transcript/source checks and direct eligible transcript services.
+- **Current status:** Source researched; planned and untested. MIT root signal. Matched to ZeroPointRepo from description and author profile; screenshot has no owner. Keep original-post identity confirmation gate.
+- **Next gate:** Verify intended repository, TranscriptAPI pricing/quotas/key storage, authorized access, timestamp/language fidelity, coverage, privacy and cancellation.
+- **Evidence:** Pinned README including account/key setup reviewed as source material; no installation, activation, credentials/accounts, target/media/agent/model/service execution or full audit. Dates: 2026-10-18.
+- **Registered records:** research.youtube-skills
+- **Recorded intake revision:** 4f7994b94e7d5e250c3b51102d609992e04d5d0d
 
 <a id="assafelovic-gpt-researcher"></a>
 ### GPT Researcher
@@ -1236,6 +1301,32 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 
 ## Safety and recovery
 
+<a id="resemble-ai-detect-skill"></a>
+### Resemble Detect Skill
+
+[resemble-ai/detect-skill](https://github.com/resemble-ai/detect-skill) · **Shortlisted / planned**
+
+- **Purpose:** API-guided synthetic-media detection and follow-up media analysis.
+- **Architecture fit:** F/I / Q-99: Provenance/source inspection and known-label synthetic test corpus.
+- **Current status:** Source researched; planned and untested. Apache-2.0 root signal. Apache-2.0 wrapper uses hosted REST APIs. A completed score remains probabilistic evidence, not proof of authorship/authenticity or someone's intent.
+- **Next gate:** Verify exact Detect model/API eligibility/cost, authorized uploads/retention, subgroup/base-rate calibration and false positives, incomplete/error results, privacy, bounded polling and deletion.
+- **Evidence:** Pinned README reviewed as source material; no installation, activation, credentials/accounts, target/media/agent/model/service execution or full audit. Dates: 2026-10-18.
+- **Registered records:** media.resemble-detect
+- **Recorded intake revision:** 4d31eac1ff9aed33b9a0a192e64f7db57821dc9f
+
+<a id="mukul975-anthropic-cybersecurity-skills"></a>
+### Anthropic Cybersecurity Skills (community)
+
+[mukul975/Anthropic-Cybersecurity-Skills](https://github.com/mukul975/Anthropic-Cybersecurity-Skills) · **Shortlisted / planned**
+
+- **Purpose:** Selected security-analysis and reporting skill references for scoped defensive fixtures.
+- **Architecture fit:** H/J / Q-92: Independent manual/static review, Q-44 and existing security methods.
+- **Current status:** Source researched; planned and untested. Apache-2.0 root signal. Community-owned mukul975 repository; name is not Anthropic endorsement. No bulk installation, scanning or attack execution.
+- **Next gate:** Select exact defensive skill and lawful synthetic target; verify tool effects, framework/version mapping accuracy, finding validation, dependency rights, false positives, egress/cost and Stop.
+- **Evidence:** Pinned README reviewed as source material; no installation, activation, credentials/accounts, target/media/agent/model/service execution or full audit. Dates: 2026-10-18.
+- **Registered records:** skills.cybersecurity.mukul975
+- **Recorded intake revision:** 54a798831d2266a3ca61ce68a7acb80b81160d57
+
 <a id="nvidia-skillspector"></a>
 ### SkillSpector
 
@@ -1315,6 +1406,97 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 
 
 ## Skills and development
+
+<a id="composio-community-skills"></a>
+### Composio Community Skills
+
+[composio-community/skills](https://github.com/composio-community/skills) · **Shortlisted / planned**
+
+- **Purpose:** Composio Tool Router/auth/trigger guidance and skill-creation references.
+- **Architecture fit:** H/I/J / Q-98: Native/direct service adapters, existing skill creator and Q-27 Open Dot context.
+- **Current status:** Source researched; planned and untested. MIT root signal. Community repository metadata still references composiohq/skills. Build scripts generate agent docs; collection is not every app integration admitted.
+- **Next gate:** Pin selected guides/scripts and provenance, separate service terms/costs, OAuth scopes/secret custody, event replay/effect grants, portability, Stop and removal.
+- **Evidence:** Pinned README and package.json reviewed as source material; no installation, activation, credentials/accounts, target/media/agent/model/service execution or full audit. Dates: 2026-10-18.
+- **Registered records:** skills.composio-community
+- **Recorded intake revision:** c4b270016aa8c832bb6d5824175da1bb94690b89
+
+<a id="amap-ml-skillclaw"></a>
+### SkillClaw
+
+[AMAP-ML/SkillClaw](https://github.com/AMAP-ML/SkillClaw) · **Shortlisted / planned**
+
+- **Purpose:** Session-capture proxy and optional skill evolution/shared-library service.
+- **Architecture fit:** H/J / Q-97: Unchanged/manual skills, Q-29 and Q-82 with Core-governed promotion.
+- **Current status:** Source researched; planned and untested. MIT root signal. Python>=3.10; Windows manual path documented. Background evolution is not permission to rewrite active Core policies/skills.
+- **Next gate:** Inspect intercepted traffic/secrets/retention, local/OSS/S3 sharing, endpoint/config changes, poisoning/holdouts, cross-user isolation, explicit promotion/rollback, cumulative cost and Stop.
+- **Evidence:** Pinned README reviewed as source material; no installation, activation, credentials/accounts, target/media/agent/model/service execution or full audit. Dates: 2026-10-18.
+- **Registered records:** optimization.skillclaw
+- **Recorded intake revision:** 3938f7537645c961d94498a0a79fc0a977019595
+
+<a id="jakubkrehel-make-interfaces-feel-better"></a>
+### Make Interfaces Feel Better
+
+[jakubkrehel/make-interfaces-feel-better](https://github.com/jakubkrehel/make-interfaces-feel-better) · **Shortlisted / planned**
+
+- **Purpose:** Selected UI-polish and interaction-review guidance.
+- **Architecture fit:** H/J / Q-96: Impeccable and existing design/accessibility controls.
+- **Current status:** Source researched; planned and untested. MIT root signal. Evaluate as advisory content; no UI changes or skill activation here.
+- **Next gate:** Measure real usability/accessibility and reduced motion, preserve existing styling, avoid unrequested redesign, bound edits, verify references/rights and regressions.
+- **Evidence:** Pinned README and selected SKILL.md reviewed as source material; no installation, activation, credentials/accounts, target/media/agent/model/service execution or full audit. Dates: 2026-10-18.
+- **Registered records:** skills.interfaces-feel-better
+- **Recorded intake revision:** 35545ea1512ad59fa463e6b1f95ca9c052981fe6
+
+<a id="forward-future-loopy"></a>
+### Loopy / Loop Library
+
+[Forward-Future/loopy](https://github.com/Forward-Future/loopy) · **Shortlisted / planned**
+
+- **Purpose:** Catalog and optional skill for bounded iterative agent workflows with checks and stop rules.
+- **Architecture fit:** H/J / Q-95: Fixed-step/manual loops, Q-20 and Q-82 harness improvement.
+- **Current status:** Source researched; planned and untested. MIT root signal. Website catalog and optional Loopy skill are separate; installation does not host website. Node/npx installation not executed.
+- **Next gate:** Pin selected loop and live-catalog content, validate independent verifier/budget/Stop, privacy, approval-before-publication and no implicit schedules.
+- **Evidence:** Pinned README reviewed as source material; no installation, activation, credentials/accounts, target/media/agent/model/service execution or full audit. Dates: 2026-10-18.
+- **Registered records:** workflow.loopy
+- **Recorded intake revision:** 75966cbd572a4185064971c9fe5e9c52e8f8456d
+
+<a id="witt3rd-oh-my-hermes"></a>
+### Oh My Hermes
+
+[witt3rd/oh-my-hermes](https://github.com/witt3rd/oh-my-hermes) · **Shortlisted / planned**
+
+- **Purpose:** Hermes-native planning/research/verification orchestration skills and optional hooks/plugin.
+- **Architecture fit:** H/J / Q-90: Hermes baseline, native methods, Q-84 and simple serial controls.
+- **Current status:** Source researched; planned and untested. MIT root signal. witt3rd/master matches native-primitives description; other same-name projects are not silently admitted. Optional plugin Python3.10+/PyYAML.
+- **Next gate:** Verify exact identity/client/plugin, bounded delegation, consensus versus truth, branch/stash/commit effects, evidence fidelity, costs, Stop and recovery.
+- **Evidence:** Pinned README reviewed as source material; no installation, activation, credentials/accounts, target/media/agent/model/service execution or full audit. Dates: 2026-10-18.
+- **Registered records:** skills.oh-my-hermes
+- **Recorded intake revision:** 3b06e33ae67b202b342989b484f08143e65e250d
+
+<a id="addyosmani-agent-skills"></a>
+### Addy Osmani Agent Skills
+
+[addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) · **Shortlisted / planned**
+
+- **Purpose:** Selected engineering methods from specification to verification and shipping.
+- **Architecture fit:** H/J / Q-87: Existing native engineering, Q-73 and Q-84 skills; unchanged/manual controls.
+- **Current status:** Source researched; planned and untested. MIT root signal. Selected install can omit repository-level references; global Git rewrite suggestions are not authorized configuration.
+- **Next gate:** Inspect per-skill references/dependencies, name conflicts, tool/delegation/write scopes, missing-reference packaging, held-out outcomes and updates.
+- **Evidence:** Pinned README including per-skill reference portability warning reviewed as source material; no installation, activation, credentials/accounts, target/media/agent/model/service execution or full audit. Dates: 2026-10-18.
+- **Registered records:** skills.addyosmani
+- **Recorded intake revision:** aeac41d4d005999432bb7312f7ff06383a91d59d
+
+<a id="blader-humanizer"></a>
+### Humanizer
+
+[blader/humanizer](https://github.com/blader/humanizer) · **Shortlisted / planned**
+
+- **Purpose:** Meaning-preserving prose editing for personal-assistant drafts.
+- **Architecture fit:** H/J / Q-85: Existing stop-slop/voice editing and manual revision.
+- **Current status:** Source researched; planned and untested. MIT root signal. Skill metadata 3.1.0; editing guidance, not authorship evidence or truth verification.
+- **Next gate:** Verify factual/voice/citation preservation, no detector-evasion success claim, instruction precedence and editing effort.
+- **Evidence:** Pinned README and selected SKILL.md reviewed as source material; no installation, activation, credentials/accounts, target/media/agent/model/service execution or full audit. Dates: 2026-10-18.
+- **Registered records:** skills.humanizer
+- **Recorded intake revision:** 8c307f367c91bd974002f10f2be2965d642c13df
 
 <a id="mattpocock-skills"></a>
 ### Matt Pocock Skills
@@ -1621,6 +1803,19 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Historical intake revision:** `2d9b8f26c8b711481c19b63f1f62779432ef3768`.
 
 ## Tools and browsing
+
+<a id="browser-use-browser-harness"></a>
+### Browser Harness
+
+[browser-use/browser-harness](https://github.com/browser-use/browser-harness) · **Shortlisted / planned**
+
+- **Purpose:** Agent-driven browser control over CDP using existing or separately hosted browsers.
+- **Architecture fit:** I / Q-93: Existing browser tools, Browser Use/Playwright and Cua controls.
+- **Current status:** Source researched; planned and untested. MIT root signal. Python>=3.11 package0.1.13; vendor shared-cloud-browser benchmark does not qualify local authenticated Chrome.
+- **Next gate:** Qualify isolated profile/CDP auth/ports, credential exposure, editable helpers/protected harness, prompt injection, navigation versus effects, recovery/replay, actual provider cost and Stop.
+- **Evidence:** Pinned README and pyproject reviewed as source material; no installation, activation, credentials/accounts, target/media/agent/model/service execution or full audit. Dates: 2026-10-18.
+- **Registered records:** browser.browser-harness
+- **Recorded intake revision:** c6a941287424f32e2d20c7b7b892c8493f46808d
 
 <a id="langflow-ai-langflow"></a>
 ### Langflow
