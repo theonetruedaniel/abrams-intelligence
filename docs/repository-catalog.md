@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated October 18, 2026. This is a deduplicated map of **138 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories. The underlying register contains **240 entries** (150 frozen catalog records plus 90 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated October 18, 2026. This is a deduplicated map of **139 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories. The underlying register contains **241 entries** (150 frozen catalog records plus 91 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -12,7 +12,7 @@ Updated October 18, 2026. This is a deduplicated map of **138 GitHub repositorie
 - **Selected advisory content:** one pinned design skill is selected; its repository is not adopted as a runtime.
 - **Adopted integration:** an exact accepted product integration. None is claimed in this catalog.
 
-Counts: 118 shortlisted/planned, 18 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
+Counts: 119 shortlisted/planned, 18 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
 
 Coverage is the union of GitHub identities explicitly linked in the September 4 frozen catalog, dated intake overlays through October 18, and the collected research references. Six September 22 Jev references remain research-only without registration records; Foreman is now registered under Q-56. Documentation-only technologies, model/API routes and local controls remain in the full register. Transitive dependency trees and every project in an upstream directory are not asserted to be evaluated candidates.
 
@@ -1315,6 +1315,19 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 
 
 ## Skills and development
+
+<a id="mattpocock-skills"></a>
+### Matt Pocock Skills
+
+[mattpocock/skills](https://github.com/mattpocock/skills) · **Shortlisted / planned**
+
+- **Purpose:** Composable engineering/productivity skills for planning, specs, debugging, review and source-linked handoffs.
+- **Architecture fit:** H/J / Q-84: selected skills versus existing native methods, Q-73 Anthropic skills and unchanged/manual controls; product productivity and development/bake-off uses separate.
+- **Current status:** Source researched; planned and untested. MIT root signal; package/plugin 1.3.1. Per-skill effects, delegation/tracker assumptions, question burden, auto-updates and frozen misc content remain gates.
+- **Next gate:** Select/pin individual skills and dependencies; compare reuse, minimal original methods and deferral on held-out outcomes; verify instruction precedence, question burden, handoff fidelity/privacy, tool/write grants, update rollback and full cost.
+- **Evidence:** Pinned README, LICENSE/package/plugin/SCOPE, file inventory and selected planning/handoff/review/setup skill text reviewed as data; no installation, activation, scripts, delegation, tracker/provider calls or full audit. Dates: 2026-10-18.
+- **Registered records:** skills.mattpocock
+- **Recorded intake revision:** 49dd158d1076134a641b33efb035946536778336
 
 <a id="google-research-harness2"></a>
 ### Harness2
