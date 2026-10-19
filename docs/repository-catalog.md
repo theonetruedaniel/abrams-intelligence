@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated October 18, 2026. This is a deduplicated map of **156 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories. The underlying register contains **258 entries** (150 frozen catalog records plus 108 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated October 18, 2026. This is a deduplicated map of **157 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories. The underlying register contains **259 entries** (150 frozen catalog records plus 109 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -12,7 +12,7 @@ Updated October 18, 2026. This is a deduplicated map of **156 GitHub repositorie
 - **Selected advisory content:** one pinned design skill is selected; its repository is not adopted as a runtime.
 - **Adopted integration:** an exact accepted product integration. None is claimed in this catalog.
 
-Counts: 136 shortlisted/planned, 18 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
+Counts: 137 shortlisted/planned, 18 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
 
 Coverage is the union of GitHub identities explicitly linked in the September 4 frozen catalog, dated intake overlays through October 18, and the collected research references. Six September 22 Jev references remain research-only without registration records; Foreman is now registered under Q-56. Documentation-only technologies, model/API routes and local controls remain in the full register. Transitive dependency trees and every project in an upstream directory are not asserted to be evaluated candidates.
 
@@ -1829,6 +1829,19 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Historical intake revision:** `2d9b8f26c8b711481c19b63f1f62779432ef3768`.
 
 ## Tools and browsing
+
+<a id="monid-ai-monid"></a>
+### Monid
+
+[monid-ai/monid](https://github.com/monid-ai/monid) · **Shortlisted / planned**
+
+- **Purpose:** Shared tool discovery/execution API and open connector engine for external service providers.
+- **Architecture fit:** E/I/J / Q-102: Provider-neutral tool selection inside Abrams and matched external-tool bake-offs versus direct/native integrations.
+- **Current status:** Source researched; planned and untested. MIT connector-layer source; hosted discovery, billing and service operations are separate. Tool routing does not qualify model routes or every catalog endpoint.
+- **Next gate:** Compare hosted/upstream, eligible connector reuse, minimal original Core adapter and deferral; verify exact endpoint rights/costs, executable-hook isolation, grants/credentials/workspaces, data egress, spend holds, async replay, Stop, receipts and exit.
+- **Evidence:** Pinned README, Deno/config metadata, selected auth/transport/link/run source and Exa definitions; dated hosted pricing/OAuth/run docs. No install, account, credentials, API/tool/model execution or full audit. Dates: 2026-10-18.
+- **Registered records:** `tools.monid`
+- **Recorded intake revision:** `96e1569dee3a0beee8a6aa8a70ec8c1773e32a21`
 
 <a id="browser-use-browser-harness"></a>
 ### Browser Harness
