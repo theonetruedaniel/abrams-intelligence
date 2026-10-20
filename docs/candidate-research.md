@@ -1,8 +1,8 @@
 # Candidate register and research
 
-Updated October 19, 2026. This is the full discovery/intake inventory behind the public overview, not a list of installed dependencies or completed benchmarks. It accounts for **150 September 4 catalog records plus 111 subsequent proposed records: 261 registered entries**. Entries include individual model/API routes, platform prerequisites, local controls and proposed roles; this is not a count of distinct upstream repositories. The separate Laya development experiment and Jev reference projects are identified below without inflating that count.
+Updated October 20, 2026. This is the full discovery/intake inventory behind the public overview, not a list of installed dependencies or completed benchmarks. It accounts for **150 September 4 catalog records plus 112 subsequent proposed records: 262 registered entries**. Entries include individual model/API routes, platform prerequisites, local controls and proposed roles; this is not a count of distinct upstream repositories. The separate Laya development experiment and Jev reference projects are identified below without inflating that count.
 
-Browse the [deduplicated 158-repository catalog](repository-catalog.md) for purposes, architecture fit, verified current links and exact status distinctions. The [progress ledger](progress.md) follows the existing plan order. Six additional Jev research references remain unregistered; the existing Foreman reference is now a named Q-56 evaluation.
+Browse the [deduplicated 159-repository catalog](repository-catalog.md) for purposes, architecture fit, verified current links and exact status distinctions. The [progress ledger](progress.md) follows the existing plan order. Six additional Jev research references remain unregistered; the existing Foreman reference is now a named Q-56 evaluation.
 
 The October 16 ten-repository carousel adds nine comparisons (Q-46–Q-54); LangGraph was already registered. Letta's post URL is retained as a collected reference to active letta-ai/letta-code under one record. OpenHands' redirect, AutoGen maintenance status and Kortix/Suna's current license are recorded without treating the post's claims as benchmark results.
 
@@ -18,10 +18,11 @@ No production runtime/model pairing is adopted by this register. [Results and li
 
 ## Later research and proposed comparisons
 
-The table preserves dated proposed records and the explicitly labeled unregistered prompt reference, including intake overlays through October 19. Each still has no benchmark run ID or adoption record and no execution authority. The table links reviewed source snapshots where the intake supplies one. Source screening is separate from planned testing.
+The table preserves dated proposed records and the explicitly labeled unregistered prompt reference, including intake overlays through October 20. Each still has no benchmark run ID or adoption record and no execution authority. The table links reviewed source snapshots where the intake supplies one. Source screening is separate from planned testing.
 
 | Record / upstream | Intended contribution and comparison | Evidence date / disposition |
 | --- | --- | --- |
+| `workflow.autoresearchclaw` [source](https://github.com/aiming-lab/AutoResearchClaw) | Q-105 / F/H/J staged research and experiment workflow; upstream/components/original Core workflow/defer; protect evidence/holdouts, execution, spend, Stop and promotion. Q-20 Autoresearch refreshed at unchanged pin, no duplicate record | October 20, 2026: source researched; planned and untested; no execution authority |
 | `model.mercury-3-hosted` [official models](https://docs.inceptionlabs.ai/get-started/models) | Q-104 / BO-05 / E/H: hosted diffusion LLM for general-assistant chat, research and tool use; direct/gateway adapter or defer; exact route/reasoning, privacy, protocol, latency-quality-cost and Stop qualification | October 19, 2026: documentation researched; planned and untested; no execution authority |
 | `context.hermes-warm-compaction` [source](https://github.com/Elevatormusic/hermes-warm-compaction) | Q-103 / E/H/J cached main-model handoff and tool ledger versus native/Q-11A Jev context controls; plugin/components/original Core projection/defer; qualify route/cache, retention, fallback egress, Stop and costs | October 19, 2026: source researched; planned and untested; no execution authority |
 | `tools.monid` [source](https://github.com/monid-ai/monid) | Q-102 / E/I/J tool discovery/execution and connector layer versus direct/native adapters; hosted/upstream, components, original adapter or defer; gate rights/costs, hooks, grants, egress, replay and Stop | October 18, 2026: source researched; planned and untested; no execution authority |
