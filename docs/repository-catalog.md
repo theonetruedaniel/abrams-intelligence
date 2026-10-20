@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated October 20, 2026. This is a deduplicated map of **159 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **262 entries** (150 frozen catalog records plus 112 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated October 20, 2026. This is a deduplicated map of **161 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **262 entries** (150 frozen catalog records plus 112 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -12,7 +12,7 @@ Updated October 20, 2026. This is a deduplicated map of **159 GitHub repositorie
 - **Selected advisory content:** one pinned design skill is selected; its repository is not adopted as a runtime.
 - **Adopted integration:** an exact accepted product integration. None is claimed in this catalog.
 
-Counts: 139 shortlisted/planned, 18 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
+Counts: 139 shortlisted/planned, 20 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
 
 Coverage is the union of GitHub identities explicitly linked in the September 4 frozen catalog, dated intake overlays through October 20, and the collected research references. Six September 22 Jev references remain research-only without registration records; Foreman is now registered under Q-56. Documentation-only technologies, model/API routes and local controls remain in the full register. Transitive dependency trees and every project in an upstream directory are not asserted to be evaluated candidates.
 
@@ -33,6 +33,19 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 | Tools and browsing | Capability-scoped adapters; no inherited tool or account authority. |
 
 ## Agent runtimes
+
+<a id="e2b-dev-awesome-ai-agents"></a>
+### E2B Awesome AI Agents
+
+[e2b-dev/awesome-ai-agents](https://github.com/e2b-dev/awesome-ai-agents) · **Collected reference**
+
+- **Purpose:** Discovery directory of open and closed agent projects and use cases.
+- **Architecture fit:** E-J / Q-107: gap discovery for general-assistant capabilities and bake-off tooling; individual projects need separate direct-source intake.
+- **Current status:** Collected discovery reference; source reviewed, no executable candidate admission. Root LICENSE.md signals CC-BY-NC-SA-4.0. Descriptions may be stale; list membership is not qualification.
+- **Next gate:** Resolve canonical identities and duplicates, verify selected projects directly, then assess rights, maintenance, cloud/local fit, data routes, costs and independent useful-task evidence. Do not bulk-install or inherit directory claims.
+- **Evidence:** Pinned README and root-tree/license metadata reviewed; lexical link overlap only, no validation of every listed project or execution. Dates: 2026-10-20.
+- **Registered records:** None; discovery reference only.
+- **Recorded revision:** `9596ab1e69fbbb6c95291141c8dab5c181083216`
 
 <a id="paperclipai-paperclip"></a>
 ### Paperclip
@@ -1446,6 +1459,19 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 
 
 ## Skills and development
+
+<a id="e2b-dev-awesome-ai-sdks"></a>
+### E2B Awesome AI SDKs
+
+[e2b-dev/awesome-ai-sdks](https://github.com/e2b-dev/awesome-ai-sdks) · **Collected reference**
+
+- **Purpose:** Discovery directory of agent SDKs, frameworks, monitoring and deployment tools.
+- **Architecture fit:** E-J / Q-107: gap discovery for general-assistant capabilities and bake-off tooling; individual projects need separate direct-source intake.
+- **Current status:** Collected discovery reference; source reviewed, no executable candidate admission. No root license file in reviewed tree. Descriptions may be stale; list membership is not qualification.
+- **Next gate:** Resolve canonical identities and duplicates, verify selected projects directly, then assess rights, maintenance, cloud/local fit, data routes, costs and independent useful-task evidence. Do not bulk-install or inherit directory claims.
+- **Evidence:** Pinned README and root-tree/license metadata reviewed; lexical link overlap only, no validation of every listed project or execution. Dates: 2026-10-20.
+- **Registered records:** None; discovery reference only.
+- **Recorded revision:** `7c55394afb3e27d755c89bb29f1c35a55888fcd4`
 
 <a id="alvinunreal-lazyskills"></a>
 ### LazySkills
