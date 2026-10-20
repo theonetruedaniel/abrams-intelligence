@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated October 18, 2026. This is a deduplicated map of **157 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories. The underlying register contains **259 entries** (150 frozen catalog records plus 109 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated October 19, 2026. This is a deduplicated map of **158 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories. The underlying register contains **260 entries** (150 frozen catalog records plus 110 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -12,9 +12,9 @@ Updated October 18, 2026. This is a deduplicated map of **157 GitHub repositorie
 - **Selected advisory content:** one pinned design skill is selected; its repository is not adopted as a runtime.
 - **Adopted integration:** an exact accepted product integration. None is claimed in this catalog.
 
-Counts: 137 shortlisted/planned, 18 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
+Counts: 138 shortlisted/planned, 18 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
 
-Coverage is the union of GitHub identities explicitly linked in the September 4 frozen catalog, dated intake overlays through October 18, and the collected research references. Six September 22 Jev references remain research-only without registration records; Foreman is now registered under Q-56. Documentation-only technologies, model/API routes and local controls remain in the full register. Transitive dependency trees and every project in an upstream directory are not asserted to be evaluated candidates.
+Coverage is the union of GitHub identities explicitly linked in the September 4 frozen catalog, dated intake overlays through October 19, and the collected research references. Six September 22 Jev references remain research-only without registration records; Foreman is now registered under Q-56. Documentation-only technologies, model/API routes and local controls remain in the full register. Transitive dependency trees and every project in an upstream directory are not asserted to be evaluated candidates.
 
 Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono, OpenWhispr, PocketBase, Trail-Code and OpenWorker were checked on October 17. AgentBridge, MinerU, OpenRig, Foreman, AX, the ten post projects and Letta's current-source pointer were checked on October 16; LangGraph was already present. OpenMausBot and SkillSpector were checked on October 15. AirLLM, PentAGI, OpenGrok, Camofox Browser and LibreChat were checked on October 13. REA was checked on October 12. Invisible Playwright was checked on October 10. Magpie, iFixAi, Orca, fframes, PageIndex, Hindsight, AI Employees, SkillOpt and System Prompts Leaks links were checked on October 9. Existing repository links were checked on October 7 against public GitHub metadata; five redirects were resolved and historical names retained. Link checks establish availability and identity, not an audit of today's code. Historical intake revisions do not become current-build admission pins.
 
@@ -446,6 +446,19 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 
 
 ## Decision components
+
+<a id="elevatormusic-hermes-warm-compaction"></a>
+### Hermes Warm Compaction
+
+[Elevatormusic/hermes-warm-compaction](https://github.com/Elevatormusic/hermes-warm-compaction) · **Shortlisted / planned**
+
+- **Purpose:** Hermes context compaction using a cached main-model handoff, retained tail and tool-derived work ledger.
+- **Architecture fit:** E/H/J / Q-103: General-assistant continuity and bake-off context fidelity versus native summaries, Q-11A Jev and bounded Core projections.
+- **Current status:** Source researched; planned and untested. Apache-2.0 root signal. Cache benefit is route/server-dependent; historical synthetic results do not qualify current behavior. Hermes plugin is not durable canonical memory.
+- **Next gate:** Compare pinned plugin, eligible ledger/layout components, minimal original Core projection and deferral; qualify exact host/provider/cache path, fallback egress, evidence/constraint retention, clipping, route races, cancellation, costs and rollback.
+- **Evidence:** Pinned README/provider-support, Python/plugin metadata and selected engine/warm/fallback/ledger/register source reviewed; no installation, host configuration, provider/model calls, benchmark replication or full audit. Dates: 2026-10-19.
+- **Registered records:** `context.hermes-warm-compaction`
+- **Recorded intake revision:** `be1ca35321d5eb61de8c593dcd8011e205928b9d`
 
 <a id="logicrw-awesome-jev-projects"></a>
 ### Awesome Jev Projects

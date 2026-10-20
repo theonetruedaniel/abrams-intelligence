@@ -1,8 +1,8 @@
 # Candidate register and research
 
-Updated October 18, 2026. This is the full discovery/intake inventory behind the public overview, not a list of installed dependencies or completed benchmarks. It accounts for **150 September 4 catalog records plus 109 subsequent proposed records: 259 registered entries**. Entries include individual model/API routes, platform prerequisites, local controls and proposed roles; this is not a count of distinct upstream repositories. The separate Laya development experiment and Jev reference projects are identified below without inflating that count.
+Updated October 19, 2026. This is the full discovery/intake inventory behind the public overview, not a list of installed dependencies or completed benchmarks. It accounts for **150 September 4 catalog records plus 110 subsequent proposed records: 260 registered entries**. Entries include individual model/API routes, platform prerequisites, local controls and proposed roles; this is not a count of distinct upstream repositories. The separate Laya development experiment and Jev reference projects are identified below without inflating that count.
 
-Browse the [deduplicated 157-repository catalog](repository-catalog.md) for purposes, architecture fit, verified current links and exact status distinctions. The [progress ledger](progress.md) follows the existing plan order. Six additional Jev research references remain unregistered; the existing Foreman reference is now a named Q-56 evaluation.
+Browse the [deduplicated 158-repository catalog](repository-catalog.md) for purposes, architecture fit, verified current links and exact status distinctions. The [progress ledger](progress.md) follows the existing plan order. Six additional Jev research references remain unregistered; the existing Foreman reference is now a named Q-56 evaluation.
 
 The October 16 ten-repository carousel adds nine comparisons (Q-46–Q-54); LangGraph was already registered. Letta's post URL is retained as a collected reference to active letta-ai/letta-code under one record. OpenHands' redirect, AutoGen maintenance status and Kortix/Suna's current license are recorded without treating the post's claims as benchmark results.
 
@@ -18,10 +18,11 @@ No production runtime/model pairing is adopted by this register. [Results and li
 
 ## Later research and proposed comparisons
 
-The table preserves dated proposed records and the explicitly labeled unregistered prompt reference, including intake overlays through October 18. Each still has no benchmark run ID or adoption record and no execution authority. The table links reviewed source snapshots where the intake supplies one. Source screening is separate from planned testing.
+The table preserves dated proposed records and the explicitly labeled unregistered prompt reference, including intake overlays through October 19. Each still has no benchmark run ID or adoption record and no execution authority. The table links reviewed source snapshots where the intake supplies one. Source screening is separate from planned testing.
 
 | Record / upstream | Intended contribution and comparison | Evidence date / disposition |
 | --- | --- | --- |
+| `context.hermes-warm-compaction` [source](https://github.com/Elevatormusic/hermes-warm-compaction) | Q-103 / E/H/J cached main-model handoff and tool ledger versus native/Q-11A Jev context controls; plugin/components/original Core projection/defer; qualify route/cache, retention, fallback egress, Stop and costs | October 19, 2026: source researched; planned and untested; no execution authority |
 | `tools.monid` [source](https://github.com/monid-ai/monid) | Q-102 / E/I/J tool discovery/execution and connector layer versus direct/native adapters; hosted/upstream, components, original adapter or defer; gate rights/costs, hooks, grants, egress, replay and Stop | October 18, 2026: source researched; planned and untested; no execution authority |
 | `skills.lazyskills` [source](https://github.com/alvinunreal/lazyskills) | Q-101 / H/J skill inventory and lock-health tooling; upstream/components/minimal original inventory/defer; qualify Windows scopes, mutation grants, races, recovery and costs | October 18, 2026: source researched; planned and untested; no execution authority |
 | `isolation.space` [source](https://github.com/perplexityai/SPACE) | Q-100 / C/I/J product execution backend and isolated bake-off workers versus frozen isolation controls; upstream/reuse/thin Core adapter/deferral. Gate Linux/KVM privileges, host service/auth/egress boundaries, lifecycle/attachment replay, resource quotas, kill/delete, snapshot compatibility, full cost and Stop. | 2026-10-18; Source researched; planned, untested |
