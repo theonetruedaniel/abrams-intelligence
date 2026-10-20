@@ -833,12 +833,13 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 
 [Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI) · **Shortlisted / planned**
 
-- **Purpose:** Graph-based image-generation runtime.
-- **Architecture fit:** H: replaceable image-job adapter under provider-neutral job controls.
-- **Current status:** Planned; no image backend or model admission.
-- **Next gate:** Exact runtime/model/resource intake and synthetic job, cancellation and artifact checks.
-- **Evidence:** Dated discovery catalog; executable qualification unrun. Dates: 2026-09-04.
-- **Record IDs:** `image.comfyui`.
+- **Purpose:** Node-graph creative workflow engine, UI and API for model-based image, video, audio and other media processing.
+- **Architecture fit:** H/I/J / Q-106: General-assistant creative backend and reproducible media-workflow bake-offs versus direct model APIs and smaller admitted pipelines.
+- **Current status:** Source researched; planned and untested. GPL-3.0 root signal; models, frontend, nodes and hosted terms separate. Custom nodes execute Python; local and paid partner/cloud paths need distinct admission.
+- **Next gate:** Compare upstream process/API, eligible licensed components, minimal original Core job adapter and deferral; qualify exact model/workflow/node pins, GPL/distribution rights, VRAM/RAM, process/files/network, queue/effect identity, Stop, metadata/privacy, costs and removal.
+- **Evidence:** Pinned README, Python/requirements/version/security metadata and selected server/CLI/node-loader excerpts reviewed; no installation, models/nodes/downloads, API or workflow execution, accounts/credentials or full audit. Dates: 2026-09-04, 2026-10-20.
+- **Registered records:** `image.comfyui` (existing record; October 20 qualification refresh)
+- **Recorded intake revision:** `b1a247c9cf9dbfda4b2c0a0c1d50950667eeaa0c`
 
 <a id="copilotkit-copilotkit"></a>
 ### CopilotKit
