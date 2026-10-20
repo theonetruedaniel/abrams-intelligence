@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated October 19, 2026. This is a deduplicated map of **158 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories. The underlying register contains **260 entries** (150 frozen catalog records plus 110 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated October 19, 2026. This is a deduplicated map of **158 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **261 entries** (150 frozen catalog records plus 111 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -2047,7 +2047,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Record IDs:** `tools.treg.superdesigndev`.
 - **Historical intake revision:** `f46704c4bed5100e36f6493b8253f62c99d34afd`.
 
-## Related model repositories
+## Related model repositories and hosted routes
 
 These are artifact identities, not extra GitHub projects or additional successful experiments. Each entry retains its own public-link verification date; the DeepSeek entry was checked October 17.
 
@@ -2057,6 +2057,8 @@ These are artifact identities, not extra GitHub projects or additional successfu
 - [Laya multilingual](https://huggingface.co/convaiinnovations/laya-multilingual): Checkpoint e4e9ddf21a7b1903b7acffd8814ad4307bf63a67 used in the separate Laya development experiment; not a second successful evaluation.
 
 - [DeepSeek V4.1 Flash 1017](https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017): Q-78 / BO-05: pinned model/encoding intake; text/vision and tool-use quality, engine and pairing separate. MIT signal; about 510 GB checkpoint. Local execution hardware-deferred; hosted identity, terms, privacy, cost and support unqualified. Planned and untested. Revision `1bae0e1088993b9b82de08f59de5be5a34e42170`; link checked October 17.
+
+- [Mercury 3](https://docs.inceptionlabs.ai/get-started/models): Q-104 / BO-05 / E/H: hosted diffusion LLM for responsive general-assistant chat, research and tool use. Planned and untested; exact route/reasoning, privacy, protocol, latency-quality-cost and Stop qualification required. No verified local artifact. Source record `model.mercury-3-hosted`; official documentation checked October 19. Hosted route only; not an extra GitHub or model repository.
 
 ## Evidence limits
 
