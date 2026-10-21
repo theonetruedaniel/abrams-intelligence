@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated October 21, 2026. This is a deduplicated map of **166 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **267 entries** (150 frozen catalog records plus 117 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated October 21, 2026. This is a deduplicated map of **167 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **268 entries** (150 frozen catalog records plus 118 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -22,7 +22,7 @@ Start with the capability you need. These projects span different roles; they ar
 - **Selected advisory content:** one pinned design skill is selected; its repository is not adopted as a runtime.
 - **Adopted integration:** an exact accepted product integration. None is claimed in this catalog.
 
-Counts: 144 shortlisted/planned, 20 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
+Counts: 145 shortlisted/planned, 20 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
 
 Coverage is the union of GitHub identities explicitly linked in the September 4 frozen catalog, dated intake overlays through October 21, and the collected research references. Six September 22 Jev references remain research-only without registration records; Foreman is now registered under Q-56. Documentation-only technologies, model/API routes and local controls remain in the full register. Transitive dependency trees and every project in an upstream directory are not asserted to be evaluated candidates.
 
@@ -43,6 +43,19 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 | Tools and browsing | Capability-scoped adapters; no inherited tool or account authority. |
 
 ## Agent runtimes
+
+<a id="souravberaakaspeed-xiryn"></a>
+### Xiryn
+
+[SouravBeraAkaSpeed/xiryn](https://github.com/SouravBeraAkaSpeed/xiryn) · **Shortlisted / planned**
+
+- **Purpose:** Self-hosted personal agents with per-agent Docker Linux desktops, cloud/local model selection, memory, routines and optional Telegram control.
+- **Architecture fit:** E/H/I/J / Q-113: General-assistant product/runtime and background workstation comparison versus Core/direct adapters, Hermes, OpenClaw and CUA; model routing evaluated separately.
+- **Current status:** Source researched; planned and untested. MIT root signal. Self-hosting does not establish local inference, safe Docker control, protected secrets or authority over effects.
+- **Next gate:** Compare upstream, eligible component reuse, minimal original Core adapters and deferral; qualify Docker controller/guest boundaries, Windows resources, route/egress identity, vault/site/payment approvals, remote takeover, budgets, durable recovery, Stop and removal.
+- **Evidence:** Pinned README, architecture, security, deployment and package metadata reviewed with independent representative source screening; no install, Docker/model/Telegram execution or runtime qualification. Dates: 2026-10-21.
+- **Registered records:** `runtime.xiryn`
+- **Recorded revision:** `0a55cd9ecdc9f2d8dbb7ff057226607613dcc64b`
 
 <a id="e2b-dev-awesome-ai-agents"></a>
 ### E2B Awesome AI Agents
