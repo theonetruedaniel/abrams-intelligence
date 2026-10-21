@@ -1,8 +1,10 @@
 # Abrams Intelligence
 
-A local-first personal AI platform in development, designed so models and tools can change while projects, source records and user controls remain stable.
+I’m building a personal AI for my own everyday use, and learning how to build it along the way. The goal is a capable, local-first assistant for research, coding, creative projects, document work and everyday coordination that I can keep improving as the technology changes.
 
-I am building Abrams Intelligence for research and learning, coding and creative projects, document work and everyday coordination. The engineering question is how to make useful AI components replaceable without giving them ownership of credentials, permissions, budgets or durable task state.
+Models and components should be replaceable. I want to compare alternatives on tasks I actually need done, understand their trade-offs, and use different models where each works best. Projects, memory, source records and user controls should remain stable when a model, runtime or tool changes. Credentials, permissions, budgets and durable task state belong to the system’s own control layer.
+
+Local execution is intended to make routine use independent of hosted-service message caps, within the limits of my hardware. Hosted models can remain optional, with explicit budgets. The aim is to build the best system I can for my needs through repeated testing and improvement; the full platform is still in development.
 
 [Run the offline dispatcher](tools/development-dispatcher/README.md) · [Architecture explorer](https://theonetruedaniel.github.io/architecture/) · [Presentation](https://gamma.app/docs/for2zexybupmugn) · [Portfolio](https://theonetruedaniel.github.io/)
 
