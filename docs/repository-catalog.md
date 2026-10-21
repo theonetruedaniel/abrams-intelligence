@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated October 21, 2026. This is a deduplicated map of **162 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **263 entries** (150 frozen catalog records plus 113 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated October 21, 2026. This is a deduplicated map of **163 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **264 entries** (150 frozen catalog records plus 114 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -12,7 +12,7 @@ Updated October 21, 2026. This is a deduplicated map of **162 GitHub repositorie
 - **Selected advisory content:** one pinned design skill is selected; its repository is not adopted as a runtime.
 - **Adopted integration:** an exact accepted product integration. None is claimed in this catalog.
 
-Counts: 140 shortlisted/planned, 20 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
+Counts: 141 shortlisted/planned, 20 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
 
 Coverage is the union of GitHub identities explicitly linked in the September 4 frozen catalog, dated intake overlays through October 21, and the collected research references. Six September 22 Jev references remain research-only without registration records; Foreman is now registered under Q-56. Documentation-only technologies, model/API routes and local controls remain in the full register. Transitive dependency trees and every project in an upstream directory are not asserted to be evaluated candidates.
 
@@ -1884,6 +1884,19 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Historical intake revision:** `2d9b8f26c8b711481c19b63f1f62779432ef3768`.
 
 ## Tools and browsing
+
+<a id="pinchtab-pinchtab"></a>
+### PinchTab
+
+[pinchtab/pinchtab](https://github.com/pinchtab/pinchtab) · **Shortlisted / planned**
+
+- **Purpose:** Chrome control-plane HTTP server with structured page access, browser actions, profiles and instance orchestration.
+- **Architecture fit:** G/H/I/J / Q-109: General-assistant web research and bounded browser tasks; compare native Playwright/CDP and existing browser backends, plus bake-off fixture orchestration.
+- **Current status:** Source researched; planned and untested. MIT root signal. Local privileged operator service; API/MCP/dashboard/profile capabilities and domain policy require exact qualification.
+- **Next gate:** Compare pinned upstream, eligible bridge components, minimal original Core browser adapter and deferral; qualify profile/session isolation, exact auth/domain defaults, redirects/private hosts, effect grants, process containment, stale targets, Stop, privacy, resources and costs.
+- **Evidence:** Pinned README, security guide/policy, Go/Docker metadata and selected auth/tab-policy source reviewed; no install/daemon/browser launch, profiles, credentials, navigation/actions, API/model execution or full audit. Dates: 2026-10-21.
+- **Registered records:** `browser.pinchtab`
+- **Recorded revision:** `a62662027f233444c579c29fbe42ad90df0d5bc7`
 
 <a id="hkuds-cli-anything"></a>
 ### CLI-Anything
