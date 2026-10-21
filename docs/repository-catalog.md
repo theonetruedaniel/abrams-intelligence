@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated October 21, 2026. This is a deduplicated map of **164 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **265 entries** (150 frozen catalog records plus 115 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated October 21, 2026. This is a deduplicated map of **165 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **266 entries** (150 frozen catalog records plus 116 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -12,7 +12,7 @@ Updated October 21, 2026. This is a deduplicated map of **164 GitHub repositorie
 - **Selected advisory content:** one pinned design skill is selected; its repository is not adopted as a runtime.
 - **Adopted integration:** an exact accepted product integration. None is claimed in this catalog.
 
-Counts: 142 shortlisted/planned, 20 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
+Counts: 143 shortlisted/planned, 20 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
 
 Coverage is the union of GitHub identities explicitly linked in the September 4 frozen catalog, dated intake overlays through October 21, and the collected research references. Six September 22 Jev references remain research-only without registration records; Foreman is now registered under Q-56. Documentation-only technologies, model/API routes and local controls remain in the full register. Transitive dependency trees and every project in an upstream directory are not asserted to be evaluated candidates.
 
@@ -933,6 +933,19 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 
 
 ## Memory and research
+
+<a id="lfnovo-open-notebook"></a>
+### Open Notebook
+
+[lfnovo/open-notebook](https://github.com/lfnovo/open-notebook) · **Shortlisted / planned**
+
+- **Purpose:** Self-hosted source notebooks with retrieval, source-backed chat, transformations and optional podcast workflows across model providers.
+- **Architecture fit:** F/H/I/J / Q-111: General-assistant research/learning workspace and evidence organization; compare Core retrieval/notebook views, direct provider adapters and existing research tools.
+- **Current status:** Source researched; planned and untested. MIT root signal. Self-hosted UI/storage does not imply all extraction, embedding, chat or speech is local. API password is optional in reviewed source.
+- **Next gate:** Compare full upstream, eligible retrieval/UI components, minimal original Core research view and deferral; qualify source/citation fidelity, notebook isolation, auth/secrets, exact cloud/local routes, ingestion egress, async Stop, deletion/backup/export, resources and full costs.
+- **Evidence:** Pinned README, Python/Compose/env/security metadata and selected auth/source/search/credential excerpts reviewed; no install/services, data ingestion, credentials, provider/media/API/model calls or full audit. Dates: 2026-10-21.
+- **Registered records:** `research.open-notebook`
+- **Recorded revision:** `a0f6f3081ae06328f0a451b3a3ef2959ca25721d`
 
 <a id="aiming-lab-autoresearchclaw"></a>
 ### AutoResearchClaw
