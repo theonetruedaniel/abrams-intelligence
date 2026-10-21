@@ -6,6 +6,12 @@ I am building Abrams Intelligence for research and learning, coding and creative
 
 [Run the offline dispatcher](tools/development-dispatcher/README.md) · [Architecture explorer](https://theonetruedaniel.github.io/architecture/) · [Presentation](https://gamma.app/docs/for2zexybupmugn) · [Portfolio](https://theonetruedaniel.github.io/)
 
+## Explore the research
+
+The [research catalog](docs/repository-catalog.md) maps **165 upstream GitHub repositories** to roles in a local-first assistant. Each entry records its purpose, sources, architecture fit, evaluation status and next gate. Use the [interactive catalog](https://theonetruedaniel.github.io/architecture/#repository-catalog) to explore the collection, or read the [comparison method](docs/evaluation-method.md).
+
+Comparisons are organized by role: agent runtimes against runtimes, retrieval approaches against retrieval approaches, and desktop shells against shells. Most candidates have source research or planned evaluations; they have not been benchmarked or adopted. The [results and evidence](docs/results-and-evidence.md) page separates measured findings from unrun comparisons. The catalog and offline dispatcher are available now while the full platform remains in development.
+
 ## Current progress — October 15, 2026 (UTC)
 
 Abrams Intelligence is a general-purpose, local-first personal intelligence platform in active, AI-assisted development. Local development includes partial shared in-process Core, client and SQLite-backed storage implementation with scoped tests. This work is not yet published as a complete product in this repository. Full integration, product acceptance and Phase 2 completion remain unfinished.
@@ -105,6 +111,17 @@ Current-build direct-tool mediation and exact live qualification remain unresolv
 I define the requirements, prioritize capabilities, evaluate integration choices and review the design against practical workflows. I use AI assistance for research, documentation, prototyping and code development. Upstream authors retain credit for their projects; this repository does not imply affiliation or an installed integration.
 
 Source-backed corrections, reproducible offline-tooling bugs and architecture questions are welcome through [issues](https://github.com/theonetruedaniel/abrams-intelligence/issues). See [contribution guidance](CONTRIBUTING.md) and [changelog](CHANGELOG.md). Publication of development-tool source does not admit live execution.
+
+### Check catalog and documentation changes
+
+With Python 3.13 or later, run from the repository root:
+
+```powershell
+python -m unittest discover -s tests -p test_catalog.py -v
+python scripts/validate_catalog.py
+```
+
+These checks validate catalog consistency and local file links in root, `docs/` and `.github/` Markdown. They do not check remote availability, heading fragments or research correctness, and they do not run candidate software. The same checks run in the catalog and documentation CI workflow.
 
 ## License
 
