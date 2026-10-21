@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated October 20, 2026. This is a deduplicated map of **161 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **262 entries** (150 frozen catalog records plus 112 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated October 21, 2026. This is a deduplicated map of **162 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **263 entries** (150 frozen catalog records plus 113 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -12,9 +12,9 @@ Updated October 20, 2026. This is a deduplicated map of **161 GitHub repositorie
 - **Selected advisory content:** one pinned design skill is selected; its repository is not adopted as a runtime.
 - **Adopted integration:** an exact accepted product integration. None is claimed in this catalog.
 
-Counts: 139 shortlisted/planned, 20 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
+Counts: 140 shortlisted/planned, 20 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
 
-Coverage is the union of GitHub identities explicitly linked in the September 4 frozen catalog, dated intake overlays through October 20, and the collected research references. Six September 22 Jev references remain research-only without registration records; Foreman is now registered under Q-56. Documentation-only technologies, model/API routes and local controls remain in the full register. Transitive dependency trees and every project in an upstream directory are not asserted to be evaluated candidates.
+Coverage is the union of GitHub identities explicitly linked in the September 4 frozen catalog, dated intake overlays through October 21, and the collected research references. Six September 22 Jev references remain research-only without registration records; Foreman is now registered under Q-56. Documentation-only technologies, model/API routes and local controls remain in the full register. Transitive dependency trees and every project in an upstream directory are not asserted to be evaluated candidates.
 
 Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono, OpenWhispr, PocketBase, Trail-Code and OpenWorker were checked on October 17. AgentBridge, MinerU, OpenRig, Foreman, AX, the ten post projects and Letta's current-source pointer were checked on October 16; LangGraph was already present. OpenMausBot and SkillSpector were checked on October 15. AirLLM, PentAGI, OpenGrok, Camofox Browser and LibreChat were checked on October 13. REA was checked on October 12. Invisible Playwright was checked on October 10. Magpie, iFixAi, Orca, fframes, PageIndex, Hindsight, AI Employees, SkillOpt and System Prompts Leaks links were checked on October 9. Existing repository links were checked on October 7 against public GitHub metadata; five redirects were resolved and historical names retained. Link checks establish availability and identity, not an audit of today's code. Historical intake revisions do not become current-build admission pins.
 
@@ -1884,6 +1884,19 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Historical intake revision:** `2d9b8f26c8b711481c19b63f1f62779432ef3768`.
 
 ## Tools and browsing
+
+<a id="hkuds-cli-anything"></a>
+### CLI-Anything
+
+[HKUDS/CLI-Anything](https://github.com/HKUDS/CLI-Anything) · **Shortlisted / planned**
+
+- **Purpose:** Application-specific CLI harnesses and a source-guided method for generating structured agent-accessible commands.
+- **Architecture fit:** H/I/J / Q-108: General-assistant desktop/document/creative tools and bake-off adapter construction versus native APIs/CLIs and Core adapters; includes Q-106 ComfyUI comparison.
+- **Current status:** Source researched; planned and untested. Apache-2.0 root signal; representative ComfyUI setup metadata says MIT, so component provenance needs reconciliation. Generated CLIs do not admit their apps or effects.
+- **Next gate:** Compare pinned harness, eligible components, minimal original Core adapter and deferral; qualify exact target/version/rights, native effects and artifacts, paths/arguments/URLs, isolation, grants, retries/Stop, costs and removal.
+- **Evidence:** Pinned README/security policy and representative ComfyUI setup, queue and HTTP-backend source reviewed; no plugin activation, generation, installation, target/CLI/model execution or full audit. Dates: 2026-10-21.
+- **Registered records:** `tools.cli-anything`
+- **Recorded revision:** `34f519533bc175d2fe287ab8316b0dd99bb9cc43`
 
 <a id="monid-ai-monid"></a>
 ### Monid
