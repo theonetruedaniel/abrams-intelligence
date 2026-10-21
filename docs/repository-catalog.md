@@ -4,6 +4,16 @@ Updated October 21, 2026. This is a deduplicated map of **165 GitHub repositorie
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
+## Browse by role
+
+Start with the capability you need. These projects span different roles; they are not all competitors in one benchmark. The [evaluation method](evaluation-method.md) defines comparisons within each relevant role and separates using upstream, reusing eligible components, implementing independently and deferring a capability. See [recorded results](results-and-evidence.md) for measured findings; catalog membership alone does not establish a completed comparison.
+
+- [Agent runtimes](#agent-runtimes) · [Decision components](#decision-components)
+- [Devices and access](#devices-and-access) · [Interface and media](#interface-and-media)
+- [Memory and research](#memory-and-research) · [Models and inference](#models-and-inference)
+- [Safety and recovery](#safety-and-recovery) · [Skills and development](#skills-and-development)
+- [Tools and browsing](#tools-and-browsing) · [Related model repositories and hosted routes](#related-model-repositories-and-hosted-routes)
+
 ## Status and coverage
 
 - **Collected reference:** recorded source or idea; no scheduled execution is implied.
