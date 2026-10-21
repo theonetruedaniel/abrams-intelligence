@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated October 21, 2026. This is a deduplicated map of **163 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **264 entries** (150 frozen catalog records plus 114 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated October 21, 2026. This is a deduplicated map of **164 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **265 entries** (150 frozen catalog records plus 115 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -12,7 +12,7 @@ Updated October 21, 2026. This is a deduplicated map of **163 GitHub repositorie
 - **Selected advisory content:** one pinned design skill is selected; its repository is not adopted as a runtime.
 - **Adopted integration:** an exact accepted product integration. None is claimed in this catalog.
 
-Counts: 141 shortlisted/planned, 20 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
+Counts: 142 shortlisted/planned, 20 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
 
 Coverage is the union of GitHub identities explicitly linked in the September 4 frozen catalog, dated intake overlays through October 21, and the collected research references. Six September 22 Jev references remain research-only without registration records; Foreman is now registered under Q-56. Documentation-only technologies, model/API routes and local controls remain in the full register. Transitive dependency trees and every project in an upstream directory are not asserted to be evaluated candidates.
 
@@ -736,6 +736,19 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 
 
 ## Interface and media
+
+<a id="vert-sh-vert"></a>
+### VERT
+
+[VERT-sh/VERT](https://github.com/VERT-sh/VERT) · **Shortlisted / planned**
+
+- **Purpose:** Browser-based file conversion UI using local WebAssembly/media engines, with a separate server option for video.
+- **Architecture fit:** F/H/I/J / Q-110: General-assistant document/media transformation and conversion bake-offs versus direct Pandoc/FFmpeg/ImageMagick and smaller Core adapters.
+- **Current status:** Source researched; planned and untested. AGPL-3.0 root signal. Local browser conversion, external asset requests and video-server processing are distinct paths; no blanket offline/privacy qualification.
+- **Next gate:** Compare pinned upstream, eligible components, minimal original conversion adapter and deferral; qualify exact format fidelity/rights, offline egress, explicit video recipient, parser/resource limits, cancellation, artifact metadata, Windows/browser fit, costs and removal.
+- **Evidence:** Pinned README, package/env/video docs and selected converter/Pandoc/FFmpeg source reviewed; no install/build, file uploads/conversions, daemon, API/model execution or full audit. Dates: 2026-10-21.
+- **Registered records:** `conversion.vert`
+- **Recorded revision:** `257bcb3b2bb6a501bae0faf9ffb05060ee00c3f7`
 
 <a id="calesthio-openmontage"></a>
 ### OpenMontage
