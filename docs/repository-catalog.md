@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated October 21, 2026. This is a deduplicated map of **165 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **266 entries** (150 frozen catalog records plus 116 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated October 21, 2026. This is a deduplicated map of **166 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **267 entries** (150 frozen catalog records plus 117 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -22,7 +22,7 @@ Start with the capability you need. These projects span different roles; they ar
 - **Selected advisory content:** one pinned design skill is selected; its repository is not adopted as a runtime.
 - **Adopted integration:** an exact accepted product integration. None is claimed in this catalog.
 
-Counts: 143 shortlisted/planned, 20 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
+Counts: 144 shortlisted/planned, 20 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
 
 Coverage is the union of GitHub identities explicitly linked in the September 4 frozen catalog, dated intake overlays through October 21, and the collected research references. Six September 22 Jev references remain research-only without registration records; Foreman is now registered under Q-56. Documentation-only technologies, model/API routes and local controls remain in the full register. Transitive dependency trees and every project in an upstream directory are not asserted to be evaluated candidates.
 
@@ -746,6 +746,19 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 
 
 ## Interface and media
+
+<a id="spacedriveapp-spaceui"></a>
+### SpaceUI
+
+[spacedriveapp/spaceui](https://github.com/spacedriveapp/spaceui) · **Shortlisted / planned**
+
+- **Purpose:** React design-system packages for tokens, primitives, forms, AI interaction and file-explorer interfaces.
+- **Architecture fit:** H/I/J / Q-112: Reusable presentation components for Abrams chat, tools, models, knowledge and artifact views; compare existing UI primitives and minimal original components.
+- **Current status:** Source researched; planned and untested. MIT root signal. Component presentation does not implement provider routing, permission grants, canonical task/memory state or file authority.
+- **Next gate:** Compare upstream packages, eligible component reuse, minimal original UI and deferral; qualify React/Tailwind/bundler fit, untrusted rendering, keyboard/screen-reader/focus/contrast/motion, Core state/approval/Stop bindings, performance, rights, costs and removal.
+- **Evidence:** Pinned README, integration guide and package metadata reviewed with independent representative component source screening; no dependency install/build, rendered accessibility/security test or runtime adoption. Dates: 2026-10-21.
+- **Registered records:** `ui.spaceui`
+- **Recorded revision:** `a48b17047d3ff1d05268acb6f88a79460ad4fa7b`
 
 <a id="vert-sh-vert"></a>
 ### VERT
