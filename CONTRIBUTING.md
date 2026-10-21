@@ -4,6 +4,8 @@ Abrams Intelligence is an architecture and foundations project maintained by Dan
 
 ## Propose a change
 
+For suspected vulnerabilities, follow the [security policy](SECURITY.md) and use the private reporting route. Keep security-sensitive details out of public issues and pull requests.
+
 Open an issue describing the problem, the relevant document and your supporting evidence. For a candidate suggestion, include the canonical repository URL, exact source revision, proposed role, useful behavior and a test that could disprove its fit. Separate observed source behavior from a proposed experiment.
 
 For a documentation pull request, explain the change and check relative links and JSON syntax. For a tooling change, include a synthetic reproduction and relevant tests. Preserve the distinction between established design, simulation, proposed testing and implemented behavior. Discuss scope before contributing product code or adding dependencies: the published offline dispatcher uses Python's standard library; product application builds and integrations remain separately gated.
