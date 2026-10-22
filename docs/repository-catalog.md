@@ -1912,14 +1912,13 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 
 [agent-substrate/substrate](https://github.com/agent-substrate/substrate) · **Shortlisted / planned**
 
-- **Purpose:** Infrastructure for larger isolated-worker fleets.
-- **Architecture fit:** H/J / Q-16: compare with simpler isolated-worker lifecycle.
-- **Current status:** Deferred deployment; no demonstrated scale requirement.
-- **Next gate:** Establish a scale need before host, snapshot, auth and infrastructure qualification.
-- **Evidence:** Dated public-source intake; review scope is documentation and selected source where recorded, not full audit. Dates: 2026-09-23.
-- **Record IDs:** `infra.agent-substrate`.
-- **Historical intake revision:** `74bbfc529ca9b5554d20117c2c78a3aea48b5d55`.
-
+- **Purpose:** Kubernetes actor/worker infrastructure for gVisor or microVM sandboxes, suspend/resume snapshots, identity and mediated egress.
+- **Architecture fit:** H/I/J / Q-16 refresh: Conditional isolated general-assistant workers and bake-off job lifecycle versus simple workers, SPACE Q-100, AX Q-55 and Xiryn Q-113; separate from model routing.
+- **Current status:** Source researched; planned and untested; deployment remains deferred until a measured scale/resume requirement justifies infrastructure. Apache-2.0 root signal; pre-1.0 compatibility and documented security gaps remain qualification gates.
+- **Next gate:** Compare upstream, eligible components, minimal original Core worker adapter and deferral; establish scale need, then qualify Linux/Kubernetes/sandbox prerequisites, gateway/auth/secret scopes, snapshots/replay/deletion, all-child Stop, resources, rights, costs and exit.
+- **Evidence:** Pinned README, dependency/install/architecture/security/auth/egress documentation and independent representative source screening; no cluster, infrastructure, sandbox, credential, provider or benchmark execution. Dates: 2026-09-23, 2026-10-22.
+- **Registered records:** `infra.agent-substrate` (existing Q-16 refreshed; no count increase).
+- **Recorded revisions:** `74bbfc529ca9b5554d20117c2c78a3aea48b5d55`, `ab4f3dbec79b77771a7cca820173a249b551c493`.
 
 <a id="microsoft-skillopt"></a>
 ### SkillOpt
