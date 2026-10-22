@@ -1,6 +1,6 @@
 # Candidate register and research
 
-Updated October 21, 2026. This is the full discovery/intake inventory behind the public overview, not a list of installed dependencies or completed benchmarks. It accounts for **150 September 4 catalog records plus 118 subsequent proposed records: 268 registered entries**. Entries include individual model/API routes, platform prerequisites, local controls and proposed roles; this is not a count of distinct upstream repositories. The separate Laya development experiment and Jev reference projects are identified below without inflating that count.
+Updated October 22, 2026. This is the full discovery/intake inventory behind the public overview, not a list of installed dependencies or completed benchmarks. It accounts for **150 September 4 catalog records plus 118 subsequent proposed records: 268 registered entries**. Entries include individual model/API routes, platform prerequisites, local controls and proposed roles; this is not a count of distinct upstream repositories. The separate Laya development experiment and Jev reference projects are identified below without inflating that count.
 
 Browse the [deduplicated 167-repository catalog](repository-catalog.md) for purposes, architecture fit, verified current links and exact status distinctions. The [progress ledger](progress.md) follows the existing plan order. Six additional Jev research references remain unregistered; the existing Foreman reference is now a named Q-56 evaluation.
 
@@ -378,7 +378,7 @@ The default evidence date is **September 4, 2026** and the default status is pla
 
 | Registry ID / upstream | Intended role and boundary | Status / evaluation lane |
 | --- | --- | --- |
-| `runtime.freetoken` [source 1](https://github.com/FlashML-org/FreeToken) | inference-engine: FlashML project; do not confuse with unrelated FreeTokenAI | Planned; no qualifying run/adoption recorded; BO-04 |
+| `runtime.freetoken` [source](https://github.com/FlashML-org/FreeToken/tree/546c5fe2e4468e2f3f8a574c64021a47016c35f7) | BO-04 + Q-114 / E/H/I/J local offload/hybrid model serving versus existing engines and minimal Core endpoint adapter; gate host/resources, rights/trust, protocol/cache fidelity, egress/Stop/costs | October 22, 2026: source researched; planned and untested; existing record refreshed, no execution authority |
 | `runtime.llama-cpp` [source 1](https://github.com/ggml-org/llama.cpp) | model runtime: Evaluate deterministic local inference and embedding service boundaries. Pin native build, quantization, model digest, and accelerator path. | Planned; no qualifying run/adoption recorded; BO-04 |
 | `runtime.lm-studio` [source 1](https://lmstudio.ai/docs) | inference-engine: Server and manual comparison profiles | Planned; no qualifying run/adoption recorded; BO-04 |
 | `runtime.mobilecli` [source 1](https://github.com/mobile-next/mobilecli) | transitive native-device command backend: Track separately because Mobile MCP 1.0 routes device operations through it. Inventory binaries, JSON-RPC/CLI surface, subprocesses, files, network, telemetry, ADB/WDA/go-ios calls, update compatibility, rollback, and removal. Abrams never exposes raw CLI, filesystem, app-container, or arbitrary command functions as semantic mobile capabilities. | Planned; no qualifying run/adoption recorded; Q-01 |

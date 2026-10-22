@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated October 21, 2026. This is a deduplicated map of **167 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **268 entries** (150 frozen catalog records plus 118 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated October 22, 2026. This is a deduplicated map of **167 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **268 entries** (150 frozen catalog records plus 118 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -1248,12 +1248,13 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 
 [FlashML-org/FreeToken](https://github.com/FlashML-org/FreeToken) · **Shortlisted / planned**
 
-- **Purpose:** Inference-engine candidate.
-- **Architecture fit:** E / BO-04: compare backend behavior independently from model quality.
-- **Current status:** Cataloged; no engine benchmark or admission.
-- **Next gate:** Exact executable/model/resource intake and matched backend tests.
-- **Evidence:** Dated discovery catalog; executable qualification unrun. Dates: 2026-09-04.
-- **Record IDs:** `runtime.freetoken`.
+- **Purpose:** Local model-serving engine with MoE expert offload, CPU/GPU hybrid execution, cache management and OpenAI/Anthropic-compatible APIs.
+- **Architecture fit:** E/H/I/J / BO-04 + Q-114: Local backend feasibility for general-assistant chat, research, coding and tools; model quality BO-05 and exact runtime/model pairing remain separate.
+- **Current status:** Source researched; planned and untested. Apache-2.0 root signal. Windows desktop availability, Linux CUDA CLI, WSL behavior and experimental AMD support require separate artifact qualification; offload does not remove RAM/storage limits.
+- **Next gate:** Compare pinned upstream, eligible components, minimal original Core endpoint adapter and defer; qualify host/driver/kernel/model resources, remote-code/download rights, API/media/cache isolation, protocol/tool fidelity, context-edit correctness, cancellation, costs and removal.
+- **Evidence:** Pinned README, installation/model/CLI/package/security metadata and independent representative source screening; no install, weight download, engine/API/model call or benchmark. Dates: 2026-09-04, 2026-10-22.
+- **Registered records:** `runtime.freetoken` (existing record refreshed; no count increase).
+- **Recorded revision:** `546c5fe2e4468e2f3f8a574c64021a47016c35f7`
 
 <a id="moonshotai-kimi-k2"></a>
 ### Kimi K2
