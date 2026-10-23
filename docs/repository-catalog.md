@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated October 23, 2026. This is a deduplicated map of **168 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **269 entries** (150 frozen catalog records plus 119 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated October 23, 2026. This is a deduplicated map of **169 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **270 entries** (150 frozen catalog records plus 120 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -22,7 +22,7 @@ Start with the capability you need. These projects span different roles; they ar
 - **Selected advisory content:** one pinned design skill is selected; its repository is not adopted as a runtime.
 - **Adopted integration:** an exact accepted product integration. None is claimed in this catalog.
 
-Counts: 146 shortlisted/planned, 20 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
+Counts: 147 shortlisted/planned, 20 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
 
 Coverage is the union of GitHub identities explicitly linked in the September 4 frozen catalog, dated intake overlays through October 21, and the collected research references. Six September 22 Jev references remain research-only without registration records; Foreman is now registered under Q-56. Documentation-only technologies, model/API routes and local controls remain in the full register. Transitive dependency trees and every project in an upstream directory are not asserted to be evaluated candidates.
 
@@ -1535,6 +1535,19 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 
 
 ## Skills and development
+
+<a id="xorcise-ai-xorcise"></a>
+### XORCISE
+
+[xorcise-ai/xorcise](https://github.com/xorcise-ai/xorcise) · **Shortlisted / planned**
+
+- **Purpose:** Cyber-agent evaluation engine with isolated missions, OpenTelemetry evidence, deterministic checks, model judging and exportable run reports.
+- **Architecture fit:** H/I/J / Q-116: Bake-off evidence capture, grading and failure-analysis research versus Core fixtures/receipts, Opik, Braintrust and simpler trace/evaluator adapters; general-assistant task transfer must be proven.
+- **Current status:** Source researched; planned and untested. Root Apache-2.0 text with NOTICE; managed commercial services separate. Ubuntu-tested cyber missions do not establish Windows support, universal isolation or general-assistant benchmark validity.
+- **Next gate:** Compare upstream, eligible evidence/grading components, minimal original Core evaluator and defer; qualify host/target isolation, telemetry coverage/provenance/redaction, judge bias/route/budgets, independent outcomes, Stop/cleanup, mission rights, costs and exit.
+- **Evidence:** Pinned README, license/NOTICE, Python/deployment/use-policy metadata and independent representative source screening; no install, infrastructure, target/agent/judge execution, telemetry collection or benchmark. Dates: 2026-10-23.
+- **Registered records:** `evaluation.xorcise`.
+- **Recorded revision:** `dc8fafdc5dac1968008b210f40518945ca1d48db`.
 
 <a id="e2b-dev-awesome-ai-sdks"></a>
 ### E2B Awesome AI SDKs
