@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated October 23, 2026. This is a deduplicated map of **167 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **268 entries** (150 frozen catalog records plus 118 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated October 23, 2026. This is a deduplicated map of **168 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **269 entries** (150 frozen catalog records plus 119 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -22,7 +22,7 @@ Start with the capability you need. These projects span different roles; they ar
 - **Selected advisory content:** one pinned design skill is selected; its repository is not adopted as a runtime.
 - **Adopted integration:** an exact accepted product integration. None is claimed in this catalog.
 
-Counts: 145 shortlisted/planned, 20 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
+Counts: 146 shortlisted/planned, 20 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
 
 Coverage is the union of GitHub identities explicitly linked in the September 4 frozen catalog, dated intake overlays through October 21, and the collected research references. Six September 22 Jev references remain research-only without registration records; Foreman is now registered under Q-56. Documentation-only technologies, model/API routes and local controls remain in the full register. Transitive dependency trees and every project in an upstream directory are not asserted to be evaluated candidates.
 
@@ -969,6 +969,19 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 
 
 ## Memory and research
+
+<a id="xerj-org-xerj"></a>
+### XERJ
+
+[xerj-org/xerj](https://github.com/xerj-org/xerj) · **Shortlisted / planned**
+
+- **Purpose:** Local-first Rust search engine and MCP server for BM25, vector/hybrid retrieval, code/document indexing and derived agent-memory views.
+- **Architecture fit:** F/H/I/J / Q-115: General-assistant knowledge/project/log retrieval and bake-off source search versus SQLite FTS, existing vector/search tools and minimal Core retrieval adapters; optional Jev reranking separate.
+- **Current status:** Source researched; planned and untested. Apache-2.0 with NOTICE. Indexes/memory remain derived; insecure mode grants every reachable caller full access. Local, proxy embedding, reranking and corpus-import paths need separate qualification.
+- **Next gate:** Compare upstream, eligible components, minimal original Core adapter and defer; qualify Windows/resources, indexing scope/parser fidelity, source rights, auth/namespace isolation, exact embedding/rerank/egress routes, deletion/rebuild, Stop, costs and exit.
+- **Evidence:** Pinned README, Cargo/security/retrieval/corpus documentation and independent representative source screening; no install, indexing, model/corpus download, MCP/server/provider call or benchmark. Dates: 2026-10-23.
+- **Registered records:** `retrieval.xerj`.
+- **Recorded revision:** `5ad85724e14602259f264de3e33fd0a9b5d106f0`.
 
 <a id="lfnovo-open-notebook"></a>
 ### Open Notebook
