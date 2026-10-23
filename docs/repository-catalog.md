@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated October 22, 2026. This is a deduplicated map of **167 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **268 entries** (150 frozen catalog records plus 118 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated October 23, 2026. This is a deduplicated map of **167 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **268 entries** (150 frozen catalog records plus 118 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -1737,12 +1737,12 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 [raysonmeng/agent-bridge](https://github.com/raysonmeng/agent-bridge) · **Shortlisted / planned**
 
 - **Purpose:** Bidirectional Claude Code–Codex message relay for coding handoffs and cross-review.
-- **Architecture fit:** H/J / Q-59 alongside Q-57 OpenRig: narrow developer/bake-off collaboration study versus manual handoffs and a simple review queue.
-- **Current status:** Source researched; planned and untested. Permission-bypassing launch defaults, experimental channels and unsupported Windows remain admission gates.
-- **Next gate:** Review safe-launch enforcement, install/plugin mutations, exact protocol/host pins, peer-message authority, queue loss/replay, all-child Stop, privacy and aggregate cost; remote rooms and quota auto-resume require separate admission.
-- **Evidence:** Pinned README, package/security metadata, room documentation and selected launcher/postinstall source reviewed; no installation, sessions, messaging or full audit. Dates: 2026-10-16.
-- **Registered records:** development.agent-bridge
-- **Recorded intake revision:** 0244dfa2d6dfd36a67531426b01714eda1b215eb
+- **Architecture fit:** H/J / Q-59 refresh: Development and bake-off cross-review/handoffs versus manual relay, simple Core review queue, Q-57 OpenRig and Q-81 Reason Network; messaging is separate from model/API routing.
+- **Current status:** Source researched; planned and untested. Upstream pin unchanged from October 16. Permission-bypassing launch defaults, experimental channels, unsupported Windows and peer-message authority remain admission gates.
+- **Next gate:** Compare pinned upstream safe-launch mode, eligible relay components, minimal original Core review queue and deferral; qualify install/config mutations, exact host/protocol, IPC/recipient authority, bounded context, replay/recovery, all-child Stop and aggregate cost; remote rooms and quota auto-resume separate.
+- **Evidence:** Same pinned README/package/security/room documentation rechecked with independent representative source screening; no upstream revision change, installation, sessions, messaging, quota probes or runtime qualification. Dates: 2026-10-16, 2026-10-23.
+- **Registered records:** `development.agent-bridge` (existing Q-59 refreshed; no count increase).
+- **Recorded revision:** `0244dfa2d6dfd36a67531426b01714eda1b215eb` (unchanged).
 
 <a id="oracle-opengrok"></a>
 ### OpenGrok
