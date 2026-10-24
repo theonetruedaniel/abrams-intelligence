@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated October 23, 2026. This is a deduplicated map of **169 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **270 entries** (150 frozen catalog records plus 120 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated October 24, 2026. This is a deduplicated map of **170 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **271 entries** (150 frozen catalog records plus 121 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -22,7 +22,7 @@ Start with the capability you need. These projects span different roles; they ar
 - **Selected advisory content:** one pinned design skill is selected; its repository is not adopted as a runtime.
 - **Adopted integration:** an exact accepted product integration. None is claimed in this catalog.
 
-Counts: 147 shortlisted/planned, 20 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
+Counts: 148 shortlisted/planned, 20 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
 
 Coverage is the union of GitHub identities explicitly linked in the September 4 frozen catalog, dated intake overlays through October 21, and the collected research references. Six September 22 Jev references remain research-only without registration records; Foreman is now registered under Q-56. Documentation-only technologies, model/API routes and local controls remain in the full register. Transitive dependency trees and every project in an upstream directory are not asserted to be evaluated candidates.
 
@@ -43,6 +43,19 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 | Tools and browsing | Capability-scoped adapters; no inherited tool or account authority. |
 
 ## Agent runtimes
+
+<a id="ruvnet-ruflo"></a>
+### Ruflo
+
+[ruvnet/ruflo](https://github.com/ruvnet/ruflo) · **Shortlisted / planned**
+
+- **Purpose:** Agent meta-harness with swarm/workflow coordination, memory/learning, model-routing integrations, MCP tools and client-specific hooks/plugins.
+- **Architecture fit:** E/H/I/J / Q-117: General-assistant worker coordination and development/bake-off workflows versus Core queues/direct adapters, OpenRig, Paperclip and Reason Network; exact cloud/local route and memory quality tests separate.
+- **Current status:** Source researched; planned and untested. MIT root signal; repository retains Claude Flow package identities. Advertised orchestration, learning and governance do not establish exact package/client enforcement, useful-task gains or production admission.
+- **Next gate:** Compare selected upstream, eligible components, minimal original Core adapters and defer; qualify package/protocol/Windows identity, init/hooks/mod permissions, canonical state/learning promotion, cloud/local routing and fallback, egress/auth, budgets, all-child Stop, resources and exit.
+- **Evidence:** Pinned README, root package/license/security and selected host/audit/meta-harness docs with independent representative source screening; no install, init/hooks/mods, agents, model calls or benchmark. Dates: 2026-10-24.
+- **Registered records:** `orchestration.ruflo`.
+- **Recorded revision:** `d36d72a9ff6c8fa4fa728f44ff535f2c0b5bd7cc`.
 
 <a id="souravberaakaspeed-xiryn"></a>
 ### Xiryn
