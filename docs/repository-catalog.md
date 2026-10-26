@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated October 24, 2026. This is a deduplicated map of **170 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **271 entries** (150 frozen catalog records plus 121 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated October 26, 2026. This is a deduplicated map of **170 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **271 entries** (150 frozen catalog records plus 121 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -179,13 +179,13 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 
 [mvschwarz/openrig](https://github.com/mvschwarz/openrig) · **Shortlisted / planned**
 
-- **Purpose:** Persistent coding-agent teams with topology, queues, shared context and session recovery.
-- **Architecture fit:** H/I/J / Q-57: development and bake-off coordination versus a simple bounded worker queue; compare Q-55 lifecycle and Q-56 supervision separately.
-- **Current status:** Source researched; planned and untested. WSL2 prerequisite on Windows; native Windows unsupported. No runtime admission.
-- **Next gate:** Review startup hook/trust/permission mutations and exact WSL2/provider pins; test isolated matched teams, queue/effect recovery, all-child Stop, total cost and context leakage before live use.
-- **Evidence:** Pinned README, security policy, package metadata and as-built daemon/lifecycle docs reviewed; no execution or full audit. Dates: 2026-10-16.
-- **Registered records:** orchestration.openrig
-- **Recorded intake revision:** e0c65c41e429678272522eb5f9875583a69b48a5
+- **Purpose:** Persistent coding-agent teams with topology, task ownership/queues, shared context, tmux sessions and recovery.
+- **Architecture fit:** H/I/J / Q-57 refresh: General-assistant development and bake-off coordination versus serial work/simple Core queue, AgentBridge Q-59, Paperclip Q-83 and Ruflo Q-117; lifecycle/supervision evidence separate.
+- **Current status:** Source researched; planned and untested. New source pin reports 0.7.1. WSL2 remains the Windows route; native Windows unsupported and WSL2 automation unverified. Kernel and team permission defaults differ; no runtime admission.
+- **Next gate:** Compare pinned upstream, eligible coordination components, minimal original Core queue and defer; qualify exact WSL2/client/native modules, setup/startup trust/hooks/global mutations, effective permissions/routes, context/queue/effect recovery, aggregate budgets, all-child Stop, resources and removal.
+- **Evidence:** Pinned README, license/security/package metadata and independent representative source screening refreshed; historical intake retained; no install, setup, hooks, daemon/team launch, session adoption, messages or provider calls. Dates: 2026-10-16, 2026-10-26.
+- **Registered records:** `orchestration.openrig` (existing Q-57 refreshed; no count increase).
+- **Recorded revisions:** `e0c65c41e429678272522eb5f9875583a69b48a5`, `44e10a1e5b44012d65319b689d22aad607a6b2bc`.
 
 <a id="google-ax"></a>
 ### AX
