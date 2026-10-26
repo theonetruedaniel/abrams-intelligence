@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated October 26, 2026. This is a deduplicated map of **170 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **271 entries** (150 frozen catalog records plus 121 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated October 26, 2026. This is a deduplicated map of **170 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **272 entries** (150 frozen catalog records plus 122 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -1801,13 +1801,13 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 
 [morluto/rea](https://github.com/morluto/rea) · **Shortlisted / planned**
 
-- **Purpose:** CLI/MCP artifact analysis and investigation of integration points for app-repository candidates.
-- **Architecture fit:** H/J / Q-38: optional artifact/interoperability study and bake-off integration aid; compare source-first/direct-tool controls and independently verified adapter outcomes.
-- **Current status:** Source researched; planned and untested. Scope includes integration maps, behavior gaps and adaptation effort; benchmark acceptance remains with the harness.
-- **Next gate:** Review exact tool/provider/host scopes, licenses, isolation and egress; verify integration maps, effort estimates and resulting adapters with independent tests.
-- **Evidence:** Pinned README, package metadata, security policy and Windows Ghidra P0 documentation screened; no execution or full audit. Dates: 2026-10-12.
-- **Record IDs:** `tool.rea`.
-- **Historical intake revision:** `0043d9b134c0a353e8bf85c0bde4492275f1f720`.
+- **Purpose:** CLI/MCP artifact analysis and bake-off integration aid; selective investigation tool for the major-chatbot interface/workflow contender study.
+- **Architecture fit:** H/I/J / Q-38 plus Q-118: Named as-is ChatGPT, Codex, Claude, Gemini and Perplexity interface/workflow contenders, with further identified products and separately tested original Abrams variants; REA supports scoped artifact questions.
+- **Current status:** Existing REA source screen retained. Q-118 is newly planned and untested: no chatbot UI/artifact/runtime inspected, app build pinned or reconstruction made. Frontend study cannot establish proprietary backend behavior or reuse rights.
+- **Next gate:** Compare each identified product/surface as-is, rights-qualified components, original Abrams interaction variants and defer; pin future app/web/account/feature context, distinguish observation/static inference/backend unknowns, qualify privacy/rights, accessibility/tasks/Core bindings, costs and exit.
+- **Evidence:** Pinned README, package metadata, security policy and Windows Ghidra P0 documentation screened; no execution or full audit. October 26 planning addition only: major chatbot UI/app/workflow contender study; no new REA or chatbot analysis. Dates: 2026-10-12, 2026-10-26.
+- **Registered records:** `tool.rea`; `app.major-chatbot-interface-study` (Q-118 umbrella study adds one record, no repository).
+- **Recorded REA revision:** `0043d9b134c0a353e8bf85c0bde4492275f1f720` (historical tool source screen; target-app identities pending).
 
 <a id="stablyai-orca"></a>
 ### Orca
