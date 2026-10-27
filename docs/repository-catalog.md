@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated October 26, 2026. This is a deduplicated map of **172 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **274 entries** (150 frozen catalog records plus 124 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated October 27, 2026. This is a deduplicated map of **174 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **276 entries** (150 frozen catalog records plus 126 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -995,6 +995,32 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 
 
 ## Memory and research
+
+<a id="rohitg00-agentmemory"></a>
+### AgentMemory
+
+[rohitg00/agentmemory](https://github.com/rohitg00/agentmemory) · **Shortlisted / planned**
+
+- **Purpose:** Persistent cross-session and cross-agent observations, decisions and lessons, with coding-agent integrations and MCP access.
+- **Architecture fit:** F/H/I/J / Q-121: General-assistant continuity and development/bake-off handoffs versus Core canonical memory, Hindsight, Mem0 and explicit notes; broader personal-domain value measured separately.
+- **Current status:** Source researched; planned and untested. Apache-2.0 root signal; default shared agent scope, provider auto-detection and consolidation require explicit isolation and route qualification.
+- **Next gate:** Compare pinned upstream, eligible components, minimal Core adapter and defer; qualify grants/project isolation, capture and injection, explicit local/cloud routes, provenance/conflicts, deletion/export/recovery, Windows/resources, Stop and full costs.
+- **Evidence:** Pinned README/license/package metadata and representative source screening with independent review; no installation, memory capture/import, model/provider/MCP calls or benchmark. Dates: 2026-10-27.
+- **Registered records:** `memory.agentmemory`.
+- **Recorded revision:** `c5b8ebfb32eb6a08fe301d3bb75840f3597b66c8`.
+
+<a id="memvid-memvid"></a>
+### Memvid
+
+[memvid/memvid](https://github.com/memvid/memvid) · **Shortlisted / planned**
+
+- **Purpose:** Portable single-file versioned memory and retrieval using the current Rust v2 .mv2 format, lexical search and optional vector/embedding features.
+- **Architecture fit:** F/H/I/J / Q-122: Personal/project knowledge and portable derived memory versus Core SQLite FTS, Hindsight, LEANN Q-120 and conventional vector retrieval; memory policy and canonical truth stay in Core.
+- **Current status:** Source researched; planned and untested. Apache-2.0 root signal; current v2 differs from legacy QR/video descriptions. Tombstone deletion is not demonstrated physical erasure; cloud and local features need separate qualification.
+- **Next gate:** Compare pinned upstream, eligible components, minimal Core adapter and defer; qualify exact SDK/feature/model identity, Windows and native resources, offline/egress, WAL/crash/rebuild/concurrency, retained versions/deletion/export, Stop and full costs.
+- **Evidence:** Pinned README/license/package metadata and representative source screening with independent review; no installation, memory capture/import, model/provider/MCP calls or benchmark. Dates: 2026-10-27.
+- **Registered records:** `memory.memvid`.
+- **Recorded revision:** `e6bd9f7b9c38cd8d5370fa0fc936ac1dcd751813`.
 
 <a id="startrail-org-leann"></a>
 ### LEANN
@@ -2260,3 +2286,4 @@ These are artifact identities, not extra GitHub projects or additional successfu
 Runtime conformance, model quality, runtime/model pairing and content value remain four different evaluation lanes. Source inspection and static fixture validation do not establish executable containment, reliability or useful-task success. The only measured selector in this repository view is the separately scoped Laya development experiment; its default adoption was rejected. See [results](results-and-evidence.md) for denominators, corrected timing, memory scope and the cancelled retry.
 
 This catalog is a public summary, not a publication of private operating records. It adds no installation, model call, credential scope, phase transition or adoption decision.
+
