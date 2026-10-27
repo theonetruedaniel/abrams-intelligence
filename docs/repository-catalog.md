@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated October 27, 2026. This is a deduplicated map of **174 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **276 entries** (150 frozen catalog records plus 126 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated October 27, 2026. This is a deduplicated map of **175 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **277 entries** (150 frozen catalog records plus 127 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -995,6 +995,19 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 
 
 ## Memory and research
+
+<a id="egonex-ai-understand-anything"></a>
+### Understand Anything
+
+[Egonex-AI/Understand-Anything](https://github.com/Egonex-AI/Understand-Anything) · **Shortlisted / planned**
+
+- **Purpose:** Interactive codebase and knowledge-base graphs, explanations, guided tours, search and change-impact views combining static analysis and LLM interpretation.
+- **Architecture fit:** H/I/J / Q-123: Personal/project knowledge exploration and development/bake-off repository understanding versus rg/Git/LSP, OpenGrok Q-41, Codebase Memory MCP Q-88 and REA Q-38; retrieval and inferred relationships evaluated separately.
+- **Current status:** Source researched; planned and untested. MIT public-root signal; generated graph claims and advertised client compatibility are not verified completeness, correctness, permissions or Windows results.
+- **Next gate:** Compare pinned upstream, eligible components, minimal original Core projection and defer; qualify source/claim provenance, graph freshness and deletion, client/model egress, project/path grants, dashboard endpoints, native builds/resources, Stop, costs and export/removal.
+- **Evidence:** Pinned README/package/license and representative source screening with independent review; no installation, project scanning, graph generation, server/client activation, model calls or benchmark. Dates: 2026-10-27.
+- **Registered records:** `knowledge.understand-anything`.
+- **Recorded revision:** `4e6d3299017a7432da15957874992837a315c5b4`.
 
 <a id="rohitg00-agentmemory"></a>
 ### AgentMemory
