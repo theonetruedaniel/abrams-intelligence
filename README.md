@@ -8,6 +8,10 @@ Local execution is intended to make routine use independent of hosted-service me
 
 [Run the offline dispatcher](tools/development-dispatcher/README.md) · [Architecture explorer](https://theonetruedaniel.github.io/architecture/) · [Presentation](https://gamma.app/docs/for2zexybupmugn) · [Portfolio](https://theonetruedaniel.github.io/)
 
+## First working prototype — October 27, 2026
+
+A small Abrams Intelligence prototype now provides a local browser interface for saved conversations and document/image attachments. Qwen3.5 4B passed bounded local text, document and image checks and is the initial available model; the downloaded 9B build is unavailable on this PC because measured memory headroom was insufficient. The source build and fixture checks pass; live ChatGPT-plan access still requires user sign-in and successful inference. The broader platform's integration and acceptance work continues. [Prototype scope and measurements](docs/prototype.md).
+
 ## Explore the research
 
 The [research catalog](docs/repository-catalog.md) maps **172 upstream GitHub repositories** to roles in a local-first assistant. Each entry records its purpose, sources, architecture fit, evaluation status and next gate. Use the [interactive catalog](https://theonetruedaniel.github.io/architecture/#repository-catalog) to explore the collection, or read the [comparison method](docs/evaluation-method.md).
