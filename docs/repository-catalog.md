@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated October 26, 2026. This is a deduplicated map of **170 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **272 entries** (150 frozen catalog records plus 122 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated October 26, 2026. This is a deduplicated map of **172 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **274 entries** (150 frozen catalog records plus 124 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -22,7 +22,7 @@ Start with the capability you need. These projects span different roles; they ar
 - **Selected advisory content:** one pinned design skill is selected; its repository is not adopted as a runtime.
 - **Adopted integration:** an exact accepted product integration. None is claimed in this catalog.
 
-Counts: 148 shortlisted/planned, 20 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
+Counts: 150 shortlisted/planned, 20 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
 
 Coverage is the union of GitHub identities explicitly linked in the September 4 frozen catalog, dated intake overlays through October 21, and the collected research references. Six September 22 Jev references remain research-only without registration records; Foreman is now registered under Q-56. Documentation-only technologies, model/API routes and local controls remain in the full register. Transitive dependency trees and every project in an upstream directory are not asserted to be evaluated candidates.
 
@@ -773,6 +773,19 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 
 ## Interface and media
 
+<a id="codewithmuhilan-lightswind-ui-library"></a>
+### Lightswind UI
+
+[codewithMUHILAN/Lightswind-UI-Library](https://github.com/codewithMUHILAN/Lightswind-UI-Library) · **Shortlisted / planned**
+
+- **Purpose:** Copy-source React UI components with animated effects, CLI delivery and MCP discovery; free and Pro content have separate scopes.
+- **Architecture fit:** H/I/J / Q-119: Selected general-assistant presentation components versus SpaceUI Q-112/current primitives and original components; Q-118 interaction studies remain separate.
+- **Current status:** Source researched; planned and untested. MIT public-root signal; Pro assets separately licensed. Accessibility, motion, responsive/resource behavior and mutable hosted delivery need qualification.
+- **Next gate:** Compare upstream, eligible components, minimal original UI and defer; pin delivered source/dependencies/rights, CLI/MCP/config/credential/analytics effects, keyboard/focus/reduced motion, Core bindings, performance, costs and removal.
+- **Evidence:** Pinned README/package/license, representative component/CLI/MCP source and official pricing-page screen; no install, auth, UI rendering or runtime accessibility/security qualification. Dates: 2026-10-26.
+- **Registered records:** `ui.lightswind`.
+- **Recorded revision:** `53ef2ee0cf211a794a3bb4b2ed1e62d3f0f2544a`.
+
 <a id="spacedriveapp-spaceui"></a>
 ### SpaceUI
 
@@ -982,6 +995,19 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 
 
 ## Memory and research
+
+<a id="startrail-org-leann"></a>
+### LEANN
+
+[StarTrail-org/LEANN](https://github.com/StarTrail-org/LEANN) · **Shortlisted / planned**
+
+- **Purpose:** Compact vector retrieval using graph-based selective embedding recomputation, with document/code ingestion, RAG applications and MCP access.
+- **Architecture fit:** F/H/I/J / Q-120: General-assistant personal/project knowledge and bake-off source retrieval versus Core FTS, conventional vector search and XERJ Q-115; embedding/answer routes separate.
+- **Current status:** Source researched; planned and untested. MIT root signal; model/native dependency and data-source rights separate. Storage/privacy/accuracy claims are not local measurements; recomputation changes resource/latency trade-offs.
+- **Next gate:** Compare upstream, eligible components, minimal Core adapter and defer; qualify Windows/WSL/backend identity, source/model fidelity and egress, index serialization/MCP/path trust, update/deletion/rebuild, resources/recall/latency, Stop, costs and exit.
+- **Evidence:** Pinned README, Python/MCP/security metadata and independent representative source screening; no install, data/index/model downloads, indexing, MCP/embedding/LLM calls or benchmark. Dates: 2026-10-26.
+- **Registered records:** `retrieval.leann`.
+- **Recorded revision:** `a63f484a0b00627fbc641b500ee377d35344eb72`.
 
 <a id="xerj-org-xerj"></a>
 ### XERJ
