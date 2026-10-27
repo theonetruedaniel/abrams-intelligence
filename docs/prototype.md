@@ -8,7 +8,7 @@ The source includes a React/TypeScript interface, local Node backend, SQLite con
 
 The application includes streamed answers, Stop, Retry, Copy, chat rename/delete/export, visible provider selection, and confirmation before sending conversation content to a cloud model. Its initial scope excludes browsing, autonomous actions, computer control, voice, and cross-conversation memory.
 
-Build and fixture checks passed during development. The interface was inspected against the actual local application at desktop and mobile sizes with no reported browser page errors or mobile horizontal overflow. Broader workflow and offline-session verification remain separate checks.
+The production build and 33 automated tests passed; the production dependency audit reported zero vulnerabilities at this check. The actual browser workflow passed a real 4B conversation, saved-chat reload, a TXT attachment with the expected document answer, JSON export with extracted source text, and a persisted Stop state. Desktop and mobile checks reported no browser page errors or horizontal overflow. A fully internet-disconnected session remains unverified; these checks are not a complete security or quality assessment.
 
 ## Local inference observed
 
