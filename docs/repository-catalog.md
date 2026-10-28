@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated October 27, 2026. This is a deduplicated map of **175 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **277 entries** (150 frozen catalog records plus 127 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated October 28, 2026. This is a deduplicated map of **176 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **278 entries** (150 frozen catalog records plus 128 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -1255,6 +1255,19 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 
 
 ## Models and inference
+
+<a id="edge0-ai-edge0"></a>
+### Edge0
+
+[Edge0-AI/Edge0](https://github.com/Edge0-AI/Edge0) · **Shortlisted / planned**
+
+- **Purpose:** Streaming sparse-MoE inference using SSD expert offload with platform-specific engines, model adapters and routing prediction.
+- **Architecture fit:** E/H/I/J / Q-124: Local general-assistant model serving under memory pressure versus conventional llama.cpp/Ollama, AirLLM Q-43 and LiteRT-LM Q-68; engine conformance, model quality and exact pairing remain separate.
+- **Current status:** Source researched; planned and untested. Apache-2.0 root signal; model/adapters and patched engine require separate pins and rights. Headline low-RAM claims and warm-memory Windows timings are not laptop measurements.
+- **Next gate:** Compare pinned upstream, eligible components, minimal Core serving adapter and defer; qualify exact platform/model/quantization/LoRA/prerouter/engine artifacts, full RAM/VRAM/SSD and context pressure, API/tool fidelity, offline/egress, cancellation/recovery, costs and removal.
+- **Evidence:** Pinned README/platform/package/license and representative source screening with independent review; no install, build, model download/conversion, inference/server activation or benchmark. Dates: 2026-10-28.
+- **Registered records:** `inference.edge0`.
+- **Recorded revision:** `e9cc00cfb44b0fd2abf7195dcbe707b75ea6c3e5`.
 
 <a id="alishahryar1-free-claude-code"></a>
 ### Free Claude Code
