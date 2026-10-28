@@ -8,9 +8,9 @@ Local execution is intended to make routine use independent of hosted-service me
 
 [Run the offline dispatcher](tools/development-dispatcher/README.md) · [Architecture explorer](https://theonetruedaniel.github.io/architecture/) · [Presentation](https://gamma.app/docs/for2zexybupmugn) · [Portfolio](https://theonetruedaniel.github.io/)
 
-## First working prototype — October 27, 2026
+## Exploratory browser demo — October 27, 2026
 
-A small Abrams Intelligence prototype now provides a local browser interface for saved conversations and document/image attachments. Qwen3.5 4B passed bounded local text, document and image checks and is the initial available model; the downloaded 9B build is unavailable on this PC because measured memory headroom was insufficient. The source build and fixture checks pass; live ChatGPT-plan access still requires user sign-in and successful inference. The broader platform's integration and acceptance work continues. [Prototype scope and measurements](docs/prototype.md).
+An exploratory browser demo provides a local interface for saved conversations and document/image attachments. It was an off-plan side experiment, not the planned Abrams Intelligence prototype or the platform's final result. Qwen3.5 4B passed bounded local text, document and image checks and was the initial available model; the downloaded 9B build was unavailable on the tested PC because measured memory headroom was insufficient. The demo's recorded local build and fixture checks passed; live ChatGPT-plan access remained unverified. These demo results do not qualify product Core or runtime behavior, or complete Phase 2. The broader platform's integration and acceptance work continues. [Demo scope and historical measurements](docs/prototype.md).
 
 ## Explore the research
 

@@ -1,14 +1,16 @@
-# Abrams Intelligence: first working prototype
+# Abrams Intelligence: exploratory browser demo
 
-October 27, 2026.
+Historical demo measurements: October 27, 2026. Scope clarified October 28, 2026.
 
-Abrams Intelligence has its first small local prototype: a browser app with saved chat, document and image attachments, and Qwen3.5 model support. Qwen3.5 4B is the initial available model. The downloaded 9B build is unavailable on the tested host configuration because it left insufficient free-memory headroom. This early implementation sits alongside the broader system's continuing development.
+This browser demo was an off-plan side experiment, not the planned Abrams Intelligence prototype or the platform's final result. It provides saved chat, document and image attachments, and Qwen3.5 model support. Qwen3.5 4B was the initial available model. The downloaded 9B build was unavailable on the tested host configuration because it left insufficient free-memory headroom. The broader system's planned implementation and acceptance work remain separate.
 
 The source includes a React/TypeScript interface, local Node backend, SQLite conversations, bounded attachment parsing, a local Ollama adapter, launch scripts, and an optional official ChatGPT-plan adapter. Local mode is independent of cloud access. ChatGPT availability is conditional on official sign-in and successful account inference; there is no separately billed API fallback.
 
 The application includes streamed answers, Stop, Retry, Copy, chat rename/delete/export, visible provider selection, and confirmation before sending conversation content to a cloud model. Its initial scope excludes browsing, autonomous actions, computer control, voice, and cross-conversation memory.
 
-The production build and 33 automated tests passed; the production dependency audit reported zero vulnerabilities at this check. The actual browser workflow passed a real 4B conversation, saved-chat reload, a TXT attachment with the expected document answer, JSON export with extracted source text, and a persisted Stop state. Desktop and mobile checks reported no browser page errors or horizontal overflow. A fully internet-disconnected session remains unverified; these checks are not a complete security or quality assessment.
+The demo's recorded local results include a passing production build and 33 passing automated tests; the production dependency audit reported zero vulnerabilities at that check. The actual browser workflow passed a real 4B conversation, saved-chat reload, a TXT attachment with the expected document answer, JSON export with extracted source text, and a persisted Stop state. Desktop and mobile checks reported no browser page errors or horizontal overflow. A fully internet-disconnected session remains unverified; these checks are not a complete security or quality assessment.
+
+These are historical local-demo results. This repository does not publish the demo's source or a reproducible bundle of those checks. They do not qualify product Core or runtime behavior, complete Phase 2, or replace the planned prototype.
 
 ## Local inference observed
 
