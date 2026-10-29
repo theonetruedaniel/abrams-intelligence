@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated October 28, 2026. This is a deduplicated map of **177 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **279 entries** (150 frozen catalog records plus 129 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated October 29, 2026. This is a deduplicated map of **178 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **280 entries** (150 frozen catalog records plus 130 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -772,6 +772,19 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 
 
 ## Interface and media
+
+<a id="copilotkit-generative-ui"></a>
+### CopilotKit Generative UI guide
+
+[CopilotKit/generative-ui](https://github.com/CopilotKit/generative-ui) · **Shortlisted / planned**
+
+- **Purpose:** Documentation and examples for controlled, declarative and open-ended agent UI; supplied repository is README/assets and points to the existing CopilotKit monorepo.
+- **Architecture fit:** E/H/I/J / Q-126: General-assistant task cards, forms, research/project views and interactive artifacts versus fixed UI; extends CopilotKit Q-21 alongside OpenMuse Q-22 without selecting an interface concept.
+- **Current status:** Source researched; planned and untested. Guide/resource repository, not a runnable standalone framework. No root license found at intake; CopilotKit licensing does not automatically license this snapshot/assets. Monorepo implementation requires separate artifact review.
+- **Next gate:** Compare existing fixed UI, selected upstream patterns, rights-cleared components, minimal original Core UI and defer; qualify implementation/spec versions, generated content/schema/iframe isolation, state/effect grants, accessibility, replay/Stop, routes, costs and removal.
+- **Evidence:** Pinned guide/asset-tree review and independent consolidation/license screen; no package installed, demo run, generated UI rendered, service/model call or benchmark. Dates: 2026-10-29.
+- **Registered records:** `ui.generative-ui-patterns`.
+- **Recorded revision:** `12aa81e3deeb9c6c15c7863b67a3f8f63144e383`.
 
 <a id="codewithmuhilan-lightswind-ui-library"></a>
 ### Lightswind UI
