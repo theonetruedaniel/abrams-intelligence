@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated October 28, 2026. This is a deduplicated map of **176 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **278 entries** (150 frozen catalog records plus 128 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated October 28, 2026. This is a deduplicated map of **177 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **279 entries** (150 frozen catalog records plus 129 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -1255,6 +1255,19 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 
 
 ## Models and inference
+
+<a id="mesh-llm-mesh-llm"></a>
+### Mesh LLM
+
+[Mesh-LLM/mesh-llm](https://github.com/Mesh-LLM/mesh-llm) · **Shortlisted / planned**
+
+- **Purpose:** Distributed model serving with peer discovery/routing and Skippy native inference/stage splits behind an OpenAI-compatible API.
+- **Architecture fit:** E/H/I/J / Q-125: General-assistant compute pooling and model access across permitted machines versus direct local serving, Core route adapters, Edge0 Q-124 and existing routing candidates; single-node, peer routing and model splits compared separately.
+- **Current status:** Source researched; planned and untested. Apache-2.0 root signal; auto mode can download models and join a public mesh. Local API, encrypted transport and pooled compute do not establish private inference, trusted peers or model quality.
+- **Next gate:** Compare pinned upstream, eligible components, minimal Core adapter and defer; qualify local/private/public modes, peer identity/grants/egress and fallback, exact model/runtime/split artifacts, Windows/network/resources, API/cancellation/recovery, costs and removal.
+- **Evidence:** Pinned README/security/license/build metadata and representative source screening with independent review; no install, setup, model download, inference, peer discovery/network join or benchmark. Dates: 2026-10-28.
+- **Registered records:** `inference.mesh-llm`.
+- **Recorded revision:** `877de9fa94f8868b33091f4ae81b6cc25368ee55`.
 
 <a id="edge0-ai-edge0"></a>
 ### Edge0
