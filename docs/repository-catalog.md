@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated October 29, 2026. This is a deduplicated map of **178 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **280 entries** (150 frozen catalog records plus 130 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated October 30, 2026. This is a deduplicated map of **178 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **281 entries** (150 frozen catalog records plus 131 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -2332,6 +2332,12 @@ These are artifact identities, not extra GitHub projects or additional successfu
 - [DeepSeek V4.1 Flash 1017](https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017): Q-78 / BO-05: pinned model/encoding intake; text/vision and tool-use quality, engine and pairing separate. MIT signal; about 510 GB checkpoint. Local execution hardware-deferred; hosted identity, terms, privacy, cost and support unqualified. Planned and untested. Revision `1bae0e1088993b9b82de08f59de5be5a34e42170`; link checked October 17.
 
 - [Mercury 3](https://docs.inceptionlabs.ai/get-started/models): Q-104 / BO-05 / E/H: hosted diffusion LLM for responsive general-assistant chat, research and tool use. Planned and untested; exact route/reasoning, privacy, protocol, latency-quality-cost and Stop qualification required. No verified local artifact. Source record `model.mercury-3-hosted`; official documentation checked October 19. Hosted route only; not an extra GitHub or model repository.
+
+## Context placement and delegation (Q-127)
+
+**Q-127: context placement and delegation.** Compare existing versus on-demand instructions, each with and without bounded workers. Judge total coordinator-plus-worker cost per accepted result, cache behavior, quality, omissions, latency and rule compliance; smaller main context alone is not savings. Essential authority/privacy/budget/effect/Stop rules stay present. Planned, untested; no instruction reorganization or benchmark execution.
+
+This is a method study, not another repository or an adopted runtime change. See the [study scope](candidate-research.md#context-placement-and-delegation-q-127).
 
 ## Evidence limits
 
