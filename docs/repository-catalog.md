@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated October 30, 2026. This is a deduplicated map of **178 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **281 entries** (150 frozen catalog records plus 131 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated October 31, 2026. This is a deduplicated map of **179 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **282 entries** (150 frozen catalog records plus 132 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -43,6 +43,19 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 | Tools and browsing | Capability-scoped adapters; no inherited tool or account authority. |
 
 ## Agent runtimes
+
+<a id="ryder-sun-meldwork"></a>
+### Meldwork
+
+[Ryder-Sun/Meldwork](https://github.com/Ryder-Sun/Meldwork) · **Shortlisted / planned**
+
+- **Purpose:** Local-first Electron workspace coordinating existing agent CLIs through direct chats, concurrent responses and multi-agent discussion with run history and human decisions.
+- **Architecture fit:** E/H/I/J / Q-128: General-assistant research/writing/projects and bake-off coordination versus single-agent/Core workflows, Hermes/Ruflo and existing workspace studies; product adaptation, component reuse and independent implementation separate.
+- **Current status:** Source researched; planned and untested. Apache-2.0 root/commercial-use signal; current 1.0.8 preview targets Apple-silicon macOS. Local coordination does not prove offline models, enforced containment, correct peer review or Windows compatibility.
+- **Next gate:** Compare pinned upstream, eligible components, minimal Core adapter/workspace and defer; qualify native CLI/model/permission pairing, credential/data egress, cross-run write conflicts, IPC/attachments/ledger fidelity, bounded aggregate cost, Stop/recovery/export/removal and Windows portability.
+- **Evidence:** Pinned README/package/license/commercial/security metadata and representative source screening with independent review; no install, CLI/provider invocation, workspace attachment import, build or benchmark. Dates: 2026-10-31.
+- **Registered records:** `workspace.meldwork`.
+- **Recorded revision:** `ef405bb7219c9d929d86d26893da37c6741e8df7`.
 
 <a id="ruvnet-ruflo"></a>
 ### Ruflo
