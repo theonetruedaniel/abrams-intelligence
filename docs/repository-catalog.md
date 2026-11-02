@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated October 31, 2026. This is a deduplicated map of **179 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **282 entries** (150 frozen catalog records plus 132 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated November 1, 2026. This is a deduplicated map of **180 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **283 entries** (150 frozen catalog records plus 133 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -1281,6 +1281,19 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 
 
 ## Models and inference
+
+<a id="joaniberian9588-janas"></a>
+### Janas (identity unresolved)
+
+[joaniberian9588/janas](https://github.com/joaniberian9588/janas) · **Collected reference**
+
+- **Purpose:** Source/provenance check of a repository advertised as low-memory MoE inference; pinned tree instead identifies a Python paper-PDF retrieval/conversion package.
+- **Architecture fit:** E/H/J / Q-129: Resolve identity and artifact provenance before any comparison with Edge0, AirLLM or local inference controls; observed paper tooling is not automatically a separate eligible candidate.
+- **Current status:** Collected reference; provenance-blocked and untested. README, package metadata and source identity conflict. MIT text is present but does not establish download provenance, Windows/inference capability or archive safety.
+- **Next gate:** Reconcile maintainer/upstream/history, source-to-release mapping and rights; require inspectable matching implementation and immutable artifact hashes before any execution review. Do not install, run linked downloads or load the bundled archive.
+- **Evidence:** Pinned README, recursive tree, Python metadata/license/context and independent passive provenance screen; no binary/archive download, extraction, installation, model load or execution. Dates: 2026-11-01.
+- **Registered records:** `research.janas-provenance`.
+- **Recorded revision:** `c993d3227cd8f9fc1c870bbce9b7434cfc157434`.
 
 <a id="mesh-llm-mesh-llm"></a>
 ### Mesh LLM
