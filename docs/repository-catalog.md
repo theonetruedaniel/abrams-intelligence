@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated November 1, 2026. This is a deduplicated map of **180 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **283 entries** (150 frozen catalog records plus 133 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated November 2, 2026. This is a deduplicated map of **181 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **284 entries** (150 frozen catalog records plus 134 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -2115,6 +2115,19 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Historical intake revision:** `2d9b8f26c8b711481c19b63f1f62779432ef3768`.
 
 ## Tools and browsing
+
+<a id="lightpanda-io-browser"></a>
+### Lightpanda Browser
+
+[lightpanda-io/browser](https://github.com/lightpanda-io/browser) · **Shortlisted / planned**
+
+- **Purpose:** Zig headless browser engine for DOM/JavaScript automation and structured extraction with browser-control protocol integrations.
+- **Architecture fit:** G/H/I/J / Q-130: General-assistant web research and controlled DOM tasks versus Chromium/Playwright, Camofox and Pinchtab; extraction, interactive effects and visual-browser fidelity compared separately.
+- **Current status:** Source researched; planned and untested. AGPL-3.0-only signal; no native Windows binary, WSL2/Linux pairing separate. Upstream speed/memory figures and protocol compatibility are not local task results or complete browser equivalence.
+- **Next gate:** Compare pinned upstream, rights-qualified components, minimal Core transport adapter and defer; qualify exact CDP/BiDi/client coverage, DOM/JS/site and rendering limits, egress/SSRF/control auth, sessions/profile isolation, WSL/resources, Stop/recovery, costs and removal.
+- **Evidence:** Pinned README/license/build/security metadata and representative source screening with independent review; no install/build/WSL change, browser or CDP/MCP activation, website actions or benchmark. Dates: 2026-11-02.
+- **Registered records:** `browser.lightpanda`.
+- **Recorded revision:** `1e6fe6cbff8556d4d2afd366e5b4668bffef30dd`.
 
 <a id="pinchtab-pinchtab"></a>
 ### PinchTab
