@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated November 2, 2026. This is a deduplicated map of **181 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **284 entries** (150 frozen catalog records plus 134 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated November 2, 2026. This is a deduplicated map of **182 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **285 entries** (150 frozen catalog records plus 135 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -43,6 +43,19 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 | Tools and browsing | Capability-scoped adapters; no inherited tool or account authority. |
 
 ## Agent runtimes
+
+<a id="orkas-ai-orkas"></a>
+### Orkas
+
+[Orkas-AI/Orkas](https://github.com/Orkas-AI/Orkas) · **Shortlisted / planned**
+
+- **Purpose:** Electron multi-agent desktop workspace with a coordinating Commander, specialist agents, project context/memory, to-dos, scheduled automations, connectors and external CLI agents.
+- **Architecture fit:** E/H/I/J / Q-131: General-assistant research, writing, documents/media/projects and bake-off coordination versus single-agent/Core workflows, Meldwork Q-128, Hermes, OpenMuse and Ruflo; whole-app adaptation and components separately compared.
+- **Current status:** Source researched; planned and untested. MIT root signal; Windows/macOS packaging and cloud/local route claims need exact artifact/pairing qualification. Local-first state does not prove offline inference, bounded autonomy, enforced permissions or accurate outcomes.
+- **Next gate:** Compare pinned upstream, eligible components, minimal Core workspace/adapter and defer; qualify provider/CLI credentials and egress, tool/shell/connector grants, scheduler/auto-advance and effect replay, memory provenance, aggregate cost, Windows lifecycle, Stop/recovery/export/removal.
+- **Evidence:** Pinned README/package/license and representative source screening with independent review; no install/build/postinstall, model download/provider/CLI/connector calls, schedules or benchmark. Dates: 2026-11-02.
+- **Registered records:** `workspace.orkas`.
+- **Recorded revision:** `dce78adb2a2ffdfbf9159cc89352e4335940bc64`.
 
 <a id="ryder-sun-meldwork"></a>
 ### Meldwork
