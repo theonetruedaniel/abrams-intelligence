@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated November 3, 2026. This is a deduplicated map of **183 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **286 entries** (150 frozen catalog records plus 136 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated November 3, 2026. This is a deduplicated map of **184 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **287 entries** (150 frozen catalog records plus 137 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -1307,6 +1307,19 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 
 
 ## Models and inference
+
+<a id="routerhubsi-uncensored-ai-api"></a>
+### RouterHub API reference
+
+[routerhubSI/uncensored-ai-api](https://github.com/routerhubSI/uncensored-ai-api) · **Collected reference**
+
+- **Purpose:** Documentation and client examples for a hosted multi-model gateway advertising OpenAI/Anthropic compatibility; no self-hostable gateway backend found in the pinned tree.
+- **Architecture fit:** E/H/J / Q-133: General-assistant cloud route/provider switching versus direct providers, OpenRouter, 9router and eligible local routes; hosted trust, exact model quality and client compatibility evaluated separately.
+- **Current status:** Collected hosted-provider reference; planned and untested. MIT docs do not license or verify the service. Live public endpoint/model/rate listings differ from pinned dashboard-placeholder docs; upstream identity, privacy, billing and fallback remain unqualified.
+- **Next gate:** Qualify counterparty/service terms, exact endpoint/model/version/account route and data recipients, retention/training/caching, billing/rate limits, SDK/stream/tool fidelity, failure/fallback/Stop and exit before a synthetic pilot. Compare direct use, eligible docs/client reuse, minimal Core adapter and defer.
+- **Evidence:** Pinned documentation/tree/license and independent public-service screen; no account/key creation, authenticated dashboard, API/provider calls, payment, install or benchmark. Dates: 2026-11-03.
+- **Registered records:** `provider.routerhub-reference`.
+- **Recorded revision:** `0c361604156fa44c8f49c36d1847f6b9bdd0a53f`.
 
 <a id="joaniberian9588-janas"></a>
 ### Janas (identity unresolved)
