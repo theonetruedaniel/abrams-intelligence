@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated November 2, 2026. This is a deduplicated map of **182 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **285 entries** (150 frozen catalog records plus 135 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated November 3, 2026. This is a deduplicated map of **183 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **286 entries** (150 frozen catalog records plus 136 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -747,6 +747,19 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 
 
 ## Devices and access
+
+<a id="vercel-labs-agent-desktop"></a>
+### Agent Desktop
+
+[vercel-labs/agent-desktop](https://github.com/vercel-labs/agent-desktop) · **Shortlisted / planned**
+
+- **Purpose:** Native accessibility-tree computer-use CLI and C library with snapshot-scoped element references, structured action/errors and platform-specific desktop adapters.
+- **Architecture fit:** G/H/I/J / Q-132: General-assistant native desktop observation/action and verification versus qualified native UIA, trycua/cua, OpenMausBot and agent-bridge controls; accessibility transport, agent/model and exact app/action pairing separate.
+- **Current status:** Source researched; planned and untested. Apache-2.0 signal; Windows/macOS/Linux source and packages require exact host/helper qualification. Headless accessibility actions still create effects; stale-reference guards do not replace authorization or Stop.
+- **Next gate:** Compare pinned upstream, eligible components, minimal Core native adapter and defer; qualify Windows integrity/helper identity, app/window/refs and headed fallback, action grants/receipts, screenshot/clipboard/artifact and JEV egress, CLI/C surfaces, Stop/recovery, costs and removal.
+- **Evidence:** Pinned README/Cargo/license/security metadata and representative native/source screening with independent review; no install/build/permission grant, screen/app/clipboard access, CLI/FFI execution or model call. Dates: 2026-11-03.
+- **Registered records:** `desktop.agent-desktop`.
+- **Recorded revision:** `d3dc190afbf34cd2377252398ddd5c30efbd093a`.
 
 <a id="danielpaulus-go-ios"></a>
 ### go-ios
