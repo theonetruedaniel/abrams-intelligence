@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated November 3, 2026. This is a deduplicated map of **186 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **289 entries** (150 frozen catalog records plus 139 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated November 3, 2026. This is a deduplicated map of **189 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **292 entries** (150 frozen catalog records plus 142 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -43,6 +43,19 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 | Tools and browsing | Capability-scoped adapters; no inherited tool or account authority. |
 
 ## Agent runtimes
+
+<a id="jetbrains-thinkrail"></a>
+### ThinkRail
+
+[JetBrains/thinkrail](https://github.com/JetBrains/thinkrail) · **Shortlisted / planned**
+
+- **Purpose:** Agentic coding IDE around pi, with worktree workspaces, living specs, concurrent chats, multi-provider/custom model servers and desktop/browser workbench.
+- **Architecture fit:** E/H/I/J / Q-136: Development and bake-off integration workspace plus general-assistant interaction/component research versus Core/current tools, Meldwork, Orkas and existing chatbot UI study; coding scope does not establish a complete personal assistant.
+- **Current status:** Source researched; planned and untested. Apache-2.0; Bun1.4.4/pi1.5.0 with Windows source/artifact paths. Worktrees are not sandboxes. Keyed human runs retain basic/error telemetry despite no-analytics; saved-model fallback can select another available model without a separate warning.
+- **Next gate:** Compare upstream, eligible UI/spec/workspace components, minimal original Core adapter and defer; qualify exact Windows/package/provider pairing, command/MCP/extension/GitHub grants, telemetry/credentials/egress, explicit routes and fallback, all-child Stop/recovery, costs and removal.
+- **Evidence:** Pinned README/license/package and representative source with independent read-only review; no installation, candidate execution, credentials/provider calls, benchmark, downloads of models/firmware or host changes. Dates: 2026-11-03.
+- **Registered records:** `workspace.thinkrail`.
+- **Recorded revision:** `c10f8808cee693e4abffeeb1844a132ed0a91cc5`.
 
 <a id="orkas-ai-orkas"></a>
 ### Orkas
@@ -1321,6 +1334,19 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 
 ## Models and inference
 
+<a id="zagitta-gpu-unlock"></a>
+### GPU Unlock
+
+[Zagitta/gpu-unlock](https://github.com/Zagitta/gpu-unlock) · **Collected reference**
+
+- **Purpose:** Linux boot-time kernel module and packaging that adjust supported GeForce tensor speed selectors before the stock NVIDIA driver binds.
+- **Architecture fit:** A/B/E/J / Q-138: Deferred optional host-performance research for eligible local inference/training/image workloads; compare unchanged stock configuration first. Not an inference engine, model, Windows utility or additional VRAM.
+- **Current status:** Collected/deferred host experiment; untested. VERSION2.0.0, Linux kernel/initramfs/DKMS changes with separately licensed firmware. Workload-specific tensor-throughput claims do not imply faster memory-bound token decode; native Windows is outside this repository.
+- **Next gate:** Before any execution establish actual supported GPU/PCI/OS/kernel/driver and task need, firmware/license provenance, signing/Secure Boot compatibility, boot/display/power/suspend recovery and reversible rollback on a separate recoverable host. Measure matched end-to-end quality/throughput/latency/power/thermals; preserve current host-readiness gates.
+- **Evidence:** Pinned README/license/package and representative source with independent read-only review; no installation, candidate execution, credentials/provider calls, benchmark, downloads of models/firmware or host changes. Dates: 2026-11-03.
+- **Registered records:** `host.gpu-unlock-reference`.
+- **Recorded revision:** `7eb51bccae0a0b7e599e084d971170e9a1e82d0c`.
+
 <a id="routerhubsi-uncensored-ai-api"></a>
 ### RouterHub API reference
 
@@ -1730,6 +1756,19 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 
 
 ## Skills and development
+
+<a id="nutlope-hallmark"></a>
+### Hallmark
+
+[Nutlope/hallmark](https://github.com/Nutlope/hallmark) · **Shortlisted / planned**
+
+- **Purpose:** Design skill with theme/reference material, static/rendered lint and screenshot tooling for generated interfaces and explicit redesign/audit workflows.
+- **Architecture fit:** H/I/J / Q-137: General-assistant UI concepts, artifacts and bake-off design-quality review versus Impeccable, existing design methods and minimal original checklist; preserve equal-fidelity Calm Canvas, Intelligence Desk and Living Library concepts.
+- **Current status:** Source researched; planned and untested. MIT package2.0.0/Node18+; browser checks require Chrome/Puppeteer. Skill is not a UI runtime. Photo/model assets retain separate terms; optional Together image generation and repository-only evaluation cost extra.
+- **Next gate:** Compare upstream skill, eligible references/lint, minimal original checklist and defer; qualify asset attribution/rights, untrusted HTML/Chrome isolation and remote resources, accessibility/task fidelity, protected data/wiring, independent blind review, total generation/evaluation costs and cancellation. No redesign selected.
+- **Evidence:** Pinned README/license/package and representative source with independent read-only review; no installation, candidate execution, credentials/provider calls, benchmark, downloads of models/firmware or host changes. Dates: 2026-11-03.
+- **Registered records:** `skill.hallmark`.
+- **Recorded revision:** `52328cb3129135499e4e178d4864ee90029dea2b`.
 
 <a id="microsoft-agent-lightning"></a>
 ### Agent Lightning
