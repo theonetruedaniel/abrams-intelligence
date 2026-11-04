@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated November 3, 2026. This is a deduplicated map of **184 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **287 entries** (150 frozen catalog records plus 137 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated November 3, 2026. This is a deduplicated map of **185 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **288 entries** (150 frozen catalog records plus 138 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -1717,6 +1717,19 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 
 
 ## Skills and development
+
+<a id="microsoft-agent-lightning"></a>
+### Agent Lightning
+
+[microsoft/agent-lightning](https://github.com/microsoft/agent-lightning) · **Shortlisted / planned**
+
+- **Purpose:** Benchmark-guided editable-agent optimization skill plus v1 reinforcement-learning infrastructure using real agent harnesses, a model proxy and local/Kubernetes rollout controllers.
+- **Architecture fit:** E/H/J / Q-134: General-assistant and bake-off improvement of prompts, tools, workflows and model routing versus SkillOpt, autoresearch and bounded manual optimization; GPU weight training is a separate deferred variant. Opik/Braintrust remain measurement controls.
+- **Current status:** Source researched; planned and untested. MIT package1.0.3/Python>=3.12. Prioritize the GPU-independent skill study; v1 RL requires a qualified CUDA/verl/vLLM stack. Native Windows local runner unsupported; installation docs default W&B trajectory uploads; gateway defaults unauthenticated on all interfaces.
+- **Next gate:** Compare upstream skill/framework, eligible components, minimal original Core experiment loop and defer. Freeze scorer/holdouts/deployment contract, paired repeated cross-domain trials and all-attempt optimization plus deployed cost; qualify rights, data/egress, gateway auth, worker environment/isolation, Stop/recovery, resources and exit. No automatic promotion or route admission.
+- **Evidence:** Pinned README/license/package, installation/gateway/controller docs, optimization skill and representative local-controller source with independent review; no skill installation, workers, GPU/cloud setup, telemetry upload, model/API calls or benchmark. Dates: 2026-11-03.
+- **Registered records:** `workflow.agent-lightning`.
+- **Recorded revision:** `cbc56e41e0eab643aa71d195e92e5bba652fa683`.
 
 <a id="xorcise-ai-xorcise"></a>
 ### XORCISE
