@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated November 3, 2026. This is a deduplicated map of **185 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **288 entries** (150 frozen catalog records plus 138 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated November 3, 2026. This is a deduplicated map of **186 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **289 entries** (150 frozen catalog records plus 139 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -1047,6 +1047,19 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 
 
 ## Memory and research
+
+<a id="mempalace-mempalace"></a>
+### MemPalace
+
+[MemPalace/mempalace](https://github.com/MemPalace/mempalace) · **Shortlisted / planned**
+
+- **Purpose:** Verbatim conversation/project memory with structured semantic retrieval, pluggable vector backends, temporal entity graph and CLI/MCP access.
+- **Architecture fit:** E/F/I/J / Q-135; BO-06/BO-07: General-assistant source-linked recall across people, projects, research and everyday tasks versus Core relational/FTS, Hindsight, AgentMemory and Memvid; shared hub, background ingestion and task coordination are separately gated variants.
+- **Current status:** Source researched; planned and untested. MIT package3.12.0/Python>=3.10 at a develop pin. Default embedded Chroma disables anonymized telemetry; local embeddings need first-use model downloads. Upstream retrieval-recall scores do not establish answer accuracy or superiority over other memory systems.
+- **Next gate:** Compare upstream, eligible components, minimal original Core retrieval adapter and defer. Qualify source rights/provenance, correction/deletion across revisions/backups/replicas, exact embedder/backend/Windows resources, cloud/hub egress/auth, untrusted recall, ingestion scope and all-worker Stop. Use held-out matched recall plus grounded-answer/abstention tests and total costs.
+- **Evidence:** Pinned README/license/package, benchmark disclosure and representative backend/embedding/provider/MCP/deletion source with independent review; no install, model download, personal-data scan/import, hooks/services/schedules, hub connection, API/model calls or benchmark. Dates: 2026-11-03.
+- **Registered records:** `memory.mempalace`.
+- **Recorded revision:** `4f7745afbd9d0197c6475b4c7ac846d4932eaeda`.
 
 <a id="egonex-ai-understand-anything"></a>
 ### Understand Anything
