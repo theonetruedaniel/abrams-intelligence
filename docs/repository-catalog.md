@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated November 3, 2026. This is a deduplicated map of **189 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **292 entries** (150 frozen catalog records plus 142 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated November 4, 2026. This is a deduplicated map of **190 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **293 entries** (150 frozen catalog records plus 143 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -43,6 +43,19 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 | Tools and browsing | Capability-scoped adapters; no inherited tool or account authority. |
 
 ## Agent runtimes
+
+<a id="cloudflare-computer"></a>
+### Cloudflare Computer
+
+[cloudflare/computer](https://github.com/cloudflare/computer) · **Shortlisted / planned**
+
+- **Purpose:** Durable Object SQLite-backed virtual filesystem and pluggable execution workspace with isolated JavaScript, simulated shell and Linux container backends.
+- **Architecture fit:** E/H/I/J / Q-139: Bounded cloud workers, durable scratch files, code execution and artifact creation for the broad personal assistant and bake-off integration; compare Core minimal workers, Substrate, SPACE and qualified sandbox controls. Separate filesystem-only, JavaScript, shell and container variants.
+- **Current status:** Source researched; planned and untested. MIT @cloudflare/computer0.9.0 at a main source pin; release availability unverified. Upstream marks core filesystem/JavaScript stable but shell/container/sync/recovery features experimental. Cloud SQLite authority stays scoped to the workspace, not Abrams canonical state.
+- **Next gate:** Compare upstream, eligible filesystem/runtime components, minimal original Core worker adapter and defer. Qualify Cloudflare entitlements and costs, exact backend/image/bindings/egress/auth, source/artifact rights and retention, resource/concurrency limits, replay/idempotent effects, durable evidence/export and all-worker Stop/billing release before a synthetic trial.
+- **Evidence:** Pinned README/license/package/status and representative workspace/runtime/egress/backend source with independent read-only review; no install, deployment, Cloudflare resources/accounts/credentials, model/provider calls, private-data upload or benchmark. Dates: 2026-11-04.
+- **Registered records:** `infra.cloudflare-computer`.
+- **Recorded revision:** `b995d86503eab22793ba1feb07c3c67818e6f6b9`.
 
 <a id="jetbrains-thinkrail"></a>
 ### ThinkRail
