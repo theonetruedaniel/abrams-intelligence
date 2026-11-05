@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated November 4, 2026. This is a deduplicated map of **190 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **293 entries** (150 frozen catalog records plus 143 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated November 5, 2026. This is a deduplicated map of **191 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **294 entries** (150 frozen catalog records plus 144 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -2232,6 +2232,19 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Historical intake revision:** `2d9b8f26c8b711481c19b63f1f62779432ef3768`.
 
 ## Tools and browsing
+
+<a id="kalil0321-reverse-api-engineer"></a>
+### Reverse API Engineer
+
+[kalil0321/reverse-api-engineer](https://github.com/kalil0321/reverse-api-engineer) · **Collected reference**
+
+- **Purpose:** Browser-traffic capture and model-assisted generation of typed API clients, with manual/agent capture, prior-HAR regeneration and a separate structured-data collector.
+- **Architecture fit:** F/H/I/J / Q-140: Authorized API-adapter discovery and integration work for broad personal-assistant tasks and bake-off repositories, alongside REA Q-38 and CLI-Anything; compare official APIs/OpenAPI/SDKs, manual capture/minimal Core adapter and browser controls.
+- **Current status:** Collected methodology/component reference; direct use deferred and untested. MIT package0.14.0/Python>=3.11. Source prompts explicitly hardcode captured credentials/tokens and add automatic reauthentication; agent backends auto-approve broad tools. These defaults require replacement before use. Default real-Chrome capture has no reusable HAR.
+- **Next gate:** Compare official APIs first, eligible components, a minimal original Core adapter and defer. Replace hardcoded secrets and automatic permissions with scoped secret references, redaction and fail-closed grants; qualify synthetic target/action rights, exact browser/SDK/model recipients, dependency pins, client correctness/retries/idempotency, retention, all-child Stop and total cost.
+- **Evidence:** Pinned README/license/package and representative capture/agent/config/runtime source with independent read-only review; no install, target browsing/capture, cookie access, generated-client execution, credentials/provider calls or benchmark. Dates: 2026-11-05.
+- **Registered records:** `tool.reverse-api-engineer`.
+- **Recorded revision:** `cd221e9ef5fe30d4fb66ad0d5198f179191aca57`.
 
 <a id="lightpanda-io-browser"></a>
 ### Lightpanda Browser
