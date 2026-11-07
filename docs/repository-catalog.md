@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated November 5, 2026. This is a deduplicated map of **191 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **294 entries** (150 frozen catalog records plus 144 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated November 7, 2026. This is a deduplicated map of **192 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **295 entries** (150 frozen catalog records plus 145 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -837,6 +837,19 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 
 
 ## Interface and media
+
+<a id="puppyone-ai-puppyone"></a>
+### PuppyOne
+
+[puppyone-ai/puppyone](https://github.com/puppyone-ai/puppyone) · **Shortlisted / planned**
+
+- **Purpose:** File-centric Electron workspace for local folders, document views, agent sessions and optional Git-backed cloud collaboration with MCP/CLI/SSH access.
+- **Architecture fit:** E/H/I/J / Q-141: Broad personal-assistant file/artifact workspace and local/cloud multi-agent handoff, plus bake-off integration review; compare Core file adapters, Cloudflare Computer, Meldwork and Orkas. Keep local-only, cloud sharing and each agent/provider pairing separate.
+- **Current status:** Source researched; planned and untested. Apache-2.0 desktop0.4.2/Electron41 source with Windows-x64 packaging paths; brands and third-party assets have separate terms. Optional cloud/agent connectivity and Git history do not establish data grants, full rollback or complete audit.
+- **Next gate:** Compare upstream, eligible workspace/document/adapter components, minimal original Core file interface and defer. Qualify exact Windows/native/runtime pairing, path/IPC/tool permissions, agent/model/cloud recipients and auth, telemetry, file fidelity/conflicts/history/restore/deletion, all-agent Stop, cloud-service provenance/entitlements, costs and removal; preserve canonical Core state.
+- **Evidence:** Pinned README/package/license/NOTICE/privacy and representative cloud/agent/filesystem source with independent read-only review; no install/build, folder opening/import, cloud publication/sync, agent/credential/provider calls or benchmark. Dates: 2026-11-07.
+- **Registered records:** `workspace.puppyone`.
+- **Recorded revision:** `1dcc67b9ade2e5c23e484fbb2e8d483d0e95d60e`.
 
 <a id="copilotkit-generative-ui"></a>
 ### CopilotKit Generative UI guide
