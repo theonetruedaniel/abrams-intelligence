@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated November 7, 2026. This is a deduplicated map of **192 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **295 entries** (150 frozen catalog records plus 145 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated November 8, 2026. This is a deduplicated map of **193 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **296 entries** (150 frozen catalog records plus 146 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -1086,6 +1086,19 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 
 
 ## Memory and research
+
+<a id="nvidia-auto-ontology"></a>
+### NVIDIA Auto-Ontology
+
+[NVIDIA/auto-ontology](https://github.com/NVIDIA/auto-ontology) · **Shortlisted / planned**
+
+- **Purpose:** Semantic catalog and ontology layer over relational metadata/data, with graph-based context retrieval, natural-language SQL workflows and API/CLI/MCP access.
+- **Architecture fit:** E/F/I/J / Q-142; BO-06/BO-07: Broad-assistant structured-data understanding, entity/metric definitions, provenance and grounded analytics versus Core relational/FTS, curated schemas and eligible graph/retrieval controls including Semantica/Hindsight. Schema generation, retrieval and SQL execution are separate variants.
+- **Current status:** Source researched; planned and untested. Apache-2.0 package1.2.0/Python>=3.12,<3.14, Postgres/pgvector plus web/backend/ingestion stack. Defaults use hosted NVIDIA NIM roles; local deployment does not establish local inference. Generated ontologies and SQL remain proposals, not canonical facts or guaranteed deterministic answers.
+- **Next gate:** Compare upstream, eligible metadata/schema/retrieval components, minimal original Core semantic adapter and defer. Qualify source rights and provenance/certification/corrections, database/tenant read-only grants and query limits, model endpoint/key/embedding pairing and egress, secrets/auth/ports, host/resources, all-query/worker Stop, deletion/export, total costs and independent held-out answer checks.
+- **Evidence:** Pinned README/license/package/deployment/model configuration and representative catalog/query/auth source with independent read-only review; no install, containers, source/database import, credentials, model/API/query execution or benchmark. Dates: 2026-11-08.
+- **Registered records:** `knowledge.auto-ontology`.
+- **Recorded revision:** `c447003f72a822301e927196a4ecb5b597c308d5`.
 
 <a id="mempalace-mempalace"></a>
 ### MemPalace
