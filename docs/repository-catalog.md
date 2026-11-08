@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated November 8, 2026. This is a deduplicated map of **195 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **298 entries** (150 frozen catalog records plus 148 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated November 8, 2026. This is a deduplicated map of **196 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **299 entries** (150 frozen catalog records plus 149 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -786,6 +786,19 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 
 
 ## Devices and access
+
+<a id="lxe-phoneuse"></a>
+### PhoneUse
+
+[lxe/phoneuse](https://github.com/lxe/phoneuse) · **Shortlisted / planned**
+
+- **Purpose:** Real-iPhone observation and input transport from Linux: AirPlay screen mirroring plus Bluetooth HID mouse/keyboard, optional ESP32 Wi-Fi bridge, CLI and MCP actions.
+- **Architecture fit:** G/H/I/J / Q-145: Separately gated real-iPhone observation/action and user takeover for broad personal-assistant mobile tasks; compare qualified iPhone access/direct app APIs and relevant cua/desktop controls by role, without inheriting Android/emulator/simulator results.
+- **Current status:** Source researched; planned and untested. MIT technology demo tested upstream on one iPhone17Pro/iOS26 Arch/Hyprland setup; no native Windows qualification. Installation changes privileged Bluetooth services; saved passcode, screenshot/model handling and optional bridge require exact device/host scope.
+- **Next gate:** Compare upstream, eligible mirror/HID components, minimal original Core device adapter and defer. Qualify iPhone/iOS/BlueZ/display/model pairing, host Bluetooth rollback, target binding/auth, passcode/unlock grants, screen/credential/model egress, bridge replay/firmware rights, action receipts/takeover/all-input Stop, resources/cost and cleanup before reset-device synthetic trials.
+- **Evidence:** Pinned README/license/architecture and representative install/config/unlock/HID/vision source with independent read-only review; no installation, services, pairing, phone/screen/passcode access, firmware/model download, input actions or benchmark. Dates: 2026-11-08.
+- **Registered records:** `device.phoneuse`.
+- **Recorded revision:** `3bcecde243b5e024989bd7b043794271a9180863`.
 
 <a id="vercel-labs-agent-desktop"></a>
 ### Agent Desktop
