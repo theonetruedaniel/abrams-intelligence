@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated November 8, 2026. This is a deduplicated map of **194 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **297 entries** (150 frozen catalog records plus 147 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated November 8, 2026. This is a deduplicated map of **195 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **298 entries** (150 frozen catalog records plus 148 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -1099,6 +1099,19 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 
 
 ## Memory and research
+
+<a id="itzcrazykns-vane"></a>
+### Vane (formerly Perplexica)
+
+[ItzCrazyKns/Vane](https://github.com/ItzCrazyKns/Vane) · **Shortlisted / planned**
+
+- **Purpose:** Self-hosted search-and-answer workspace combining SearxNG, web/document retrieval, citations, research modes and selectable local or cloud model providers.
+- **Architecture fit:** E/F/H/I/J / Q-144: General-assistant research/learning, cited answers and document questions versus Core search/source adapter, HyperResearch, GPT Researcher and Open Notebook; research pipeline, selected UI components and whole application are separate comparisons.
+- **Current status:** Source researched; planned and untested. MIT package1.12.2/Next16 with SQLite/native/browser dependencies; old Perplexica repository redirects to this same identity. Local deployment does not make web searches, remote models or uploaded-document processing private/offline; citations require independent verification.
+- **Next gate:** Compare upstream, eligible retrieval/source/UI components, minimal original Core research adapter and defer. Qualify auth/config/secret boundaries, exact provider/embedding/search recipients, URL/SSRF/browser and upload isolation, source fidelity/citation coverage, retention/deletion/export, host/resources, complete cancellation and total per-answer cost.
+- **Evidence:** Pinned README/license/package/Compose/config/search/upload source and verified Perplexica redirect with independent read-only review; no install/build, searches/scraping, uploads, credentials, model/provider calls or benchmark. Dates: 2026-11-08.
+- **Registered records:** `research.vane`.
+- **Recorded revision:** `348feca3e378fb4157b217724ed508dc707f853f`.
 
 <a id="nvidia-auto-ontology"></a>
 ### NVIDIA Auto-Ontology
