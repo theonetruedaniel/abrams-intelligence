@@ -1,6 +1,6 @@
 # Repository catalog
 
-Updated November 8, 2026. This is a deduplicated map of **193 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **296 entries** (150 frozen catalog records plus 146 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated November 8, 2026. This is a deduplicated map of **194 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **297 entries** (150 frozen catalog records plus 147 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -43,6 +43,19 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 | Tools and browsing | Capability-scoped adapters; no inherited tool or account authority. |
 
 ## Agent runtimes
+
+<a id="bearisbug-imbo"></a>
+### Imbo
+
+[Bearisbug/imbo](https://github.com/Bearisbug/imbo) · **Shortlisted / planned**
+
+- **Purpose:** Cross-tool and cross-machine messaging for coding-agent sessions, with background delivery, contacts/groups, attachments and optional phone/web access.
+- **Architecture fit:** H/I/J / Q-143: Bounded agent handoffs, cross-review and remote coordination for Abrams development/bake-off work; compare AgentBridge, OpenRig, PuppyOne handoffs, manual relay and minimal Core review queue. Messaging is not a complete assistant, sandbox or grant to execute requests.
+- **Current status:** Source researched; planned and untested. Apache-2.0 Rust0.2.24/MSRV1.90, macOS/Linux only. Direct automatic inbound execution deferred: MCP instructions tell agents to follow sender requests without local confirmation and exempt replies from outbound checks. Setup expands tool approvals/hooks; messages may reopen sessions.
+- **Next gate:** Compare upstream, eligible transport/inbox components, minimal original Core handoff queue and defer. Qualify sender/recipient/action grants, untrusted messages/attachments and auto-resume, exact host/hooks/config/daemon pairing, relay encryption/retention/auth, fan-out/deduplication, all-session Stop/revocation, costs and cleanup before synthetic messaging.
+- **Evidence:** Pinned README/Cargo/license and representative client/server delivery/auth/setup source with independent read-only review; no install, daemon/hooks/config changes, accounts/contacts/messages, attachments, provider calls or benchmark. Dates: 2026-11-08.
+- **Registered records:** `coordination.imbo`.
+- **Recorded revision:** `f91d019f2732e1aa2b46b9d4160474c83bfe8334`.
 
 <a id="cloudflare-computer"></a>
 ### Cloudflare Computer
