@@ -90,3 +90,10 @@ The next reviewed browser startup-context submission stopped before reservation,
 
 
 Later browser observation: after a recorded RAM improvement, the still-unconsumed plan admitted its first actual startup workload through a new supported tool review. Chrome returned a valid discovery reply, but four targets violated the probe's singleton-target assumption. The run remained uncertain: no normal close, complete lifetime coverage or checked release was established. Its owner/evidence are retained. This is a concrete measurement/isolation issue to resolve, not O34 acceptance or a proven explanation of the earlier DLL failure.
+
+
+## Reviewed owned-page method; workload not started
+
+The next O34 package now integrates the actual reference memory Core, production document/CSP/startup, loopback transport, inherited CDP pipe and literal DOM evidence. Its reviewed method selects one owned page with an explicit bounded internal-UI census, rejects background/worker/unknown targets, waits for the correlated navigation commit, and requires normal selected roots plus a completely empty contained job before release. It does not claim every historical child image or global browser/network silence.
+
+Source verification passed 33 Node cases, nine runtime-wrapper memory compositions, seven HTTP failure-observer memory cases, strict TypeScript and complete pin checks; the helper compiled and passed native-free rule checks. The supported execution review allowed submission, but action-time RAM was below the unchanged 2 GiB requirement. No reservation, listener, Node, Chrome or oracle workload started. The unstarted host exited normally after checked state; old uncertain attempts remain preserved. O34 and the eight remaining oracle rows are still open. RC07 separately needs a real native SQLite write/sync interception mechanism; JavaScript hooks cannot establish those fault cases.
