@@ -1,5 +1,7 @@
 # Abrams Intelligence
 
+November 9, 2026 currentness audit: all 299 registered IDs reconciled and all 196 GitHub remote HEADs resolved. 30 match a recorded revision; 115 differ from recorded revisions; 51 have no reviewed revision recorded. Observed HEADs and review requirements are recorded separately in the machine-readable catalog. Five model repositories and Mercury 3 documentation were also checked. Changed and unpinned sources remain awaiting source review; historical pins, tests and adoption status are preserved.
+
 I’m building a personal AI for my own everyday use, and learning how to build it along the way. The goal is a capable, local-first assistant for research, coding, creative projects, document work and everyday coordination that I can keep improving as the technology changes.
 
 Models and components should be replaceable. I want to compare alternatives on tasks I actually need done, understand their trade-offs, and use different models where each works best. Projects, memory, source records and user controls should remain stable when a model, runtime or tool changes. Credentials, permissions, budgets and durable task state belong to the system’s own control layer.
@@ -89,7 +91,7 @@ flowchart TB
 
 ## What the research currently says
 
-The register accounts for 150 original discovery entries and 117 later proposed entries, including internal controls and prerequisites. Most external candidates have source research or plans, not benchmark results. No production runtime/model pairing has been adopted.
+The register accounts for 150 original discovery entries and 149 later proposed entries, including internal controls and prerequisites. Most external candidates have source research or plans, not benchmark results. No production runtime/model pairing has been adopted.
 
 One measured trade-off is the Laya development selector: its speed did not compensate for failed quality and memory thresholds. The existing deterministic rules remain the fallback. The published dispatcher tests demonstrate offline routing and lifecycle invariants with synthetic transports. They do not establish model quality, live editing or monetary savings.
 

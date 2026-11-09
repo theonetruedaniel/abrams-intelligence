@@ -1,6 +1,10 @@
 # Candidate register and research
 
-Updated November 8, 2026. This is the full discovery/intake inventory behind the public overview, not a list of installed dependencies or completed benchmarks. It accounts for **150 September 4 catalog records plus 149 subsequent proposed records: 299 registered entries**. Entries include individual model/API routes, platform prerequisites, local controls and proposed roles; this is not a count of distinct upstream repositories. The separate Laya development experiment and Jev reference projects are identified below without inflating that count.
+November 9, 2026 currentness audit: all 299 registered IDs reconciled and all 196 GitHub remote HEADs resolved. 30 match a recorded revision; 115 differ from recorded revisions; 51 have no reviewed revision recorded. Observed HEADs and review requirements are recorded separately in the machine-readable catalog. Five model repositories and Mercury 3 documentation were also checked. Changed and unpinned sources remain awaiting source review; historical pins, tests and adoption status are preserved.
+
+Model/route observations on November 9: Qwen3.8 has a newer upstream revision; Laya current metadata differs from the historical experiment scope, whose checkpoint and results are preserved. Mercury 3 remains documented, without an API availability test. The official Kimi model list marks hosted kimi-k2.5 deprecated; K3 stays a separate intake-required candidate. Moonshot documentation redirects to platform.kimi.ai. The XDA context-placement source could not be accessed; its supporting Anthropic sources resolve. No new token-saving measurement is claimed.
+
+Updated November 9, 2026. This is the full discovery/intake inventory behind the public overview, not a list of installed dependencies or completed benchmarks. It accounts for **150 September 4 catalog records plus 149 subsequent proposed records: 299 registered entries**. Entries include individual model/API routes, platform prerequisites, local controls and proposed roles; this is not a count of distinct upstream repositories. The separate Laya development experiment and Jev reference projects are identified below without inflating that count.
 
 Browse the [deduplicated 196-repository catalog](repository-catalog.md) for purposes, architecture fit, verified current links and exact status distinctions. The [progress ledger](progress.md) follows the existing plan order. Six additional Jev research references remain unregistered; the existing Foreman reference is now a named Q-56 evaluation.
 
@@ -18,7 +22,7 @@ No production runtime/model pairing is adopted by this register. [Results and li
 
 ## Later research and proposed comparisons
 
-The table preserves dated proposed records and the explicitly labeled unregistered prompt reference, including intake overlays through October 21. Each still has no benchmark run ID or adoption record and no execution authority. The table links reviewed source snapshots where the intake supplies one. Source screening is separate from planned testing.
+The table preserves dated proposed records and the explicitly labeled unregistered prompt reference, including intake overlays through November 8. Each still has no benchmark run ID or adoption record and no execution authority. The table links reviewed source snapshots where the intake supplies one. Source screening is separate from planned testing.
 
 | Record / upstream | Intended contribution and comparison | Evidence date / disposition |
 | --- | --- | --- |

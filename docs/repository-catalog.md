@@ -1,6 +1,10 @@
 # Repository catalog
 
-Updated November 8, 2026. This is a deduplicated map of **196 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **299 entries** (150 frozen catalog records plus 149 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+November 9, 2026 currentness audit: all 299 registered IDs reconciled and all 196 GitHub remote HEADs resolved. 30 match a recorded revision; 115 differ from recorded revisions; 51 have no reviewed revision recorded. Observed HEADs and review requirements are recorded separately in the machine-readable catalog. Five model repositories and Mercury 3 documentation were also checked. Changed and unpinned sources remain awaiting source review; historical pins, tests and adoption status are preserved.
+
+Model/route observations on November 9: Qwen3.8 has a newer upstream revision; Laya current metadata differs from the historical experiment scope, whose checkpoint and results are preserved. Mercury 3 remains documented, without an API availability test. The official Kimi model list marks hosted kimi-k2.5 deprecated; K3 stays a separate intake-required candidate. Moonshot documentation redirects to platform.kimi.ai. The XDA context-placement source could not be accessed; its supporting Anthropic sources resolve. No new token-saving measurement is claimed.
+
+Updated November 9, 2026. This is a deduplicated map of **196 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **299 entries** (150 frozen catalog records plus 149 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -22,9 +26,9 @@ Start with the capability you need. These projects span different roles; they ar
 - **Selected advisory content:** one pinned design skill is selected; its repository is not adopted as a runtime.
 - **Adopted integration:** an exact accepted product integration. None is claimed in this catalog.
 
-Counts: 150 shortlisted/planned, 20 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
+Counts: 170 shortlisted/planned, 24 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
 
-Coverage is the union of GitHub identities explicitly linked in the September 4 frozen catalog, dated intake overlays through October 21, and the collected research references. Six September 22 Jev references remain research-only without registration records; Foreman is now registered under Q-56. Documentation-only technologies, model/API routes and local controls remain in the full register. Transitive dependency trees and every project in an upstream directory are not asserted to be evaluated candidates.
+Coverage is the union of GitHub identities explicitly linked in the September 4 frozen catalog, dated intake overlays through November 8, and the collected research references. Six September 22 Jev references remain research-only without registration records; Foreman is now registered under Q-56. Documentation-only technologies, model/API routes and local controls remain in the full register. Transitive dependency trees and every project in an upstream directory are not asserted to be evaluated candidates.
 
 Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono, OpenWhispr, PocketBase, Trail-Code and OpenWorker were checked on October 17. AgentBridge, MinerU, OpenRig, Foreman, AX, the ten post projects and Letta's current-source pointer were checked on October 16; LangGraph was already present. OpenMausBot and SkillSpector were checked on October 15. AirLLM, PentAGI, OpenGrok, Camofox Browser and LibreChat were checked on October 13. REA was checked on October 12. Invisible Playwright was checked on October 10. Magpie, iFixAi, Orca, fframes, PageIndex, Hindsight, AI Employees, SkillOpt and System Prompts Leaks links were checked on October 9. Existing repository links were checked on October 7 against public GitHub metadata; five redirects were resolved and historical names retained. Link checks establish availability and identity, not an audit of today's code. Historical intake revisions do not become current-build admission pins.
 
@@ -56,6 +60,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README/Cargo/license and representative client/server delivery/auth/setup source with independent read-only review; no install, daemon/hooks/config changes, accounts/contacts/messages, attachments, provider calls or benchmark. Dates: 2026-11-08.
 - **Registered records:** `coordination.imbo`.
 - **Recorded revision:** `f91d019f2732e1aa2b46b9d4160474c83bfe8334`.
+- **Currentness (November 9):** `changed`; observed HEAD `76c5b5f768bec60b5bf250bff0b84c3a72b236df`. Source review required before using this revision.
 
 <a id="cloudflare-computer"></a>
 ### Cloudflare Computer
@@ -69,6 +74,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README/license/package/status and representative workspace/runtime/egress/backend source with independent read-only review; no install, deployment, Cloudflare resources/accounts/credentials, model/provider calls, private-data upload or benchmark. Dates: 2026-11-04.
 - **Registered records:** `infra.cloudflare-computer`.
 - **Recorded revision:** `b995d86503eab22793ba1feb07c3c67818e6f6b9`.
+- **Currentness (November 9):** `changed`; observed HEAD `9f70253dad2faef23739633e6760d1ce81f9f7dd`. Source review required before using this revision.
 
 <a id="jetbrains-thinkrail"></a>
 ### ThinkRail
@@ -82,6 +88,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README/license/package and representative source with independent read-only review; no installation, candidate execution, credentials/provider calls, benchmark, downloads of models/firmware or host changes. Dates: 2026-11-03.
 - **Registered records:** `workspace.thinkrail`.
 - **Recorded revision:** `c10f8808cee693e4abffeeb1844a132ed0a91cc5`.
+- **Currentness (November 9):** `changed`; observed HEAD `1aba63011e81a5a05d705aacd6965f17a34dd576`. Source review required before using this revision.
 
 <a id="orkas-ai-orkas"></a>
 ### Orkas
@@ -95,6 +102,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README/package/license and representative source screening with independent review; no install/build/postinstall, model download/provider/CLI/connector calls, schedules or benchmark. Dates: 2026-11-02.
 - **Registered records:** `workspace.orkas`.
 - **Recorded revision:** `dce78adb2a2ffdfbf9159cc89352e4335940bc64`.
+- **Currentness (November 9):** `changed`; observed HEAD `a3d9747284fca03f7ef92f336b8d901ba0ce199b`. Source review required before using this revision.
 
 <a id="ryder-sun-meldwork"></a>
 ### Meldwork
@@ -108,6 +116,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README/package/license/commercial/security metadata and representative source screening with independent review; no install, CLI/provider invocation, workspace attachment import, build or benchmark. Dates: 2026-10-31.
 - **Registered records:** `workspace.meldwork`.
 - **Recorded revision:** `ef405bb7219c9d929d86d26893da37c6741e8df7`.
+- **Currentness (November 9):** `changed`; observed HEAD `1ddf3fbdd76ef6e6b3baddfa6a460a72570aa7fd`. Source review required before using this revision.
 
 <a id="ruvnet-ruflo"></a>
 ### Ruflo
@@ -121,6 +130,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README, root package/license/security and selected host/audit/meta-harness docs with independent representative source screening; no install, init/hooks/mods, agents, model calls or benchmark. Dates: 2026-10-24.
 - **Registered records:** `orchestration.ruflo`.
 - **Recorded revision:** `d36d72a9ff6c8fa4fa728f44ff535f2c0b5bd7cc`.
+- **Currentness (November 9):** `changed`; observed HEAD `29be054e85636b61788f3955d0bd4d0bcbcfe3f6`. Source review required before using this revision.
 
 <a id="souravberaakaspeed-xiryn"></a>
 ### Xiryn
@@ -134,6 +144,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README, architecture, security, deployment and package metadata reviewed with independent representative source screening; no install, Docker/model/Telegram execution or runtime qualification. Dates: 2026-10-21.
 - **Registered records:** `runtime.xiryn`
 - **Recorded revision:** `0a55cd9ecdc9f2d8dbb7ff057226607613dcc64b`
+- **Currentness (November 9):** `changed`; observed HEAD `c56fd59c642ef56a4fa9e697ed218581473529ad`. Source review required before using this revision.
 
 <a id="e2b-dev-awesome-ai-agents"></a>
 ### E2B Awesome AI Agents
@@ -147,6 +158,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README and root-tree/license metadata reviewed; lexical link overlap only, no validation of every listed project or execution. Dates: 2026-10-20.
 - **Registered records:** None; discovery reference only.
 - **Recorded revision:** `9596ab1e69fbbb6c95291141c8dab5c181083216`
+- **Currentness (November 9):** `unchanged`; observed HEAD `9596ab1e69fbbb6c95291141c8dab5c181083216`. Matches a recorded revision; no runtime qualification implied.
 
 <a id="paperclipai-paperclip"></a>
 ### Paperclip
@@ -160,6 +172,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README, package/license identity, deployment/budget/secret/adapter docs and selected Codex adapter source reviewed; no installation, onboarding, agents, credentials/accounts, heartbeat/provider calls or full audit. Dates: 2026-10-18.
 - **Registered records:** orchestration.paperclip
 - **Recorded intake revision:** c9669a6c2237626ab0b0b2059d34c3965a86f02f
+- **Currentness (November 9):** `changed`; observed HEAD `d7d0f96f3f500a0e7a2028a323c42ace2aa2fa77`. Source review required before using this revision.
 
 <a id="aaif-goose-goose"></a>
 ### Goose
@@ -173,6 +186,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README, license/build metadata and permission, ACP, recipe, session/security docs reviewed; no install, credentials/accounts, agent/tool/provider calls or full audit. Dates: 2026-10-17.
 - **Registered records:** agent.goose
 - **Recorded intake revision:** bfcc6ee6f1ee18d0c4c852a65c49b25f87ee40dc
+- **Currentness (November 9):** `changed`; observed HEAD `0edf2bdc8161d06f79daf639c148bf3559e26cf0`. Source review required before using this revision.
 
 <a id="anthropics-claude-code"></a>
 ### Claude Code
@@ -186,6 +200,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README and LICENSE.md reviewed; no installation, accounts/credentials, runtime/provider calls or full audit. Dates: 2026-10-17.
 - **Registered records:** agent.claude-code
 - **Recorded intake revision:** c017428c8c27e604840435048d5bce6a9a22c040
+- **Currentness (November 9):** `changed`; observed HEAD `0ed94698aa0aeee471465fc9c867c2e8434c4d68`. Source review required before using this revision.
 
 <a id="langgenius-dify"></a>
 ### Dify
@@ -199,6 +214,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README, LICENSE and Compose manifest reviewed; no installation, accounts/credentials, runtime/provider calls or full audit. Dates: 2026-10-17.
 - **Registered records:** platform.dify
 - **Recorded intake revision:** 7c7f93bd530cc0a9fb7465ef59c28803edd1e286
+- **Currentness (November 9):** `changed`; observed HEAD `8457639de54591969d8333bc749151a09dfb61a0`. Source review required before using this revision.
 
 <a id="anomalyco-opencode"></a>
 ### OpenCode
@@ -212,6 +228,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README and root package metadata reviewed; no installation, accounts/credentials, runtime/provider calls or full audit. Dates: 2026-10-17.
 - **Registered records:** agent.opencode
 - **Recorded intake revision:** 86c7f7c84048d776ba94b94bfab782b2b0a6d776
+- **Currentness (November 9):** `changed`; observed HEAD `12a661ea40cd5863b271a89bb06b8a3ddb7ab5a0`. Source review required before using this revision.
 
 <a id="deepseek-ai-deepseek-harness"></a>
 ### DeepSeek Harness
@@ -225,6 +242,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README, package/safety, architecture/config-catalog and base/sdk-minimal bundle docs reviewed; no install, plugins, sessions, calls or full audit. Dates: 2026-10-17.
 - **Registered records:** agent.deepseek-harness
 - **Recorded intake revision:** 687f282e8625c6b8d11ff58211a90524be2e4317
+- **Currentness (November 9):** `changed`; observed HEAD `fcc0ad462172522aaf5c93a7b2e01f6b9f0b0159`. Source review required before using this revision.
 
 <a id="andrewyng-openworker"></a>
 ### OpenWorker
@@ -238,6 +256,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README, security/package metadata and Windows/OpenShell sandbox docs reviewed; no installation, accounts, connectors, model calls or full audit. Dates: 2026-10-17.
 - **Registered records:** agent.openworker
 - **Recorded intake revision:** 7e20213dc88faaaaccace59461876c76e76b134a
+- **Currentness (November 9):** `changed`; observed HEAD `ddb8b361bd5889703a429af8beaa804554bd858a`. Source review required before using this revision.
 
 <a id="mvschwarz-openrig"></a>
 ### OpenRig
@@ -251,6 +270,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README, license/security/package metadata and independent representative source screening refreshed; historical intake retained; no install, setup, hooks, daemon/team launch, session adoption, messages or provider calls. Dates: 2026-10-16, 2026-10-26.
 - **Registered records:** `orchestration.openrig` (existing Q-57 refreshed; no count increase).
 - **Recorded revisions:** `e0c65c41e429678272522eb5f9875583a69b48a5`, `44e10a1e5b44012d65319b689d22aad607a6b2bc`.
+- **Currentness (November 9):** `changed`; observed HEAD `1fb614b7c95e5fab5148997d451fbd6da0cc6f35`. Source review required before using this revision.
 
 <a id="google-ax"></a>
 ### AX
@@ -264,6 +284,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README, sandbox/roadmap documentation and go.mod screened; no execution or full audit. Dates: 2026-10-16.
 - **Record IDs:** `orchestration.google-ax`.
 - **Historical intake revision:** `92d297e97c43ff381f82d83315736c270ea1bc69`.
+- **Currentness (November 9):** `changed`; observed HEAD `241bc4d0c682a6898da5f718a9ec84fe7c9197f9`. Source review required before using this revision.
 
 <a id="kortix-ai-suna"></a>
 ### Kortix (formerly Suna)
@@ -277,6 +298,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Dated carousel identity review and pinned primary README/metadata; additional license/maintenance screening where recorded; no execution/full audit. Dates: 2026-10-16.
 - **Record IDs:** `assistant.kortix-suna`.
 - **Historical intake revision:** `a76952539cc075933bb5e27089283eb2db17ef73`.
+- **Currentness (November 9):** `changed`; observed HEAD `e16bb636ac5a0645007d250b6cae3a5e726293e4`. Source review required before using this revision.
 
 <a id="pydantic-pydantic-ai"></a>
 ### Pydantic AI
@@ -290,6 +312,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Dated carousel identity review and pinned primary README/metadata; additional license/maintenance screening where recorded; no execution/full audit. Dates: 2026-10-16.
 - **Record IDs:** `agent.pydantic-ai`.
 - **Historical intake revision:** `0ca0fde41c5e08343e23aab7c6601c3a9afce1e0`.
+- **Currentness (November 9):** `changed`; observed HEAD `0d972ac375fe0d61e5b21a3c9415fd12b0fd6a0b`. Source review required before using this revision.
 
 <a id="microsoft-autogen"></a>
 ### AutoGen
@@ -303,6 +326,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Dated carousel identity review and pinned primary README/metadata; additional license/maintenance screening where recorded; no execution/full audit. Dates: 2026-10-16.
 - **Record IDs:** `agent.autogen`.
 - **Historical intake revision:** `027ecf0a379bcc1d09956d46d12d44a3ad9cee14`.
+- **Currentness (November 9):** `changed`; observed HEAD `d07c667a3239ea4ab7af62a53b0f4ff205a1f23d`. Source review required before using this revision.
 
 <a id="agno-agi-agno"></a>
 ### Agno
@@ -316,6 +340,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Dated carousel identity review and pinned primary README/metadata; additional license/maintenance screening where recorded; no execution/full audit. Dates: 2026-10-16.
 - **Record IDs:** `agent.agno`.
 - **Historical intake revision:** `7f5dcdf53d0caf6c10381f2e2cd8c6acbca46fb8`.
+- **Currentness (November 9):** `changed`; observed HEAD `047cf37a47f3f5788faf63ce3437715bd6780123`. Source review required before using this revision.
 
 <a id="openhands-openhands"></a>
 ### OpenHands Agent Canvas
@@ -329,6 +354,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Dated carousel identity review and pinned primary README/metadata; additional license/maintenance screening where recorded; no execution/full audit. Dates: 2026-10-16.
 - **Record IDs:** `assistant.openhands`.
 - **Historical intake revision:** `d3a58cd1cc045bbb1b24f2c8c0d79a8404ef239b`.
+- **Currentness (November 9):** `changed`; observed HEAD `82196a4d99d6414fa7333ac1876cefbd59e2eeb7`. Source review required before using this revision.
 
 <a id="letta-ai-letta-code"></a>
 ### Letta Code (Letta)
@@ -342,6 +368,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Dated carousel identity review and pinned primary README/metadata; additional license/maintenance screening where recorded; no execution/full audit. Dates: 2026-10-16.
 - **Record IDs:** `agent.letta`.
 - **Historical intake revision:** `1297870b0aa6662d6c70729d273f5073c1bcbdea`.
+- **Currentness (November 9):** `changed`; observed HEAD `7f7300a2c8d4d8aef150d9ea9d01f0edd4f9d710`. Source review required before using this revision.
 
 <a id="crewaiinc-crewai"></a>
 ### CrewAI
@@ -355,6 +382,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Dated carousel identity review and pinned primary README/metadata; additional license/maintenance screening where recorded; no execution/full audit. Dates: 2026-10-16.
 - **Record IDs:** `agent.crewai`.
 - **Historical intake revision:** `6115839576d68d2e83b9f7f31e6c55d471e1fc64`.
+- **Currentness (November 9):** `changed`; observed HEAD `83d7407aa50b94d5b9f110c10ca295d3e0f360ee`. Source review required before using this revision.
 
 <a id="milind-soni-openmausbot"></a>
 ### OpenMausBot
@@ -368,6 +396,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README, licensing guide, security-policy excerpts and package metadata screened; no execution or full audit. Dates: 2026-10-15.
 - **Record IDs:** `assistant.openmausbot`.
 - **Historical intake revision:** `113ec83256971c62088a0bbd507c6fa3a2cd4091`.
+- **Currentness (November 9):** `changed`; observed HEAD `1de1164d5040d8699f55e0907552270bd9fbd38f`. Source review required before using this revision.
 
 <a id="significant-gravitas-autogpt"></a>
 ### AutoGPT
@@ -381,6 +410,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Dated public-source intake; review scope is documentation and selected source where recorded, not full audit. Dates: 2026-09-09.
 - **Record IDs:** `agent.autogpt-classic`, `evaluation.autogpt-classic-fixtures`, `workflow.autogpt-platform`.
 - **Historical intake revision:** `98381ab27f733468bfe1f9c4f4942b4b416d9a8b`.
+- **Currentness (November 9):** `changed`; observed HEAD `9cb76f9026d388c9bf2e098af2beae1cc864f055`. Source review required before using this revision.
 
 <a id="cline-cline"></a>
 ### Cline
@@ -393,6 +423,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Next gate:** Exact configuration and dependency intake, then the common frozen oracle.
 - **Evidence:** Dated discovery catalog; executable qualification unrun. Dates: 2026-09-04.
 - **Record IDs:** `agent.cline-agent`, `agent.cline-core`, `agent.cline-hub`, `agent.cline-sdk`.
+- **Currentness (November 9):** `unreviewed_pin`; observed HEAD `5413dc180c10700ce2e26547ab75991360dd0486`. Source review required before using this revision.
 
 <a id="nousresearch-hermes-agent"></a>
 ### Hermes Agent
@@ -406,6 +437,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Dated public-source intake; review scope is documentation and selected source where recorded, not full audit. Dates: 2026-09-23.
 - **Record IDs:** `agent.hermes`.
 - **Historical intake revision:** `3dca25b6f65ae8e6bccc99ed1396cefdf9977b9c`.
+- **Currentness (November 9):** `changed`; observed HEAD `0b37335f2112822df9aca9a22f1d4f8bf483fdb1`. Source review required before using this revision.
 
 <a id="moonshotai-kimi-code"></a>
 ### Kimi Code
@@ -418,6 +450,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Next gate:** Exact package/route identity and common oracle qualification.
 - **Evidence:** Dated discovery catalog; executable qualification unrun. Dates: 2026-09-04.
 - **Record IDs:** `model.kimi-code`.
+- **Currentness (November 9):** `unreviewed_pin`; observed HEAD `27bd9baba10e9f73d3db0e0fdd6f81046b4cbac9`. Source review required before using this revision.
 
 <a id="langchain-ai-langchain"></a>
 ### LangChain
@@ -431,6 +464,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Dated public-source intake; review scope is documentation and selected source where recorded, not full audit. Dates: 2026-09-09.
 - **Record IDs:** `agent.langchain`.
 - **Historical intake revision:** `1611938f49dda48aa069d1fdce429430257488b7`.
+- **Currentness (November 9):** `changed`; observed HEAD `82f2e3f995abbba1304128a48d2cfb268bc1c755`. Source review required before using this revision.
 
 <a id="langchain-ai-langgraph"></a>
 ### LangGraph
@@ -444,6 +478,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Dated public-source intake; review scope is documentation and selected source where recorded, not full audit. October 16 carousel/README reconciliation confirms existing agent.langgraph; no duplicate record or execution/adoption. Dates: 2026-09-04, 2026-09-09, 2026-10-16.
 - **Record IDs:** `agent.langgraph`.
 - **Historical intake revision:** `e539ac122f4126f6dd850581c1494948cf620e31`, `e77a5cb08c1f3ff306d997dd76fc7169afdab5ea`.
+- **Currentness (November 9):** `changed`; observed HEAD `e5e37b5d70dbfd93c7006bd90a658c6179a95946`. Source review required before using this revision.
 
 <a id="ruvnet-open-claude-code"></a>
 ### Open Claude Code (ruvnet)
@@ -456,6 +491,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Next gate:** Written eligibility, exact package intake and shared oracle qualification.
 - **Evidence:** Dated discovery catalog; executable qualification unrun. Dates: 2026-09-04.
 - **Record IDs:** `agent.openclaude.ruvnet`.
+- **Currentness (November 9):** `unreviewed_pin`; observed HEAD `d6672914796622ee9ed6747aa436317c6adf7381`. Source review required before using this revision.
 
 <a id="ymichael-open-codex"></a>
 ### Open Codex (ymichael)
@@ -468,6 +504,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Next gate:** Review the exact fork, dependency closure and isolation before execution.
 - **Evidence:** Dated discovery catalog; executable qualification unrun. Dates: 2026-09-04.
 - **Record IDs:** `agent.opencodex.ymichael`.
+- **Currentness (November 9):** `unreviewed_pin`; observed HEAD `c15beb3a3f9ef393e597a1ea6d5c0c84022b36d3`. Source review required before using this revision.
 
 <a id="composio-community-open-dot"></a>
 ### Open Dot
@@ -481,6 +518,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Dated public-source intake; review scope is documentation and selected source where recorded, not full audit. Dates: 2026-10-03.
 - **Record IDs:** `app.open-dot`.
 - **Historical intake revision:** `f838e17cf5c3a88ade5ceea54680a8145d048c1d`.
+- **Currentness (November 9):** `unchanged`; observed HEAD `f838e17cf5c3a88ade5ceea54680a8145d048c1d`. Matches a recorded revision; no runtime qualification implied.
 
 <a id="gitlawb-openclaude"></a>
 ### OpenClaude (Gitlawb lineage)
@@ -494,6 +532,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Dated discovery catalog; executable qualification unrun. Dates: 2026-09-04.
 - **Record IDs:** `agent.openclaude.gitlawb`.
 - **Identity note:** recorded as `Gitlawb/openclaude`; current destination verified October 7. The redirect does not transfer historical results to new code.
+- **Currentness (November 9):** `unreviewed_pin`; observed HEAD `20b5645e983d5e40bf25cb556373da609b5a0155`. Source review required before using this revision.
 
 <a id="openclaw-openclaw"></a>
 ### OpenClaw
@@ -507,6 +546,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Dated public-source intake; review scope is documentation and selected source where recorded, not full audit. Dates: 2026-09-09.
 - **Record IDs:** `agent.openclaw`.
 - **Historical intake revision:** `78bfb8ad4674183268efdb954c6675b069c0cea4`.
+- **Currentness (November 9):** `changed`; observed HEAD `bbf0d7380315f660bf79561223da1d34eadd4ac3`. Source review required before using this revision.
 
 <a id="copilotkit-openmuse"></a>
 ### OpenMuse
@@ -520,6 +560,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Dated public-source intake; review scope is documentation and selected source where recorded, not full audit. Dates: 2026-09-29.
 - **Record IDs:** `app.openmuse`.
 - **Historical intake revision:** `34b15bc80340e582fb8c25573646cfb0bbc5184d`.
+- **Currentness (November 9):** `changed`; observed HEAD `a4944f4c471d3dc93b8bfc060b5da309b5216ab2`. Source review required before using this revision.
 
 <a id="primeintellect-ai-prime-agent"></a>
 ### Prime Agent
@@ -533,6 +574,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Dated public-source intake; review scope is documentation and selected source where recorded, not full audit. Dates: 2026-10-05.
 - **Record IDs:** `agent.prime-agent`.
 - **Historical intake revision:** `41e1f41c072e8f31ac6a79ad1b7fe19920c6d61f`.
+- **Currentness (November 9):** `changed`; observed HEAD `bfad069bf7ce95795886a0b5a74592d672b7f8bb`. Source review required before using this revision.
 
 <a id="qwenlm-qwen-code"></a>
 ### Qwen Code
@@ -545,6 +587,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Next gate:** Exact runtime and dependency intake, then the common conformance corpus.
 - **Evidence:** Dated discovery catalog; executable qualification unrun. Dates: 2026-09-04.
 - **Record IDs:** `model.qwen-code`.
+- **Currentness (November 9):** `unreviewed_pin`; observed HEAD `aeacedc4c4bbe41f38550ce7eac305ff086e9b2f`. Source review required before using this revision.
 
 <a id="truefoundry-trueforge"></a>
 ### TrueForge
@@ -560,6 +603,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 
 
 ## Decision components
+- **Currentness (November 9):** `unreviewed_pin`; observed HEAD `c29131547d50e344adaeaf115bcacd32838d5a8e`. Source review required before using this revision.
 
 <a id="elevatormusic-hermes-warm-compaction"></a>
 ### Hermes Warm Compaction
@@ -573,6 +617,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README/provider-support, Python/plugin metadata and selected engine/warm/fallback/ledger/register source reviewed; no installation, host configuration, provider/model calls, benchmark replication or full audit. Dates: 2026-10-19.
 - **Registered records:** `context.hermes-warm-compaction`
 - **Recorded intake revision:** `be1ca35321d5eb61de8c593dcd8011e205928b9d`
+- **Currentness (November 9):** `changed`; observed HEAD `b95952763305bfbe2e6ea8d1653bcf046c732aff`. Source review required before using this revision.
 
 <a id="logicrw-awesome-jev-projects"></a>
 ### Awesome Jev Projects
@@ -585,6 +630,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Next gate:** Inspect a named reference and define a capability-specific question first.
 - **Evidence:** Dated research reference; no new registered evaluation or execution authority. Dates: 2026-09-23.
 - **Historical intake revision:** `0c003c525f73db1d286c3acfd9c30315dd2dc2af`.
+- **Currentness (November 9):** `changed`; observed HEAD `2edd51355ec72bd2638caa1c3058f76aec144e3b`. Source review required before using this revision.
 
 <a id="qkal-canny"></a>
 ### Canny
@@ -596,6 +642,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Current status:** Researched reference; no completion-accuracy result.
 - **Next gate:** False-completion fixtures, hook lifecycle and independent outcomes.
 - **Evidence:** Dated research reference; no new registered evaluation or execution authority. Dates: 2026-09-20.
+- **Currentness (November 9):** `unreviewed_pin`; observed HEAD `f2c5e53779445d60dc4a09d2dbced2308fccb820`. Source review required before using this revision.
 
 <a id="tamaratran-fast-jev-compaction"></a>
 ### Fast Jev Compaction
@@ -607,6 +654,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Current status:** Documentation reference; no measured token or task-quality gain.
 - **Next gate:** Exact source/route intake, evidence retention and independently labeled replay tasks.
 - **Evidence:** Dated research reference; no new registered evaluation or execution authority. Dates: 2026-09-20.
+- **Currentness (November 9):** `unreviewed_pin`; observed HEAD `e3f262a7f4d42bd8dd32ced30d26176f7cb545b0`. Source review required before using this revision.
 
 <a id="thruwire-foreman"></a>
 ### Foreman
@@ -620,6 +668,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README, evidence/routing/feasibility docs, package and security metadata reviewed; no execution or full audit. Dates: 2026-09-22, 2026-10-16.
 - **Registered records:** supervision.foreman
 - **Recorded intake revision:** c3142ef636617f32f772140125aa310d81ceece9
+- **Currentness (November 9):** `unchanged`; observed HEAD `c3142ef636617f32f772140125aa310d81ceece9`. Matches a recorded revision; no runtime qualification implied.
 
 <a id="sutro-sh-jev-align"></a>
 ### Jev Align
@@ -631,6 +680,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Current status:** Collected in September 22 research; not a newly registered candidate.
 - **Next gate:** Exact intake, held-out quality, rollback and explicit revision promotion.
 - **Evidence:** Dated research reference; no new registered evaluation or execution authority. Dates: 2026-09-22.
+- **Currentness (November 9):** `unreviewed_pin`; observed HEAD `5390ee05e4d9863e1c1eb623ca60c9c7bec27128`. Source review required before using this revision.
 
 <a id="0xnatoshi-jev-codex-router"></a>
 ### Jev Codex Router
@@ -642,6 +692,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Current status:** Reference only; no backend, subscription or fail-open behavior is admitted.
 - **Next gate:** Exact route authority, manual-choice preservation, quality and full-cost comparison.
 - **Evidence:** Dated research reference; no new registered evaluation or execution authority. Dates: 2026-09-20.
+- **Currentness (November 9):** `unreviewed_pin`; observed HEAD `8701ef788aa8cb0948f299538747fb01029d32b8`. Source review required before using this revision.
 
 <a id="jkudish-jev-mcp"></a>
 ### Jev MCP
@@ -653,6 +704,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Current status:** Documentation researched; no admitted MCP or model route.
 - **Next gate:** Freeze evidence labels and qualify exact wrapper, egress and retry semantics.
 - **Evidence:** Dated research reference; no new registered evaluation or execution authority. Dates: 2026-09-20.
+- **Currentness (November 9):** `unreviewed_pin`; observed HEAD `d119eb5c3555d1daff5e6923d2d3cf8225a8d796`. Source review required before using this revision.
 
 <a id="browser-use-jev-ultrafast"></a>
 ### Jev Ultrafast
@@ -666,6 +718,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Dated public-source intake; review scope is documentation and selected source where recorded, not full audit. Dates: 2026-09-20.
 - **Record IDs:** `browser.jev-ultrafast`.
 - **Historical intake revision:** `1231850a0bf1a0c0341fe408ef1668dbbfdfac46`.
+- **Currentness (November 9):** `changed`; observed HEAD `8251e272398011cdef648965204d1c20cd838333`. Source review required before using this revision.
 
 <a id="moritzkremb-jev-voice-browser"></a>
 ### Jev Voice Browser
@@ -677,6 +730,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Current status:** Collected research; no voice, microphone or browser-control admission.
 - **Next gate:** Exact consent, ambiguous-intent, cancellation and controlled outcome fixtures.
 - **Evidence:** Dated research reference; no new registered evaluation or execution authority. Dates: 2026-09-22.
+- **Currentness (November 9):** `unreviewed_pin`; observed HEAD `198a0764395a666f8398026c0d8abdaf6d1866c5`. Source review required before using this revision.
 
 <a id="jkrup-jeveryword"></a>
 ### Jeveryword
@@ -688,6 +742,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Current status:** Experimental reference; no Abrams extraction benchmark.
 - **Next gate:** Exact-span labels, wrong-subject and abstention tests before real data use.
 - **Evidence:** Dated research reference; no new registered evaluation or execution authority. Dates: 2026-09-22.
+- **Currentness (November 9):** `unreviewed_pin`; observed HEAD `6fed1518bbb84cc4865401630f37c01dc3decc10`. Source review required before using this revision.
 
 <a id="fazlerocks-jevmail"></a>
 ### Jevmail
@@ -699,6 +754,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Current status:** Collected research; no inbox connection or model route admitted.
 - **Next gate:** Synthetic triage against rules, action-required recall and separate data/egress intake.
 - **Evidence:** Dated research reference; no new registered evaluation or execution authority. Dates: 2026-09-22.
+- **Currentness (November 9):** `unreviewed_pin`; observed HEAD `f6f20af9c2805efd924c29cbea59547e72c558fc`. Source review required before using this revision.
 
 <a id="keltokhy-jlink"></a>
 ### Jlink
@@ -710,6 +766,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Current status:** Collected research; upstream mixed results are not Abrams measurements.
 - **Next gate:** Freeze candidate pools and measure recall and false merges separately.
 - **Evidence:** Dated research reference; no new registered evaluation or execution authority. Dates: 2026-09-22.
+- **Currentness (November 9):** `unreviewed_pin`; observed HEAD `d3ab99f583a13b732738acb1fb9b7d887fa8649f`. Source review required before using this revision.
 
 <a id="jaredpalmer-kev"></a>
 ### Kev
@@ -723,6 +780,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Dated public-source intake; review scope is documentation and selected source where recorded, not full audit. Dates: 2026-09-29.
 - **Record IDs:** `decision.kev`.
 - **Historical intake revision:** `0fe8fc97c2bcc247fa3efb6e5c32af4e99770e91`.
+- **Currentness (November 9):** `changed`; observed HEAD `2074cc44256200bb37540103fa4572901faa10f3`. Source review required before using this revision.
 
 <a id="nandhakishorm-laya"></a>
 ### Laya
@@ -734,6 +792,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Current status:** Tested, not admitted: 18/40 ordinary proposals acceptable (45% vs 90% gate); earlier memory failed. October 4 retry stopped without a new score.
 - **Next gate:** Retain rules; current resources and exact runtime admission must pass before another authorized run.
 - **Evidence:** September 29 development-selector receipts and October 4 cancelled rerun; model quality, memory and timing scopes remain separate. Dates: 2026-09-29, 2026-10-04.
+- **Currentness (November 9):** `unreviewed_pin`; observed HEAD `b8a0f0991d95a953411f2e16f91bddc2ffdaf79a`. Source review required before using this revision.
 
 <a id="mizorewww-laya-coreml"></a>
 ### Laya CoreML
@@ -747,6 +806,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Dated public-source intake; review scope is documentation and selected source where recorded, not full audit. Dates: 2026-09-21.
 - **Record IDs:** `decision.laya-coreml`.
 - **Historical intake revision:** `12b7501583c7f03a6b2e49ebe118a2c6302505b9`.
+- **Currentness (November 9):** `changed`; observed HEAD `a51fa1751fbb90c4a322bd1d42eed941179a2573`. Source review required before using this revision.
 
 <a id="bespokelabsai-nimble"></a>
 ### Nimble
@@ -760,6 +820,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Dated public-source intake; review scope is documentation and selected source where recorded, not full audit. Dates: 2026-09-21.
 - **Record IDs:** `decision.nimble`.
 - **Historical intake revision:** `f136b3f75721fda4ea961f73993cc50b08488835`.
+- **Currentness (November 9):** `changed`; observed HEAD `4edb0703a2e75d0170c3a45645a1961f4d1a2867`. Source review required before using this revision.
 
 <a id="itsmostafa-typesafe-mcp"></a>
 ### TypeSafe MCP reference
@@ -772,6 +833,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Next gate:** Review the exact current component and route before a wrapper comparison.
 - **Evidence:** Dated research reference; no new registered evaluation or execution authority. Dates: 2026-09-20.
 - **Identity note:** recorded as `itsmostafa/typesafe-mcp`; current destination verified October 7. The redirect does not transfer historical results to new code.
+- **Currentness (November 9):** `unreviewed_pin`; observed HEAD `580795791d6f6af3401ee769ccfa0f99d4225b74`. Source review required before using this revision.
 
 <a id="ghalebdweikat-winnow"></a>
 ### Winnow
@@ -786,6 +848,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 
 
 ## Devices and access
+- **Currentness (November 9):** `unreviewed_pin`; observed HEAD `4547a81b88ac59a902bad7b0006137c7d4147aeb`. Source review required before using this revision.
 
 <a id="lxe-phoneuse"></a>
 ### PhoneUse
@@ -799,6 +862,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README/license/architecture and representative install/config/unlock/HID/vision source with independent read-only review; no installation, services, pairing, phone/screen/passcode access, firmware/model download, input actions or benchmark. Dates: 2026-11-08.
 - **Registered records:** `device.phoneuse`.
 - **Recorded revision:** `3bcecde243b5e024989bd7b043794271a9180863`.
+- **Currentness (November 9):** `changed`; observed HEAD `1c0ca0c98ac401550b6e695b3bbd8d1cc63db472`. Source review required before using this revision.
 
 <a id="vercel-labs-agent-desktop"></a>
 ### Agent Desktop
@@ -812,6 +876,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README/Cargo/license/security metadata and representative native/source screening with independent review; no install/build/permission grant, screen/app/clipboard access, CLI/FFI execution or model call. Dates: 2026-11-03.
 - **Registered records:** `desktop.agent-desktop`.
 - **Recorded revision:** `d3dc190afbf34cd2377252398ddd5c30efbd093a`.
+- **Currentness (November 9):** `changed`; observed HEAD `b43ac4f6e892ef608f8851428613c4009f0e84c7`. Source review required before using this revision.
 
 <a id="danielpaulus-go-ios"></a>
 ### go-ios
@@ -824,6 +889,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Next gate:** Eligible runner, device transport, enrollment, permissions and recovery proof.
 - **Evidence:** Dated discovery catalog; executable qualification unrun. Dates: 2026-09-04.
 - **Record IDs:** `platform.go-ios`.
+- **Currentness (November 9):** `unreviewed_pin`; observed HEAD `63c0d5705a010b03c340de888ba6c7c4052d763b`. Source review required before using this revision.
 
 <a id="mobile-next-mobilecli"></a>
 ### Mobile CLI
@@ -836,6 +902,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Next gate:** Pin transitive binaries and prove platform-specific lifecycle and removal.
 - **Evidence:** Dated discovery catalog; executable qualification unrun. Dates: 2026-09-04.
 - **Record IDs:** `runtime.mobilecli`.
+- **Currentness (November 9):** `unreviewed_pin`; observed HEAD `83e47ca93fa9ecfc0fedc0dc56cc7180d8db0ff6`. Source review required before using this revision.
 
 <a id="mobile-next-mobile-mcp"></a>
 ### Mobile MCP
@@ -848,6 +915,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Next gate:** Exact device/app/build scope, at least 20 workflows, receipts, Stop and recovery.
 - **Evidence:** Dated discovery catalog; executable qualification unrun. Dates: 2026-09-04.
 - **Record IDs:** `mcp.mobile-next`.
+- **Currentness (November 9):** `unreviewed_pin`; observed HEAD `3b51952bcd83955f3a743f731f5a9beaebecdab7`. Source review required before using this revision.
 
 <a id="appium-webdriveragent"></a>
 ### WebDriverAgent
@@ -863,6 +931,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 
 
 ## Interface and media
+- **Currentness (November 9):** `unreviewed_pin`; observed HEAD `3d6a4e03cdd673e540289c610f7e189f8ffea434`. Source review required before using this revision.
 
 <a id="puppyone-ai-puppyone"></a>
 ### PuppyOne
@@ -876,6 +945,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README/package/license/NOTICE/privacy and representative cloud/agent/filesystem source with independent read-only review; no install/build, folder opening/import, cloud publication/sync, agent/credential/provider calls or benchmark. Dates: 2026-11-07.
 - **Registered records:** `workspace.puppyone`.
 - **Recorded revision:** `1dcc67b9ade2e5c23e484fbb2e8d483d0e95d60e`.
+- **Currentness (November 9):** `unchanged`; observed HEAD `1dcc67b9ade2e5c23e484fbb2e8d483d0e95d60e`. Matches a recorded revision; no runtime qualification implied.
 
 <a id="copilotkit-generative-ui"></a>
 ### CopilotKit Generative UI guide
@@ -889,6 +959,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned guide/asset-tree review and independent consolidation/license screen; no package installed, demo run, generated UI rendered, service/model call or benchmark. Dates: 2026-10-29.
 - **Registered records:** `ui.generative-ui-patterns`.
 - **Recorded revision:** `12aa81e3deeb9c6c15c7863b67a3f8f63144e383`.
+- **Currentness (November 9):** `unchanged`; observed HEAD `12aa81e3deeb9c6c15c7863b67a3f8f63144e383`. Matches a recorded revision; no runtime qualification implied.
 
 <a id="codewithmuhilan-lightswind-ui-library"></a>
 ### Lightswind UI
@@ -902,6 +973,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README/package/license, representative component/CLI/MCP source and official pricing-page screen; no install, auth, UI rendering or runtime accessibility/security qualification. Dates: 2026-10-26.
 - **Registered records:** `ui.lightswind`.
 - **Recorded revision:** `53ef2ee0cf211a794a3bb4b2ed1e62d3f0f2544a`.
+- **Currentness (November 9):** `changed`; observed HEAD `a3895bd6968b5d96425eb45edcc84a1d79b3ecb4`. Source review required before using this revision.
 
 <a id="spacedriveapp-spaceui"></a>
 ### SpaceUI
@@ -915,6 +987,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README, integration guide and package metadata reviewed with independent representative component source screening; no dependency install/build, rendered accessibility/security test or runtime adoption. Dates: 2026-10-21.
 - **Registered records:** `ui.spaceui`
 - **Recorded revision:** `a48b17047d3ff1d05268acb6f88a79460ad4fa7b`
+- **Currentness (November 9):** `unchanged`; observed HEAD `a48b17047d3ff1d05268acb6f88a79460ad4fa7b`. Matches a recorded revision; no runtime qualification implied.
 
 <a id="vert-sh-vert"></a>
 ### VERT
@@ -928,6 +1001,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README, package/env/video docs and selected converter/Pandoc/FFmpeg source reviewed; no install/build, file uploads/conversions, daemon, API/model execution or full audit. Dates: 2026-10-21.
 - **Registered records:** `conversion.vert`
 - **Recorded revision:** `257bcb3b2bb6a501bae0faf9ffb05060ee00c3f7`
+- **Currentness (November 9):** `unchanged`; observed HEAD `257bcb3b2bb6a501bae0faf9ffb05060ee00c3f7`. Matches a recorded revision; no runtime qualification implied.
 
 <a id="calesthio-openmontage"></a>
 ### OpenMontage
@@ -941,6 +1015,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README and provider guide reviewed as source material; no installation, activation, credentials/accounts, target/media/agent/model/service execution or full audit. Dates: 2026-10-18.
 - **Registered records:** media.openmontage
 - **Recorded intake revision:** c8066452325cb57c8fc1ba8c2a71b6e8842e6b65
+- **Currentness (November 9):** `changed`; observed HEAD `fecb9a1e3cc23ef84de30b272059457a427f16f8`. Source review required before using this revision.
 
 <a id="agent37-platform-minions"></a>
 ### Minions
@@ -954,6 +1029,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README and package.json reviewed as source material; no installation, activation, credentials/accounts, target/media/agent/model/service execution or full audit. Dates: 2026-10-18.
 - **Registered records:** surface.minions
 - **Recorded intake revision:** a0787971cb207fd80f7e54991a52665874fe914a
+- **Currentness (November 9):** `unchanged`; observed HEAD `a0787971cb207fd80f7e54991a52665874fe914a`. Matches a recorded revision; no runtime qualification implied.
 
 <a id="open-webui-open-webui"></a>
 ### Open WebUI
@@ -967,6 +1043,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README, LICENSE and pyproject reviewed; no installation, accounts/credentials, runtime/provider calls or full audit. Dates: 2026-10-17.
 - **Registered records:** surface.open-webui
 - **Recorded intake revision:** 91ea4e3421d1d8069f13d4a463fcb5986d94ea60
+- **Currentness (November 9):** `changed`; observed HEAD `b0e6098e940942281d9c83f3529ea117287a3a22`. Source review required before using this revision.
 
 <a id="anil-matcha-open-generative-ai"></a>
 ### Open Generative AI
@@ -980,6 +1057,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README/package, submodule/deployment metadata and selected proxy/Electron/local-provider source reviewed; no install, accounts, models, uploads or execution audit. Dates: 2026-10-17.
 - **Registered records:** media.open-generative-ai
 - **Recorded intake revision:** 0668c210ebfe893f16c5149405a08d00b9ae90df
+- **Currentness (November 9):** `changed`; observed HEAD `dab60665ff5f0c3d7edf4dd6926fe20e680a1af3`. Source review required before using this revision.
 
 <a id="openwhispr-openwhispr"></a>
 ### OpenWhispr
@@ -993,6 +1071,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README, package/license/security metadata and selected Windows loopback-manager source reviewed; no install, models, recording, accounts or full audit. Dates: 2026-10-17.
 - **Registered records:** voice.openwhispr
 - **Recorded intake revision:** 3577e5c9b2b06f7667a4b9d489935addba488341
+- **Currentness (November 9):** `changed`; observed HEAD `b2e624b717b22b7d7584ad5956d0070ce5eb7b39`. Source review required before using this revision.
 
 <a id="librechat-ai-librechat"></a>
 ### LibreChat
@@ -1006,6 +1085,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README, package metadata, Compose definition and security policy screened; no execution or full audit. Dates: 2026-10-13.
 - **Record IDs:** `interface.librechat`.
 - **Historical intake revision:** `e1dfc10449ff713faffacd60273fddcfe2c0a698`.
+- **Currentness (November 9):** `changed`; observed HEAD `f4154b649efa37e1345ccc517a4d8d1ed2178c82`. Source review required before using this revision.
 
 <a id="dmtrkovalenko-fframes"></a>
 ### fframes
@@ -1019,6 +1099,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README and public repository metadata screened; no execution, benchmark replication or full audit. Dates: 2026-10-09.
 - **Record IDs:** `media.fframes`.
 - **Historical intake revision:** `e2b552892c0373a5c8dc79de9280a3289670f27b`.
+- **Currentness (November 9):** `changed`; observed HEAD `e8f01b97f61eee3a06c144445682f506f1530ca1`. Source review required before using this revision.
 
 <a id="agentsystemlabs-agent-office"></a>
 ### Agent Office
@@ -1032,6 +1113,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Dated public-source intake; review scope is documentation and selected source where recorded, not full audit. Dates: 2026-09-29.
 - **Record IDs:** `ui.agent-office`.
 - **Historical intake revision:** `44aecc1ecf175939bce2049123626aa2bcddd7e2`.
+- **Currentness (November 9):** `changed`; observed HEAD `852e2ab28c4f3f31bffdf4b20353bd119c9d3270`. Source review required before using this revision.
 
 <a id="comfy-org-comfyui"></a>
 ### ComfyUI
@@ -1045,6 +1127,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README, Python/requirements/version/security metadata and selected server/CLI/node-loader excerpts reviewed; no installation, models/nodes/downloads, API or workflow execution, accounts/credentials or full audit. Dates: 2026-09-04, 2026-10-20.
 - **Registered records:** `image.comfyui` (existing record; October 20 qualification refresh)
 - **Recorded intake revision:** `b1a247c9cf9dbfda4b2c0a0c1d50950667eeaa0c`
+- **Currentness (November 9):** `changed`; observed HEAD `fca60fe70e5b84c5c6b058263653d15cb3401e44`. Source review required before using this revision.
 
 <a id="copilotkit-copilotkit"></a>
 ### CopilotKit
@@ -1058,6 +1141,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Dated public-source intake; review scope is documentation and selected source where recorded, not full audit. Dates: 2026-09-29.
 - **Record IDs:** `ui.copilotkit`.
 - **Historical intake revision:** `b3d1aad2e3b4a5f0860ec7f3dd9c12ab757d0a13`.
+- **Currentness (November 9):** `changed`; observed HEAD `c7815d9ac96f48fb3a64ad8c18e176a870c81763`. Source review required before using this revision.
 
 <a id="louis-cfm-coucou"></a>
 ### Coucou
@@ -1071,6 +1155,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Dated public-source intake; review scope is documentation and selected source where recorded, not full audit. Dates: 2026-10-01.
 - **Record IDs:** `ui.coucou`.
 - **Historical intake revision:** `835421c7fff260f0f0be48927591b96bfad81cad`.
+- **Currentness (November 9):** `changed`; observed HEAD `b1bc09de7f7c24a80bd8eca5729b8bee60f66402`. Source review required before using this revision.
 
 <a id="purpledoubled-locally-uncensored"></a>
 ### Locally Uncensored
@@ -1084,6 +1169,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Dated public-source intake; review scope is documentation and selected source where recorded, not full audit. Dates: 2026-09-17.
 - **Record IDs:** `desktop.locally-uncensored.purpledoubled`.
 - **Historical intake revision:** `bc8dcc08520557ad63270a79b5362462150707d3`.
+- **Currentness (November 9):** `changed`; observed HEAD `d4935af470a8a4b231d0ffef3b8c8708fdd4a10c`. Source review required before using this revision.
 
 <a id="wide-trace-open-higgsfield"></a>
 ### Open Higgsfield
@@ -1097,6 +1183,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Dated public-source intake; review scope is documentation and selected source where recorded, not full audit. Dates: 2026-09-17.
 - **Record IDs:** `media.open-higgsfield.wide-trace`.
 - **Historical intake revision:** `b16a0efe4d7e2707b56f8ccb02387fd2a9d2eddf`.
+- **Currentness (November 9):** `unchanged`; observed HEAD `b16a0efe4d7e2707b56f8ccb02387fd2a9d2eddf`. Matches a recorded revision; no runtime qualification implied.
 
 <a id="ryensx-opencodex"></a>
 ### OpenCodex browser adjacency
@@ -1112,6 +1199,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 
 
 ## Memory and research
+- **Currentness (November 9):** `unreviewed_pin`; observed HEAD `f6fd79ccffe2b631db99556e862b008cba04f5ab`. Source review required before using this revision.
 
 <a id="itzcrazykns-vane"></a>
 ### Vane (formerly Perplexica)
@@ -1125,6 +1213,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README/license/package/Compose/config/search/upload source and verified Perplexica redirect with independent read-only review; no install/build, searches/scraping, uploads, credentials, model/provider calls or benchmark. Dates: 2026-11-08.
 - **Registered records:** `research.vane`.
 - **Recorded revision:** `348feca3e378fb4157b217724ed508dc707f853f`.
+- **Currentness (November 9):** `unchanged`; observed HEAD `348feca3e378fb4157b217724ed508dc707f853f`. Matches a recorded revision; no runtime qualification implied.
 
 <a id="nvidia-auto-ontology"></a>
 ### NVIDIA Auto-Ontology
@@ -1138,6 +1227,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README/license/package/deployment/model configuration and representative catalog/query/auth source with independent read-only review; no install, containers, source/database import, credentials, model/API/query execution or benchmark. Dates: 2026-11-08.
 - **Registered records:** `knowledge.auto-ontology`.
 - **Recorded revision:** `c447003f72a822301e927196a4ecb5b597c308d5`.
+- **Currentness (November 9):** `unchanged`; observed HEAD `c447003f72a822301e927196a4ecb5b597c308d5`. Matches a recorded revision; no runtime qualification implied.
 
 <a id="mempalace-mempalace"></a>
 ### MemPalace
@@ -1151,6 +1241,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README/license/package, benchmark disclosure and representative backend/embedding/provider/MCP/deletion source with independent review; no install, model download, personal-data scan/import, hooks/services/schedules, hub connection, API/model calls or benchmark. Dates: 2026-11-03.
 - **Registered records:** `memory.mempalace`.
 - **Recorded revision:** `4f7745afbd9d0197c6475b4c7ac846d4932eaeda`.
+- **Currentness (November 9):** `changed`; observed HEAD `927d467d72764ced1f2be900b95cbc7dae4b4581`. Source review required before using this revision.
 
 <a id="egonex-ai-understand-anything"></a>
 ### Understand Anything
@@ -1164,6 +1255,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README/package/license and representative source screening with independent review; no installation, project scanning, graph generation, server/client activation, model calls or benchmark. Dates: 2026-10-27.
 - **Registered records:** `knowledge.understand-anything`.
 - **Recorded revision:** `4e6d3299017a7432da15957874992837a315c5b4`.
+- **Currentness (November 9):** `changed`; observed HEAD `a6ea4024767df85ce4f99140d4f12ecfc5a81eb6`. Source review required before using this revision.
 
 <a id="rohitg00-agentmemory"></a>
 ### AgentMemory
@@ -1177,6 +1269,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README/license/package metadata and representative source screening with independent review; no installation, memory capture/import, model/provider/MCP calls or benchmark. Dates: 2026-10-27.
 - **Registered records:** `memory.agentmemory`.
 - **Recorded revision:** `c5b8ebfb32eb6a08fe301d3bb75840f3597b66c8`.
+- **Currentness (November 9):** `changed`; observed HEAD `be8f01e697c6816392beb9c07136e5315bf5a7b4`. Source review required before using this revision.
 
 <a id="memvid-memvid"></a>
 ### Memvid
@@ -1190,6 +1283,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README/license/package metadata and representative source screening with independent review; no installation, memory capture/import, model/provider/MCP calls or benchmark. Dates: 2026-10-27.
 - **Registered records:** `memory.memvid`.
 - **Recorded revision:** `e6bd9f7b9c38cd8d5370fa0fc936ac1dcd751813`.
+- **Currentness (November 9):** `unchanged`; observed HEAD `e6bd9f7b9c38cd8d5370fa0fc936ac1dcd751813`. Matches a recorded revision; no runtime qualification implied.
 
 <a id="startrail-org-leann"></a>
 ### LEANN
@@ -1203,6 +1297,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README, Python/MCP/security metadata and independent representative source screening; no install, data/index/model downloads, indexing, MCP/embedding/LLM calls or benchmark. Dates: 2026-10-26.
 - **Registered records:** `retrieval.leann`.
 - **Recorded revision:** `a63f484a0b00627fbc641b500ee377d35344eb72`.
+- **Currentness (November 9):** `changed`; observed HEAD `07796bd7e40f2d5f3a4be9e45adf1f62a68481fd`. Source review required before using this revision.
 
 <a id="xerj-org-xerj"></a>
 ### XERJ
@@ -1216,6 +1311,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README, Cargo/security/retrieval/corpus documentation and independent representative source screening; no install, indexing, model/corpus download, MCP/server/provider call or benchmark. Dates: 2026-10-23.
 - **Registered records:** `retrieval.xerj`.
 - **Recorded revision:** `5ad85724e14602259f264de3e33fd0a9b5d106f0`.
+- **Currentness (November 9):** `changed`; observed HEAD `50e4ffded5518b1822cfac5450fa34d3829ab8ab`. Source review required before using this revision.
 
 <a id="lfnovo-open-notebook"></a>
 ### Open Notebook
@@ -1229,6 +1325,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README, Python/Compose/env/security metadata and selected auth/source/search/credential excerpts reviewed; no install/services, data ingestion, credentials, provider/media/API/model calls or full audit. Dates: 2026-10-21.
 - **Registered records:** `research.open-notebook`
 - **Recorded revision:** `a0f6f3081ae06328f0a451b3a3ef2959ca25721d`
+- **Currentness (November 9):** `changed`; observed HEAD `a6b572eb9849785dfb7c747190a01b0bb99fedf2`. Source review required before using this revision.
 
 <a id="aiming-lab-autoresearchclaw"></a>
 ### AutoResearchClaw
@@ -1242,6 +1339,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README, package/config and selected local/container sandbox and pipeline executor excerpts reviewed; no install/setup, agents, credentials, generated-code/research/model execution or full audit. Dates: 2026-10-20.
 - **Registered records:** `workflow.autoresearchclaw`
 - **Recorded intake revision:** `be4ba4755bf1b52220f25e13b2293b5956590070`
+- **Currentness (November 9):** `unchanged`; observed HEAD `be4ba4755bf1b52220f25e13b2293b5956590070`. Matches a recorded revision; no runtime qualification implied.
 
 <a id="kepano-defuddle"></a>
 ### Defuddle
@@ -1255,6 +1353,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README and package.json reviewed as source material; no installation, activation, credentials/accounts, target/media/agent/model/service execution or full audit. Dates: 2026-10-18.
 - **Registered records:** research.defuddle
 - **Recorded intake revision:** 556d74e8c8fd68c49912d4b11a4ae9ec04d7b2b5
+- **Currentness (November 9):** `changed`; observed HEAD `3e8bde9f5f855bc968e95837a750c5968a9fe639`. Source review required before using this revision.
 
 <a id="deusdata-codebase-memory-mcp"></a>
 ### Codebase Memory MCP
@@ -1268,6 +1367,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README reviewed as source material; no installation, activation, credentials/accounts, target/media/agent/model/service execution or full audit. Dates: 2026-10-18.
 - **Registered records:** memory.codebase-memory-mcp
 - **Recorded intake revision:** 1346ac4ea2835c15b1aa257e970abbd520e92c74
+- **Currentness (November 9):** `changed`; observed HEAD `612eee2518ef84cc573e491fdee5fa5c90264cb5`. Source review required before using this revision.
 
 <a id="zeropointrepo-youtube-skills"></a>
 ### YouTube Skills
@@ -1281,6 +1381,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README including account/key setup reviewed as source material; no installation, activation, credentials/accounts, target/media/agent/model/service execution or full audit. Dates: 2026-10-18.
 - **Registered records:** research.youtube-skills
 - **Recorded intake revision:** 4f7994b94e7d5e250c3b51102d609992e04d5d0d
+- **Currentness (November 9):** `unchanged`; observed HEAD `4f7994b94e7d5e250c3b51102d609992e04d5d0d`. Matches a recorded revision; no runtime qualification implied.
 
 <a id="assafelovic-gpt-researcher"></a>
 ### GPT Researcher
@@ -1294,6 +1395,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README, LICENSE/package/Compose/default config, context/deep-research/eval docs and selected context-selection source reviewed; no install, credentials/accounts, research/model/search/Jev calls or full audit. Dates: 2026-10-17.
 - **Registered records:** research.gpt-researcher
 - **Recorded intake revision:** 3582a6841fe7dc801e2a34e34ee408641aea9bce
+- **Currentness (November 9):** `changed`; observed HEAD `bca58e1fd8e25658dae520d085b52ddc8bcf2b40`. Source review required before using this revision.
 
 <a id="pocketbase-pocketbase"></a>
 ### PocketBase
@@ -1307,6 +1409,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README, go.mod, release targets and security policy plus dated official access/file/production/FAQ docs reviewed; no install, server, migration or full audit. Dates: 2026-10-17.
 - **Registered records:** storage.pocketbase
 - **Recorded intake revision:** 6f370ea741f33adf889eef02e3c1b884a47aa522
+- **Currentness (November 9):** `changed`; observed HEAD `7f2773ec234b62d0b80ca47c508397cb3d0da3ea`. Source review required before using this revision.
 
 <a id="opendatalab-mineru"></a>
 ### MinerU
@@ -1320,6 +1423,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README, custom license, package/security metadata, quick-start and model-asset docs reviewed; no install, model download, execution or full audit. Dates: 2026-10-16.
 - **Registered records:** documents.mineru
 - **Recorded intake revision:** b7f3dd0c5f6e6d66a298239ffd02b328b873918e
+- **Currentness (November 9):** `changed`; observed HEAD `8cd08422055858f55a64dff79f942318b51b96cc`. Source review required before using this revision.
 
 <a id="letta-ai-letta"></a>
 ### Letta historical source reference
@@ -1333,6 +1437,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README source-migration notice screened; no execution/full audit. Dates: 2026-10-16.
 - **Record IDs:** `agent.letta`.
 - **Historical intake revision:** `5bcdd177d70fa2b31a754cfcd801e77b2e1ab16a`.
+- **Currentness (November 9):** `changed`; observed HEAD `8816d3a8516893bfdc0fa14bfb1235226012e295`. Source review required before using this revision.
 
 <a id="vectifyai-pageindex"></a>
 ### PageIndex
@@ -1346,6 +1451,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README and public repository metadata screened; no execution, benchmark replication or full audit. Dates: 2026-10-09.
 - **Record IDs:** `retrieval.pageindex`.
 - **Historical intake revision:** `1a060dfc5c512ece03aeaa9cb80d76dbb5358bdf`.
+- **Currentness (November 9):** `changed`; observed HEAD `2ac8694bf8fe89a3840dda9bdb88db5119b77fc4`. Source review required before using this revision.
 
 <a id="vectorize-io-hindsight"></a>
 ### Hindsight
@@ -1359,6 +1465,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** README, license header and repository tree screened; no independent replication or execution. Dates: 2026-10-09.
 - **Record IDs:** `memory.hindsight`.
 - **Historical intake revision:** `44d5340148fd47efb34e184d61f87ab5e2d8d1e2`.
+- **Currentness (November 9):** `changed`; observed HEAD `0bd55015393d224deec1073d63b24bcc0faad164`. Source review required before using this revision.
 
 <a id="jordan-gibbs-hyperresearch"></a>
 ### HyperResearch
@@ -1372,6 +1479,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Dated public-source intake; review scope is documentation and selected source where recorded, not full audit. Dates: 2026-09-17.
 - **Record IDs:** `research.hyperresearch.jordan-gibbs`.
 - **Historical intake revision:** `75b1ecfb2891184fad2cc1a2ddf9abe476f5b54c`.
+- **Currentness (November 9):** `changed`; observed HEAD `d4725a2bc384bc9c49f86d2032307bbfd6f3327e`. Source review required before using this revision.
 
 <a id="mem0ai-mem0"></a>
 ### Mem0
@@ -1385,6 +1493,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Dated public-source intake; review scope is documentation and selected source where recorded, not full audit. Dates: 2026-09-09.
 - **Record IDs:** `memory.mem0`.
 - **Historical intake revision:** `02f7a9b2c4fe38dedb96631e48c85c74ad58b605`.
+- **Currentness (November 9):** `changed`; observed HEAD `f1791daa86d469249c9b002f62644d58a1eb96a0`. Source review required before using this revision.
 
 <a id="jexp-neo4jev"></a>
 ### Neo4jev
@@ -1396,6 +1505,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Current status:** Deferred reference; no new graph admission or evaluation record.
 - **Next gate:** Prove graph value and define the exact navigation comparison first.
 - **Evidence:** Dated research reference; no new registered evaluation or execution authority. Dates: 2026-09-20.
+- **Currentness (November 9):** `unreviewed_pin`; observed HEAD `d157bbe496eb91813475156942bef1c6badfb342`. Source review required before using this revision.
 
 <a id="semantica-agi-semantica"></a>
 ### Semantica
@@ -1411,6 +1521,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 
 
 ## Models and inference
+- **Currentness (November 9):** `unreviewed_pin`; observed HEAD `39cf7216d2326b012436efebf8a227e82f37dd3b`. Source review required before using this revision.
 
 <a id="zagitta-gpu-unlock"></a>
 ### GPU Unlock
@@ -1424,6 +1535,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README/license/package and representative source with independent read-only review; no installation, candidate execution, credentials/provider calls, benchmark, downloads of models/firmware or host changes. Dates: 2026-11-03.
 - **Registered records:** `host.gpu-unlock-reference`.
 - **Recorded revision:** `7eb51bccae0a0b7e599e084d971170e9a1e82d0c`.
+- **Currentness (November 9):** `unchanged`; observed HEAD `7eb51bccae0a0b7e599e084d971170e9a1e82d0c`. Matches a recorded revision; no runtime qualification implied.
 
 <a id="routerhubsi-uncensored-ai-api"></a>
 ### RouterHub API reference
@@ -1437,6 +1549,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned documentation/tree/license and independent public-service screen; no account/key creation, authenticated dashboard, API/provider calls, payment, install or benchmark. Dates: 2026-11-03.
 - **Registered records:** `provider.routerhub-reference`.
 - **Recorded revision:** `0c361604156fa44c8f49c36d1847f6b9bdd0a53f`.
+- **Currentness (November 9):** `unchanged`; observed HEAD `0c361604156fa44c8f49c36d1847f6b9bdd0a53f`. Matches a recorded revision; no runtime qualification implied.
 
 <a id="joaniberian9588-janas"></a>
 ### Janas (identity unresolved)
@@ -1450,6 +1563,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README, recursive tree, Python metadata/license/context and independent passive provenance screen; no binary/archive download, extraction, installation, model load or execution. Dates: 2026-11-01.
 - **Registered records:** `research.janas-provenance`.
 - **Recorded revision:** `c993d3227cd8f9fc1c870bbce9b7434cfc157434`.
+- **Currentness (November 9):** `unchanged`; observed HEAD `c993d3227cd8f9fc1c870bbce9b7434cfc157434`. Matches a recorded revision; no runtime qualification implied.
 
 <a id="mesh-llm-mesh-llm"></a>
 ### Mesh LLM
@@ -1463,6 +1577,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README/security/license/build metadata and representative source screening with independent review; no install, setup, model download, inference, peer discovery/network join or benchmark. Dates: 2026-10-28.
 - **Registered records:** `inference.mesh-llm`.
 - **Recorded revision:** `877de9fa94f8868b33091f4ae81b6cc25368ee55`.
+- **Currentness (November 9):** `changed`; observed HEAD `622a92b2a787b97f2d3f45c52046acea5f647511`. Source review required before using this revision.
 
 <a id="edge0-ai-edge0"></a>
 ### Edge0
@@ -1476,6 +1591,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README/platform/package/license and representative source screening with independent review; no install, build, model download/conversion, inference/server activation or benchmark. Dates: 2026-10-28.
 - **Registered records:** `inference.edge0`.
 - **Recorded revision:** `e9cc00cfb44b0fd2abf7195dcbe707b75ea6c3e5`.
+- **Currentness (November 9):** `changed`; observed HEAD `8a52b68b7777b2f3da849c0603bfddc564c0fb77`. Source review required before using this revision.
 
 <a id="alishahryar1-free-claude-code"></a>
 ### Free Claude Code
@@ -1489,6 +1605,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README/pyproject and selected Claude launcher source reviewed; no install, account/credential access, proxy/session, provider calls or full audit. Dates: 2026-10-17.
 - **Registered records:** routing.free-claude-code
 - **Recorded intake revision:** ec10cafdb0aaea86b135c5724ffd00394d385739
+- **Currentness (November 9):** `changed`; observed HEAD `6f5283a3946e9abcf96487e8cd732db012e41d2f`. Source review required before using this revision.
 
 <a id="google-ai-edge-litert-lm"></a>
 ### LiteRT-LM
@@ -1502,6 +1619,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README/version/build docs and dated official overview reviewed; no SDK/build/model downloads, device changes, inference or full audit. Dates: 2026-10-17.
 - **Registered records:** inference.litert-lm
 - **Recorded intake revision:** 48b82892f1340013e6b0b42547c5b91ec712798d
+- **Currentness (November 9):** `changed`; observed HEAD `02d7e8d80cb75cbb03d8cba4c63f51e2eb318ec5`. Source review required before using this revision.
 
 <a id="lyogavin-airllm"></a>
 ### AirLLM
@@ -1515,6 +1633,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README, package metadata and selected AutoModel/base source excerpts screened; no execution or full audit. Dates: 2026-10-13.
 - **Record IDs:** `inference.airllm`.
 - **Historical intake revision:** `cb807515f640f9489f267adc0c66afb249e90a17`.
+- **Currentness (November 9):** `changed`; observed HEAD `3aef5f3c59738c51a61f25065a7f5a5722030eac`. Source review required before using this revision.
 
 <a id="yetone-magpie"></a>
 ### Magpie
@@ -1528,6 +1647,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README and public repository metadata screened; no execution, benchmark replication or full audit. Dates: 2026-10-09.
 - **Record IDs:** `proxy.magpie`.
 - **Historical intake revision:** `62d7cd7be305c6e0cc58ba8ad2604f2bb555d749`.
+- **Currentness (November 9):** `changed`; observed HEAD `2b22425b45188237e808cd7c8f3b65613c79b8cd`. Source review required before using this revision.
 
 <a id="decolua-9router"></a>
 ### 9Router
@@ -1541,6 +1661,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Dated public-source intake; review scope is documentation and selected source where recorded, not full audit. Dates: 2026-09-15.
 - **Record IDs:** `proxy.9router.decolua`.
 - **Historical intake revision:** `17c4cc76877bd1755030a8414f8d0083f48dcccf`.
+- **Currentness (November 9):** `changed`; observed HEAD `1339107e624d1ab150c6a0c2c2ee22caa7e9db2f`. Source review required before using this revision.
 
 <a id="tashfeenahmed-freellmapi"></a>
 ### FreeLLMAPI
@@ -1554,6 +1675,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Dated public-source intake; review scope is documentation and selected source where recorded, not full audit. Dates: 2026-09-22.
 - **Record IDs:** `proxy.freellmapi`.
 - **Historical intake revision:** `37f07fdc3a2cdf14b2cc804e63ce82ff9a178854`.
+- **Currentness (November 9):** `changed`; observed HEAD `7f3fece4f9daec0d32877d0a4b8038045dc9daf3`. Source review required before using this revision.
 
 <a id="flashml-org-freetoken"></a>
 ### FreeToken
@@ -1567,6 +1689,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README, installation/model/CLI/package/security metadata and independent representative source screening; no install, weight download, engine/API/model call or benchmark. Dates: 2026-09-04, 2026-10-22.
 - **Registered records:** `runtime.freetoken` (existing record refreshed; no count increase).
 - **Recorded revision:** `546c5fe2e4468e2f3f8a574c64021a47016c35f7`
+- **Currentness (November 9):** `changed`; observed HEAD `5a73685b1a836f523c692c77b70152c01698ed8e`. Source review required before using this revision.
 
 <a id="moonshotai-kimi-k2"></a>
 ### Kimi K2
@@ -1579,6 +1702,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Next gate:** Exact artifact, host eligibility, provider terms and repeated model corpus.
 - **Evidence:** Dated discovery catalog; executable qualification unrun. Dates: 2026-09-04.
 - **Record IDs:** `model.kimi-k2`.
+- **Currentness (November 9):** `unreviewed_pin`; observed HEAD `1b4022bbb7187cf4011a8bdf0b4cd10e2daa26c4`. Source review required before using this revision.
 
 <a id="moonshotai-kimi-k3"></a>
 ### Kimi K3 local
@@ -1591,6 +1715,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Next gate:** New exact hardware/backend evidence before reconsidering local execution.
 - **Evidence:** Dated discovery catalog; executable qualification unrun. Dates: 2026-09-04.
 - **Record IDs:** `model.kimi-k3-local`.
+- **Currentness (November 9):** `unreviewed_pin`; observed HEAD `3cb39dfd32e51c3328e2e4b4af21341247d06c43`. Source review required before using this revision.
 
 <a id="moonshotai-kimi-vl"></a>
 ### Kimi VL
@@ -1603,6 +1728,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Next gate:** Exact vision inputs, artifact/backend, privacy and resource intake.
 - **Evidence:** Dated discovery catalog; executable qualification unrun. Dates: 2026-09-04.
 - **Record IDs:** `model.kimi-vl-a3b`.
+- **Currentness (November 9):** `unreviewed_pin`; observed HEAD `41d5ef072bc52a04524f94ab736ff9c29f125fda`. Source review required before using this revision.
 
 <a id="moonshotai-kimi-dev"></a>
 ### Kimi-Dev
@@ -1615,6 +1741,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Next gate:** Pin weights/backend or hosted route and preregister independent task scoring.
 - **Evidence:** Dated discovery catalog; executable qualification unrun. Dates: 2026-09-04.
 - **Record IDs:** `model.kimi-dev-72b`.
+- **Currentness (November 9):** `unreviewed_pin`; observed HEAD `5f60757f5ef54f66455c209aca169c8f850b96bd`. Source review required before using this revision.
 
 <a id="ggml-org-llama-cpp"></a>
 ### llama.cpp
@@ -1627,6 +1754,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Next gate:** Exact binary, model, backend and resource qualification.
 - **Evidence:** Dated discovery catalog; executable qualification unrun. Dates: 2026-09-04.
 - **Record IDs:** `runtime.llama-cpp`.
+- **Currentness (November 9):** `unreviewed_pin`; observed HEAD `a0ad695cb212db3850f163121ddc687513448d42`. Source review required before using this revision.
 
 <a id="ollama-ollama"></a>
 ### Ollama
@@ -1639,6 +1767,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Next gate:** Exact engine/model/backend, egress, Stop and resource checks.
 - **Evidence:** Dated discovery catalog; executable qualification unrun. Dates: 2026-09-04.
 - **Record IDs:** `runtime.ollama`.
+- **Currentness (November 9):** `unreviewed_pin`; observed HEAD `d63b702609c4300a2ca07be2bdb0adb9834725e5`. Source review required before using this revision.
 
 <a id="lidge-jun-opencodex"></a>
 ### OpenCodex provider proxy
@@ -1651,6 +1780,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Next gate:** Prove a protocol gap and preserve Core route, credential and budget authority.
 - **Evidence:** Dated discovery catalog; executable qualification unrun. Dates: 2026-09-04.
 - **Record IDs:** `proxy.opencodex.lidge-jun`.
+- **Currentness (November 9):** `unreviewed_pin`; observed HEAD `a1d7d05eac28177588c6227ec58033e0358170b1`. Source review required before using this revision.
 
 <a id="qwenlm-qwen3"></a>
 ### Qwen3 family
@@ -1663,6 +1793,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Next gate:** Admit each artifact separately; do not transfer results across sizes.
 - **Evidence:** Dated discovery catalog; executable qualification unrun. Dates: 2026-09-04.
 - **Record IDs:** `model.qwen3-14b`, `model.qwen3-30b-a3b`, `model.qwen3-32b`.
+- **Currentness (November 9):** `unreviewed_pin`; observed HEAD `7a2f61ffc7a20d47efcd2bf97f6f2bf52729042e`. Source review required before using this revision.
 
 <a id="qwenlm-qwen3-next"></a>
 ### Qwen3-Next reference
@@ -1676,6 +1807,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Dated discovery catalog; executable qualification unrun. Dates: 2026-09-04.
 - **Record IDs:** `model.qwen3-next-80b-a3b`.
 - **Identity note:** recorded as `QwenLM/Qwen3-Next`; current destination verified October 7. The redirect does not transfer historical results to new code.
+- **Currentness (November 9):** `unreviewed_pin`; observed HEAD `2ea10dc725823bf7c3e21ce8557cbe15245132ae`. Source review required before using this revision.
 
 <a id="qwenlm-qwen3-8-flash-next"></a>
 ### Qwen3.8 Flash Next
@@ -1688,6 +1820,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Next gate:** Pin the exact artifact or API route, capability and evaluation corpus.
 - **Evidence:** Dated discovery catalog; executable qualification unrun. Dates: 2026-09-04.
 - **Record IDs:** `model.qwen3.8-flash-next`.
+- **Currentness (November 9):** `unreviewed_pin`; observed HEAD `69885871a64393807d988b27b1b5e380e8f28526`. Source review required before using this revision.
 
 <a id="huggingface-transformers"></a>
 ### Transformers
@@ -1700,6 +1833,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Next gate:** Exact dependency/model intake and separate memory/lifecycle evidence.
 - **Evidence:** Dated discovery catalog; executable qualification unrun. Dates: 2026-09-04.
 - **Record IDs:** `runtime.transformers`.
+- **Currentness (November 9):** `unreviewed_pin`; observed HEAD `f262a8cdaae8d78ab5bf57c6fa41a0db6ca01a34`. Source review required before using this revision.
 
 <a id="vllm-project-vllm"></a>
 ### vLLM
@@ -1715,6 +1849,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 
 
 ## Safety and recovery
+- **Currentness (November 9):** `unreviewed_pin`; observed HEAD `a3c14efbc77c018e8bf579935095a87721349e05`. Source review required before using this revision.
 
 <a id="perplexityai-space"></a>
 ### SPACE
@@ -1728,6 +1863,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README, Cargo/toolchain/Python metadata, SECURITY/dependency and architecture/install/egress/versioning docs reviewed; no installation, VM/container/cluster, credentials, code/model/API execution or full audit. Dates: 2026-10-18.
 - **Registered records:** isolation.space
 - **Recorded intake revision:** 57c7c0c47a73373a974c5b542d180599795465da
+- **Currentness (November 9):** `changed`; observed HEAD `b120c4cf4298656a4a7bd97d98c95516d5935beb`. Source review required before using this revision.
 
 <a id="resemble-ai-detect-skill"></a>
 ### Resemble Detect Skill
@@ -1741,6 +1877,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README reviewed as source material; no installation, activation, credentials/accounts, target/media/agent/model/service execution or full audit. Dates: 2026-10-18.
 - **Registered records:** media.resemble-detect
 - **Recorded intake revision:** 4d31eac1ff9aed33b9a0a192e64f7db57821dc9f
+- **Currentness (November 9):** `unchanged`; observed HEAD `4d31eac1ff9aed33b9a0a192e64f7db57821dc9f`. Matches a recorded revision; no runtime qualification implied.
 
 <a id="mukul975-anthropic-cybersecurity-skills"></a>
 ### Anthropic Cybersecurity Skills (community)
@@ -1754,6 +1891,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README reviewed as source material; no installation, activation, credentials/accounts, target/media/agent/model/service execution or full audit. Dates: 2026-10-18.
 - **Registered records:** skills.cybersecurity.mukul975
 - **Recorded intake revision:** 54a798831d2266a3ca61ce68a7acb80b81160d57
+- **Currentness (November 9):** `unchanged`; observed HEAD `54a798831d2266a3ca61ce68a7acb80b81160d57`. Matches a recorded revision; no runtime qualification implied.
 
 <a id="nvidia-skillspector"></a>
 ### SkillSpector
@@ -1767,6 +1905,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README, package metadata, resource-bounds and suppression documentation screened; no execution or full audit. Dates: 2026-10-15.
 - **Record IDs:** `security.skillspector`.
 - **Historical intake revision:** `4c52fbb83bbca0dd13f2685453c9b661d8c95bf8`.
+- **Currentness (November 9):** `changed`; observed HEAD `e48d771a26f7398b36256ceb8d8f94adce3d5c44`. Source review required before using this revision.
 
 <a id="vxcontrol-pentagi"></a>
 ### PentAGI
@@ -1780,6 +1919,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README, license, EULA introduction and selected Compose fields screened; no execution or full audit. Dates: 2026-10-13.
 - **Record IDs:** `security.pentagi`.
 - **Historical intake revision:** `843dfeb4bfc809c09d1bc5022e567c602d8fc9dd`.
+- **Currentness (November 9):** `changed`; observed HEAD `cffed9485aa1cca70762cd08a57ac62a80406258`. Source review required before using this revision.
 
 <a id="ifixai-ai-ifixai"></a>
 ### iFixAi
@@ -1793,6 +1933,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README and public repository metadata screened; no execution, benchmark replication or full audit. Dates: 2026-10-09.
 - **Record IDs:** `evaluation.ifixai`.
 - **Historical intake revision:** `bef9c5eeb96fd255d83ee00a2930c4d19a329f6c`.
+- **Currentness (November 9):** `changed`; observed HEAD `be6b3ec4731f8ecf4a6d71286f1c7acf4561e406`. Source review required before using this revision.
 
 <a id="purpleailab-decepticon"></a>
 ### Decepticon
@@ -1806,6 +1947,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Dated discovery catalog; executable qualification unrun. Dates: 2026-09-04.
 - **Record IDs:** `benchmark.xbow-validation`, `security.decepticon`.
 - **Identity note:** recorded as `PurpleAILAB/Decepticon`; current destination verified October 7. The redirect does not transfer historical results to new code.
+- **Currentness (November 9):** `unreviewed_pin`; observed HEAD `df879550544d36b6b1e69062f05adae28537adf2`. Source review required before using this revision.
 
 <a id="restic-restic"></a>
 ### restic
@@ -1818,6 +1960,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Next gate:** Application-consistent synthetic snapshots and independent restore/removal evidence.
 - **Evidence:** Dated discovery catalog; executable qualification unrun. Dates: 2026-09-04.
 - **Record IDs:** `backup.restic`.
+- **Currentness (November 9):** `unreviewed_pin`; observed HEAD `c734245fd3ae9bcac8ab3aaafb4482d4b5d0ae92`. Source review required before using this revision.
 
 <a id="purpleailab-xbow-validation-benchmarks"></a>
 ### XBOW validation benchmarks
@@ -1834,6 +1977,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 
 
 ## Skills and development
+- **Currentness (November 9):** `unreviewed_pin`; observed HEAD `d8e455185c4cd4760f44aeecd75e1860b9606abb`. Source review required before using this revision.
 
 <a id="nutlope-hallmark"></a>
 ### Hallmark
@@ -1847,6 +1991,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README/license/package and representative source with independent read-only review; no installation, candidate execution, credentials/provider calls, benchmark, downloads of models/firmware or host changes. Dates: 2026-11-03.
 - **Registered records:** `skill.hallmark`.
 - **Recorded revision:** `52328cb3129135499e4e178d4864ee90029dea2b`.
+- **Currentness (November 9):** `changed`; observed HEAD `407fa689f4a276f2fd389208d271d0fef08f5058`. Source review required before using this revision.
 
 <a id="microsoft-agent-lightning"></a>
 ### Agent Lightning
@@ -1860,6 +2005,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README/license/package, installation/gateway/controller docs, optimization skill and representative local-controller source with independent review; no skill installation, workers, GPU/cloud setup, telemetry upload, model/API calls or benchmark. Dates: 2026-11-03.
 - **Registered records:** `workflow.agent-lightning`.
 - **Recorded revision:** `cbc56e41e0eab643aa71d195e92e5bba652fa683`.
+- **Currentness (November 9):** `changed`; observed HEAD `bc3a9e80417d731744040df5d37117f9cc48005f`. Source review required before using this revision.
 
 <a id="xorcise-ai-xorcise"></a>
 ### XORCISE
@@ -1873,6 +2019,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README, license/NOTICE, Python/deployment/use-policy metadata and independent representative source screening; no install, infrastructure, target/agent/judge execution, telemetry collection or benchmark. Dates: 2026-10-23.
 - **Registered records:** `evaluation.xorcise`.
 - **Recorded revision:** `dc8fafdc5dac1968008b210f40518945ca1d48db`.
+- **Currentness (November 9):** `changed`; observed HEAD `779ed9f55b9ce6619d112061d93d337b4c6ba8eb`. Source review required before using this revision.
 
 <a id="e2b-dev-awesome-ai-sdks"></a>
 ### E2B Awesome AI SDKs
@@ -1886,6 +2033,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README and root-tree/license metadata reviewed; lexical link overlap only, no validation of every listed project or execution. Dates: 2026-10-20.
 - **Registered records:** None; discovery reference only.
 - **Recorded revision:** `7c55394afb3e27d755c89bb29f1c35a55888fcd4`
+- **Currentness (November 9):** `unchanged`; observed HEAD `7c55394afb3e27d755c89bb29f1c35a55888fcd4`. Matches a recorded revision; no runtime qualification implied.
 
 <a id="alvinunreal-lazyskills"></a>
 ### LazySkills
@@ -1899,6 +2047,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README, Go metadata and selected doctor/restore source reviewed; no install, activation, skill execution or full audit. Dates: 2026-10-18.
 - **Registered records:** `skills.lazyskills`
 - **Recorded intake revision:** `4ce98ca91650d3a0154cd93bbed50fd65771f7b4`
+- **Currentness (November 9):** `unchanged`; observed HEAD `4ce98ca91650d3a0154cd93bbed50fd65771f7b4`. Matches a recorded revision; no runtime qualification implied.
 
 <a id="composio-community-skills"></a>
 ### Composio Community Skills
@@ -1912,6 +2061,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README and package.json reviewed as source material; no installation, activation, credentials/accounts, target/media/agent/model/service execution or full audit. Dates: 2026-10-18.
 - **Registered records:** skills.composio-community
 - **Recorded intake revision:** c4b270016aa8c832bb6d5824175da1bb94690b89
+- **Currentness (November 9):** `unchanged`; observed HEAD `c4b270016aa8c832bb6d5824175da1bb94690b89`. Matches a recorded revision; no runtime qualification implied.
 
 <a id="amap-ml-skillclaw"></a>
 ### SkillClaw
@@ -1925,6 +2075,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README reviewed as source material; no installation, activation, credentials/accounts, target/media/agent/model/service execution or full audit. Dates: 2026-10-18.
 - **Registered records:** optimization.skillclaw
 - **Recorded intake revision:** 3938f7537645c961d94498a0a79fc0a977019595
+- **Currentness (November 9):** `changed`; observed HEAD `334ddf82856826b7a259470c6670fb0ef5ce2dc4`. Source review required before using this revision.
 
 <a id="jakubkrehel-make-interfaces-feel-better"></a>
 ### Make Interfaces Feel Better
@@ -1938,6 +2089,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README and selected SKILL.md reviewed as source material; no installation, activation, credentials/accounts, target/media/agent/model/service execution or full audit. Dates: 2026-10-18.
 - **Registered records:** skills.interfaces-feel-better
 - **Recorded intake revision:** 35545ea1512ad59fa463e6b1f95ca9c052981fe6
+- **Currentness (November 9):** `unchanged`; observed HEAD `35545ea1512ad59fa463e6b1f95ca9c052981fe6`. Matches a recorded revision; no runtime qualification implied.
 
 <a id="forward-future-loopy"></a>
 ### Loopy / Loop Library
@@ -1951,6 +2103,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README reviewed as source material; no installation, activation, credentials/accounts, target/media/agent/model/service execution or full audit. Dates: 2026-10-18.
 - **Registered records:** workflow.loopy
 - **Recorded intake revision:** 75966cbd572a4185064971c9fe5e9c52e8f8456d
+- **Currentness (November 9):** `unchanged`; observed HEAD `75966cbd572a4185064971c9fe5e9c52e8f8456d`. Matches a recorded revision; no runtime qualification implied.
 
 <a id="witt3rd-oh-my-hermes"></a>
 ### Oh My Hermes
@@ -1964,6 +2117,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README reviewed as source material; no installation, activation, credentials/accounts, target/media/agent/model/service execution or full audit. Dates: 2026-10-18.
 - **Registered records:** skills.oh-my-hermes
 - **Recorded intake revision:** 3b06e33ae67b202b342989b484f08143e65e250d
+- **Currentness (November 9):** `unchanged`; observed HEAD `3b06e33ae67b202b342989b484f08143e65e250d`. Matches a recorded revision; no runtime qualification implied.
 
 <a id="addyosmani-agent-skills"></a>
 ### Addy Osmani Agent Skills
@@ -1977,6 +2131,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README including per-skill reference portability warning reviewed as source material; no installation, activation, credentials/accounts, target/media/agent/model/service execution or full audit. Dates: 2026-10-18.
 - **Registered records:** skills.addyosmani
 - **Recorded intake revision:** aeac41d4d005999432bb7312f7ff06383a91d59d
+- **Currentness (November 9):** `changed`; observed HEAD `301b02b12bff98e4688e6984af6556802322bbde`. Source review required before using this revision.
 
 <a id="blader-humanizer"></a>
 ### Humanizer
@@ -1990,6 +2145,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README and selected SKILL.md reviewed as source material; no installation, activation, credentials/accounts, target/media/agent/model/service execution or full audit. Dates: 2026-10-18.
 - **Registered records:** skills.humanizer
 - **Recorded intake revision:** 8c307f367c91bd974002f10f2be2965d642c13df
+- **Currentness (November 9):** `changed`; observed HEAD `0ef9fe5bc3572734fd3ae6c448fe00a30cd5dcf0`. Source review required before using this revision.
 
 <a id="mattpocock-skills"></a>
 ### Matt Pocock Skills
@@ -2003,6 +2159,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README, LICENSE/package/plugin/SCOPE, file inventory and selected planning/handoff/review/setup skill text reviewed as data; no installation, activation, scripts, delegation, tracker/provider calls or full audit. Dates: 2026-10-18.
 - **Registered records:** skills.mattpocock
 - **Recorded intake revision:** 49dd158d1076134a641b33efb035946536778336
+- **Currentness (November 9):** `changed`; observed HEAD `4ae2317ddb22b046e26455e4f9c9b3aaaf62212d`. Source review required before using this revision.
 
 <a id="google-research-harness2"></a>
 ### Harness2
@@ -2016,6 +2173,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README, pyproject, setup/experiment/third-party docs and selected Codex/OpenCode substrate source reviewed; no installation, demo, benchmark, credentials or model/tool/cloud execution/full audit. Dates: 2026-10-18.
 - **Registered records:** optimization.harness2
 - **Recorded intake revision:** 1cfe254e8d25b15f37048c3730134686abe60335
+- **Currentness (November 9):** `changed`; observed HEAD `6868817518876de8fd170c6a8354daca273b6191`. Source review required before using this revision.
 
 <a id="reason-machines-reason-network"></a>
 ### Reason Network
@@ -2029,6 +2187,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README, Cargo/license/NOTICE, SECURITY/DESIGN, selected MCP source and installer text reviewed; no installation, peers/accounts, messages, daemon/network or agent execution/full audit. Dates: 2026-10-18.
 - **Registered records:** coordination.reason-network
 - **Recorded intake revision:** 226eda792c16764d5afa485f593828f14283ccb2
+- **Currentness (November 9):** `changed`; observed HEAD `5442c8b551a6897b596c7695e51b0329551aaa6c`. Source review required before using this revision.
 
 <a id="anthropics-skills"></a>
 ### Anthropic Agent Skills
@@ -2042,6 +2201,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README and selected skill-creator/docx license files reviewed; no installation, accounts/credentials, runtime/provider calls or full audit. Dates: 2026-10-17.
 - **Registered records:** skills.anthropic
 - **Recorded intake revision:** dbd4588f9e1033efb41dad4bef2f7947c8993d44
+- **Currentness (November 9):** `changed`; observed HEAD `2c5958ecac7cee2b583967a2c4981d0f4a75c579`. Source review required before using this revision.
 
 <a id="comet-ml-opik"></a>
 ### Opik
@@ -2055,6 +2215,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README, LICENSE, version, Compose docs/manifest and Python setup/config reviewed; no install, containers, accounts, telemetry, evaluation/provider calls or full audit. Dates: 2026-10-17.
 - **Registered records:** eval.opik
 - **Recorded intake revision:** 535e6110129e81552677c41e93859e4d8a677e72
+- **Currentness (November 9):** `changed`; observed HEAD `d7b92d3941ccff77c988f411db043db27adeebd8`. Source review required before using this revision.
 
 <a id="honojs-hono"></a>
 ### Hono
@@ -2068,6 +2229,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README/package and selected CSRF source plus dated official Node/CSRF/body-limit docs reviewed; no install, server, cloud deployment or full audit. Dates: 2026-10-17.
 - **Registered records:** transport.hono
 - **Recorded intake revision:** 08807ce12aa3aa27c8c5adf63e677bbab6bceda9
+- **Currentness (November 9):** `changed`; observed HEAD `61f7c59e50244ab4d2dd83c151928cf7ea448510`. Source review required before using this revision.
 
 <a id="trailhq-trail-code"></a>
 ### Trail-Code
@@ -2081,6 +2243,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README, package/security/telemetry metadata and selected postinstall source reviewed; no install, hooks, transcript imports, model calls or full audit. Dates: 2026-10-17.
 - **Registered records:** development.trail-code
 - **Recorded intake revision:** ead585b2707055f47f1e97d9b0d4209af5285805
+- **Currentness (November 9):** `changed`; observed HEAD `e02b754c1d4e1de82b841522e2d8cae811702870`. Source review required before using this revision.
 
 <a id="raysonmeng-agent-bridge"></a>
 ### AgentBridge
@@ -2094,6 +2257,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Same pinned README/package/security/room documentation rechecked with independent representative source screening; no upstream revision change, installation, sessions, messaging, quota probes or runtime qualification. Dates: 2026-10-16, 2026-10-23.
 - **Registered records:** `development.agent-bridge` (existing Q-59 refreshed; no count increase).
 - **Recorded revision:** `0244dfa2d6dfd36a67531426b01714eda1b215eb` (unchanged).
+- **Currentness (November 9):** `unchanged`; observed HEAD `0244dfa2d6dfd36a67531426b01714eda1b215eb`. Matches a recorded revision; no runtime qualification implied.
 
 <a id="oracle-opengrok"></a>
 ### OpenGrok
@@ -2107,6 +2271,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README, license/notice header and Docker guide plus dated setup wiki screened; no execution or full audit. Dates: 2026-10-13.
 - **Record IDs:** `search.opengrok`.
 - **Historical intake revision:** `3ca9d73ebb0ddb5560fbc7631322d29d9fdc2ec3`.
+- **Currentness (November 9):** `changed`; observed HEAD `5d55c5c8fdee11d0d6653649ada280da7736c2ed`. Source review required before using this revision.
 
 <a id="morluto-rea"></a>
 ### REA
@@ -2120,6 +2285,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README, package metadata, security policy and Windows Ghidra P0 documentation screened; no execution or full audit. October 26 planning addition only: major chatbot UI/app/workflow contender study; no new REA or chatbot analysis. Dates: 2026-10-12, 2026-10-26.
 - **Registered records:** `tool.rea`; `app.major-chatbot-interface-study` (Q-118 umbrella study adds one record, no repository).
 - **Recorded REA revision:** `0043d9b134c0a353e8bf85c0bde4492275f1f720` (historical tool source screen; target-app identities pending).
+- **Currentness (November 9):** `changed`; observed HEAD `f20f05536e3cebff3f31a67954664c40d8c4c3dd`. Source review required before using this revision.
 
 <a id="stablyai-orca"></a>
 ### Orca
@@ -2133,6 +2299,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README and public repository metadata screened; no execution, benchmark replication or full audit. Dates: 2026-10-09.
 - **Record IDs:** `workflow.orca`.
 - **Historical intake revision:** `280ef3c6f3e100c3d54503832342c4d51fe84385`.
+- **Currentness (November 9):** `changed`; observed HEAD `f10be535ca2a0641afe05821356d01144308884f`. Source review required before using this revision.
 
 <a id="markfulton-ai-employees"></a>
 ### AI Employees
@@ -2146,6 +2313,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** README and selected documentation screened; no installation, model calls or full audit. Dates: 2026-10-09.
 - **Record IDs:** `workflow.ai-employees`.
 - **Historical intake revision:** `37bfe17d9e0d06e0105eecabfac8335b1bbe07ac`.
+- **Currentness (November 9):** `changed`; observed HEAD `2cdd34e1f0d7bfa5b9dfadecf3d72b525fbb1577`. Source review required before using this revision.
 
 <a id="msitarzewski-agency-agents"></a>
 ### Agency Agents
@@ -2158,6 +2326,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Next gate:** Item-level classification, hostile-content checks and matched value comparisons.
 - **Evidence:** Dated discovery catalog; executable qualification unrun. Dates: 2026-09-04.
 - **Record IDs:** `catalog.agency-agents`.
+- **Currentness (November 9):** `unreviewed_pin`; observed HEAD `8ae6164602c95ca78828b148b9052460ee426885`. Source review required before using this revision.
 
 <a id="emilkowalski-skills"></a>
 ### Apple design skill source
@@ -2170,6 +2339,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Next gate:** Review exact content and reuse scope; UI acceptance still requires separate evidence.
 - **Evidence:** Frozen catalog records one pinned advisory skill as selected; no repository-wide integration. Dates: 2026-09-04.
 - **Record IDs:** `skill.apple-design`.
+- **Currentness (November 9):** `unreviewed_pin`; observed HEAD `5206a950b715e0cabe7043ea0b2304332b91494e`. Source review required before using this revision.
 
 <a id="karpathy-autoresearch"></a>
 ### autoresearch
@@ -2180,11 +2350,12 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Architecture fit:** H/J / Q-20: prompts, retrieval and skills compared under equal budgets.
 - **Current status:** Planned adaptation; original GPU training execution deferred.
 - **Next gate:** Protected evaluator/holdout, edit/resource limits and separate promotion review.
-- **Evidence:** Dated public-source intake; review scope is documentation and selected source where recorded, not full audit. Dates: 2026-09-29.
+- **Evidence:** Dated public-source intake; review scope is documentation and selected source where recorded, not full audit. Dates: 2026-09-29, 2026-10-20.
 - **Record IDs:** `workflow.karpathy-autoresearch`.
 - **Historical intake revision:** `228791fb499afffb54b46200aca536f79142f117`.
 
 - **October 20 refresh:** Unchanged upstream pin. October 20 refresh: upstream pin unchanged; README/manifest rechecked alongside original Q-20 review. Build/reuse, license notice, protected evaluator and bounded-loop gates retained. No execution or full audit. Next gate: Resolve exact license notice before reuse; protected evaluator/holdout, enforced edit/resource/spend limits, all-attempt evidence and separate promotion review.
+- **Currentness (November 9):** `unchanged`; observed HEAD `228791fb499afffb54b46200aca536f79142f117`. Matches a recorded revision; no runtime qualification implied.
 
 <a id="ellipsis-dev-blink"></a>
 ### Blink
@@ -2196,6 +2367,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Current status:** Deferred reference; no registered new evaluation or benchmark.
 - **Next gate:** Named search need, exact source intake and independent retrieval labels.
 - **Evidence:** Dated research reference; no new registered evaluation or execution authority. Dates: 2026-09-20.
+- **Currentness (November 9):** `unreviewed_pin`; observed HEAD `a621ede75649303a933828c18c27ad800bb43ef0`. Source review required before using this revision.
 
 <a id="affaan-m-ecc"></a>
 ### ECC
@@ -2208,6 +2380,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Next gate:** Select and normalize content; require a named gap before lifecycle tooling.
 - **Evidence:** Dated discovery catalog; executable qualification unrun. Dates: 2026-09-04.
 - **Record IDs:** `harness.ecc`.
+- **Currentness (November 9):** `unreviewed_pin`; observed HEAD `d2ef2680594f9a17526a6e1a2e18b3d242c5d17b`. Source review required before using this revision.
 
 <a id="pbakaus-impeccable"></a>
 ### Impeccable
@@ -2221,6 +2394,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Dated public-source intake; review scope is documentation and selected source where recorded, not full audit. Dates: 2026-09-23.
 - **Record IDs:** `design.impeccable`.
 - **Historical intake revision:** `e0881d2de397d5e9761d7b35ff5017d8f5ebf69b`.
+- **Currentness (November 9):** `changed`; observed HEAD `613fbf88e0ef08709eaf238653285f430250c0ea`. Source review required before using this revision.
 
 <a id="shuhansun-jev-oas-sentinel"></a>
 ### Jev OAS Sentinel
@@ -2232,6 +2406,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Current status:** Collected research; no contract-change benchmark or update authority.
 - **Next gate:** Labeled breaking/nonbreaking pairs, failure handling and independent checks.
 - **Evidence:** Dated research reference; no new registered evaluation or execution authority. Dates: 2026-09-22.
+- **Currentness (November 9):** `unreviewed_pin`; observed HEAD `fae78bcd9fa84e17d4c26b93809f7ce23056828a`. Source review required before using this revision.
 
 <a id="gszhangwei-open-spdd"></a>
 ### Open-SPDD
@@ -2245,6 +2420,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Dated public-source intake; review scope is documentation and selected source where recorded, not full audit. Dates: 2026-09-09.
 - **Record IDs:** `content.open-spdd.workflows`, `tooling.open-spdd.cli`.
 - **Historical intake revision:** `59669ac18c1c0bdee76b780771ac51567a73d52c`.
+- **Currentness (November 9):** `changed`; observed HEAD `3991ffa2cd6670fdb6f329ca62799ccb96d0e7d9`. Source review required before using this revision.
 
 <a id="promptfoo-promptfoo"></a>
 ### Promptfoo
@@ -2257,6 +2433,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Next gate:** Frozen synthetic fixtures, matching calculations and offline/removal checks.
 - **Evidence:** Dated discovery catalog; executable qualification unrun. Dates: 2026-09-04.
 - **Record IDs:** `eval.promptfoo`.
+- **Currentness (November 9):** `unreviewed_pin`; observed HEAD `a19bed05b037b9df183b4a45dc936dade0c19b3d`. Source review required before using this revision.
 
 <a id="agent-substrate-substrate"></a>
 ### Substrate
@@ -2270,6 +2447,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README, dependency/install/architecture/security/auth/egress documentation and independent representative source screening; no cluster, infrastructure, sandbox, credential, provider or benchmark execution. Dates: 2026-09-23, 2026-10-22.
 - **Registered records:** `infra.agent-substrate` (existing Q-16 refreshed; no count increase).
 - **Recorded revisions:** `74bbfc529ca9b5554d20117c2c78a3aea48b5d55`, `ab4f3dbec79b77771a7cca820173a249b551c493`.
+- **Currentness (November 9):** `changed`; observed HEAD `94e0a26ac90151886a76410568aaac2664a54d90`. Source review required before using this revision.
 
 <a id="microsoft-skillopt"></a>
 ### SkillOpt
@@ -2283,6 +2461,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Documentation screening; no independent benchmark replication or execution. Dates: 2026-10-07.
 - **Record IDs:** `tool.skillopt`.
 - **Historical intake revision:** `343db229dbd5ddaf9df6b1d5540d8bcdb2604d5c`.
+- **Currentness (November 9):** `changed`; observed HEAD `ccfdcdf7ab50456e2556200499f2bccf1e1b43b2`. Source review required before using this revision.
 
 <a id="asgeirtj-system-prompts-leaks"></a>
 ### System Prompts Leaks
@@ -2297,6 +2476,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Historical intake revision:** `2d9b8f26c8b711481c19b63f1f62779432ef3768`.
 
 ## Tools and browsing
+- **Currentness (November 9):** `changed`; observed HEAD `48f734ade1dfdb0690c887883c3a7574625a6804`. Source review required before using this revision.
 
 <a id="kalil0321-reverse-api-engineer"></a>
 ### Reverse API Engineer
@@ -2310,6 +2490,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README/license/package and representative capture/agent/config/runtime source with independent read-only review; no install, target browsing/capture, cookie access, generated-client execution, credentials/provider calls or benchmark. Dates: 2026-11-05.
 - **Registered records:** `tool.reverse-api-engineer`.
 - **Recorded revision:** `cd221e9ef5fe30d4fb66ad0d5198f179191aca57`.
+- **Currentness (November 9):** `changed`; observed HEAD `276e37667de5e290487c97c351c09ea53b11b468`. Source review required before using this revision.
 
 <a id="lightpanda-io-browser"></a>
 ### Lightpanda Browser
@@ -2323,6 +2504,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README/license/build/security metadata and representative source screening with independent review; no install/build/WSL change, browser or CDP/MCP activation, website actions or benchmark. Dates: 2026-11-02.
 - **Registered records:** `browser.lightpanda`.
 - **Recorded revision:** `1e6fe6cbff8556d4d2afd366e5b4668bffef30dd`.
+- **Currentness (November 9):** `changed`; observed HEAD `8d41fa9ada989f8189cc68395e2775d903be0096`. Source review required before using this revision.
 
 <a id="pinchtab-pinchtab"></a>
 ### PinchTab
@@ -2336,6 +2518,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README, security guide/policy, Go/Docker metadata and selected auth/tab-policy source reviewed; no install/daemon/browser launch, profiles, credentials, navigation/actions, API/model execution or full audit. Dates: 2026-10-21.
 - **Registered records:** `browser.pinchtab`
 - **Recorded revision:** `a62662027f233444c579c29fbe42ad90df0d5bc7`
+- **Currentness (November 9):** `unchanged`; observed HEAD `a62662027f233444c579c29fbe42ad90df0d5bc7`. Matches a recorded revision; no runtime qualification implied.
 
 <a id="hkuds-cli-anything"></a>
 ### CLI-Anything
@@ -2349,6 +2532,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README/security policy and representative ComfyUI setup, queue and HTTP-backend source reviewed; no plugin activation, generation, installation, target/CLI/model execution or full audit. Dates: 2026-10-21.
 - **Registered records:** `tools.cli-anything`
 - **Recorded revision:** `34f519533bc175d2fe287ab8316b0dd99bb9cc43`
+- **Currentness (November 9):** `unchanged`; observed HEAD `34f519533bc175d2fe287ab8316b0dd99bb9cc43`. Matches a recorded revision; no runtime qualification implied.
 
 <a id="monid-ai-monid"></a>
 ### Monid
@@ -2362,6 +2546,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README, Deno/config metadata, selected auth/transport/link/run source and Exa definitions; dated hosted pricing/OAuth/run docs. No install, account, credentials, API/tool/model execution or full audit. Dates: 2026-10-18.
 - **Registered records:** `tools.monid`
 - **Recorded intake revision:** `96e1569dee3a0beee8a6aa8a70ec8c1773e32a21`
+- **Currentness (November 9):** `changed`; observed HEAD `09d54479142e36eff876383beacfbd37b33b5908`. Source review required before using this revision.
 
 <a id="browser-use-browser-harness"></a>
 ### Browser Harness
@@ -2375,6 +2560,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README and pyproject reviewed as source material; no installation, activation, credentials/accounts, target/media/agent/model/service execution or full audit. Dates: 2026-10-18.
 - **Registered records:** browser.browser-harness
 - **Recorded intake revision:** c6a941287424f32e2d20c7b7b892c8493f46808d
+- **Currentness (November 9):** `changed`; observed HEAD `a7c4cb02a3f0cd83e09598d14a2ca65743791998`. Source review required before using this revision.
 
 <a id="langflow-ai-langflow"></a>
 ### Langflow
@@ -2388,6 +2574,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README and pyproject reviewed; no installation, accounts/credentials, runtime/provider calls or full audit. Dates: 2026-10-17.
 - **Registered records:** workflow.langflow
 - **Recorded intake revision:** 972d56c47d3830d17060ee85cfaad152df823041
+- **Currentness (November 9):** `changed`; observed HEAD `60999cc9a7350e44dde3ef641baae864e10861f0`. Source review required before using this revision.
 
 <a id="firecrawl-firecrawl"></a>
 ### Firecrawl
@@ -2401,6 +2588,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README and Compose manifest reviewed; no installation, accounts/credentials, runtime/provider calls or full audit. Dates: 2026-10-17.
 - **Registered records:** research.firecrawl
 - **Recorded intake revision:** acd9d4155c213e1239e3cc1d65aefd2286a55fda
+- **Currentness (November 9):** `changed`; observed HEAD `a0535ec3e53abd41b60e6a60aa57d3a3397fc792`. Source review required before using this revision.
 
 <a id="activeing123-mcptoon"></a>
 ### MCPToon
@@ -2414,6 +2602,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README, package/security/NOTICE and selected compressor/client source reviewed; no install, agent config/skill sync, servers, tool calls or full audit. Dates: 2026-10-17.
 - **Registered records:** tools.mcptoon
 - **Recorded intake revision:** 14aa8bf274581cd4e35ed10afc352534719f5c26
+- **Currentness (November 9):** `changed`; observed HEAD `7574a78924373de21ee7e516a40f8d9c59c6dbc4`. Source review required before using this revision.
 
 <a id="browser-use-browser-use"></a>
 ### Browser Use
@@ -2427,6 +2616,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Dated carousel identity review and pinned primary README/metadata; additional license/maintenance screening where recorded; no execution/full audit. Dates: 2026-10-16.
 - **Record IDs:** `browser.browser-use`.
 - **Historical intake revision:** `e0a70fbe31c8e9cebcf42648f43e306a1c484421`.
+- **Currentness (November 9):** `changed`; observed HEAD `b49a68e4060acb226da8f784194fef301c53a6d7`. Source review required before using this revision.
 
 <a id="n8n-io-n8n"></a>
 ### n8n
@@ -2440,6 +2630,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Dated carousel identity review and pinned primary README/metadata; additional license/maintenance screening where recorded; no execution/full audit. Dates: 2026-10-16.
 - **Record IDs:** `workflow.n8n`.
 - **Historical intake revision:** `447fc866bb0a841decfa5e8a29fba06057bfc5bc`.
+- **Currentness (November 9):** `changed`; observed HEAD `41fdb9c2360bad4644f412e56e6694c0e16af7fc`. Source review required before using this revision.
 
 <a id="jo-inc-camofox-browser"></a>
 ### Camofox Browser
@@ -2453,6 +2644,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README, package/plugin metadata and selected postinstall/config source screened; no execution or full audit. Dates: 2026-10-13.
 - **Record IDs:** `browser.camofox`.
 - **Historical intake revision:** `39c82094013480b373df6600d44c7f036f58356e`.
+- **Currentness (November 9):** `unchanged`; observed HEAD `39c82094013480b373df6600d44c7f036f58356e`. Matches a recorded revision; no runtime qualification implied.
 
 <a id="feder-cr-invisible-playwright"></a>
 ### Invisible Playwright
@@ -2466,6 +2658,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Pinned README, package metadata, fork/security docs and selected engine-resolution source screened; no execution or full audit. Dates: 2026-10-10.
 - **Record IDs:** `browser.invisible-playwright`.
 - **Historical intake revision:** `0819cd4e235ea35fcc3920b62a54ed8e2147056a`.
+- **Currentness (November 9):** `changed`; observed HEAD `a42d863e48cf5c4c430c1ab24d915cefafb1d382`. Source review required before using this revision.
 
 <a id="panniantong-agent-reach"></a>
 ### Agent-Reach
@@ -2478,6 +2671,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Next gate:** Demonstrate an unmet source need, then qualify exact endpoints and removal.
 - **Evidence:** Dated discovery catalog; executable qualification unrun. Dates: 2026-09-04.
 - **Record IDs:** `capability.agent-reach`.
+- **Currentness (November 9):** `unreviewed_pin`; observed HEAD `c70ae6da5d39bc90e09ad2ae0575ccc89f31e284`. Source review required before using this revision.
 
 <a id="trycua-cua"></a>
 ### Cua Driver and Bench
@@ -2491,6 +2685,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Dated public-source intake; review scope is documentation and selected source where recorded, not full audit. Dates: 2026-09-23.
 - **Record IDs:** `computer.cua`.
 - **Historical intake revision:** `0722e6e9460520717b385e335380e19a0987e864`.
+- **Currentness (November 9):** `changed`; observed HEAD `6285c481d2d867eb954a6e6c5531ba8a88182832`. Source review required before using this revision.
 
 <a id="github-github-mcp-server"></a>
 ### GitHub MCP server
@@ -2503,6 +2698,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Next gate:** Exact endpoint, read/write grants, credential isolation and recovery tests.
 - **Evidence:** Dated discovery catalog; executable qualification unrun. Dates: 2026-09-04.
 - **Record IDs:** `mcp.github`.
+- **Currentness (November 9):** `unreviewed_pin`; observed HEAD `99d6d6503a7b2a133e2f8a595d6d0ba24b4086d3`. Source review required before using this revision.
 
 <a id="modelcontextprotocol-servers"></a>
 ### MCP reference servers
@@ -2515,6 +2711,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Next gate:** Pin each server and qualify its transport, paths, effects and removal independently.
 - **Evidence:** Dated discovery catalog; executable qualification unrun. Dates: 2026-09-04.
 - **Record IDs:** `mcp.fetch`, `mcp.filesystem`, `mcp.git`, `mcp.sqlite`.
+- **Currentness (November 9):** `unreviewed_pin`; observed HEAD `36380287ed3b15d115b55f546617d723072b1296`. Source review required before using this revision.
 
 <a id="h4ckf0r0day-obscura"></a>
 ### Obscura
@@ -2528,6 +2725,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Evidence:** Dated public-source intake; review scope is documentation and selected source where recorded, not full audit. Dates: 2026-09-23.
 - **Record IDs:** `browser.obscura`.
 - **Historical intake revision:** `1a3169da276d7720732c7b20535474942917fb83`.
+- **Currentness (November 9):** `changed`; observed HEAD `59276a3620aed0320879f60b9f049010d568088c`. Source review required before using this revision.
 
 <a id="microsoft-playwright-mcp"></a>
 ### Playwright MCP
@@ -2540,6 +2738,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 - **Next gate:** Dedicated profiles, exact tools, controlled fixtures and effect boundaries.
 - **Evidence:** Dated discovery catalog; executable qualification unrun. Dates: 2026-09-04.
 - **Record IDs:** `mcp.playwright`.
+- **Currentness (November 9):** `unreviewed_pin`; observed HEAD `404be8eb89abecff77a55152b6d843d140c78372`. Source review required before using this revision.
 
 <a id="superdesigndev-treg"></a>
 ### Treg
@@ -2556,16 +2755,16 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 
 ## Related model repositories and hosted routes
 
-These are artifact identities, not extra GitHub projects or additional successful experiments. Each entry retains its own public-link verification date; the DeepSeek entry was checked October 17.
+These are artifact identities, not extra GitHub projects or additional successful experiments. Historical intake dates are retained below; all five model repositories and Mercury documentation were rechecked November 9. This does not refresh runtime qualification.
 
 - [Qwen3 4B GGUF](https://huggingface.co/Qwen/Qwen3-4B-GGUF): Planned local BO-05 control; exact quantization and backend qualification required.
 - [Qwen3 8B](https://huggingface.co/Qwen/Qwen3-8B): Planned local BO-05 control; resource eligibility and route evaluation remain separate.
 - [Qwen3.8 27B](https://huggingface.co/Qwen/Qwen3.8-27B): Q-25 model-card/configuration intake only; full-precision local execution hardware-deferred.
 - [Laya multilingual](https://huggingface.co/convaiinnovations/laya-multilingual): Checkpoint e4e9ddf21a7b1903b7acffd8814ad4307bf63a67 used in the separate Laya development experiment; not a second successful evaluation.
 
-- [DeepSeek V4.1 Flash 1017](https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017): Q-78 / BO-05: pinned model/encoding intake; text/vision and tool-use quality, engine and pairing separate. MIT signal; about 510 GB checkpoint. Local execution hardware-deferred; hosted identity, terms, privacy, cost and support unqualified. Planned and untested. Revision `1bae0e1088993b9b82de08f59de5be5a34e42170`; link checked October 17.
+- [DeepSeek V4.1 Flash 1017](https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017): Q-78 / BO-05: pinned model/encoding intake; text/vision and tool-use quality, engine and pairing separate. MIT signal; about 510 GB checkpoint. Local execution hardware-deferred; hosted identity, terms, privacy, cost and support unqualified. Planned and untested. Revision `1bae0e1088993b9b82de08f59de5be5a34e42170`; original intake link check October 17; metadata rechecked November 9.
 
-- [Mercury 3](https://docs.inceptionlabs.ai/get-started/models): Q-104 / BO-05 / E/H: hosted diffusion LLM for responsive general-assistant chat, research and tool use. Planned and untested; exact route/reasoning, privacy, protocol, latency-quality-cost and Stop qualification required. No verified local artifact. Source record `model.mercury-3-hosted`; official documentation checked October 19. Hosted route only; not an extra GitHub or model repository.
+- [Mercury 3](https://docs.inceptionlabs.ai/get-started/models): Q-104 / BO-05 / E/H: hosted diffusion LLM for responsive general-assistant chat, research and tool use. Planned and untested; exact route/reasoning, privacy, protocol, latency-quality-cost and Stop qualification required. No verified local artifact. Source record `model.mercury-3-hosted`; original documentation intake October 19; documentation rechecked November 9. Hosted route only; not an extra GitHub or model repository.
 
 ## Context placement and delegation (Q-127)
 
@@ -2578,4 +2777,5 @@ This is a method study, not another repository or an adopted runtime change. See
 Runtime conformance, model quality, runtime/model pairing and content value remain four different evaluation lanes. Source inspection and static fixture validation do not establish executable containment, reliability or useful-task success. The only measured selector in this repository view is the separately scoped Laya development experiment; its default adoption was rejected. See [results](results-and-evidence.md) for denominators, corrected timing, memory scope and the cancelled retry.
 
 This catalog is a public summary, not a publication of private operating records. It adds no installation, model call, credential scope, phase transition or adoption decision.
+- **Currentness (November 9):** `changed`; observed HEAD `869e53ef5083a96080152b52d994904d31f488e8`. Source review required before using this revision.
 
