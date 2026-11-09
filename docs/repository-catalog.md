@@ -6,7 +6,7 @@ November 9, 2026 currentness audit: all 299 registered IDs reconciled and all 19
 
 Model/route observations on November 9: Qwen3.8 has a newer upstream revision; Laya current metadata differs from the historical experiment scope, whose checkpoint and results are preserved. Mercury 3 remains documented, without an API availability test. The official Kimi model list marks hosted kimi-k2.5 deprecated; K3 stays a separate intake-required candidate. Moonshot documentation redirects to platform.kimi.ai. The XDA context-placement source could not be accessed; its supporting Anthropic sources resolve. No new token-saving measurement is claimed.
 
-Updated November 9, 2026. This is a deduplicated map of **196 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **299 entries** (150 frozen catalog records plus 149 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated November 9, 2026. This is a deduplicated map of **197 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **300 entries** (150 frozen catalog records plus 150 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -28,7 +28,7 @@ Start with the capability you need. These projects span different roles; they ar
 - **Selected advisory content:** one pinned design skill is selected; its repository is not adopted as a runtime.
 - **Adopted integration:** an exact accepted product integration. None is claimed in this catalog.
 
-Counts: 170 shortlisted/planned, 24 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
+Counts: 171 shortlisted/planned, 24 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
 
 Coverage is the union of GitHub identities explicitly linked in the September 4 frozen catalog, dated intake overlays through November 8, and the collected research references. Six September 22 Jev references remain research-only without registration records; Foreman is now registered under Q-56. Documentation-only technologies, model/API routes and local controls remain in the full register. Transitive dependency trees and every project in an upstream directory are not asserted to be evaluated candidates.
 
@@ -1233,12 +1233,40 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 
 ## Interface and media
 
+<a id="meta-astryx"></a>
+### Astryx
+
+[meta/astryx](https://github.com/meta/astryx) · **Shortlisted / planned**
+
+- **Purpose:** Beta React19+ design system with typed components, themes, prebuilt CSS and agent-oriented documentation/scaffolding/customization CLI.
+- **Architecture fit:** E/H/I/J / Q-146: Broad personal-assistant chat, projects, files, settings and activity UI primitives versus SpaceUI Q-112, Lightswind Q-119, current primitives and minimal original components; Impeccable remains a separate advisory-content baseline.
+- **Current status:** Source researched; planned and untested. MIT root; core/CLI0.7.12, React19+ and StyleX. Component accessibility and consumer styling claims require rendered qualification. CLI/global setup, scaffolding, codemods and source ejection are separate file/config-changing capabilities. CLI/global setup deferred: global invocation defaults to home-level agent-instruction writes and can start detached workers/package downloads.
+- **Next gate:** Keep CLI/global setup deferred; separate file/config grants, background worker retirement and package-cache/network review before any tooling trial. Compare upstream library, eligible components/tokens, minimal original UI and defer. Pin package/CSS/theme/dependency/assets and delivered CLI content; qualify Windows/Node/React bundling, keyboard/screen-reader/focus/reduced-motion/zoom, SSR/hydration/theme layering, resource costs, file/config grants/diffs/rollback, Core approval/route/Stop bindings and removal.
+- **Evidence:** Pinned README/LICENSE/core+CLI manifests and documentation, representative implementation and independent source review; no package install, scaffolding, global setup, rendering or runtime accessibility/security benchmark. Dates: 2026-11-09.
+- **Registered records:** `ui.astryx`.
+- **Recorded revision:** `c0327e060d77676be9754e10998995fe4f38a345`.
+
+- Root MIT license inspected; package manifests core/CLI0.7.12. React19+ peer requirement aligns with the separate browser demo React19.2 manifest, but does not qualify package integration or product UI.
+- Consumers can use shipped CSS without adopting the source-build StyleX plugin; full source builds, themes, experimental lab and canary chart packages have distinct dependency/maintenance scopes.
+- CLI requires Node>=22.13; project/global entry points, init, swizzle and codemods require separate file/config grants and rollback. README explicitly warns the unscoped npx astryx name resolves to an unrelated package.
+- Accessibility and production-readiness claims remain upstream claims pending actual keyboard/focus/screen-reader/responsive/rendered tests. No library should own Core grants, credentials, route selection or Stop semantics.
+
+Sources: [source 1](https://github.com/meta/astryx/blob/c0327e060d77676be9754e10998995fe4f38a345/README.md); [source 2](https://github.com/meta/astryx/blob/c0327e060d77676be9754e10998995fe4f38a345/LICENSE); [source 3](https://github.com/meta/astryx/blob/c0327e060d77676be9754e10998995fe4f38a345/packages/core/package.json); [source 4](https://github.com/meta/astryx/blob/c0327e060d77676be9754e10998995fe4f38a345/packages/core/README.md); [source 5](https://github.com/meta/astryx/blob/c0327e060d77676be9754e10998995fe4f38a345/packages/cli/package.json); [source 6](https://github.com/meta/astryx/blob/c0327e060d77676be9754e10998995fe4f38a345/packages/cli/README.md).
+
+
 - **November 9 source assessment:** `reviewed` at `3d6a4e03cdd673e540289c610f7e189f8ffea434`.
   - Current README explicitly states development moved to appium/appium-ios packages/webdriveragent; existing repository is historical source, not current development destination.
   - Xcode runner/device signing requirements remain; native HTTP server header documents default all-interface bind unless interface configured. Transport exposure and iOS permission scope remain unresolved.
   - Advertised successor inspected at monorepo20c3bde38f8413bd760187c521ace065a62538a6: package appium-webdriveragent16.18.3, README retains Xcode runner guidance and BSD badge/LICENSE while package metadata says Apache2.0. Resolve component licensing discrepancy before reuse; no new registered candidate.
 - **Assessment sources:** [source1](https://github.com/appium/WebDriverAgent/blob/3d6a4e03cdd673e540289c610f7e189f8ffea434/README.md#L10); [source2](https://github.com/appium/WebDriverAgent/blob/3d6a4e03cdd673e540289c610f7e189f8ffea434/README.md#L26); [source3](https://github.com/appium/WebDriverAgent/blob/3d6a4e03cdd673e540289c610f7e189f8ffea434/WebDriverAgentLib/Routing/FBHTTPServer.h#L44); [source4](https://github.com/appium/appium-ios/blob/20c3bde38f8413bd760187c521ace065a62538a6/packages/webdriveragent/README.md#L24); [source5](https://github.com/appium/appium-ios/blob/20c3bde38f8413bd760187c521ace065a62538a6/packages/webdriveragent/package.json#L16); [source6](https://github.com/appium/appium-ios/blob/20c3bde38f8413bd760187c521ace065a62538a6/packages/webdriveragent/LICENSE#L7); [source7](https://github.com/appium/appium-ios/blob/20c3bde38f8413bd760187c521ace065a62538a6/packages/webdriveragent/WebDriverAgentLib/Routing/FBHTTPServer.h#L44). Representative source screening; no execution or admission.
 
+
+- **Independent CLI finding:** Global CLI handoff can start an agent-text worker; missing/unreadable settings default computerAgentText.install=true. Worker writes home-level skill/instruction links or copies, with edited/foreign-file safeguards. Update-notifier opt-out is not a universal write/download opt-out. Windows skips background Core fetch, but read commands can fetch it on demand.
+  - [Pinned source](https://github.com/meta/astryx/blob/c0327e060d77676be9754e10998995fe4f38a345/packages/cli/foundation/release/handoff.mjs)
+  - [Pinned source](https://github.com/meta/astryx/blob/c0327e060d77676be9754e10998995fe4f38a345/packages/cli/foundation/env/user-settings.mjs)
+  - [Pinned source](https://github.com/meta/astryx/blob/c0327e060d77676be9754e10998995fe4f38a345/packages/cli/foundation/release/agent-text-worker.mjs)
+  - [Pinned source](https://github.com/meta/astryx/blob/c0327e060d77676be9754e10998995fe4f38a345/packages/cli/foundation/agent-docs/computer-agent-text.mjs)
+  - [Pinned source](https://github.com/meta/astryx/blob/c0327e060d77676be9754e10998995fe4f38a345/packages/cli/foundation/release/global-state.mjs)
 <a id="puppyone-ai-puppyone"></a>
 ### PuppyOne
 
