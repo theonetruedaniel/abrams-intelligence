@@ -371,7 +371,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 <a id="kortix-ai-suna"></a>
 ### Kortix CompanyOS (historically Suna)
 
-[kortix-ai/suna](https://github.com/kortix-ai/suna) · **Shortlisted / planned**
+[kortix-ai/suna](https://github.com/kortix-ai/CompanyOS) · **Shortlisted / planned**
 
 - **Purpose:** Cloud-native multi-agent company workspace with persistent session computers, event/schedule triggers, shared memory and reviewed repository changes.
 - **Architecture fit:** E-I; separate H / Q-54: Abrams and eligible whole-app assistant studies; single-worker/direct adapters.
@@ -1317,7 +1317,7 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 <a id="calesthio-openmontage"></a>
 ### OpenMontage
 
-[calesthio/OpenMontage](https://github.com/calesthio/OpenMontage) · **Shortlisted / planned**
+[calesthio/OpenMontage](https://github.com/OpenMontageInc/OpenMontage) · **Shortlisted / planned**
 
 - **Purpose:** Agentic video planning, asset assembly, editing and render workflows.
 - **Architecture fit:** H/I / Q-91: fframes, Q-67 media study and simple licensed-asset FFmpeg workflows.
