@@ -78,3 +78,12 @@ Continue the existing plan from the partial local implementation. Complete and v
 Equivalent Tauri/PWA comparisons, runtime qualification and the production Core decision remain separate unfinished work. Preserve the existing review, resource and execution prerequisites for each comparison. No shell winner or production runtime/model pairing is claimed.
 
 This page summarizes local development status without publishing private operational records or the unpublished product implementation.
+
+
+## November 9 scoped recovery checkpoint
+
+Six previously open correctness rows now have separate real Store process-crash results: O31, O39, RC06, RC04, RC05 and O32. Each has independent saved-evidence review. The latest O32 result includes eight actual noncommitting WAL frames after a committed prefix and recovery of that prefix without invented cancel success. See [the scoped results and limits](evidence/phase2/2026-11-09-recovery-checkpoint.md).
+
+These continuous-owner/OS results do not prove power-loss or owner-restart durability, partial-write or uncertain-flush behavior, or browser safety. Eight oracle rows remain open: O19/O20/O34/O35/O38/O40 and the two RC07 fault cases. Separate shell, packaging, accessibility, capability-denial and runtime/Core-placement obligations remain; historical 51/65 is not replaced with a new aggregate score. Extensive performance qualification remains visibly deferred.
+
+The next reviewed browser startup-context submission stopped before reservation, Node or Chrome launch because available RAM was below its unchanged 2 GiB requirement. No new startup compatibility or O34 result followed, and earlier uncertain attempts remain preserved. Current work follows Phase 2 correctness, Phase 3 runtime comparison and provisional Phase 4 connections; model/media candidates are later evaluations.
