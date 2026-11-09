@@ -1,6 +1,8 @@
 # Abrams Intelligence
 
-November 9, 2026 currentness audit: all 299 registered IDs reconciled and all 196 GitHub remote HEADs resolved. 30 match a recorded revision; 115 differ from recorded revisions; 51 have no reviewed revision recorded. Observed HEADs and review requirements are recorded separately in the machine-readable catalog. Five model repositories and Mercury 3 documentation were also checked. Changed and unpinned sources remain awaiting source review; historical pins, tests and adoption status are preserved.
+November 9 source-review follow-through: 166 of 166 changed or previously unpinned GitHub sources assessed at exact revisions. Review outcomes: 2 provenance-blocked, 164 source-reviewed. Assessments include source-specific findings and primary-source citations. Existing tests, provenance blocks and adoption decisions remain separate; no candidate was installed or executed.
+
+November 9, 2026 currentness audit: all 299 registered IDs reconciled and all 196 GitHub remote HEADs resolved. 30 match a recorded revision; 115 differ from recorded revisions; 51 have no reviewed revision recorded. Observed HEADs and review requirements are recorded separately in the machine-readable catalog. Five model repositories and Mercury 3 documentation were also checked. The initial inventory identified 166 source-review requirements; see the follow-through assessment above. Historical tests and adoption status remain preserved.
 
 I’m building a personal AI for my own everyday use, and learning how to build it along the way. The goal is a capable, local-first assistant for research, coding, creative projects, document work and everyday coordination that I can keep improving as the technology changes.
 

@@ -1,6 +1,8 @@
 # Candidate register and research
 
-November 9, 2026 currentness audit: all 299 registered IDs reconciled and all 196 GitHub remote HEADs resolved. 30 match a recorded revision; 115 differ from recorded revisions; 51 have no reviewed revision recorded. Observed HEADs and review requirements are recorded separately in the machine-readable catalog. Five model repositories and Mercury 3 documentation were also checked. Changed and unpinned sources remain awaiting source review; historical pins, tests and adoption status are preserved.
+November 9 source-review follow-through: 166 of 166 changed or previously unpinned GitHub sources assessed at exact revisions. Review outcomes: 2 provenance-blocked, 164 source-reviewed. Assessments include source-specific findings and primary-source citations. Existing tests, provenance blocks and adoption decisions remain separate; no candidate was installed or executed.
+
+November 9, 2026 currentness audit: all 299 registered IDs reconciled and all 196 GitHub remote HEADs resolved. 30 match a recorded revision; 115 differ from recorded revisions; 51 have no reviewed revision recorded. Observed HEADs and review requirements are recorded separately in the machine-readable catalog. Five model repositories and Mercury 3 documentation were also checked. The initial inventory identified 166 source-review requirements; see the follow-through assessment above. Historical tests and adoption status remain preserved.
 
 Model/route observations on November 9: Qwen3.8 has a newer upstream revision; Laya current metadata differs from the historical experiment scope, whose checkpoint and results are preserved. Mercury 3 remains documented, without an API availability test. The official Kimi model list marks hosted kimi-k2.5 deprecated; K3 stays a separate intake-required candidate. Moonshot documentation redirects to platform.kimi.ai. The XDA context-placement source could not be accessed; its supporting Anthropic sources resolve. No new token-saving measurement is claimed.
 
@@ -588,3 +590,177 @@ Before any reuse, review the exact files, license notices and dependency tree. T
 
 Next: [evaluation method](evaluation-method.md) and [results](results-and-evidence.md).
 
+
+
+## November 9 assessments of existing records
+
+These refresh existing records without adding candidates or changing execution authority. Primary-source citations and findings are in each linked catalog entry; original dated intake rows above remain historical.
+
+| Existing records | Repository assessment | Source revision |
+| --- | --- | --- |
+| `ui.lightswind` | [codewithMUHILAN/Lightswind-UI-Library](repository-catalog.md#codewithmuhilan-lightswind-ui-library) — source-screened-not-tested | `a3895bd6968b5d96425eb45edcc84a1d79b3ecb4` |
+| `retrieval.leann` | [StarTrail-org/LEANN](repository-catalog.md#startrail-org-leann) — reviewed | `07796bd7e40f2d5f3a4be9e45adf1f62a68481fd` |
+| `orchestration.ruflo` | [ruvnet/ruflo](repository-catalog.md#ruvnet-ruflo) — source-reviewed-bounded | `29be054e85636b61788f3955d0bd4d0bcbcfe3f6` |
+| `evaluation.xorcise` | [xorcise-ai/xorcise](repository-catalog.md#xorcise-ai-xorcise) — source-screened-not-tested | `779ed9f55b9ce6619d112061d93d337b4c6ba8eb` |
+| `retrieval.xerj` | [xerj-org/xerj](repository-catalog.md#xerj-org-xerj) — reviewed | `50e4ffded5518b1822cfac5450fa34d3829ab8ab` |
+| `runtime.xiryn` | [SouravBeraAkaSpeed/xiryn](repository-catalog.md#souravberaakaspeed-xiryn) — source-reviewed-bounded | `c56fd59c642ef56a4fa9e697ed218581473529ad` |
+| `orchestration.paperclip` | [paperclipai/paperclip](repository-catalog.md#paperclipai-paperclip) — source-screened-not-tested | `d7d0f96f3f500a0e7a2028a323c42ace2aa2fa77` |
+| `agent.goose` | [aaif-goose/goose](repository-catalog.md#aaif-goose-goose) — reviewed | `0edf2bdc8161d06f79daf639c148bf3559e26cf0` |
+| `agent.claude-code` | [anthropics/claude-code](repository-catalog.md#anthropics-claude-code) — source-reviewed-bounded | `0ed94698aa0aeee471465fc9c867c2e8434c4d68` |
+| `platform.dify` | [langgenius/dify](repository-catalog.md#langgenius-dify) — source-screened-not-tested | `8457639de54591969d8333bc749151a09dfb61a0` |
+| `agent.opencode` | [anomalyco/opencode](repository-catalog.md#anomalyco-opencode) — reviewed | `12a661ea40cd5863b271a89bb06b8a3ddb7ab5a0` |
+| `agent.deepseek-harness` | [deepseek-ai/deepseek-harness](repository-catalog.md#deepseek-ai-deepseek-harness) — source-reviewed-bounded | `fcc0ad462172522aaf5c93a7b2e01f6b9f0b0159` |
+| `agent.openworker` | [andrewyng/openworker](repository-catalog.md#andrewyng-openworker) — source-screened-not-tested | `ddb8b361bd5889703a429af8beaa804554bd858a` |
+| `orchestration.openrig` | [mvschwarz/openrig](repository-catalog.md#mvschwarz-openrig) — reviewed | `1fb614b7c95e5fab5148997d451fbd6da0cc6f35` |
+| `agent.agno` | [agno-agi/agno](repository-catalog.md#agno-agi-agno) — source-reviewed-bounded | `047cf37a47f3f5788faf63ce3437715bd6780123` |
+| `agent.autogen` | [microsoft/autogen](repository-catalog.md#microsoft-autogen) — source-screened-not-tested | `d07c667a3239ea4ab7af62a53b0f4ff205a1f23d` |
+| `agent.autogpt-classic`, `evaluation.autogpt-classic-fixtures`, `workflow.autogpt-platform` | [Significant-Gravitas/AutoGPT](repository-catalog.md#significant-gravitas-autogpt) — reviewed | `9cb76f9026d388c9bf2e098af2beae1cc864f055` |
+| `orchestration.google-ax` | [google/ax](repository-catalog.md#google-ax) — source-reviewed-bounded | `241bc4d0c682a6898da5f718a9ec84fe7c9197f9` |
+| `agent.cline-agent`, `agent.cline-core`, `agent.cline-hub`, `agent.cline-sdk` | [cline/cline](repository-catalog.md#cline-cline) — source-screened-not-tested | `5413dc180c10700ce2e26547ab75991360dd0486` |
+| `agent.crewai` | [crewAIInc/crewAI](repository-catalog.md#crewaiinc-crewai) — reviewed | `83d7407aa50b94d5b9f110c10ca295d3e0f360ee` |
+| `agent.hermes` | [NousResearch/hermes-agent](repository-catalog.md#nousresearch-hermes-agent) — source-reviewed-bounded | `0b37335f2112822df9aca9a22f1d4f8bf483fdb1` |
+| `model.kimi-code` | [MoonshotAI/kimi-code](repository-catalog.md#moonshotai-kimi-code) — source-screened-not-tested | `27bd9baba10e9f73d3db0e0fdd6f81046b4cbac9` |
+| `assistant.kortix-suna` | [kortix-ai/CompanyOS](repository-catalog.md#kortix-ai-suna) — reviewed | `e16bb636ac5a0645007d250b6cae3a5e726293e4` |
+| `agent.langchain` | [langchain-ai/langchain](repository-catalog.md#langchain-ai-langchain) — source-reviewed-bounded | `82f2e3f995abbba1304128a48d2cfb268bc1c755` |
+| `agent.langgraph` | [langchain-ai/langgraph](repository-catalog.md#langchain-ai-langgraph) — source-screened-not-tested | `e5e37b5d70dbfd93c7006bd90a658c6179a95946` |
+| `agent.letta` | [letta-ai/letta-code](repository-catalog.md#letta-ai-letta-code) — reviewed | `7f7300a2c8d4d8aef150d9ea9d01f0edd4f9d710` |
+| `agent.openclaude.ruvnet` | [ruvnet/open-claude-code](repository-catalog.md#ruvnet-open-claude-code) — blocked-provenance | `d6672914796622ee9ed6747aa436317c6adf7381` |
+| `agent.opencodex.ymichael` | [ymichael/open-codex](repository-catalog.md#ymichael-open-codex) — source-screened-not-tested | `c15beb3a3f9ef393e597a1ea6d5c0c84022b36d3` |
+| `agent.openclaude.gitlawb` | [Twigpine/openclaude](repository-catalog.md#gitlawb-openclaude) — blocked-provenance | `20b5645e983d5e40bf25cb556373da609b5a0155` |
+| `agent.openclaw` | [openclaw/openclaw](repository-catalog.md#openclaw-openclaw) — source-reviewed-bounded | `bbf0d7380315f660bf79561223da1d34eadd4ac3` |
+| `assistant.openhands` | [OpenHands/OpenHands](repository-catalog.md#openhands-openhands) — source-screened-not-tested | `82196a4d99d6414fa7333ac1876cefbd59e2eeb7` |
+| `assistant.openmausbot` | [milind-soni/OpenMausBot](repository-catalog.md#milind-soni-openmausbot) — reviewed | `1de1164d5040d8699f55e0907552270bd9fbd38f` |
+| `app.openmuse` | [CopilotKit/openmuse](repository-catalog.md#copilotkit-openmuse) — source-reviewed-bounded | `a4944f4c471d3dc93b8bfc060b5da309b5216ab2` |
+| `agent.prime-agent` | [PrimeIntellect-ai/prime-agent](repository-catalog.md#primeintellect-ai-prime-agent) — source-screened-not-tested | `bfad069bf7ce95795886a0b5a74592d672b7f8bb` |
+| `agent.pydantic-ai` | [pydantic/pydantic-ai](repository-catalog.md#pydantic-pydantic-ai) — reviewed | `0d972ac375fe0d61e5b21a3c9415fd12b0fd6a0b` |
+| `model.qwen-code` | [QwenLM/qwen-code](repository-catalog.md#qwenlm-qwen-code) — source-reviewed-bounded | `aeacedc4c4bbe41f38550ce7eac305ff086e9b2f` |
+| `agent.trueforge` | [truefoundry/trueforge](repository-catalog.md#truefoundry-trueforge) — source-screened-not-tested | `c29131547d50e344adaeaf115bcacd32838d5a8e` |
+| `context.hermes-warm-compaction` | [Elevatormusic/hermes-warm-compaction](repository-catalog.md#elevatormusic-hermes-warm-compaction) — reviewed | `b95952763305bfbe2e6ea8d1653bcf046c732aff` |
+|  | [logicrw/awesome-jev-projects](repository-catalog.md#logicrw-awesome-jev-projects) — source-reviewed-bounded | `2edd51355ec72bd2638caa1c3058f76aec144e3b` |
+|  | [qkal/Canny](repository-catalog.md#qkal-canny) — source-screened-not-tested | `f2c5e53779445d60dc4a09d2dbced2308fccb820` |
+|  | [tamaratran/fast-jev-compaction](repository-catalog.md#tamaratran-fast-jev-compaction) — reviewed | `e3f262a7f4d42bd8dd32ced30d26176f7cb545b0` |
+|  | [sutro-sh/jev-align](repository-catalog.md#sutro-sh-jev-align) — source-reviewed-bounded | `5390ee05e4d9863e1c1eb623ca60c9c7bec27128` |
+|  | [0xNatoshi/jev-codex-router](repository-catalog.md#0xnatoshi-jev-codex-router) — source-screened-not-tested | `8701ef788aa8cb0948f299538747fb01029d32b8` |
+|  | [jkudish/jev-mcp](repository-catalog.md#jkudish-jev-mcp) — reviewed | `d119eb5c3555d1daff5e6923d2d3cf8225a8d796` |
+| `browser.jev-ultrafast` | [browser-use/jev-ultrafast](repository-catalog.md#browser-use-jev-ultrafast) — source-reviewed-bounded | `8251e272398011cdef648965204d1c20cd838333` |
+|  | [moritzkremb/jev-voice-browser](repository-catalog.md#moritzkremb-jev-voice-browser) — source-screened-not-tested | `198a0764395a666f8398026c0d8abdaf6d1866c5` |
+|  | [jkrup/jeveryword](repository-catalog.md#jkrup-jeveryword) — reviewed | `6fed1518bbb84cc4865401630f37c01dc3decc10` |
+|  | [fazlerocks/jevmail](repository-catalog.md#fazlerocks-jevmail) — source-reviewed-bounded | `f6f20af9c2805efd924c29cbea59547e72c558fc` |
+|  | [keltokhy/jlink](repository-catalog.md#keltokhy-jlink) — source-screened-not-tested | `d3ab99f583a13b732738acb1fb9b7d887fa8649f` |
+| `decision.kev` | [jaredpalmer/kev](repository-catalog.md#jaredpalmer-kev) — reviewed | `2074cc44256200bb37540103fa4572901faa10f3` |
+|  | [NandhaKishorM/laya](repository-catalog.md#nandhakishorm-laya) — source-reviewed-bounded | `b8a0f0991d95a953411f2e16f91bddc2ffdaf79a` |
+| `decision.laya-coreml` | [mizorewww/laya-coreml](repository-catalog.md#mizorewww-laya-coreml) — source-screened-not-tested | `a51fa1751fbb90c4a322bd1d42eed941179a2573` |
+| `decision.nimble` | [bespokelabsai/nimble](repository-catalog.md#bespokelabsai-nimble) — reviewed | `4edb0703a2e75d0170c3a45645a1961f4d1a2867` |
+|  | [itsmostafa/system-one-connector](repository-catalog.md#itsmostafa-typesafe-mcp) — source-reviewed-bounded | `580795791d6f6af3401ee769ccfa0f99d4225b74` |
+|  | [GhalebDweikat/winnow](repository-catalog.md#ghalebdweikat-winnow) — source-screened-not-tested | `4547a81b88ac59a902bad7b0006137c7d4147aeb` |
+| `platform.go-ios` | [danielpaulus/go-ios](repository-catalog.md#danielpaulus-go-ios) — reviewed | `63c0d5705a010b03c340de888ba6c7c4052d763b` |
+| `runtime.mobilecli` | [mobile-next/mobilecli](repository-catalog.md#mobile-next-mobilecli) — source-reviewed-bounded | `83e47ca93fa9ecfc0fedc0dc56cc7180d8db0ff6` |
+| `mcp.mobile-next` | [mobile-next/mobile-mcp](repository-catalog.md#mobile-next-mobile-mcp) — source-screened-not-tested | `3b51952bcd83955f3a743f731f5a9beaebecdab7` |
+| `platform.webdriveragent` | [appium/WebDriverAgent](repository-catalog.md#appium-webdriveragent) — reviewed | `3d6a4e03cdd673e540289c610f7e189f8ffea434` |
+| `media.openmontage` | [OpenMontageInc/OpenMontage](repository-catalog.md#calesthio-openmontage) — source-reviewed-bounded | `fecb9a1e3cc23ef84de30b272059457a427f16f8` |
+| `surface.open-webui` | [open-webui/open-webui](repository-catalog.md#open-webui-open-webui) — source-screened-not-tested | `b0e6098e940942281d9c83f3529ea117287a3a22` |
+| `media.open-generative-ai` | [Anil-matcha/Open-Generative-AI](repository-catalog.md#anil-matcha-open-generative-ai) — reviewed | `dab60665ff5f0c3d7edf4dd6926fe20e680a1af3` |
+| `voice.openwhispr` | [OpenWhispr/openwhispr](repository-catalog.md#openwhispr-openwhispr) — source-reviewed-bounded | `b2e624b717b22b7d7584ad5956d0070ce5eb7b39` |
+| `ui.agent-office` | [AgentSystemLabs/agent-office](repository-catalog.md#agentsystemlabs-agent-office) — source-screened-not-tested | `852e2ab28c4f3f31bffdf4b20353bd119c9d3270` |
+| `image.comfyui` | [Comfy-Org/ComfyUI](repository-catalog.md#comfy-org-comfyui) — reviewed | `fca60fe70e5b84c5c6b058263653d15cb3401e44` |
+| `ui.copilotkit` | [CopilotKit/CopilotKit](repository-catalog.md#copilotkit-copilotkit) — source-reviewed-bounded | `c7815d9ac96f48fb3a64ad8c18e176a870c81763` |
+| `ui.coucou` | [Louis-CFM/coucou](repository-catalog.md#louis-cfm-coucou) — source-screened-not-tested | `b1bc09de7f7c24a80bd8eca5729b8bee60f66402` |
+| `media.fframes` | [dmtrKovalenko/fframes](repository-catalog.md#dmtrkovalenko-fframes) — reviewed | `e8f01b97f61eee3a06c144445682f506f1530ca1` |
+| `interface.librechat` | [LibreChat-AI/LibreChat](repository-catalog.md#librechat-ai-librechat) — source-reviewed-bounded | `f4154b649efa37e1345ccc517a4d8d1ed2178c82` |
+| `desktop.locally-uncensored.purpledoubled` | [PurpleDoubleD/locally-uncensored](repository-catalog.md#purpledoubled-locally-uncensored) — source-screened-not-tested | `d4935af470a8a4b231d0ffef3b8c8708fdd4a10c` |
+| `surface.opencodex.ryensx` | [RyensX/OpenCodex](repository-catalog.md#ryensx-opencodex) — reviewed | `f6fd79ccffe2b631db99556e862b008cba04f5ab` |
+| `research.open-notebook` | [lfnovo/open-notebook](repository-catalog.md#lfnovo-open-notebook) — source-reviewed-bounded | `a6b572eb9849785dfb7c747190a01b0bb99fedf2` |
+| `research.defuddle` | [kepano/defuddle](repository-catalog.md#kepano-defuddle) — source-screened-not-tested | `3e8bde9f5f855bc968e95837a750c5968a9fe639` |
+| `memory.codebase-memory-mcp` | [DeusData/codebase-memory-mcp](repository-catalog.md#deusdata-codebase-memory-mcp) — reviewed | `612eee2518ef84cc573e491fdee5fa5c90264cb5` |
+| `research.gpt-researcher` | [assafelovic/gpt-researcher](repository-catalog.md#assafelovic-gpt-researcher) — source-reviewed-bounded | `bca58e1fd8e25658dae520d085b52ddc8bcf2b40` |
+| `storage.pocketbase` | [pocketbase/pocketbase](repository-catalog.md#pocketbase-pocketbase) — source-screened-not-tested | `7f2773ec234b62d0b80ca47c508397cb3d0da3ea` |
+| `documents.mineru` | [opendatalab/MinerU](repository-catalog.md#opendatalab-mineru) — reviewed | `8cd08422055858f55a64dff79f942318b51b96cc` |
+| `memory.hindsight` | [vectorize-io/hindsight](repository-catalog.md#vectorize-io-hindsight) — source-reviewed-bounded | `0bd55015393d224deec1073d63b24bcc0faad164` |
+| `research.hyperresearch.jordan-gibbs` | [jordan-gibbs/hyperresearch](repository-catalog.md#jordan-gibbs-hyperresearch) — source-screened-not-tested | `d4725a2bc384bc9c49f86d2032307bbfd6f3327e` |
+| `agent.letta` | [letta-ai/letta](repository-catalog.md#letta-ai-letta) — reviewed | `8816d3a8516893bfdc0fa14bfb1235226012e295` |
+| `memory.mem0` | [mem0ai/mem0](repository-catalog.md#mem0ai-mem0) — source-reviewed-bounded | `f1791daa86d469249c9b002f62644d58a1eb96a0` |
+|  | [jexp/neo4jev](repository-catalog.md#jexp-neo4jev) — source-screened-not-tested | `d157bbe496eb91813475156942bef1c6badfb342` |
+| `retrieval.pageindex` | [VectifyAI/PageIndex](repository-catalog.md#vectifyai-pageindex) — reviewed | `2ac8694bf8fe89a3840dda9bdb88db5119b77fc4` |
+| `graph.semantica` | [semantica-agi/semantica](repository-catalog.md#semantica-agi-semantica) — source-reviewed-bounded | `39cf7216d2326b012436efebf8a227e82f37dd3b` |
+| `routing.free-claude-code` | [Alishahryar1/free-claude-code](repository-catalog.md#alishahryar1-free-claude-code) — source-screened-not-tested | `6f5283a3946e9abcf96487e8cd732db012e41d2f` |
+| `inference.litert-lm` | [google-ai-edge/LiteRT-LM](repository-catalog.md#google-ai-edge-litert-lm) — reviewed | `02d7e8d80cb75cbb03d8cba4c63f51e2eb318ec5` |
+| `proxy.9router.decolua` | [decolua/9router](repository-catalog.md#decolua-9router) — source-reviewed-bounded | `1339107e624d1ab150c6a0c2c2ee22caa7e9db2f` |
+| `inference.airllm` | [lyogavin/airllm](repository-catalog.md#lyogavin-airllm) — source-screened-not-tested | `3aef5f3c59738c51a61f25065a7f5a5722030eac` |
+| `proxy.freellmapi` | [tashfeenahmed/freellmapi](repository-catalog.md#tashfeenahmed-freellmapi) — reviewed | `7f3fece4f9daec0d32877d0a4b8038045dc9daf3` |
+| `runtime.freetoken` | [FlashML-org/FreeToken](repository-catalog.md#flashml-org-freetoken) — source-reviewed-bounded | `5a73685b1a836f523c692c77b70152c01698ed8e` |
+| `model.kimi-k2` | [MoonshotAI/Kimi-K2](repository-catalog.md#moonshotai-kimi-k2) — source-screened-not-tested | `1b4022bbb7187cf4011a8bdf0b4cd10e2daa26c4` |
+| `model.kimi-k3-local` | [MoonshotAI/Kimi-K3](repository-catalog.md#moonshotai-kimi-k3) — reviewed | `3cb39dfd32e51c3328e2e4b4af21341247d06c43` |
+| `model.kimi-vl-a3b` | [MoonshotAI/Kimi-VL](repository-catalog.md#moonshotai-kimi-vl) — source-reviewed-bounded | `41d5ef072bc52a04524f94ab736ff9c29f125fda` |
+| `model.kimi-dev-72b` | [MoonshotAI/Kimi-Dev](repository-catalog.md#moonshotai-kimi-dev) — source-screened-not-tested | `5f60757f5ef54f66455c209aca169c8f850b96bd` |
+| `runtime.llama-cpp` | [ggml-org/llama.cpp](repository-catalog.md#ggml-org-llama-cpp) — reviewed | `a0ad695cb212db3850f163121ddc687513448d42` |
+| `proxy.magpie` | [yetone/magpie](repository-catalog.md#yetone-magpie) — source-reviewed-bounded | `2b22425b45188237e808cd7c8f3b65613c79b8cd` |
+| `runtime.ollama` | [ollama/ollama](repository-catalog.md#ollama-ollama) — source-screened-not-tested | `d63b702609c4300a2ca07be2bdb0adb9834725e5` |
+| `proxy.opencodex.lidge-jun` | [lidge-jun/opencodex](repository-catalog.md#lidge-jun-opencodex) — reviewed | `a1d7d05eac28177588c6227ec58033e0358170b1` |
+| `model.qwen3-14b`, `model.qwen3-30b-a3b`, `model.qwen3-32b` | [QwenLM/Qwen3](repository-catalog.md#qwenlm-qwen3) — source-reviewed-bounded | `7a2f61ffc7a20d47efcd2bf97f6f2bf52729042e` |
+| `model.qwen3-next-80b-a3b` | [QwenLM/Qwen3.8](repository-catalog.md#qwenlm-qwen3-next) — source-screened-not-tested | `2ea10dc725823bf7c3e21ce8557cbe15245132ae` |
+| `model.qwen3.8-flash-next` | [QwenLM/Qwen3.8-Flash-Next](repository-catalog.md#qwenlm-qwen3-8-flash-next) — reviewed | `69885871a64393807d988b27b1b5e380e8f28526` |
+| `runtime.transformers` | [huggingface/transformers](repository-catalog.md#huggingface-transformers) — source-reviewed-bounded | `f262a8cdaae8d78ab5bf57c6fa41a0db6ca01a34` |
+| `runtime.vllm` | [vllm-project/vllm](repository-catalog.md#vllm-project-vllm) — source-screened-not-tested | `a3c14efbc77c018e8bf579935095a87721349e05` |
+| `isolation.space` | [perplexityai/SPACE](repository-catalog.md#perplexityai-space) — reviewed | `b120c4cf4298656a4a7bd97d98c95516d5935beb` |
+| `benchmark.xbow-validation`, `security.decepticon` | [BitterSecurity/Decepticon](repository-catalog.md#purpleailab-decepticon) — source-reviewed-bounded | `df879550544d36b6b1e69062f05adae28537adf2` |
+| `evaluation.ifixai` | [ifixai-ai/iFixAi](repository-catalog.md#ifixai-ai-ifixai) — source-screened-not-tested | `be6b3ec4731f8ecf4a6d71286f1c7acf4561e406` |
+| `security.pentagi` | [vxcontrol/pentagi](repository-catalog.md#vxcontrol-pentagi) — reviewed | `cffed9485aa1cca70762cd08a57ac62a80406258` |
+| `backup.restic` | [restic/restic](repository-catalog.md#restic-restic) — source-reviewed-bounded | `c734245fd3ae9bcac8ab3aaafb4482d4b5d0ae92` |
+| `security.skillspector` | [NVIDIA/SkillSpector](repository-catalog.md#nvidia-skillspector) — source-screened-not-tested | `e48d771a26f7398b36256ceb8d8f94adce3d5c44` |
+| `benchmark.xbow-validation` | [BitterSecurity/xbow-validation-benchmarks](repository-catalog.md#purpleailab-xbow-validation-benchmarks) — reviewed | `d8e455185c4cd4760f44aeecd75e1860b9606abb` |
+| `optimization.skillclaw` | [AMAP-ML/SkillClaw](repository-catalog.md#amap-ml-skillclaw) — source-reviewed-bounded | `334ddf82856826b7a259470c6670fb0ef5ce2dc4` |
+| `skills.addyosmani` | [addyosmani/agent-skills](repository-catalog.md#addyosmani-agent-skills) — source-screened-not-tested | `301b02b12bff98e4688e6984af6556802322bbde` |
+| `skills.humanizer` | [blader/humanizer](repository-catalog.md#blader-humanizer) — reviewed | `0ef9fe5bc3572734fd3ae6c448fe00a30cd5dcf0` |
+| `skills.mattpocock` | [mattpocock/skills](repository-catalog.md#mattpocock-skills) — source-reviewed-bounded | `4ae2317ddb22b046e26455e4f9c9b3aaaf62212d` |
+| `optimization.harness2` | [google-research/harness2](repository-catalog.md#google-research-harness2) — source-screened-not-tested | `6868817518876de8fd170c6a8354daca273b6191` |
+| `coordination.reason-network` | [reason-machines/reason-network](repository-catalog.md#reason-machines-reason-network) — reviewed | `5442c8b551a6897b596c7695e51b0329551aaa6c` |
+| `skills.anthropic` | [anthropics/skills](repository-catalog.md#anthropics-skills) — source-reviewed-bounded | `2c5958ecac7cee2b583967a2c4981d0f4a75c579` |
+| `eval.opik` | [comet-ml/opik](repository-catalog.md#comet-ml-opik) — source-screened-not-tested | `d7b92d3941ccff77c988f411db043db27adeebd8` |
+| `transport.hono` | [honojs/hono](repository-catalog.md#honojs-hono) — reviewed | `61f7c59e50244ab4d2dd83c151928cf7ea448510` |
+| `development.trail-code` | [trailhq/Trail-Code](repository-catalog.md#trailhq-trail-code) — source-reviewed-bounded | `e02b754c1d4e1de82b841522e2d8cae811702870` |
+| `catalog.agency-agents` | [msitarzewski/agency-agents](repository-catalog.md#msitarzewski-agency-agents) — source-screened-not-tested | `8ae6164602c95ca78828b148b9052460ee426885` |
+| `workflow.ai-employees` | [markfulton/ai-employees](repository-catalog.md#markfulton-ai-employees) — reviewed | `2cdd34e1f0d7bfa5b9dfadecf3d72b525fbb1577` |
+| `skill.apple-design` | [emilkowalski/skills](repository-catalog.md#emilkowalski-skills) — source-reviewed-bounded | `5206a950b715e0cabe7043ea0b2304332b91494e` |
+|  | [ellipsis-dev/blink](repository-catalog.md#ellipsis-dev-blink) — source-screened-not-tested | `a621ede75649303a933828c18c27ad800bb43ef0` |
+| `harness.ecc` | [affaan-m/ECC](repository-catalog.md#affaan-m-ecc) — reviewed | `d2ef2680594f9a17526a6e1a2e18b3d242c5d17b` |
+| `design.impeccable` | [pbakaus/impeccable](repository-catalog.md#pbakaus-impeccable) — source-reviewed-bounded | `613fbf88e0ef08709eaf238653285f430250c0ea` |
+|  | [ShuhanSun/jev-oas-sentinel](repository-catalog.md#shuhansun-jev-oas-sentinel) — source-screened-not-tested | `fae78bcd9fa84e17d4c26b93809f7ce23056828a` |
+| `content.open-spdd.workflows`, `tooling.open-spdd.cli` | [gszhangwei/open-spdd](repository-catalog.md#gszhangwei-open-spdd) — reviewed | `3991ffa2cd6670fdb6f329ca62799ccb96d0e7d9` |
+| `search.opengrok` | [oracle/opengrok](repository-catalog.md#oracle-opengrok) — source-reviewed-bounded | `5d55c5c8fdee11d0d6653649ada280da7736c2ed` |
+| `workflow.orca` | [stablyai/orca](repository-catalog.md#stablyai-orca) — source-screened-not-tested | `f10be535ca2a0641afe05821356d01144308884f` |
+| `eval.promptfoo` | [promptfoo/promptfoo](repository-catalog.md#promptfoo-promptfoo) — reviewed | `a19bed05b037b9df183b4a45dc936dade0c19b3d` |
+| `tool.rea`, `app.major-chatbot-interface-study` | [morluto/rea](repository-catalog.md#morluto-rea) — source-reviewed-bounded | `f20f05536e3cebff3f31a67954664c40d8c4c3dd` |
+| `tool.skillopt` | [microsoft/SkillOpt](repository-catalog.md#microsoft-skillopt) — source-screened-not-tested | `ccfdcdf7ab50456e2556200499f2bccf1e1b43b2` |
+| `infra.agent-substrate` | [agent-substrate/substrate](repository-catalog.md#agent-substrate-substrate) — reviewed | `94e0a26ac90151886a76410568aaac2664a54d90` |
+|  | [asgeirtj/system_prompts_leaks](repository-catalog.md#asgeirtj-system-prompts-leaks) — source-reviewed-bounded | `48f734ade1dfdb0690c887883c3a7574625a6804` |
+| `tools.monid` | [monid-ai/monid](repository-catalog.md#monid-ai-monid) — source-screened-not-tested | `09d54479142e36eff876383beacfbd37b33b5908` |
+| `browser.browser-harness` | [browser-use/browser-harness](repository-catalog.md#browser-use-browser-harness) — reviewed | `a7c4cb02a3f0cd83e09598d14a2ca65743791998` |
+| `workflow.langflow` | [langflow-ai/langflow](repository-catalog.md#langflow-ai-langflow) — source-reviewed-bounded | `60999cc9a7350e44dde3ef641baae864e10861f0` |
+| `research.firecrawl` | [firecrawl/firecrawl](repository-catalog.md#firecrawl-firecrawl) — source-screened-not-tested | `a0535ec3e53abd41b60e6a60aa57d3a3397fc792` |
+| `tools.mcptoon` | [activeing123/mcptoon](repository-catalog.md#activeing123-mcptoon) — reviewed | `7574a78924373de21ee7e516a40f8d9c59c6dbc4` |
+| `capability.agent-reach` | [Panniantong/Agent-Reach](repository-catalog.md#panniantong-agent-reach) — source-reviewed-bounded | `c70ae6da5d39bc90e09ad2ae0575ccc89f31e284` |
+| `browser.browser-use` | [browser-use/browser-use](repository-catalog.md#browser-use-browser-use) — source-screened-not-tested | `b49a68e4060acb226da8f784194fef301c53a6d7` |
+| `computer.cua` | [trycua/cua](repository-catalog.md#trycua-cua) — reviewed | `6285c481d2d867eb954a6e6c5531ba8a88182832` |
+| `mcp.github` | [github/github-mcp-server](repository-catalog.md#github-github-mcp-server) — source-reviewed-bounded | `99d6d6503a7b2a133e2f8a595d6d0ba24b4086d3` |
+| `browser.invisible-playwright` | [feder-cr/invisible_playwright](repository-catalog.md#feder-cr-invisible-playwright) — source-screened-not-tested | `a42d863e48cf5c4c430c1ab24d915cefafb1d382` |
+| `mcp.fetch`, `mcp.filesystem`, `mcp.git`, `mcp.sqlite` | [modelcontextprotocol/servers](repository-catalog.md#modelcontextprotocol-servers) — reviewed | `36380287ed3b15d115b55f546617d723072b1296` |
+| `workflow.n8n` | [n8n-io/n8n](repository-catalog.md#n8n-io-n8n) — source-reviewed-bounded | `41fdb9c2360bad4644f412e56e6694c0e16af7fc` |
+| `browser.obscura` | [h4ckf0r0day/obscura](repository-catalog.md#h4ckf0r0day-obscura) — source-screened-not-tested | `59276a3620aed0320879f60b9f049010d568088c` |
+| `mcp.playwright` | [microsoft/playwright-mcp](repository-catalog.md#microsoft-playwright-mcp) — reviewed | `404be8eb89abecff77a55152b6d843d140c78372` |
+| `tools.treg.superdesigndev` | [superdesigndev/treg](repository-catalog.md#superdesigndev-treg) — source-reviewed-bounded | `869e53ef5083a96080152b52d994904d31f488e8` |
+| `memory.agentmemory` | [rohitg00/agentmemory](repository-catalog.md#rohitg00-agentmemory) — source-screened-not-tested | `be8f01e697c6816392beb9c07136e5315bf5a7b4` |
+| `knowledge.understand-anything` | [Egonex-AI/Understand-Anything](repository-catalog.md#egonex-ai-understand-anything) — reviewed | `a6ea4024767df85ce4f99140d4f12ecfc5a81eb6` |
+| `inference.edge0` | [Edge0-AI/Edge0](repository-catalog.md#edge0-ai-edge0) — source-reviewed-bounded | `8a52b68b7777b2f3da849c0603bfddc564c0fb77` |
+| `inference.mesh-llm` | [Mesh-LLM/mesh-llm](repository-catalog.md#mesh-llm-mesh-llm) — source-screened-not-tested | `622a92b2a787b97f2d3f45c52046acea5f647511` |
+| `workspace.meldwork` | [Ryder-Sun/Meldwork](repository-catalog.md#ryder-sun-meldwork) — reviewed | `1ddf3fbdd76ef6e6b3baddfa6a460a72570aa7fd` |
+| `browser.lightpanda` | [lightpanda-io/browser](repository-catalog.md#lightpanda-io-browser) — source-reviewed-bounded | `8d41fa9ada989f8189cc68395e2775d903be0096` |
+| `workspace.orkas` | [Orkas-AI/Orkas](repository-catalog.md#orkas-ai-orkas) — source-screened-not-tested | `a3d9747284fca03f7ef92f336b8d901ba0ce199b` |
+| `desktop.agent-desktop` | [vercel-labs/agent-desktop](repository-catalog.md#vercel-labs-agent-desktop) — reviewed | `b43ac4f6e892ef608f8851428613c4009f0e84c7` |
+| `workflow.agent-lightning` | [microsoft/agent-lightning](repository-catalog.md#microsoft-agent-lightning) — source-reviewed-bounded | `bc3a9e80417d731744040df5d37117f9cc48005f` |
+| `memory.mempalace` | [MemPalace/mempalace](repository-catalog.md#mempalace-mempalace) — source-screened-not-tested | `927d467d72764ced1f2be900b95cbc7dae4b4581` |
+| `workspace.thinkrail` | [JetBrains/thinkrail](repository-catalog.md#jetbrains-thinkrail) — reviewed | `1aba63011e81a5a05d705aacd6965f17a34dd576` |
+| `skill.hallmark` | [Nutlope/hallmark](repository-catalog.md#nutlope-hallmark) — source-reviewed-bounded | `407fa689f4a276f2fd389208d271d0fef08f5058` |
+| `infra.cloudflare-computer` | [cloudflare/computer](repository-catalog.md#cloudflare-computer) — source-screened-not-tested | `9f70253dad2faef23739633e6760d1ce81f9f7dd` |
+| `tool.reverse-api-engineer` | [kalil0321/reverse-api-engineer](repository-catalog.md#kalil0321-reverse-api-engineer) — reviewed | `276e37667de5e290487c97c351c09ea53b11b468` |
+| `coordination.imbo` | [Bearisbug/imbo](repository-catalog.md#bearisbug-imbo) — source-reviewed-bounded | `76c5b5f768bec60b5bf250bff0b84c3a72b236df` |
+| `device.phoneuse` | [lxe/phoneuse](repository-catalog.md#lxe-phoneuse) — source-screened-not-tested | `1c0ca0c98ac401550b6e695b3bbd8d1cc63db472` |
