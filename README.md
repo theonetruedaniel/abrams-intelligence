@@ -18,7 +18,7 @@ An exploratory browser demo provides a local interface for saved conversations a
 
 ## Explore the research
 
-The [research catalog](docs/repository-catalog.md) maps **198 upstream GitHub repositories** to roles in a local-first assistant. Each entry records its purpose, sources, architecture fit, evaluation status and next gate. Use the [interactive catalog](https://theonetruedaniel.github.io/architecture/#repository-catalog) to explore the collection, or read the [comparison method](docs/evaluation-method.md).
+The [research catalog](docs/repository-catalog.md) maps **199 upstream GitHub repositories** to roles in a local-first assistant. Each entry records its purpose, sources, architecture fit, evaluation status and next gate. Use the [interactive catalog](https://theonetruedaniel.github.io/architecture/#repository-catalog) to explore the collection, or read the [comparison method](docs/evaluation-method.md).
 
 Comparisons are organized by role: agent runtimes against runtimes, retrieval approaches against retrieval approaches, and desktop shells against shells. Most candidates have source research or planned evaluations; they have not been benchmarked or adopted. The [results and evidence](docs/results-and-evidence.md) page separates measured findings from unrun comparisons. The catalog and offline dispatcher are available now while the full platform remains in development.
 
@@ -64,7 +64,7 @@ October 4 verification for this published source package: **227 tests passed, 23
 
 1. Open the [architecture explorer](https://theonetruedaniel.github.io/architecture/) to inspect the intended control flow. It uses mock components and fictional data.
 2. Follow the [research task walkthrough](docs/research-workflow-walkthrough.md) to see scope, sources, Stop and ambiguous-outcome handling as a design scenario.
-3. Browse the [198-repository catalog](docs/repository-catalog.md) for verified links, purposes, architecture fit and current evaluation states. The [full register](docs/candidate-research.md) accounts for 301 entries, including routes, controls and prerequisites.
+3. Browse the [199-repository catalog](docs/repository-catalog.md) for verified links, purposes, architecture fit and current evaluation states. The [full register](docs/candidate-research.md) accounts for 302 entries, including routes, controls and prerequisites.
 4. Inspect the [evaluation method](docs/evaluation-method.md) and [results](docs/results-and-evidence.md) to separate measured evidence from acceptance plans.
 
 The repository now contains runnable development tooling alongside architecture documents and illustrative JSON. It does not yet contain an installable personal-assistant product. The architecture explorer remains a separately hosted simulation.
@@ -93,7 +93,7 @@ flowchart TB
 
 ## What the research currently says
 
-The register accounts for 150 original discovery entries and 151 later proposed entries, including internal controls and prerequisites. Most external candidates have source research or plans, not benchmark results. No production runtime/model pairing has been adopted.
+The register accounts for 150 original discovery entries and 152 later proposed entries, including internal controls and prerequisites. Most external candidates have source research or plans, not benchmark results. No production runtime/model pairing has been adopted.
 
 One measured trade-off is the Laya development selector: its speed did not compensate for failed quality and memory thresholds. The existing deterministic rules remain the fallback. The published dispatcher tests demonstrate offline routing and lifecycle invariants with synthetic transports. They do not establish model quality, live editing or monetary savings.
 

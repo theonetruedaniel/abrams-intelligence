@@ -6,7 +6,7 @@ November 9, 2026 currentness audit: all 299 registered IDs reconciled and all 19
 
 Model/route observations on November 9: Qwen3.8 has a newer upstream revision; Laya current metadata differs from the historical experiment scope, whose checkpoint and results are preserved. Mercury 3 remains documented, without an API availability test. The official Kimi model list marks hosted kimi-k2.5 deprecated; K3 stays a separate intake-required candidate. Moonshot documentation redirects to platform.kimi.ai. The XDA context-placement source could not be accessed; its supporting Anthropic sources resolve. No new token-saving measurement is claimed.
 
-Updated November 9, 2026. This is a deduplicated map of **198 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **301 entries** (150 frozen catalog records plus 151 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated November 10, 2026. This is a deduplicated map of **199 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **302 entries** (150 frozen catalog records plus 152 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -28,7 +28,7 @@ Start with the capability you need. These projects span different roles; they ar
 - **Selected advisory content:** one pinned design skill is selected; its repository is not adopted as a runtime.
 - **Adopted integration:** an exact accepted product integration. None is claimed in this catalog.
 
-Counts: 172 shortlisted/planned, 24 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
+Counts: 172 shortlisted/planned, 25 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
 
 Coverage is the union of GitHub identities explicitly linked in the September 4 frozen catalog, dated intake overlays through November 8, and the collected research references. Six September 22 Jev references remain research-only without registration records; Foreman is now registered under Q-56. Documentation-only technologies, model/API routes and local controls remain in the full register. Transitive dependency trees and every project in an upstream directory are not asserted to be evaluated candidates.
 
@@ -2594,6 +2594,28 @@ Sources: [source 1](https://github.com/meta/astryx/blob/c0327e060d77676be9754e10
 
 
 ## Skills and development
+
+<a id="reacher-z-awesome-rea"></a>
+### Awesome REA
+
+[reacher-z/Awesome-REA](https://github.com/reacher-z/Awesome-REA) · **Collected reference**
+
+- **Purpose:** Source-backed reverse-engineering discovery/reference catalog of tools, reconstruction cases, papers and a separate unreviewed repository index across web/app/binary/firmware/protocol domains.
+- **Architecture fit:** H/J; relevant G/I / Q-148: Discover methods, primary sources and controlled cases for REA Q-38, authorized major-chatbot interface studies Q-118 and bake-off integration research. Compare official APIs/docs/source, existing REA references and a narrow original evidence index; not an assistant runtime or model.
+- **Current status:** Collected reference; pinned catalog/schema and representative source researched. MIT original content/code; linked projects and target assets have separate rights. Curated source review and unreviewed automated discovery remain distinct; no bundled runtime, integration or safety qualification.
+- **Next gate:** Use upstream read-only reference, eligible licensed metadata/evidence patterns, a minimal original task-specific index or defer. Select and duplicate-check each relevant source individually; pin current identity/artifact/rights and exact authorized target, preserve evidence dates and review levels, inspect untrusted data/scripts before use, qualify host/egress/credentials/Stop/resources and full provider/hosting/maintenance costs where applicable. Protect benchmark holdouts and retain Core authority; no bulk import, installation, account access or circumvention.
+- **Evidence:** Pinned README/LICENSE/security/data-format/scan-method documentation and representative index, scope and immutable-source recheck code; no repository scripts or linked tools executed, no scanning/import/target capture or benchmark. Dates: 2026-11-10.
+- **Registered records:** `reference.awesome-rea`.
+- **Recorded revision:** `0e699079b73d4761b6d2a83770cb9e8a02d803e9`.
+
+- A curated collection and generated static reference site, not the separate morluto/rea CLI/MCP implementation and not a qualified tool bundle. One collection entry is added; linked repositories are not bulk-registered or admitted.
+- The catalog separates source-reviewed curated resources/cases/papers from automated unreviewed README discovery scans. Its security policy explicitly says source-reviewed does not mean installed, tested, security-reviewed or safe to run.
+- Data schema retains source evidence, review dates, platform/input/license requirements and REA relationship labels. Source-scope code separates scope decisions from captured bytes; the review helper rechecks numeric repository identity and immutable blob byte/hash equality, failing on mismatch or unconfirmed public identity.
+- Original descriptions/code have MIT rights; linked code, model assets, rebuilt interfaces, papers and original targets retain independent terms. A case study or decompilation does not establish clean-room rights or permission to bypass access controls.
+- Useful as a discovery and evidence-method reference for authorized chatbot/interface studies and bake-off candidate integration. Prefer official APIs/source and bounded observation; primary-source review, protected test cases and target authorization remain separate. No scripts, crawlers, linked tools, downloads of executable artifacts, target sessions or benchmarks were run.
+
+Sources: [source 1](https://github.com/reacher-z/Awesome-REA/blob/0e699079b73d4761b6d2a83770cb9e8a02d803e9/README.md); [source 2](https://github.com/reacher-z/Awesome-REA/blob/0e699079b73d4761b6d2a83770cb9e8a02d803e9/LICENSE); [source 3](https://github.com/reacher-z/Awesome-REA/blob/0e699079b73d4761b6d2a83770cb9e8a02d803e9/SECURITY.md); [source 4](https://github.com/reacher-z/Awesome-REA/blob/0e699079b73d4761b6d2a83770cb9e8a02d803e9/data/README.md); [source 5](https://github.com/reacher-z/Awesome-REA/blob/0e699079b73d4761b6d2a83770cb9e8a02d803e9/docs/source-scan.md); [source 6](https://github.com/reacher-z/Awesome-REA/blob/0e699079b73d4761b6d2a83770cb9e8a02d803e9/scripts/source_scope.py); [source 7](https://github.com/reacher-z/Awesome-REA/blob/0e699079b73d4761b6d2a83770cb9e8a02d803e9/scripts/source_scope_review.py); [source 8](https://github.com/reacher-z/Awesome-REA/blob/0e699079b73d4761b6d2a83770cb9e8a02d803e9/scripts/build_repository_index.py).
+
 
 <a id="google-elephant-goldfish-model"></a>
 ### Elephant-Goldfish Model (EGM)
