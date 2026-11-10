@@ -6,7 +6,7 @@ November 9, 2026 currentness audit: all 299 registered IDs reconciled and all 19
 
 Model/route observations on November 9: Qwen3.8 has a newer upstream revision; Laya current metadata differs from the historical experiment scope, whose checkpoint and results are preserved. Mercury 3 remains documented, without an API availability test. The official Kimi model list marks hosted kimi-k2.5 deprecated; K3 stays a separate intake-required candidate. Moonshot documentation redirects to platform.kimi.ai. The XDA context-placement source could not be accessed; its supporting Anthropic sources resolve. No new token-saving measurement is claimed.
 
-Updated November 10, 2026. This is a deduplicated map of **199 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **302 entries** (150 frozen catalog records plus 152 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated November 10, 2026. This is a deduplicated map of **200 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **303 entries** (150 frozen catalog records plus 153 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -28,7 +28,7 @@ Start with the capability you need. These projects span different roles; they ar
 - **Selected advisory content:** one pinned design skill is selected; its repository is not adopted as a runtime.
 - **Adopted integration:** an exact accepted product integration. None is claimed in this catalog.
 
-Counts: 172 shortlisted/planned, 25 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
+Counts: 173 shortlisted/planned, 25 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
 
 Coverage is the union of GitHub identities explicitly linked in the September 4 frozen catalog, dated intake overlays through November 8, and the collected research references. Six September 22 Jev references remain research-only without registration records; Foreman is now registered under Q-56. Documentation-only technologies, model/API routes and local controls remain in the full register. Transitive dependency trees and every project in an upstream directory are not asserted to be evaluated candidates.
 
@@ -1120,6 +1120,32 @@ Free Claude Code, LiteRT-LM, Open Generative AI, DeepSeek Harness, MCPToon, Hono
 
 
 ## Devices and access
+
+<a id="josssphzhou-poki"></a>
+### Poki
+
+[JosssphZhou/poki](https://github.com/JosssphZhou/poki) · **Shortlisted / planned**
+
+- **Purpose:** Physical-iPhone and iOS Simulator observation/action through a native bridge and MCP daemon, with separate iPhone app/setup utility, optional standalone agent and messaging channels.
+- **Architecture fit:** G/H/I/J / Q-149: Broad personal-assistant mobile tasks versus PhoneUse Q-145, Mobile MCP, go-ios/WebDriverAgent, qualified direct app APIs and existing device controls. Real iPhone, simulator, on-phone app, setup utility and channel/agent variants require separate comparisons.
+- **Current status:** Source researched; planned and untested. AGPL-3.0-only original MCP code, package0.1.1/Node24+; dependency and app/artifact rights separate. Native MCP targets macOS15+/full Xcode; Windows setup-app support does not establish native Windows MCP eligibility. Real-device findings remain limited upstream evidence; no Abrams device trial.
+- **Next gate:** Compare upstream, eligible licensed observation/bridge components, minimal original Core device adapter and defer. Pin exact app/runner/native bridge/model and dependency artifacts; qualify AGPL/third-party distribution and provider terms, macOS/Windows/setup/community-port separation, reset-device iOS/language/orientation/IME matrix, signing/pairing/VPN/DeveloperMode recovery, exact device/action grants and approvals, screenshot/passcode/record/model/channel recipients and storage, auth/TLS/replay, stale-frame/action receipts, all-child Stop/takeover/ambiguous-effect recovery, resources and total lifecycle cost. No Apple login, signing, install, pairing, real screen access or actions under this intake.
+- **Evidence:** Pinned README/license/manifests, notices, setup/configuration/verification/agent documentation and representative implementation with independent read-only source review; no install/build, Apple credentials, signing/pairing, phone or screen access, model/provider calls or benchmark. Dates: 2026-11-10.
+- **Registered records:** `device.poki`.
+- **Recorded revision:** `0b986264db2ba036599e44fb2a87b6e65f302178`.
+
+- AGPL-3.0-only root metadata covers original Poki MCP contributions. Notices separately pin idevice/MIT, idb references, WebDriverAgent and optional downloaded BlueBubbles/native/codec assets; repository source pin alone does not admit rolling release binaries or all distribution terms.
+- Native MCP requires macOS15+, full Xcode, Rust/Node24+/ffmpeg for source setup; a prebuilt arm64 package removes only some build prerequisites. The iPhone app/setup route has different macOS14+/iOS18+/Apple signing/VPN requirements and a Windows setup utility. Community Linux/Windows MCP ports remain separate unqualified repositories.
+- Physical-phone verification is upstream single-setup evidence, limited to Chinese UI and portrait; sent:true means a write to a connection without device acknowledgement. screen_changed and a screenshot are evidence to inspect, not proof the intended effect occurred. Simulator timings and fixture tests do not qualify the real phone.
+- HTTP bridge defaults to loopback, random per-start bearer token and Host validation; remote binds and fixed tokens are separate deployment surfaces. POKI_MCP_APPROVAL_MODE=allow preapproves listed sensitive operations; session queues/device locks are coordination, not Core action authorization.
+- Standalone agent currently uses OpenAI/pi credential routes and defaults GPT-6.1 Terra low with Fast requested; screen data goes to the configured model. Its step clock can reset on progress and is not a whole-task deadline; route learning and task records persist under agent/.runtime. No local-model or subscription entitlement is established by this source review.
+- Experimental typing panel is explicitly not yet device-validated. Installer dry-run downloads and starts a real setup helper, and its records command exports personal conversations/logs: neither is a harmless offline/source-only check. Apple accounts, passcodes, signing and phone data need separately scoped owner handling.
+- MCP human approval covers seven named tools, not ordinary taps/typing or an in-app deletion confirmed by tapping. All tools are registered while the profile filters tools/list; hidden tools are not an authorization allowlist. iPhone-app approval heuristics are a separate surface and cannot be credited to MCP.
+- Stop is transport-specific: stdio forwards abort/session cleanup, but already-dispatched input cannot be undone; native iOS Core ignores notifications/cancelled, and the app loop stops after the current step. Telegram/iMessage require exact sender configuration; literal /stop interrupts while other mid-task text steers. No global all-device/effect/billing Stop is proven.
+- Standalone agent defaults serviceTier=priority and supports OpenAI API-key/ChatGPT routes only; advertised iPhone-app provider names include partially wired options. Reply-photo opt-in is not model-image-egress consent. App Keychain handling and host agent credential/session stores require separate exact-route privacy and entitlement checks.
+
+Sources: [source 1](https://github.com/JosssphZhou/poki/blob/0b986264db2ba036599e44fb2a87b6e65f302178/README.md); [source 2](https://github.com/JosssphZhou/poki/blob/0b986264db2ba036599e44fb2a87b6e65f302178/package.json); [source 3](https://github.com/JosssphZhou/poki/blob/0b986264db2ba036599e44fb2a87b6e65f302178/THIRD_PARTY_NOTICES.md); [source 4](https://github.com/JosssphZhou/poki/blob/0b986264db2ba036599e44fb2a87b6e65f302178/docs/verification.md); [source 5](https://github.com/JosssphZhou/poki/blob/0b986264db2ba036599e44fb2a87b6e65f302178/docs/configuration.md); [source 6](https://github.com/JosssphZhou/poki/blob/0b986264db2ba036599e44fb2a87b6e65f302178/agent/README.md); [source 7](https://github.com/JosssphZhou/poki/blob/0b986264db2ba036599e44fb2a87b6e65f302178/bin/install-iphone.mjs); [source 8](https://github.com/JosssphZhou/poki/blob/0b986264db2ba036599e44fb2a87b6e65f302178/src/device.mjs#L496); [source 9](https://github.com/JosssphZhou/poki/blob/0b986264db2ba036599e44fb2a87b6e65f302178/src/tools.mjs#L82); [source 10](https://github.com/JosssphZhou/poki/blob/0b986264db2ba036599e44fb2a87b6e65f302178/src/coordination.mjs#L52); [source 11](https://github.com/JosssphZhou/poki/blob/0b986264db2ba036599e44fb2a87b6e65f302178/agent/model-config.mjs#L1); [source 12](https://github.com/JosssphZhou/poki/blob/0b986264db2ba036599e44fb2a87b6e65f302178/native/ios/PokiCore/Sources/PokiCore/Core.swift#L456); [source 13](https://github.com/JosssphZhou/poki/blob/0b986264db2ba036599e44fb2a87b6e65f302178/native/ios-app/Poki/Chat/PiLoop.swift#L85); [source 14](https://github.com/JosssphZhou/poki/blob/0b986264db2ba036599e44fb2a87b6e65f302178/native/ios/PokiCore/Sources/PokiCore/Approvals.swift#L3).
+
 
 - **November 9 source assessment:** `source-screened-not-tested` at `4547a81b88ac59a902bad7b0006137c7d4147aeb`.
   - Context sieve preserves hidden material and restoration keys; Jev and Haiku adapter differ in calibration and recipient/cost, so cannot inherit one another qualification.
