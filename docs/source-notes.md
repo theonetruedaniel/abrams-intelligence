@@ -47,4 +47,12 @@ No credentials, private local paths, host identifiers, user datasets or employer
 
 ## October 15 status reconciliation
 
-The current summary distinguishes partial local AI-assisted Core/client/SQLite implementation and scoped tests from the published dispatcher source. Local browser/transport observations do not establish a passing end-to-end real-browser result. Full integration and product acceptance remain incomplete. Older dated checkpoints below are historical; see [current progress](progress.md). This documentation update does not publish the local product implementation or private operational records.
+The current summary distinguishes partial local AI-assisted Core/client/SQLite implementation and scoped tests from the published dispatcher source. Local browser/transport observations do not establish a passing end-to-end real-browser result. Full integration and product acceptance remain incomplete. Older dated checkpoints are historical; see [current progress](progress.md). This documentation update does not publish the local product implementation or private operational records.
+
+## November 10 status reconciliation
+
+The current status pages were reconciled with the public November 9 recovery checkpoint, the published catalog audit and additions through November 10, and the working project's November 10 pre-restart source-only RC07 checkpoint. The earlier six recovery results are followed by independent scoped passes for O19/O20/O34/O35/O38/O40. Only the two RC07 fault cases remain from the earlier eight-open oracle set, with other Phase 2 obligations still open. The [current correctness summary](evidence/phase2/2026-11-10-correctness-checkpoint.md) preserves each result's scope. The November 10 packet checks and staged corrections do not establish a confirmed native build, executed fault case or RC07 pass.
+
+The November 9 audit covered 299 registered IDs and 196 GitHub remote HEADs at that time. Later additions bring the current register to 301 entries and the GitHub catalog to 198 repositories. Source assessment, component testing, product acceptance and adoption remain distinct.
+
+This refresh publishes concise status summaries only. It does not publish local implementation source, private paths, host/process identities, raw operational records, credentials, user datasets or employer material. The exploratory October 27 browser demo remains an off-plan experiment rather than the planned platform prototype. Historical measurements retain their original dates and scope; no new candidate experiment was run for this documentation refresh.

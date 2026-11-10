@@ -22,11 +22,11 @@ The [research catalog](docs/repository-catalog.md) maps **198 upstream GitHub re
 
 Comparisons are organized by role: agent runtimes against runtimes, retrieval approaches against retrieval approaches, and desktop shells against shells. Most candidates have source research or planned evaluations; they have not been benchmarked or adopted. The [results and evidence](docs/results-and-evidence.md) page separates measured findings from unrun comparisons. The catalog and offline dispatcher are available now while the full platform remains in development.
 
-## Current progress — October 15, 2026 (UTC)
+## Current progress: November 10, 2026 (UTC)
 
 Abrams Intelligence is a general-purpose, local-first personal intelligence platform in active, AI-assisted development. Local development includes partial shared in-process Core, client and SQLite-backed storage implementation with scoped tests. This work is not yet published as a complete product in this repository. Full integration, product acceptance and Phase 2 completion remain unfinished.
 
-Recent isolated browser/transport checks cover synthetic component behavior. A real-browser smoke attempt has not established a passing end-to-end integration. See the [progress ledger](docs/progress.md) for the current scope and remaining work.
+The November 9 SQLite recovery checkpoint is now followed by six further independently reviewed, scoped passes: O19, O20, O34, O35, O38 and O40. They cover real browser reload/reconstruction, normal same-Store Core replacement, literal hostile-text rendering, bounded terminal replay and SQLite capacity handling. Of the eight oracle rows open at the earlier checkpoint, only the two RC07 native partial-write/uncertain-flush cases remain. November 10 work has progressed to native fault-injection preparation. A confirmed native build and both RC07 acceptance results remain outstanding. See the [progress ledger](docs/progress.md), [latest correctness evidence and limits](docs/evidence/phase2/2026-11-10-correctness-checkpoint.md), and [dated update history](CHANGELOG.md).
 
 ### Published tooling and historical evidence
 
@@ -36,11 +36,11 @@ The offline developer dispatcher is now published in this repository. [PR #1](ht
 | --- | --- | --- |
 | Architecture | Preserved 19-document baseline, requirements, decision records and comparison criteria | Design does not establish implemented behavior |
 | Host/build preparation | Scoped attended synthetic readiness; native-tool and locked-source intake evidence | Broader workloads and current build admission remain gated |
-| Product Core and client | Partial local shared in-process implementation and SQLite-backed storage with scoped tests | Local unpublished work; full integration and product acceptance incomplete; no production Core selected |
+| Product Core and client | Partial local Core/client/SQLite implementation; separately reviewed recovery, browser and capacity results | Local implementation remains unpublished; two RC07 native fault cases plus other Phase 2 obligations remain open; no whole-product acceptance |
 | Developer dispatcher | Published source, tests and a five-scenario offline demo; 250 default tests discovered, 227 passed and 23 skipped | Synthetic checks do not admit live editing or establish model quality |
 | Synthetic write-runner update | Local reviewed candidate: 238 passed, 23 skipped; nine controller probes and 11 focused tests passed | Separate unpublished update; synthetic receipts do not establish live containment |
 | Laya development selector | September 29 frozen-corpus/resource experiment | Exact evaluated default rejected: 45% ordinary acceptable proposals versus 90% required, plus memory failure |
-| Public demonstrations | Working architecture explorer and synthetic walkthroughs | Simulated behavior; no live integration or executed product recovery proof |
+| Public demonstrations | Working architecture explorer, synthetic walkthroughs and the separate exploratory browser demo | These demonstrations do not substitute for the scoped local evidence or full product acceptance |
 
 **Phase 2 implementation and verification are in progress**; the product is not released. The scoped Phase 1 disposition does not imply unrestricted host readiness. The R3 specification-input freeze is recorded. Outstanding integration, review and acceptance requirements still precede product candidate comparison. [Roadmap and gates](docs/roadmap.md) · [Results, measurements and exclusions](docs/results-and-evidence.md).
 
@@ -99,7 +99,7 @@ One measured trade-off is the Laya development selector: its speed did not compe
 
 ## Next work and gates
 
-Current-build direct-tool mediation and exact live qualification remain unresolved for the developer dispatcher. Further local checks must preserve that boundary; passing synthetic tests cannot enable live editing. The product plan still requires protocol/oracle review and contract freeze, executable/native review, current resource admission and containment evidence before the planned shell comparisons. No Tauri/PWA winner or production runtime/model pairing has been selected. [Roadmap and gates](docs/roadmap.md) · [Desktop-shell comparison](docs/desktop-shell-decision.md)
+Current-build direct-tool mediation and exact live qualification remain unresolved for the developer dispatcher. Further local checks must preserve that boundary; passing synthetic tests cannot enable live editing. The product plan still requires the remaining correctness/oracle evidence, native fault-injection and build qualification, current resource admission, and applicable containment and review gates before the planned shell and runtime comparisons. No Tauri/PWA winner or production runtime/model pairing has been selected. [Roadmap and gates](docs/roadmap.md) · [Desktop-shell comparison](docs/desktop-shell-decision.md)
 
 ## Engineering documents
 

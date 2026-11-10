@@ -1,6 +1,6 @@
 # Progress and next steps
 
-Updated October 15, 2026. This page distinguishes published code, locally verified
+Updated November 10, 2026 (UTC). This page distinguishes published code, locally verified
 work, reviewed specifications and unrun product acceptance. It is an evidence
 snapshot, not a live operational status feed.
 
@@ -8,16 +8,18 @@ snapshot, not a live operational status feed.
 
 Abrams Intelligence is a general-purpose, local-first personal intelligence platform in active, AI-assisted development. Local development includes partial shared in-process Core, client and SQLite-backed storage implementation with scoped tests. This work is not yet published as a complete product in this repository. Full integration, product acceptance and Phase 2 completion remain unfinished.
 
-Isolated browser/transport checks provide synthetic component evidence. They do not establish a passing end-to-end real-browser integration. The public dispatcher test snapshots below remain separate historical evidence, not totals for this newer local work.
+The earlier November 9 recovery checkpoint recorded separate scoped passes for O31, O39, RC06, RC04, RC05 and O32. Since that checkpoint, six of its eight open rows have independently accepted, scoped results: O19, O20, O34, O35, O38 and O40. Only the two RC07 native partial-write/uncertain-flush cases remain from that oracle set. See the [latest correctness checkpoint](evidence/phase2/2026-11-10-correctness-checkpoint.md) for what each result proves. Separate shell, packaging, accessibility, capability-denial and runtime/Core-placement obligations also remain.
+
+The November 10 pre-restart checkpoint records source-only preparation for RC07, described below. It is not a successful native build or fault execution. The public dispatcher test snapshots remain separate historical evidence, not totals for this newer local work.
 
 ## Progress in plan order
 
 | Plan stage | Completed evidence | Remaining work |
 | --- | --- | --- |
-| A: architecture and evaluation foundation | Preserved 19-document baseline; approved amendment; requirement and capability maps; 150-record frozen discovery catalog and source-coverage obligations. Later intake adds 35 proposed records. | New research does not qualify or adopt a candidate. |
+| A: architecture and evaluation foundation | Preserved 19-document baseline; approved amendment; requirement and capability maps; 150-record frozen discovery catalog and source-coverage obligations. Later intake brings the current [full register](candidate-research.md) to 301 entries, including controls and prerequisites, and the [GitHub catalog](repository-catalog.md) to 198 repositories. | New research does not qualify or adopt a candidate. |
 | B: scoped host readiness | Later readiness evidence admits attended, signed-in, AC-powered synthetic development within its fixed resource boundary. Native C/Rust smoke and locked source acquisition are recorded. | Historical readiness is not current headroom or unrestricted workload admission. |
 | C: contracts, shared reference and comparisons | October 1 R3 specification inputs have a recorded freeze after two scoped independent reviews. Historical fixture expectations and corrections are retained. | Partial local shared-reference/Core/client implementation and scoped tests exist; full integration and runtime/product acceptance remain incomplete. Native/build/containment prerequisites still apply before equivalent Tauri/PWA and runtime comparisons. |
-| D: authority and durable data foundation | Architecture and acceptance criteria are specified; partial local SQLite-backed storage is implemented. | Complete authority/data integration and acceptance remain unfinished; storage implementation alone does not close D. |
+| D: authority and durable data foundation | Partial local SQLite-backed Store implementation and six separately reviewed recovery-row results under controlled process crashes. | Complete authority/data integration, the remaining fault cases and broader acceptance remain unfinished; these scoped results do not close D. |
 | E onward: useful capabilities and release | Capability prerequisites and comparison questions are registered. | Exact model routes, real runtime/model pairings, optional integrations and release/recovery evidence remain separately gated. |
 
 The older baseline ledger and later readiness worktree describe different dated
@@ -68,23 +70,23 @@ host-memory guard. Termination was observed; no new quality score or memory
 qualification resulted. The historical score remains separate from that retry.
 
 No completed product Tauri/PWA, runtime, Core-placement or memory bake-off is
-claimed. The [83-repository catalog](repository-catalog.md) separates measured
+claimed. The [198-repository catalog](repository-catalog.md) separates measured
 work from source screening, planned comparisons and collected references.
 
 ## Next unfinished step
 
-Continue the existing plan from the partial local implementation. Complete and verify the remaining Core/client/storage integration, then establish the applicable product acceptance evidence. Scoped component tests do not close the full product gates.
+Continue Phase 2 correctness from the partial local implementation. Complete the two remaining RC07 native partial-write/uncertain-flush cases, while retaining the separate non-oracle obligations. Native-source preparation must produce its own admitted fault and recovery evidence before either RC07 case can close. Scoped component results do not close the full product gates.
 
 Equivalent Tauri/PWA comparisons, runtime qualification and the production Core decision remain separate unfinished work. Preserve the existing review, resource and execution prerequisites for each comparison. No shell winner or production runtime/model pairing is claimed.
 
 This page summarizes local development status without publishing private operational records or the unpublished product implementation.
 
 
-## November 9 scoped recovery checkpoint
+## Earlier November 9 scoped recovery checkpoint
 
-Six previously open correctness rows now have separate real Store process-crash results: O31, O39, RC06, RC04, RC05 and O32. Each has independent saved-evidence review. The latest O32 result includes eight actual noncommitting WAL frames after a committed prefix and recovery of that prefix without invented cancel success. See [the scoped results and limits](evidence/phase2/2026-11-09-recovery-checkpoint.md).
+At this earlier checkpoint, six previously open correctness rows had separate real Store process-crash results: O31, O39, RC06, RC04, RC05 and O32. Each has independent saved-evidence review. The latest O32 result includes eight actual noncommitting WAL frames after a committed prefix and recovery of that prefix without invented cancel success. See [the scoped results and limits](evidence/phase2/2026-11-09-recovery-checkpoint.md).
 
-These continuous-owner/OS results do not prove power-loss or owner-restart durability, partial-write or uncertain-flush behavior, or browser safety. Eight oracle rows remain open: O19/O20/O34/O35/O38/O40 and the two RC07 fault cases. Separate shell, packaging, accessibility, capability-denial and runtime/Core-placement obligations remain; historical 51/65 is not replaced with a new aggregate score. Extensive performance qualification remains visibly deferred.
+These continuous-owner/OS results do not prove power-loss or owner-restart durability, partial-write or uncertain-flush behavior, or browser safety. At that checkpoint, eight oracle rows remained open: O19/O20/O34/O35/O38/O40 and the two RC07 fault cases. The subsequent six scoped passes are recorded in the November 10 checkpoint; this historical paragraph is not the current open-row count. Separate shell, packaging, accessibility, capability-denial and runtime/Core-placement obligations remain; historical 51/65 is not replaced with a new aggregate score. Extensive performance qualification remains visibly deferred.
 
 The next reviewed browser startup-context submission stopped before reservation, Node or Chrome launch because available RAM was below its unchanged 2 GiB requirement. No new startup compatibility or O34 result followed, and earlier uncertain attempts remain preserved. Current work follows Phase 2 correctness, Phase 3 runtime comparison and provisional Phase 4 connections; model/media candidates are later evaluations.
 
@@ -92,8 +94,14 @@ The next reviewed browser startup-context submission stopped before reservation,
 Later browser observation: after a recorded RAM improvement, the still-unconsumed plan admitted its first actual startup workload through a new supported tool review. Chrome returned a valid discovery reply, but four targets violated the probe's singleton-target assumption. The run remained uncertain: no normal close, complete lifetime coverage or checked release was established. Its owner/evidence are retained. This is a concrete measurement/isolation issue to resolve, not O34 acceptance or a proven explanation of the earlier DLL failure.
 
 
-## Reviewed owned-page method; workload not started
+## Earlier November 9 owned-page checkpoint; workload not started
 
 The next O34 package now integrates the actual reference memory Core, production document/CSP/startup, loopback transport, inherited CDP pipe and literal DOM evidence. Its reviewed method selects one owned page with an explicit bounded internal-UI census, rejects background/worker/unknown targets, waits for the correlated navigation commit, and requires normal selected roots plus a completely empty contained job before release. It does not claim every historical child image or global browser/network silence.
 
-Source verification passed 33 Node cases, nine runtime-wrapper memory compositions, seven HTTP failure-observer memory cases, strict TypeScript and complete pin checks; the helper compiled and passed native-free rule checks. The supported execution review allowed submission, but action-time RAM was below the unchanged 2 GiB requirement. No reservation, listener, Node, Chrome or oracle workload started. The unstarted host exited normally after checked state; old uncertain attempts remain preserved. O34 and the eight remaining oracle rows are still open. RC07 separately needs a real native SQLite write/sync interception mechanism; JavaScript hooks cannot establish those fault cases.
+Source verification passed 33 Node cases, nine runtime-wrapper memory compositions, seven HTTP failure-observer memory cases, strict TypeScript and complete pin checks; the helper compiled and passed native-free rule checks. The supported execution review allowed submission, but action-time RAM was below the unchanged 2 GiB requirement. No reservation, listener, Node, Chrome or oracle workload started. The unstarted host exited normally after checked state; old uncertain attempts remain preserved. O34 and the eight remaining oracle rows were still open at this earlier checkpoint; the later acceptance results are summarized above. RC07 separately needs a real native SQLite write/sync interception mechanism; JavaScript hooks cannot establish those fault cases.
+
+## November 10 pre-restart RC07 source-only checkpoint
+
+An inactive successor packet was prepared for the native SQLite write/sync fault mechanism. Source review accepted a narrowly scoped x64 ICU build-configuration correction, conditional on checking the regenerated command. A separate Store arm-uncertainty correction and three regression cases were staged; those regressions and the correction review were still pending at this checkpoint.
+
+Both preparation-script sources parsed and all eight packet hashes verified. These checks cover the source packet only. No successor extraction, regeneration, build or native fault execution was performed by that checkpoint. The earlier native build outcome remains unconfirmed. No binary qualification or RC07 pass is claimed. Private process identities, file paths, operational records and the unpublished implementation are not included here.

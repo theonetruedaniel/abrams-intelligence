@@ -1,14 +1,14 @@
 # Roadmap and current gates
 
-Updated October 15, 2026 from dated working-project dispositions. This is a capability sequence, not a promised release schedule. The old September 14/15 pending-readiness summaries are historical checkpoints.
+Updated November 10, 2026 (UTC) from dated working-project dispositions and the published recovery checkpoint. This is a capability sequence, not a promised release schedule. The old September 14/15 pending-readiness summaries are historical checkpoints.
 
 ## Current position
 
-Phase 0 architecture/discovery foundations are complete. Phase 1 is complete only for its September 20/21 **attended, synthetic-only, retained-16-GB scope**; the original heavy workload remains unsupported. Phase 2 implementation and verification are in progress. Partial local Core/client/SQLite implementation has scoped tests; full integration and product acceptance are incomplete. **No completed Tauri/PWA comparison or Phase 2 completion is claimed.** See the [current progress ledger](progress.md).
+Phase 0 architecture/discovery foundations are complete. Phase 1 is complete only for its September 20/21 **attended, synthetic-only, retained-16-GB scope**; the original heavy workload remains unsupported. Phase 2 implementation and verification are in progress. Partial local Core/client/SQLite implementation has scoped tests, including the earlier process-crash results and six further independently reviewed results for O19/O20/O34/O35/O38/O40. Two RC07 native fault cases and the separate non-oracle obligations remain open; full integration and product acceptance are incomplete. **No completed Tauri/PWA comparison or Phase 2 completion is claimed.** See the [current progress ledger](progress.md).
 
 The September 21 source checkpoint covered 258 Cargo archives and 10,375 extracted regular files with no identity mismatches. Those integrity checks do not establish executable safety. Draft oracle trace coverage is specification progress, not passed behavior. Later retry clarification remains draft and does not freeze the contract.
 
-Current candidate execution still requires fresh host/resource/runtime admission, reconciliation and freeze of protocol/harness/session/persistence rules, executable/native source review, planned mock Core/runner equivalents, containment qualification and registered comparisons. Source-only preparation or offline developer-tool results cannot silently clear those gates. This public page omits host identifiers and operational configuration.
+Further candidate execution still requires its applicable current host/resource/runtime admission, frozen and reviewed protocol/harness/session/persistence contracts, executable/native review, containment qualification and registered comparison conditions. The R3 specification freeze does not clear later implementation, fault-injection or acceptance gates. Source-only preparation or offline developer-tool results cannot silently clear those gates. This public page omits host identifiers and operational configuration.
 
 ## Capability progression
 
@@ -27,6 +27,6 @@ Current candidate execution still requires fresh host/resource/runtime admission
 
 ## Immediate useful evidence
 
-The existing offline development dispatcher has scoped October 1 synthetic test results; the Laya default-selector experiment has an explicit rejection with quality/memory reasons. [Read the results](results-and-evidence.md). The public explorer remains a simulation. Developer-tool evidence remains separate from the newer partial local product implementation and does not establish a complete personal AI application.
+The November 9 [recovery checkpoint](evidence/phase2/2026-11-09-recovery-checkpoint.md) records six separate process-crash results. The [November 10 checkpoint](evidence/phase2/2026-11-10-correctness-checkpoint.md) adds independently reviewed O19/O20/O34/O35/O38/O40 results and their limits. Only the two RC07 cases remain from that earlier set of open oracle rows. November 10 RC07 work remains source-only preparation, with no confirmed native build or fault pass. The published offline dispatcher and the rejected Laya selector remain separate historical evaluations. [Read the results](results-and-evidence.md). The public explorer remains a simulation. Developer-tool evidence remains separate from the newer partial local product implementation and does not establish a complete personal AI application.
 
 A narrowed release may omit optional capabilities, but it must satisfy the gates for everything it includes. Extra upstream candidates do not become an unlimited queue blocking unrelated milestones.

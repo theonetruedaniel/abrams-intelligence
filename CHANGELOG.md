@@ -1,5 +1,23 @@
 # Project changelog
 
+## 2026-11-10 (UTC)
+
+- Reconciled the README, progress ledger, roadmap, results, reviewer guide and GitHub profile with the latest verified development history. Removed stale October 15 current-status labels and the outdated “Core implementation not started” description.
+- Added the [current correctness checkpoint](docs/evidence/phase2/2026-11-10-correctness-checkpoint.md): O19, O20, O34, O35, O38 and O40 have independently reviewed scoped passes. Only the two RC07 native fault cases remain from the eight oracle rows open in the earlier November 9 summary. Separate Phase 2 obligations remain.
+- Recorded the RC07 pre-restart source-only checkpoint: an inactive native-build correction and arm-uncertainty regressions are prepared. At that checkpoint regression execution and correction review remained pending; the earlier native build outcome remains unconfirmed. No native fault pass or Phase 2 completion is claimed.
+- The public catalog now contains 198 GitHub repositories within a 301-entry register. Latest additions include [Astryx](https://github.com/theonetruedaniel/abrams-intelligence/commit/22b98892334a0e6d0507485c75fc90c6bf4fda07) and [Elephant-Goldfish](https://github.com/theonetruedaniel/abrams-intelligence/commit/47ba3471107387c913ec2503ea6b0a2d5dd3d036), recorded as research/evaluation proposals, not adopted integrations.
+
+## 2026-11-09
+
+- Published [scoped SQLite Store recovery results](docs/evidence/phase2/2026-11-09-recovery-checkpoint.md), bringing six previously open rows to separate reviewed process-crash results: O31, O39, RC06, RC04, RC05 and O32. At that checkpoint eight oracle rows and the other Phase 2 obligations remained open; subsequent passes are recorded in the November 10 entry. No new whole-candidate aggregate replaces the historical 51/65 checkpoint.
+- Recorded the reviewed O34 owned-page browser method and its component/source checks. Its next workload did not start because action-time memory was below the unchanged admission requirement. Earlier uncertain browser attempts remain preserved. This pre-execution checkpoint did not pass O34; the later scoped pass is recorded in the November 10 entry.
+- Reconciled 299 registered IDs and 196 GitHub remote HEADs at that audit checkpoint. Follow-through assessed all 166 changed or previously unpinned sources at exact revisions: 164 source-reviewed and two provenance-blocked. No candidate was installed or executed for the audit. Later additions account for the larger current catalog totals.
+
+## 2026-10-27
+
+- Documented the [exploratory local browser demo](docs/prototype.md), including bounded Qwen3.5 4B text/document/image checks and the tested machine's insufficient memory headroom for the downloaded 9B build.
+- Kept the off-plan experiment separate from the planned platform prototype. Live ChatGPT-plan access remained unverified; the demo did not qualify Core/runtime behavior or complete Phase 2.
+
 ## 2026-10-15
 
 - Reconciled current status with partial local AI-assisted Core/client/SQLite implementation and scoped tests.

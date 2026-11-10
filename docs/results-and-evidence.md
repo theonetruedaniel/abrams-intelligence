@@ -1,12 +1,23 @@
 # Results and evidence limits
 
-Updated October 15, 2026. This page reports existing observations; no new candidate experiments were run for this documentation update. Private operational records remain unpublished. The developer dispatcher is published; its synthetic write-runner update remains a separate local candidate.
+Updated November 10, 2026 (UTC). This page reports existing observations; no new candidate experiments were run for this documentation update. Private operational records remain unpublished. The developer dispatcher is published; its synthetic write-runner update remains a separate local candidate.
 
 ## Current local product work
 
 Abrams Intelligence is a general-purpose, local-first personal intelligence platform in active, AI-assisted development. Local development includes partial shared in-process Core, client and SQLite-backed storage implementation with scoped tests. This work is not yet published as a complete product in this repository. Full integration, product acceptance and Phase 2 completion remain unfinished.
 
-Recent isolated browser/transport testing establishes scoped synthetic behavior only. A real-browser smoke attempt did not establish a passing end-to-end result. These observations do not change the historical dispatcher counts below, establish production adoption or complete Phase 2. See the [progress ledger](progress.md).
+Scoped Store recovery checks now go beyond the earlier isolated browser/transport fixtures. The November 9 results below do not change historical dispatcher counts, establish production adoption or complete Phase 2. Later scoped browser results are described below; they are not blanket browser or network-safety qualification. See the [progress ledger](progress.md).
+
+## November 9 to 10: scoped product verification and pending native faults
+
+- Six previously open rows have separate reviewed process-crash results: O31, O39, RC06, RC04, RC05 and O32. [Published recovery evidence](evidence/phase2/2026-11-09-recovery-checkpoint.md) explains the real Store/WAL observations and exclusions. The results use separately pinned candidates, so they do not establish a new whole-candidate aggregate.
+- RC04 verified exact replay of an earlier health reply after later work. RC05 verified reconnect-snapshot replay and revocation before returning cached content. O32 recovered the committed prefix after eight actual noncommitting WAL frames without inventing cancel success.
+- These controlled worker-process-crash results retain a continuous trusted owner and OS. They do not establish power-loss or owner-restart durability, partial/torn-write or uncertain-flush behavior, browser correctness or complete product recovery.
+- The reviewed O34 owned-page method recorded 33 Node cases, nine runtime-wrapper memory compositions, seven HTTP failure-observer memory cases, strict TypeScript and complete pin checks, plus helper compilation and native-free rule checks. Its next admitted submission stopped at the action-time memory gate before any workload began. Earlier uncertain browser attempts remain preserved. That early submission did not pass O34; a later independent scoped result did.
+- Subsequent independently reviewed passes cover O19, O20, O34, O35, O38 and O40. These later results supersede the eight-open count and O34-unpassed status at the earlier checkpoint, without altering its receipts or uncertainty. See the [November 10 correctness checkpoint](evidence/phase2/2026-11-10-correctness-checkpoint.md) for each result and limit.
+- The November 10 pre-restart RC07 checkpoint recorded an inactive successor packet, source-reviewed build configuration, and staged arm-uncertainty regression cases. Two preparation-script sources parsed and eight packet hashes verified. At that checkpoint regression execution and correction review were pending. The earlier native build outcome remains unconfirmed, and no native fault execution or RC07 pass is established.
+
+Only the two RC07 native partial-write/uncertain-flush cases remain from those eight oracle rows. Shell, packaging, accessibility, capability-denial and runtime/Core-placement obligations remain separate; extensive performance qualification is deferred.
 
 ## October 4: published tooling and separate local update
 
@@ -58,7 +69,7 @@ The later `2026-09-29-selector-cli-results.json` records warm p95 0.546621837 se
 
 Artifact SHA-256 identities: earlier corpus `8ac5e9c50bb45e56669631afac2492100df4d11888b0dfb75d2acd86b54b573d`; corrected CLI `38478329660e7dd23a48b56604baf8bc5b95e36c037d85a6a1d695f427818aa4`. Timing-code changes produced a new evaluation-only runtime digest. The corrected run did not remeasure memory or perform paired development tasks, and did not create a production admission pin. Quality remained 18/40 (45%) and adoption remained false. The overall 27/60 acceptable count must not replace the preregistered ordinary-case denominator of 40.
 
-## Product acceptance remains planned
+## Product acceptance remains incomplete
 
 No completed Tauri/PWA candidate comparison, full product Core/oracle acceptance, production runtime/model pairing qualification, graph-memory bake-off, browser submission, clean-host product recovery or product soak is established here. The public walkthroughs, acceptance map and JSON examples remain synthetic design artifacts with unmeasured/null results. Installed compiler smoke and source acquisition are preparation evidence, not application acceptance.
 
