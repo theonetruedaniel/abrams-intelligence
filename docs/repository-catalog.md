@@ -6,7 +6,7 @@ November 9, 2026 currentness audit: all 299 registered IDs reconciled and all 19
 
 Model/route observations on November 9: Qwen3.8 has a newer upstream revision; Laya current metadata differs from the historical experiment scope, whose checkpoint and results are preserved. Mercury 3 remains documented, without an API availability test. The official Kimi model list marks hosted kimi-k2.5 deprecated; K3 stays a separate intake-required candidate. Moonshot documentation redirects to platform.kimi.ai. The XDA context-placement source could not be accessed; its supporting Anthropic sources resolve. No new token-saving measurement is claimed.
 
-Updated November 9, 2026. This is a deduplicated map of **197 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **300 entries** (150 frozen catalog records plus 150 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated November 9, 2026. This is a deduplicated map of **198 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **301 entries** (150 frozen catalog records plus 151 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
 
@@ -28,7 +28,7 @@ Start with the capability you need. These projects span different roles; they ar
 - **Selected advisory content:** one pinned design skill is selected; its repository is not adopted as a runtime.
 - **Adopted integration:** an exact accepted product integration. None is claimed in this catalog.
 
-Counts: 171 shortlisted/planned, 24 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
+Counts: 172 shortlisted/planned, 24 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
 
 Coverage is the union of GitHub identities explicitly linked in the September 4 frozen catalog, dated intake overlays through November 8, and the collected research references. Six September 22 Jev references remain research-only without registration records; Foreman is now registered under Q-56. Documentation-only technologies, model/API routes and local controls remain in the full register. Transitive dependency trees and every project in an upstream directory are not asserted to be evaluated candidates.
 
@@ -2594,6 +2594,28 @@ Sources: [source 1](https://github.com/meta/astryx/blob/c0327e060d77676be9754e10
 
 
 ## Skills and development
+
+<a id="google-elephant-goldfish-model"></a>
+### Elephant-Goldfish Model (EGM)
+
+[google/elephant-goldfish-model](https://github.com/google/elephant-goldfish-model) · **Shortlisted / planned**
+
+- **Purpose:** Context-preserving drafting and fresh-context reviewer workflow for design specifications and configurable document reviews; also codebase bootstrap and document/code drift reports.
+- **Architecture fit:** H/J; applicable C-I / Q-147: Improve Abrams design, candidate integration specifications and bake-off methodology through explicit reviewer personas/standards/context and finding resolution. Compare current independent reviews, existing design/spec workflow and a fixed-budget no-review control; general document review remains a separate optional scope.
+- **Current status:** Source researched; planned and untested. Apache-2.0 workflow/plugin, Codex manifest0.1.1; not another LLM or canonical-memory store. Freshness, tool restrictions and approval/turn-taking depend on exact host behavior. Convergence or stage advancement is not correctness, security approval or an Abrams gate pass.
+- **Next gate:** Compare upstream plugin, eligible reviewer/rubric components, minimal original review protocol and defer. Pin complete bundle/personas/standards and exact harness; verify fresh parent-turn context versus host-instruction exclusion separately, read-only grants/tool enforcement, context/provider privacy, path/symlink writes and approval boundaries, failure/timeout/Stop/cleanup, aggregate model-call/token/time/USD budgets. Use protected planted defects/holdouts and blinded adjudication to measure true/false findings, fidelity, integration usefulness, user burden and total cost; no self-awarded pass or candidate influence over evaluator.
+- **Evidence:** Pinned README/LICENSE/plugin manifest, review-loop/design-review skills, representative reviewer, harness/privacy/testing source and independent source review; no plugin installation, workflow invocation, account/provider calls or benchmark. Dates: 2026-11-09.
+- **Registered records:** `workflow.elephant-goldfish`.
+- **Recorded revision:** `bdcfe8cdaee99699c4b2cb7ad4e3b2c1a6b56a31`.
+
+- EGM is a drafting/design/document-review workflow plugin, not a pretrained language model, inference router or durable-memory engine. Apache-2.0 root; Codex manifest0.1.1 requires a local executor and isolated subagents.
+- Goldfish source instructions require fresh subagents without earlier conversation and stop if unavailable. Host instruction files, memory/filesystem and model/provider remain separate exposure channels; parent-turn isolation does not establish instruction exclusion.
+- Review loop retries a failed reviewer once, treats not-run as not clean, requires two consecutive clean rounds and caps at five. Settled contested/accepted risks can remain; a stage re-audit cap may advance with recorded trade-offs, which cannot pass an Abrams gate.
+- Draft/bootstrap/resolve workflows write project documents and reports. URL context snapshots, repository reads, output paths and edits require exact data/file grants; no EGM-hosted inference service does not mean no host-provider retention or off-device processing.
+- Upstream offline schema/link/fixture checks are not evidence of better decisions or this host support. Python3.10+, Node22 for advisory tests and POSIX shell assumptions are distinct from native plugin/harness qualification; no test suite or plugin was run.
+
+Sources: [source 1](https://github.com/google/elephant-goldfish-model/blob/bdcfe8cdaee99699c4b2cb7ad4e3b2c1a6b56a31/README.md); [source 2](https://github.com/google/elephant-goldfish-model/blob/bdcfe8cdaee99699c4b2cb7ad4e3b2c1a6b56a31/LICENSE); [source 3](https://github.com/google/elephant-goldfish-model/blob/bdcfe8cdaee99699c4b2cb7ad4e3b2c1a6b56a31/.codex-plugin/plugin.json); [source 4](https://github.com/google/elephant-goldfish-model/blob/bdcfe8cdaee99699c4b2cb7ad4e3b2c1a6b56a31/skills/egm-review-loop/SKILL.md); [source 5](https://github.com/google/elephant-goldfish-model/blob/bdcfe8cdaee99699c4b2cb7ad4e3b2c1a6b56a31/skills/egm-review/SKILL.md); [source 6](https://github.com/google/elephant-goldfish-model/blob/bdcfe8cdaee99699c4b2cb7ad4e3b2c1a6b56a31/docs/harnesses.md); [source 7](https://github.com/google/elephant-goldfish-model/blob/bdcfe8cdaee99699c4b2cb7ad4e3b2c1a6b56a31/docs/codex.md); [source 8](https://github.com/google/elephant-goldfish-model/blob/bdcfe8cdaee99699c4b2cb7ad4e3b2c1a6b56a31/docs/privacy.md); [source 9](https://github.com/google/elephant-goldfish-model/blob/bdcfe8cdaee99699c4b2cb7ad4e3b2c1a6b56a31/TESTING.md).
+
 
 - **November 9 source assessment:** `reviewed` at `d8e455185c4cd4760f44aeecd75e1860b9606abb`.
   - Current source remains104intentionally vulnerable Jeopardy-style CTFfixtures with injected build flags; novelty/no-training claims are historic upstream claims, not contamination evidence for current models.
