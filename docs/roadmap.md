@@ -1,6 +1,6 @@
 # Roadmap and current gates
 
-Updated November 10, 2026 (UTC) from dated working-project dispositions and the published recovery checkpoint. This is a capability sequence, not a promised release schedule. The old September 14/15 pending-readiness summaries are historical checkpoints.
+Updated November 13, 2026 (UTC) from dated working-project dispositions, recovery evidence and the headless startup-admission result. This is a capability sequence, not a promised release schedule. The old September 14/15 pending-readiness summaries are historical checkpoints.
 
 ## Current position
 
@@ -9,6 +9,8 @@ Phase 0 architecture/discovery foundations are complete. Phase 1 is complete onl
 The September 21 source checkpoint covered 258 Cargo archives and 10,375 extracted regular files with no identity mismatches. Those integrity checks do not establish executable safety. Draft oracle trace coverage is specification progress, not passed behavior. Later retry clarification remains draft and does not freeze the contract.
 
 Further candidate execution still requires its applicable current host/resource/runtime admission, frozen and reviewed protocol/harness/session/persistence contracts, executable/native review, containment qualification and registered comparison conditions. The R3 specification freeze does not clear later implementation, fault-injection or acceptance gates. Source-only preparation or offline developer-tool results cannot silently clear those gates. This public page omits host identifiers and operational configuration.
+
+The November 13 [headless admission fixture](evidence/phase2/2026-11-13-precontent-admission-unit.md) passed 28 scoped tests. This adds component evidence while full Tauri build/runtime verification and the existing shell, accessibility and native-fault gates remain separate.
 
 ## Capability progression
 

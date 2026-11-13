@@ -56,3 +56,9 @@ The current status pages were reconciled with the public November 9 recovery che
 The November 9 audit covered 299 registered IDs and 196 GitHub remote HEADs at that time. Later additions bring the current register to 301 entries and the GitHub catalog to 198 repositories. Source assessment, component testing, product acceptance and adoption remain distinct.
 
 This refresh publishes concise status summaries only. It does not publish local implementation source, private paths, host/process identities, raw operational records, credentials, user datasets or employer material. The exploratory October 27 browser demo remains an off-plan experiment rather than the planned platform prototype. Historical measurements retain their original dates and scope; no new candidate experiment was run for this documentation refresh.
+
+## November 13 headless-test reconciliation
+
+The startup-admission summary was checked against the independent saved-evidence review, its compiler/test receipt and the complete 28-case stdout log. Their recorded hashes matched on reread. The 20 injected admission/thread cases, five actual task-directory cases and three injected policy cases retain separate descriptions. No real registry readback, Tauri application/COM compilation, WebView creation, GUI launch or RC07 execution is inferred.
+
+The current catalog contains 205 GitHub repositories within 308 registered entries as of its November 12 update. Earlier counts in dated history remain historical. This documentation refresh publishes only a concise [test-scope summary](evidence/phase2/2026-11-13-precontent-admission-unit.md); private local source and operational records remain outside the public repository.

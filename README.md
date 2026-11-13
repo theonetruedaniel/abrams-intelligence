@@ -22,11 +22,13 @@ The [research catalog](docs/repository-catalog.md) maps **205 upstream GitHub re
 
 Comparisons are organized by role: agent runtimes against runtimes, retrieval approaches against retrieval approaches, and desktop shells against shells. Most candidates have source research or planned evaluations; they have not been benchmarked or adopted. The [results and evidence](docs/results-and-evidence.md) page separates measured findings from unrun comparisons. The catalog and offline dispatcher are available now while the full platform remains in development.
 
-## Current progress: November 10, 2026 (UTC)
+## Current progress: November 13, 2026 (UTC)
 
 Abrams Intelligence is a general-purpose, local-first personal intelligence platform in active, AI-assisted development. Local development includes partial shared in-process Core, client and SQLite-backed storage implementation with scoped tests. This work is not yet published as a complete product in this repository. Full integration, product acceptance and Phase 2 completion remain unfinished.
 
 The November 9 SQLite recovery checkpoint is now followed by six further independently reviewed, scoped passes: O19, O20, O34, O35, O38 and O40. They cover real browser reload/reconstruction, normal same-Store Core replacement, literal hostile-text rendering, bounded terminal replay and SQLite capacity handling. Of the eight oracle rows open at the earlier checkpoint, only the two RC07 native partial-write/uncertain-flush cases remain. November 10 work has progressed to native fault-injection preparation. A confirmed native build and both RC07 acceptance results remain outstanding. See the [progress ledger](docs/progress.md), [latest correctness evidence and limits](docs/evidence/phase2/2026-11-10-correctness-checkpoint.md), and [dated update history](CHANGELOG.md).
+
+November 13 independent review accepted **28/28 headless Rust startup-admission tests**: 20 injected admission/thread cases, five real test-directory cases and three injected policy cases. Both compiler and test processes exited successfully with natural cleanup. This is component evidence, not a Tauri application build, GUI/WebView qualification or RC07 result. [Scope and exclusions](docs/evidence/phase2/2026-11-13-precontent-admission-unit.md).
 
 ### Published tooling and historical evidence
 

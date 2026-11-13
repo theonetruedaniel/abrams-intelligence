@@ -1,5 +1,17 @@
 # Project changelog
 
+## 2026-11-13 (UTC)
+
+- Added the independently reviewed [28/28 headless Rust startup-admission result](docs/evidence/phase2/2026-11-13-precontent-admission-unit.md), separating 20 injected admission/thread cases from five real test-directory cases and three injected policy cases.
+- Recorded successful compiler/test exits and natural process-group retirement without claiming a full Tauri build, GUI/WebView qualification, actual profile/runtime readback or RC07 progress.
+- Refreshed current status pages and catalog counts. Both RC07 native fault cases and the separate Phase 2 obligations remain open.
+
+## 2026-11-12
+
+- Expanded the source-research catalog to 205 GitHub repositories within 308 registered entries. New entries since the previous status refresh include Awesome REA, Poki, OpenJarvis, BitDecoding-FP4, Colibri, Ponytail and Lemo-Opuscar.
+- Refreshed existing candidate assessments. These are source-research additions, not benchmark results, installed integrations or production adoption.
+
+
 ## 2026-11-10 (UTC)
 
 - Reconciled the README, progress ledger, roadmap, results, reviewer guide and GitHub profile with the latest verified development history. Removed stale October 15 current-status labels and the outdated “Core implementation not started” description.

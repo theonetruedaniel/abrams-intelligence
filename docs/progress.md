@@ -1,6 +1,6 @@
 # Progress and next steps
 
-Updated November 10, 2026 (UTC). This page distinguishes published code, locally verified
+Updated November 13, 2026 (UTC). This page distinguishes published code, locally verified
 work, reviewed specifications and unrun product acceptance. It is an evidence
 snapshot, not a live operational status feed.
 
@@ -12,11 +12,19 @@ The earlier November 9 recovery checkpoint recorded separate scoped passes for O
 
 The November 10 pre-restart checkpoint records source-only preparation for RC07, described below. It is not a successful native build or fault execution. The public dispatcher test snapshots remain separate historical evidence, not totals for this newer local work.
 
+## November 13: headless startup-admission tests
+
+Independent review accepted 28/28 standard-library Rust fixture tests, with no failures, ignored tests or filtered tests. The total combines 20 new injected admission/retained-thread cases, five inherited real test-directory cases and three inherited injected policy cases. Compiler and test processes both exited successfully and their process groups retired naturally without cleanup uncertainty.
+
+The checks cover startup-gate ordering, absent or partial admission, pending commands, duplicate/late reports, controlled failures and close races. They do not compile the Tauri application or COM observer, create a WebView, read a live profile/runtime version, demonstrate UI responsiveness or run RC07 faults. A full Tauri build is a separately prepared, unexecuted step at this checkpoint. [Detailed scope](evidence/phase2/2026-11-13-precontent-admission-unit.md).
+
+The two RC07 cases and the other Phase 2 obligations remain open. Historical pre-restart build uncertainty below stays historical; this independent test run does not resolve it.
+
 ## Progress in plan order
 
 | Plan stage | Completed evidence | Remaining work |
 | --- | --- | --- |
-| A: architecture and evaluation foundation | Preserved 19-document baseline; approved amendment; requirement and capability maps; 150-record frozen discovery catalog and source-coverage obligations. Later intake brings the current [full register](candidate-research.md) to 301 entries, including controls and prerequisites, and the [GitHub catalog](repository-catalog.md) to 198 repositories. | New research does not qualify or adopt a candidate. |
+| A: architecture and evaluation foundation | Preserved 19-document baseline; approved amendment; requirement and capability maps; 150-record frozen discovery catalog and source-coverage obligations. Later intake brings the current [full register](candidate-research.md) to 308 entries, including controls and prerequisites, and the [GitHub catalog](repository-catalog.md) to 205 repositories. | New research does not qualify or adopt a candidate. |
 | B: scoped host readiness | Later readiness evidence admits attended, signed-in, AC-powered synthetic development within its fixed resource boundary. Native C/Rust smoke and locked source acquisition are recorded. | Historical readiness is not current headroom or unrestricted workload admission. |
 | C: contracts, shared reference and comparisons | October 1 R3 specification inputs have a recorded freeze after two scoped independent reviews. Historical fixture expectations and corrections are retained. | Partial local shared-reference/Core/client implementation and scoped tests exist; full integration and runtime/product acceptance remain incomplete. Native/build/containment prerequisites still apply before equivalent Tauri/PWA and runtime comparisons. |
 | D: authority and durable data foundation | Partial local SQLite-backed Store implementation and six separately reviewed recovery-row results under controlled process crashes. | Complete authority/data integration, the remaining fault cases and broader acceptance remain unfinished; these scoped results do not close D. |
@@ -70,7 +78,7 @@ host-memory guard. Termination was observed; no new quality score or memory
 qualification resulted. The historical score remains separate from that retry.
 
 No completed product Tauri/PWA, runtime, Core-placement or memory bake-off is
-claimed. The [198-repository catalog](repository-catalog.md) separates measured
+claimed. The [205-repository catalog](repository-catalog.md) separates measured
 work from source screening, planned comparisons and collected references.
 
 ## Next unfinished step

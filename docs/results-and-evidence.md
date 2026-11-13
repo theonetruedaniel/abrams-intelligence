@@ -1,12 +1,18 @@
 # Results and evidence limits
 
-Updated November 10, 2026 (UTC). This page reports existing observations; no new candidate experiments were run for this documentation update. Private operational records remain unpublished. The developer dispatcher is published; its synthetic write-runner update remains a separate local candidate.
+Updated November 13, 2026 (UTC). This page reports existing observations; no new candidate experiments were run for this documentation update. Private operational records remain unpublished. The developer dispatcher is published; its synthetic write-runner update remains a separate local candidate.
 
 ## Current local product work
 
 Abrams Intelligence is a general-purpose, local-first personal intelligence platform in active, AI-assisted development. Local development includes partial shared in-process Core, client and SQLite-backed storage implementation with scoped tests. This work is not yet published as a complete product in this repository. Full integration, product acceptance and Phase 2 completion remain unfinished.
 
 Scoped Store recovery checks now go beyond the earlier isolated browser/transport fixtures. The November 9 results below do not change historical dispatcher counts, establish production adoption or complete Phase 2. Later scoped browser results are described below; they are not blanket browser or network-safety qualification. See the [progress ledger](progress.md).
+
+## November 13: headless startup-admission fixture
+
+The independently reviewed local Rust fixture passed **28/28 tests**, with zero failed, ignored or filtered tests. Its 20 new admission/thread cases use fake factories; the eight inherited cases comprise five actual task-directory tests and three injected policy tests. Both compiler/test processes exited zero and their process groups retired naturally, with no forced termination or recorded cleanup uncertainty.
+
+This is component behavior and local test-process evidence. It does not establish a full Tauri build, actual WebView/profile/runtime readback, GUI responsiveness, the full worker/pipe suite or native SQLite fault qualification. RC07 remains unrun and unpassed. See the [test breakdown and exclusions](evidence/phase2/2026-11-13-precontent-admission-unit.md).
 
 ## November 9 to 10: scoped product verification and pending native faults
 
