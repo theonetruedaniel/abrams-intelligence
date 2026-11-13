@@ -22,7 +22,7 @@ Both the compiler and test processes exited successfully. Their owned process gr
 
 The fixture did not compile Tauri's application entry point, commands or COM observer. It did not create a WebView, inspect a live profile/runtime version, launch a GUI or start Node. It does not prove actual UI responsiveness, real browser event ordering or IPC, actual Core startup failure, the 15-second admission-timeout path, or the complete worker/pipe regression set.
 
-A separately prepared full Tauri build remains a different step with its own review and execution requirements. No linked-build, GUI smoke, isolation, accessibility, shell-selection or Phase 2 completion is claimed here.
+At this 03:15 UTC unit-test checkpoint, the newer successor's full Tauri build was still being prepared. It was subsequently invoked and interrupted by a policy denial, with no final receipt or executable. Three earlier November 12 linked builds and the later November 13 disconnected desktop smoke are separate evidence, not outcomes of these 28 tests. See the [reconciled chronology](2026-11-13-native-build-pipe-and-smoke-reconciliation.md). These unit tests establish no runtime/isolation, accessibility, shell-selection or Phase 2 completion.
 
 The two **RC07 native SQLite partial-write and uncertain-flush cases remain unrun and unpassed**. This independent headless result does not advance those cases or change their execution restrictions.
 

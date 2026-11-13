@@ -12,11 +12,19 @@ The earlier November 9 recovery checkpoint recorded separate scoped passes for O
 
 The November 10 pre-restart checkpoint records source-only preparation for RC07, described below. It is not a successful native build or fault execution. The public dispatcher test snapshots remain separate historical evidence, not totals for this newer local work.
 
+## November 12–13: linked builds, real pipes and disconnected smoke
+
+Three November 12 Tauri successors successfully compiled and linked, ending with the fresh-profile executable. Their build jobs exited zero and retired naturally with certain cleanup. Separate actual Rust–Node pipe runs each passed 15 test functions: 14 overlapping broker regressions and one integration function. The later integration function includes the positive flow plus five named failure/cleanup scenarios. Later bundle qualification passed the same 21 tests at two local paths, followed by a separate actual-worker test with one pass and 20 filtered. Do not add repeated or filtered counts into a unique total.
+
+The older fresh-profile executable then completed one manually witnessed, default-disconnected desktop smoke on November 13, with root exit zero and natural owned-job retirement. This does not establish Core-connected GUI behavior, automated window attribution, actual profile/runtime readback, network/identity isolation, accessibility or Phase 2 acceptance.
+
+The newer pre-content successor's build runner was invoked once and interrupted by a network-policy denial. No final receipt, compiler logs or executable were found; compiler start and formal cleanup remain unproven. It remains stopped. See the [reconciled chronology, verification and limits](evidence/phase2/2026-11-13-native-build-pipe-and-smoke-reconciliation.md).
+
 ## November 13: headless startup-admission tests
 
 Independent review accepted 28/28 standard-library Rust fixture tests, with no failures, ignored tests or filtered tests. The total combines 20 new injected admission/retained-thread cases, five inherited real test-directory cases and three inherited injected policy cases. Compiler and test processes both exited successfully and their process groups retired naturally without cleanup uncertainty.
 
-The checks cover startup-gate ordering, absent or partial admission, pending commands, duplicate/late reports, controlled failures and close races. They do not compile the Tauri application or COM observer, create a WebView, read a live profile/runtime version, demonstrate UI responsiveness or run RC07 faults. A full Tauri build is a separately prepared, unexecuted step at this checkpoint. [Detailed scope](evidence/phase2/2026-11-13-precontent-admission-unit.md).
+The checks cover startup-gate ordering, absent or partial admission, pending commands, duplicate/late reports, controlled failures and close races. They do not compile the Tauri application or COM observer, create a WebView, read a live profile/runtime version, demonstrate UI responsiveness or run RC07 faults. At the 03:15 UTC unit checkpoint, this successor's full Tauri build was still being prepared. Its later invocation was interrupted as described above; the three November 12 linked executables are separate accepted artifacts. [Detailed scope](evidence/phase2/2026-11-13-precontent-admission-unit.md).
 
 The two RC07 cases and the other Phase 2 obligations remain open. Historical pre-restart build uncertainty below stays historical; this independent test run does not resolve it.
 
@@ -26,7 +34,7 @@ The two RC07 cases and the other Phase 2 obligations remain open. Historical pre
 | --- | --- | --- |
 | A: architecture and evaluation foundation | Preserved 19-document baseline; approved amendment; requirement and capability maps; 150-record frozen discovery catalog and source-coverage obligations. Later intake brings the current [full register](candidate-research.md) to 308 entries, including controls and prerequisites, and the [GitHub catalog](repository-catalog.md) to 205 repositories. | New research does not qualify or adopt a candidate. |
 | B: scoped host readiness | Later readiness evidence admits attended, signed-in, AC-powered synthetic development within its fixed resource boundary. Native C/Rust smoke and locked source acquisition are recorded. | Historical readiness is not current headroom or unrestricted workload admission. |
-| C: contracts, shared reference and comparisons | October 1 R3 specification inputs have a recorded freeze after two scoped independent reviews. Historical fixture expectations and corrections are retained. | Partial local shared-reference/Core/client implementation and scoped tests exist; full integration and runtime/product acceptance remain incomplete. Native/build/containment prerequisites still apply before equivalent Tauri/PWA and runtime comparisons. |
+| C: contracts, shared reference and comparisons | October 1 R3 specification freeze; later scoped Core/client checks, actual headless Rust–Node pipe tests, three linked Tauri successors and one limited disconnected desktop smoke. | Core-connected GUI, actual runtime/profile readback, isolation and equivalent Tauri/PWA comparisons remain unqualified. The newer pre-content build is interrupted, not accepted. |
 | D: authority and durable data foundation | Partial local SQLite-backed Store implementation and six separately reviewed recovery-row results under controlled process crashes. | Complete authority/data integration, the remaining fault cases and broader acceptance remain unfinished; these scoped results do not close D. |
 | E onward: useful capabilities and release | Capability prerequisites and comparison questions are registered. | Exact model routes, real runtime/model pairings, optional integrations and release/recovery evidence remain separately gated. |
 

@@ -2,6 +2,11 @@
 
 ## 2026-11-13 (UTC)
 
+- Corrected the earlier public refresh to include three verified November 12 linked Windows executables and two real Rust–Node pipe runs. The repeated 15-test batches are overlapping, not an aggregate score. Later bundle checks passed the same 21 tests in two locations; a separate real-worker run passed one test with 20 filtered.
+- Added the later witnessed default-disconnected desktop smoke with successful owned lifecycle, while keeping content, Core-connected GUI, runtime/profile readback and isolation unqualified.
+- Corrected the newer pre-content build from prepared/unexecuted to invoked and policy-interrupted, with compiler start and formal cleanup unproven and no final receipt or executable.
+- Rechecked six primary receipts and their independent reviews; added an evidence-reconciliation checkpoint to the ongoing local synchronization workflow. [Full chronology and limits](docs/evidence/phase2/2026-11-13-native-build-pipe-and-smoke-reconciliation.md).
+
 - Added the independently reviewed [28/28 headless Rust startup-admission result](docs/evidence/phase2/2026-11-13-precontent-admission-unit.md), separating 20 injected admission/thread cases from five real test-directory cases and three injected policy cases.
 - Recorded successful compiler/test exits and natural process-group retirement without claiming a full Tauri build, GUI/WebView qualification, actual profile/runtime readback or RC07 progress.
 - Refreshed current status pages and catalog counts. Both RC07 native fault cases and the separate Phase 2 obligations remain open.

@@ -1,6 +1,6 @@
 # Roadmap and current gates
 
-Updated November 13, 2026 (UTC) from dated working-project dispositions, recovery evidence and the headless startup-admission result. This is a capability sequence, not a promised release schedule. The old September 14/15 pending-readiness summaries are historical checkpoints.
+Updated November 13, 2026 (UTC) from dated working-project dispositions, recovery evidence, linked builds, real-pipe tests, headless admission checks and the limited disconnected smoke. This is a capability sequence, not a promised release schedule. The old September 14/15 pending-readiness summaries are historical checkpoints.
 
 ## Current position
 
@@ -10,7 +10,7 @@ The September 21 source checkpoint covered 258 Cargo archives and 10,375 extract
 
 Further candidate execution still requires its applicable current host/resource/runtime admission, frozen and reviewed protocol/harness/session/persistence contracts, executable/native review, containment qualification and registered comparison conditions. The R3 specification freeze does not clear later implementation, fault-injection or acceptance gates. Source-only preparation or offline developer-tool results cannot silently clear those gates. This public page omits host identifiers and operational configuration.
 
-The November 13 [headless admission fixture](evidence/phase2/2026-11-13-precontent-admission-unit.md) passed 28 scoped tests. This adds component evidence while full Tauri build/runtime verification and the existing shell, accessibility and native-fault gates remain separate.
+The November 13 [headless admission fixture](evidence/phase2/2026-11-13-precontent-admission-unit.md) passed 28 scoped tests. This adds component evidence alongside three accepted November 12 linked executables, real Rust–Node pipe tests and a limited November 13 disconnected desktop smoke. The newer pre-content build was invoked and interrupted; it has no final receipt or executable. Actual Core-connected GUI/runtime/isolation qualification and the existing shell, accessibility and native-fault gates remain open. See the [reconciled build and smoke evidence](evidence/phase2/2026-11-13-native-build-pipe-and-smoke-reconciliation.md).
 
 ## Capability progression
 
@@ -29,6 +29,6 @@ The November 13 [headless admission fixture](evidence/phase2/2026-11-13-preconte
 
 ## Immediate useful evidence
 
-The November 9 [recovery checkpoint](evidence/phase2/2026-11-09-recovery-checkpoint.md) records six separate process-crash results. The [November 10 checkpoint](evidence/phase2/2026-11-10-correctness-checkpoint.md) adds independently reviewed O19/O20/O34/O35/O38/O40 results and their limits. Only the two RC07 cases remain from that earlier set of open oracle rows. November 10 RC07 work remains source-only preparation, with no confirmed native build or fault pass. The published offline dispatcher and the rejected Laya selector remain separate historical evaluations. [Read the results](results-and-evidence.md). The public explorer remains a simulation. Developer-tool evidence remains separate from the newer partial local product implementation and does not establish a complete personal AI application.
+The November 9 [recovery checkpoint](evidence/phase2/2026-11-09-recovery-checkpoint.md) records six separate process-crash results. The [November 10 checkpoint](evidence/phase2/2026-11-10-correctness-checkpoint.md) adds independently reviewed O19/O20/O34/O35/O38/O40 results and their limits. Only the two RC07 cases remain from that earlier set of open oracle rows. The November 10 RC07 entry remains a historical preparation checkpoint, not a native fault pass. Later successful Tauri builds do not qualify RC07. The published offline dispatcher and the rejected Laya selector remain separate historical evaluations. [Read the results](results-and-evidence.md). The public explorer remains a simulation. Developer-tool evidence remains separate from the newer partial local product implementation and does not establish a complete personal AI application.
 
 A narrowed release may omit optional capabilities, but it must satisfy the gates for everything it includes. Extra upstream candidates do not become an unlimited queue blocking unrelated milestones.

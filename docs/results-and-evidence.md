@@ -8,11 +8,19 @@ Abrams Intelligence is a general-purpose, local-first personal intelligence plat
 
 Scoped Store recovery checks now go beyond the earlier isolated browser/transport fixtures. The November 9 results below do not change historical dispatcher counts, establish production adoption or complete Phase 2. Later scoped browser results are described below; they are not blanket browser or network-safety qualification. See the [progress ledger](progress.md).
 
+## November 12–13: linked builds, real pipes and disconnected smoke
+
+Three November 12 Tauri successors successfully compiled and linked, ending with the fresh-profile executable. Their build jobs exited zero and retired naturally with certain cleanup. Separate actual Rust–Node pipe runs each passed 15 test functions: 14 overlapping broker regressions and one integration function. The later integration function includes the positive flow plus five named failure/cleanup scenarios. Later bundle qualification passed the same 21 tests at two local paths, followed by a separate actual-worker test with one pass and 20 filtered. Do not add repeated or filtered counts into a unique total.
+
+The older fresh-profile executable then completed one manually witnessed, default-disconnected desktop smoke on November 13, with root exit zero and natural owned-job retirement. This does not establish Core-connected GUI behavior, automated window attribution, actual profile/runtime readback, network/identity isolation, accessibility or Phase 2 acceptance.
+
+The newer pre-content successor's build runner was invoked once and interrupted by a network-policy denial. No final receipt, compiler logs or executable were found; compiler start and formal cleanup remain unproven. It remains stopped. See the [reconciled chronology, verification and limits](evidence/phase2/2026-11-13-native-build-pipe-and-smoke-reconciliation.md).
+
 ## November 13: headless startup-admission fixture
 
 The independently reviewed local Rust fixture passed **28/28 tests**, with zero failed, ignored or filtered tests. Its 20 new admission/thread cases use fake factories; the eight inherited cases comprise five actual task-directory tests and three injected policy tests. Both compiler/test processes exited zero and their process groups retired naturally, with no forced termination or recorded cleanup uncertainty.
 
-This is component behavior and local test-process evidence. It does not establish a full Tauri build, actual WebView/profile/runtime readback, GUI responsiveness, the full worker/pipe suite or native SQLite fault qualification. RC07 remains unrun and unpassed. See the [test breakdown and exclusions](evidence/phase2/2026-11-13-precontent-admission-unit.md).
+This is component behavior and local test-process evidence. Those 28 tests do not establish a full Tauri build, actual WebView/profile/runtime readback, GUI responsiveness, the full worker/pipe suite or native SQLite fault qualification. Separate November 12 builds and real-pipe results, and the later disconnected smoke, are recorded above. RC07 remains unrun and unpassed. See the [test breakdown and exclusions](evidence/phase2/2026-11-13-precontent-admission-unit.md).
 
 ## November 9 to 10: scoped product verification and pending native faults
 
