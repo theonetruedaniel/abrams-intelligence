@@ -1,7 +1,7 @@
 """Offline catalog consistency and local Markdown file-target checks.
 
 Run from the repository root with `python scripts/validate_catalog.py`. This checks
-published root/docs/.github Markdown, not vendored tooling documentation,
+published root/docs/research/.github Markdown, not vendored tooling documentation,
 remote availability, heading fragments, or the truth of research claims.
 """
 
@@ -96,7 +96,7 @@ def validate_catalog(data, markdown):
 def validate_document_links(root):
     """Check inline and reference link file targets; skip fenced/inline code."""
     root = Path(root).resolve()
-    documents = sorted(set(root.glob("*.md")) | set((root / "docs").rglob("*.md")) | set((root / ".github").rglob("*.md")))
+    documents = sorted(set(root.glob("*.md")) | set((root / "docs").rglob("*.md")) | set((root / "research").rglob("*.md")) | set((root / ".github").rglob("*.md")))
     errors = []
     for document in documents:
         text = document.read_text(encoding="utf-8")
@@ -121,8 +121,8 @@ def main():
     parser.add_argument("--root", type=Path, default=Path(__file__).resolve().parents[1])
     args = parser.parse_args()
     try:
-        data = json.loads((args.root / "docs/repository-catalog.json").read_text(encoding="utf-8"))
-        markdown = (args.root / "docs/repository-catalog.md").read_text(encoding="utf-8")
+        data = json.loads((args.root / "research/repository-catalog.json").read_text(encoding="utf-8"))
+        markdown = (args.root / "research/repository-catalog.md").read_text(encoding="utf-8")
         errors = validate_catalog(data, markdown)
         link_errors, count = validate_document_links(args.root)
         errors.extend(link_errors)

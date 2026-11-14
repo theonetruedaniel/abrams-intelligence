@@ -8,7 +8,7 @@ Model/route observations on November 9: Qwen3.8 has a newer upstream revision; L
 
 Updated November 14, 2026. This is the full discovery/intake inventory behind the public overview, not a list of installed dependencies or completed benchmarks. It accounts for **150 September 4 catalog records plus 159 subsequent proposed records: 309 registered entries**. Entries include individual model/API routes, platform prerequisites, local controls and proposed roles; this is not a count of distinct upstream repositories. The separate Laya development experiment and Jev reference projects are identified below without inflating that count.
 
-Browse the [deduplicated 206-repository catalog](repository-catalog.md) for purposes, architecture fit, verified current links and exact status distinctions. The [progress ledger](progress.md) follows the existing plan order. Six additional Jev research references remain unregistered; the existing Foreman reference is now a named Q-56 evaluation.
+Browse the [deduplicated 206-repository catalog](repository-catalog.md) for purposes, architecture fit, verified current links and exact status distinctions. The [progress ledger](../docs/progress.md) follows the existing plan order. Six additional Jev research references remain unregistered; the existing Foreman reference is now a named Q-56 evaluation.
 
 The October 16 ten-repository carousel adds nine comparisons (Q-46–Q-54); LangGraph was already registered. Letta's post URL is retained as a collected reference to active letta-ai/letta-code under one record. OpenHands' redirect, AutoGen maintenance status and Kortix/Suna's current license are recorded without treating the post's claims as benchmark results.
 
@@ -20,7 +20,7 @@ The October 16 ten-repository carousel adds nine comparisons (Q-46–Q-54); Lang
 - **Rejected/deferred:** a particular scope failed or lacks evidence/eligibility. Neither label makes a universal judgment about the project.
 - **Selected:** an explicit design baseline or narrowly approved content item; this does not establish a live product integration.
 
-No production runtime/model pairing is adopted by this register. [Results and limits](results-and-evidence.md) separate actual developer-tool tests from unexecuted product acceptance tests. The earlier six-project assessment is preserved at the end as dated research, not presented as the whole active catalog.
+No production runtime/model pairing is adopted by this register. [Results and limits](../docs/results-and-evidence.md) separate actual developer-tool tests from unexecuted product acceptance tests. The earlier six-project assessment is preserved at the end as dated research, not presented as the whole active catalog.
 
 ## Later research and proposed comparisons
 
@@ -547,7 +547,7 @@ Large local model records are hardware/task-specific: Qwen 4B is the initial con
 
 ## Actually evaluated: Laya development selector
 
-The separate development experiment used [Laya](https://github.com/NandhaKishorM/laya/tree/4066d5d5fbf08b66c6757ddeedbd797bd7655bc0) 0.3.20 and [laya-multilingual](https://huggingface.co/convaiinnovations/laya-multilingual/tree/e4e9ddf21a7b1903b7acffd8814ad4307bf63a67), CPU/isolated Linux runtime. September 29 corpus and resource receipts rejected default adoption for this exact candidate: ordinary acceptable proposals were 18/40 (45%) against at least 90%, and classifier memory exceeded 2 GiB. The later corrected qualification CLI repeated the 45% ordinary result and reported ~0.547-second warm p95; memory was measured separately and not remeasured in that run. Rules remain the fallback; no production selector pin is installed. See [measured results and exclusions](results-and-evidence.md). This does not report product-route adoption or reject every Laya artifact/backend.
+The separate development experiment used [Laya](https://github.com/NandhaKishorM/laya/tree/4066d5d5fbf08b66c6757ddeedbd797bd7655bc0) 0.3.20 and [laya-multilingual](https://huggingface.co/convaiinnovations/laya-multilingual/tree/e4e9ddf21a7b1903b7acffd8814ad4307bf63a67), CPU/isolated Linux runtime. September 29 corpus and resource receipts rejected default adoption for this exact candidate: ordinary acceptable proposals were 18/40 (45%) against at least 90%, and classifier memory exceeded 2 GiB. The later corrected qualification CLI repeated the 45% ordinary result and reported ~0.547-second warm p95; memory was measured separately and not remeasured in that run. Rules remain the fallback; no production selector pin is installed. See [measured results and exclusions](../docs/results-and-evidence.md). This does not report product-route adoption or reject every Laya artifact/backend.
 
 ## Preserved September 9 assessment
 
@@ -598,7 +598,7 @@ The linked repositories belong to their respective maintainers. This showcase co
 
 Before any reuse, review the exact files, license notices and dependency tree. The September 9 assessment distinguished AutoGPT Platform's licensing from Classic; a repository-wide label is insufficient for choosing reusable components. Recheck applicable terms at the selected revision before copying or distributing anything.
 
-Next: [evaluation method](evaluation-method.md) and [results](results-and-evidence.md).
+Next: [evaluation method](../docs/evaluation-method.md) and [results](../docs/results-and-evidence.md).
 
 
 

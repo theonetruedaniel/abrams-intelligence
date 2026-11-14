@@ -12,11 +12,11 @@ Status reconciled November 13, 2026 (UTC). Start with the [progress ledger](prog
 | A tool times out after an external action | Record the action and reconcile its outcome before retrying | Recovery needs receipts or an unresolved state; a timeout cannot establish failure |
 | A memory tool produces a new inferred preference | Keep the original source and separate the proposed inference from active user settings | Evaluate provenance, conflicting facts, user correction and deletion |
 
-These are design choices. The public architecture explorer illustrates them with mock components. Local Store recovery behavior has [scoped process-crash evidence](evidence/phase2/2026-11-09-recovery-checkpoint.md), and [later correctness results](evidence/phase2/2026-11-10-correctness-checkpoint.md) cover bounded browser/reconstruction and capacity cases. These do not establish every intended behavior, blanket browser safety or full product acceptance.
+These are design choices. The public architecture explorer illustrates them with mock components. Local Store recovery behavior has [scoped process-crash evidence](evidence/phase-2/2026-11-09-recovery-checkpoint.md), and [later correctness results](evidence/phase-2/2026-11-10-correctness-checkpoint.md) cover bounded browser/reconstruction and capacity cases. These do not establish every intended behavior, blanket browser safety or full product acceptance.
 
 ## Research example: choosing an agent runtime
 
-A framework can offer useful checkpoints and workflow structure. That still leaves a practical question: after a crash, can the platform avoid repeating an external action? The [candidate research](candidate-research.md) connects that question to LangGraph's documented interruption behavior. The [evaluation method](evaluation-method.md) translates it into a proposed failure case with observable evidence.
+A framework can offer useful checkpoints and workflow structure. That still leaves a practical question: after a crash, can the platform avoid repeating an external action? The [candidate research](../research/candidate-research.md) connects that question to LangGraph's documented interruption behavior. The [evaluation method](evaluation-method.md) translates it into a proposed failure case with observable evidence.
 
 That sequence, from requirement to source review to acceptance case, is the main work sample here. No runtime has won this comparison.
 
@@ -25,13 +25,13 @@ That sequence, from requirement to source review to acceptance case, is the main
 | Work | What you can inspect here | Status |
 |---|---|---|
 | Architecture and tradeoffs | [Architecture](architecture.md), [design decisions](design-decisions.md) | Public summaries of established planning |
-| Component selection research | [Candidate assessments and source revisions](candidate-research.md) | Source-reviewed proposals |
+| Component selection research | [Candidate assessments and source revisions](../research/candidate-research.md) | Source-reviewed proposals |
 | Experiment design and measured limits | [Evaluation method](evaluation-method.md), [results](results-and-evidence.md), [result-record example](../examples/evaluation-record.json) | Method and example remain illustrative; dated dispatcher, selector and scoped recovery results are separate |
 | Product interaction | [Architecture explorer](https://theonetruedaniel.github.io/architecture/) | Synthetic simulation |
-| Core/client/SQLite implementation | [Progress](progress.md), [recovery checkpoint](evidence/phase2/2026-11-09-recovery-checkpoint.md), [roadmap](roadmap.md) | Partial local implementation; separately reviewed recovery/browser/capacity results, two open RC07 fault cases and other unfinished Phase 2 obligations |
-| Native build and transport | [November 12–13 reconciliation](evidence/phase2/2026-11-13-native-build-pipe-and-smoke-reconciliation.md) | Three linked Tauri successors, two scoped real-pipe runs and one witnessed disconnected smoke; newer pre-content build interrupted, full runtime/isolation unqualified |
-| Startup-admission component | [November 13 test scope](evidence/phase2/2026-11-13-precontent-admission-unit.md) | 28/28 headless Rust fixture tests; no Tauri application, GUI/WebView or RC07 qualification |
-| Offline developer dispatcher | [Runnable component](../tools/development-dispatcher/README.md), [published verification](../tools/development-dispatcher/VERIFICATION.md) | Published source and synthetic tests; no live-dispatch or whole-product acceptance |
+| Core/client/SQLite implementation | [Progress](progress.md), [recovery checkpoint](evidence/phase-2/2026-11-09-recovery-checkpoint.md), [roadmap](roadmap.md) | Partial local implementation; separately reviewed recovery/browser/capacity results, two open RC07 fault cases and other unfinished Phase 2 obligations |
+| Native build and transport | [November 12–13 reconciliation](evidence/phase-2/2026-11-13-native-build-pipe-and-smoke-reconciliation.md) | Three linked Tauri successors, two scoped real-pipe runs and one witnessed disconnected smoke; newer pre-content build interrupted, full runtime/isolation unqualified |
+| Startup-admission component | [November 13 test scope](evidence/phase-2/2026-11-13-precontent-admission-unit.md) | 28/28 headless Rust fixture tests; no Tauri application, GUI/WebView or RC07 qualification |
+| Offline developer dispatcher | [Runnable component](../tools/dispatcher/README.md), [published verification](../tools/dispatcher/VERIFICATION.md) | Published source and synthetic tests; no live-dispatch or whole-product acceptance |
 
 The working project contains a 19-document baseline, traceability and foundation tooling. Those private artifacts are summarized rather than reproduced here. See [source notes](source-notes.md) for the limits of the public evidence.
 

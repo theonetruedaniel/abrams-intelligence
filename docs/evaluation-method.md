@@ -4,7 +4,7 @@ A bake-off compares candidates on the same task and records enough evidence to e
 
 ## Comparison index and qualification lanes
 
-The canonical index distinguishes 15 scheduled bake-offs, ten trigger-only comparisons and two single-candidate qualification lanes. The [full candidate inventory](candidate-research.md) includes later Q intake studies without making unrelated candidates prerequisites for the Core.
+The canonical index distinguishes 15 scheduled bake-offs, ten trigger-only comparisons and two single-candidate qualification lanes. The [full candidate inventory](../research/candidate-research.md) includes later Q intake studies without making unrelated candidates prerequisites for the Core.
 
 | IDs | Comparison |
 | --- | --- |

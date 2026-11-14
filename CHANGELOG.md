@@ -1,13 +1,19 @@
 # Project changelog
 
+## 2026-11-14
+
+- Reorganized the repository layout. The developer dispatcher moved from `tools/development-dispatcher/` to `tools/dispatcher/`; the repository catalog (Markdown and JSON) and candidate register moved from `docs/` to `research/`; `docs/evidence/phase2/` became `docs/evidence/phase-2/`. File contents are unchanged apart from relative links.
+- The README now opens with the project description, what runs today and a layout table. The two November 9 catalog-audit paragraphs that led the README moved to the 2026-11-09 entry below.
+- The catalog validator reads the catalog from `research/` and also checks links in `research/` Markdown.
+
 ## 2026-11-13 (UTC)
 
 - Corrected the earlier public refresh to include three verified November 12 linked Windows executables and two real Rust–Node pipe runs. The repeated 15-test batches are overlapping, not an aggregate score. Later bundle checks passed the same 21 tests in two locations; a separate real-worker run passed one test with 20 filtered.
 - Added the later witnessed default-disconnected desktop smoke with successful owned lifecycle, while keeping content, Core-connected GUI, runtime/profile readback and isolation unqualified.
 - Corrected the newer pre-content build from prepared/unexecuted to invoked and policy-interrupted, with compiler start and formal cleanup unproven and no final receipt or executable.
-- Rechecked six primary receipts and their independent reviews; added an evidence-reconciliation checkpoint to the ongoing local synchronization workflow. [Full chronology and limits](docs/evidence/phase2/2026-11-13-native-build-pipe-and-smoke-reconciliation.md).
+- Rechecked six primary receipts and their independent reviews; added an evidence-reconciliation checkpoint to the ongoing local synchronization workflow. [Full chronology and limits](docs/evidence/phase-2/2026-11-13-native-build-pipe-and-smoke-reconciliation.md).
 
-- Added the independently reviewed [28/28 headless Rust startup-admission result](docs/evidence/phase2/2026-11-13-precontent-admission-unit.md), separating 20 injected admission/thread cases from five real test-directory cases and three injected policy cases.
+- Added the independently reviewed [28/28 headless Rust startup-admission result](docs/evidence/phase-2/2026-11-13-precontent-admission-unit.md), separating 20 injected admission/thread cases from five real test-directory cases and three injected policy cases.
 - Recorded successful compiler/test exits and natural process-group retirement without claiming a full Tauri build, GUI/WebView qualification, actual profile/runtime readback or RC07 progress.
 - Refreshed current status pages and catalog counts. Both RC07 native fault cases and the separate Phase 2 obligations remain open.
 
@@ -20,15 +26,17 @@
 ## 2026-11-10 (UTC)
 
 - Reconciled the README, progress ledger, roadmap, results, reviewer guide and GitHub profile with the latest verified development history. Removed stale October 15 current-status labels and the outdated “Core implementation not started” description.
-- Added the [current correctness checkpoint](docs/evidence/phase2/2026-11-10-correctness-checkpoint.md): O19, O20, O34, O35, O38 and O40 have independently reviewed scoped passes. Only the two RC07 native fault cases remain from the eight oracle rows open in the earlier November 9 summary. Separate Phase 2 obligations remain.
+- Added the [current correctness checkpoint](docs/evidence/phase-2/2026-11-10-correctness-checkpoint.md): O19, O20, O34, O35, O38 and O40 have independently reviewed scoped passes. Only the two RC07 native fault cases remain from the eight oracle rows open in the earlier November 9 summary. Separate Phase 2 obligations remain.
 - Recorded the RC07 pre-restart source-only checkpoint: an inactive native-build correction and arm-uncertainty regressions are prepared. At that checkpoint regression execution and correction review remained pending; the earlier native build outcome remains unconfirmed. No native fault pass or Phase 2 completion is claimed.
 - The public catalog now contains 198 GitHub repositories within a 301-entry register. Latest additions include [Astryx](https://github.com/theonetruedaniel/abrams-intelligence/commit/22b98892334a0e6d0507485c75fc90c6bf4fda07) and [Elephant-Goldfish](https://github.com/theonetruedaniel/abrams-intelligence/commit/47ba3471107387c913ec2503ea6b0a2d5dd3d036), recorded as research/evaluation proposals, not adopted integrations.
 
 ## 2026-11-09
 
-- Published [scoped SQLite Store recovery results](docs/evidence/phase2/2026-11-09-recovery-checkpoint.md), bringing six previously open rows to separate reviewed process-crash results: O31, O39, RC06, RC04, RC05 and O32. At that checkpoint eight oracle rows and the other Phase 2 obligations remained open; subsequent passes are recorded in the November 10 entry. No new whole-candidate aggregate replaces the historical 51/65 checkpoint.
+- Published [scoped SQLite Store recovery results](docs/evidence/phase-2/2026-11-09-recovery-checkpoint.md), bringing six previously open rows to separate reviewed process-crash results: O31, O39, RC06, RC04, RC05 and O32. At that checkpoint eight oracle rows and the other Phase 2 obligations remained open; subsequent passes are recorded in the November 10 entry. No new whole-candidate aggregate replaces the historical 51/65 checkpoint.
 - Recorded the reviewed O34 owned-page browser method and its component/source checks. Its next workload did not start because action-time memory was below the unchanged admission requirement. Earlier uncertain browser attempts remain preserved. This pre-execution checkpoint did not pass O34; the later scoped pass is recorded in the November 10 entry.
 - Reconciled 299 registered IDs and 196 GitHub remote HEADs at that audit checkpoint. Follow-through assessed all 166 changed or previously unpinned sources at exact revisions: 164 source-reviewed and two provenance-blocked. No candidate was installed or executed for the audit. Later additions account for the larger current catalog totals.
+- November 9 source-review follow-through: 166 of 166 changed or previously unpinned GitHub sources assessed at exact revisions. Review outcomes: 2 provenance-blocked, 164 source-reviewed. Assessments include source-specific findings and primary-source citations. Existing tests, provenance blocks and adoption decisions remain separate; no candidate was installed or executed.
+- November 9, 2026 currentness audit: all 299 registered IDs reconciled and all 196 GitHub remote HEADs resolved. 30 match a recorded revision; 115 differ from recorded revisions; 51 have no reviewed revision recorded. Observed HEADs and review requirements are recorded separately in the machine-readable catalog. Five model repositories and Mercury 3 documentation were also checked. The initial inventory identified 166 source-review requirements; see the follow-through assessment above. Historical tests and adoption status remain preserved.
 
 ## 2026-10-27
 

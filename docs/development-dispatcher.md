@@ -24,7 +24,7 @@ Use Python 3.13 or later. After the reviewed component is added to this
 repository, run from the repository root:
 
 ```powershell
-cd tools/development-dispatcher
+cd tools/dispatcher
 python -m scripts.dispatch.demo
 python -m unittest discover -s tests/dispatch -p test_demo.py -v
 ```
