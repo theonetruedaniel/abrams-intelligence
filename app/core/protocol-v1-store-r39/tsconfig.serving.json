@@ -1,0 +1,23 @@
+{
+  "include": [
+    "owner/**/*.mts",
+    "node-core-minimal.d.ts"
+  ],
+  "compilerOptions": {
+    "types": [],
+    "target": "ES2023",
+    "lib": [
+      "ES2023",
+      "DOM"
+    ],
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "strict": true,
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
+    "typeRoots": [
+      "../../../node_modules/@types",
+      "../../../.work/type-dependencies/@types"
+    ]
+  }
+}

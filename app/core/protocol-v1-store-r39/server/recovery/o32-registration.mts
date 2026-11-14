@@ -1,0 +1,17 @@
+import {readFileSync} from 'node:fs';import {createHash} from 'node:crypto';
+import {canonical,initialState,evaluateControl,evaluateRequest} from '../reference-core/shared/mock-core/state.mts';
+const sourceSha256='bc7a28ebf6f833c7f3be6af7782964f1c1009f4319e8d0df587c2f116d9b9e51';
+const bytes=readFileSync(new URL('../frozen-fixtures/core-v1-draft.json',import.meta.url));if(createHash('sha256').update(bytes).digest('hex')!==sourceSha256)throw Error('O32 frozen source changed');
+const cases=JSON.parse(bytes.toString()).cases.filter((x:any)=>x.id==='O32');if(cases.length!==1)throw Error('O32 case differs');const trace=cases[0];
+const check=(v:unknown)=>{if(!v)throw Error('O32 frozen outcome differs');};
+check(trace.steps.map((s:any)=>s.op).join(',')==='approve,request,interrupt-durable-write,restart-core,assert-recovery');
+const initial=initialState('synthetic-session'),a=trace.steps[0].approval,approved=evaluateControl(initial,{type:'approve',approval:{approvalId:a.approvalId,revision:a.approvalRevision,runId:a.runId,fixtureId:a.fixtureId,epoch:a.epoch}}).state;
+const start=evaluateRequest(approved,trace.steps[1].message),request=trace.steps[2].request,pending=evaluateRequest(start.state,request);
+check(trace.steps[2].point==='before-transaction-commit'&&trace.steps[3].preserveDurableStore===true&&request.type==='cancel'&&request.requestId==='r2'&&start.state.commitSeq===2&&pending.state.commitSeq===3);
+check(initial.epoch===trace.initial.epoch&&canonical(initial.grants)===canonical(trace.initial.grants)&&canonical(initial.journal)===canonical(trace.initial.journal)&&canonical(initial.approvals)===canonical(trace.initial.approvals));
+check(canonical(start.reply)===canonical({v:1,type:trace.steps[1].message.type,requestId:trace.steps[1].message.requestId,ok:true,payload:trace.steps[1].expect.payload}));
+const visible={available:true,journal:start.state.journal.map((j:any)=>j.event),runs:Object.fromEntries(start.state.runs.map((r:any)=>[r.runId,r.state]))};
+check(canonical(visible)===canonical(trace.steps[4].allowed[0])&&canonical({epoch:start.state.epoch,journal:visible.journal,runs:visible.runs})===canonical(trace.final.allowed[0]));
+check(canonical(trace.steps[4].forbiddenStates)===canonical(['cancelled','succeeded','failed','stopped']));
+const freeze=(v:any):any=>{if(v&&typeof v==='object'){for(const x of Object.values(v))freeze(x);Object.freeze(v);}return v;};
+export const O32=freeze({sourceSha256,trace,initial,approved,prefix:start.state,pending:pending.state,transition:pending,startReply:start.reply,request,approval:{approvalId:a.approvalId,revision:a.approvalRevision,runId:a.runId,fixtureId:a.fixtureId,epoch:a.epoch},ledger:{capacity:4096,usedSlots:1,remainingSlots:4095,uncommittedReservations:0,entries:start.state.accepted.map((x:any)=>({message:x.request,reply:x.reply}))},recovery:{format:'abrams-o32-recovery',available:true,commitSeq:2,epoch:1,runState:'running',acceptedRequestIds:['r1'],journal:visible.journal}});

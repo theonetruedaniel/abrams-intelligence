@@ -1,0 +1,10 @@
+:root { font-family: Segoe UI, system-ui, sans-serif; color-scheme: light; background: #f5f7f8; color: #172631; }
+body { margin: 0; }
+main { max-width: 760px; margin: auto; padding: 2rem; }
+.eyebrow { color: #476070; font-size: .85rem; }
+h1 { margin-bottom: .5rem; }
+nav { display: flex; flex-wrap: wrap; gap: .75rem; margin: 1.5rem 0; }
+nav a { color: #064d79; }
+section { border-top: 1px solid #c5d3db; padding: .5rem 0; }
+.foot { font-size: .85rem; color: #476070; }
+:focus-visible { outline: 3px solid #0a64a0; outline-offset: 3px; }

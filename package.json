@@ -1,0 +1,36 @@
+{
+  "name": "abrams-intelligence-source-tree",
+  "version": "0.0.0",
+  "engines": {
+    "node": ">=24"
+  },
+  "type": "module",
+  "scripts": {
+    "typecheck:native": "tsc --noEmit -p app/ui/native-entry/dom/tsconfig.json",
+    "typecheck:entry": "tsc --noEmit -p app/ui/native-entry/tsconfig.json",
+    "typecheck:core-shell": "tsc --noEmit -p app/core/protocol-v1-shell-r3/tsconfig.json",
+    "typecheck:core-store": "tsc --noEmit -p app/core/protocol-v1-store-r39/tsconfig.json",
+    "typecheck:pwa": "tsc --noEmit -p app/ui/pwa/tsconfig.host.json",
+    "typecheck:pwa-serving": "tsc --noEmit -p app/core/protocol-v1-store-r39/tsconfig.serving.json",
+    "test:core-shell": "node app/core/protocol-v1-shell-r3/owner/inputs/owned-reference-core-transport.test.mts",
+    "test:native-recovery": "node app/ui/native-entry/dom/tests/gap-recovery.test.mts",
+    "test:native-adapter": "node app/ui/native-entry/dom/base/tests/shell-core-adapter.test.mts",
+    "test:native-controller": "node app/ui/native-entry/dom/base/tests/renderer-controller.test.mts",
+    "test:native-dom": "node app/ui/native-entry/dom/tests/dom-view.test.mts",
+    "test:pwa": "node app/ui/pwa/tests/selfmount.test.mts",
+    "test:pwa-serving": "node app/core/protocol-v1-store-r39/observation/serving/tests/serving.test.mts",
+    "test:server-lifecycle": "node app/core/protocol-v1-store-r39/observation/tests/lifecycle.test.mjs",
+    "test:server-composition": "node app/core/protocol-v1-store-r39/observation/tests/composition.test.mjs",
+    "prepare:pwa-document": "node -e \"require('node:fs').mkdirSync('.work/pwa/generated',{recursive:true})\" && node app/ui/pwa/generate-document.mts",
+    "prepare:shell-frontend": "vite build app/ui/native-entry --outDir ../../../.work/shell/frontend-dist",
+    "typecheck:core-shell-tests": "tsc --noEmit -p app/core/protocol-v1-shell-r3/tsconfig.tests.json"
+  },
+  "private": true,
+  "devDependencies": {
+    "@types/node": "24.19.2",
+    "typescript": "5.9.3"
+  },
+  "workspaces": [
+    "app/ui/native-entry"
+  ]
+}

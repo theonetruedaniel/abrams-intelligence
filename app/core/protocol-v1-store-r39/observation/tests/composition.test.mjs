@@ -1,0 +1,27 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {EventEmitter} from 'node:events';import {readFileSync} from 'node:fs';import {createHash} from 'node:crypto';
+import {composeServerObservation} from '../server-composition.mts';
+const turn=()=>new Promise(r=>setTimeout(r,0));
+async function fixture(options={}){
+ const timers=[],polls=[],writes=[];let handler,ownerPhase='ready',app=0;const records=[];
+ const core={epoch:2,runs:[{runId:'A',state:'cancelled',fixturePosition:1}],journal:[{event:{kind:'started'}},{event:{kind:'output',data:{text:'pipe-output'}}},{event:{kind:'cancelled'}}]};
+ const server=new EventEmitter();server.listening=false;server.listen=(v,cb)=>{assert.deepEqual(v,{host:'127.0.0.1',port:0,exclusive:true});server.listening=true;cb();};server.address=()=>({address:'127.0.0.1',port:45678});server.close=cb=>{server.listening=false;cb(options.closeError?Error('synthetic close'):undefined);};
+ const ports={createServer(_options,h){handler=h;return server;},readFileSync,createHash,writeFileSync(path,data){if(options.readyFailure&&path.endsWith('READY.json'))throw Error('synthetic write');writes.push({path,value:JSON.parse(data)});},setTimeout(fn,ms){const t={fn,ms};timers.push(t);return t;},clearTimeout(t){t.cancelled=true;},setInterval(fn){polls.push(fn);return fn;},clearInterval(){},createSession(){return {component:{},owner:{snapshot:()=>({phase:ownerPhase,core,failures:[]}),async close(){ownerPhase='closed';}}};},createFinite(){if(options.finiteFailure)throw Error('synthetic construction');return {snapshot:()=>({applicationCount:app,records}),async close(){if(options.heldCleanup)await options.heldCleanup;ownerPhase='closed';},exchange(req,res){app++;const row={route:req.url,cleanupSettled:false,deadlineExpired:false,state:'pending'};records.push(row);if(req.url==='/events')return new Promise(resolve=>{res.once('close',()=>{row.cleanupSettled=true;row.state='settled';resolve();});});row.cleanupSettled=true;row.state='settled';return Promise.resolve();}};}};
+ const result=composeServerObservation({approved:true,receiptRoot:'synthetic-task-only',ports});void result.catch(()=>{});
+ for(let i=0;i<30&&!writes.length&&!options.readyFailure&&!options.finiteFailure;i++)await turn();
+ return {server,result,writes,timers,ownerPhase:()=>ownerPhase,poll(){for(const f of polls)f();},async request(url,generation){const req=new EventEmitter(),res=new EventEmitter();req.method=url==='/events'||url==='/request'?'POST':'GET';req.url=url;req.headers={'x-abrams-subscription-generation':String(generation??0)};res.writableFinished=false;res.destroy=()=>res.emit('close');handler(req,res);await turn();return res;}};
+}
+test('same composition publishes readiness only after loopback listen; deadline is incomplete',async()=>{const f=await fixture();assert.equal(f.server.listening,true);assert.equal(f.writes[0].value.url,'http://127.0.0.1:45678/');f.timers.find(t=>t.ms===300000).fn();await turn();f.poll();assert.equal((await f.result).outcome,'incomplete');});
+test('readiness write failure enters cleanup and rejects without private content',async()=>{const f=await fixture({readyFailure:true});await assert.rejects(f.result,/server observation failed/);assert.equal(f.server.listening,false);});
+test('listener close callback error preserves uncertainty',async()=>{const f=await fixture({closeError:true});f.timers.find(t=>t.ms===300000).fn();await turn();f.poll();assert.equal((await f.result).uncertain,true);});
+test('same request callbacks recognize refresh and final stream closure',async()=>{const f=await fixture();await f.request('/');const first=await f.request('/events',1);for(let i=0;i<4;i++)await f.request('/request');first.emit('close');await turn();await f.request('/');const second=await f.request('/events',2);await f.request('/request');second.emit('close');await turn();f.poll();assert.equal((await f.result).outcome,'server-flow-complete');});
+test('grace expiry publishes explicit pending cleanup rather than clean retirement',async()=>{let release;const heldCleanup=new Promise(r=>release=r);const f=await fixture({heldCleanup});f.timers.find(t=>t.ms===300000).fn();await turn();f.timers.find(t=>t.ms===10000).fn();f.poll();const result=await f.result;assert.equal(result.uncertain,true);assert.equal(result.cleanupPending,true);release();await turn();});
+
+test('finite construction failure closes already constructed session owner',async()=>{const f=await fixture({finiteFailure:true});await assert.rejects(f.result,/server observation failed/);assert.equal(f.ownerPhase(),'closed');assert.equal(f.server.listening,false);assert.equal(f.writes.length,0);});
+
+test('wrong generated artifact is rejected before listener owner writes or timers',async()=>{
+ const calls={read:0,server:0,owner:0,finite:0,write:0,timer:0};
+ const unexpected=key=>()=>{calls[key]++;throw Error('unexpected '+key);};
+ const ports={readFileSync(url,encoding){calls.read++;return readFileSync(url,encoding)+' ';},createHash,createServer:unexpected('server'),createSession:unexpected('owner'),createFinite:unexpected('finite'),writeFileSync:unexpected('write'),setTimeout:unexpected('timer'),clearTimeout:unexpected('timer'),setInterval:unexpected('timer'),clearInterval:unexpected('timer')};
+ await assert.rejects(composeServerObservation({approved:true,receiptRoot:'synthetic-task-only',ports}),/^Error: observation admission rejected$/);
+ assert.deepEqual(calls,{read:1,server:0,owner:0,finite:0,write:0,timer:0});
+});

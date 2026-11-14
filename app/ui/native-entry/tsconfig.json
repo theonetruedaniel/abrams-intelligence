@@ -1,0 +1,48 @@
+{
+  "include": [
+    "src/**/*",
+    "native/**/*",
+    "dom/renderer/**/*.mts"
+  ],
+  "compilerOptions": {
+    "target": "ES2023",
+    "lib": [
+      "ES2023",
+      "DOM",
+      "ESNext.Disposable"
+    ],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "jsx": "react-jsx",
+    "strict": true,
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
+    "types": [
+      "react",
+      "react-dom"
+    ],
+    "typeRoots": [
+      "../../../node_modules/@types",
+      "../../../.work/type-dependencies/@types"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "react": [
+        "../../../node_modules/@types/react",
+        "../../../.work/type-dependencies/@types/react"
+      ],
+      "react/*": [
+        "../../../node_modules/@types/react/*",
+        "../../../.work/type-dependencies/@types/react/*"
+      ],
+      "react-dom/*": [
+        "../../../node_modules/@types/react-dom/*",
+        "../../../.work/type-dependencies/@types/react-dom/*"
+      ],
+      "@tauri-apps/api/*": [
+        "../../../node_modules/@tauri-apps/api/*",
+        "../../../.work/type-dependencies/node_modules/@tauri-apps/api/*"
+      ]
+    }
+  }
+}

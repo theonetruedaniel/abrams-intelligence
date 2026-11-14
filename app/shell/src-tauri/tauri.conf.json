@@ -1,0 +1,16 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Abrams Phase 2 Shell Fixture",
+  "version": "0.0.0",
+  "identifier": "com.abramsintelligence.phase2.shellfixture",
+  "build": { "frontendDist": "../../../.work/shell/frontend-dist" },
+  "app": {
+    "windows": [],
+    "security": {
+      "capabilities": [{"identifier":"main-core-bridge","description":"Local main webview versioned Core relay only","local":true,"webviews":["main"],"permissions":["allow-core-open","allow-core-request","allow-core-read-events","allow-core-close"]}],
+      "assetProtocol": { "enable": false },
+      "csp": "default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'none'; object-src 'none'; frame-src 'none'; base-uri 'none'; form-action 'none'"
+    }
+  },
+  "bundle": { "active": false, "targets": [], "icon": ["icons/icon.ico"] }
+}

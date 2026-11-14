@@ -1,0 +1,20 @@
+{
+  "include": [
+    "server/reference-core/**/*.mts"
+  ],
+  "compilerOptions": {
+    "typeRoots": [
+      "../../../node_modules/@types",
+      "../../../.work/type-dependencies/@types"
+    ],
+    "strict": true,
+    "target": "ES2023",
+    "moduleResolution": "NodeNext",
+    "types": [
+      "node"
+    ],
+    "module": "NodeNext",
+    "noEmit": true,
+    "allowImportingTsExtensions": true
+  }
+}

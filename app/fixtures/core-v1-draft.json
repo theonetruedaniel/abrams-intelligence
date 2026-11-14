@@ -1,0 +1,7148 @@
+{
+  "format": "abrams-core-oracle-traces",
+  "formatVersion": 1,
+  "status": "draft-unexecuted",
+  "protocolVersion": 1,
+  "sourceOracle": "docs/pocs/preregistrations/phase-2-oracle-v1.md",
+  "cases": [
+    {
+      "id": "O01",
+      "oracle": "O01",
+      "initial": {
+        "sessionId": "synthetic-session",
+        "epoch": 1,
+        "grants": [
+          "health",
+          "start-mock-run",
+          "cancel",
+          "global-stop",
+          "reconnect"
+        ],
+        "journal": [],
+        "approvals": []
+      },
+      "steps": [
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "health",
+            "requestId": "r1",
+            "payload": {}
+          },
+          "expect": {
+            "ok": true,
+            "payload": {
+              "protocol": 1,
+              "epoch": 1,
+              "lastGlobalSeq": 0
+            }
+          }
+        }
+      ],
+      "final": {
+        "epoch": 1,
+        "journal": [],
+        "runs": {}
+      }
+    },
+    {
+      "id": "O02",
+      "oracle": "O02",
+      "initial": {
+        "sessionId": "synthetic-session",
+        "epoch": 1,
+        "grants": [
+          "health",
+          "start-mock-run",
+          "cancel",
+          "global-stop",
+          "reconnect"
+        ],
+        "journal": [],
+        "approvals": []
+      },
+      "steps": [
+        {
+          "op": "approve",
+          "approval": {
+            "approvalId": "approval-A",
+            "approvalRevision": 1,
+            "runId": "A",
+            "fixtureId": "C",
+            "epoch": 1
+          }
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "start-mock-run",
+            "requestId": "r1",
+            "payload": {
+              "runId": "A",
+              "fixtureId": "C",
+              "approvalId": "approval-A",
+              "approvalRevision": 1,
+              "expectedEpoch": 1
+            }
+          },
+          "expect": {
+            "ok": true,
+            "payload": {
+              "runId": "A",
+              "accepted": true,
+              "epoch": 1
+            }
+          }
+        },
+        {
+          "op": "tick",
+          "runId": "A",
+          "count": 3
+        },
+        {
+          "op": "drain"
+        }
+      ],
+      "final": {
+        "epoch": 1,
+        "journal": [
+          {
+            "epoch": 1,
+            "globalSeq": 1,
+            "runId": "A",
+            "runSeq": 1,
+            "kind": "started",
+            "data": {}
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 2,
+            "runId": "A",
+            "runSeq": 2,
+            "kind": "output",
+            "data": {
+              "text": "alpha"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 3,
+            "runId": "A",
+            "runSeq": 3,
+            "kind": "output",
+            "data": {
+              "text": "beta"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 4,
+            "runId": "A",
+            "runSeq": 4,
+            "kind": "succeeded",
+            "data": {}
+          }
+        ],
+        "runs": {
+          "A": "succeeded"
+        }
+      }
+    },
+    {
+      "id": "O03",
+      "oracle": "O03",
+      "initial": {
+        "sessionId": "synthetic-session",
+        "epoch": 1,
+        "grants": [
+          "health",
+          "start-mock-run",
+          "cancel",
+          "global-stop",
+          "reconnect"
+        ],
+        "journal": [],
+        "approvals": []
+      },
+      "steps": [
+        {
+          "op": "approve",
+          "approval": {
+            "approvalId": "approval-A",
+            "approvalRevision": 1,
+            "runId": "A",
+            "fixtureId": "E",
+            "epoch": 1
+          }
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "start-mock-run",
+            "requestId": "r1",
+            "payload": {
+              "runId": "A",
+              "fixtureId": "E",
+              "approvalId": "approval-A",
+              "approvalRevision": 1,
+              "expectedEpoch": 1
+            }
+          },
+          "expect": {
+            "ok": true,
+            "payload": {
+              "runId": "A",
+              "accepted": true,
+              "epoch": 1
+            }
+          }
+        },
+        {
+          "op": "tick",
+          "runId": "A",
+          "count": 2
+        },
+        {
+          "op": "drain"
+        }
+      ],
+      "final": {
+        "epoch": 1,
+        "journal": [
+          {
+            "epoch": 1,
+            "globalSeq": 1,
+            "runId": "A",
+            "runSeq": 1,
+            "kind": "started",
+            "data": {}
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 2,
+            "runId": "A",
+            "runSeq": 2,
+            "kind": "output",
+            "data": {
+              "text": "alpha"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 3,
+            "runId": "A",
+            "runSeq": 3,
+            "kind": "failed",
+            "data": {
+              "code": "fixture_error"
+            }
+          }
+        ],
+        "runs": {
+          "A": "failed"
+        }
+      }
+    },
+    {
+      "id": "O04",
+      "oracle": "O04",
+      "initial": {
+        "sessionId": "synthetic-session",
+        "epoch": 1,
+        "grants": [
+          "health",
+          "start-mock-run",
+          "cancel",
+          "global-stop",
+          "reconnect"
+        ],
+        "journal": [],
+        "approvals": []
+      },
+      "steps": [
+        {
+          "op": "approve",
+          "approval": {
+            "approvalId": "approval-A",
+            "approvalRevision": 1,
+            "runId": "A",
+            "fixtureId": "H",
+            "epoch": 1
+          }
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "start-mock-run",
+            "requestId": "r1",
+            "payload": {
+              "runId": "A",
+              "fixtureId": "H",
+              "approvalId": "approval-A",
+              "approvalRevision": 1,
+              "expectedEpoch": 1
+            }
+          },
+          "expect": {
+            "ok": true,
+            "payload": {
+              "runId": "A",
+              "accepted": true,
+              "epoch": 1
+            }
+          }
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "start-mock-run",
+            "requestId": "r1",
+            "payload": {
+              "runId": "A",
+              "fixtureId": "H",
+              "approvalId": "approval-A",
+              "approvalRevision": 1,
+              "expectedEpoch": 1
+            }
+          },
+          "expect": {
+            "ok": true,
+            "payload": {
+              "runId": "A",
+              "accepted": true,
+              "epoch": 1
+            }
+          }
+        }
+      ],
+      "final": {
+        "epoch": 1,
+        "journal": [
+          {
+            "epoch": 1,
+            "globalSeq": 1,
+            "runId": "A",
+            "runSeq": 1,
+            "kind": "started",
+            "data": {}
+          }
+        ],
+        "runs": {
+          "A": "running"
+        }
+      }
+    },
+    {
+      "id": "O05",
+      "oracle": "O05",
+      "initial": {
+        "sessionId": "synthetic-session",
+        "epoch": 1,
+        "grants": [
+          "health",
+          "start-mock-run",
+          "cancel",
+          "global-stop",
+          "reconnect"
+        ],
+        "journal": [],
+        "approvals": []
+      },
+      "steps": [
+        {
+          "op": "approve",
+          "approval": {
+            "approvalId": "approval-A",
+            "approvalRevision": 1,
+            "runId": "A",
+            "fixtureId": "H",
+            "epoch": 1
+          }
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "start-mock-run",
+            "requestId": "r1",
+            "payload": {
+              "runId": "A",
+              "fixtureId": "H",
+              "approvalId": "approval-A",
+              "approvalRevision": 1,
+              "expectedEpoch": 1
+            }
+          },
+          "expect": {
+            "ok": true,
+            "payload": {
+              "runId": "A",
+              "accepted": true,
+              "epoch": 1
+            }
+          }
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "start-mock-run",
+            "requestId": "r1",
+            "payload": {
+              "runId": "B",
+              "fixtureId": "H",
+              "approvalId": "approval-A",
+              "approvalRevision": 1,
+              "expectedEpoch": 1
+            }
+          },
+          "expect": {
+            "ok": false,
+            "code": "request_conflict",
+            "stateUnchanged": true,
+            "nativeActions": 0
+          }
+        }
+      ],
+      "final": {
+        "epoch": 1,
+        "journal": [
+          {
+            "epoch": 1,
+            "globalSeq": 1,
+            "runId": "A",
+            "runSeq": 1,
+            "kind": "started",
+            "data": {}
+          }
+        ],
+        "runs": {
+          "A": "running"
+        }
+      }
+    },
+    {
+      "id": "O06",
+      "oracle": "O06",
+      "initial": {
+        "sessionId": "synthetic-session",
+        "epoch": 1,
+        "grants": [
+          "health",
+          "start-mock-run",
+          "cancel",
+          "global-stop",
+          "reconnect"
+        ],
+        "journal": [],
+        "approvals": []
+      },
+      "steps": [
+        {
+          "op": "approve",
+          "approval": {
+            "approvalId": "approval-A",
+            "approvalRevision": 1,
+            "runId": "A",
+            "fixtureId": "H",
+            "epoch": 1
+          }
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "start-mock-run",
+            "requestId": "r1",
+            "payload": {
+              "runId": "A",
+              "fixtureId": "H",
+              "approvalId": "approval-A",
+              "approvalRevision": 1,
+              "expectedEpoch": 1
+            }
+          },
+          "expect": {
+            "ok": true,
+            "payload": {
+              "runId": "A",
+              "accepted": true,
+              "epoch": 1
+            }
+          }
+        },
+        {
+          "op": "approve",
+          "approval": {
+            "approvalId": "approval-new",
+            "approvalRevision": 1,
+            "runId": "A",
+            "fixtureId": "H",
+            "epoch": 1
+          }
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "start-mock-run",
+            "requestId": "r2",
+            "payload": {
+              "runId": "A",
+              "fixtureId": "H",
+              "approvalId": "approval-new",
+              "approvalRevision": 1,
+              "expectedEpoch": 1
+            }
+          },
+          "expect": {
+            "ok": false,
+            "code": "run_exists",
+            "stateUnchanged": true,
+            "nativeActions": 0
+          }
+        }
+      ],
+      "final": {
+        "epoch": 1,
+        "journal": [
+          {
+            "epoch": 1,
+            "globalSeq": 1,
+            "runId": "A",
+            "runSeq": 1,
+            "kind": "started",
+            "data": {}
+          }
+        ],
+        "runs": {
+          "A": "running"
+        }
+      }
+    },
+    {
+      "id": "O07",
+      "oracle": "O07",
+      "initial": {
+        "sessionId": "synthetic-session",
+        "epoch": 1,
+        "grants": [
+          "health",
+          "start-mock-run",
+          "cancel",
+          "global-stop",
+          "reconnect"
+        ],
+        "journal": [],
+        "approvals": []
+      },
+      "steps": [
+        {
+          "op": "approve",
+          "approval": {
+            "approvalId": "approval-A",
+            "approvalRevision": 1,
+            "runId": "A",
+            "fixtureId": "Z",
+            "epoch": 1
+          }
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "start-mock-run",
+            "requestId": "r1",
+            "payload": {
+              "runId": "A",
+              "fixtureId": "Z",
+              "approvalId": "approval-A",
+              "approvalRevision": 1,
+              "expectedEpoch": 1
+            }
+          },
+          "expect": {
+            "ok": false,
+            "code": "unknown_fixture",
+            "stateUnchanged": true,
+            "nativeActions": 0
+          }
+        }
+      ],
+      "final": {
+        "epoch": 1,
+        "journal": [],
+        "runs": {}
+      }
+    },
+    {
+      "id": "O08",
+      "oracle": "O08",
+      "initial": {
+        "sessionId": "synthetic-session",
+        "epoch": 1,
+        "grants": [
+          "health",
+          "start-mock-run",
+          "cancel",
+          "global-stop",
+          "reconnect"
+        ],
+        "journal": [],
+        "approvals": []
+      },
+      "steps": [
+        {
+          "op": "approve",
+          "approval": {
+            "approvalId": "approval-A",
+            "approvalRevision": 1,
+            "runId": "A",
+            "fixtureId": "H",
+            "epoch": 1
+          }
+        },
+        {
+          "op": "invalidate",
+          "approvalId": "approval-A"
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "start-mock-run",
+            "requestId": "r1",
+            "payload": {
+              "runId": "A",
+              "fixtureId": "H",
+              "approvalId": "approval-A",
+              "approvalRevision": 1,
+              "expectedEpoch": 1
+            }
+          },
+          "expect": {
+            "ok": false,
+            "code": "stale_approval",
+            "stateUnchanged": true,
+            "nativeActions": 0
+          }
+        }
+      ],
+      "final": {
+        "epoch": 1,
+        "journal": [],
+        "runs": {}
+      }
+    },
+    {
+      "id": "O09",
+      "oracle": "O09",
+      "initial": {
+        "sessionId": "synthetic-session",
+        "epoch": 1,
+        "grants": [
+          "health",
+          "start-mock-run",
+          "cancel",
+          "global-stop",
+          "reconnect"
+        ],
+        "journal": [],
+        "approvals": []
+      },
+      "steps": [
+        {
+          "op": "approve",
+          "approval": {
+            "approvalId": "approval-A",
+            "approvalRevision": 1,
+            "runId": "A",
+            "fixtureId": "H",
+            "epoch": 1
+          }
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "start-mock-run",
+            "requestId": "r1",
+            "payload": {
+              "runId": "B",
+              "fixtureId": "H",
+              "approvalId": "approval-A",
+              "approvalRevision": 1,
+              "expectedEpoch": 1
+            }
+          },
+          "expect": {
+            "ok": false,
+            "code": "stale_approval",
+            "stateUnchanged": true,
+            "nativeActions": 0
+          }
+        }
+      ],
+      "final": {
+        "epoch": 1,
+        "journal": [],
+        "runs": {}
+      }
+    },
+    {
+      "id": "O10",
+      "oracle": "O10",
+      "initial": {
+        "sessionId": "synthetic-session",
+        "epoch": 1,
+        "grants": [
+          "health",
+          "start-mock-run",
+          "cancel",
+          "global-stop",
+          "reconnect"
+        ],
+        "journal": [],
+        "approvals": []
+      },
+      "steps": [
+        {
+          "op": "approve",
+          "approval": {
+            "approvalId": "approval-A",
+            "approvalRevision": 1,
+            "runId": "A",
+            "fixtureId": "H",
+            "epoch": 1
+          }
+        },
+        {
+          "op": "revoke",
+          "type": "start-mock-run"
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "start-mock-run",
+            "requestId": "r1",
+            "payload": {
+              "runId": "A",
+              "fixtureId": "H",
+              "approvalId": "approval-A",
+              "approvalRevision": 1,
+              "expectedEpoch": 1
+            }
+          },
+          "expect": {
+            "ok": false,
+            "code": "not_granted",
+            "stateUnchanged": true,
+            "nativeActions": 0
+          }
+        }
+      ],
+      "final": {
+        "epoch": 1,
+        "journal": [],
+        "runs": {}
+      }
+    },
+    {
+      "id": "O11",
+      "oracle": "O11",
+      "initial": {
+        "sessionId": "synthetic-session",
+        "epoch": 1,
+        "grants": [
+          "health",
+          "start-mock-run",
+          "cancel",
+          "global-stop",
+          "reconnect"
+        ],
+        "journal": [],
+        "approvals": []
+      },
+      "steps": [
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "shell-exec",
+            "requestId": "r1",
+            "payload": {
+              "command": "synthetic-never-execute"
+            }
+          },
+          "expect": {
+            "ok": false,
+            "code": "unknown_type",
+            "stateUnchanged": true,
+            "nativeActions": 0
+          }
+        }
+      ],
+      "final": {
+        "epoch": 1,
+        "journal": [],
+        "runs": {}
+      }
+    },
+    {
+      "id": "O12",
+      "oracle": "O12",
+      "initial": {
+        "sessionId": "synthetic-session",
+        "epoch": 1,
+        "grants": [
+          "health",
+          "start-mock-run",
+          "cancel",
+          "global-stop",
+          "reconnect"
+        ],
+        "journal": [],
+        "approvals": []
+      },
+      "steps": [
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "stream-event",
+            "payload": {
+              "epoch": 1,
+              "globalSeq": 1,
+              "runId": "A",
+              "runSeq": 1,
+              "kind": "succeeded",
+              "data": {}
+            }
+          },
+          "expect": {
+            "ok": false,
+            "code": "wrong_direction",
+            "stateUnchanged": true,
+            "nativeActions": 0
+          }
+        }
+      ],
+      "final": {
+        "epoch": 1,
+        "journal": [],
+        "runs": {}
+      }
+    },
+    {
+      "id": "O13-capability",
+      "oracle": "O13",
+      "initial": {
+        "sessionId": "synthetic-session",
+        "epoch": 1,
+        "grants": [
+          "health",
+          "start-mock-run",
+          "cancel",
+          "global-stop",
+          "reconnect"
+        ],
+        "journal": [],
+        "approvals": []
+      },
+      "steps": [
+        {
+          "op": "approve",
+          "approval": {
+            "approvalId": "approval-A",
+            "approvalRevision": 1,
+            "runId": "A",
+            "fixtureId": "H",
+            "epoch": 1
+          }
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "start-mock-run",
+            "requestId": "r1",
+            "payload": {
+              "runId": "A",
+              "fixtureId": "H",
+              "approvalId": "approval-A",
+              "approvalRevision": 1,
+              "expectedEpoch": 1,
+              "capability": "synthetic-ungranted"
+            }
+          },
+          "expect": {
+            "ok": false,
+            "code": "malformed",
+            "stateUnchanged": true,
+            "nativeActions": 0
+          }
+        }
+      ],
+      "final": {
+        "epoch": 1,
+        "journal": [],
+        "runs": {}
+      }
+    },
+    {
+      "id": "O13-path",
+      "oracle": "O13",
+      "initial": {
+        "sessionId": "synthetic-session",
+        "epoch": 1,
+        "grants": [
+          "health",
+          "start-mock-run",
+          "cancel",
+          "global-stop",
+          "reconnect"
+        ],
+        "journal": [],
+        "approvals": []
+      },
+      "steps": [
+        {
+          "op": "approve",
+          "approval": {
+            "approvalId": "approval-A",
+            "approvalRevision": 1,
+            "runId": "A",
+            "fixtureId": "H",
+            "epoch": 1
+          }
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "start-mock-run",
+            "requestId": "r1",
+            "payload": {
+              "runId": "A",
+              "fixtureId": "H",
+              "approvalId": "approval-A",
+              "approvalRevision": 1,
+              "expectedEpoch": 1,
+              "path": "synthetic-ungranted"
+            }
+          },
+          "expect": {
+            "ok": false,
+            "code": "malformed",
+            "stateUnchanged": true,
+            "nativeActions": 0
+          }
+        }
+      ],
+      "final": {
+        "epoch": 1,
+        "journal": [],
+        "runs": {}
+      }
+    },
+    {
+      "id": "O14-fractional-sequence",
+      "oracle": "O14",
+      "initial": {
+        "sessionId": "synthetic-session",
+        "epoch": 1,
+        "grants": [
+          "health",
+          "start-mock-run",
+          "cancel",
+          "global-stop",
+          "reconnect"
+        ],
+        "journal": [],
+        "approvals": []
+      },
+      "steps": [
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "reconnect",
+            "requestId": "r1",
+            "payload": {
+              "epoch": 1,
+              "afterGlobalSeq": 0.5
+            }
+          },
+          "expect": {
+            "ok": false,
+            "code": "malformed",
+            "stateUnchanged": true,
+            "nativeActions": 0
+          }
+        }
+      ],
+      "final": {
+        "epoch": 1,
+        "journal": [],
+        "runs": {}
+      }
+    },
+    {
+      "id": "O14-long-id",
+      "oracle": "O14",
+      "initial": {
+        "sessionId": "synthetic-session",
+        "epoch": 1,
+        "grants": [
+          "health",
+          "start-mock-run",
+          "cancel",
+          "global-stop",
+          "reconnect"
+        ],
+        "journal": [],
+        "approvals": []
+      },
+      "steps": [
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "health",
+            "requestId": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "payload": {}
+          },
+          "expect": {
+            "ok": false,
+            "code": "malformed",
+            "stateUnchanged": true,
+            "nativeActions": 0
+          }
+        }
+      ],
+      "final": {
+        "epoch": 1,
+        "journal": [],
+        "runs": {}
+      }
+    },
+    {
+      "id": "O14-missing",
+      "oracle": "O14",
+      "initial": {
+        "sessionId": "synthetic-session",
+        "epoch": 1,
+        "grants": [
+          "health",
+          "start-mock-run",
+          "cancel",
+          "global-stop",
+          "reconnect"
+        ],
+        "journal": [],
+        "approvals": []
+      },
+      "steps": [
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "cancel",
+            "requestId": "r1",
+            "payload": {
+              "expectedEpoch": 1
+            }
+          },
+          "expect": {
+            "ok": false,
+            "code": "malformed",
+            "stateUnchanged": true,
+            "nativeActions": 0
+          }
+        }
+      ],
+      "final": {
+        "epoch": 1,
+        "journal": [],
+        "runs": {}
+      }
+    },
+    {
+      "id": "O14-negative-sequence",
+      "oracle": "O14",
+      "initial": {
+        "sessionId": "synthetic-session",
+        "epoch": 1,
+        "grants": [
+          "health",
+          "start-mock-run",
+          "cancel",
+          "global-stop",
+          "reconnect"
+        ],
+        "journal": [],
+        "approvals": []
+      },
+      "steps": [
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "reconnect",
+            "requestId": "r1",
+            "payload": {
+              "epoch": 1,
+              "afterGlobalSeq": -1
+            }
+          },
+          "expect": {
+            "ok": false,
+            "code": "malformed",
+            "stateUnchanged": true,
+            "nativeActions": 0
+          }
+        }
+      ],
+      "final": {
+        "epoch": 1,
+        "journal": [],
+        "runs": {}
+      }
+    },
+    {
+      "id": "O14-null",
+      "oracle": "O14",
+      "initial": {
+        "sessionId": "synthetic-session",
+        "epoch": 1,
+        "grants": [
+          "health",
+          "start-mock-run",
+          "cancel",
+          "global-stop",
+          "reconnect"
+        ],
+        "journal": [],
+        "approvals": []
+      },
+      "steps": [
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "health",
+            "requestId": "r1",
+            "payload": null
+          },
+          "expect": {
+            "ok": false,
+            "code": "malformed",
+            "stateUnchanged": true,
+            "nativeActions": 0
+          }
+        }
+      ],
+      "final": {
+        "epoch": 1,
+        "journal": [],
+        "runs": {}
+      }
+    },
+    {
+      "id": "O14-oversized",
+      "oracle": "O14",
+      "initial": {
+        "sessionId": "synthetic-session",
+        "epoch": 1,
+        "grants": [
+          "health",
+          "start-mock-run",
+          "cancel",
+          "global-stop",
+          "reconnect"
+        ],
+        "journal": [],
+        "approvals": []
+      },
+      "steps": [
+        {
+          "op": "raw-request",
+          "bytes": {
+            "encoding": "utf8-padded",
+            "text": "{\"v\":1,\"type\":\"health\",\"requestId\":\"r1\",\"payload\":{}}",
+            "byteLength": 65537,
+            "padding": " "
+          },
+          "expect": {
+            "ok": false,
+            "code": "malformed",
+            "stateUnchanged": true,
+            "nativeActions": 0
+          }
+        }
+      ],
+      "final": {
+        "epoch": 1,
+        "journal": [],
+        "runs": {}
+      }
+    },
+    {
+      "id": "O14-size-boundary",
+      "oracle": "O14",
+      "initial": {
+        "sessionId": "synthetic-session",
+        "epoch": 1,
+        "grants": [
+          "health",
+          "start-mock-run",
+          "cancel",
+          "global-stop",
+          "reconnect"
+        ],
+        "journal": [],
+        "approvals": []
+      },
+      "steps": [
+        {
+          "op": "raw-request",
+          "bytes": {
+            "encoding": "utf8-padded",
+            "text": "{\"v\":1,\"type\":\"health\",\"requestId\":\"r1\",\"payload\":{}}",
+            "byteLength": 65536,
+            "padding": " "
+          },
+          "expect": {
+            "ok": true,
+            "payload": {
+              "protocol": 1,
+              "epoch": 1,
+              "lastGlobalSeq": 0
+            }
+          }
+        }
+      ],
+      "final": {
+        "epoch": 1,
+        "journal": [],
+        "runs": {}
+      }
+    },
+    {
+      "id": "O14-string-epoch",
+      "oracle": "O14",
+      "initial": {
+        "sessionId": "synthetic-session",
+        "epoch": 1,
+        "grants": [
+          "health",
+          "start-mock-run",
+          "cancel",
+          "global-stop",
+          "reconnect"
+        ],
+        "journal": [],
+        "approvals": []
+      },
+      "steps": [
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "cancel",
+            "requestId": "r1",
+            "payload": {
+              "runId": "A",
+              "expectedEpoch": "1"
+            }
+          },
+          "expect": {
+            "ok": false,
+            "code": "malformed",
+            "stateUnchanged": true,
+            "nativeActions": 0
+          }
+        }
+      ],
+      "final": {
+        "epoch": 1,
+        "journal": [],
+        "runs": {}
+      }
+    },
+    {
+      "id": "O15",
+      "oracle": "O15",
+      "initial": {
+        "sessionId": "synthetic-session",
+        "epoch": 1,
+        "grants": [
+          "health",
+          "start-mock-run",
+          "cancel",
+          "global-stop",
+          "reconnect"
+        ],
+        "journal": [],
+        "approvals": []
+      },
+      "steps": [
+        {
+          "op": "request",
+          "message": {
+            "v": 2,
+            "type": "health",
+            "requestId": "r1",
+            "payload": {}
+          },
+          "expect": {
+            "ok": false,
+            "code": "unsupported_version",
+            "stateUnchanged": true,
+            "nativeActions": 0
+          }
+        }
+      ],
+      "final": {
+        "epoch": 1,
+        "journal": [],
+        "runs": {}
+      }
+    },
+    {
+      "id": "O16",
+      "oracle": "O16",
+      "initial": {
+        "sessionId": "synthetic-session",
+        "epoch": 1,
+        "grants": [
+          "health",
+          "start-mock-run",
+          "cancel",
+          "global-stop",
+          "reconnect"
+        ],
+        "journal": [],
+        "approvals": []
+      },
+      "steps": [
+        {
+          "op": "approve",
+          "approval": {
+            "approvalId": "approval-A",
+            "approvalRevision": 1,
+            "runId": "A",
+            "fixtureId": "C",
+            "epoch": 1
+          }
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "start-mock-run",
+            "requestId": "r1",
+            "payload": {
+              "runId": "A",
+              "fixtureId": "C",
+              "approvalId": "approval-A",
+              "approvalRevision": 1,
+              "expectedEpoch": 1
+            }
+          },
+          "expect": {
+            "ok": true,
+            "payload": {
+              "runId": "A",
+              "accepted": true,
+              "epoch": 1
+            }
+          }
+        },
+        {
+          "op": "tick",
+          "runId": "A",
+          "count": 3
+        },
+        {
+          "op": "deliver",
+          "events": [
+            {
+              "epoch": 1,
+              "globalSeq": 1,
+              "runId": "A",
+              "runSeq": 1,
+              "kind": "started",
+              "data": {}
+            },
+            {
+              "epoch": 1,
+              "globalSeq": 1,
+              "runId": "A",
+              "runSeq": 1,
+              "kind": "started",
+              "data": {}
+            },
+            {
+              "epoch": 1,
+              "globalSeq": 2,
+              "runId": "A",
+              "runSeq": 2,
+              "kind": "output",
+              "data": {
+                "text": "alpha"
+              }
+            },
+            {
+              "epoch": 1,
+              "globalSeq": 2,
+              "runId": "A",
+              "runSeq": 2,
+              "kind": "output",
+              "data": {
+                "text": "alpha"
+              }
+            },
+            {
+              "epoch": 1,
+              "globalSeq": 3,
+              "runId": "A",
+              "runSeq": 3,
+              "kind": "output",
+              "data": {
+                "text": "beta"
+              }
+            },
+            {
+              "epoch": 1,
+              "globalSeq": 3,
+              "runId": "A",
+              "runSeq": 3,
+              "kind": "output",
+              "data": {
+                "text": "beta"
+              }
+            },
+            {
+              "epoch": 1,
+              "globalSeq": 4,
+              "runId": "A",
+              "runSeq": 4,
+              "kind": "succeeded",
+              "data": {}
+            },
+            {
+              "epoch": 1,
+              "globalSeq": 4,
+              "runId": "A",
+              "runSeq": 4,
+              "kind": "succeeded",
+              "data": {}
+            }
+          ]
+        },
+        {
+          "op": "assert-projection",
+          "cursor": 4,
+          "records": [
+            {
+              "epoch": 1,
+              "globalSeq": 1,
+              "runId": "A",
+              "runSeq": 1,
+              "kind": "started",
+              "data": {}
+            },
+            {
+              "epoch": 1,
+              "globalSeq": 2,
+              "runId": "A",
+              "runSeq": 2,
+              "kind": "output",
+              "data": {
+                "text": "alpha"
+              }
+            },
+            {
+              "epoch": 1,
+              "globalSeq": 3,
+              "runId": "A",
+              "runSeq": 3,
+              "kind": "output",
+              "data": {
+                "text": "beta"
+              }
+            },
+            {
+              "epoch": 1,
+              "globalSeq": 4,
+              "runId": "A",
+              "runSeq": 4,
+              "kind": "succeeded",
+              "data": {}
+            }
+          ],
+          "runs": {
+            "A": "succeeded"
+          },
+          "degraded": false
+        }
+      ],
+      "final": {
+        "epoch": 1,
+        "journal": [
+          {
+            "epoch": 1,
+            "globalSeq": 1,
+            "runId": "A",
+            "runSeq": 1,
+            "kind": "started",
+            "data": {}
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 2,
+            "runId": "A",
+            "runSeq": 2,
+            "kind": "output",
+            "data": {
+              "text": "alpha"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 3,
+            "runId": "A",
+            "runSeq": 3,
+            "kind": "output",
+            "data": {
+              "text": "beta"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 4,
+            "runId": "A",
+            "runSeq": 4,
+            "kind": "succeeded",
+            "data": {}
+          }
+        ],
+        "runs": {
+          "A": "succeeded"
+        }
+      }
+    },
+    {
+      "id": "O17",
+      "oracle": "O17",
+      "initial": {
+        "sessionId": "synthetic-session",
+        "epoch": 1,
+        "grants": [
+          "health",
+          "start-mock-run",
+          "cancel",
+          "global-stop",
+          "reconnect"
+        ],
+        "journal": [],
+        "approvals": []
+      },
+      "steps": [
+        {
+          "op": "approve",
+          "approval": {
+            "approvalId": "approval-A",
+            "approvalRevision": 1,
+            "runId": "A",
+            "fixtureId": "C",
+            "epoch": 1
+          }
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "start-mock-run",
+            "requestId": "r1",
+            "payload": {
+              "runId": "A",
+              "fixtureId": "C",
+              "approvalId": "approval-A",
+              "approvalRevision": 1,
+              "expectedEpoch": 1
+            }
+          },
+          "expect": {
+            "ok": true,
+            "payload": {
+              "runId": "A",
+              "accepted": true,
+              "epoch": 1
+            }
+          }
+        },
+        {
+          "op": "tick",
+          "runId": "A",
+          "count": 3
+        },
+        {
+          "op": "deliver",
+          "events": [
+            {
+              "epoch": 1,
+              "globalSeq": 1,
+              "runId": "A",
+              "runSeq": 1,
+              "kind": "started",
+              "data": {}
+            },
+            {
+              "epoch": 1,
+              "globalSeq": 3,
+              "runId": "A",
+              "runSeq": 3,
+              "kind": "output",
+              "data": {
+                "text": "beta"
+              }
+            },
+            {
+              "epoch": 1,
+              "globalSeq": 4,
+              "runId": "A",
+              "runSeq": 4,
+              "kind": "succeeded",
+              "data": {}
+            }
+          ]
+        },
+        {
+          "op": "assert-projection",
+          "cursor": 1,
+          "records": [
+            {
+              "epoch": 1,
+              "globalSeq": 1,
+              "runId": "A",
+              "runSeq": 1,
+              "kind": "started",
+              "data": {}
+            }
+          ],
+          "runs": {
+            "A": "running"
+          },
+          "degraded": true
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "reconnect",
+            "requestId": "replay",
+            "payload": {
+              "epoch": 1,
+              "afterGlobalSeq": 1
+            }
+          },
+          "expect": {
+            "ok": true,
+            "payload": {
+              "epoch": 1,
+              "throughGlobalSeq": 4,
+              "events": [
+                {
+                  "epoch": 1,
+                  "globalSeq": 2,
+                  "runId": "A",
+                  "runSeq": 2,
+                  "kind": "output",
+                  "data": {
+                    "text": "alpha"
+                  }
+                },
+                {
+                  "epoch": 1,
+                  "globalSeq": 3,
+                  "runId": "A",
+                  "runSeq": 3,
+                  "kind": "output",
+                  "data": {
+                    "text": "beta"
+                  }
+                },
+                {
+                  "epoch": 1,
+                  "globalSeq": 4,
+                  "runId": "A",
+                  "runSeq": 4,
+                  "kind": "succeeded",
+                  "data": {}
+                }
+              ]
+            }
+          }
+        },
+        {
+          "op": "apply-last-replay"
+        },
+        {
+          "op": "assert-projection",
+          "cursor": 4,
+          "records": [
+            {
+              "epoch": 1,
+              "globalSeq": 1,
+              "runId": "A",
+              "runSeq": 1,
+              "kind": "started",
+              "data": {}
+            },
+            {
+              "epoch": 1,
+              "globalSeq": 2,
+              "runId": "A",
+              "runSeq": 2,
+              "kind": "output",
+              "data": {
+                "text": "alpha"
+              }
+            },
+            {
+              "epoch": 1,
+              "globalSeq": 3,
+              "runId": "A",
+              "runSeq": 3,
+              "kind": "output",
+              "data": {
+                "text": "beta"
+              }
+            },
+            {
+              "epoch": 1,
+              "globalSeq": 4,
+              "runId": "A",
+              "runSeq": 4,
+              "kind": "succeeded",
+              "data": {}
+            }
+          ],
+          "runs": {
+            "A": "succeeded"
+          },
+          "degraded": false
+        }
+      ],
+      "final": {
+        "epoch": 1,
+        "journal": [
+          {
+            "epoch": 1,
+            "globalSeq": 1,
+            "runId": "A",
+            "runSeq": 1,
+            "kind": "started",
+            "data": {}
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 2,
+            "runId": "A",
+            "runSeq": 2,
+            "kind": "output",
+            "data": {
+              "text": "alpha"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 3,
+            "runId": "A",
+            "runSeq": 3,
+            "kind": "output",
+            "data": {
+              "text": "beta"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 4,
+            "runId": "A",
+            "runSeq": 4,
+            "kind": "succeeded",
+            "data": {}
+          }
+        ],
+        "runs": {
+          "A": "succeeded"
+        }
+      }
+    },
+    {
+      "id": "O18",
+      "oracle": "O18",
+      "initial": {
+        "sessionId": "synthetic-session",
+        "epoch": 1,
+        "grants": [
+          "health",
+          "start-mock-run",
+          "cancel",
+          "global-stop",
+          "reconnect"
+        ],
+        "journal": [],
+        "approvals": []
+      },
+      "steps": [
+        {
+          "op": "approve",
+          "approval": {
+            "approvalId": "approval-A",
+            "approvalRevision": 1,
+            "runId": "A",
+            "fixtureId": "C",
+            "epoch": 1
+          }
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "start-mock-run",
+            "requestId": "r1",
+            "payload": {
+              "runId": "A",
+              "fixtureId": "C",
+              "approvalId": "approval-A",
+              "approvalRevision": 1,
+              "expectedEpoch": 1
+            }
+          },
+          "expect": {
+            "ok": true,
+            "payload": {
+              "runId": "A",
+              "accepted": true,
+              "epoch": 1
+            }
+          }
+        },
+        {
+          "op": "tick",
+          "runId": "A",
+          "count": 3
+        },
+        {
+          "op": "deliver",
+          "events": [
+            {
+              "epoch": 1,
+              "globalSeq": 1,
+              "runId": "A",
+              "runSeq": 1,
+              "kind": "started",
+              "data": {}
+            },
+            {
+              "epoch": 1,
+              "globalSeq": 2,
+              "runId": "A",
+              "runSeq": 2,
+              "kind": "output",
+              "data": {
+                "text": "alpha"
+              }
+            }
+          ]
+        },
+        {
+          "op": "deliver",
+          "events": [
+            {
+              "epoch": 1,
+              "globalSeq": 2,
+              "runId": "A",
+              "runSeq": 2,
+              "kind": "output",
+              "data": {
+                "text": "conflicting-alpha"
+              }
+            }
+          ]
+        },
+        {
+          "op": "assert-projection",
+          "cursor": 2,
+          "records": [
+            {
+              "epoch": 1,
+              "globalSeq": 1,
+              "runId": "A",
+              "runSeq": 1,
+              "kind": "started",
+              "data": {}
+            },
+            {
+              "epoch": 1,
+              "globalSeq": 2,
+              "runId": "A",
+              "runSeq": 2,
+              "kind": "output",
+              "data": {
+                "text": "alpha"
+              }
+            }
+          ],
+          "runs": {
+            "A": "running"
+          },
+          "degraded": true
+        },
+        {
+          "op": "assert-integrity-failure",
+          "globalSeq": 2
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "reconnect",
+            "requestId": "replay",
+            "payload": {
+              "epoch": 1,
+              "afterGlobalSeq": 0
+            }
+          },
+          "expect": {
+            "ok": true,
+            "payload": {
+              "epoch": 1,
+              "throughGlobalSeq": 4,
+              "events": [
+                {
+                  "epoch": 1,
+                  "globalSeq": 1,
+                  "runId": "A",
+                  "runSeq": 1,
+                  "kind": "started",
+                  "data": {}
+                },
+                {
+                  "epoch": 1,
+                  "globalSeq": 2,
+                  "runId": "A",
+                  "runSeq": 2,
+                  "kind": "output",
+                  "data": {
+                    "text": "alpha"
+                  }
+                },
+                {
+                  "epoch": 1,
+                  "globalSeq": 3,
+                  "runId": "A",
+                  "runSeq": 3,
+                  "kind": "output",
+                  "data": {
+                    "text": "beta"
+                  }
+                },
+                {
+                  "epoch": 1,
+                  "globalSeq": 4,
+                  "runId": "A",
+                  "runSeq": 4,
+                  "kind": "succeeded",
+                  "data": {}
+                }
+              ]
+            }
+          }
+        },
+        {
+          "op": "apply-last-replay"
+        },
+        {
+          "op": "assert-projection",
+          "cursor": 4,
+          "records": [
+            {
+              "epoch": 1,
+              "globalSeq": 1,
+              "runId": "A",
+              "runSeq": 1,
+              "kind": "started",
+              "data": {}
+            },
+            {
+              "epoch": 1,
+              "globalSeq": 2,
+              "runId": "A",
+              "runSeq": 2,
+              "kind": "output",
+              "data": {
+                "text": "alpha"
+              }
+            },
+            {
+              "epoch": 1,
+              "globalSeq": 3,
+              "runId": "A",
+              "runSeq": 3,
+              "kind": "output",
+              "data": {
+                "text": "beta"
+              }
+            },
+            {
+              "epoch": 1,
+              "globalSeq": 4,
+              "runId": "A",
+              "runSeq": 4,
+              "kind": "succeeded",
+              "data": {}
+            }
+          ],
+          "runs": {
+            "A": "succeeded"
+          },
+          "degraded": false
+        }
+      ],
+      "final": {
+        "epoch": 1,
+        "journal": [
+          {
+            "epoch": 1,
+            "globalSeq": 1,
+            "runId": "A",
+            "runSeq": 1,
+            "kind": "started",
+            "data": {}
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 2,
+            "runId": "A",
+            "runSeq": 2,
+            "kind": "output",
+            "data": {
+              "text": "alpha"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 3,
+            "runId": "A",
+            "runSeq": 3,
+            "kind": "output",
+            "data": {
+              "text": "beta"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 4,
+            "runId": "A",
+            "runSeq": 4,
+            "kind": "succeeded",
+            "data": {}
+          }
+        ],
+        "runs": {
+          "A": "succeeded"
+        }
+      }
+    },
+    {
+      "id": "O19",
+      "oracle": "O19",
+      "initial": {
+        "sessionId": "synthetic-session",
+        "epoch": 1,
+        "grants": [
+          "health",
+          "start-mock-run",
+          "cancel",
+          "global-stop",
+          "reconnect"
+        ],
+        "journal": [],
+        "approvals": []
+      },
+      "steps": [
+        {
+          "op": "approve",
+          "approval": {
+            "approvalId": "approval-A",
+            "approvalRevision": 1,
+            "runId": "A",
+            "fixtureId": "C",
+            "epoch": 1
+          }
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "start-mock-run",
+            "requestId": "r1",
+            "payload": {
+              "runId": "A",
+              "fixtureId": "C",
+              "approvalId": "approval-A",
+              "approvalRevision": 1,
+              "expectedEpoch": 1
+            }
+          },
+          "expect": {
+            "ok": true,
+            "payload": {
+              "runId": "A",
+              "accepted": true,
+              "epoch": 1
+            }
+          }
+        },
+        {
+          "op": "tick",
+          "runId": "A",
+          "count": 3
+        },
+        {
+          "op": "deliver",
+          "events": [
+            {
+              "epoch": 1,
+              "globalSeq": 1,
+              "runId": "A",
+              "runSeq": 1,
+              "kind": "started",
+              "data": {}
+            },
+            {
+              "epoch": 1,
+              "globalSeq": 2,
+              "runId": "A",
+              "runSeq": 2,
+              "kind": "output",
+              "data": {
+                "text": "alpha"
+              }
+            }
+          ]
+        },
+        {
+          "op": "refresh-renderer"
+        },
+        {
+          "op": "expect-shell-request",
+          "type": "reconnect",
+          "payload": {
+            "epoch": 1,
+            "afterGlobalSeq": 0
+          }
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "reconnect",
+            "requestId": "replay",
+            "payload": {
+              "epoch": 1,
+              "afterGlobalSeq": 0
+            }
+          },
+          "expect": {
+            "ok": true,
+            "payload": {
+              "epoch": 1,
+              "throughGlobalSeq": 4,
+              "events": [
+                {
+                  "epoch": 1,
+                  "globalSeq": 1,
+                  "runId": "A",
+                  "runSeq": 1,
+                  "kind": "started",
+                  "data": {}
+                },
+                {
+                  "epoch": 1,
+                  "globalSeq": 2,
+                  "runId": "A",
+                  "runSeq": 2,
+                  "kind": "output",
+                  "data": {
+                    "text": "alpha"
+                  }
+                },
+                {
+                  "epoch": 1,
+                  "globalSeq": 3,
+                  "runId": "A",
+                  "runSeq": 3,
+                  "kind": "output",
+                  "data": {
+                    "text": "beta"
+                  }
+                },
+                {
+                  "epoch": 1,
+                  "globalSeq": 4,
+                  "runId": "A",
+                  "runSeq": 4,
+                  "kind": "succeeded",
+                  "data": {}
+                }
+              ]
+            }
+          }
+        },
+        {
+          "op": "apply-last-replay"
+        },
+        {
+          "op": "assert-projection",
+          "cursor": 4,
+          "records": [
+            {
+              "epoch": 1,
+              "globalSeq": 1,
+              "runId": "A",
+              "runSeq": 1,
+              "kind": "started",
+              "data": {}
+            },
+            {
+              "epoch": 1,
+              "globalSeq": 2,
+              "runId": "A",
+              "runSeq": 2,
+              "kind": "output",
+              "data": {
+                "text": "alpha"
+              }
+            },
+            {
+              "epoch": 1,
+              "globalSeq": 3,
+              "runId": "A",
+              "runSeq": 3,
+              "kind": "output",
+              "data": {
+                "text": "beta"
+              }
+            },
+            {
+              "epoch": 1,
+              "globalSeq": 4,
+              "runId": "A",
+              "runSeq": 4,
+              "kind": "succeeded",
+              "data": {}
+            }
+          ],
+          "runs": {
+            "A": "succeeded"
+          },
+          "degraded": false
+        }
+      ],
+      "final": {
+        "epoch": 1,
+        "journal": [
+          {
+            "epoch": 1,
+            "globalSeq": 1,
+            "runId": "A",
+            "runSeq": 1,
+            "kind": "started",
+            "data": {}
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 2,
+            "runId": "A",
+            "runSeq": 2,
+            "kind": "output",
+            "data": {
+              "text": "alpha"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 3,
+            "runId": "A",
+            "runSeq": 3,
+            "kind": "output",
+            "data": {
+              "text": "beta"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 4,
+            "runId": "A",
+            "runSeq": 4,
+            "kind": "succeeded",
+            "data": {}
+          }
+        ],
+        "runs": {
+          "A": "succeeded"
+        }
+      }
+    },
+    {
+      "id": "O20",
+      "oracle": "O20",
+      "initial": {
+        "sessionId": "synthetic-session",
+        "epoch": 1,
+        "grants": [
+          "health",
+          "start-mock-run",
+          "cancel",
+          "global-stop",
+          "reconnect"
+        ],
+        "journal": [],
+        "approvals": []
+      },
+      "steps": [
+        {
+          "op": "approve",
+          "approval": {
+            "approvalId": "approval-A",
+            "approvalRevision": 1,
+            "runId": "A",
+            "fixtureId": "H",
+            "epoch": 1
+          }
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "start-mock-run",
+            "requestId": "r1",
+            "payload": {
+              "runId": "A",
+              "fixtureId": "H",
+              "approvalId": "approval-A",
+              "approvalRevision": 1,
+              "expectedEpoch": 1
+            }
+          },
+          "expect": {
+            "ok": true,
+            "payload": {
+              "runId": "A",
+              "accepted": true,
+              "epoch": 1
+            }
+          }
+        },
+        {
+          "op": "deliver",
+          "events": [
+            {
+              "epoch": 1,
+              "globalSeq": 1,
+              "runId": "A",
+              "runSeq": 1,
+              "kind": "started",
+              "data": {}
+            }
+          ]
+        },
+        {
+          "op": "disconnect"
+        },
+        {
+          "op": "assert-disconnected",
+          "withinMilliseconds": 1000
+        },
+        {
+          "op": "restart-core",
+          "preserveDurableStore": true
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "reconnect",
+            "requestId": "replay",
+            "payload": {
+              "epoch": 1,
+              "afterGlobalSeq": 0
+            }
+          },
+          "expect": {
+            "ok": true,
+            "payload": {
+              "epoch": 1,
+              "throughGlobalSeq": 1,
+              "events": [
+                {
+                  "epoch": 1,
+                  "globalSeq": 1,
+                  "runId": "A",
+                  "runSeq": 1,
+                  "kind": "started",
+                  "data": {}
+                }
+              ]
+            }
+          }
+        },
+        {
+          "op": "apply-last-replay",
+          "withinMillisecondsOfEndpointReturn": 2000
+        },
+        {
+          "op": "assert-projection",
+          "cursor": 1,
+          "records": [
+            {
+              "epoch": 1,
+              "globalSeq": 1,
+              "runId": "A",
+              "runSeq": 1,
+              "kind": "started",
+              "data": {}
+            }
+          ],
+          "runs": {
+            "A": "running"
+          },
+          "degraded": false
+        }
+      ],
+      "final": {
+        "epoch": 1,
+        "journal": [
+          {
+            "epoch": 1,
+            "globalSeq": 1,
+            "runId": "A",
+            "runSeq": 1,
+            "kind": "started",
+            "data": {}
+          }
+        ],
+        "runs": {
+          "A": "running"
+        }
+      }
+    },
+    {
+      "id": "O21",
+      "oracle": "O21",
+      "initial": {
+        "sessionId": "synthetic-session",
+        "epoch": 1,
+        "grants": [
+          "health",
+          "start-mock-run",
+          "cancel",
+          "global-stop",
+          "reconnect"
+        ],
+        "journal": [],
+        "approvals": []
+      },
+      "steps": [
+        {
+          "op": "approve",
+          "approval": {
+            "approvalId": "approval-A",
+            "approvalRevision": 1,
+            "runId": "A",
+            "fixtureId": "H",
+            "epoch": 1
+          }
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "start-mock-run",
+            "requestId": "r1",
+            "payload": {
+              "runId": "A",
+              "fixtureId": "H",
+              "approvalId": "approval-A",
+              "approvalRevision": 1,
+              "expectedEpoch": 1
+            }
+          },
+          "expect": {
+            "ok": true,
+            "payload": {
+              "runId": "A",
+              "accepted": true,
+              "epoch": 1
+            }
+          }
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "cancel",
+            "requestId": "r2",
+            "payload": {
+              "runId": "A",
+              "expectedEpoch": 1
+            }
+          },
+          "expect": {
+            "ok": true,
+            "payload": {
+              "runId": "A",
+              "state": "cancelled"
+            }
+          }
+        },
+        {
+          "op": "attempt-late-event",
+          "event": {
+            "epoch": 1,
+            "globalSeq": 3,
+            "runId": "A",
+            "runSeq": 3,
+            "kind": "output",
+            "data": {
+              "text": "late"
+            }
+          },
+          "expectAccepted": false
+        },
+        {
+          "op": "attempt-late-event",
+          "event": {
+            "epoch": 1,
+            "globalSeq": 3,
+            "runId": "A",
+            "runSeq": 3,
+            "kind": "succeeded",
+            "data": {}
+          },
+          "expectAccepted": false
+        }
+      ],
+      "final": {
+        "epoch": 1,
+        "journal": [
+          {
+            "epoch": 1,
+            "globalSeq": 1,
+            "runId": "A",
+            "runSeq": 1,
+            "kind": "started",
+            "data": {}
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 2,
+            "runId": "A",
+            "runSeq": 2,
+            "kind": "cancelled",
+            "data": {}
+          }
+        ],
+        "runs": {
+          "A": "cancelled"
+        }
+      }
+    },
+    {
+      "id": "O22",
+      "oracle": "O22",
+      "initial": {
+        "sessionId": "synthetic-session",
+        "epoch": 1,
+        "grants": [
+          "health",
+          "start-mock-run",
+          "cancel",
+          "global-stop",
+          "reconnect"
+        ],
+        "journal": [],
+        "approvals": []
+      },
+      "steps": [
+        {
+          "op": "approve",
+          "approval": {
+            "approvalId": "approval-A",
+            "approvalRevision": 1,
+            "runId": "A",
+            "fixtureId": "H",
+            "epoch": 1
+          }
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "start-mock-run",
+            "requestId": "r1",
+            "payload": {
+              "runId": "A",
+              "fixtureId": "H",
+              "approvalId": "approval-A",
+              "approvalRevision": 1,
+              "expectedEpoch": 1
+            }
+          },
+          "expect": {
+            "ok": true,
+            "payload": {
+              "runId": "A",
+              "accepted": true,
+              "epoch": 1
+            }
+          }
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "cancel",
+            "requestId": "r2",
+            "payload": {
+              "runId": "A",
+              "expectedEpoch": 1
+            }
+          },
+          "expect": {
+            "ok": true,
+            "payload": {
+              "runId": "A",
+              "state": "cancelled"
+            }
+          }
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "cancel",
+            "requestId": "r3",
+            "payload": {
+              "runId": "A",
+              "expectedEpoch": 1
+            }
+          },
+          "expect": {
+            "ok": true,
+            "payload": {
+              "runId": "A",
+              "state": "cancelled"
+            }
+          }
+        }
+      ],
+      "final": {
+        "epoch": 1,
+        "journal": [
+          {
+            "epoch": 1,
+            "globalSeq": 1,
+            "runId": "A",
+            "runSeq": 1,
+            "kind": "started",
+            "data": {}
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 2,
+            "runId": "A",
+            "runSeq": 2,
+            "kind": "cancelled",
+            "data": {}
+          }
+        ],
+        "runs": {
+          "A": "cancelled"
+        }
+      }
+    },
+    {
+      "id": "O23",
+      "oracle": "O23",
+      "initial": {
+        "sessionId": "synthetic-session",
+        "epoch": 1,
+        "grants": [
+          "health",
+          "start-mock-run",
+          "cancel",
+          "global-stop",
+          "reconnect"
+        ],
+        "journal": [],
+        "approvals": []
+      },
+      "steps": [
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "cancel",
+            "requestId": "r1",
+            "payload": {
+              "runId": "X",
+              "expectedEpoch": 1
+            }
+          },
+          "expect": {
+            "ok": false,
+            "code": "unknown_run",
+            "stateUnchanged": true,
+            "nativeActions": 0
+          }
+        }
+      ],
+      "final": {
+        "epoch": 1,
+        "journal": [],
+        "runs": {}
+      }
+    },
+    {
+      "id": "O24",
+      "oracle": "O24",
+      "initial": {
+        "sessionId": "synthetic-session",
+        "epoch": 1,
+        "grants": [
+          "health",
+          "start-mock-run",
+          "cancel",
+          "global-stop",
+          "reconnect"
+        ],
+        "journal": [],
+        "approvals": []
+      },
+      "steps": [
+        {
+          "op": "approve",
+          "approval": {
+            "approvalId": "approval-B",
+            "approvalRevision": 1,
+            "runId": "B",
+            "fixtureId": "H",
+            "epoch": 1
+          }
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "start-mock-run",
+            "requestId": "r1",
+            "payload": {
+              "runId": "B",
+              "fixtureId": "H",
+              "approvalId": "approval-B",
+              "approvalRevision": 1,
+              "expectedEpoch": 1
+            }
+          },
+          "expect": {
+            "ok": true,
+            "payload": {
+              "runId": "B",
+              "accepted": true,
+              "epoch": 1
+            }
+          }
+        },
+        {
+          "op": "approve",
+          "approval": {
+            "approvalId": "approval-A",
+            "approvalRevision": 1,
+            "runId": "A",
+            "fixtureId": "H",
+            "epoch": 1
+          }
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "start-mock-run",
+            "requestId": "r2",
+            "payload": {
+              "runId": "A",
+              "fixtureId": "H",
+              "approvalId": "approval-A",
+              "approvalRevision": 1,
+              "expectedEpoch": 1
+            }
+          },
+          "expect": {
+            "ok": true,
+            "payload": {
+              "runId": "A",
+              "accepted": true,
+              "epoch": 1
+            }
+          }
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "global-stop",
+            "requestId": "r3",
+            "payload": {
+              "expectedEpoch": 1
+            }
+          },
+          "expect": {
+            "ok": true,
+            "payload": {
+              "epoch": 2,
+              "stoppedRunIds": [
+                "A",
+                "B"
+              ]
+            }
+          }
+        }
+      ],
+      "final": {
+        "epoch": 2,
+        "journal": [
+          {
+            "epoch": 1,
+            "globalSeq": 1,
+            "runId": "B",
+            "runSeq": 1,
+            "kind": "started",
+            "data": {}
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 2,
+            "runId": "A",
+            "runSeq": 1,
+            "kind": "started",
+            "data": {}
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 3,
+            "runId": "A",
+            "runSeq": 2,
+            "kind": "stopped",
+            "data": {}
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 4,
+            "runId": "B",
+            "runSeq": 2,
+            "kind": "stopped",
+            "data": {}
+          }
+        ],
+        "runs": {
+          "A": "stopped",
+          "B": "stopped"
+        }
+      }
+    },
+    {
+      "id": "O25",
+      "oracle": "O25",
+      "initial": {
+        "sessionId": "synthetic-session",
+        "epoch": 1,
+        "grants": [
+          "health",
+          "start-mock-run",
+          "cancel",
+          "global-stop",
+          "reconnect"
+        ],
+        "journal": [],
+        "approvals": []
+      },
+      "steps": [
+        {
+          "op": "approve",
+          "approval": {
+            "approvalId": "approval-B",
+            "approvalRevision": 1,
+            "runId": "B",
+            "fixtureId": "H",
+            "epoch": 1
+          }
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "start-mock-run",
+            "requestId": "r1",
+            "payload": {
+              "runId": "B",
+              "fixtureId": "H",
+              "approvalId": "approval-B",
+              "approvalRevision": 1,
+              "expectedEpoch": 1
+            }
+          },
+          "expect": {
+            "ok": true,
+            "payload": {
+              "runId": "B",
+              "accepted": true,
+              "epoch": 1
+            }
+          }
+        },
+        {
+          "op": "approve",
+          "approval": {
+            "approvalId": "approval-A",
+            "approvalRevision": 1,
+            "runId": "A",
+            "fixtureId": "H",
+            "epoch": 1
+          }
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "start-mock-run",
+            "requestId": "r2",
+            "payload": {
+              "runId": "A",
+              "fixtureId": "H",
+              "approvalId": "approval-A",
+              "approvalRevision": 1,
+              "expectedEpoch": 1
+            }
+          },
+          "expect": {
+            "ok": true,
+            "payload": {
+              "runId": "A",
+              "accepted": true,
+              "epoch": 1
+            }
+          }
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "global-stop",
+            "requestId": "r3",
+            "payload": {
+              "expectedEpoch": 1
+            }
+          },
+          "expect": {
+            "ok": true,
+            "payload": {
+              "epoch": 2,
+              "stoppedRunIds": [
+                "A",
+                "B"
+              ]
+            }
+          }
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "global-stop",
+            "requestId": "r3",
+            "payload": {
+              "expectedEpoch": 1
+            }
+          },
+          "expect": {
+            "ok": true,
+            "payload": {
+              "epoch": 2,
+              "stoppedRunIds": [
+                "A",
+                "B"
+              ]
+            }
+          }
+        }
+      ],
+      "final": {
+        "epoch": 2,
+        "journal": [
+          {
+            "epoch": 1,
+            "globalSeq": 1,
+            "runId": "B",
+            "runSeq": 1,
+            "kind": "started",
+            "data": {}
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 2,
+            "runId": "A",
+            "runSeq": 1,
+            "kind": "started",
+            "data": {}
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 3,
+            "runId": "A",
+            "runSeq": 2,
+            "kind": "stopped",
+            "data": {}
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 4,
+            "runId": "B",
+            "runSeq": 2,
+            "kind": "stopped",
+            "data": {}
+          }
+        ],
+        "runs": {
+          "A": "stopped",
+          "B": "stopped"
+        }
+      }
+    },
+    {
+      "id": "O26",
+      "oracle": "O26",
+      "initial": {
+        "sessionId": "synthetic-session",
+        "epoch": 1,
+        "grants": [
+          "health",
+          "start-mock-run",
+          "cancel",
+          "global-stop",
+          "reconnect"
+        ],
+        "journal": [],
+        "approvals": []
+      },
+      "steps": [
+        {
+          "op": "approve",
+          "approval": {
+            "approvalId": "approval-C",
+            "approvalRevision": 1,
+            "runId": "C",
+            "fixtureId": "H",
+            "epoch": 1
+          }
+        },
+        {
+          "op": "approve",
+          "approval": {
+            "approvalId": "approval-B",
+            "approvalRevision": 1,
+            "runId": "B",
+            "fixtureId": "H",
+            "epoch": 1
+          }
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "start-mock-run",
+            "requestId": "r1",
+            "payload": {
+              "runId": "B",
+              "fixtureId": "H",
+              "approvalId": "approval-B",
+              "approvalRevision": 1,
+              "expectedEpoch": 1
+            }
+          },
+          "expect": {
+            "ok": true,
+            "payload": {
+              "runId": "B",
+              "accepted": true,
+              "epoch": 1
+            }
+          }
+        },
+        {
+          "op": "approve",
+          "approval": {
+            "approvalId": "approval-A",
+            "approvalRevision": 1,
+            "runId": "A",
+            "fixtureId": "H",
+            "epoch": 1
+          }
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "start-mock-run",
+            "requestId": "r2",
+            "payload": {
+              "runId": "A",
+              "fixtureId": "H",
+              "approvalId": "approval-A",
+              "approvalRevision": 1,
+              "expectedEpoch": 1
+            }
+          },
+          "expect": {
+            "ok": true,
+            "payload": {
+              "runId": "A",
+              "accepted": true,
+              "epoch": 1
+            }
+          }
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "global-stop",
+            "requestId": "r3",
+            "payload": {
+              "expectedEpoch": 1
+            }
+          },
+          "expect": {
+            "ok": true,
+            "payload": {
+              "epoch": 2,
+              "stoppedRunIds": [
+                "A",
+                "B"
+              ]
+            }
+          }
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "start-mock-run",
+            "requestId": "r4",
+            "payload": {
+              "runId": "C",
+              "fixtureId": "H",
+              "approvalId": "approval-C",
+              "approvalRevision": 1,
+              "expectedEpoch": 1
+            }
+          },
+          "expect": {
+            "ok": false,
+            "code": "stale_epoch",
+            "stateUnchanged": true,
+            "nativeActions": 0
+          }
+        }
+      ],
+      "final": {
+        "epoch": 2,
+        "journal": [
+          {
+            "epoch": 1,
+            "globalSeq": 1,
+            "runId": "B",
+            "runSeq": 1,
+            "kind": "started",
+            "data": {}
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 2,
+            "runId": "A",
+            "runSeq": 1,
+            "kind": "started",
+            "data": {}
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 3,
+            "runId": "A",
+            "runSeq": 2,
+            "kind": "stopped",
+            "data": {}
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 4,
+            "runId": "B",
+            "runSeq": 2,
+            "kind": "stopped",
+            "data": {}
+          }
+        ],
+        "runs": {
+          "A": "stopped",
+          "B": "stopped"
+        }
+      }
+    },
+    {
+      "id": "O27",
+      "oracle": "O27",
+      "initial": {
+        "sessionId": "synthetic-session",
+        "epoch": 1,
+        "grants": [
+          "health",
+          "start-mock-run",
+          "cancel",
+          "global-stop",
+          "reconnect"
+        ],
+        "journal": [],
+        "approvals": []
+      },
+      "steps": [
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "global-stop",
+            "requestId": "r1",
+            "payload": {
+              "expectedEpoch": 1
+            }
+          },
+          "expect": {
+            "ok": true,
+            "payload": {
+              "epoch": 2,
+              "stoppedRunIds": []
+            }
+          }
+        },
+        {
+          "op": "approve",
+          "approval": {
+            "approvalId": "approval-A",
+            "approvalRevision": 1,
+            "runId": "A",
+            "fixtureId": "H",
+            "epoch": 2
+          }
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "start-mock-run",
+            "requestId": "r2",
+            "payload": {
+              "runId": "A",
+              "fixtureId": "H",
+              "approvalId": "approval-A",
+              "approvalRevision": 1,
+              "expectedEpoch": 2
+            }
+          },
+          "expect": {
+            "ok": true,
+            "payload": {
+              "runId": "A",
+              "accepted": true,
+              "epoch": 2
+            }
+          }
+        }
+      ],
+      "final": {
+        "epoch": 2,
+        "journal": [
+          {
+            "epoch": 2,
+            "globalSeq": 1,
+            "runId": "A",
+            "runSeq": 1,
+            "kind": "started",
+            "data": {}
+          }
+        ],
+        "runs": {
+          "A": "running"
+        }
+      }
+    },
+    {
+      "id": "O28",
+      "oracle": "O28",
+      "initial": {
+        "sessionId": "synthetic-session",
+        "epoch": 1,
+        "grants": [
+          "health",
+          "start-mock-run",
+          "cancel",
+          "global-stop",
+          "reconnect"
+        ],
+        "journal": [],
+        "approvals": []
+      },
+      "steps": [
+        {
+          "op": "approve",
+          "approval": {
+            "approvalId": "approval-B",
+            "approvalRevision": 1,
+            "runId": "B",
+            "fixtureId": "H",
+            "epoch": 1
+          }
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "start-mock-run",
+            "requestId": "r1",
+            "payload": {
+              "runId": "B",
+              "fixtureId": "H",
+              "approvalId": "approval-B",
+              "approvalRevision": 1,
+              "expectedEpoch": 1
+            }
+          },
+          "expect": {
+            "ok": true,
+            "payload": {
+              "runId": "B",
+              "accepted": true,
+              "epoch": 1
+            }
+          }
+        },
+        {
+          "op": "approve",
+          "approval": {
+            "approvalId": "approval-A",
+            "approvalRevision": 1,
+            "runId": "A",
+            "fixtureId": "H",
+            "epoch": 1
+          }
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "start-mock-run",
+            "requestId": "r2",
+            "payload": {
+              "runId": "A",
+              "fixtureId": "H",
+              "approvalId": "approval-A",
+              "approvalRevision": 1,
+              "expectedEpoch": 1
+            }
+          },
+          "expect": {
+            "ok": true,
+            "payload": {
+              "runId": "A",
+              "accepted": true,
+              "epoch": 1
+            }
+          }
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "global-stop",
+            "requestId": "r3",
+            "payload": {
+              "expectedEpoch": 1
+            }
+          },
+          "expect": {
+            "ok": true,
+            "payload": {
+              "epoch": 2,
+              "stoppedRunIds": [
+                "A",
+                "B"
+              ]
+            }
+          }
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "reconnect",
+            "requestId": "r4",
+            "payload": {
+              "epoch": 1,
+              "afterGlobalSeq": 2
+            }
+          },
+          "expect": {
+            "ok": true,
+            "payload": {
+              "epoch": 2,
+              "throughGlobalSeq": 4,
+              "events": [
+                {
+                  "epoch": 1,
+                  "globalSeq": 1,
+                  "runId": "B",
+                  "runSeq": 1,
+                  "kind": "started",
+                  "data": {}
+                },
+                {
+                  "epoch": 1,
+                  "globalSeq": 2,
+                  "runId": "A",
+                  "runSeq": 1,
+                  "kind": "started",
+                  "data": {}
+                },
+                {
+                  "epoch": 1,
+                  "globalSeq": 3,
+                  "runId": "A",
+                  "runSeq": 2,
+                  "kind": "stopped",
+                  "data": {}
+                },
+                {
+                  "epoch": 1,
+                  "globalSeq": 4,
+                  "runId": "B",
+                  "runSeq": 2,
+                  "kind": "stopped",
+                  "data": {}
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "final": {
+        "epoch": 2,
+        "journal": [
+          {
+            "epoch": 1,
+            "globalSeq": 1,
+            "runId": "B",
+            "runSeq": 1,
+            "kind": "started",
+            "data": {}
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 2,
+            "runId": "A",
+            "runSeq": 1,
+            "kind": "started",
+            "data": {}
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 3,
+            "runId": "A",
+            "runSeq": 2,
+            "kind": "stopped",
+            "data": {}
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 4,
+            "runId": "B",
+            "runSeq": 2,
+            "kind": "stopped",
+            "data": {}
+          }
+        ],
+        "runs": {
+          "A": "stopped",
+          "B": "stopped"
+        }
+      }
+    },
+    {
+      "id": "O29-future-cursor",
+      "oracle": "O29",
+      "initial": {
+        "sessionId": "synthetic-session",
+        "epoch": 1,
+        "grants": [
+          "health",
+          "start-mock-run",
+          "cancel",
+          "global-stop",
+          "reconnect"
+        ],
+        "journal": [],
+        "approvals": []
+      },
+      "steps": [
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "reconnect",
+            "requestId": "r1",
+            "payload": {
+              "epoch": 1,
+              "afterGlobalSeq": 1
+            }
+          },
+          "expect": {
+            "ok": false,
+            "code": "invalid_cursor",
+            "stateUnchanged": true,
+            "nativeActions": 0
+          }
+        }
+      ],
+      "final": {
+        "epoch": 1,
+        "journal": [],
+        "runs": {}
+      }
+    },
+    {
+      "id": "O29-future-epoch",
+      "oracle": "O29",
+      "initial": {
+        "sessionId": "synthetic-session",
+        "epoch": 1,
+        "grants": [
+          "health",
+          "start-mock-run",
+          "cancel",
+          "global-stop",
+          "reconnect"
+        ],
+        "journal": [],
+        "approvals": []
+      },
+      "steps": [
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "reconnect",
+            "requestId": "r1",
+            "payload": {
+              "epoch": 2,
+              "afterGlobalSeq": 0
+            }
+          },
+          "expect": {
+            "ok": false,
+            "code": "invalid_cursor",
+            "stateUnchanged": true,
+            "nativeActions": 0
+          }
+        }
+      ],
+      "final": {
+        "epoch": 1,
+        "journal": [],
+        "runs": {}
+      }
+    },
+    {
+      "id": "O30",
+      "oracle": "O30",
+      "initial": {
+        "sessionId": "synthetic-session",
+        "epoch": 1,
+        "grants": [
+          "health",
+          "start-mock-run",
+          "cancel",
+          "global-stop",
+          "reconnect"
+        ],
+        "journal": [],
+        "approvals": []
+      },
+      "steps": [
+        {
+          "op": "approve",
+          "approval": {
+            "approvalId": "approval-A",
+            "approvalRevision": 1,
+            "runId": "A",
+            "fixtureId": "C",
+            "epoch": 1
+          }
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "start-mock-run",
+            "requestId": "r1",
+            "payload": {
+              "runId": "A",
+              "fixtureId": "C",
+              "approvalId": "approval-A",
+              "approvalRevision": 1,
+              "expectedEpoch": 1
+            }
+          },
+          "expect": {
+            "ok": true,
+            "payload": {
+              "runId": "A",
+              "accepted": true,
+              "epoch": 1
+            }
+          }
+        },
+        {
+          "op": "tick",
+          "runId": "A",
+          "count": 1
+        },
+        {
+          "op": "hold-replay-delivery",
+          "requestId": "replay"
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "reconnect",
+            "requestId": "replay",
+            "payload": {
+              "epoch": 1,
+              "afterGlobalSeq": 0
+            }
+          },
+          "expect": {
+            "ok": true,
+            "payload": {
+              "epoch": 1,
+              "throughGlobalSeq": 2,
+              "events": [
+                {
+                  "epoch": 1,
+                  "globalSeq": 1,
+                  "runId": "A",
+                  "runSeq": 1,
+                  "kind": "started",
+                  "data": {}
+                },
+                {
+                  "epoch": 1,
+                  "globalSeq": 2,
+                  "runId": "A",
+                  "runSeq": 2,
+                  "kind": "output",
+                  "data": {
+                    "text": "alpha"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "op": "tick",
+          "runId": "A",
+          "count": 1
+        },
+        {
+          "op": "deliver",
+          "events": [
+            {
+              "epoch": 1,
+              "globalSeq": 3,
+              "runId": "A",
+              "runSeq": 3,
+              "kind": "output",
+              "data": {
+                "text": "beta"
+              }
+            }
+          ]
+        },
+        {
+          "op": "apply-last-replay"
+        },
+        {
+          "op": "assert-projection",
+          "cursor": 3,
+          "records": [
+            {
+              "epoch": 1,
+              "globalSeq": 1,
+              "runId": "A",
+              "runSeq": 1,
+              "kind": "started",
+              "data": {}
+            },
+            {
+              "epoch": 1,
+              "globalSeq": 2,
+              "runId": "A",
+              "runSeq": 2,
+              "kind": "output",
+              "data": {
+                "text": "alpha"
+              }
+            },
+            {
+              "epoch": 1,
+              "globalSeq": 3,
+              "runId": "A",
+              "runSeq": 3,
+              "kind": "output",
+              "data": {
+                "text": "beta"
+              }
+            }
+          ],
+          "runs": {
+            "A": "running"
+          },
+          "degraded": false
+        }
+      ],
+      "final": {
+        "epoch": 1,
+        "journal": [
+          {
+            "epoch": 1,
+            "globalSeq": 1,
+            "runId": "A",
+            "runSeq": 1,
+            "kind": "started",
+            "data": {}
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 2,
+            "runId": "A",
+            "runSeq": 2,
+            "kind": "output",
+            "data": {
+              "text": "alpha"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 3,
+            "runId": "A",
+            "runSeq": 3,
+            "kind": "output",
+            "data": {
+              "text": "beta"
+            }
+          }
+        ],
+        "runs": {
+          "A": "running"
+        }
+      }
+    },
+    {
+      "id": "O31",
+      "oracle": "O31",
+      "initial": {
+        "sessionId": "synthetic-session",
+        "epoch": 1,
+        "grants": [
+          "health",
+          "start-mock-run",
+          "cancel",
+          "global-stop",
+          "reconnect"
+        ],
+        "journal": [],
+        "approvals": []
+      },
+      "steps": [
+        {
+          "op": "approve",
+          "approval": {
+            "approvalId": "approval-A",
+            "approvalRevision": 1,
+            "runId": "A",
+            "fixtureId": "H",
+            "epoch": 1
+          }
+        },
+        {
+          "op": "arm-crash",
+          "point": "after-durable-commit-before-ack",
+          "requestId": "r1"
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "start-mock-run",
+            "requestId": "r1",
+            "payload": {
+              "runId": "A",
+              "fixtureId": "H",
+              "approvalId": "approval-A",
+              "approvalRevision": 1,
+              "expectedEpoch": 1
+            }
+          },
+          "expect": {
+            "transport": "disconnected",
+            "replyReceived": false
+          }
+        },
+        {
+          "op": "restart-core",
+          "preserveDurableStore": true
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "start-mock-run",
+            "requestId": "r1",
+            "payload": {
+              "runId": "A",
+              "fixtureId": "H",
+              "approvalId": "approval-A",
+              "approvalRevision": 1,
+              "expectedEpoch": 1
+            }
+          },
+          "expect": {
+            "ok": true,
+            "payload": {
+              "runId": "A",
+              "accepted": true,
+              "epoch": 1
+            }
+          }
+        },
+        {
+          "op": "assert-approval-consumption",
+          "approvalId": "approval-A",
+          "count": 1
+        }
+      ],
+      "final": {
+        "epoch": 1,
+        "journal": [
+          {
+            "epoch": 1,
+            "globalSeq": 1,
+            "runId": "A",
+            "runSeq": 1,
+            "kind": "started",
+            "data": {}
+          }
+        ],
+        "runs": {
+          "A": "running"
+        }
+      }
+    },
+    {
+      "id": "O32",
+      "oracle": "O32",
+      "initial": {
+        "sessionId": "synthetic-session",
+        "epoch": 1,
+        "grants": [
+          "health",
+          "start-mock-run",
+          "cancel",
+          "global-stop",
+          "reconnect"
+        ],
+        "journal": [],
+        "approvals": []
+      },
+      "steps": [
+        {
+          "op": "approve",
+          "approval": {
+            "approvalId": "approval-A",
+            "approvalRevision": 1,
+            "runId": "A",
+            "fixtureId": "H",
+            "epoch": 1
+          }
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "start-mock-run",
+            "requestId": "r1",
+            "payload": {
+              "runId": "A",
+              "fixtureId": "H",
+              "approvalId": "approval-A",
+              "approvalRevision": 1,
+              "expectedEpoch": 1
+            }
+          },
+          "expect": {
+            "ok": true,
+            "payload": {
+              "runId": "A",
+              "accepted": true,
+              "epoch": 1
+            }
+          }
+        },
+        {
+          "op": "interrupt-durable-write",
+          "request": {
+            "v": 1,
+            "type": "cancel",
+            "requestId": "r2",
+            "payload": {
+              "runId": "A",
+              "expectedEpoch": 1
+            }
+          },
+          "point": "before-transaction-commit"
+        },
+        {
+          "op": "restart-core",
+          "preserveDurableStore": true
+        },
+        {
+          "op": "assert-recovery",
+          "allowed": [
+            {
+              "available": true,
+              "journal": [
+                {
+                  "epoch": 1,
+                  "globalSeq": 1,
+                  "runId": "A",
+                  "runSeq": 1,
+                  "kind": "started",
+                  "data": {}
+                }
+              ],
+              "runs": {
+                "A": "running"
+              }
+            },
+            {
+              "available": false,
+              "code": "journal_corrupt",
+              "noSuccessfulMutations": true
+            }
+          ],
+          "forbiddenStates": [
+            "cancelled",
+            "succeeded",
+            "failed",
+            "stopped"
+          ]
+        }
+      ],
+      "final": {
+        "allowed": [
+          {
+            "epoch": 1,
+            "journal": [
+              {
+                "epoch": 1,
+                "globalSeq": 1,
+                "runId": "A",
+                "runSeq": 1,
+                "kind": "started",
+                "data": {}
+              }
+            ],
+            "runs": {
+              "A": "running"
+            }
+          },
+          {
+            "available": false,
+            "code": "journal_corrupt"
+          }
+        ]
+      }
+    },
+    {
+      "id": "O33-A-B-Stop",
+      "oracle": "O33",
+      "initial": {
+        "sessionId": "synthetic-session",
+        "epoch": 1,
+        "grants": [
+          "health",
+          "start-mock-run",
+          "cancel",
+          "global-stop",
+          "reconnect"
+        ],
+        "journal": [],
+        "approvals": []
+      },
+      "steps": [
+        {
+          "op": "approve",
+          "approval": {
+            "approvalId": "approval-A",
+            "approvalRevision": 1,
+            "runId": "A",
+            "fixtureId": "H",
+            "epoch": 1
+          }
+        },
+        {
+          "op": "approve",
+          "approval": {
+            "approvalId": "approval-B",
+            "approvalRevision": 1,
+            "runId": "B",
+            "fixtureId": "H",
+            "epoch": 1
+          }
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "start-mock-run",
+            "requestId": "start-A",
+            "payload": {
+              "runId": "A",
+              "fixtureId": "H",
+              "approvalId": "approval-A",
+              "approvalRevision": 1,
+              "expectedEpoch": 1
+            }
+          },
+          "expect": {
+            "ok": true,
+            "payload": {
+              "runId": "A",
+              "accepted": true,
+              "epoch": 1
+            }
+          }
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "start-mock-run",
+            "requestId": "start-B",
+            "payload": {
+              "runId": "B",
+              "fixtureId": "H",
+              "approvalId": "approval-B",
+              "approvalRevision": 1,
+              "expectedEpoch": 1
+            }
+          },
+          "expect": {
+            "ok": true,
+            "payload": {
+              "runId": "B",
+              "accepted": true,
+              "epoch": 1
+            }
+          }
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "global-stop",
+            "requestId": "stop",
+            "payload": {
+              "expectedEpoch": 1
+            }
+          },
+          "expect": {
+            "ok": true,
+            "payload": {
+              "epoch": 2,
+              "stoppedRunIds": [
+                "A",
+                "B"
+              ]
+            }
+          }
+        }
+      ],
+      "final": {
+        "epoch": 2,
+        "journal": [
+          {
+            "epoch": 1,
+            "globalSeq": 1,
+            "runId": "A",
+            "runSeq": 1,
+            "kind": "started",
+            "data": {}
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 2,
+            "runId": "B",
+            "runSeq": 1,
+            "kind": "started",
+            "data": {}
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 3,
+            "runId": "A",
+            "runSeq": 2,
+            "kind": "stopped",
+            "data": {}
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 4,
+            "runId": "B",
+            "runSeq": 2,
+            "kind": "stopped",
+            "data": {}
+          }
+        ],
+        "runs": {
+          "A": "stopped",
+          "B": "stopped"
+        }
+      }
+    },
+    {
+      "id": "O33-A-Stop-B",
+      "oracle": "O33",
+      "initial": {
+        "sessionId": "synthetic-session",
+        "epoch": 1,
+        "grants": [
+          "health",
+          "start-mock-run",
+          "cancel",
+          "global-stop",
+          "reconnect"
+        ],
+        "journal": [],
+        "approvals": []
+      },
+      "steps": [
+        {
+          "op": "approve",
+          "approval": {
+            "approvalId": "approval-A",
+            "approvalRevision": 1,
+            "runId": "A",
+            "fixtureId": "H",
+            "epoch": 1
+          }
+        },
+        {
+          "op": "approve",
+          "approval": {
+            "approvalId": "approval-B",
+            "approvalRevision": 1,
+            "runId": "B",
+            "fixtureId": "H",
+            "epoch": 1
+          }
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "start-mock-run",
+            "requestId": "start-A",
+            "payload": {
+              "runId": "A",
+              "fixtureId": "H",
+              "approvalId": "approval-A",
+              "approvalRevision": 1,
+              "expectedEpoch": 1
+            }
+          },
+          "expect": {
+            "ok": true,
+            "payload": {
+              "runId": "A",
+              "accepted": true,
+              "epoch": 1
+            }
+          }
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "global-stop",
+            "requestId": "stop",
+            "payload": {
+              "expectedEpoch": 1
+            }
+          },
+          "expect": {
+            "ok": true,
+            "payload": {
+              "epoch": 2,
+              "stoppedRunIds": [
+                "A"
+              ]
+            }
+          }
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "start-mock-run",
+            "requestId": "start-B",
+            "payload": {
+              "runId": "B",
+              "fixtureId": "H",
+              "approvalId": "approval-B",
+              "approvalRevision": 1,
+              "expectedEpoch": 1
+            }
+          },
+          "expect": {
+            "ok": false,
+            "code": "stale_epoch",
+            "stateUnchanged": true,
+            "nativeActions": 0
+          }
+        }
+      ],
+      "final": {
+        "epoch": 2,
+        "journal": [
+          {
+            "epoch": 1,
+            "globalSeq": 1,
+            "runId": "A",
+            "runSeq": 1,
+            "kind": "started",
+            "data": {}
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 2,
+            "runId": "A",
+            "runSeq": 2,
+            "kind": "stopped",
+            "data": {}
+          }
+        ],
+        "runs": {
+          "A": "stopped"
+        }
+      }
+    },
+    {
+      "id": "O33-B-A-Stop",
+      "oracle": "O33",
+      "initial": {
+        "sessionId": "synthetic-session",
+        "epoch": 1,
+        "grants": [
+          "health",
+          "start-mock-run",
+          "cancel",
+          "global-stop",
+          "reconnect"
+        ],
+        "journal": [],
+        "approvals": []
+      },
+      "steps": [
+        {
+          "op": "approve",
+          "approval": {
+            "approvalId": "approval-A",
+            "approvalRevision": 1,
+            "runId": "A",
+            "fixtureId": "H",
+            "epoch": 1
+          }
+        },
+        {
+          "op": "approve",
+          "approval": {
+            "approvalId": "approval-B",
+            "approvalRevision": 1,
+            "runId": "B",
+            "fixtureId": "H",
+            "epoch": 1
+          }
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "start-mock-run",
+            "requestId": "start-B",
+            "payload": {
+              "runId": "B",
+              "fixtureId": "H",
+              "approvalId": "approval-B",
+              "approvalRevision": 1,
+              "expectedEpoch": 1
+            }
+          },
+          "expect": {
+            "ok": true,
+            "payload": {
+              "runId": "B",
+              "accepted": true,
+              "epoch": 1
+            }
+          }
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "start-mock-run",
+            "requestId": "start-A",
+            "payload": {
+              "runId": "A",
+              "fixtureId": "H",
+              "approvalId": "approval-A",
+              "approvalRevision": 1,
+              "expectedEpoch": 1
+            }
+          },
+          "expect": {
+            "ok": true,
+            "payload": {
+              "runId": "A",
+              "accepted": true,
+              "epoch": 1
+            }
+          }
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "global-stop",
+            "requestId": "stop",
+            "payload": {
+              "expectedEpoch": 1
+            }
+          },
+          "expect": {
+            "ok": true,
+            "payload": {
+              "epoch": 2,
+              "stoppedRunIds": [
+                "A",
+                "B"
+              ]
+            }
+          }
+        }
+      ],
+      "final": {
+        "epoch": 2,
+        "journal": [
+          {
+            "epoch": 1,
+            "globalSeq": 1,
+            "runId": "B",
+            "runSeq": 1,
+            "kind": "started",
+            "data": {}
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 2,
+            "runId": "A",
+            "runSeq": 1,
+            "kind": "started",
+            "data": {}
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 3,
+            "runId": "A",
+            "runSeq": 2,
+            "kind": "stopped",
+            "data": {}
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 4,
+            "runId": "B",
+            "runSeq": 2,
+            "kind": "stopped",
+            "data": {}
+          }
+        ],
+        "runs": {
+          "B": "stopped",
+          "A": "stopped"
+        }
+      }
+    },
+    {
+      "id": "O33-B-Stop-A",
+      "oracle": "O33",
+      "initial": {
+        "sessionId": "synthetic-session",
+        "epoch": 1,
+        "grants": [
+          "health",
+          "start-mock-run",
+          "cancel",
+          "global-stop",
+          "reconnect"
+        ],
+        "journal": [],
+        "approvals": []
+      },
+      "steps": [
+        {
+          "op": "approve",
+          "approval": {
+            "approvalId": "approval-A",
+            "approvalRevision": 1,
+            "runId": "A",
+            "fixtureId": "H",
+            "epoch": 1
+          }
+        },
+        {
+          "op": "approve",
+          "approval": {
+            "approvalId": "approval-B",
+            "approvalRevision": 1,
+            "runId": "B",
+            "fixtureId": "H",
+            "epoch": 1
+          }
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "start-mock-run",
+            "requestId": "start-B",
+            "payload": {
+              "runId": "B",
+              "fixtureId": "H",
+              "approvalId": "approval-B",
+              "approvalRevision": 1,
+              "expectedEpoch": 1
+            }
+          },
+          "expect": {
+            "ok": true,
+            "payload": {
+              "runId": "B",
+              "accepted": true,
+              "epoch": 1
+            }
+          }
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "global-stop",
+            "requestId": "stop",
+            "payload": {
+              "expectedEpoch": 1
+            }
+          },
+          "expect": {
+            "ok": true,
+            "payload": {
+              "epoch": 2,
+              "stoppedRunIds": [
+                "B"
+              ]
+            }
+          }
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "start-mock-run",
+            "requestId": "start-A",
+            "payload": {
+              "runId": "A",
+              "fixtureId": "H",
+              "approvalId": "approval-A",
+              "approvalRevision": 1,
+              "expectedEpoch": 1
+            }
+          },
+          "expect": {
+            "ok": false,
+            "code": "stale_epoch",
+            "stateUnchanged": true,
+            "nativeActions": 0
+          }
+        }
+      ],
+      "final": {
+        "epoch": 2,
+        "journal": [
+          {
+            "epoch": 1,
+            "globalSeq": 1,
+            "runId": "B",
+            "runSeq": 1,
+            "kind": "started",
+            "data": {}
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 2,
+            "runId": "B",
+            "runSeq": 2,
+            "kind": "stopped",
+            "data": {}
+          }
+        ],
+        "runs": {
+          "B": "stopped"
+        }
+      }
+    },
+    {
+      "id": "O33-Stop-A-B",
+      "oracle": "O33",
+      "initial": {
+        "sessionId": "synthetic-session",
+        "epoch": 1,
+        "grants": [
+          "health",
+          "start-mock-run",
+          "cancel",
+          "global-stop",
+          "reconnect"
+        ],
+        "journal": [],
+        "approvals": []
+      },
+      "steps": [
+        {
+          "op": "approve",
+          "approval": {
+            "approvalId": "approval-A",
+            "approvalRevision": 1,
+            "runId": "A",
+            "fixtureId": "H",
+            "epoch": 1
+          }
+        },
+        {
+          "op": "approve",
+          "approval": {
+            "approvalId": "approval-B",
+            "approvalRevision": 1,
+            "runId": "B",
+            "fixtureId": "H",
+            "epoch": 1
+          }
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "global-stop",
+            "requestId": "stop",
+            "payload": {
+              "expectedEpoch": 1
+            }
+          },
+          "expect": {
+            "ok": true,
+            "payload": {
+              "epoch": 2,
+              "stoppedRunIds": []
+            }
+          }
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "start-mock-run",
+            "requestId": "start-A",
+            "payload": {
+              "runId": "A",
+              "fixtureId": "H",
+              "approvalId": "approval-A",
+              "approvalRevision": 1,
+              "expectedEpoch": 1
+            }
+          },
+          "expect": {
+            "ok": false,
+            "code": "stale_epoch",
+            "stateUnchanged": true,
+            "nativeActions": 0
+          }
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "start-mock-run",
+            "requestId": "start-B",
+            "payload": {
+              "runId": "B",
+              "fixtureId": "H",
+              "approvalId": "approval-B",
+              "approvalRevision": 1,
+              "expectedEpoch": 1
+            }
+          },
+          "expect": {
+            "ok": false,
+            "code": "stale_epoch",
+            "stateUnchanged": true,
+            "nativeActions": 0
+          }
+        }
+      ],
+      "final": {
+        "epoch": 2,
+        "journal": [],
+        "runs": {}
+      }
+    },
+    {
+      "id": "O33-Stop-B-A",
+      "oracle": "O33",
+      "initial": {
+        "sessionId": "synthetic-session",
+        "epoch": 1,
+        "grants": [
+          "health",
+          "start-mock-run",
+          "cancel",
+          "global-stop",
+          "reconnect"
+        ],
+        "journal": [],
+        "approvals": []
+      },
+      "steps": [
+        {
+          "op": "approve",
+          "approval": {
+            "approvalId": "approval-A",
+            "approvalRevision": 1,
+            "runId": "A",
+            "fixtureId": "H",
+            "epoch": 1
+          }
+        },
+        {
+          "op": "approve",
+          "approval": {
+            "approvalId": "approval-B",
+            "approvalRevision": 1,
+            "runId": "B",
+            "fixtureId": "H",
+            "epoch": 1
+          }
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "global-stop",
+            "requestId": "stop",
+            "payload": {
+              "expectedEpoch": 1
+            }
+          },
+          "expect": {
+            "ok": true,
+            "payload": {
+              "epoch": 2,
+              "stoppedRunIds": []
+            }
+          }
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "start-mock-run",
+            "requestId": "start-B",
+            "payload": {
+              "runId": "B",
+              "fixtureId": "H",
+              "approvalId": "approval-B",
+              "approvalRevision": 1,
+              "expectedEpoch": 1
+            }
+          },
+          "expect": {
+            "ok": false,
+            "code": "stale_epoch",
+            "stateUnchanged": true,
+            "nativeActions": 0
+          }
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "start-mock-run",
+            "requestId": "start-A",
+            "payload": {
+              "runId": "A",
+              "fixtureId": "H",
+              "approvalId": "approval-A",
+              "approvalRevision": 1,
+              "expectedEpoch": 1
+            }
+          },
+          "expect": {
+            "ok": false,
+            "code": "stale_epoch",
+            "stateUnchanged": true,
+            "nativeActions": 0
+          }
+        }
+      ],
+      "final": {
+        "epoch": 2,
+        "journal": [],
+        "runs": {}
+      }
+    },
+    {
+      "id": "O34",
+      "oracle": "O34",
+      "initial": {
+        "sessionId": "synthetic-session",
+        "epoch": 1,
+        "grants": [
+          "health",
+          "start-mock-run",
+          "cancel",
+          "global-stop",
+          "reconnect"
+        ],
+        "journal": [],
+        "approvals": []
+      },
+      "steps": [
+        {
+          "op": "set-harness-fixture",
+          "fixtureId": "H",
+          "outputs": [
+            "<img src=x onerror=alert(1)>"
+          ]
+        },
+        {
+          "op": "approve",
+          "approval": {
+            "approvalId": "approval-A",
+            "approvalRevision": 1,
+            "runId": "A",
+            "fixtureId": "H",
+            "epoch": 1
+          }
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "start-mock-run",
+            "requestId": "r1",
+            "payload": {
+              "runId": "A",
+              "fixtureId": "H",
+              "approvalId": "approval-A",
+              "approvalRevision": 1,
+              "expectedEpoch": 1
+            }
+          },
+          "expect": {
+            "ok": true,
+            "payload": {
+              "runId": "A",
+              "accepted": true,
+              "epoch": 1
+            }
+          }
+        },
+        {
+          "op": "tick",
+          "runId": "A",
+          "count": 1
+        },
+        {
+          "op": "deliver",
+          "events": [
+            {
+              "epoch": 1,
+              "globalSeq": 1,
+              "runId": "A",
+              "runSeq": 1,
+              "kind": "started",
+              "data": {}
+            },
+            {
+              "epoch": 1,
+              "globalSeq": 2,
+              "runId": "A",
+              "runSeq": 2,
+              "kind": "output",
+              "data": {
+                "text": "<img src=x onerror=alert(1)>"
+              }
+            }
+          ]
+        },
+        {
+          "op": "assert-rendered-text",
+          "text": "<img src=x onerror=alert(1)>",
+          "imageElements": 0,
+          "scriptExecutions": 0,
+          "navigations": 0,
+          "networkRequests": 0
+        }
+      ],
+      "final": {
+        "epoch": 1,
+        "journal": [
+          {
+            "epoch": 1,
+            "globalSeq": 1,
+            "runId": "A",
+            "runSeq": 1,
+            "kind": "started",
+            "data": {}
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 2,
+            "runId": "A",
+            "runSeq": 2,
+            "kind": "output",
+            "data": {
+              "text": "<img src=x onerror=alert(1)>"
+            }
+          }
+        ],
+        "runs": {
+          "A": "running"
+        }
+      }
+    },
+    {
+      "id": "O35",
+      "oracle": "O35",
+      "initial": {
+        "sessionId": "synthetic-session",
+        "epoch": 1,
+        "grants": [
+          "health",
+          "start-mock-run",
+          "cancel",
+          "global-stop",
+          "reconnect"
+        ],
+        "journal": [],
+        "approvals": []
+      },
+      "steps": [
+        {
+          "op": "approve",
+          "approval": {
+            "approvalId": "approval-A",
+            "approvalRevision": 1,
+            "runId": "A",
+            "fixtureId": "C",
+            "epoch": 1
+          }
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "start-mock-run",
+            "requestId": "r1",
+            "payload": {
+              "runId": "A",
+              "fixtureId": "C",
+              "approvalId": "approval-A",
+              "approvalRevision": 1,
+              "expectedEpoch": 1
+            }
+          },
+          "expect": {
+            "ok": true,
+            "payload": {
+              "runId": "A",
+              "accepted": true,
+              "epoch": 1
+            }
+          }
+        },
+        {
+          "op": "tick",
+          "runId": "A",
+          "count": 3
+        },
+        {
+          "op": "deliver",
+          "events": [
+            {
+              "epoch": 1,
+              "globalSeq": 1,
+              "runId": "A",
+              "runSeq": 1,
+              "kind": "started",
+              "data": {}
+            },
+            {
+              "epoch": 1,
+              "globalSeq": 2,
+              "runId": "A",
+              "runSeq": 2,
+              "kind": "output",
+              "data": {
+                "text": "alpha"
+              }
+            },
+            {
+              "epoch": 1,
+              "globalSeq": 3,
+              "runId": "A",
+              "runSeq": 3,
+              "kind": "output",
+              "data": {
+                "text": "beta"
+              }
+            }
+          ]
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "health",
+            "requestId": "poll",
+            "payload": {}
+          },
+          "expect": {
+            "ok": true,
+            "payload": {
+              "protocol": 1,
+              "epoch": 1,
+              "lastGlobalSeq": 4
+            }
+          }
+        },
+        {
+          "op": "deliver-last-response"
+        },
+        {
+          "op": "assert-gap-recovery-requested",
+          "afterGlobalSeq": 3,
+          "withinMilliseconds": 1000
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "reconnect",
+            "requestId": "replay",
+            "payload": {
+              "epoch": 1,
+              "afterGlobalSeq": 3
+            }
+          },
+          "expect": {
+            "ok": true,
+            "payload": {
+              "epoch": 1,
+              "throughGlobalSeq": 4,
+              "events": [
+                {
+                  "epoch": 1,
+                  "globalSeq": 4,
+                  "runId": "A",
+                  "runSeq": 4,
+                  "kind": "succeeded",
+                  "data": {}
+                }
+              ]
+            }
+          }
+        },
+        {
+          "op": "apply-last-replay"
+        },
+        {
+          "op": "assert-projection",
+          "cursor": 4,
+          "records": [
+            {
+              "epoch": 1,
+              "globalSeq": 1,
+              "runId": "A",
+              "runSeq": 1,
+              "kind": "started",
+              "data": {}
+            },
+            {
+              "epoch": 1,
+              "globalSeq": 2,
+              "runId": "A",
+              "runSeq": 2,
+              "kind": "output",
+              "data": {
+                "text": "alpha"
+              }
+            },
+            {
+              "epoch": 1,
+              "globalSeq": 3,
+              "runId": "A",
+              "runSeq": 3,
+              "kind": "output",
+              "data": {
+                "text": "beta"
+              }
+            },
+            {
+              "epoch": 1,
+              "globalSeq": 4,
+              "runId": "A",
+              "runSeq": 4,
+              "kind": "succeeded",
+              "data": {}
+            }
+          ],
+          "runs": {
+            "A": "succeeded"
+          },
+          "degraded": false
+        }
+      ],
+      "final": {
+        "epoch": 1,
+        "journal": [
+          {
+            "epoch": 1,
+            "globalSeq": 1,
+            "runId": "A",
+            "runSeq": 1,
+            "kind": "started",
+            "data": {}
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 2,
+            "runId": "A",
+            "runSeq": 2,
+            "kind": "output",
+            "data": {
+              "text": "alpha"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 3,
+            "runId": "A",
+            "runSeq": 3,
+            "kind": "output",
+            "data": {
+              "text": "beta"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 4,
+            "runId": "A",
+            "runSeq": 4,
+            "kind": "succeeded",
+            "data": {}
+          }
+        ],
+        "runs": {
+          "A": "succeeded"
+        }
+      }
+    },
+    {
+      "id": "O36-duplicate-key",
+      "oracle": "O36",
+      "initial": {
+        "sessionId": "synthetic-session",
+        "epoch": 1,
+        "grants": [
+          "health",
+          "start-mock-run",
+          "cancel",
+          "global-stop",
+          "reconnect"
+        ],
+        "journal": [],
+        "approvals": []
+      },
+      "steps": [
+        {
+          "op": "raw-request",
+          "bytes": {
+            "encoding": "utf8",
+            "text": "{\"v\":1,\"v\":2,\"type\":\"health\",\"requestId\":\"r1\",\"payload\":{}}"
+          },
+          "expect": {
+            "ok": false,
+            "code": "malformed",
+            "stateUnchanged": true,
+            "nativeActions": 0
+          }
+        }
+      ],
+      "final": {
+        "epoch": 1,
+        "journal": [],
+        "runs": {}
+      }
+    },
+    {
+      "id": "O36-invalid-utf8",
+      "oracle": "O36",
+      "initial": {
+        "sessionId": "synthetic-session",
+        "epoch": 1,
+        "grants": [
+          "health",
+          "start-mock-run",
+          "cancel",
+          "global-stop",
+          "reconnect"
+        ],
+        "journal": [],
+        "approvals": []
+      },
+      "steps": [
+        {
+          "op": "raw-request",
+          "bytes": {
+            "encoding": "hex",
+            "value": "ff"
+          },
+          "expect": {
+            "ok": false,
+            "code": "malformed",
+            "stateUnchanged": true,
+            "nativeActions": 0
+          }
+        }
+      ],
+      "final": {
+        "epoch": 1,
+        "journal": [],
+        "runs": {}
+      }
+    },
+    {
+      "id": "O36-unpaired-surrogate",
+      "oracle": "O36",
+      "initial": {
+        "sessionId": "synthetic-session",
+        "epoch": 1,
+        "grants": [
+          "health",
+          "start-mock-run",
+          "cancel",
+          "global-stop",
+          "reconnect"
+        ],
+        "journal": [],
+        "approvals": []
+      },
+      "steps": [
+        {
+          "op": "raw-request",
+          "bytes": {
+            "encoding": "utf8",
+            "text": "{\"v\":1,\"type\":\"health\",\"requestId\":\"\\ud800\",\"payload\":{}}"
+          },
+          "expect": {
+            "ok": false,
+            "code": "malformed",
+            "stateUnchanged": true,
+            "nativeActions": 0
+          }
+        }
+      ],
+      "final": {
+        "epoch": 1,
+        "journal": [],
+        "runs": {}
+      }
+    },
+    {
+      "id": "O37",
+      "oracle": "O37",
+      "initial": {
+        "sessionId": "synthetic-session",
+        "epoch": 1,
+        "grants": [
+          "health",
+          "start-mock-run",
+          "cancel",
+          "global-stop",
+          "reconnect"
+        ],
+        "journal": [],
+        "approvals": []
+      },
+      "steps": [
+        {
+          "op": "approve",
+          "approval": {
+            "approvalId": "approval-A",
+            "approvalRevision": 1,
+            "runId": "A",
+            "fixtureId": "H",
+            "epoch": 1
+          }
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "start-mock-run",
+            "requestId": "r1",
+            "payload": {
+              "runId": "A",
+              "fixtureId": "H",
+              "approvalId": "approval-A",
+              "approvalRevision": 1,
+              "expectedEpoch": 1
+            }
+          },
+          "expect": {
+            "ok": true,
+            "payload": {
+              "runId": "A",
+              "accepted": true,
+              "epoch": 1
+            }
+          }
+        },
+        {
+          "op": "revoke",
+          "type": "start-mock-run"
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "start-mock-run",
+            "requestId": "r1",
+            "payload": {
+              "runId": "A",
+              "fixtureId": "H",
+              "approvalId": "approval-A",
+              "approvalRevision": 1,
+              "expectedEpoch": 1
+            }
+          },
+          "expect": {
+            "ok": false,
+            "code": "not_granted",
+            "stateUnchanged": true,
+            "nativeActions": 0
+          }
+        }
+      ],
+      "final": {
+        "epoch": 1,
+        "journal": [
+          {
+            "epoch": 1,
+            "globalSeq": 1,
+            "runId": "A",
+            "runSeq": 1,
+            "kind": "started",
+            "data": {}
+          }
+        ],
+        "runs": {
+          "A": "running"
+        }
+      }
+    },
+    {
+      "id": "O38",
+      "oracle": "O38",
+      "initial": {
+        "sessionId": "synthetic-session",
+        "epoch": 1,
+        "grants": [
+          "health",
+          "start-mock-run",
+          "cancel",
+          "global-stop",
+          "reconnect"
+        ],
+        "journal": [],
+        "approvals": []
+      },
+      "steps": [
+        {
+          "op": "set-harness-fixture",
+          "fixtureId": "H",
+          "outputs": [
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity",
+            "capacity"
+          ]
+        },
+        {
+          "op": "approve",
+          "approval": {
+            "approvalId": "approval-A",
+            "approvalRevision": 1,
+            "runId": "A",
+            "fixtureId": "H",
+            "epoch": 1
+          }
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "start-mock-run",
+            "requestId": "r1",
+            "payload": {
+              "runId": "A",
+              "fixtureId": "H",
+              "approvalId": "approval-A",
+              "approvalRevision": 1,
+              "expectedEpoch": 1
+            }
+          },
+          "expect": {
+            "ok": true,
+            "payload": {
+              "runId": "A",
+              "accepted": true,
+              "epoch": 1
+            }
+          }
+        },
+        {
+          "op": "tick",
+          "runId": "A",
+          "count": 126
+        },
+        {
+          "op": "tick",
+          "runId": "A",
+          "count": 1,
+          "expect": {
+            "code": "fixture_limit",
+            "stateUnchanged": true
+          }
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "global-stop",
+            "requestId": "stop",
+            "payload": {
+              "expectedEpoch": 1
+            }
+          },
+          "expect": {
+            "ok": true,
+            "payload": {
+              "epoch": 2,
+              "stoppedRunIds": [
+                "A"
+              ]
+            }
+          }
+        }
+      ],
+      "final": {
+        "epoch": 2,
+        "journal": [
+          {
+            "epoch": 1,
+            "globalSeq": 1,
+            "runId": "A",
+            "runSeq": 1,
+            "kind": "started",
+            "data": {}
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 2,
+            "runId": "A",
+            "runSeq": 2,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 3,
+            "runId": "A",
+            "runSeq": 3,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 4,
+            "runId": "A",
+            "runSeq": 4,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 5,
+            "runId": "A",
+            "runSeq": 5,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 6,
+            "runId": "A",
+            "runSeq": 6,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 7,
+            "runId": "A",
+            "runSeq": 7,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 8,
+            "runId": "A",
+            "runSeq": 8,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 9,
+            "runId": "A",
+            "runSeq": 9,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 10,
+            "runId": "A",
+            "runSeq": 10,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 11,
+            "runId": "A",
+            "runSeq": 11,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 12,
+            "runId": "A",
+            "runSeq": 12,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 13,
+            "runId": "A",
+            "runSeq": 13,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 14,
+            "runId": "A",
+            "runSeq": 14,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 15,
+            "runId": "A",
+            "runSeq": 15,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 16,
+            "runId": "A",
+            "runSeq": 16,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 17,
+            "runId": "A",
+            "runSeq": 17,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 18,
+            "runId": "A",
+            "runSeq": 18,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 19,
+            "runId": "A",
+            "runSeq": 19,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 20,
+            "runId": "A",
+            "runSeq": 20,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 21,
+            "runId": "A",
+            "runSeq": 21,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 22,
+            "runId": "A",
+            "runSeq": 22,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 23,
+            "runId": "A",
+            "runSeq": 23,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 24,
+            "runId": "A",
+            "runSeq": 24,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 25,
+            "runId": "A",
+            "runSeq": 25,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 26,
+            "runId": "A",
+            "runSeq": 26,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 27,
+            "runId": "A",
+            "runSeq": 27,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 28,
+            "runId": "A",
+            "runSeq": 28,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 29,
+            "runId": "A",
+            "runSeq": 29,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 30,
+            "runId": "A",
+            "runSeq": 30,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 31,
+            "runId": "A",
+            "runSeq": 31,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 32,
+            "runId": "A",
+            "runSeq": 32,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 33,
+            "runId": "A",
+            "runSeq": 33,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 34,
+            "runId": "A",
+            "runSeq": 34,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 35,
+            "runId": "A",
+            "runSeq": 35,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 36,
+            "runId": "A",
+            "runSeq": 36,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 37,
+            "runId": "A",
+            "runSeq": 37,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 38,
+            "runId": "A",
+            "runSeq": 38,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 39,
+            "runId": "A",
+            "runSeq": 39,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 40,
+            "runId": "A",
+            "runSeq": 40,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 41,
+            "runId": "A",
+            "runSeq": 41,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 42,
+            "runId": "A",
+            "runSeq": 42,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 43,
+            "runId": "A",
+            "runSeq": 43,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 44,
+            "runId": "A",
+            "runSeq": 44,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 45,
+            "runId": "A",
+            "runSeq": 45,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 46,
+            "runId": "A",
+            "runSeq": 46,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 47,
+            "runId": "A",
+            "runSeq": 47,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 48,
+            "runId": "A",
+            "runSeq": 48,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 49,
+            "runId": "A",
+            "runSeq": 49,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 50,
+            "runId": "A",
+            "runSeq": 50,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 51,
+            "runId": "A",
+            "runSeq": 51,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 52,
+            "runId": "A",
+            "runSeq": 52,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 53,
+            "runId": "A",
+            "runSeq": 53,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 54,
+            "runId": "A",
+            "runSeq": 54,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 55,
+            "runId": "A",
+            "runSeq": 55,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 56,
+            "runId": "A",
+            "runSeq": 56,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 57,
+            "runId": "A",
+            "runSeq": 57,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 58,
+            "runId": "A",
+            "runSeq": 58,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 59,
+            "runId": "A",
+            "runSeq": 59,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 60,
+            "runId": "A",
+            "runSeq": 60,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 61,
+            "runId": "A",
+            "runSeq": 61,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 62,
+            "runId": "A",
+            "runSeq": 62,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 63,
+            "runId": "A",
+            "runSeq": 63,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 64,
+            "runId": "A",
+            "runSeq": 64,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 65,
+            "runId": "A",
+            "runSeq": 65,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 66,
+            "runId": "A",
+            "runSeq": 66,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 67,
+            "runId": "A",
+            "runSeq": 67,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 68,
+            "runId": "A",
+            "runSeq": 68,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 69,
+            "runId": "A",
+            "runSeq": 69,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 70,
+            "runId": "A",
+            "runSeq": 70,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 71,
+            "runId": "A",
+            "runSeq": 71,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 72,
+            "runId": "A",
+            "runSeq": 72,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 73,
+            "runId": "A",
+            "runSeq": 73,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 74,
+            "runId": "A",
+            "runSeq": 74,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 75,
+            "runId": "A",
+            "runSeq": 75,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 76,
+            "runId": "A",
+            "runSeq": 76,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 77,
+            "runId": "A",
+            "runSeq": 77,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 78,
+            "runId": "A",
+            "runSeq": 78,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 79,
+            "runId": "A",
+            "runSeq": 79,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 80,
+            "runId": "A",
+            "runSeq": 80,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 81,
+            "runId": "A",
+            "runSeq": 81,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 82,
+            "runId": "A",
+            "runSeq": 82,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 83,
+            "runId": "A",
+            "runSeq": 83,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 84,
+            "runId": "A",
+            "runSeq": 84,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 85,
+            "runId": "A",
+            "runSeq": 85,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 86,
+            "runId": "A",
+            "runSeq": 86,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 87,
+            "runId": "A",
+            "runSeq": 87,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 88,
+            "runId": "A",
+            "runSeq": 88,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 89,
+            "runId": "A",
+            "runSeq": 89,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 90,
+            "runId": "A",
+            "runSeq": 90,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 91,
+            "runId": "A",
+            "runSeq": 91,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 92,
+            "runId": "A",
+            "runSeq": 92,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 93,
+            "runId": "A",
+            "runSeq": 93,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 94,
+            "runId": "A",
+            "runSeq": 94,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 95,
+            "runId": "A",
+            "runSeq": 95,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 96,
+            "runId": "A",
+            "runSeq": 96,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 97,
+            "runId": "A",
+            "runSeq": 97,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 98,
+            "runId": "A",
+            "runSeq": 98,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 99,
+            "runId": "A",
+            "runSeq": 99,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 100,
+            "runId": "A",
+            "runSeq": 100,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 101,
+            "runId": "A",
+            "runSeq": 101,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 102,
+            "runId": "A",
+            "runSeq": 102,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 103,
+            "runId": "A",
+            "runSeq": 103,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 104,
+            "runId": "A",
+            "runSeq": 104,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 105,
+            "runId": "A",
+            "runSeq": 105,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 106,
+            "runId": "A",
+            "runSeq": 106,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 107,
+            "runId": "A",
+            "runSeq": 107,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 108,
+            "runId": "A",
+            "runSeq": 108,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 109,
+            "runId": "A",
+            "runSeq": 109,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 110,
+            "runId": "A",
+            "runSeq": 110,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 111,
+            "runId": "A",
+            "runSeq": 111,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 112,
+            "runId": "A",
+            "runSeq": 112,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 113,
+            "runId": "A",
+            "runSeq": 113,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 114,
+            "runId": "A",
+            "runSeq": 114,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 115,
+            "runId": "A",
+            "runSeq": 115,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 116,
+            "runId": "A",
+            "runSeq": 116,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 117,
+            "runId": "A",
+            "runSeq": 117,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 118,
+            "runId": "A",
+            "runSeq": 118,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 119,
+            "runId": "A",
+            "runSeq": 119,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 120,
+            "runId": "A",
+            "runSeq": 120,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 121,
+            "runId": "A",
+            "runSeq": 121,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 122,
+            "runId": "A",
+            "runSeq": 122,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 123,
+            "runId": "A",
+            "runSeq": 123,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 124,
+            "runId": "A",
+            "runSeq": 124,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 125,
+            "runId": "A",
+            "runSeq": 125,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 126,
+            "runId": "A",
+            "runSeq": 126,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 127,
+            "runId": "A",
+            "runSeq": 127,
+            "kind": "output",
+            "data": {
+              "text": "capacity"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 128,
+            "runId": "A",
+            "runSeq": 128,
+            "kind": "stopped",
+            "data": {}
+          }
+        ],
+        "runs": {
+          "A": "stopped"
+        }
+      }
+    },
+    {
+      "id": "O39",
+      "oracle": "O39",
+      "initial": {
+        "sessionId": "synthetic-session",
+        "epoch": 1,
+        "grants": [
+          "health",
+          "start-mock-run",
+          "cancel",
+          "global-stop",
+          "reconnect"
+        ],
+        "journal": [],
+        "approvals": []
+      },
+      "steps": [
+        {
+          "op": "arm-crash",
+          "point": "after-durable-commit-before-ack",
+          "requestId": "r1"
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "global-stop",
+            "requestId": "r1",
+            "payload": {
+              "expectedEpoch": 1
+            }
+          },
+          "expect": {
+            "transport": "disconnected",
+            "replyReceived": false
+          }
+        },
+        {
+          "op": "restart-core",
+          "preserveDurableStore": true
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "global-stop",
+            "requestId": "r1",
+            "payload": {
+              "expectedEpoch": 1
+            }
+          },
+          "expect": {
+            "ok": true,
+            "payload": {
+              "epoch": 2,
+              "stoppedRunIds": []
+            }
+          }
+        }
+      ],
+      "final": {
+        "epoch": 2,
+        "journal": [],
+        "runs": {}
+      }
+    },
+    {
+      "id": "O40",
+      "oracle": "O40",
+      "initial": {
+        "sessionId": "synthetic-session",
+        "epoch": 1,
+        "grants": [
+          "health",
+          "start-mock-run",
+          "cancel",
+          "global-stop",
+          "reconnect"
+        ],
+        "journal": [],
+        "approvals": []
+      },
+      "steps": [
+        {
+          "op": "approve",
+          "approval": {
+            "approvalId": "approval-A",
+            "approvalRevision": 1,
+            "runId": "A",
+            "fixtureId": "C",
+            "epoch": 1
+          }
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "start-mock-run",
+            "requestId": "r1",
+            "payload": {
+              "runId": "A",
+              "fixtureId": "C",
+              "approvalId": "approval-A",
+              "approvalRevision": 1,
+              "expectedEpoch": 1
+            }
+          },
+          "expect": {
+            "ok": true,
+            "payload": {
+              "runId": "A",
+              "accepted": true,
+              "epoch": 1
+            }
+          }
+        },
+        {
+          "op": "tick",
+          "runId": "A",
+          "count": 3
+        },
+        {
+          "op": "deliver",
+          "events": [
+            {
+              "epoch": 1,
+              "globalSeq": 1,
+              "runId": "A",
+              "runSeq": 1,
+              "kind": "started",
+              "data": {}
+            },
+            {
+              "epoch": 1,
+              "globalSeq": 2,
+              "runId": "A",
+              "runSeq": 2,
+              "kind": "output",
+              "data": {
+                "text": "alpha"
+              }
+            }
+          ]
+        },
+        {
+          "op": "set-ui-preference",
+          "key": "cursor",
+          "value": 2
+        },
+        {
+          "op": "refresh-renderer"
+        },
+        {
+          "op": "expect-shell-request",
+          "type": "reconnect",
+          "payload": {
+            "epoch": 1,
+            "afterGlobalSeq": 0
+          }
+        },
+        {
+          "op": "request",
+          "message": {
+            "v": 1,
+            "type": "reconnect",
+            "requestId": "replay",
+            "payload": {
+              "epoch": 1,
+              "afterGlobalSeq": 0
+            }
+          },
+          "expect": {
+            "ok": true,
+            "payload": {
+              "epoch": 1,
+              "throughGlobalSeq": 4,
+              "events": [
+                {
+                  "epoch": 1,
+                  "globalSeq": 1,
+                  "runId": "A",
+                  "runSeq": 1,
+                  "kind": "started",
+                  "data": {}
+                },
+                {
+                  "epoch": 1,
+                  "globalSeq": 2,
+                  "runId": "A",
+                  "runSeq": 2,
+                  "kind": "output",
+                  "data": {
+                    "text": "alpha"
+                  }
+                },
+                {
+                  "epoch": 1,
+                  "globalSeq": 3,
+                  "runId": "A",
+                  "runSeq": 3,
+                  "kind": "output",
+                  "data": {
+                    "text": "beta"
+                  }
+                },
+                {
+                  "epoch": 1,
+                  "globalSeq": 4,
+                  "runId": "A",
+                  "runSeq": 4,
+                  "kind": "succeeded",
+                  "data": {}
+                }
+              ]
+            }
+          }
+        },
+        {
+          "op": "apply-last-replay"
+        },
+        {
+          "op": "assert-projection",
+          "cursor": 4,
+          "records": [
+            {
+              "epoch": 1,
+              "globalSeq": 1,
+              "runId": "A",
+              "runSeq": 1,
+              "kind": "started",
+              "data": {}
+            },
+            {
+              "epoch": 1,
+              "globalSeq": 2,
+              "runId": "A",
+              "runSeq": 2,
+              "kind": "output",
+              "data": {
+                "text": "alpha"
+              }
+            },
+            {
+              "epoch": 1,
+              "globalSeq": 3,
+              "runId": "A",
+              "runSeq": 3,
+              "kind": "output",
+              "data": {
+                "text": "beta"
+              }
+            },
+            {
+              "epoch": 1,
+              "globalSeq": 4,
+              "runId": "A",
+              "runSeq": 4,
+              "kind": "succeeded",
+              "data": {}
+            }
+          ],
+          "runs": {
+            "A": "succeeded"
+          },
+          "degraded": false
+        }
+      ],
+      "final": {
+        "epoch": 1,
+        "journal": [
+          {
+            "epoch": 1,
+            "globalSeq": 1,
+            "runId": "A",
+            "runSeq": 1,
+            "kind": "started",
+            "data": {}
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 2,
+            "runId": "A",
+            "runSeq": 2,
+            "kind": "output",
+            "data": {
+              "text": "alpha"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 3,
+            "runId": "A",
+            "runSeq": 3,
+            "kind": "output",
+            "data": {
+              "text": "beta"
+            }
+          },
+          {
+            "epoch": 1,
+            "globalSeq": 4,
+            "runId": "A",
+            "runSeq": 4,
+            "kind": "succeeded",
+            "data": {}
+          }
+        ],
+        "runs": {
+          "A": "succeeded"
+        }
+      }
+    }
+  ]
+}
