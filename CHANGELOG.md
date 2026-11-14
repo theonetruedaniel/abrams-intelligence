@@ -2,6 +2,10 @@
 
 ## 2026-11-14
 
+- Published the product source under [`app/`](app/README.md): the reference Core and SQLite store, the Tauri shell, the native and browser interfaces and synthetic fixtures. Three store files had development-machine folder paths replaced with a placeholder; all other files are byte-identical to the private source tree. No native build has been run from this layout.
+- Added an App source checks workflow: six type-checks and nine source-level suites (197 tests).
+- Replaced the README's progress section with a plain-language status: what exists, what has been tested, what is not done and what is next. The previous wording remains in this changelog and the [progress ledger](docs/progress.md).
+- Recorded the approved Phase 2 narrowed exit: the two RC07 fault tests, the timing series and packaging move to later milestones and remain not done; Phase 2 ends on five items and will close with recorded deferrals.
 - Reorganized the repository layout. The developer dispatcher moved from `tools/development-dispatcher/` to `tools/dispatcher/`; the repository catalog (Markdown and JSON) and candidate register moved from `docs/` to `research/`; `docs/evidence/phase2/` became `docs/evidence/phase-2/`. File contents are unchanged apart from relative links.
 - The README now opens with the project description, what runs today and a layout table. The two November 9 catalog-audit paragraphs that led the README moved to the 2026-11-09 entry below.
 - The catalog validator reads the catalog from `research/` and also checks links in `research/` Markdown.

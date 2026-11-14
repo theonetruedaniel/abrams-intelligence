@@ -10,14 +10,16 @@ Local execution is intended to make routine use independent of hosted-service me
 
 ## What runs today
 
+- **App source checks.** Six type-checks and nine test suites (197 tests) cover the Core, the desktop-shell renderer and the browser variant. They run with Node 24 and in CI. See [`app/`](app/README.md).
 - **Offline developer dispatcher.** A five-scenario demo and its tests run with Python 3.13 and nothing else installed. See [Run the published component](#run-the-published-component).
 - **Research catalog checks.** The catalog and documentation links validate offline. See [Check catalog and documentation changes](#check-catalog-and-documentation-changes).
-- **Not yet here:** an installable assistant. The product's Core, shell and UI source is developed locally and has not been published in this repository. [Current progress](#current-progress-november-13-2026-utc) says what exists and what is still open.
+- **Not yet here:** an installable assistant. [Current status](#current-status-november-14-2026) says what exists and what is still open.
 
 ## Repository layout
 
 | Path | Contents |
 | --- | --- |
+| [`app/`](app/) | Product source: Core, Tauri shell, UI and synthetic fixtures. [What it includes and how to check it](app/README.md) |
 | [`docs/`](docs/) | Architecture, design decisions, roadmap, progress and dated evidence |
 | [`research/`](research/) | The repository catalog (Markdown and JSON) and the full candidate register |
 | [`tools/dispatcher/`](tools/dispatcher/) | The offline developer dispatcher: source, tests and demo |
@@ -34,31 +36,42 @@ The [research catalog](research/repository-catalog.md) maps **206 upstream GitHu
 
 Comparisons are organized by role: agent runtimes against runtimes, retrieval approaches against retrieval approaches, and desktop shells against shells. Most candidates have source research or planned evaluations; they have not been benchmarked or adopted. The [results and evidence](docs/results-and-evidence.md) page separates measured findings from unrun comparisons. The catalog and offline dispatcher are available now while the full platform remains in development.
 
-## Current progress: November 13, 2026 (UTC)
+## Current status: November 14, 2026
 
-Abrams Intelligence is a general-purpose, local-first personal intelligence platform in active, AI-assisted development. Local development includes partial shared in-process Core, client and SQLite-backed storage implementation with scoped tests. This work is not yet published as a complete product in this repository. Full integration, product acceptance and Phase 2 completion remain unfinished.
+**Stage: early build.** There is no assistant to install or use yet. The work is in Phase 2 of the plan, which has one job: choose the desktop shell, either a Tauri app or a local web app (PWA).
 
-The November 9 SQLite recovery checkpoint is now followed by six further independently reviewed, scoped passes: O19, O20, O34, O35, O38 and O40. They cover real browser reload/reconstruction, normal same-Store Core replacement, literal hostile-text rendering, bounded terminal replay and SQLite capacity handling. Of the eight oracle rows open at the earlier checkpoint, only the two RC07 native partial-write/uncertain-flush cases remain. The November 10 RC07 checkpoint was native fault-injection preparation, not a fault pass. Both RC07 acceptance results remain outstanding; separate later Tauri builds and pipe tests are described below. See the [progress ledger](docs/progress.md), [latest correctness evidence and limits](docs/evidence/phase-2/2026-11-10-correctness-checkpoint.md), and [dated update history](CHANGELOG.md).
+### What exists
 
-November 12 work produced three verified linked Windows Tauri executables and two separately reviewed real Rust–Node pipe test runs. On November 13, the older fresh-profile executable completed one manually witnessed, default-disconnected desktop smoke. The newer pre-content successor build was invoked but interrupted by a policy denial; compiler start and formal cleanup are not established. These are separate results, not a Core-connected GUI or Phase 2 pass. [Build, pipe and smoke evidence](docs/evidence/phase-2/2026-11-13-native-build-pipe-and-smoke-reconciliation.md).
+- **Core** (TypeScript): handles the version 1 messages (health, start a run, stream events, cancel, stop everything, reconnect), with an in-memory version and a SQLite-backed store. [`app/core/`](app/core/)
+- **Desktop shell** (Rust and Tauri): builds to a Windows executable. [`app/shell/`](app/shell/)
+- **Interface**: one renderer for the Tauri window and one browser variant. [`app/ui/`](app/ui/)
+- **Developer dispatcher**: a separate offline tool, not part of the product. [`tools/dispatcher/`](tools/dispatcher/)
+- **Research catalog**: 206 upstream repositories mapped to roles. None has been adopted. [`research/`](research/)
 
-November 13 independent review accepted **28/28 headless Rust startup-admission tests**: 20 injected admission/thread cases, five real test-directory cases and three injected policy cases. Both compiler and test processes exited successfully with natural cleanup. This is component evidence, not a Tauri application build, GUI/WebView qualification or RC07 result. [Scope and exclusions](docs/evidence/phase-2/2026-11-13-precontent-admission-unit.md).
+### What has been tested
 
-### Published tooling and historical evidence
+- **In this repository, on every change:** 197 source-level tests in nine suites, plus six type-checks. They use fake DOM objects and an in-memory Core; they do not launch the app.
+- **On the development machine, with real processes:** the Rust shell talking to the Node Core over pipes (15 tests, including five failure cases); the Core bundle found correctly from two install locations (21 tests each); shell startup ordering (28 tests); and twelve separate crash, replay, reload and capacity checks of the store. Each has a dated record and a separate review. These cannot be re-run from this repository. [Evidence](docs/evidence/phase-2/) · [Progress ledger](docs/progress.md)
+- **Once, by eye:** the Tauri executable opened and closed cleanly with the Core disconnected.
 
-The offline developer dispatcher is now published in this repository. [PR #1](https://github.com/theonetruedaniel/abrams-intelligence/pull/1) merged on October 3, 2026 EDT (October 4 UTC). The public component release is separate from the newer local product implementation. The [progress ledger](docs/progress.md) separates published tooling, the unpublished write-runner candidate and the next unfinished step in the existing plan.
+### What is not done
 
-| Area | What exists | Limit |
-| --- | --- | --- |
-| Architecture | Preserved 19-document baseline, requirements, decision records and comparison criteria | Design does not establish implemented behavior |
-| Host/build preparation | Scoped attended synthetic readiness; native-tool and locked-source intake evidence | Broader workloads and current build admission remain gated |
-| Product Core and client | Partial local Core/client/SQLite implementation; separately reviewed recovery, browser and capacity results | Local implementation remains unpublished; two RC07 native fault cases plus other Phase 2 obligations remain open; no whole-product acceptance |
-| Developer dispatcher | Published source, tests and a five-scenario offline demo; 250 default tests discovered, 227 passed and 23 skipped | Synthetic checks do not admit live editing or establish model quality |
-| Synthetic write-runner update | Local reviewed candidate: 238 passed, 23 skipped; nine controller probes and 11 focused tests passed | Separate unpublished update; synthetic receipts do not establish live containment |
-| Laya development selector | September 29 frozen-corpus/resource experiment | Exact evaluated default rejected: 45% ordinary acceptable proposals versus 90% required, plus memory failure |
-| Public demonstrations | Working architecture explorer, synthetic walkthroughs and the separate exploratory browser demo | These demonstrations do not substitute for the scoped local evidence or full product acceptance |
+- The shell has not run connected to the Core in a window, and the Tauri and browser versions have not been compared side by side. No shell has been chosen.
+- Two disk-fault tests of the store (a partial write and an uncertain flush, "RC07") have not run. Their test build is blocked.
+- Launch time, memory, responsiveness, accessibility, tray behavior and packaging have not been measured.
+- The native build has not been repeated from the published source layout.
 
-**Phase 2 implementation and verification are in progress**; the product is not released. The scoped Phase 1 disposition does not imply unrestricted host readiness. The R3 specification-input freeze is recorded. Outstanding integration, review and acceptance requirements still precede product candidate comparison. [Roadmap and gates](docs/roadmap.md) · [Results, measurements and exclusions](docs/results-and-evidence.md).
+### What is next
+
+A November 14 amendment narrowed Phase 2 to the shell decision and moved the two RC07 tests, the timing measurements and the packaging work to later milestones, where they stay recorded as not done. Phase 2 now ends when five things are complete:
+
+1. A witnessed Tauri run with the Core connected: start, output, cancel and stop.
+2. The same flows in a real browser for the PWA.
+3. The message and denial checks passing on both.
+4. A manual keyboard, focus and zoom check on both.
+5. A review of those results, then the shell decision.
+
+When that happens Phase 2 will be closed with recorded deferrals, not passed as originally written. [Roadmap](docs/roadmap.md) · [Results and exclusions](docs/results-and-evidence.md) · [Changelog](CHANGELOG.md)
 
 ## Run the published component
 
@@ -83,7 +96,7 @@ October 4 verification for this published source package: **227 tests passed, 23
 3. Browse the [206-repository catalog](research/repository-catalog.md) for verified links, purposes, architecture fit and current evaluation states. The [full register](research/candidate-research.md) accounts for 309 entries, including routes, controls and prerequisites.
 4. Inspect the [evaluation method](docs/evaluation-method.md) and [results](docs/results-and-evidence.md) to separate measured evidence from acceptance plans.
 
-The repository now contains runnable development tooling alongside architecture documents and illustrative JSON. It does not yet contain an installable personal-assistant product. The architecture explorer remains a separately hosted simulation.
+The repository now contains product source with source-level tests and runnable development tooling, alongside architecture documents and illustrative JSON. It does not yet contain an installable personal-assistant product. The architecture explorer remains a separately hosted simulation.
 
 ## Design decisions
 
@@ -115,7 +128,7 @@ One measured trade-off is the Laya development selector: its speed did not compe
 
 ## Next work and gates
 
-Current-build direct-tool mediation and exact live qualification remain unresolved for the developer dispatcher. Further local checks must preserve that boundary; passing synthetic tests cannot enable live editing. The product plan still requires the remaining correctness/oracle evidence, native fault-injection and build qualification, current resource admission, and applicable containment and review gates before the planned shell and runtime comparisons. No Tauri/PWA winner or production runtime/model pairing has been selected. [Roadmap and gates](docs/roadmap.md) · [Desktop-shell comparison](docs/desktop-shell-decision.md)
+Product next steps are listed under [Current status](#current-status-november-14-2026). For the developer dispatcher, live editing remains off: passing synthetic tests does not enable it, and qualification against the current build is unresolved. No production runtime or model pairing has been selected. [Roadmap and gates](docs/roadmap.md) · [Desktop-shell comparison](docs/desktop-shell-decision.md)
 
 ## Engineering documents
 
