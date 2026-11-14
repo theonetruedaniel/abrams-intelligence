@@ -10,9 +10,9 @@ If the private report form is unavailable, open a public issue asking only for a
 
 ## Scope and current status
 
-This repository contains architecture and research documents, illustrative examples, and experimental development tooling under `tools/development-dispatcher/`. It does not publish the complete personal-assistant platform. Include the exact revision in a report; there are currently no versioned supported release lines.
+This repository contains architecture and research documents, illustrative examples, and experimental development tooling under `tools/dispatcher/`. It does not publish the complete personal-assistant platform. Include the exact revision in a report; there are currently no versioned supported release lines.
 
-The documented demo uses synthetic inputs and does not dispatch model work. The published tooling is not admitted for live read-only or editing dispatch. Passing an offline test does not establish safe live use, containment or product acceptance. See the [component verification record](tools/development-dispatcher/VERIFICATION.md) and [current progress](docs/progress.md).
+The documented demo uses synthetic inputs and does not dispatch model work. The published tooling is not admitted for live read-only or editing dispatch. Passing an offline test does not establish safe live use, containment or product acceptance. See the [component verification record](tools/dispatcher/VERIFICATION.md) and [current progress](docs/progress.md).
 
 ## Security boundaries to preserve
 

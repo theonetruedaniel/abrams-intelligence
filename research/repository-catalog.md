@@ -8,11 +8,11 @@ Model/route observations on November 9: Qwen3.8 has a newer upstream revision; L
 
 Updated November 14, 2026. This is a deduplicated map of **206 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **309 entries** (150 frozen catalog records plus 159 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
-[Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](progress.md)
+[Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](../docs/progress.md)
 
 ## Browse by role
 
-Start with the capability you need. These projects span different roles; they are not all competitors in one benchmark. The [evaluation method](evaluation-method.md) defines comparisons within each relevant role and separates using upstream, reusing eligible components, implementing independently and deferring a capability. See [recorded results](results-and-evidence.md) for measured findings; catalog membership alone does not establish a completed comparison.
+Start with the capability you need. These projects span different roles; they are not all competitors in one benchmark. The [evaluation method](../docs/evaluation-method.md) defines comparisons within each relevant role and separates using upstream, reusing eligible components, implementing independently and deferring a capability. See [recorded results](../docs/results-and-evidence.md) for measured findings; catalog membership alone does not establish a completed comparison.
 
 - [Agent runtimes](#agent-runtimes) · [Decision components](#decision-components)
 - [Devices and access](#devices-and-access) · [Interface and media](#interface-and-media)
@@ -3938,7 +3938,7 @@ This is a method study, not another repository or an adopted runtime change. See
 
 ## Evidence limits
 
-Runtime conformance, model quality, runtime/model pairing and content value remain four different evaluation lanes. Source inspection and static fixture validation do not establish executable containment, reliability or useful-task success. The only measured selector in this repository view is the separately scoped Laya development experiment; its default adoption was rejected. See [results](results-and-evidence.md) for denominators, corrected timing, memory scope and the cancelled retry.
+Runtime conformance, model quality, runtime/model pairing and content value remain four different evaluation lanes. Source inspection and static fixture validation do not establish executable containment, reliability or useful-task success. The only measured selector in this repository view is the separately scoped Laya development experiment; its default adoption was rejected. See [results](../docs/results-and-evidence.md) for denominators, corrected timing, memory scope and the cancelled retry.
 
 This catalog is a public summary, not a publication of private operating records. It adds no installation, model call, credential scope, phase transition or adoption decision.
 

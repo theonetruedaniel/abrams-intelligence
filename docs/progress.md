@@ -8,7 +8,7 @@ snapshot, not a live operational status feed.
 
 Abrams Intelligence is a general-purpose, local-first personal intelligence platform in active, AI-assisted development. Local development includes partial shared in-process Core, client and SQLite-backed storage implementation with scoped tests. This work is not yet published as a complete product in this repository. Full integration, product acceptance and Phase 2 completion remain unfinished.
 
-The earlier November 9 recovery checkpoint recorded separate scoped passes for O31, O39, RC06, RC04, RC05 and O32. Since that checkpoint, six of its eight open rows have independently accepted, scoped results: O19, O20, O34, O35, O38 and O40. Only the two RC07 native partial-write/uncertain-flush cases remain from that oracle set. See the [latest correctness checkpoint](evidence/phase2/2026-11-10-correctness-checkpoint.md) for what each result proves. Separate shell, packaging, accessibility, capability-denial and runtime/Core-placement obligations also remain.
+The earlier November 9 recovery checkpoint recorded separate scoped passes for O31, O39, RC06, RC04, RC05 and O32. Since that checkpoint, six of its eight open rows have independently accepted, scoped results: O19, O20, O34, O35, O38 and O40. Only the two RC07 native partial-write/uncertain-flush cases remain from that oracle set. See the [latest correctness checkpoint](evidence/phase-2/2026-11-10-correctness-checkpoint.md) for what each result proves. Separate shell, packaging, accessibility, capability-denial and runtime/Core-placement obligations also remain.
 
 The November 10 pre-restart checkpoint records source-only preparation for RC07, described below. It is not a successful native build or fault execution. The public dispatcher test snapshots remain separate historical evidence, not totals for this newer local work.
 
@@ -18,13 +18,13 @@ Three November 12 Tauri successors successfully compiled and linked, ending with
 
 The older fresh-profile executable then completed one manually witnessed, default-disconnected desktop smoke on November 13, with root exit zero and natural owned-job retirement. This does not establish Core-connected GUI behavior, automated window attribution, actual profile/runtime readback, network/identity isolation, accessibility or Phase 2 acceptance.
 
-The newer pre-content successor's build runner was invoked once and interrupted by a network-policy denial. No final receipt, compiler logs or executable were found; compiler start and formal cleanup remain unproven. It remains stopped. See the [reconciled chronology, verification and limits](evidence/phase2/2026-11-13-native-build-pipe-and-smoke-reconciliation.md).
+The newer pre-content successor's build runner was invoked once and interrupted by a network-policy denial. No final receipt, compiler logs or executable were found; compiler start and formal cleanup remain unproven. It remains stopped. See the [reconciled chronology, verification and limits](evidence/phase-2/2026-11-13-native-build-pipe-and-smoke-reconciliation.md).
 
 ## November 13: headless startup-admission tests
 
 Independent review accepted 28/28 standard-library Rust fixture tests, with no failures, ignored tests or filtered tests. The total combines 20 new injected admission/retained-thread cases, five inherited real test-directory cases and three inherited injected policy cases. Compiler and test processes both exited successfully and their process groups retired naturally without cleanup uncertainty.
 
-The checks cover startup-gate ordering, absent or partial admission, pending commands, duplicate/late reports, controlled failures and close races. They do not compile the Tauri application or COM observer, create a WebView, read a live profile/runtime version, demonstrate UI responsiveness or run RC07 faults. At the 03:15 UTC unit checkpoint, this successor's full Tauri build was still being prepared. Its later invocation was interrupted as described above; the three November 12 linked executables are separate accepted artifacts. [Detailed scope](evidence/phase2/2026-11-13-precontent-admission-unit.md).
+The checks cover startup-gate ordering, absent or partial admission, pending commands, duplicate/late reports, controlled failures and close races. They do not compile the Tauri application or COM observer, create a WebView, read a live profile/runtime version, demonstrate UI responsiveness or run RC07 faults. At the 03:15 UTC unit checkpoint, this successor's full Tauri build was still being prepared. Its later invocation was interrupted as described above; the three November 12 linked executables are separate accepted artifacts. [Detailed scope](evidence/phase-2/2026-11-13-precontent-admission-unit.md).
 
 The two RC07 cases and the other Phase 2 obligations remain open. Historical pre-restart build uncertainty below stays historical; this independent test run does not resolve it.
 
@@ -32,7 +32,7 @@ The two RC07 cases and the other Phase 2 obligations remain open. Historical pre
 
 | Plan stage | Completed evidence | Remaining work |
 | --- | --- | --- |
-| A: architecture and evaluation foundation | Preserved 19-document baseline; approved amendment; requirement and capability maps; 150-record frozen discovery catalog and source-coverage obligations. Later intake brings the current [full register](candidate-research.md) to 308 entries, including controls and prerequisites, and the [GitHub catalog](repository-catalog.md) to 205 repositories. | New research does not qualify or adopt a candidate. |
+| A: architecture and evaluation foundation | Preserved 19-document baseline; approved amendment; requirement and capability maps; 150-record frozen discovery catalog and source-coverage obligations. Later intake brings the current [full register](../research/candidate-research.md) to 308 entries, including controls and prerequisites, and the [GitHub catalog](../research/repository-catalog.md) to 205 repositories. | New research does not qualify or adopt a candidate. |
 | B: scoped host readiness | Later readiness evidence admits attended, signed-in, AC-powered synthetic development within its fixed resource boundary. Native C/Rust smoke and locked source acquisition are recorded. | Historical readiness is not current headroom or unrestricted workload admission. |
 | C: contracts, shared reference and comparisons | October 1 R3 specification freeze; later scoped Core/client checks, actual headless Rust–Node pipe tests, three linked Tauri successors and one limited disconnected desktop smoke. | Core-connected GUI, actual runtime/profile readback, isolation and equivalent Tauri/PWA comparisons remain unqualified. The newer pre-content build is interrupted, not accepted. |
 | D: authority and durable data foundation | Partial local SQLite-backed Store implementation and six separately reviewed recovery-row results under controlled process crashes. | Complete authority/data integration, the remaining fault cases and broader acceptance remain unfinished; these scoped results do not close D. |
@@ -51,7 +51,7 @@ advance the product's C-to-D gates.
 | Snapshot | Evidence | Publication and limits |
 | --- | --- | --- |
 | October 1 selected demonstration | 88 selected tests passed and four CLI-preview assertions passed. | Historical selected coverage, not the full suite. |
-| October 4 published source | 250 default tests discovered: 227 passed, 23 skipped. Five demo scenarios and three focused demo tests passed. | [PR #1](https://github.com/theonetruedaniel/abrams-intelligence/pull/1) published the component; see [verification](../tools/development-dispatcher/VERIFICATION.md) and [demo](../tools/development-dispatcher/DEMO.md). No live dispatch was admitted. |
+| October 4 published source | 250 default tests discovered: 227 passed, 23 skipped. Five demo scenarios and three focused demo tests passed. | [PR #1](https://github.com/theonetruedaniel/abrams-intelligence/pull/1) published the component; see [verification](../tools/dispatcher/VERIFICATION.md) and [demo](../tools/dispatcher/DEMO.md). No live dispatch was admitted. |
 | October 4 synthetic write-runner candidate | 261 default tests discovered: 238 passed, 23 skipped. All 11 focused runner tests, nine controller probes and five demo scenarios passed in the review export. | A separate nine-file local candidate, not yet included in the published component. This documentation does not publish or activate it. |
 
 The write-runner candidate tests exact file outcomes, independent integration and
@@ -86,7 +86,7 @@ host-memory guard. Termination was observed; no new quality score or memory
 qualification resulted. The historical score remains separate from that retry.
 
 No completed product Tauri/PWA, runtime, Core-placement or memory bake-off is
-claimed. The [205-repository catalog](repository-catalog.md) separates measured
+claimed. The [205-repository catalog](../research/repository-catalog.md) separates measured
 work from source screening, planned comparisons and collected references.
 
 ## Next unfinished step
@@ -100,7 +100,7 @@ This page summarizes local development status without publishing private operati
 
 ## Earlier November 9 scoped recovery checkpoint
 
-At this earlier checkpoint, six previously open correctness rows had separate real Store process-crash results: O31, O39, RC06, RC04, RC05 and O32. Each has independent saved-evidence review. The latest O32 result includes eight actual noncommitting WAL frames after a committed prefix and recovery of that prefix without invented cancel success. See [the scoped results and limits](evidence/phase2/2026-11-09-recovery-checkpoint.md).
+At this earlier checkpoint, six previously open correctness rows had separate real Store process-crash results: O31, O39, RC06, RC04, RC05 and O32. Each has independent saved-evidence review. The latest O32 result includes eight actual noncommitting WAL frames after a committed prefix and recovery of that prefix without invented cancel success. See [the scoped results and limits](evidence/phase-2/2026-11-09-recovery-checkpoint.md).
 
 These continuous-owner/OS results do not prove power-loss or owner-restart durability, partial-write or uncertain-flush behavior, or browser safety. At that checkpoint, eight oracle rows remained open: O19/O20/O34/O35/O38/O40 and the two RC07 fault cases. The subsequent six scoped passes are recorded in the November 10 checkpoint; this historical paragraph is not the current open-row count. Separate shell, packaging, accessibility, capability-denial and runtime/Core-placement obligations remain; historical 51/65 is not replaced with a new aggregate score. Extensive performance qualification remains visibly deferred.
 

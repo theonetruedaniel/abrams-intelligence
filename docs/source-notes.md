@@ -14,7 +14,7 @@ The example JSON in this repository is illustrative, synthetic and non-executabl
 
 ## Research provenance
 
-The [candidate research](candidate-research.md) summarizes three working-project assessments dated September 9, 2026: LangChain/AutoGPT/Mem0, OpenClaw, and Open-SPDD. It links the reviewed upstream revisions so readers can inspect the source context. September 14 is the public-summary date, not a new benchmark or a claim that those revisions are current releases.
+The [candidate research](../research/candidate-research.md) summarizes three working-project assessments dated September 9, 2026: LangChain/AutoGPT/Mem0, OpenClaw, and Open-SPDD. It links the reviewed upstream revisions so readers can inspect the source context. September 14 is the public-summary date, not a new benchmark or a claim that those revisions are current releases.
 
 The [evaluation method](evaluation-method.md) condenses proposed experiments. The result-record example has no measurements. Detailed intake records, host evidence and internal approval records remain outside this public showcase. At the September 14 checkpoint, foundation readiness was pending evidence and Core implementation had not started. The current scoped disposition is summarized below.
 
@@ -51,7 +51,7 @@ The current summary distinguishes partial local AI-assisted Core/client/SQLite i
 
 ## November 10 status reconciliation
 
-The current status pages were reconciled with the public November 9 recovery checkpoint, the published catalog audit and additions through November 10, and the working project's November 10 pre-restart source-only RC07 checkpoint. The earlier six recovery results are followed by independent scoped passes for O19/O20/O34/O35/O38/O40. Only the two RC07 fault cases remain from the earlier eight-open oracle set, with other Phase 2 obligations still open. The [current correctness summary](evidence/phase2/2026-11-10-correctness-checkpoint.md) preserves each result's scope. The November 10 packet checks and staged corrections do not establish a confirmed native build, executed fault case or RC07 pass.
+The current status pages were reconciled with the public November 9 recovery checkpoint, the published catalog audit and additions through November 10, and the working project's November 10 pre-restart source-only RC07 checkpoint. The earlier six recovery results are followed by independent scoped passes for O19/O20/O34/O35/O38/O40. Only the two RC07 fault cases remain from the earlier eight-open oracle set, with other Phase 2 obligations still open. The [current correctness summary](evidence/phase-2/2026-11-10-correctness-checkpoint.md) preserves each result's scope. The November 10 packet checks and staged corrections do not establish a confirmed native build, executed fault case or RC07 pass.
 
 The November 9 audit covered 299 registered IDs and 196 GitHub remote HEADs at that time. Later additions bring the current register to 301 entries and the GitHub catalog to 198 repositories. Source assessment, component testing, product acceptance and adoption remain distinct.
 
@@ -61,12 +61,12 @@ This refresh publishes concise status summaries only. It does not publish local 
 
 The startup-admission summary was checked against the independent saved-evidence review, its compiler/test receipt and the complete 28-case stdout log. Their recorded hashes matched on reread. The 20 injected admission/thread cases, five actual task-directory cases and three injected policy cases retain separate descriptions. No real registry readback, Tauri application/COM compilation, WebView creation, GUI launch or RC07 execution is inferred.
 
-The current catalog contains 205 GitHub repositories within 308 registered entries as of its November 12 update. Earlier counts in dated history remain historical. This documentation refresh publishes only a concise [test-scope summary](evidence/phase2/2026-11-13-precontent-admission-unit.md); private local source and operational records remain outside the public repository.
+The current catalog contains 205 GitHub repositories within 308 registered entries as of its November 12 update. Earlier counts in dated history remain historical. This documentation refresh publishes only a concise [test-scope summary](evidence/phase-2/2026-11-13-precontent-admission-unit.md); private local source and operational records remain outside the public repository.
 
 ## November 13 native-build and smoke correction
 
 The earlier public refresh omitted three accepted November 12 linked executables and two real Rust–Node pipe runs, and retained an outdated prepared-build description after the newer runner had been invoked. The correction reconciles the complete dated ledger with six primary receipts and six independent outcome reviews, freshly matching all their recorded hashes. Test logs, three linked executable identities, two test-executable identities, the smoke's 18 staged products and originals, additive witness records and the interruption checkpoint were checked separately. The later two-location 21-test suite and focused one-test/20-filtered worker result were additionally checked against their receipt/review hashes and saved output. No workload was rerun.
 
-The earlier six-row correctness index and each referenced review hash also matched. Receipt verification is not a new test count or a whole-candidate score. The [public chronology](evidence/phase2/2026-11-13-native-build-pipe-and-smoke-reconciliation.md) distinguishes completed linking and scoped tests, later manual observation, the interrupted successor, and unchanged RC07/Phase 2 limits. Raw records and private paths remain unpublished.
+The earlier six-row correctness index and each referenced review hash also matched. Receipt verification is not a new test count or a whole-candidate score. The [public chronology](evidence/phase-2/2026-11-13-native-build-pipe-and-smoke-reconciliation.md) distinguishes completed linking and scoped tests, later manual observation, the interrupted successor, and unchanged RC07/Phase 2 limits. Raw records and private paths remain unpublished.
 
 The local synchronization workflow now requires a dated-evidence sweep since the last verified public checkpoint, a claim-to-receipt/review cross-check, scope and stale-status reconciliation across public pages, and remote-file/CI verification before reporting completion. This is a project-work checklist, not a background monitor or runtime authorization.

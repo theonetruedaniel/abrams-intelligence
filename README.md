@@ -1,16 +1,28 @@
 # Abrams Intelligence
 
-November 9 source-review follow-through: 166 of 166 changed or previously unpinned GitHub sources assessed at exact revisions. Review outcomes: 2 provenance-blocked, 164 source-reviewed. Assessments include source-specific findings and primary-source citations. Existing tests, provenance blocks and adoption decisions remain separate; no candidate was installed or executed.
-
-November 9, 2026 currentness audit: all 299 registered IDs reconciled and all 196 GitHub remote HEADs resolved. 30 match a recorded revision; 115 differ from recorded revisions; 51 have no reviewed revision recorded. Observed HEADs and review requirements are recorded separately in the machine-readable catalog. Five model repositories and Mercury 3 documentation were also checked. The initial inventory identified 166 source-review requirements; see the follow-through assessment above. Historical tests and adoption status remain preserved.
-
 I’m building a personal AI for my own everyday use, and learning how to build it along the way. The goal is a capable, local-first assistant for research, coding, creative projects, document work and everyday coordination that I can keep improving as the technology changes.
 
 Models and components should be replaceable. I want to compare alternatives on tasks I actually need done, understand their trade-offs, and use different models where each works best. Projects, memory, source records and user controls should remain stable when a model, runtime or tool changes. Credentials, permissions, budgets and durable task state belong to the system’s own control layer.
 
 Local execution is intended to make routine use independent of hosted-service message caps, within the limits of my hardware. Hosted models can remain optional, with explicit budgets. The aim is to build the best system I can for my needs through repeated testing and improvement; the full platform is still in development.
 
-[Run the offline dispatcher](tools/development-dispatcher/README.md) · [Architecture explorer](https://theonetruedaniel.github.io/architecture/) · [Presentation](https://gamma.app/docs/for2zexybupmugn) · [Portfolio](https://theonetruedaniel.github.io/)
+[Run the offline dispatcher](tools/dispatcher/README.md) · [Architecture explorer](https://theonetruedaniel.github.io/architecture/) · [Presentation](https://gamma.app/docs/for2zexybupmugn) · [Portfolio](https://theonetruedaniel.github.io/)
+
+## What runs today
+
+- **Offline developer dispatcher.** A five-scenario demo and its tests run with Python 3.13 and nothing else installed. See [Run the published component](#run-the-published-component).
+- **Research catalog checks.** The catalog and documentation links validate offline. See [Check catalog and documentation changes](#check-catalog-and-documentation-changes).
+- **Not yet here:** an installable assistant. The product's Core, shell and UI source is developed locally and has not been published in this repository. [Current progress](#current-progress-november-13-2026-utc) says what exists and what is still open.
+
+## Repository layout
+
+| Path | Contents |
+| --- | --- |
+| [`docs/`](docs/) | Architecture, design decisions, roadmap, progress and dated evidence |
+| [`research/`](research/) | The repository catalog (Markdown and JSON) and the full candidate register |
+| [`tools/dispatcher/`](tools/dispatcher/) | The offline developer dispatcher: source, tests and demo |
+| [`examples/`](examples/) | Illustrative JSON records used by the walkthroughs |
+| [`scripts/`](scripts/), [`tests/`](tests/) | The catalog and link validator and its tests |
 
 ## Exploratory browser demo — October 27, 2026
 
@@ -18,7 +30,7 @@ An exploratory browser demo provides a local interface for saved conversations a
 
 ## Explore the research
 
-The [research catalog](docs/repository-catalog.md) maps **206 upstream GitHub repositories** to roles in a local-first assistant. Each entry records its purpose, sources, architecture fit, evaluation status and next gate. Use the [interactive catalog](https://theonetruedaniel.github.io/architecture/#repository-catalog) to explore the collection, or read the [comparison method](docs/evaluation-method.md).
+The [research catalog](research/repository-catalog.md) maps **206 upstream GitHub repositories** to roles in a local-first assistant. Each entry records its purpose, sources, architecture fit, evaluation status and next gate. Use the [interactive catalog](https://theonetruedaniel.github.io/architecture/#repository-catalog) to explore the collection, or read the [comparison method](docs/evaluation-method.md).
 
 Comparisons are organized by role: agent runtimes against runtimes, retrieval approaches against retrieval approaches, and desktop shells against shells. Most candidates have source research or planned evaluations; they have not been benchmarked or adopted. The [results and evidence](docs/results-and-evidence.md) page separates measured findings from unrun comparisons. The catalog and offline dispatcher are available now while the full platform remains in development.
 
@@ -26,11 +38,11 @@ Comparisons are organized by role: agent runtimes against runtimes, retrieval ap
 
 Abrams Intelligence is a general-purpose, local-first personal intelligence platform in active, AI-assisted development. Local development includes partial shared in-process Core, client and SQLite-backed storage implementation with scoped tests. This work is not yet published as a complete product in this repository. Full integration, product acceptance and Phase 2 completion remain unfinished.
 
-The November 9 SQLite recovery checkpoint is now followed by six further independently reviewed, scoped passes: O19, O20, O34, O35, O38 and O40. They cover real browser reload/reconstruction, normal same-Store Core replacement, literal hostile-text rendering, bounded terminal replay and SQLite capacity handling. Of the eight oracle rows open at the earlier checkpoint, only the two RC07 native partial-write/uncertain-flush cases remain. The November 10 RC07 checkpoint was native fault-injection preparation, not a fault pass. Both RC07 acceptance results remain outstanding; separate later Tauri builds and pipe tests are described below. See the [progress ledger](docs/progress.md), [latest correctness evidence and limits](docs/evidence/phase2/2026-11-10-correctness-checkpoint.md), and [dated update history](CHANGELOG.md).
+The November 9 SQLite recovery checkpoint is now followed by six further independently reviewed, scoped passes: O19, O20, O34, O35, O38 and O40. They cover real browser reload/reconstruction, normal same-Store Core replacement, literal hostile-text rendering, bounded terminal replay and SQLite capacity handling. Of the eight oracle rows open at the earlier checkpoint, only the two RC07 native partial-write/uncertain-flush cases remain. The November 10 RC07 checkpoint was native fault-injection preparation, not a fault pass. Both RC07 acceptance results remain outstanding; separate later Tauri builds and pipe tests are described below. See the [progress ledger](docs/progress.md), [latest correctness evidence and limits](docs/evidence/phase-2/2026-11-10-correctness-checkpoint.md), and [dated update history](CHANGELOG.md).
 
-November 12 work produced three verified linked Windows Tauri executables and two separately reviewed real Rust–Node pipe test runs. On November 13, the older fresh-profile executable completed one manually witnessed, default-disconnected desktop smoke. The newer pre-content successor build was invoked but interrupted by a policy denial; compiler start and formal cleanup are not established. These are separate results, not a Core-connected GUI or Phase 2 pass. [Build, pipe and smoke evidence](docs/evidence/phase2/2026-11-13-native-build-pipe-and-smoke-reconciliation.md).
+November 12 work produced three verified linked Windows Tauri executables and two separately reviewed real Rust–Node pipe test runs. On November 13, the older fresh-profile executable completed one manually witnessed, default-disconnected desktop smoke. The newer pre-content successor build was invoked but interrupted by a policy denial; compiler start and formal cleanup are not established. These are separate results, not a Core-connected GUI or Phase 2 pass. [Build, pipe and smoke evidence](docs/evidence/phase-2/2026-11-13-native-build-pipe-and-smoke-reconciliation.md).
 
-November 13 independent review accepted **28/28 headless Rust startup-admission tests**: 20 injected admission/thread cases, five real test-directory cases and three injected policy cases. Both compiler and test processes exited successfully with natural cleanup. This is component evidence, not a Tauri application build, GUI/WebView qualification or RC07 result. [Scope and exclusions](docs/evidence/phase2/2026-11-13-precontent-admission-unit.md).
+November 13 independent review accepted **28/28 headless Rust startup-admission tests**: 20 injected admission/thread cases, five real test-directory cases and three injected policy cases. Both compiler and test processes exited successfully with natural cleanup. This is component evidence, not a Tauri application build, GUI/WebView qualification or RC07 result. [Scope and exclusions](docs/evidence/phase-2/2026-11-13-precontent-admission-unit.md).
 
 ### Published tooling and historical evidence
 
@@ -53,7 +65,7 @@ The offline developer dispatcher is now published in this repository. [PR #1](ht
 With Python 3.13 or later, from the repository root:
 
 ```powershell
-cd tools/development-dispatcher
+cd tools/dispatcher
 python -m scripts.dispatch.demo
 python -m unittest discover -s tests/dispatch -p test_demo.py -v
 ```
@@ -62,13 +74,13 @@ The five-scenario demo checks routine routing, consequential review, return to a
 
 October 4 verification for this published source package: **227 tests passed, 23 skipped, zero failures/errors** in the full default dispatcher suite, with the five demo scenarios and three focused demo tests also passing. The 23 skips cover nine Linux-only transport tests, twelve opt-in containment tests and two unavailable symlink-privilege cases. This is dispatcher coverage, not full-platform acceptance or current-build live containment evidence. The October 1 result of 88 selected tests and four preview checks remains separate historical evidence.
 
-[Component walkthrough](docs/development-dispatcher.md) · [Recorded output](tools/development-dispatcher/demo-transcript.txt) · [Verification scope](tools/development-dispatcher/VERIFICATION.md) · [Evaluation matrix](tools/development-dispatcher/EVALUATION.md)
+[Component walkthrough](docs/development-dispatcher.md) · [Recorded output](tools/dispatcher/demo-transcript.txt) · [Verification scope](tools/dispatcher/VERIFICATION.md) · [Evaluation matrix](tools/dispatcher/EVALUATION.md)
 
 ## A quick reading path
 
 1. Open the [architecture explorer](https://theonetruedaniel.github.io/architecture/) to inspect the intended control flow. It uses mock components and fictional data.
 2. Follow the [research task walkthrough](docs/research-workflow-walkthrough.md) to see scope, sources, Stop and ambiguous-outcome handling as a design scenario.
-3. Browse the [206-repository catalog](docs/repository-catalog.md) for verified links, purposes, architecture fit and current evaluation states. The [full register](docs/candidate-research.md) accounts for 309 entries, including routes, controls and prerequisites.
+3. Browse the [206-repository catalog](research/repository-catalog.md) for verified links, purposes, architecture fit and current evaluation states. The [full register](research/candidate-research.md) accounts for 309 entries, including routes, controls and prerequisites.
 4. Inspect the [evaluation method](docs/evaluation-method.md) and [results](docs/results-and-evidence.md) to separate measured evidence from acceptance plans.
 
 The repository now contains runnable development tooling alongside architecture documents and illustrative JSON. It does not yet contain an installable personal-assistant product. The architecture explorer remains a separately hosted simulation.
@@ -112,7 +124,7 @@ Current-build direct-tool mediation and exact live qualification remain unresolv
 | [Architecture](docs/architecture.md) and [deep dive](docs/architecture-deep-dive.md) | Ownership boundaries and source-data lifecycle |
 | [Design decisions](docs/design-decisions.md) | Local data, selection and execution trade-offs |
 | [Desktop-shell study](docs/desktop-shell-decision.md) | Preregistered Tauri/PWA comparison; no winner yet |
-| [Candidate research](docs/candidate-research.md) | Full inventory, source credits, intended roles and exclusions |
+| [Candidate research](research/candidate-research.md) | Full inventory, source credits, intended roles and exclusions |
 | [Evaluation method](docs/evaluation-method.md) | Controls, frozen tasks, metrics and decision rules |
 | [Results and evidence](docs/results-and-evidence.md) | Actual selected tests, Laya results and unrun checks |
 | [Acceptance map](docs/acceptance-evidence-map.md) | Illustrative requirements and future proof obligations |
@@ -135,7 +147,7 @@ python -m unittest discover -s tests -p test_catalog.py -v
 python scripts/validate_catalog.py
 ```
 
-These checks validate catalog consistency and local file links in root, `docs/` and `.github/` Markdown. They do not check remote availability, heading fragments or research correctness, and they do not run candidate software. The same checks run in the catalog and documentation CI workflow.
+These checks validate catalog consistency and local file links in root, `docs/`, `research/` and `.github/` Markdown. They do not check remote availability, heading fragments or research correctness, and they do not run candidate software. The same checks run in the catalog and documentation CI workflow.
 
 ## License
 

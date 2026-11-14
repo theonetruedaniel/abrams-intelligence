@@ -109,8 +109,8 @@ class DocumentTests(unittest.TestCase):
     def test_cli_rejects_malformed_json(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
-            (root / "docs").mkdir()
-            (root / "docs/repository-catalog.json").write_text("{broken", encoding="utf-8")
+            (root / "research").mkdir()
+            (root / "research/repository-catalog.json").write_text("{broken", encoding="utf-8")
             result = subprocess.run([sys.executable, str(SCRIPT), "--root", str(root)], capture_output=True, text=True)
             self.assertEqual(result.returncode, 1)
             self.assertIn("Validation failed", result.stderr)

@@ -15,7 +15,7 @@ For a documentation pull request, explain the change and check relative links an
 With Python 3.13 or later, from the repository root:
 
 ```powershell
-cd tools/development-dispatcher
+cd tools/dispatcher
 python -m scripts.dispatch.demo
 python -m unittest discover -s tests/dispatch -p test_demo.py -v
 ```

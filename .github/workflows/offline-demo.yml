@@ -4,11 +4,11 @@ on:
   push:
     branches: [main]
     paths:
-      - 'tools/development-dispatcher/**'
+      - 'tools/dispatcher/**'
       - '.github/workflows/offline-demo.yml'
   pull_request:
     paths:
-      - 'tools/development-dispatcher/**'
+      - 'tools/dispatcher/**'
       - '.github/workflows/offline-demo.yml'
   workflow_dispatch:
 
@@ -26,7 +26,7 @@ jobs:
         os: [ubuntu-latest, windows-latest]
     defaults:
       run:
-        working-directory: tools/development-dispatcher
+        working-directory: tools/dispatcher
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
