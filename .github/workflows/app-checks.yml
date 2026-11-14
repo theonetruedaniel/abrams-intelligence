@@ -1,0 +1,56 @@
+name: App source checks
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'app/**'
+      - 'package.json'
+      - 'package-lock.json'
+      - '.github/workflows/app-checks.yml'
+  pull_request:
+    paths:
+      - 'app/**'
+      - 'package.json'
+      - 'package-lock.json'
+      - '.github/workflows/app-checks.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  app:
+    name: Type-checks and source tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Install pinned dependencies without lifecycle scripts
+        run: npm ci --ignore-scripts
+      - name: Generate the PWA document used by the page tests
+        run: npm run prepare:pwa-document
+      - name: Type-check each component
+        run: |
+          npm run typecheck:native
+          npm run typecheck:entry
+          npm run typecheck:core-shell-tests
+          npm run typecheck:core-store
+          npm run typecheck:pwa
+          npm run typecheck:pwa-serving
+      - name: Run source and in-memory test suites
+        run: |
+          npm run test:core-shell
+          npm run test:native-recovery
+          npm run test:native-adapter
+          npm run test:native-controller
+          npm run test:native-dom
+          npm run test:pwa
+          npm run test:pwa-serving
+          npm run test:server-lifecycle
+          npm run test:server-composition

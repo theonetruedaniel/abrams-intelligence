@@ -1,0 +1,1 @@
+{"include":["host/**/*.mts","node-core-minimal.d.ts"],"compilerOptions":{"types":[],"target":"ES2023","lib":["ES2023","DOM"],"module":"NodeNext","moduleResolution":"NodeNext","strict":true,"noEmit":true,"allowImportingTsExtensions":true}}

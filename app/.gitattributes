@@ -1,0 +1,2 @@
+# Preserve imported, acceptance-pinned source bytes exactly.
+* -text
