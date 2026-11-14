@@ -24,7 +24,7 @@ Codex or ChatGPT chats or change their model picker.
 Use Python 3.13 or later. From the repository root, enter the component directory:
 
 ```powershell
-cd tools/development-dispatcher
+cd tools/dispatcher
 python -m scripts.dispatch.demo
 python -m unittest discover -s tests/dispatch -p test_demo.py -v
 ```

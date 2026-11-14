@@ -49,3 +49,23 @@ publication of the development tree itself is not implied.
 
 A denied operation stops that operation. Do not retry it through another tool,
 branch, agent or service. Record the denial and continue only unaffected work.
+
+## Existing-public export migration
+
+For an inventory-preserving public layout update, this repository's
+`packaging/dispatcher/export.py` validates the existing public manifest and
+regenerates its output into a new temporary directory. It imports no development
+source and adds no entries. Copy back only the reviewed changed outputs.
+
+The November 14 migration found a pre-existing README pin mismatch on both
+main `86e1c7b` and layout commit `dfd8990`: recorded SHA-256
+`ec6d7ff58c29bc9fb9ed7d2f990640e93303290f9304535ae95a340d9acb695e`,
+actual `bb50a7f0e444fbcc4005b16410c7ad4aa04a6fb426ca701e72ba303a206d3f20`.
+The other 76 pinned files matched. The public exporter admits only that exact
+observed README for the migration, requires the exact old command once, changes
+only `cd tools/development-dispatcher` to `cd tools/dispatcher`, and regenerates
+the manifest. This explicitly reconciles the stale pin; it does not establish
+that the original pin matched or rerun historical qualification.
+
+Run `python -m unittest discover -s tests -p test_dispatcher_export.py` to check
+inventory preservation, output hashes, mismatch rejection and path validation.

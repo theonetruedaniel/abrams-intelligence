@@ -71,7 +71,7 @@
     "tests/dispatch/test_wsl_adapter.py": "839bbe404c018be6269bdd78e705efe783e82bf29089e691b44542f19f909d11",
     "tests/dispatch/test_wsl_live.py": "57b28f2f30f1c6e1824c5b6af0c73d7f6a1e68aa9738d775679468116b575ae4",
     "tests/dispatch/test_wsl_supervisor.py": "e734cbae7eb792a6860e11e17bcac4a918cae68e817c73d8f89f8bec504a74a2",
-    "README.md": "ec6d7ff58c29bc9fb9ed7d2f990640e93303290f9304535ae95a340d9acb695e",
+    "README.md": "ac54805636fd95f7b87661b39c52431ab804c8f809095738236dd42250c8cd17",
     ".gitignore": "451569816bd510447fef66aac4528c4a346ade806a415655422a47f0983746b9",
     "DEMO.md": "6b5dc4dce9948712ef9e16a719772a61e2ab6483d3f95563fdacc12a34547c7e",
     "EVALUATION.md": "250011889f48d6ec09004b09194d365dceb955f47defdbaf628877eb8d91b315",
