@@ -167,4 +167,3 @@ These checks validate catalog consistency and local file links in root, `docs/`,
 Abrams-authored source and documentation are available under the [MIT License](LICENSE). Upstream projects, dependencies, model weights and hosted services retain their own licenses and terms; see the [third-party scope note](THIRD_PARTY.md). Catalog references are not adoption or license-clearance decisions.
 
 **Daniel Abrams** · [LinkedIn](https://www.linkedin.com/in/danielmabrams/) · [GitHub](https://github.com/theonetruedaniel)
-
