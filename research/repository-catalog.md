@@ -6,7 +6,7 @@ November 9, 2026 currentness audit: all 299 registered IDs reconciled and all 19
 
 Model/route observations on November 9: Qwen3.8 has a newer upstream revision; Laya current metadata differs from the historical experiment scope, whose checkpoint and results are preserved. Mercury 3 remains documented, without an API availability test. The official Kimi model list marks hosted kimi-k2.5 deprecated; K3 stays a separate intake-required candidate. Moonshot documentation redirects to platform.kimi.ai. The XDA context-placement source could not be accessed; its supporting Anthropic sources resolve. No new token-saving measurement is claimed.
 
-Updated November 16, 2026. This is a deduplicated map of **209 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **312 entries** (150 frozen catalog records plus 162 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated November 21, 2026. This is a deduplicated map of **210 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **313 entries** (150 frozen catalog records plus 163 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](../docs/progress.md)
 
@@ -28,7 +28,7 @@ Start with the capability you need. These projects span different roles; they ar
 - **Selected advisory content:** one pinned design skill is selected; its repository is not adopted as a runtime.
 - **Adopted integration:** an exact accepted product integration. None is claimed in this catalog.
 
-Counts: 182 shortlisted/planned, 25 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
+Counts: 183 shortlisted/planned, 25 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
 
 Coverage is the union of GitHub identities explicitly linked in the September 4 frozen catalog, dated intake overlays through November 8, and the collected research references. Six September 22 Jev references remain research-only without registration records; Foreman is now registered under Q-56. Documentation-only technologies, model/API routes and local controls remain in the full register. Transitive dependency trees and every project in an upstream directory are not asserted to be evaluated candidates.
 
@@ -1176,6 +1176,29 @@ Sources: [source 1](https://github.com/open-jarvis/OpenJarvis/blob/6201505cd3425
 
 
 ## Devices and access
+
+<a id="phone-harness-phone-harness"></a>
+### Phone Harness
+
+[phone-harness/phone-harness](https://github.com/phone-harness/phone-harness) · **Shortlisted / planned**
+
+- **Purpose**. Agent-facing phone interaction CLI for local Android via ADB and local iPhone via macOS Mirroring, with separate hosted phone options.
+- **Architecture fit**. Q-159 / G/H/I/J. Compare with PhoneUse, Poki and direct device adapters on synthetic app navigation, reading a screen and drafting within an authorized app. For development, compare repeatable mobile UI checks on owned test devices. Evaluate upstream, licensed components, a narrow Abrams adapter and deferral. Device execution sits behind the Abrams Core action policy.
+- **Current status**. Source researched, planned and untested. MIT root license. Source metadata lists alpha version 0.3.3 and Python >=3.10. Local Android is the first Windows comparison. Local iPhone needs macOS Mirroring and screen/input permissions. Hosted devices and hosted MCP have separate service and privacy requirements.
+- **Next gate**. Pin host, artifact, device, OS and backend. Begin with owned synthetic devices and minimal app and action grants. Verify accurate screen reads, target selection, takeover, mixed-script text, revocation, cancellation and ambiguous-action receipts. Contain the CLI as general code execution. Require approved screen and text recipients, telemetry controls, local cleanup and evidence that Stop reaches each worker. Qualify hosted identity, retention, disposal, quotas and dated charges separately.
+- **Evidence**. Pinned README, license, package metadata and representative Android, iPhone, CLI, telemetry and remote transport source.
+- **Record IDs:** device.phone-harness
+- **Recorded revision:** f5096606b10eb757d03467944bccd82f8aba385f
+- **Review date:** 2026-11-21
+
+- Android source uses ADB subprocesses for screenshots, accessibility data and input. Windows is a documented host option. The Mirroring path instead uses a macOS window and local OCR, so it requires different host permissions and presents different failure modes.
+- The CLI script runner uses Python exec on the supplied script. Its helper set is a convenience interface. Abrams would need a separately enforced action boundary to restrict host access and phone effects.
+- Telemetry source describes normal CLI telemetry as opt-out and Hermes telemetry as opt-in. Inspect settings and trace actual recipients in any qualification. Screen captures and account data need independent handling rules for local and hosted paths.
+- The remote iPhone adapter sends operations to a hosted HTTPS service. Hosted Android, hosted iPhone and hosted MCP are separate variants. A request timeout leaves the outcome of an in-flight external effect uncertain.
+- The MIT source license is separate from device prerequisites, runtime dependency rights and hosted entitlement. Hosted pricing, retention, resource use and cancellation remain unmeasured. No devices, services or models were exercised.
+
+[Source 1](https://github.com/phone-harness/phone-harness/blob/f5096606b10eb757d03467944bccd82f8aba385f/README.md) · [Source 2](https://github.com/phone-harness/phone-harness/blob/f5096606b10eb757d03467944bccd82f8aba385f/LICENSE) · [Source 3](https://github.com/phone-harness/phone-harness/blob/f5096606b10eb757d03467944bccd82f8aba385f/pyproject.toml) · [Source 4](https://github.com/phone-harness/phone-harness/blob/f5096606b10eb757d03467944bccd82f8aba385f/src/phone_harness/android.py) · [Source 5](https://github.com/phone-harness/phone-harness/blob/f5096606b10eb757d03467944bccd82f8aba385f/src/phone_harness/mirror.py) · [Source 6](https://github.com/phone-harness/phone-harness/blob/f5096606b10eb757d03467944bccd82f8aba385f/src/phone_harness/run.py#L440-L469) · [Source 7](https://github.com/phone-harness/phone-harness/blob/f5096606b10eb757d03467944bccd82f8aba385f/src/phone_harness/helpers.py#L110-L150) · [Source 8](https://github.com/phone-harness/phone-harness/blob/f5096606b10eb757d03467944bccd82f8aba385f/src/phone_harness/telemetry.py#L1-L25) · [Source 9](https://github.com/phone-harness/phone-harness/blob/f5096606b10eb757d03467944bccd82f8aba385f/src/phone_harness/remote.py#L111-L148)
+
 
 <a id="josssphzhou-poki"></a>
 ### Poki
