@@ -6,7 +6,7 @@ November 9, 2026 currentness audit: all 299 registered IDs reconciled and all 19
 
 Model/route observations on November 9: Qwen3.8 has a newer upstream revision; Laya current metadata differs from the historical experiment scope, whose checkpoint and results are preserved. Mercury 3 remains documented, without an API availability test. The official Kimi model list marks hosted kimi-k2.5 deprecated; K3 stays a separate intake-required candidate. Moonshot documentation redirects to platform.kimi.ai. The XDA context-placement source could not be accessed; its supporting Anthropic sources resolve. No new token-saving measurement is claimed.
 
-Updated November 21, 2026. This is a deduplicated map of **210 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **313 entries** (150 frozen catalog records plus 163 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated November 25, 2026. This is a deduplicated map of **211 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **314 entries** (150 frozen catalog records plus 164 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](../docs/progress.md)
 
@@ -28,7 +28,7 @@ Start with the capability you need. These projects span different roles; they ar
 - **Selected advisory content:** one pinned design skill is selected; its repository is not adopted as a runtime.
 - **Adopted integration:** an exact accepted product integration. None is claimed in this catalog.
 
-Counts: 183 shortlisted/planned, 25 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
+Counts: 184 shortlisted/planned, 25 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
 
 Coverage is the union of GitHub identities explicitly linked in the September 4 frozen catalog, dated intake overlays through November 8, and the collected research references. Six September 22 Jev references remain research-only without registration records; Foreman is now registered under Q-56. Documentation-only technologies, model/API routes and local controls remain in the full register. Transitive dependency trees and every project in an upstream directory are not asserted to be evaluated candidates.
 
@@ -2911,6 +2911,28 @@ Sources: [source 1](https://github.com/NVIDIA/SkillSpector/blob/3c2c5d7a1ee148d2
 
 
 ## Skills and development
+
+<a id="pierridotite-mobile-agent-testers"></a>
+### Mobile Agent Testers
+
+[pierridotite/mobile-agent-testers](https://github.com/pierridotite/mobile-agent-testers) · **Shortlisted / planned**
+
+- **Purpose**. Persona-driven exploratory QA on Android emulators, iOS simulators and mobile browser profiles, with reports, screenshots and experimental Android replay.
+- **Architecture fit**. Q-160 / H/I/J. Evaluate as a developer QA harness for Abrams mobile web and future companion flows. Compare seeded defect detection across locale, text scale and viewport, then turn independently confirmed bugs into deterministic checks. Compare upstream, reusable MIT components, an original persona matrix, and ordinary Playwright or Maestro controls.
+- **Current status**. Source reviewed, planned and untested. MIT repository. GitHub Actions uses Linux for Android and browser jobs and macOS for iOS simulation. The Windows setup entry does not establish local iOS simulator support. Reports of upstream runs are external observations.
+- **Next gate**. Use a synthetic Abrams-owned app or site and a small held-out defect set. Compare detection recall, false positives, repeatability, actionable evidence and trace replay against scripted controls. Pin builds, actions, dependencies and model route. Verify credential scope, permitted destinations, artifact visibility, encryption, deletion and matrix-wide cancellation. Measure provider charges, runner minutes, cold starts, concurrency and maintenance before scaling.
+- **Evidence**. Pinned README, MIT license, workflow, Android runner, encryption source and replay/configuration documentation.
+- **Record IDs:** dev.mobile-agent-testers
+- **Recorded revision:** 39578548345535e45c81b6b47e94aa2af7cfb0a4
+- **Review date:** 2026-11-25
+
+- The workflow builds apps and runs independent persona jobs with distinct platform runners and explicit job deadlines. The first Abrams experiment should use mobile web or Android and a small matrix. iOS simulation needs a macOS runner and supplies different evidence from physical-device testing.
+- Android replay is experimental, with separate replay-only inputs and an option to close tool network access for a replay. Validate whether selectors and assertions survive version changes. A replay constraint does not establish containment during agent exploration.
+- The workflow can use private checkout credentials and model credentials. Result archives and app-build archives use distinct encryption paths. Replay-only outcomes have a separate upload step. Inspect logs, model requests and each artifact class for access, retention and secret exposure before sharing builds or test data.
+- Upstream reports model cost and defect counts for its own demos. Public runner availability does not establish private-runner quotas, model entitlement or the cost of an Abrams run. Pin the real route and record total cost. Source and docs were inspected without running setup, launching a workflow or calling a model.
+
+[Source 1](https://github.com/pierridotite/mobile-agent-testers/blob/39578548345535e45c81b6b47e94aa2af7cfb0a4/README.md) · [Source 2](https://github.com/pierridotite/mobile-agent-testers/blob/39578548345535e45c81b6b47e94aa2af7cfb0a4/LICENSE) · [Source 3](https://github.com/pierridotite/mobile-agent-testers/blob/39578548345535e45c81b6b47e94aa2af7cfb0a4/PRIVACY.md) · [Source 4](https://github.com/pierridotite/mobile-agent-testers/blob/39578548345535e45c81b6b47e94aa2af7cfb0a4/.github/workflows/agent-testers.yml) · [Source 5](https://github.com/pierridotite/mobile-agent-testers/blob/39578548345535e45c81b6b47e94aa2af7cfb0a4/scripts/android/run_agent.sh) · [Source 6](https://github.com/pierridotite/mobile-agent-testers/blob/39578548345535e45c81b6b47e94aa2af7cfb0a4/scripts/encrypt_results.sh) · [Source 7](https://github.com/pierridotite/mobile-agent-testers/blob/39578548345535e45c81b6b47e94aa2af7cfb0a4/docs/replay.md) · [Source 8](https://github.com/pierridotite/mobile-agent-testers/blob/39578548345535e45c81b6b47e94aa2af7cfb0a4/docs/configuration.md)
+
 
 <a id="vercel-labs-skills"></a>
 ### Find Skills / Skills CLI
