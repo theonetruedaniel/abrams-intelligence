@@ -6,7 +6,7 @@ November 9, 2026 currentness audit: all 299 registered IDs reconciled and all 19
 
 Model/route observations on November 9: Qwen3.8 has a newer upstream revision; Laya current metadata differs from the historical experiment scope, whose checkpoint and results are preserved. Mercury 3 remains documented, without an API availability test. The official Kimi model list marks hosted kimi-k2.5 deprecated; K3 stays a separate intake-required candidate. Moonshot documentation redirects to platform.kimi.ai. The XDA context-placement source could not be accessed; its supporting Anthropic sources resolve. No new token-saving measurement is claimed.
 
-Updated November 25, 2026. This is a deduplicated map of **211 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **314 entries** (150 frozen catalog records plus 164 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
+Updated November 28, 2026. This is a deduplicated map of **212 GitHub repositories** actually recorded in Abrams discovery and research, plus five related model repositories and one hosted model route. The underlying register contains **315 entries** (150 frozen catalog records plus 165 later proposals). Routes, configurations, controls and platform prerequisites are not all separate repositories.
 
 [Interactive explorer](https://theonetruedaniel.github.io/architecture/#repository-catalog) · [Machine-readable catalog](repository-catalog.json) · [Full register](candidate-research.md) · [Progress in plan order](../docs/progress.md)
 
@@ -28,7 +28,7 @@ Start with the capability you need. These projects span different roles; they ar
 - **Selected advisory content:** one pinned design skill is selected; its repository is not adopted as a runtime.
 - **Adopted integration:** an exact accepted product integration. None is claimed in this catalog.
 
-Counts: 184 shortlisted/planned, 25 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
+Counts: 185 shortlisted/planned, 25 collected references, 1 tested development selector, 1 selected advisory-content source; **zero adopted product integrations**.
 
 Coverage is the union of GitHub identities explicitly linked in the September 4 frozen catalog, dated intake overlays through November 8, and the collected research references. Six September 22 Jev references remain research-only without registration records; Foreman is now registered under Q-56. Documentation-only technologies, model/API routes and local controls remain in the full register. Transitive dependency trees and every project in an upstream directory are not asserted to be evaluated candidates.
 
@@ -2188,6 +2188,29 @@ Sources: [source 1](https://github.com/PurpleDoubleD/locally-uncensored/blob/3df
 
 
 ## Models and inference
+
+<a id="opensetlabs-openset-llm"></a>
+### OpenSet LLM
+
+[opensetlabs/openset-llm](https://github.com/opensetlabs/openset-llm) · **Shortlisted / planned**
+
+- **Purpose**. CPU kernels and runtime patches for PrismML’s llama.cpp fork, serving ternary Bonsai-2-27B through an OpenAI-compatible local endpoint.
+- **Architecture fit**. Q-161 / E/H/I/J, BO-04 and BO-05. Compare the actual WSL2 CPU route with Ollama and direct llama.cpp for private chat, summarization and structured extraction. Match weights where supported to isolate engine changes and compare lighter models separately as complete routes. Developer fit is a reproducible local endpoint for testing.
+- **Current status**. Source reviewed, planned and untested. MIT patch set. Linux x86-64 or WSL2 is documented. Host throughput, memory headroom and model quality remain unverified.
+- **Next gate**. Pin engine, weights, draft sidecar, CPU feature path and WSL2 memory ceiling. Compare plain and speculative decoding at equal context lengths, including first-token time, throughput, memory, paging, disk, power and answer quality. Check loopback exposure, request cancellation, disk resume and cleanup with synthetic data.
+- **Evidence**. Pinned benchmarks and representative license, installer, serving and deployment sources.
+- **Record IDs:** inference.openset-llm
+- **Recorded revision:** ba9197ccdcb43fcf8119346820e5e172320e8764
+- **Review date:** 2026-11-28
+
+- Upstream reports 17–20 tokens/s on an eight-vCPU Ice Lake server. Its AVX2-only plain server results of 5.8–7.2 tokens/s came from Ice Lake with AVX-512 disabled. Actual laptop throughput is unmeasured.
+- The 5.95 GB ternary Bonsai weights and roughly 7.3 GB of setup downloads leave memory, context, speculation, paging and concurrency to qualify on the actual host.
+- Engine-release checksum verification and downloads from mutable model main revisions are separate provenance concerns. Pin engine, weight and sidecar hashes and verify exact MIT and Apache 2.0 terms.
+- The wrapper defaults to loopback with disk resume enabled. Compose publishes on host loopback and specifies persistent model storage and a restart policy. Assess request cancellation, shutdown, access control and retained session data.
+- Upstream runtime comparisons do not establish quality equivalence to full-precision weights. Compare output accuracy and structured output on held-out Abrams tasks.
+
+[Source 1](https://github.com/opensetlabs/openset-llm/blob/ba9197ccdcb43fcf8119346820e5e172320e8764/README.md) · [Source 2](https://github.com/opensetlabs/openset-llm/blob/ba9197ccdcb43fcf8119346820e5e172320e8764/NOTICE) · [Source 3](https://github.com/opensetlabs/openset-llm/blob/ba9197ccdcb43fcf8119346820e5e172320e8764/LICENSE) · [Source 4](https://github.com/opensetlabs/openset-llm/blob/ba9197ccdcb43fcf8119346820e5e172320e8764/install.sh) · [Source 5](https://github.com/opensetlabs/openset-llm/blob/ba9197ccdcb43fcf8119346820e5e172320e8764/serve) · [Source 6](https://github.com/opensetlabs/openset-llm/blob/ba9197ccdcb43fcf8119346820e5e172320e8764/Dockerfile) · [Source 7](https://github.com/opensetlabs/openset-llm/blob/ba9197ccdcb43fcf8119346820e5e172320e8764/docker-compose.yml)
+
 
 <a id="runanywhereai-runanywhere-sdks"></a>
 ### RunAnywhere SDKs
